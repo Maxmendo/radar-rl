@@ -1,0 +1,9 @@
+
+8 vivas / 10 probadas
+
+Revisar en fuentes.yaml:
+  - acnur_americas: HTTP 403
+  - gdelt_migracion_es: HTTP 429
+
+Corregir la URL o dar de baja la fuente. No implementar módulos
+de ingesta para fuentes que no validan.
