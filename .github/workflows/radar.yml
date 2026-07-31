@@ -69,6 +69,11 @@ jobs:
         continue-on-error: true
         run: python scripts/validar_fuentes.py --prioridad 1 | tee datos/validacion.txt
 
+      # INGESTA. Descarga los feeds, agrupa las notas del mismo hecho y calcula
+      # velocidad (medios distintos por hecho). Todavia sin clasificacion por LLM.
+      - name: Ingesta
+        run: python -m nucleo.ingesta --prioridad 1
+
       # Diagnostico, solo en la corrida del digest para no gastar tiempo.
       - name: Muestrear feeds
         if: steps.cuando.outputs.digest == 'true'
