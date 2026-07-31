@@ -1,10 +1,2 @@
 
-7 vivas / 10 probadas
-
-Revisar en fuentes.yaml:
-  - boletin_oficial_ar: ConnectTimeout: HTTPSConnectionPool(host='www.boletinoficial.gob.ar', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.boletinoficial.gob.ar', port=443) at 0x7fc911eae090>, 'Connection to www.boletinoficial.gob.ar timed out. (connect timeout=15)'))
-  - acnur_americas: HTTP 403
-  - gdelt_migracion_es: HTTP 429
-
-Corregir la URL o dar de baja la fuente. No implementar módulos
-de ingesta para fuentes que no validan.
+6 vivas / 6 probadas
