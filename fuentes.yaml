@@ -84,8 +84,9 @@ medios_google_news:
 - id: gnews_cono_sur_asilo
   bloque: cono_sur
   region: Cono Sur
-  query: ("solicitantes de asilo" OR refugiados OR asilo) (Argentina OR Chile OR Uruguay) when:1d
-  largo_query: 88
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Argentina OR Chile OR Uruguay)
+    when:1d
+  largo_query: 104
   gl: AR
   hl: es-419
   pais: *id001
@@ -148,8 +149,9 @@ medios_google_news:
 - id: gnews_andina_asilo
   bloque: andina
   region: Region Andina
-  query: ("solicitantes de asilo" OR refugiados OR asilo) (Colombia OR Peru OR Venezuela) when:1d
-  largo_query: 88
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Colombia OR Peru OR Venezuela)
+    when:1d
+  largo_query: 104
   gl: CO
   hl: es-419
   pais: *id002
@@ -159,9 +161,9 @@ medios_google_news:
 - id: gnews_andina_rutas
   bloque: andina
   region: Region Andina
-  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) (Colombia OR Peru OR Venezuela)
+  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Colombia OR Peru OR Venezuela)
     when:1d
-  largo_query: 98
+  largo_query: 100
   gl: CO
   hl: es-419
   pais: *id002
@@ -226,8 +228,9 @@ medios_google_news:
 - id: gnews_mexico_ca_asilo
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: ("solicitantes de asilo" OR refugiados OR asilo) (Mexico OR Guatemala OR Honduras) when:1d
-  largo_query: 90
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Mexico OR Guatemala OR Honduras)
+    when:1d
+  largo_query: 106
   gl: MX
   hl: es-419
   pais: *id003
@@ -237,9 +240,9 @@ medios_google_news:
 - id: gnews_mexico_ca_rutas
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) (Mexico OR Guatemala OR Honduras)
+  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Mexico OR Guatemala OR Honduras)
     when:1d
-  largo_query: 100
+  largo_query: 102
   gl: MX
   hl: es-419
   pais: *id003
@@ -296,8 +299,9 @@ medios_google_news:
 - id: gnews_eeuu_es_asilo
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: ("solicitantes de asilo" OR refugiados OR asilo) ("Estados Unidos" OR ICE) when:1d
-  largo_query: 82
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") ("Estados Unidos" OR ICE)
+    when:1d
+  largo_query: 98
   gl: US
   hl: es-419
   pais: *id004
@@ -307,8 +311,8 @@ medios_google_news:
 - id: gnews_eeuu_es_rutas
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) ("Estados Unidos" OR ICE) when:1d
-  largo_query: 92
+  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes ("Estados Unidos" OR ICE) when:1d
+  largo_query: 94
   gl: US
   hl: es-419
   pais: *id004
@@ -367,8 +371,9 @@ medios_google_news:
 - id: gnews_caribe_asilo
   bloque: caribe
   region: Caribe
-  query: ("solicitantes de asilo" OR refugiados OR asilo) (Dominicana OR Haiti OR Cuba) when:1d
-  largo_query: 86
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Dominicana OR Haiti OR Cuba)
+    when:1d
+  largo_query: 102
   gl: DO
   hl: es-419
   pais: *id005
@@ -378,8 +383,9 @@ medios_google_news:
 - id: gnews_caribe_rutas
   bloque: caribe
   region: Caribe
-  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) (Dominicana OR Haiti OR Cuba) when:1d
-  largo_query: 96
+  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Dominicana OR Haiti OR Cuba)
+    when:1d
+  largo_query: 98
   gl: DO
   hl: es-419
   pais: *id005
@@ -502,8 +508,8 @@ medios_google_news:
 - id: gnews_eeuu_en_rutas
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: ("migrant route" OR "missing migrants" OR "Darien Gap") ("United States" OR ICE) when:1d
-  largo_query: 88
+  query: ("Darien Gap" OR caravan OR shipwreck OR missing) migrants ("United States" OR ICE) when:1d
+  largo_query: 91
   gl: US
   hl: en-US
   pais: *id007
