@@ -8,21 +8,27 @@
 #      lo que ya entro. Ejes, poblaciones y etapas son el vocabulario del
 #      clasificador; NO son terminos de busqueda.
 #
-# REGLA DE ORO PARA LAS CONSULTAS (aprendida el 2026-07-31):
-#   Consulta corta o Google News ignora `when:`.
-#   Verificado: las consultas de mas de ~120 caracteres devolvieron 100
-#   entradas con material de hasta 15 anios de antiguedad, ignorando la
-#   ventana temporal. Las de menos de 100 caracteres respetaron los 3 dias.
-#   Reglas derivadas:
-#     - Maximo 4 terminos OR por consulta.
-#     - Sin ancla geografica larga: `gl` y `hl` ya sesgan la edicion.
-#     - Nunca terminos ambiguos sueltos: `visa` trae la tarjeta de credito,
-#       `regularizacion` trae cooperativas. Siempre calificados.
-#     - Si una consulta devuelve exactamente 100 entradas, sospechar.
+# REGLA DE ORO PARA LAS CONSULTAS (aprendida a golpes el 2026-07-31):
 #
-# DECISION 2026-07-31: sin fuentes normativas primarias. No hay feeds
-# utilizables (ver `descartadas`) y el cambio normativo se detecta igual via
-# cobertura: el DNU migratorio argentino aparecio el mismo dia de publicado.
+#   ESTRUCTURA OBLIGATORIA:  (A OR B OR C) calificador ancla when:1d
+#
+#   1. LARGO. Mas de ~120 caracteres y Google ignora `when:`: devuelve 100
+#      entradas de hasta 15 anios de antiguedad. Si una consulta devuelve
+#      exactamente 100 entradas, sospechar.
+#
+#   2. PARENTESIS. Los terminos se combinan con AND por defecto; el OR solo
+#      aplica a los dos que separa. Sin parentesis,
+#         xenofobia OR "discurso de odio" migrantes
+#      se lee como: xenofobia, O BIEN (discurso de odio Y migrantes).
+#      Por eso entraba cualquier nota con la palabra xenofobia, de Sudafrica
+#      o Malasia. El calificador migratorio va AFUERA del grupo.
+#
+#   3. ANCLA GEOGRAFICA CORTA, 2-3 paises. `gl` sesga la edicion pero NO
+#      diferencia resultados: sin ancla, los cuatro bloques regionales
+#      devolvian exactamente los mismos titulos.
+#
+#   4. NUNCA terminos ambiguos sueltos: `visa` trae la tarjeta de credito,
+#      `regularizacion` sola trae cooperativas. Siempre calificados.
 #
 # prioridad: 1 = arranque   2 = segunda tanda   3 = evaluar / de baja
 
@@ -38,8 +44,9 @@ medios_google_news:
 - id: gnews_cono_sur_normativa
   bloque: cono_sur
   region: Cono Sur
-  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
-  largo_query: 77
+  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Argentina OR Chile
+    OR Uruguay) when:1d
+  largo_query: 111
   gl: AR
   hl: es-419
   pais: &id001
@@ -53,9 +60,9 @@ medios_google_news:
 - id: gnews_cono_sur_estatus
   bloque: cono_sur
   region: Cono Sur
-  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
-    when:1d'
-  largo_query: 104
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Argentina OR Chile OR Uruguay)
+    when:1d
+  largo_query: 99
   gl: AR
   hl: es-419
   pais: *id001
@@ -65,8 +72,9 @@ medios_google_news:
 - id: gnews_cono_sur_derechos
   bloque: cono_sur
   region: Cono Sur
-  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
-  largo_query: 74
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Argentina OR Chile OR Uruguay)
+    when:1d
+  largo_query: 99
   gl: AR
   hl: es-419
   pais: *id001
@@ -76,8 +84,8 @@ medios_google_news:
 - id: gnews_cono_sur_asilo
   bloque: cono_sur
   region: Cono Sur
-  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
-  largo_query: 64
+  query: ("solicitantes de asilo" OR refugiados OR asilo) (Argentina OR Chile OR Uruguay) when:1d
+  largo_query: 88
   gl: AR
   hl: es-419
   pais: *id001
@@ -87,8 +95,9 @@ medios_google_news:
 - id: gnews_cono_sur_odio
   bloque: cono_sur
   region: Cono Sur
-  query: xenofobia OR "discurso de odio" migrantes when:1d
-  largo_query: 49
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Argentina OR Chile OR Uruguay)
+    when:1d
+  largo_query: 102
   gl: AR
   hl: es-419
   pais: *id001
@@ -98,8 +107,9 @@ medios_google_news:
 - id: gnews_andina_normativa
   bloque: andina
   region: Region Andina
-  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
-  largo_query: 77
+  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Colombia OR Peru OR
+    Venezuela) when:1d
+  largo_query: 111
   gl: CO
   hl: es-419
   pais: &id002
@@ -114,9 +124,9 @@ medios_google_news:
 - id: gnews_andina_estatus
   bloque: andina
   region: Region Andina
-  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
-    when:1d'
-  largo_query: 104
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Colombia OR Peru OR Venezuela)
+    when:1d
+  largo_query: 99
   gl: CO
   hl: es-419
   pais: *id002
@@ -126,8 +136,9 @@ medios_google_news:
 - id: gnews_andina_derechos
   bloque: andina
   region: Region Andina
-  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
-  largo_query: 74
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Colombia OR Peru OR Venezuela)
+    when:1d
+  largo_query: 99
   gl: CO
   hl: es-419
   pais: *id002
@@ -137,8 +148,8 @@ medios_google_news:
 - id: gnews_andina_asilo
   bloque: andina
   region: Region Andina
-  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
-  largo_query: 64
+  query: ("solicitantes de asilo" OR refugiados OR asilo) (Colombia OR Peru OR Venezuela) when:1d
+  largo_query: 88
   gl: CO
   hl: es-419
   pais: *id002
@@ -148,8 +159,9 @@ medios_google_news:
 - id: gnews_andina_rutas
   bloque: andina
   region: Region Andina
-  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
-  largo_query: 76
+  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) (Colombia OR Peru OR Venezuela)
+    when:1d
+  largo_query: 98
   gl: CO
   hl: es-419
   pais: *id002
@@ -159,8 +171,9 @@ medios_google_news:
 - id: gnews_andina_odio
   bloque: andina
   region: Region Andina
-  query: xenofobia OR "discurso de odio" migrantes when:1d
-  largo_query: 49
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Colombia OR Peru OR Venezuela)
+    when:1d
+  largo_query: 102
   gl: CO
   hl: es-419
   pais: *id002
@@ -170,8 +183,9 @@ medios_google_news:
 - id: gnews_mexico_ca_normativa
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
-  largo_query: 77
+  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Mexico OR Guatemala
+    OR Honduras) when:1d
+  largo_query: 113
   gl: MX
   hl: es-419
   pais: &id003
@@ -188,9 +202,9 @@ medios_google_news:
 - id: gnews_mexico_ca_estatus
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
-    when:1d'
-  largo_query: 104
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Mexico OR Guatemala OR Honduras)
+    when:1d
+  largo_query: 101
   gl: MX
   hl: es-419
   pais: *id003
@@ -200,8 +214,9 @@ medios_google_news:
 - id: gnews_mexico_ca_derechos
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
-  largo_query: 74
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Mexico OR Guatemala OR Honduras)
+    when:1d
+  largo_query: 101
   gl: MX
   hl: es-419
   pais: *id003
@@ -211,8 +226,8 @@ medios_google_news:
 - id: gnews_mexico_ca_asilo
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
-  largo_query: 64
+  query: ("solicitantes de asilo" OR refugiados OR asilo) (Mexico OR Guatemala OR Honduras) when:1d
+  largo_query: 90
   gl: MX
   hl: es-419
   pais: *id003
@@ -222,8 +237,9 @@ medios_google_news:
 - id: gnews_mexico_ca_rutas
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
-  largo_query: 76
+  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) (Mexico OR Guatemala OR Honduras)
+    when:1d
+  largo_query: 100
   gl: MX
   hl: es-419
   pais: *id003
@@ -233,8 +249,9 @@ medios_google_news:
 - id: gnews_mexico_ca_odio
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: xenofobia OR "discurso de odio" migrantes when:1d
-  largo_query: 49
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Mexico OR Guatemala OR Honduras)
+    when:1d
+  largo_query: 104
   gl: MX
   hl: es-419
   pais: *id003
@@ -244,8 +261,9 @@ medios_google_news:
 - id: gnews_eeuu_es_normativa
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
-  largo_query: 77
+  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") ("Estados Unidos" OR
+    ICE) when:1d
+  largo_query: 105
   gl: US
   hl: es-419
   pais: &id004
@@ -256,9 +274,8 @@ medios_google_news:
 - id: gnews_eeuu_es_estatus
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
-    when:1d'
-  largo_query: 104
+  query: (indocumentados OR irregulares OR regularizacion) migrantes ("Estados Unidos" OR ICE) when:1d
+  largo_query: 93
   gl: US
   hl: es-419
   pais: *id004
@@ -268,8 +285,8 @@ medios_google_news:
 - id: gnews_eeuu_es_derechos
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
-  largo_query: 74
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes ("Estados Unidos" OR ICE) when:1d
+  largo_query: 93
   gl: US
   hl: es-419
   pais: *id004
@@ -279,8 +296,8 @@ medios_google_news:
 - id: gnews_eeuu_es_asilo
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
-  largo_query: 64
+  query: ("solicitantes de asilo" OR refugiados OR asilo) ("Estados Unidos" OR ICE) when:1d
+  largo_query: 82
   gl: US
   hl: es-419
   pais: *id004
@@ -290,8 +307,8 @@ medios_google_news:
 - id: gnews_eeuu_es_rutas
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
-  largo_query: 76
+  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) ("Estados Unidos" OR ICE) when:1d
+  largo_query: 92
   gl: US
   hl: es-419
   pais: *id004
@@ -301,8 +318,8 @@ medios_google_news:
 - id: gnews_eeuu_es_odio
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: xenofobia OR "discurso de odio" migrantes when:1d
-  largo_query: 49
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes ("Estados Unidos" OR ICE) when:1d
+  largo_query: 96
   gl: US
   hl: es-419
   pais: *id004
@@ -312,8 +329,9 @@ medios_google_news:
 - id: gnews_caribe_normativa
   bloque: caribe
   region: Caribe
-  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
-  largo_query: 77
+  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Dominicana OR Haiti
+    OR Cuba) when:1d
+  largo_query: 109
   gl: DO
   hl: es-419
   pais: &id005
@@ -327,9 +345,8 @@ medios_google_news:
 - id: gnews_caribe_estatus
   bloque: caribe
   region: Caribe
-  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
-    when:1d'
-  largo_query: 104
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Dominicana OR Haiti OR Cuba) when:1d
+  largo_query: 97
   gl: DO
   hl: es-419
   pais: *id005
@@ -339,8 +356,8 @@ medios_google_news:
 - id: gnews_caribe_derechos
   bloque: caribe
   region: Caribe
-  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
-  largo_query: 74
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Dominicana OR Haiti OR Cuba) when:1d
+  largo_query: 97
   gl: DO
   hl: es-419
   pais: *id005
@@ -350,8 +367,8 @@ medios_google_news:
 - id: gnews_caribe_asilo
   bloque: caribe
   region: Caribe
-  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
-  largo_query: 64
+  query: ("solicitantes de asilo" OR refugiados OR asilo) (Dominicana OR Haiti OR Cuba) when:1d
+  largo_query: 86
   gl: DO
   hl: es-419
   pais: *id005
@@ -361,8 +378,8 @@ medios_google_news:
 - id: gnews_caribe_rutas
   bloque: caribe
   region: Caribe
-  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
-  largo_query: 76
+  query: ("ruta migratoria" OR "migrantes desaparecidos" OR Darien) (Dominicana OR Haiti OR Cuba) when:1d
+  largo_query: 96
   gl: DO
   hl: es-419
   pais: *id005
@@ -372,8 +389,9 @@ medios_google_news:
 - id: gnews_caribe_odio
   bloque: caribe
   region: Caribe
-  query: xenofobia OR "discurso de odio" migrantes when:1d
-  largo_query: 49
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Dominicana OR Haiti OR Cuba)
+    when:1d
+  largo_query: 100
   gl: DO
   hl: es-419
   pais: *id005
@@ -383,8 +401,8 @@ medios_google_news:
 - id: gnews_brasil_normativa
   bloque: brasil
   region: Brasil
-  query: '"politica migratoria" OR "lei de migracao" OR "decreto migratorio" when:1d'
-  largo_query: 74
+  query: ("politica migratoria" OR "lei de migracao") (Brasil) when:1d
+  largo_query: 61
   gl: BR
   hl: pt-BR
   pais: &id006
@@ -395,8 +413,8 @@ medios_google_news:
 - id: gnews_brasil_estatus
   bloque: brasil
   region: Brasil
-  query: '"regularizacao migratoria" OR indocumentados OR "situacao migratoria" when:1d'
-  largo_query: 77
+  query: (indocumentados OR irregulares) migrantes (Brasil) when:1d
+  largo_query: 58
   gl: BR
   hl: pt-BR
   pais: *id006
@@ -406,8 +424,8 @@ medios_google_news:
 - id: gnews_brasil_derechos
   bloque: brasil
   region: Brasil
-  query: deportacao OR "detencao de migrantes" OR "direitos dos migrantes" when:1d
-  largo_query: 73
+  query: (deportacao OR expulsao OR detencao) migrantes (Brasil) when:1d
+  largo_query: 63
   gl: BR
   hl: pt-BR
   pais: *id006
@@ -417,8 +435,8 @@ medios_google_news:
 - id: gnews_brasil_asilo
   bloque: brasil
   region: Brasil
-  query: '"solicitantes de asilo" OR refugiados when:1d'
-  largo_query: 45
+  query: ("solicitantes de asilo" OR refugiados) (Brasil) when:1d
+  largo_query: 56
   gl: BR
   hl: pt-BR
   pais: *id006
@@ -428,8 +446,8 @@ medios_google_news:
 - id: gnews_brasil_odio
   bloque: brasil
   region: Brasil
-  query: xenofobia OR "discurso de odio" migrantes when:1d
-  largo_query: 49
+  query: (xenofobia OR "discurso de odio") migrantes (Brasil) when:1d
+  largo_query: 60
   gl: BR
   hl: pt-BR
   pais: *id006
@@ -439,8 +457,8 @@ medios_google_news:
 - id: gnews_eeuu_en_normativa
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: '"immigration policy" OR "immigration order" OR "immigration law" when:1d'
-  largo_query: 72
+  query: ("immigration policy" OR "immigration law") ("United States" OR ICE) when:1d
+  largo_query: 76
   gl: US
   hl: en-US
   pais: &id007
@@ -451,8 +469,8 @@ medios_google_news:
 - id: gnews_eeuu_en_estatus
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: '"undocumented immigrants" OR "immigration status" OR "work permit" immigrants when:1d'
-  largo_query: 85
+  query: (undocumented OR status) immigrants ("United States" OR ICE) when:1d
+  largo_query: 68
   gl: US
   hl: en-US
   pais: *id007
@@ -462,8 +480,8 @@ medios_google_news:
 - id: gnews_eeuu_en_derechos
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: deportation OR "migrant detention" OR "immigrant rights" when:1d
-  largo_query: 64
+  query: (deportation OR detention OR raid) immigrants ("United States" OR ICE) when:1d
+  largo_query: 78
   gl: US
   hl: en-US
   pais: *id007
@@ -473,8 +491,8 @@ medios_google_news:
 - id: gnews_eeuu_en_asilo
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: '"asylum seekers" OR refugees OR "non-refoulement" when:1d'
-  largo_query: 57
+  query: ("asylum seekers" OR refugees) ("United States" OR ICE) when:1d
+  largo_query: 63
   gl: US
   hl: en-US
   pais: *id007
@@ -484,8 +502,8 @@ medios_google_news:
 - id: gnews_eeuu_en_rutas
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: '"Darien Gap" OR "migrant route" OR "missing migrants" when:1d'
-  largo_query: 61
+  query: ("migrant route" OR "missing migrants" OR "Darien Gap") ("United States" OR ICE) when:1d
+  largo_query: 88
   gl: US
   hl: en-US
   pais: *id007
@@ -495,8 +513,8 @@ medios_google_news:
 - id: gnews_eeuu_en_odio
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: xenophobia OR "anti-immigrant" rhetoric when:1d
-  largo_query: 47
+  query: (xenophobia OR "anti-immigrant") immigrants ("United States" OR ICE) when:1d
+  largo_query: 76
   gl: US
   hl: en-US
   pais: *id007
@@ -773,7 +791,6 @@ notas_vocabulario:
   terminologia: 'El sistema NO busca ''migracion ilegal'' como termino: trae demasiado ruido y reproduce
     una categoria que rechazamos. Esa cobertura entra igual por otros terminos, y cuando usa lenguaje
     deshumanizante el clasificador lo registra en `terminologia_problematica`, que alimenta el eje `medios`.'
-
 estados:
   _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
     24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las
