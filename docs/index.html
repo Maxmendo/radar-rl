@@ -22,6 +22,21 @@ h1 { font-size:1.4rem; font-weight:600; margin:0 0 .25rem; }
 .meta { color:var(--suave); font-size:.85rem; margin-bottom:1.5rem; }
 .aviso { background:var(--alerta); color:#fff; padding:.7rem 1rem; border-radius:8px;
   margin-bottom:1.5rem; font-size:.9rem; }
+.vistas { display:flex; gap:.5rem; margin-bottom:.75rem; }
+.vistas { flex-wrap:wrap; }
+.vistas button { font:inherit; font-size:.88rem; font-weight:600; padding:.45rem .9rem;
+  cursor:pointer; background:transparent; color:var(--suave); border:none;
+  border-bottom:2px solid transparent; }
+.vistas button[aria-pressed="true"] { color:var(--acento); border-bottom-color:var(--acento); }
+.vistas .cuenta { font-weight:400; opacity:.7; }
+.chip { font-size:.7rem; font-weight:600; padding:.15rem .5rem; border-radius:4px;
+  text-transform:uppercase; letter-spacing:.03em; }
+.e-top_trend { background:#f4c0d1; color:#72243e; }
+.e-trending { background:#fac775; color:#633806; }
+.e-interes { background:#9fe1cb; color:#085041; }
+.e-nadie_lo_mira { background:#b5d4f4; color:#0c447c; }
+.e-ruido { background:#d3d1c7; color:#444441; }
+.explica { font-size:.82rem; color:var(--suave); margin:0 0 1rem; }
 .filtros { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.25rem; }
 .filtros button { font:inherit; font-size:.82rem; padding:.35rem .8rem; cursor:pointer;
   background:var(--tarjeta); color:var(--tinta); border:1px solid var(--linea); border-radius:99px; }
@@ -36,6 +51,7 @@ h1 { font-size:1.4rem; font-weight:600; margin:0 0 .25rem; }
   color:var(--suave); margin-bottom:.5rem; }
 .puntajes b { color:var(--tinta); font-weight:600; }
 .destacado { color:var(--acento); font-weight:600; }
+.sube { color:var(--alerta); font-weight:600; }
 .etiquetas { display:flex; gap:.35rem; flex-wrap:wrap; margin-bottom:.5rem; }
 .etiqueta { font-size:.72rem; padding:.15rem .55rem; border-radius:4px;
   border:1px solid var(--linea); color:var(--suave); }
@@ -50,19 +66,52 @@ footer { margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--linea);
 <body>
 <div class="contenedor">
 <h1>Radar migratorio</h1>
-<p class="meta">Refugio Latinoamericano &middot; actualizado 31/07/2026 07:03 UTC</p>
+<p class="meta">Refugio Latinoamericano &middot; actualizado 31/07/2026 07:37 UTC</p>
 <p class="aviso">Datos de ejemplo. El pipeline de ingesta todavia no esta implementado, asi que estos items son ficticios y sirven solo para revisar el diseno del tablero.</p>
+<div class="vistas" id="vistas"></div>
+<p class="explica" id="explica"></p>
 <div class="filtros" id="filtros"></div>
 <div id="lista"></div>
 <footer>
-Ordenado por prioridad editorial: importancia ponderada por subcobertura.
-Un hecho grave que nadie cubre vale mas que uno grave que cubren todos.<br>
+Monitoreo cada 3 horas. La velocidad se mide en medios distintos, no en cantidad de notas.<br>
+La aceleracion puede promover de estado: 5 medios subiendo rapido valen mas que 8 estancados.<br>
 Este tablero propone. La decision editorial es humana.
 </footer>
 </div>
 <script>
-const ITEMS = [{"id": "e1", "titulo_original": "El Gobierno prohibira el ingreso y expulsara a extranjeros que expresen mensajes de odio", "idioma": "es", "url": "https://example.org/1", "fuente": "gnews_cono_sur_normativa", "region": "Cono Sur", "fecha": "2026-07-30T18:00:00Z", "ejes": ["normativa", "derechos"], "paises": ["AR"], "tipo": "normativa", "importancia": 10, "cobertura": 9, "confianza": 0.95, "tiene_fuente_primaria": true, "angulo_sugerido": "Que organo define que es un mensaje de odio y con que recurso", "nota": "DNU que habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico.", "duplicados": 23, "prioridad": 10.4}, {"id": "e2", "titulo_original": "Migrantes en Cordoba se pronunciaron tras el DNU contra extranjeros", "idioma": "es", "url": "https://example.org/2", "fuente": "gnews_cono_sur_derechos", "region": "Cono Sur", "fecha": "2026-07-30T12:00:00Z", "ejes": ["derechos", "odio"], "paises": ["AR"], "tipo": "caso", "importancia": 8, "cobertura": 2, "confianza": 0.85, "tiene_fuente_primaria": false, "angulo_sugerido": "Contactar a las organizaciones que convocaron", "nota": "Respuesta organizada de las comunidades. Casi sin cobertura nacional.", "duplicados": 1, "prioridad": 11.2}, {"id": "e3", "titulo_original": "ICE raid at meatpacking plant detains 200", "idioma": "en", "url": "https://example.org/3", "fuente": "gnews_eeuu_es_derechos", "region": "Estados Unidos", "fecha": "2026-07-29T20:00:00Z", "ejes": ["derechos"], "paises": ["US"], "tipo": "caso", "importancia": 9, "cobertura": 6, "confianza": 0.9, "tiene_fuente_primaria": false, "angulo_sugerido": "Cuantos detenidos tenian proceso de asilo abierto", "nota": "Detencion masiva que afecta debido proceso.", "duplicados": 7, "prioridad": 10.6}, {"id": "e4", "titulo_original": "Republica Dominicana amplia el operativo de deportaciones en la frontera", "idioma": "es", "url": "https://example.org/4", "fuente": "gnews_caribe_derechos", "region": "Caribe", "fecha": "2026-07-29T09:00:00Z", "ejes": ["derechos", "normativa"], "paises": ["DO", "HT"], "tipo": "evento", "importancia": 9, "cobertura": 1, "confianza": 0.8, "tiene_fuente_primaria": false, "angulo_sugerido": "Cifras oficiales versus registros de organizaciones haitianas", "nota": "Alta importancia y practicamente sin cobertura regional. Prioridad editorial.", "duplicados": 2, "prioridad": 12.6}];
-let ejeActivo = null, regionActiva = null;
+const ITEMS = [{"id": "e1", "titulo_original": "El Gobierno prohibira el ingreso y expulsara a extranjeros que expresen mensajes de odio", "idioma": "es", "url": "https://example.org/1", "fuente": "gnews_cono_sur_normativa", "region": "Cono Sur", "fecha": "2026-07-30T18:00:00Z", "ejes": ["normativa", "derechos"], "paises": ["AR"], "tipo": "normativa", "importancia": 10, "cobertura": 9, "confianza": 0.95, "tiene_fuente_primaria": true, "angulo_sugerido": "Que organo define que es un mensaje de odio y con que recurso", "nota": "DNU que habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico.", "duplicados": 23, "medios": 23, "velocidad": 23, "aceleracion": 11, "trends": 9, "horas": 4, "alerta": 540.0, "subcobertura": 10.0, "estado": "top_trend"}, {"id": "e2", "titulo_original": "Migrantes en Cordoba se pronunciaron tras el DNU contra extranjeros", "idioma": "es", "url": "https://example.org/2", "fuente": "gnews_cono_sur_derechos", "region": "Cono Sur", "fecha": "2026-07-30T12:00:00Z", "ejes": ["derechos", "odio"], "paises": ["AR"], "tipo": "caso", "importancia": 8, "cobertura": 2, "confianza": 0.85, "tiene_fuente_primaria": false, "angulo_sugerido": "Contactar a las organizaciones que convocaron", "nota": "Respuesta organizada de las comunidades. Casi sin cobertura nacional.", "duplicados": 1, "medios": 1, "velocidad": 1, "aceleracion": 0, "trends": 1, "horas": 14, "alerta": 6.4, "subcobertura": 11.6, "estado": "nadie_lo_mira"}, {"id": "e3", "titulo_original": "ICE raid at meatpacking plant detains 200", "idioma": "en", "url": "https://example.org/3", "fuente": "gnews_eeuu_es_derechos", "region": "Estados Unidos", "fecha": "2026-07-29T20:00:00Z", "ejes": ["derechos"], "paises": ["US"], "tipo": "caso", "importancia": 9, "cobertura": 6, "confianza": 0.9, "tiene_fuente_primaria": false, "angulo_sugerido": "Cuantos detenidos tenian proceso de asilo abierto", "nota": "Detencion masiva que afecta debido proceso.", "duplicados": 7, "medios": 7, "velocidad": 7, "aceleracion": 5, "trends": 4, "horas": 9, "alerta": 132.3, "subcobertura": 10.2, "estado": "trending"}, {"id": "e4", "titulo_original": "Republica Dominicana amplia el operativo de deportaciones en la frontera", "idioma": "es", "url": "https://example.org/4", "fuente": "gnews_caribe_derechos", "region": "Caribe", "fecha": "2026-07-29T09:00:00Z", "ejes": ["derechos", "normativa"], "paises": ["DO", "HT"], "tipo": "evento", "importancia": 9, "cobertura": 1, "confianza": 0.8, "tiene_fuente_primaria": false, "angulo_sugerido": "Cifras oficiales versus registros de organizaciones haitianas", "nota": "Alta importancia y practicamente sin cobertura regional. Prioridad editorial.", "duplicados": 2, "medios": 2, "velocidad": 2, "aceleracion": 1, "trends": 0, "horas": 30, "alerta": 3.6, "subcobertura": 12.2, "estado": "nadie_lo_mira"}];
+let ejeActivo = null, regionActiva = null, vista = 'interes';
+
+const ESTADOS = {
+  interes:       { nombre: 'De interes',   accion: 'EL PUNTO JUSTO. 3+ medios o acelerando. Publicar temprano: si escala, la nota ya esta.' },
+  trending:      { nombre: 'Trending',     accion: '8+ medios, o 5+ creciendo rapido. Publicar ya, o buscar el angulo que nadie tomo.' },
+  top_trend:     { nombre: 'Top trend',    accion: '20+ medios. No correrla: cubrir solo con angulo propio o dato nuevo.' },
+  nadie_lo_mira: { nombre: 'Nadie lo mira', accion: 'Importante y casi sin cobertura. Investigar: posible primicia. Requiere reporteria propia.' },
+  ruido:         { nombre: 'Ruido',        accion: 'Poca cobertura y poca importancia. Visible para auditar que se esta descartando.' }
+};
+const ORDEN = ['interes', 'trending', 'top_trend', 'nadie_lo_mira', 'ruido'];
+
+function armarVistas() {
+  const cont = document.getElementById('vistas');
+  ORDEN.forEach(id => {
+    const n = ITEMS.filter(i => i.estado === id).length;
+    const b = document.createElement('button');
+    b.innerHTML = `${ESTADOS[id].nombre} <span class="cuenta">${n}</span>`;
+    b.onclick = () => cambiarVista(id);
+    b.id = 'v-' + id;
+    cont.appendChild(b);
+  });
+}
+
+function cambiarVista(v) {
+  vista = v;
+  ORDEN.forEach(id => {
+    const b = document.getElementById('v-' + id);
+    if (b) b.setAttribute('aria-pressed', String(id === v));
+  });
+  document.getElementById('explica').textContent = ESTADOS[v].accion;
+  dibujar();
+}
 
 function armarFiltros() {
   const ejes = [...new Set(ITEMS.flatMap(i => i.ejes))].sort();
@@ -89,19 +138,23 @@ function dibujar() {
     b.setAttribute('aria-pressed', String(b.dataset.valor === act));
   });
   const visibles = ITEMS
+    .filter(i => i.estado === vista)
     .filter(i => !ejeActivo || i.ejes.includes(ejeActivo))
     .filter(i => !regionActiva || i.region === regionActiva)
-    .sort((a, b) => b.prioridad - a.prioridad);
+    .sort((a, b) => vista === 'nadie_lo_mira' || vista === 'ruido'
+      ? b.subcobertura - a.subcobertura
+      : b.alerta - a.alerta);
   const lista = document.getElementById('lista');
   if (!visibles.length) { lista.innerHTML = '<p class="vacio">Sin resultados con estos filtros.</p>'; return; }
   lista.innerHTML = visibles.map(i => `
     <article class="item">
       <h2><a href="${i.url}" target="_blank" rel="noopener">${escapar(i.titulo_original)}</a></h2>
       <div class="puntajes">
-        <span>prioridad <b class="destacado">${i.prioridad}</b></span>
+        <span class="chip e-${i.estado}">${ESTADOS[i.estado].nombre}</span>
         <span>importancia <b>${i.importancia}</b></span>
-        <span>cobertura <b>${i.cobertura ?? 's/d'}</b></span>
-        ${i.duplicados > 1 ? `<span>${i.duplicados} notas agrupadas</span>` : ''}
+        <span>medios <b>${i.velocidad ?? 's/d'}</b></span>
+        ${i.aceleracion > 0 ? `<span class="sube">+${i.aceleracion} en 3h</span>` : ''}
+        ${i.horas != null ? `<span>hace ${i.horas}h</span>` : ''}
         ${i.tiene_fuente_primaria ? '<span>fuente primaria</span>' : ''}
       </div>
       <div class="etiquetas">
@@ -120,8 +173,9 @@ function escapar(s) {
   return d.innerHTML;
 }
 
+armarVistas();
 armarFiltros();
-dibujar();
+cambiarVista('interes');
 </script>
 </body>
 </html>
