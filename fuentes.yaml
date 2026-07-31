@@ -1,265 +1,408 @@
 # Registro de fuentes del radar migratorio
 #
-# IMPORTANTE: las URLs marcadas con `verificado: false` son CANDIDATAS.
-# Antes de escribir cualquier módulo de ingesta, correr:
-#     python scripts/validar_fuentes.py
-# El script prueba cada endpoint y reporta cuáles responden y con qué formato.
-# Solo se implementan módulos para fuentes verificadas. Las que fallen se
-# corrigen o se dan de baja de este archivo. No adivinar URLs.
+# ALCANCE: America Latina y el Caribe + Estados Unidos.
+# Organizado en seis bloques subregionales en vez de pais por pais, para
+# mantener el volumen manejable. Una consulta por pais daria mas de mil
+# entradas por corrida, y cada item que sobrevive a la deduplicacion cuesta
+# una llamada al modelo.
 #
-# prioridad: 1 = fase 1 (arranque)  2 = fase 2  3 = evaluar más adelante
+# DECISION 2026-07-31: se descartan las fuentes normativas primarias.
+# No existen feeds utilizables (ver bloque `descartadas`) y el cambio
+# normativo se detecta igual via cobertura periodistica: el DNU migratorio
+# argentino aparecio en los feeds el mismo dia de su publicacion.
+#
+# Las URLs marcadas `verificado: false` son CANDIDATAS. Correr antes:
+#     python scripts/validar_fuentes.py
+#     python scripts/descubrir_feeds.py
+#     python scripts/muestrear_feeds.py
+#
+# prioridad: 1 = arranque   2 = segunda tanda   3 = evaluar / de baja
 
-# ---------------------------------------------------------------------------
-# NORMATIVA — el diferencial real del radar. Nadie cubre esto en tiempo casi real.
-# ---------------------------------------------------------------------------
-normativa:
-  - id: boletin_oficial_ar
-    nombre: Boletín Oficial de la República Argentina
-    url_base: https://www.boletinoficial.gob.ar
-    tipo_fuente: normativa
-    pais: [AR]
-    prioridad: 2
-    verificado: false
-    nota: >
-      Buscar sección de primera sección (legislación y avisos oficiales).
-      Filtrar por organismos: Dirección Nacional de Migraciones, Ministerio del
-      Interior, RENAPER, Cancillería. Si no hay RSS estable, evaluar el buscador
-      con parámetros de fecha. Nunca scrapear con selectores frágiles de layout.
-
-  - id: dnm_ar
-    nombre: Dirección Nacional de Migraciones (Argentina)
-    url_base: https://www.argentina.gob.ar/interior/migraciones
-    tipo_fuente: normativa
-    pais: [AR]
-    prioridad: 3
-    verificado: false
-    nota: Portal argentina.gob.ar suele exponer feed de novedades por organismo.
-
-  - id: infoleg_ar
-    nombre: InfoLEG
-    url_base: https://www.infoleg.gob.ar
-    tipo_fuente: normativa
-    pais: [AR]
-    prioridad: 3
-    verificado: false
-    nota: Para contexto y texto consolidado de normas, no para detección temprana.
-
-  - id: diario_oficial_cl
-    nombre: Diario Oficial de Chile
-    url_base: https://www.diariooficial.interior.gob.cl
-    tipo_fuente: normativa
-    pais: [CL]
-    prioridad: 3
-    verificado: false
-    nota: >
-      DE BAJA. /feed responde pero la ultima entrada es de 2017.
-
-# ---------------------------------------------------------------------------
-# ORGANISMOS Y SOCIEDAD CIVIL — fuente primaria, alta confiabilidad
-# ---------------------------------------------------------------------------
-organismos:
-  - id: acnur_americas
-    nombre: ACNUR / UNHCR Américas
-    url_base: https://www.acnur.org
-    tipo_fuente: organismo
-    pais: [REGIONAL]
-    prioridad: 3
-    verificado: false
-    nota: >
-      HTTP 403 constante desde GitHub Actions. Bloqueo por IP de datacenter:
-      el sitio abre normal desde un navegador domestico. Si se considera
-      imprescindible, mover esta fuente sola a Render, que tiene IP propia.
-
-  - id: oim_sudamerica
-    nombre: OIM / IOM Sudamérica
-    url_base: https://rosanjose.iom.int
-    tipo_fuente: organismo
-    pais: [REGIONAL]
-    prioridad: 3
-    verificado: false
-    nota: >
-      SIN FEED (verificado 2026-07-31). Evaluar si OIM publica boletin por mail
-      o si conviene seguirla via Google News.
-
-  - id: cels
-    nombre: CELS
-    url_base: https://www.cels.org.ar/feed
-    tipo_fuente: organismo
-    pais: [AR]
-    prioridad: 1
-    verificado: true
-    nota: >
-      Feed confirmado 2026-07-31: 10 entradas, la mas reciente de ayer.
-      Aliado institucional. Alta prioridad editorial.
-
-  - id: cidh
-    nombre: Comisión Interamericana de Derechos Humanos
-    url_base: https://www.oas.org/es/cidh
-    tipo_fuente: organismo
-    pais: [REGIONAL]
-    prioridad: 3
-    verificado: false
-    nota: >
-      SIN FEED (verificado 2026-07-31).
-
-  - id: ippdh_mercosur
-    nombre: IPPDH Mercosur
-    url_base: https://www.ippdh.mercosur.int/feed
-    tipo_fuente: organismo
-    pais: [REGIONAL]
-    prioridad: 2
-    verificado: true
-    nota: >
-      Feed confirmado 2026-07-31 pero con UNA sola entrada. Volumen minimo.
-      Util como señal ocasional, no como fuente de flujo.
-
-  - id: rpm_chile
-    nombre: Red Panamericana de Migraciones / RPM
-    url_base: null
-    tipo_fuente: organismo
-    pais: [CL, REGIONAL]
-    prioridad: 2
-    verificado: false
-    nota: Completar URL. Aliado institucional, contacto directo disponible.
-
-# ---------------------------------------------------------------------------
-# MEDIOS — vía Google News RSS. Formato estable y sin API key.
-# Patrón: https://news.google.com/rss/search?q={QUERY}&hl=es-419&gl={PAIS}&ceid={PAIS}:es-419
-# Usar comillas para frases exactas y `when:7d` para acotar ventana temporal.
-# ---------------------------------------------------------------------------
+alcance:
+  descripcion: America Latina y el Caribe + Estados Unidos
+  idiomas:
+  - es
+  - pt
+  - en
+  nota: El clasificador opera en los tres idiomas y devuelve siempre en castellano. Los titulos se conservan
+    en su idioma original.
 medios_google_news:
-  - id: gnews_politica_migratoria_ar
-    query: '"política migratoria" OR "decreto migratorio" OR "Migraciones" Argentina when:3d'
-    gl: AR
-    prioridad: 1
-    verificado: true
-
-  - id: gnews_radicacion_ar
-    query: '"radicación" OR "residencia precaria" OR "expulsión" migrantes Argentina when:3d'
-    gl: AR
-    prioridad: 1
-    verificado: true
-
-  - id: gnews_xenofobia_regional
-    query: 'xenofobia OR "discurso de odio" migrantes when:3d'
-    gl: AR
-    prioridad: 1
-    verificado: true
-
-  - id: gnews_migracion_bolivia_peru
-    query: 'migrantes bolivianos OR peruanos OR venezolanos Argentina when:7d'
-    gl: AR
-    prioridad: 1
-    verificado: true
-
-  # Agregadas 2026-07-31 para compensar la falta de fuente normativa directa.
-  # No reemplazan al Boletin Oficial, pero detectan la norma via cobertura.
-  - id: gnews_normativa_migratoria_ar
-    query: '"Boletin Oficial" OR DNU OR decreto OR resolucion migraciones extranjeros Argentina when:3d'
-    gl: AR
-    prioridad: 1
-    verificado: true
-
-  - id: gnews_fallos_migratorios
-    query: 'fallo OR amparo OR "medida cautelar" migrantes OR extranjeros Argentina when:7d'
-    gl: AR
-    prioridad: 2
-    verificado: true
-
-  - id: gnews_desplazamiento_regional
-    query: 'desplazamiento forzado OR crisis migratoria América Latina when:7d'
-    gl: AR
-    prioridad: 2
-    verificado: true
-
-# ---------------------------------------------------------------------------
-# COBERTURA AGREGADA — GDELT. Sirve para DOS cosas:
-#   1) detectar hechos que no llegan a los medios locales
-#   2) medir volumen de cobertura, insumo del scoring de "baja cobertura"
-# API: https://api.gdeltproject.org/api/v2/doc/doc?query=...&mode=artlist&format=json
-# ---------------------------------------------------------------------------
+- id: gnews_cono_sur_normativa
+  bloque: cono_sur
+  region: Cono Sur
+  query: ("politica migratoria" OR decreto OR ley OR resolucion OR visa OR asilo migrantes) (Argentina
+    OR Chile OR Uruguay OR Paraguay) when:3d
+  gl: AR
+  hl: es-419
+  pais: &id001
+  - AR
+  - CL
+  - UY
+  - PY
+  eje_esperado: normativa
+  prioridad: 1
+  verificado: true
+- id: gnews_cono_sur_derechos
+  bloque: cono_sur
+  region: Cono Sur
+  query: (deportacion OR expulsion OR detencion OR "derechos de los migrantes" OR refugiados) (Argentina
+    OR Chile OR Uruguay OR Paraguay) when:3d
+  gl: AR
+  hl: es-419
+  pais: *id001
+  eje_esperado: derechos
+  prioridad: 1
+  verificado: true
+- id: gnews_cono_sur_odio
+  bloque: cono_sur
+  region: Cono Sur
+  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion migrantes) (Argentina OR Chile
+    OR Uruguay OR Paraguay) when:3d
+  gl: AR
+  hl: es-419
+  pais: *id001
+  eje_esperado: odio
+  prioridad: 1
+  verificado: true
+- id: gnews_andina_normativa
+  bloque: andina
+  region: Region Andina
+  query: ("politica migratoria" OR decreto OR ley OR resolucion OR visa OR asilo migrantes) (Bolivia
+    OR Peru OR Ecuador OR Colombia OR Venezuela) when:3d
+  gl: CO
+  hl: es-419
+  pais: &id002
+  - BO
+  - PE
+  - EC
+  - CO
+  - VE
+  eje_esperado: normativa
+  prioridad: 1
+  verificado: true
+- id: gnews_andina_derechos
+  bloque: andina
+  region: Region Andina
+  query: (deportacion OR expulsion OR detencion OR "derechos de los migrantes" OR refugiados) (Bolivia
+    OR Peru OR Ecuador OR Colombia OR Venezuela) when:3d
+  gl: CO
+  hl: es-419
+  pais: *id002
+  eje_esperado: derechos
+  prioridad: 1
+  verificado: true
+- id: gnews_andina_odio
+  bloque: andina
+  region: Region Andina
+  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion migrantes) (Bolivia OR Peru
+    OR Ecuador OR Colombia OR Venezuela) when:3d
+  gl: CO
+  hl: es-419
+  pais: *id002
+  eje_esperado: odio
+  prioridad: 1
+  verificado: true
+- id: gnews_mexico_ca_normativa
+  bloque: mexico_ca
+  region: Mexico y Centroamerica
+  query: ("politica migratoria" OR decreto OR ley OR resolucion OR visa OR asilo migrantes) (Mexico
+    OR Guatemala OR Honduras OR "El Salvador" OR Nicaragua OR "Costa Rica") when:3d
+  gl: MX
+  hl: es-419
+  pais: &id003
+  - MX
+  - GT
+  - HN
+  - SV
+  - NI
+  - CR
+  - PA
+  eje_esperado: normativa
+  prioridad: 1
+  verificado: true
+- id: gnews_mexico_ca_derechos
+  bloque: mexico_ca
+  region: Mexico y Centroamerica
+  query: (deportacion OR expulsion OR detencion OR "derechos de los migrantes" OR refugiados) (Mexico
+    OR Guatemala OR Honduras OR "El Salvador" OR Nicaragua OR "Costa Rica") when:3d
+  gl: MX
+  hl: es-419
+  pais: *id003
+  eje_esperado: derechos
+  prioridad: 1
+  verificado: true
+- id: gnews_mexico_ca_odio
+  bloque: mexico_ca
+  region: Mexico y Centroamerica
+  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion migrantes) (Mexico OR Guatemala
+    OR Honduras OR "El Salvador" OR Nicaragua OR "Costa Rica") when:3d
+  gl: MX
+  hl: es-419
+  pais: *id003
+  eje_esperado: odio
+  prioridad: 1
+  verificado: true
+- id: gnews_eeuu_es_normativa
+  bloque: eeuu_es
+  region: Estados Unidos, prensa en espanol
+  query: ("politica migratoria" OR decreto OR ley OR resolucion OR visa OR asilo migrantes) ("Estados
+    Unidos" OR ICE OR frontera) when:3d
+  gl: US
+  hl: es-419
+  pais: &id004
+  - US
+  eje_esperado: normativa
+  prioridad: 1
+  verificado: true
+- id: gnews_eeuu_es_derechos
+  bloque: eeuu_es
+  region: Estados Unidos, prensa en espanol
+  query: (deportacion OR expulsion OR detencion OR "derechos de los migrantes" OR refugiados) ("Estados
+    Unidos" OR ICE OR frontera) when:3d
+  gl: US
+  hl: es-419
+  pais: *id004
+  eje_esperado: derechos
+  prioridad: 1
+  verificado: true
+- id: gnews_eeuu_es_odio
+  bloque: eeuu_es
+  region: Estados Unidos, prensa en espanol
+  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion migrantes) ("Estados Unidos"
+    OR ICE OR frontera) when:3d
+  gl: US
+  hl: es-419
+  pais: *id004
+  eje_esperado: odio
+  prioridad: 1
+  verificado: true
+- id: gnews_caribe_normativa
+  bloque: caribe
+  region: Caribe
+  query: ("politica migratoria" OR decreto OR ley OR resolucion OR visa OR asilo migrantes) ("Republica
+    Dominicana" OR Cuba OR Haiti OR "Puerto Rico") when:3d
+  gl: DO
+  hl: es-419
+  pais: &id005
+  - DO
+  - CU
+  - PR
+  - HT
+  eje_esperado: normativa
+  prioridad: 2
+  verificado: true
+- id: gnews_caribe_derechos
+  bloque: caribe
+  region: Caribe
+  query: (deportacion OR expulsion OR detencion OR "derechos de los migrantes" OR refugiados) ("Republica
+    Dominicana" OR Cuba OR Haiti OR "Puerto Rico") when:3d
+  gl: DO
+  hl: es-419
+  pais: *id005
+  eje_esperado: derechos
+  prioridad: 2
+  verificado: true
+- id: gnews_caribe_odio
+  bloque: caribe
+  region: Caribe
+  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion migrantes) ("Republica Dominicana"
+    OR Cuba OR Haiti OR "Puerto Rico") when:3d
+  gl: DO
+  hl: es-419
+  pais: *id005
+  eje_esperado: odio
+  prioridad: 3
+  verificado: true
+- id: gnews_brasil_normativa
+  bloque: brasil
+  region: Brasil
+  query: ("politica migratoria" OR decreto OR lei OR visto OR asilo migrantes imigrantes) (Brasil) when:3d
+  gl: BR
+  hl: pt-BR
+  pais: &id006
+  - BR
+  eje_esperado: normativa
+  prioridad: 2
+  verificado: true
+- id: gnews_brasil_derechos
+  bloque: brasil
+  region: Brasil
+  query: (deportacao OR expulsao OR detencao OR "direitos dos migrantes" OR refugiados) (Brasil) when:3d
+  gl: BR
+  hl: pt-BR
+  pais: *id006
+  eje_esperado: derechos
+  prioridad: 2
+  verificado: true
+- id: gnews_brasil_odio
+  bloque: brasil
+  region: Brasil
+  query: (xenofobia OR "discurso de odio" OR racismo migrantes imigrantes) (Brasil) when:3d
+  gl: BR
+  hl: pt-BR
+  pais: *id006
+  eje_esperado: odio
+  prioridad: 3
+  verificado: true
+- id: gnews_eeuu_en_normativa
+  bloque: eeuu_en
+  region: Estados Unidos, prensa en ingles
+  query: immigration policy OR executive order OR visa OR asylum migrants when:3d
+  gl: US
+  hl: en-US
+  pais: &id007
+  - US
+  eje_esperado: normativa
+  prioridad: 2
+  verificado: true
+- id: gnews_eeuu_en_derechos
+  bloque: eeuu_en
+  region: Estados Unidos, prensa en ingles
+  query: deportation OR detention OR "migrant rights" OR refugees when:3d
+  gl: US
+  hl: en-US
+  pais: *id007
+  eje_esperado: derechos
+  prioridad: 2
+  verificado: true
+- id: gnews_eeuu_en_odio
+  bloque: eeuu_en
+  region: Estados Unidos, prensa en ingles
+  query: xenophobia OR "hate speech" OR anti-immigrant rhetoric when:3d
+  gl: US
+  hl: en-US
+  pais: *id007
+  eje_esperado: odio
+  prioridad: 3
+  verificado: true
+organismos:
+- id: cels
+  nombre: CELS
+  url_base: https://www.cels.org.ar/feed
+  tipo_fuente: organismo
+  pais:
+  - AR
+  prioridad: 1
+  verificado: true
+  nota: 'Feed confirmado 2026-07-31: 10 entradas, la mas reciente de ayer. Aliado institucional.'
+- id: ippdh_mercosur
+  nombre: IPPDH Mercosur
+  url_base: https://www.ippdh.mercosur.int/feed
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 2
+  verificado: true
+  nota: Confirmado pero con UNA entrada. Señal ocasional, no fuente de flujo.
+- id: rpm_chile
+  nombre: Red Panamericana de Migraciones
+  url_base: null
+  tipo_fuente: organismo
+  pais:
+  - CL
+  - REGIONAL
+  prioridad: 2
+  verificado: false
+  nota: Completar URL. Aliado institucional, contacto directo disponible.
 cobertura_agregada:
-  - id: gdelt_migracion_es
-    query: 'migrantes OR migración sourcelang:spanish'
-    modo: artlist
-    prioridad: 2
-    verificado: true
-    nota: >
-      HTTP 429 en dos corridas consecutivas desde Actions. Las IPs de los
-      runners son compartidas y llegan con el cupo consumido. Requiere
-      reintento con espera, o mudar esta fuente a Render.
-
-  - id: gdelt_volumen_tema
-    modo: timelinevol
-    prioridad: 1
-    verificado: true
-    nota: >
-      No es una fuente de items. Se consulta por tema ya detectado para obtener
-      el volumen de cobertura y calcular el factor de subcobertura del score.
-
-# ---------------------------------------------------------------------------
-# DEMANDA DE INFORMACIÓN — qué necesita la gente, no qué publica la prensa.
-# Es la señal más valiosa para periodismo de servicio. Alimenta también al
-# Chatbot Migrante.
-# ---------------------------------------------------------------------------
+- id: gdelt_volumen_tema
+  modo: timelinevol
+  prioridad: 1
+  verificado: true
+  nota: No es fuente de items. Se consulta por tema ya detectado para medir volumen de cobertura y calcular
+    el factor de subcobertura del score.
+- id: gdelt_migracion_es
+  query: migrantes OR migracion sourcelang:spanish
+  modo: artlist
+  prioridad: 2
+  verificado: true
+  nota: 'HTTP 429 en dos corridas consecutivas desde Actions: las IPs de los runners son compartidas
+    y llegan con el cupo consumido. Requiere reintento con espera, o ejecutarla desde una IP no compartida.'
 tendencias_busqueda:
-  - id: trends_tramites
-    biblioteca: pytrends
-    geo: AR
-    prioridad: 1
-    verificado: false
-    nota: pytrends se rompe periódicamente por cambios de Google. Aislar y tolerar fallo.
-    terminos:
-      - radicación extranjeros
-      - DNI extranjero
-      - residencia precaria
-      - certificado de antecedentes migraciones
-      - turno migraciones
-      - visa humanitaria
-      - reunificación familiar
-      - convalidación de título extranjero
-
-# ---------------------------------------------------------------------------
-# SOCIAL — solo APIs abiertas y gratuitas. X e Instagram quedan fuera:
-# el costo de API no se justifica para el volumen que necesitamos.
-# ---------------------------------------------------------------------------
+- id: trends_tramites
+  biblioteca: pytrends
+  geo: AR
+  prioridad: 2
+  verificado: false
+  nota: pytrends se rompe periodicamente por cambios de Google. Aislar y tolerar fallo.
+  terminos:
+  - radicacion extranjeros
+  - DNI extranjero
+  - residencia precaria
+  - turno migraciones
+  - visa humanitaria
+  - reunificacion familiar
+  - convalidacion de titulo extranjero
+  - asilo
 social:
-  - id: bluesky_migracion
-    nombre: Bluesky (búsqueda pública)
-    endpoint: https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts
-    prioridad: 2
-    verificado: true
-    nota: Endpoint público sin autenticación. Respetar rate limit.
-    terminos: [migrantes Argentina, xenofobia, política migratoria]
-
-  - id: reddit_comunidades
-    nombre: Reddit
-    endpoint_patron: https://www.reddit.com/r/{sub}/new.json
-    prioridad: 3
-    verificado: true
-    nota: >
-      Requiere User-Agent propio. Valor sobre todo para detectar necesidades
-      concretas y problemas de trámite, no para noticias.
-    subs: [argentina, inmigracion, expats]
-
-# ---------------------------------------------------------------------------
-# EJES DE CLASIFICACIÓN — los usa prompts/clasificacion.md
-# ---------------------------------------------------------------------------
+- id: bluesky_migracion
+  nombre: Bluesky, busqueda publica
+  endpoint: https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts
+  prioridad: 2
+  verificado: true
+  nota: Endpoint publico sin autenticacion. Volumen bajo en castellano pero limpio.
+  terminos:
+  - migrantes
+  - xenofobia
+  - deportacion
+  - politica migratoria
+- id: youtube_migracion
+  nombre: YouTube Data API v3
+  prioridad: 3
+  verificado: false
+  nota: 'Requiere API key con cupo gratuito diario. Valor: detectar discurso y desinformacion en formato
+    audiovisual, que es donde mas circula.'
+- id: corresponsales
+  nombre: Red de corresponsales de Refugio
+  prioridad: 1
+  verificado: false
+  nota: 'NO ES UNA API. Entrada humana: un corresponsal reporta una señal desde
+    su territorio. Es la fuente con mayor ventaja comparativa del proyecto y la que ninguna plataforma
+    puede replicar. Implementar en el modulo de coordinacion.'
+descartadas:
+- id: boletin_oficial_ar
+  motivo: Sin feed. El dominio redirige a argentina.gob.ar/normativa.
+  fecha: '2026-07-31'
+- id: infoleg_ar
+  motivo: El feed responde pero trae una unica entrada de 2011.
+  fecha: '2026-07-31'
+- id: diario_oficial_cl
+  motivo: El feed responde pero la ultima entrada es de 2017.
+  fecha: '2026-07-31'
+- id: dnm_ar
+  motivo: Sin feed ni rutas convencionales.
+  fecha: '2026-07-31'
+- id: oim_sudamerica
+  motivo: Sin feed. Seguir via Google News.
+  fecha: '2026-07-31'
+- id: cidh
+  motivo: Sin feed.
+  fecha: '2026-07-31'
+- id: acnur_americas
+  motivo: 'HTTP 403 constante desde Actions: bloqueo por IP de datacenter. Abre normal desde un navegador
+    domestico. Si se considera imprescindible, ejecutar esta fuente desde una IP no compartida.'
+  fecha: '2026-07-31'
 ejes:
-  - id: normativa
-    nombre: Política y normativa migratoria
-  - id: derechos
-    nombre: Acceso a derechos y debido proceso
-  - id: odio
-    nombre: Discurso de odio y desinformación
-  - id: servicio
-    nombre: Trámites y periodismo de servicio
-  - id: comunidad
-    nombre: Comunidades, cultura e interculturalidad
-  - id: contexto
-    nombre: Movilidad, causas y contexto regional
-  - id: trabajo
-    nombre: Trabajo y economía migrante
-
-paises_prioritarios: [AR, BO, PE, PY, CL, UY, VE, BR, CO, EC]
-paises_secundarios: [US, MX, ES, HT, SV, HN, GT]
+- id: normativa
+  nombre: Politica y normativa migratoria
+  activo: true
+- id: derechos
+  nombre: Acceso a derechos y debido proceso
+  activo: true
+- id: odio
+  nombre: Discurso de odio y desinformacion
+  activo: true
+- id: servicio
+  nombre: Tramites y periodismo de servicio
+  activo: true
+- id: comunidad
+  nombre: Comunidades, cultura e interculturalidad
+  activo: false
+- id: contexto
+  nombre: Movilidad, causas y contexto regional
+  activo: false
+- id: trabajo
+  nombre: Trabajo y economia migrante
+  activo: false
+nota_ejes: 'Los cuatro primeros arrancan activos. Los otros tres quedan definidos pero inactivos: con
+  el volumen inicial dispersarian el digest. Se activan cambiando `activo` a true, sin tocar codigo.'

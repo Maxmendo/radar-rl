@@ -54,13 +54,17 @@ jobs:
         continue-on-error: true
         run: python scripts/muestrear_feeds.py | tee datos/muestra.txt
 
-      # FASE 2: descomentar cuando exista el pipeline de ingesta
+      # FASE 2: descomentar cuando exista el pipeline de ingesta.
+      #
+      # Este repositorio NO entrega notificaciones ni se integra con ningun bot.
+      # Su unica salida son los archivos de datos/. La capa de distribucion
+      # (mail, tablero, o lo que se decida) es un proyecto aparte que lee
+      # esos archivos. Mantener esa separacion es deliberado.
+      #
       # - name: Ingesta y clasificación
       #   env:
       #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       #     ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      #     TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      #     TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       #   run: python -m nucleo.correr
 
       # Guarda el resultado en el propio repositorio.
