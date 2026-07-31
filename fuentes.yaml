@@ -18,7 +18,7 @@ normativa:
     url_base: https://www.boletinoficial.gob.ar
     tipo_fuente: normativa
     pais: [AR]
-    prioridad: 1
+    prioridad: 2
     verificado: false
     nota: >
       Buscar sección de primera sección (legislación y avisos oficiales).
@@ -31,7 +31,7 @@ normativa:
     url_base: https://www.argentina.gob.ar/interior/migraciones
     tipo_fuente: normativa
     pais: [AR]
-    prioridad: 1
+    prioridad: 3
     verificado: false
     nota: Portal argentina.gob.ar suele exponer feed de novedades por organismo.
 
@@ -40,7 +40,7 @@ normativa:
     url_base: https://www.infoleg.gob.ar
     tipo_fuente: normativa
     pais: [AR]
-    prioridad: 2
+    prioridad: 3
     verificado: false
     nota: Para contexto y texto consolidado de normas, no para detección temprana.
 
@@ -49,8 +49,10 @@ normativa:
     url_base: https://www.diariooficial.interior.gob.cl
     tipo_fuente: normativa
     pais: [CL]
-    prioridad: 2
+    prioridad: 3
     verificado: false
+    nota: >
+      DE BAJA. /feed responde pero la ultima entrada es de 2017.
 
 # ---------------------------------------------------------------------------
 # ORGANISMOS Y SOCIEDAD CIVIL — fuente primaria, alta confiabilidad
@@ -61,41 +63,55 @@ organismos:
     url_base: https://www.acnur.org
     tipo_fuente: organismo
     pais: [REGIONAL]
-    prioridad: 1
+    prioridad: 3
     verificado: false
+    nota: >
+      HTTP 403 constante desde GitHub Actions. Bloqueo por IP de datacenter:
+      el sitio abre normal desde un navegador domestico. Si se considera
+      imprescindible, mover esta fuente sola a Render, que tiene IP propia.
 
   - id: oim_sudamerica
     nombre: OIM / IOM Sudamérica
     url_base: https://rosanjose.iom.int
     tipo_fuente: organismo
     pais: [REGIONAL]
-    prioridad: 1
+    prioridad: 3
     verificado: false
+    nota: >
+      SIN FEED (verificado 2026-07-31). Evaluar si OIM publica boletin por mail
+      o si conviene seguirla via Google News.
 
   - id: cels
     nombre: CELS
-    url_base: https://www.cels.org.ar
+    url_base: https://www.cels.org.ar/feed
     tipo_fuente: organismo
     pais: [AR]
     prioridad: 1
-    verificado: false
-    nota: Aliado institucional. Alta prioridad editorial.
+    verificado: true
+    nota: >
+      Feed confirmado 2026-07-31: 10 entradas, la mas reciente de ayer.
+      Aliado institucional. Alta prioridad editorial.
 
   - id: cidh
     nombre: Comisión Interamericana de Derechos Humanos
     url_base: https://www.oas.org/es/cidh
     tipo_fuente: organismo
     pais: [REGIONAL]
-    prioridad: 2
+    prioridad: 3
     verificado: false
+    nota: >
+      SIN FEED (verificado 2026-07-31).
 
   - id: ippdh_mercosur
     nombre: IPPDH Mercosur
-    url_base: https://www.ippdh.mercosur.int
+    url_base: https://www.ippdh.mercosur.int/feed
     tipo_fuente: organismo
     pais: [REGIONAL]
     prioridad: 2
-    verificado: false
+    verificado: true
+    nota: >
+      Feed confirmado 2026-07-31 pero con UNA sola entrada. Volumen minimo.
+      Util como señal ocasional, no como fuente de flujo.
 
   - id: rpm_chile
     nombre: Red Panamericana de Migraciones / RPM
@@ -136,6 +152,20 @@ medios_google_news:
     prioridad: 1
     verificado: true
 
+  # Agregadas 2026-07-31 para compensar la falta de fuente normativa directa.
+  # No reemplazan al Boletin Oficial, pero detectan la norma via cobertura.
+  - id: gnews_normativa_migratoria_ar
+    query: '"Boletin Oficial" OR DNU OR decreto OR resolucion migraciones extranjeros Argentina when:3d'
+    gl: AR
+    prioridad: 1
+    verificado: true
+
+  - id: gnews_fallos_migratorios
+    query: 'fallo OR amparo OR "medida cautelar" migrantes OR extranjeros Argentina when:7d'
+    gl: AR
+    prioridad: 2
+    verificado: true
+
   - id: gnews_desplazamiento_regional
     query: 'desplazamiento forzado OR crisis migratoria América Latina when:7d'
     gl: AR
@@ -152,8 +182,12 @@ cobertura_agregada:
   - id: gdelt_migracion_es
     query: 'migrantes OR migración sourcelang:spanish'
     modo: artlist
-    prioridad: 1
+    prioridad: 2
     verificado: true
+    nota: >
+      HTTP 429 en dos corridas consecutivas desde Actions. Las IPs de los
+      runners son compartidas y llegan con el cupo consumido. Requiere
+      reintento con espera, o mudar esta fuente a Render.
 
   - id: gdelt_volumen_tema
     modo: timelinevol
