@@ -50,6 +50,10 @@ jobs:
         continue-on-error: true
         run: python scripts/descubrir_feeds.py | tee datos/feeds.txt
 
+      - name: Muestrear feeds
+        continue-on-error: true
+        run: python scripts/muestrear_feeds.py | tee datos/muestra.txt
+
       # FASE 2: descomentar cuando exista el pipeline de ingesta
       # - name: Ingesta y clasificación
       #   env:
