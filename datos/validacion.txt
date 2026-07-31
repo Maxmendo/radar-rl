@@ -2,7 +2,7 @@
 7 vivas / 10 probadas
 
 Revisar en fuentes.yaml:
-  - boletin_oficial_ar: ConnectionError: HTTPSConnectionPool(host='www.boletinoficial.gob.ar', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.boletinoficial.gob.ar', port=443): Failed to resolve 'www.boletinoficial.gob.ar' ([Errno -3] Temporary failure in name resolution)"))
+  - boletin_oficial_ar: ConnectTimeout: HTTPSConnectionPool(host='www.boletinoficial.gob.ar', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.boletinoficial.gob.ar', port=443) at 0x7fc911eae090>, 'Connection to www.boletinoficial.gob.ar timed out. (connect timeout=15)'))
   - acnur_americas: HTTP 403
   - gdelt_migracion_es: HTTP 429
 
