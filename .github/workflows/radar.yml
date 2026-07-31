@@ -39,12 +39,16 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      # FASE 1: solo validación de fuentes.
+      # FASE 1: validación de fuentes y descubrimiento de feeds.
       # `continue-on-error` está en true a propósito: que una fuente esté caída
       # no debe marcar la corrida como fallida ni mandar alertas.
       - name: Validar fuentes
         continue-on-error: true
         run: python scripts/validar_fuentes.py --prioridad 1 | tee datos/validacion.txt
+
+      - name: Descubrir feeds
+        continue-on-error: true
+        run: python scripts/descubrir_feeds.py | tee datos/feeds.txt
 
       # FASE 2: descomentar cuando exista el pipeline de ingesta
       # - name: Ingesta y clasificación
@@ -58,12 +62,15 @@ jobs:
       # Guarda el resultado en el propio repositorio.
       # Ventaja para esta etapa: es gratis, queda versionado y podés ver la
       # historia de lo que vio el radar cada día con `git log`.
+      # El `pull --rebase` evita que la corrida falle si hubo cambios subidos
+      # desde otra máquina mientras esta corría.
       - name: Guardar resultados
         run: |
           git config user.name "radar-rl"
           git config user.email "radar@refugiolatinoamericano.com"
           git add datos/
-          git diff --staged --quiet || git commit -m "Radar: corrida $(date -u +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "Radar: corrida $(date -u +%Y-%m-%d %H:%M) UTC"
+          git pull --rebase origin main
           git push
 
       # Deja los archivos descargables desde la pestaña Actions durante 14 días,
