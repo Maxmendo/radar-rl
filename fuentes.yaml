@@ -1,0 +1,231 @@
+# Registro de fuentes del radar migratorio
+#
+# IMPORTANTE: las URLs marcadas con `verificado: false` son CANDIDATAS.
+# Antes de escribir cualquier módulo de ingesta, correr:
+#     python scripts/validar_fuentes.py
+# El script prueba cada endpoint y reporta cuáles responden y con qué formato.
+# Solo se implementan módulos para fuentes verificadas. Las que fallen se
+# corrigen o se dan de baja de este archivo. No adivinar URLs.
+#
+# prioridad: 1 = fase 1 (arranque)  2 = fase 2  3 = evaluar más adelante
+
+# ---------------------------------------------------------------------------
+# NORMATIVA — el diferencial real del radar. Nadie cubre esto en tiempo casi real.
+# ---------------------------------------------------------------------------
+normativa:
+  - id: boletin_oficial_ar
+    nombre: Boletín Oficial de la República Argentina
+    url_base: https://www.boletinoficial.gob.ar
+    tipo_fuente: normativa
+    pais: [AR]
+    prioridad: 1
+    verificado: false
+    nota: >
+      Buscar sección de primera sección (legislación y avisos oficiales).
+      Filtrar por organismos: Dirección Nacional de Migraciones, Ministerio del
+      Interior, RENAPER, Cancillería. Si no hay RSS estable, evaluar el buscador
+      con parámetros de fecha. Nunca scrapear con selectores frágiles de layout.
+
+  - id: dnm_ar
+    nombre: Dirección Nacional de Migraciones (Argentina)
+    url_base: https://www.argentina.gob.ar/interior/migraciones
+    tipo_fuente: normativa
+    pais: [AR]
+    prioridad: 1
+    verificado: false
+    nota: Portal argentina.gob.ar suele exponer feed de novedades por organismo.
+
+  - id: infoleg_ar
+    nombre: InfoLEG
+    url_base: https://www.infoleg.gob.ar
+    tipo_fuente: normativa
+    pais: [AR]
+    prioridad: 2
+    verificado: false
+    nota: Para contexto y texto consolidado de normas, no para detección temprana.
+
+  - id: diario_oficial_cl
+    nombre: Diario Oficial de Chile
+    url_base: https://www.diariooficial.interior.gob.cl
+    tipo_fuente: normativa
+    pais: [CL]
+    prioridad: 2
+    verificado: false
+
+# ---------------------------------------------------------------------------
+# ORGANISMOS Y SOCIEDAD CIVIL — fuente primaria, alta confiabilidad
+# ---------------------------------------------------------------------------
+organismos:
+  - id: acnur_americas
+    nombre: ACNUR / UNHCR Américas
+    url_base: https://www.acnur.org
+    tipo_fuente: organismo
+    pais: [REGIONAL]
+    prioridad: 1
+    verificado: false
+
+  - id: oim_sudamerica
+    nombre: OIM / IOM Sudamérica
+    url_base: https://rosanjose.iom.int
+    tipo_fuente: organismo
+    pais: [REGIONAL]
+    prioridad: 1
+    verificado: false
+
+  - id: cels
+    nombre: CELS
+    url_base: https://www.cels.org.ar
+    tipo_fuente: organismo
+    pais: [AR]
+    prioridad: 1
+    verificado: false
+    nota: Aliado institucional. Alta prioridad editorial.
+
+  - id: cidh
+    nombre: Comisión Interamericana de Derechos Humanos
+    url_base: https://www.oas.org/es/cidh
+    tipo_fuente: organismo
+    pais: [REGIONAL]
+    prioridad: 2
+    verificado: false
+
+  - id: ippdh_mercosur
+    nombre: IPPDH Mercosur
+    url_base: https://www.ippdh.mercosur.int
+    tipo_fuente: organismo
+    pais: [REGIONAL]
+    prioridad: 2
+    verificado: false
+
+  - id: rpm_chile
+    nombre: Red Panamericana de Migraciones / RPM
+    url_base: null
+    tipo_fuente: organismo
+    pais: [CL, REGIONAL]
+    prioridad: 2
+    verificado: false
+    nota: Completar URL. Aliado institucional, contacto directo disponible.
+
+# ---------------------------------------------------------------------------
+# MEDIOS — vía Google News RSS. Formato estable y sin API key.
+# Patrón: https://news.google.com/rss/search?q={QUERY}&hl=es-419&gl={PAIS}&ceid={PAIS}:es-419
+# Usar comillas para frases exactas y `when:7d` para acotar ventana temporal.
+# ---------------------------------------------------------------------------
+medios_google_news:
+  - id: gnews_politica_migratoria_ar
+    query: '"política migratoria" OR "decreto migratorio" OR "Migraciones" Argentina when:3d'
+    gl: AR
+    prioridad: 1
+    verificado: true
+
+  - id: gnews_radicacion_ar
+    query: '"radicación" OR "residencia precaria" OR "expulsión" migrantes Argentina when:3d'
+    gl: AR
+    prioridad: 1
+    verificado: true
+
+  - id: gnews_xenofobia_regional
+    query: 'xenofobia OR "discurso de odio" migrantes when:3d'
+    gl: AR
+    prioridad: 1
+    verificado: true
+
+  - id: gnews_migracion_bolivia_peru
+    query: 'migrantes bolivianos OR peruanos OR venezolanos Argentina when:7d'
+    gl: AR
+    prioridad: 1
+    verificado: true
+
+  - id: gnews_desplazamiento_regional
+    query: 'desplazamiento forzado OR crisis migratoria América Latina when:7d'
+    gl: AR
+    prioridad: 2
+    verificado: true
+
+# ---------------------------------------------------------------------------
+# COBERTURA AGREGADA — GDELT. Sirve para DOS cosas:
+#   1) detectar hechos que no llegan a los medios locales
+#   2) medir volumen de cobertura, insumo del scoring de "baja cobertura"
+# API: https://api.gdeltproject.org/api/v2/doc/doc?query=...&mode=artlist&format=json
+# ---------------------------------------------------------------------------
+cobertura_agregada:
+  - id: gdelt_migracion_es
+    query: 'migrantes OR migración sourcelang:spanish'
+    modo: artlist
+    prioridad: 1
+    verificado: true
+
+  - id: gdelt_volumen_tema
+    modo: timelinevol
+    prioridad: 1
+    verificado: true
+    nota: >
+      No es una fuente de items. Se consulta por tema ya detectado para obtener
+      el volumen de cobertura y calcular el factor de subcobertura del score.
+
+# ---------------------------------------------------------------------------
+# DEMANDA DE INFORMACIÓN — qué necesita la gente, no qué publica la prensa.
+# Es la señal más valiosa para periodismo de servicio. Alimenta también al
+# Chatbot Migrante.
+# ---------------------------------------------------------------------------
+tendencias_busqueda:
+  - id: trends_tramites
+    biblioteca: pytrends
+    geo: AR
+    prioridad: 1
+    verificado: false
+    nota: pytrends se rompe periódicamente por cambios de Google. Aislar y tolerar fallo.
+    terminos:
+      - radicación extranjeros
+      - DNI extranjero
+      - residencia precaria
+      - certificado de antecedentes migraciones
+      - turno migraciones
+      - visa humanitaria
+      - reunificación familiar
+      - convalidación de título extranjero
+
+# ---------------------------------------------------------------------------
+# SOCIAL — solo APIs abiertas y gratuitas. X e Instagram quedan fuera:
+# el costo de API no se justifica para el volumen que necesitamos.
+# ---------------------------------------------------------------------------
+social:
+  - id: bluesky_migracion
+    nombre: Bluesky (búsqueda pública)
+    endpoint: https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts
+    prioridad: 2
+    verificado: true
+    nota: Endpoint público sin autenticación. Respetar rate limit.
+    terminos: [migrantes Argentina, xenofobia, política migratoria]
+
+  - id: reddit_comunidades
+    nombre: Reddit
+    endpoint_patron: https://www.reddit.com/r/{sub}/new.json
+    prioridad: 3
+    verificado: true
+    nota: >
+      Requiere User-Agent propio. Valor sobre todo para detectar necesidades
+      concretas y problemas de trámite, no para noticias.
+    subs: [argentina, inmigracion, expats]
+
+# ---------------------------------------------------------------------------
+# EJES DE CLASIFICACIÓN — los usa prompts/clasificacion.md
+# ---------------------------------------------------------------------------
+ejes:
+  - id: normativa
+    nombre: Política y normativa migratoria
+  - id: derechos
+    nombre: Acceso a derechos y debido proceso
+  - id: odio
+    nombre: Discurso de odio y desinformación
+  - id: servicio
+    nombre: Trámites y periodismo de servicio
+  - id: comunidad
+    nombre: Comunidades, cultura e interculturalidad
+  - id: contexto
+    nombre: Movilidad, causas y contexto regional
+  - id: trabajo
+    nombre: Trabajo y economía migrante
+
+paises_prioritarios: [AR, BO, PE, PY, CL, UY, VE, BR, CO, EC]
+paises_secundarios: [US, MX, ES, HT, SV, HN, GT]
