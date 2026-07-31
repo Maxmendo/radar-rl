@@ -1,14 +1,24 @@
 # Registro de fuentes del radar migratorio
 #
 # ALCANCE: America Latina y el Caribe + Estados Unidos.
-# Organizado en bloques subregionales en vez de pais por pais, para mantener
-# el volumen manejable.
 #
 # DOS CAPAS QUE NO HAY QUE CONFUNDIR:
 #   1. BUSQUEDA  -> este archivo. Define QUE ENTRA al sistema.
 #   2. CLASIFICACION -> prompts/clasificacion.md. Define COMO SE ETIQUETA
-#      lo que ya entro. Los ejes, poblaciones y etapas de este archivo son
-#      el vocabulario que usa el clasificador; NO son terminos de busqueda.
+#      lo que ya entro. Ejes, poblaciones y etapas son el vocabulario del
+#      clasificador; NO son terminos de busqueda.
+#
+# REGLA DE ORO PARA LAS CONSULTAS (aprendida el 2026-07-31):
+#   Consulta corta o Google News ignora `when:`.
+#   Verificado: las consultas de mas de ~120 caracteres devolvieron 100
+#   entradas con material de hasta 15 anios de antiguedad, ignorando la
+#   ventana temporal. Las de menos de 100 caracteres respetaron los 3 dias.
+#   Reglas derivadas:
+#     - Maximo 4 terminos OR por consulta.
+#     - Sin ancla geografica larga: `gl` y `hl` ya sesgan la edicion.
+#     - Nunca terminos ambiguos sueltos: `visa` trae la tarjeta de credito,
+#       `regularizacion` trae cooperativas. Siempre calificados.
+#     - Si una consulta devuelve exactamente 100 entradas, sospechar.
 #
 # DECISION 2026-07-31: sin fuentes normativas primarias. No hay feeds
 # utilizables (ver `descartadas`) y el cambio normativo se detecta igual via
@@ -28,8 +38,8 @@ medios_google_news:
 - id: gnews_cono_sur_normativa
   bloque: cono_sur
   region: Cono Sur
-  query: ("politica migratoria" OR decreto OR ley OR resolucion OR reglamento OR "endurecimiento migratorio"
-    OR securitizacion migrantes) (Argentina OR Chile OR Uruguay OR Paraguay) when:3d
+  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
+  largo_query: 77
   gl: AR
   hl: es-419
   pais: &id001
@@ -43,9 +53,9 @@ medios_google_news:
 - id: gnews_cono_sur_estatus
   bloque: cono_sur
   region: Cono Sur
-  query: (regularizacion OR "residencia permanente" OR "residencia precaria" OR "permiso transitorio"
-    OR "migracion irregular" OR "migracion ilegal" OR indocumentados OR visa) (Argentina OR Chile OR
-    Uruguay OR Paraguay) when:3d
+  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
+    when:1d'
+  largo_query: 104
   gl: AR
   hl: es-419
   pais: *id001
@@ -55,19 +65,30 @@ medios_google_news:
 - id: gnews_cono_sur_derechos
   bloque: cono_sur
   region: Cono Sur
-  query: (deportacion OR expulsion OR detencion OR "no devolucion" OR "non-refoulement" OR refugiados
-    OR asilo OR "derechos humanos" migrantes) (Argentina OR Chile OR Uruguay OR Paraguay) when:3d
+  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
+  largo_query: 74
   gl: AR
   hl: es-419
   pais: *id001
   eje_esperado: derechos
   prioridad: 1
   verificado: true
+- id: gnews_cono_sur_asilo
+  bloque: cono_sur
+  region: Cono Sur
+  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
+  largo_query: 64
+  gl: AR
+  hl: es-419
+  pais: *id001
+  eje_esperado: asilo
+  prioridad: 1
+  verificado: true
 - id: gnews_cono_sur_odio
   bloque: cono_sur
   region: Cono Sur
-  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion OR "invasion migratoria" migrantes)
-    (Argentina OR Chile OR Uruguay OR Paraguay) when:3d
+  query: xenofobia OR "discurso de odio" migrantes when:1d
+  largo_query: 49
   gl: AR
   hl: es-419
   pais: *id001
@@ -77,8 +98,8 @@ medios_google_news:
 - id: gnews_andina_normativa
   bloque: andina
   region: Region Andina
-  query: ("politica migratoria" OR decreto OR ley OR resolucion OR reglamento OR "endurecimiento migratorio"
-    OR securitizacion migrantes) (Bolivia OR Peru OR Ecuador OR Colombia OR Venezuela) when:3d
+  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
+  largo_query: 77
   gl: CO
   hl: es-419
   pais: &id002
@@ -93,9 +114,9 @@ medios_google_news:
 - id: gnews_andina_estatus
   bloque: andina
   region: Region Andina
-  query: (regularizacion OR "residencia permanente" OR "residencia precaria" OR "permiso transitorio"
-    OR "migracion irregular" OR "migracion ilegal" OR indocumentados OR visa) (Bolivia OR Peru OR Ecuador
-    OR Colombia OR Venezuela) when:3d
+  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
+    when:1d'
+  largo_query: 104
   gl: CO
   hl: es-419
   pais: *id002
@@ -105,21 +126,30 @@ medios_google_news:
 - id: gnews_andina_derechos
   bloque: andina
   region: Region Andina
-  query: (deportacion OR expulsion OR detencion OR "no devolucion" OR "non-refoulement" OR refugiados
-    OR asilo OR "derechos humanos" migrantes) (Bolivia OR Peru OR Ecuador OR Colombia OR Venezuela)
-    when:3d
+  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
+  largo_query: 74
   gl: CO
   hl: es-419
   pais: *id002
   eje_esperado: derechos
   prioridad: 1
   verificado: true
+- id: gnews_andina_asilo
+  bloque: andina
+  region: Region Andina
+  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
+  largo_query: 64
+  gl: CO
+  hl: es-419
+  pais: *id002
+  eje_esperado: asilo
+  prioridad: 1
+  verificado: true
 - id: gnews_andina_rutas
   bloque: andina
   region: Region Andina
-  query: ("tapon del Darien" OR Darien OR "ruta migratoria" OR naufragio OR "mar Caribe" OR balseros
-    OR "caravana migrante" OR desaparecidos migrantes) (Bolivia OR Peru OR Ecuador OR Colombia OR Venezuela)
-    when:3d
+  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
+  largo_query: 76
   gl: CO
   hl: es-419
   pais: *id002
@@ -129,8 +159,8 @@ medios_google_news:
 - id: gnews_andina_odio
   bloque: andina
   region: Region Andina
-  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion OR "invasion migratoria" migrantes)
-    (Bolivia OR Peru OR Ecuador OR Colombia OR Venezuela) when:3d
+  query: xenofobia OR "discurso de odio" migrantes when:1d
+  largo_query: 49
   gl: CO
   hl: es-419
   pais: *id002
@@ -140,9 +170,8 @@ medios_google_news:
 - id: gnews_mexico_ca_normativa
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: ("politica migratoria" OR decreto OR ley OR resolucion OR reglamento OR "endurecimiento migratorio"
-    OR securitizacion migrantes) (Mexico OR Guatemala OR Honduras OR "El Salvador" OR Nicaragua OR "Costa
-    Rica" OR Panama) when:3d
+  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
+  largo_query: 77
   gl: MX
   hl: es-419
   pais: &id003
@@ -159,9 +188,9 @@ medios_google_news:
 - id: gnews_mexico_ca_estatus
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: (regularizacion OR "residencia permanente" OR "residencia precaria" OR "permiso transitorio"
-    OR "migracion irregular" OR "migracion ilegal" OR indocumentados OR visa) (Mexico OR Guatemala OR
-    Honduras OR "El Salvador" OR Nicaragua OR "Costa Rica" OR Panama) when:3d
+  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
+    when:1d'
+  largo_query: 104
   gl: MX
   hl: es-419
   pais: *id003
@@ -171,21 +200,30 @@ medios_google_news:
 - id: gnews_mexico_ca_derechos
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: (deportacion OR expulsion OR detencion OR "no devolucion" OR "non-refoulement" OR refugiados
-    OR asilo OR "derechos humanos" migrantes) (Mexico OR Guatemala OR Honduras OR "El Salvador" OR Nicaragua
-    OR "Costa Rica" OR Panama) when:3d
+  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
+  largo_query: 74
   gl: MX
   hl: es-419
   pais: *id003
   eje_esperado: derechos
   prioridad: 1
   verificado: true
+- id: gnews_mexico_ca_asilo
+  bloque: mexico_ca
+  region: Mexico y Centroamerica
+  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
+  largo_query: 64
+  gl: MX
+  hl: es-419
+  pais: *id003
+  eje_esperado: asilo
+  prioridad: 1
+  verificado: true
 - id: gnews_mexico_ca_rutas
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: ("tapon del Darien" OR Darien OR "ruta migratoria" OR naufragio OR "mar Caribe" OR balseros
-    OR "caravana migrante" OR desaparecidos migrantes) (Mexico OR Guatemala OR Honduras OR "El Salvador"
-    OR Nicaragua OR "Costa Rica" OR Panama) when:3d
+  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
+  largo_query: 76
   gl: MX
   hl: es-419
   pais: *id003
@@ -195,8 +233,8 @@ medios_google_news:
 - id: gnews_mexico_ca_odio
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion OR "invasion migratoria" migrantes)
-    (Mexico OR Guatemala OR Honduras OR "El Salvador" OR Nicaragua OR "Costa Rica" OR Panama) when:3d
+  query: xenofobia OR "discurso de odio" migrantes when:1d
+  largo_query: 49
   gl: MX
   hl: es-419
   pais: *id003
@@ -206,8 +244,8 @@ medios_google_news:
 - id: gnews_eeuu_es_normativa
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: ("politica migratoria" OR decreto OR ley OR resolucion OR reglamento OR "endurecimiento migratorio"
-    OR securitizacion migrantes) ("Estados Unidos" OR ICE OR frontera) when:3d
+  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
+  largo_query: 77
   gl: US
   hl: es-419
   pais: &id004
@@ -218,9 +256,9 @@ medios_google_news:
 - id: gnews_eeuu_es_estatus
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: (regularizacion OR "residencia permanente" OR "residencia precaria" OR "permiso transitorio"
-    OR "migracion irregular" OR "migracion ilegal" OR indocumentados OR visa) ("Estados Unidos" OR ICE
-    OR frontera) when:3d
+  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
+    when:1d'
+  largo_query: 104
   gl: US
   hl: es-419
   pais: *id004
@@ -230,19 +268,30 @@ medios_google_news:
 - id: gnews_eeuu_es_derechos
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: (deportacion OR expulsion OR detencion OR "no devolucion" OR "non-refoulement" OR refugiados
-    OR asilo OR "derechos humanos" migrantes) ("Estados Unidos" OR ICE OR frontera) when:3d
+  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
+  largo_query: 74
   gl: US
   hl: es-419
   pais: *id004
   eje_esperado: derechos
   prioridad: 1
   verificado: true
+- id: gnews_eeuu_es_asilo
+  bloque: eeuu_es
+  region: Estados Unidos, prensa en espanol
+  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
+  largo_query: 64
+  gl: US
+  hl: es-419
+  pais: *id004
+  eje_esperado: asilo
+  prioridad: 1
+  verificado: true
 - id: gnews_eeuu_es_rutas
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: ("tapon del Darien" OR Darien OR "ruta migratoria" OR naufragio OR "mar Caribe" OR balseros
-    OR "caravana migrante" OR desaparecidos migrantes) ("Estados Unidos" OR ICE OR frontera) when:3d
+  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
+  largo_query: 76
   gl: US
   hl: es-419
   pais: *id004
@@ -252,8 +301,8 @@ medios_google_news:
 - id: gnews_eeuu_es_odio
   bloque: eeuu_es
   region: Estados Unidos, prensa en espanol
-  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion OR "invasion migratoria" migrantes)
-    ("Estados Unidos" OR ICE OR frontera) when:3d
+  query: xenofobia OR "discurso de odio" migrantes when:1d
+  largo_query: 49
   gl: US
   hl: es-419
   pais: *id004
@@ -263,8 +312,8 @@ medios_google_news:
 - id: gnews_caribe_normativa
   bloque: caribe
   region: Caribe
-  query: ("politica migratoria" OR decreto OR ley OR resolucion OR reglamento OR "endurecimiento migratorio"
-    OR securitizacion migrantes) ("Republica Dominicana" OR Cuba OR Haiti OR "Puerto Rico") when:3d
+  query: '"politica migratoria" OR "decreto migratorio" OR "ley de migraciones" when:1d'
+  largo_query: 77
   gl: DO
   hl: es-419
   pais: &id005
@@ -278,9 +327,9 @@ medios_google_news:
 - id: gnews_caribe_estatus
   bloque: caribe
   region: Caribe
-  query: (regularizacion OR "residencia permanente" OR "residencia precaria" OR "permiso transitorio"
-    OR "migracion irregular" OR "migracion ilegal" OR indocumentados OR visa) ("Republica Dominicana"
-    OR Cuba OR Haiti OR "Puerto Rico") when:3d
+  query: '"regularizacion migratoria" OR "residencia precaria" OR indocumentados OR "situacion migratoria"
+    when:1d'
+  largo_query: 104
   gl: DO
   hl: es-419
   pais: *id005
@@ -290,21 +339,30 @@ medios_google_news:
 - id: gnews_caribe_derechos
   bloque: caribe
   region: Caribe
-  query: (deportacion OR expulsion OR detencion OR "no devolucion" OR "non-refoulement" OR refugiados
-    OR asilo OR "derechos humanos" migrantes) ("Republica Dominicana" OR Cuba OR Haiti OR "Puerto Rico")
-    when:3d
+  query: deportacion OR "detencion de migrantes" OR "derechos de migrantes" when:1d
+  largo_query: 74
   gl: DO
   hl: es-419
   pais: *id005
   eje_esperado: derechos
   prioridad: 2
   verificado: true
+- id: gnews_caribe_asilo
+  bloque: caribe
+  region: Caribe
+  query: '"solicitantes de asilo" OR refugiados OR "no devolucion" when:1d'
+  largo_query: 64
+  gl: DO
+  hl: es-419
+  pais: *id005
+  eje_esperado: asilo
+  prioridad: 3
+  verificado: true
 - id: gnews_caribe_rutas
   bloque: caribe
   region: Caribe
-  query: ("tapon del Darien" OR Darien OR "ruta migratoria" OR naufragio OR "mar Caribe" OR balseros
-    OR "caravana migrante" OR desaparecidos migrantes) ("Republica Dominicana" OR Cuba OR Haiti OR "Puerto
-    Rico") when:3d
+  query: '"tapon del Darien" OR "ruta migratoria" OR "migrantes desaparecidos" when:1d'
+  largo_query: 76
   gl: DO
   hl: es-419
   pais: *id005
@@ -314,8 +372,8 @@ medios_google_news:
 - id: gnews_caribe_odio
   bloque: caribe
   region: Caribe
-  query: (xenofobia OR "discurso de odio" OR racismo OR criminalizacion OR "invasion migratoria" migrantes)
-    ("Republica Dominicana" OR Cuba OR Haiti OR "Puerto Rico") when:3d
+  query: xenofobia OR "discurso de odio" migrantes when:1d
+  largo_query: 49
   gl: DO
   hl: es-419
   pais: *id005
@@ -325,8 +383,8 @@ medios_google_news:
 - id: gnews_brasil_normativa
   bloque: brasil
   region: Brasil
-  query: ("politica migratoria" OR decreto OR lei OR "endurecimento migratorio" migrantes imigrantes)
-    (Brasil) when:3d
+  query: '"politica migratoria" OR "lei de migracao" OR "decreto migratorio" when:1d'
+  largo_query: 74
   gl: BR
   hl: pt-BR
   pais: &id006
@@ -337,7 +395,8 @@ medios_google_news:
 - id: gnews_brasil_estatus
   bloque: brasil
   region: Brasil
-  query: (regularizacao OR "residencia permanente" OR indocumentados OR visto migrantes) (Brasil) when:3d
+  query: '"regularizacao migratoria" OR indocumentados OR "situacao migratoria" when:1d'
+  largo_query: 77
   gl: BR
   hl: pt-BR
   pais: *id006
@@ -347,18 +406,30 @@ medios_google_news:
 - id: gnews_brasil_derechos
   bloque: brasil
   region: Brasil
-  query: (deportacao OR expulsao OR detencao OR refugiados OR asilo OR "direitos humanos" migrantes)
-    (Brasil) when:3d
+  query: deportacao OR "detencao de migrantes" OR "direitos dos migrantes" when:1d
+  largo_query: 73
   gl: BR
   hl: pt-BR
   pais: *id006
   eje_esperado: derechos
   prioridad: 2
   verificado: true
+- id: gnews_brasil_asilo
+  bloque: brasil
+  region: Brasil
+  query: '"solicitantes de asilo" OR refugiados when:1d'
+  largo_query: 45
+  gl: BR
+  hl: pt-BR
+  pais: *id006
+  eje_esperado: asilo
+  prioridad: 3
+  verificado: true
 - id: gnews_brasil_odio
   bloque: brasil
   region: Brasil
-  query: (xenofobia OR "discurso de odio" OR racismo migrantes imigrantes) (Brasil) when:3d
+  query: xenofobia OR "discurso de odio" migrantes when:1d
+  largo_query: 49
   gl: BR
   hl: pt-BR
   pais: *id006
@@ -368,7 +439,8 @@ medios_google_news:
 - id: gnews_eeuu_en_normativa
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: '"immigration policy" OR "executive order" OR crackdown OR enforcement immigrants when:3d'
+  query: '"immigration policy" OR "immigration order" OR "immigration law" when:1d'
+  largo_query: 72
   gl: US
   hl: en-US
   pais: &id007
@@ -379,7 +451,8 @@ medios_google_news:
 - id: gnews_eeuu_en_estatus
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: undocumented OR "legal status" OR "green card" OR "work permit" OR visa immigrants when:3d
+  query: '"undocumented immigrants" OR "immigration status" OR "work permit" immigrants when:1d'
+  largo_query: 85
   gl: US
   hl: en-US
   pais: *id007
@@ -389,17 +462,30 @@ medios_google_news:
 - id: gnews_eeuu_en_derechos
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: deportation OR detention OR asylum OR refugees OR "human rights" migrants when:3d
+  query: deportation OR "migrant detention" OR "immigrant rights" when:1d
+  largo_query: 64
   gl: US
   hl: en-US
   pais: *id007
   eje_esperado: derechos
   prioridad: 2
   verificado: true
+- id: gnews_eeuu_en_asilo
+  bloque: eeuu_en
+  region: Estados Unidos, prensa en ingles
+  query: '"asylum seekers" OR refugees OR "non-refoulement" when:1d'
+  largo_query: 57
+  gl: US
+  hl: en-US
+  pais: *id007
+  eje_esperado: asilo
+  prioridad: 3
+  verificado: true
 - id: gnews_eeuu_en_rutas
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: '"Darien Gap" OR "migrant route" OR shipwreck OR "border crossing" migrants when:3d'
+  query: '"Darien Gap" OR "migrant route" OR "missing migrants" when:1d'
+  largo_query: 61
   gl: US
   hl: en-US
   pais: *id007
@@ -409,7 +495,8 @@ medios_google_news:
 - id: gnews_eeuu_en_odio
   bloque: eeuu_en
   region: Estados Unidos, prensa en ingles
-  query: xenophobia OR "hate speech" OR "anti-immigrant" rhetoric when:3d
+  query: xenophobia OR "anti-immigrant" rhetoric when:1d
+  largo_query: 47
   gl: US
   hl: en-US
   pais: *id007
@@ -425,7 +512,7 @@ organismos:
   - AR
   prioridad: 1
   verificado: true
-  nota: 'Feed confirmado 2026-07-31: 10 entradas, la mas reciente de ayer. Aliado institucional.'
+  nota: Feed confirmado 2026-07-31. Aliado institucional.
 - id: ippdh_mercosur
   nombre: IPPDH Mercosur
   url_base: https://www.ippdh.mercosur.int/feed
@@ -457,9 +544,8 @@ cobertura_agregada:
   modo: artlist
   prioridad: 2
   verificado: true
-  nota: 'HTTP 429 en dos corridas consecutivas desde Actions: las IPs de los runners son compartidas
-    y llegan con el cupo consumido. Requiere reintento con espera, o ejecutar esta fuente desde una
-    IP no compartida.'
+  nota: 'HTTP 429 en corridas consecutivas desde Actions: las IPs de los runners son compartidas. Requiere
+    reintento con espera, o IP no compartida.'
 tendencias_busqueda:
 - id: trends_tramites
   biblioteca: pytrends
@@ -495,23 +581,23 @@ social:
   prioridad: 3
   verificado: false
   nota: 'Requiere API key con cupo gratuito diario. Valor: detectar discurso y desinformacion en formato
-    audiovisual, que es donde mas circula.'
+    audiovisual.'
 - id: corresponsales
   nombre: Red de corresponsales de Refugio
   prioridad: 1
   verificado: false
   nota: 'NO ES UNA API. Entrada humana: un corresponsal reporta una senal desde su territorio. Es la
-    fuente con mayor ventaja comparativa del proyecto y la que ninguna plataforma puede replicar. El
-    canal concreto de captura queda por definir; no debe acoplarse a este repositorio.'
+    fuente con mayor ventaja comparativa del proyecto. El canal concreto de captura queda por definir;
+    no debe acoplarse a este repositorio.'
 descartadas:
 - id: boletin_oficial_ar
-  motivo: Sin feed. El dominio redirige a argentina.gob.ar/normativa.
+  motivo: Sin feed. Redirige a argentina.gob.ar/normativa.
   fecha: '2026-07-31'
 - id: infoleg_ar
-  motivo: El feed responde pero trae una unica entrada de 2011.
+  motivo: Feed con una unica entrada de 2011.
   fecha: '2026-07-31'
 - id: diario_oficial_cl
-  motivo: El feed responde pero la ultima entrada es de 2017.
+  motivo: Feed congelado en 2017.
   fecha: '2026-07-31'
 - id: dnm_ar
   motivo: Sin feed ni rutas convencionales.
@@ -523,8 +609,7 @@ descartadas:
   motivo: Sin feed.
   fecha: '2026-07-31'
 - id: acnur_americas
-  motivo: 'HTTP 403 constante desde Actions: bloqueo por IP de datacenter. Abre normal desde un navegador
-    domestico.'
+  motivo: 'HTTP 403 desde Actions: bloqueo por IP de datacenter.'
   fecha: '2026-07-31'
 ejes:
 - id: normativa
@@ -534,9 +619,8 @@ ejes:
   activo: true
 - id: securitizacion
   nombre: Securitizacion de la migracion
-  alcance: 'Endurecimiento, criminalizacion de la migracion como politica de Estado, militarizacion,
-    migracion tratada como amenaza. QUE DIRECCION tiene la politica. Puede existir sin norma: declaraciones,
-    despliegues, planes no publicados.'
+  alcance: Endurecimiento, criminalizacion de la migracion como politica de Estado, militarizacion,
+    migracion tratada como amenaza. QUE DIRECCION tiene la politica. Puede existir sin norma.
   familia: politica
   activo: true
 - id: frontera
@@ -596,7 +680,7 @@ ejes:
   activo: true
 - id: odio
   nombre: Discurso de odio y desinformacion
-  alcance: Xenofobia, discurso de odio, desinformacion antimigrante, criminalizacion mediatica o politica.
+  alcance: Xenofobia, discurso de odio, desinformacion antimigrante, criminalizacion mediatica.
   familia: discurso
   activo: true
 - id: medios
@@ -679,15 +763,59 @@ etapas:
 - id: retorno
   alcance: Retorno voluntario o forzado, reintegracion
 notas_vocabulario:
-  ejes: '14 activos, agrupados en cuatro familias: politica, proteccion, cotidiano, discurso. Es el
-    limite superior que un clasificador maneja bien. Para activar uno de los inactivos, cambiar `activo`
-    a true; no requiere tocar codigo.'
+  ejes: '14 activos en cuatro familias: politica, proteccion, cotidiano, discurso. Para activar uno
+    inactivo, cambiar `activo` a true; no requiere tocar codigo.'
   poblaciones: Multiple. Quien esta afectado. Independiente del eje tematico.
-  colectividades: 'Multiple, en codigos ISO de pais de origen. NO figura como lista fija: el clasificador
-    la completa con la nacionalidad de la comunidad involucrada, ej. [''BO''] para una nota sobre la
-    comunidad boliviana. Distinta de `poblaciones`: origen nacional, no condicion de vulnerabilidad.'
-  etapas: Seleccion unica. En que momento del recorrido migratorio ocurre el hecho.
-  terminologia: 'El eje `estatus` cubre ''migracion irregular'' y ''migracion ilegal'' como TERMINOS
-    DE BUSQUEDA, porque mucha cobertura los usa y sin ellos no la veriamos. Pero el vocabulario del
-    sistema no reproduce esa categoria: ninguna persona es ilegal. Cuando una nota usa esos terminos,
-    el clasificador lo registra en `terminologia_problematica`, que alimenta el eje `medios`.'
+  colectividades: 'Multiple, codigos ISO de pais de origen. No es lista fija: el clasificador la completa
+    con la nacionalidad de la comunidad involucrada. Distinta de `poblaciones`: origen nacional, no
+    condicion de vulnerabilidad.'
+  etapas: Seleccion unica. En que momento del recorrido ocurre el hecho.
+  terminologia: 'El sistema NO busca ''migracion ilegal'' como termino: trae demasiado ruido y reproduce
+    una categoria que rechazamos. Esa cobertura entra igual por otros terminos, y cuando usa lenguaje
+    deshumanizante el clasificador lo registra en `terminologia_problematica`, que alimenta el eje `medios`.'
+
+estados:
+  _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
+    24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las
+    primeras semanas.'
+  definiciones:
+  - id: top_trend
+    nombre: Top trend
+    orden: 4
+    velocidad_min: 20
+    accion: No correrla. Cubrir solo con angulo propio o dato nuevo.
+  - id: trending
+    nombre: Trending
+    orden: 3
+    velocidad_min: 8
+    velocidad_min_acelerando: 5
+    aceleracion_min: 4
+    accion: Publicar ya, o buscar el angulo que nadie tomo.
+  - id: interes
+    nombre: De interes
+    orden: 2
+    velocidad_min: 3
+    velocidad_min_acelerando: 2
+    aceleracion_min: 2
+    accion: 'EL PUNTO JUSTO. Publicar temprano: si escala, la nota ya esta.'
+  - id: nadie_lo_mira
+    nombre: Nadie lo mira
+    orden: 1
+    velocidad_max: 2
+    importancia_min: 7
+    accion: Investigar. Posible primicia. Requiere reporteria propia.
+  - id: ruido
+    nombre: Ruido
+    orden: 0
+    velocidad_max: 2
+    importancia_max: 6
+    accion: Oculto por defecto. Visible con filtro para auditar el descarte.
+  alertas:
+    _nota: 'La alerta NO se dispara por puntaje alto sino por ASCENSO de estado. El momento que importa
+      es cuando algo importante entra en `interes`: ahi todavia se puede llegar primero.'
+    disparar_al_ascender_a:
+    - interes
+    - trending
+    importancia_minima: 7
+    max_por_corrida: 3
+    no_repetir: Un hecho alerta una sola vez por estado. Registro en datos/alertados.json.
