@@ -1,22 +1,31 @@
 name: Radar migratorio
 
-# CUÁNDO CORRE
+# CADENCIA
 #
-# GitHub Actions usa horario UTC, siempre. Argentina es UTC-3.
-# Para que corra a las 8:00 de Argentina hay que poner las 11:00 UTC.
-# Argentina no cambia de hora, así que este desfase es fijo todo el año.
+# Cada 3 horas, ocho corridas diarias. La frecuencia no es capricho: la
+# aceleracion de un tema solo se puede medir comparando corridas. Un feed RSS
+# da una foto de que hay, no de que esta creciendo.
 #
-# Formato del cron:  minuto hora dia-del-mes mes dia-de-semana
+# GitHub Actions usa horario UTC siempre. Argentina es UTC-3, sin cambio de
+# hora, asi que el desfase es fijo todo el anio.
+#
+# 09:00 UTC = 06:00 Argentina -> es la corrida que ademas genera el digest diario.
+#
+# Consumo: 8 x 30 x ~2-3 min = 480-720 de los 2.000 minutos gratuitos mensuales.
 on:
   schedule:
-    - cron: "0 11 * * *"        # todos los días, 08:00 Argentina
-  workflow_dispatch:            # habilita el botón "Run workflow" en la web y en la app
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      forzar_digest:
+        description: "Generar el digest diario aunque no sean las 09:00 UTC"
+        type: boolean
+        default: false
 
-# Permite que el workflow escriba de vuelta en el repositorio
 permissions:
   contents: write
+  issues: write          # necesario para abrir alertas como issues
 
-# Si se dispara una corrida mientras hay otra en curso, cancela la vieja
 concurrency:
   group: radar
   cancel-in-progress: true
@@ -39,44 +48,68 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      # FASE 1: validación de fuentes y descubrimiento de feeds.
-      # `continue-on-error` está en true a propósito: que una fuente esté caída
-      # no debe marcar la corrida como fallida ni mandar alertas.
+      # ¿Esta corrida genera el digest diario?
+      - name: Decidir si toca digest
+        id: cuando
+        run: |
+          hora=$(date -u +%H)
+          if [ "$hora" = "09" ] || [ "${{ inputs.forzar_digest }}" = "true" ]; then
+            echo "digest=true" >> $GITHUB_OUTPUT
+          else
+            echo "digest=false" >> $GITHUB_OUTPUT
+          fi
+          echo "Hora UTC: $hora"
+
+      # ------------------------------------------------------------------
+      # MONITOREO. Corre en las ocho corridas.
+      # `continue-on-error` a proposito: una fuente caida no es una falla del
+      # sistema y no debe disparar notificaciones.
+      # ------------------------------------------------------------------
       - name: Validar fuentes
         continue-on-error: true
         run: python scripts/validar_fuentes.py --prioridad 1 | tee datos/validacion.txt
 
-      # scripts/descubrir_feeds.py NO corre a diario: ya no quedan fuentes sin
-      # verificar. Se ejecuta a mano cuando se agregan fuentes nuevas al registro.
-
+      # Diagnostico, solo en la corrida del digest para no gastar tiempo.
       - name: Muestrear feeds
+        if: steps.cuando.outputs.digest == 'true'
         continue-on-error: true
         run: python scripts/muestrear_feeds.py | tee datos/muestra.txt
 
-      # Genera docs/index.html a partir de datos/items.json.
-      # Mientras el pipeline de ingesta no exista, usa datos de ejemplo y lo
-      # avisa con un cartel en el propio tablero.
-      - name: Generar tablero
-        run: python scripts/generar_tablero.py
-
-      # FASE 2: descomentar cuando exista el pipeline de ingesta.
+      # ------------------------------------------------------------------
+      # FASE 2 — descomentar a medida que exista cada modulo.
+      # Orden de construccion: ingesta -> deduplicacion -> memoria y velocidad
+      # -> clasificacion -> tablero real -> alertas.
       #
-      # Este repositorio NO entrega notificaciones ni se integra con ningun bot.
-      # Su unica salida son los archivos de datos/. La capa de distribucion
-      # (mail, tablero, o lo que se decida) es un proyecto aparte que lee
-      # esos archivos. Mantener esa separacion es deliberado.
+      # Este repositorio NO notifica por Telegram ni se integra con ningun bot.
+      # Su unica salida son los archivos de datos/ y docs/.
+      # ------------------------------------------------------------------
       #
-      # - name: Ingesta y clasificación
+      # - name: Ingesta y deduplicación
+      #   run: python -m nucleo.correr --ingesta
+      #
+      # - name: Velocidad y aceleración
+      #   run: python -m nucleo.velocidad
+      #
+      # - name: Clasificación
       #   env:
       #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       #     ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      #   run: python -m nucleo.correr
+      #   run: python -m nucleo.clasificar
+      #
+      # Alertas: abre un issue cuando un hecho supera el umbral. GitHub notifica
+      # por mail y por push a la app del celular, sin credenciales externas.
+      # Maximo 3 por corrida; los ya alertados quedan en datos/alertados.json.
+      # - name: Alertas
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: python -m nucleo.alertar --umbral 40 --max 3
 
-      # Guarda el resultado en el propio repositorio.
-      # Ventaja para esta etapa: es gratis, queda versionado y podés ver la
-      # historia de lo que vio el radar cada día con `git log`.
-      # El `pull --rebase` evita que la corrida falle si hubo cambios subidos
-      # desde otra máquina mientras esta corría.
+      - name: Generar tablero
+        run: python scripts/generar_tablero.py
+
+      # Guarda el resultado en el propio repositorio: gratis, versionado, y
+      # deja ver con `git log` la historia de lo que vio el radar.
+      # El `pull --rebase` evita fallar si hubo cambios subidos mientras corria.
       - name: Guardar resultados
         run: |
           git config user.name "radar-rl"
@@ -86,10 +119,10 @@ jobs:
           git pull --rebase origin main
           git push
 
-      # Deja los archivos descargables desde la pestaña Actions durante 14 días,
-      # por si el commit falla o querés inspeccionar una corrida puntual.
+      # Solo en la corrida del digest: adjuntar es util para inspeccionar,
+      # pero hacerlo ocho veces por dia llena la pestana de artifacts.
       - name: Adjuntar salida a la corrida
-        if: always()
+        if: always() && steps.cuando.outputs.digest == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: radar-${{ github.run_number }}
