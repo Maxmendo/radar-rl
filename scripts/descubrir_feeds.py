@@ -8,6 +8,8 @@ Dos estrategias, en orden:
 No adivina ni inventa URLs: solo reporta lo que el propio sitio declara o lo que
 responde con contenido de feed verificable.
 
+NO corre a diario. Se ejecuta a mano cuando se agregan fuentes nuevas al registro.
+
 Uso:
     python scripts/descubrir_feeds.py
 """
@@ -19,7 +21,9 @@ from pathlib import Path
 from urllib.parse import urljoin
 
 import requests
-import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from nucleo.registro import sin_verificar  # noqa: E402
 
 TIMEOUT = 20
 UA = "radar-rl/0.1 (Refugio Latinoamericano; contacto@refugiolatinoamericano.com)"
@@ -122,13 +126,13 @@ def revisar(fid: str, url_base: str) -> None:
 
 
 def main() -> int:
-    cfg = yaml.safe_load((RAIZ / "fuentes.yaml").read_text(encoding="utf-8"))
+    pendientes = sin_verificar()
 
-    pendientes = []
-    for grupo in ("normativa", "organismos"):
-        for f in cfg.get(grupo, []):
-            if f.get("url_base") and not f.get("verificado"):
-                pendientes.append((f["id"], f["url_base"]))
+    if not pendientes:
+        log.info("No hay fuentes sin verificar. Nada que descubrir.")
+        log.info("Este script se corre cuando se agregan fuentes nuevas a fuentes.yaml,")
+        log.info("no en cada corrida diaria.")
+        return 0
 
     log.info("Buscando feeds en %d sitios\n%s", len(pendientes), "=" * 60)
     for fid, url in pendientes:

@@ -46,13 +46,18 @@ jobs:
         continue-on-error: true
         run: python scripts/validar_fuentes.py --prioridad 1 | tee datos/validacion.txt
 
-      - name: Descubrir feeds
-        continue-on-error: true
-        run: python scripts/descubrir_feeds.py | tee datos/feeds.txt
+      # scripts/descubrir_feeds.py NO corre a diario: ya no quedan fuentes sin
+      # verificar. Se ejecuta a mano cuando se agregan fuentes nuevas al registro.
 
       - name: Muestrear feeds
         continue-on-error: true
         run: python scripts/muestrear_feeds.py | tee datos/muestra.txt
+
+      # Genera docs/index.html a partir de datos/items.json.
+      # Mientras el pipeline de ingesta no exista, usa datos de ejemplo y lo
+      # avisa con un cartel en el propio tablero.
+      - name: Generar tablero
+        run: python scripts/generar_tablero.py
 
       # FASE 2: descomentar cuando exista el pipeline de ingesta.
       #
@@ -76,7 +81,7 @@ jobs:
         run: |
           git config user.name "radar-rl"
           git config user.email "radar@refugiolatinoamericano.com"
-          git add datos/
+          git add datos/ docs/
           git diff --staged --quiet || git commit -m "Radar: corrida $(date -u '+%Y-%m-%d %H:%M') UTC"
           git pull --rebase origin main
           git push
@@ -88,5 +93,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: radar-${{ github.run_number }}
-          path: datos/
+          path: |
+            datos/
+            docs/
           retention-days: 14
