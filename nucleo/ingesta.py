@@ -40,6 +40,24 @@ SALIDA = RAIZ / "datos" / "items.json"
 TIMEOUT = 25
 UA = "radar-rl/0.2 (Refugio Latinoamericano; contacto@refugiolatinoamericano.com)"
 VENTANA_HORAS = 30          # margen sobre las 24h para no perder nada del borde
+
+# Alcance del medio: America Latina, el Caribe y Estados Unidos.
+# Entra mucha cobertura de la crisis de Ceuta y del Mediterraneo porque la
+# prensa en castellano la cubre intensamente. NO se descarta: se marca y va a
+# una pestana aparte, para poder auditarla y usarla como contexto comparado
+# (Ceuta es el caso testigo de externalizacion de fronteras).
+FUERA_DE_ALCANCE = {
+    "ceuta", "melilla", "marruecos", "marroquies", "espana", "espanol", "espanola",
+    "sanchez", "mediterraneo", "italia", "finlandia", "grecia", "malasia", "myanmar",
+    "sudafrica", "ucrania", "canarias", "frontex", "union europea",
+}
+EN_ALCANCE = {
+    "argentina", "argentinos", "milei", "chile", "uruguay", "paraguay", "bolivia",
+    "peru", "ecuador", "colombia", "venezuela", "brasil", "mexico", "guatemala",
+    "honduras", "salvador", "nicaragua", "costa rica", "panama", "dominicana",
+    "haiti", "cuba", "estados unidos", "eeuu", "ice", "trump", "darien",
+    "latinoamerica", "america latina", "migraciones",
+}
 SIMILITUD_MINIMA = 0.35     # umbral para considerar que dos notas son el mismo hecho
 MINIMO_COMPARTIDO = 2       # palabras significativas en comun, como piso
 LARGO_RAIZ = 6              # truncado de palabras para unificar formas flexionadas
@@ -121,6 +139,18 @@ def parecido(a: set[str], b: set[str], pesos: dict[str, float]) -> float:
     return peso(comunes) / max(min(peso(a), peso(b)), 1e-9)
 
 
+def fuera_de_alcance(titulo: str) -> bool:
+    """True si el hecho parece ocurrir fuera de America Latina, el Caribe o EEUU.
+
+    Heuristica deliberadamente conservadora: solo marca cuando hay senal de otra
+    region Y ninguna del alcance propio. Ante la duda, deja el hecho adentro.
+    """
+    t = sin_acentos(titulo.lower())
+    hay_fuera = any(p in t for p in FUERA_DE_ALCANCE)
+    hay_dentro = any(p in t for p in EN_ALCANCE)
+    return hay_fuera and not hay_dentro
+
+
 def fecha_de(entrada) -> datetime | None:
     """Fecha de publicacion en UTC, o None si el feed no la trae."""
     t = entrada.get("published_parsed") or entrada.get("updated_parsed")
@@ -196,7 +226,14 @@ def agrupar(items: list[dict]) -> list[dict]:
 
     hechos = []
     for g in grupos:
-        medios = sorted({i["medio"] for i in g if i["medio"] != "desconocido"})
+        # Un medio, un enlace. Se guarda emparejado para que el tablero pueda
+        # linkear cada fuente y el equipo chequee cualquiera de ellas.
+        vistos: dict[str, dict] = {}
+        for i in sorted(g, key=lambda x: x["fecha"]):
+            if i["medio"] != "desconocido" and i["medio"] not in vistos:
+                vistos[i["medio"]] = {"medio": i["medio"], "url": i["url"], "fecha": i["fecha"]}
+        coberturas = sorted(vistos.values(), key=lambda x: x["medio"].lower())
+        medios = [c["medio"] for c in coberturas]
         fechas = sorted(i["fecha"] for i in g)
         ejes = [i["eje_esperado"] for i in g if i["eje_esperado"]]
         regiones = sorted({i["region"] for i in g})
@@ -210,6 +247,7 @@ def agrupar(items: list[dict]) -> list[dict]:
             "titulo_original": g[0]["titulo"],
             "url": g[0]["url"],
             "medios": medios,
+            "coberturas": coberturas,
             "velocidad": len(medios),
             "aceleracion": None,          # requiere historico entre corridas
             "trends": None,
@@ -220,6 +258,7 @@ def agrupar(items: list[dict]) -> list[dict]:
             "regiones": regiones,
             "region": regiones[0] if regiones else "",
             "paises": paises,
+            "fuera_de_alcance": fuera_de_alcance(g[0]["titulo"]),
             "importancia": None,          # requiere clasificacion por LLM
             "clasificado": False,
         })
@@ -239,8 +278,6 @@ def main() -> int:
     log.info("%s\nNotas descargadas: %d", "=" * 58, len(items))
 
     hechos = agrupar(items)
-    for h in hechos:
-        pass
     hechos.sort(key=lambda h: (-h["velocidad"], h["horas"]))
 
     for h in hechos:
@@ -254,12 +291,14 @@ def main() -> int:
         "items": hechos,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
+    fuera = sum(1 for h in hechos if h["fuera_de_alcance"])
     log.info("Hechos unicos: %d  (reduccion del %d%%)",
              len(hechos), round((1 - len(hechos) / max(len(items), 1)) * 100))
+    log.info("Fuera del alcance geografico: %d  (van a pestana aparte, no se descartan)", fuera)
     log.info("")
-    log.info("Los cinco de mayor velocidad:")
-    for h in hechos[:5]:
-        log.info("   %2d medios | %5.1fh | %s", h["velocidad"], h["horas"], h["titulo_original"][:62])
+    log.info("Los cinco de mayor velocidad dentro del alcance:")
+    for h in [x for x in hechos if not x["fuera_de_alcance"]][:5]:
+        log.info("   %2d medios | %5.1fh | %s", h["velocidad"], h["horas"], h["titulo_original"][:60])
     log.info("")
     log.info("Escrito %s", SALIDA.relative_to(RAIZ))
     return 0
