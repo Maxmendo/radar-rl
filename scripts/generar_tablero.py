@@ -1,8 +1,14 @@
 """Genera docs/index.html: el tablero que lee la redaccion.
 
-Un unico archivo HTML con los datos incrustados. Sin servidor, sin conexion,
-sin dependencias: se abre con doble clic y se puede mandar por mail o WhatsApp
-a alguien que no sepa que es GitHub.
+Un unico archivo HTML con los datos incrustados. Sin servidor, sin dependencias:
+se abre con doble clic y se puede mandar por mail o WhatsApp a alguien que no
+sepa que es GitHub.
+
+Identidad visual segun el manual de marca de Refugio Latinoamericano:
+  - Rojo principal  #ff5f5d   - Marron oscuro  #554242
+  - Secundarios     #806e6e   #a97776   #d47270
+  - Tipografia principal Barlow, secundaria Arial (asi lo indica el manual)
+  - Elemento grafico: lineas oblicuas del simbolo (arraigo)
 
 Lee datos/items.json, que produce nucleo/ingesta.py
 
@@ -13,6 +19,7 @@ Uso:
 import json
 import logging
 import sys
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -27,11 +34,12 @@ log = logging.getLogger("tablero")
 def estado(item: dict) -> str:
     """Ubica un hecho en su ciclo de vida segun cuantos medios lo publicaron.
 
-    La aceleracion puede promover de estado: cinco medios subiendo de a cuatro
-    cada tres horas valen mas que ocho estancados. Sin clasificacion por LLM
-    todavia no hay importancia, asi que `nadie_lo_mira` y `ruido` no se pueden
-    separar: todo lo de baja cobertura va a `emergente`.
+    Sin clasificacion por LLM no hay importancia, asi que `nadie_lo_mira` y
+    `ruido` no se pueden separar: todo lo de baja cobertura va a `emergente`.
     """
+    if item.get("fuera_de_alcance"):
+        return "fuera_alcance"
+
     vel = item.get("velocidad") or 0
     acel = item.get("aceleracion") or 0
     imp = item.get("importancia")
@@ -74,158 +82,266 @@ PLANTILLA = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Radar migratorio | Refugio Latinoamericano</title>
+<title>Radar Migratorio | Refugio Latinoamericano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root { --tinta:#1a1a1a; --suave:#6b6b6b; --tenue:#9a9890; --linea:#e4e2db;
-  --fondo:#faf9f6; --tarjeta:#fff; --acento:#1d5e4a; --alerta:#9a3412; }
-@media (prefers-color-scheme: dark) {
-  :root { --tinta:#e8e6e0; --suave:#9c9a92; --tenue:#6f6e68; --linea:#33322e;
-    --fondo:#16150f; --tarjeta:#1e1d18; --acento:#5dcaa5; --alerta:#f0997b; } }
-* { box-sizing:border-box; }
-body { margin:0; padding:1.5rem 1rem 4rem; background:var(--fondo); color:var(--tinta);
-  font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
-.c { max-width:880px; margin:0 auto; }
-h1 { font-size:1.35rem; font-weight:600; margin:0 0 .2rem; }
-.meta { color:var(--suave); font-size:.84rem; margin:0 0 1.2rem; }
-.aviso { background:var(--tarjeta); border-left:3px solid var(--alerta); padding:.7rem .9rem;
-  margin-bottom:1.3rem; font-size:.85rem; color:var(--suave); }
-.vistas { display:flex; flex-wrap:wrap; gap:.3rem; margin-bottom:.6rem;
-  border-bottom:1px solid var(--linea); }
-.vistas button { font:inherit; font-size:.87rem; font-weight:600; padding:.5rem .85rem;
-  cursor:pointer; background:transparent; color:var(--suave); border:none;
-  border-bottom:2px solid transparent; margin-bottom:-1px; }
-.vistas button[aria-pressed="true"] { color:var(--acento); border-bottom-color:var(--acento); }
-.vistas .n { font-weight:400; opacity:.65; }
-.explica { font-size:.83rem; color:var(--suave); margin:.7rem 0 1rem; }
-.filtros { display:flex; flex-wrap:wrap; gap:.35rem; margin-bottom:1.2rem; }
-.filtros button { font:inherit; font-size:.78rem; padding:.3rem .7rem; cursor:pointer;
-  background:var(--tarjeta); color:var(--suave); border:1px solid var(--linea);
-  border-radius:99px; }
-.filtros button[aria-pressed="true"] { background:var(--acento); color:var(--fondo);
-  border-color:var(--acento); }
-.item { background:var(--tarjeta); border:1px solid var(--linea); border-radius:10px;
-  padding:.95rem 1.05rem; margin-bottom:.7rem; }
-.item h2 { font-size:1rem; font-weight:600; margin:0 0 .45rem; line-height:1.42; }
-.item h2 a { color:inherit; text-decoration:none; }
-.item h2 a:hover { text-decoration:underline; }
-.datos { display:flex; gap:1rem; flex-wrap:wrap; font-size:.79rem; color:var(--suave);
-  margin-bottom:.4rem; }
-.datos b { color:var(--tinta); font-weight:600; }
-.medios { font-size:.76rem; color:var(--tenue); margin:.35rem 0 0; line-height:1.5; }
-.etiquetas { display:flex; gap:.3rem; flex-wrap:wrap; margin-top:.5rem; }
-.et { font-size:.7rem; padding:.12rem .5rem; border-radius:4px; border:1px solid var(--linea);
-  color:var(--suave); }
-.vacio { text-align:center; color:var(--suave); padding:2.5rem 1rem; }
-footer { margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--linea);
-  color:var(--suave); font-size:.77rem; line-height:1.7; }
+/* Paleta del manual de marca de Refugio Latinoamericano */
+:root{
+  --rojo:#ff5f5d; --marron:#554242; --marron-med:#806e6e;
+  --rosa:#a97776; --rosa-claro:#d47270;
+  /* Semaforo. Codigo de color universal, deliberadamente fuera de la paleta
+     de marca: es senaletica funcional, no identidad. Se usa solo en puntos
+     de 10px, sin invadir el resto de la interfaz.
+       rojo    top trend  -> saturado, ya paso
+       amarillo trending  -> instalado, publicar ya
+       verde   de interes -> el punto justo, se llega temprano
+       celeste emergente  -> sin confirmar, mirar a mano                     */
+  --sem-rojo:#d92d20; --sem-amarillo:#e5a000; --sem-verde:#12805c;
+  --sem-celeste:#2e90d9;
+  --fondo:#fbf9f8; --tarjeta:#fff; --linea:#eae3e1;
+  --tinta:#3a2e2e; --suave:#806e6e; --tenue:#a2938f;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --fondo:#211a1a; --tarjeta:#2b2222; --linea:#3d3130;
+    --tinta:#f2ebe9; --suave:#bfaeab; --tenue:#8d7a77;
+    --sem-rojo:#f97066; --sem-amarillo:#fdb022; --sem-verde:#47cd9a;
+    --sem-celeste:#53b1fd; }
+}
+*{box-sizing:border-box}
+body{margin:0;padding:0 0 4rem;background:var(--fondo);color:var(--tinta);
+  font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased}
+.c{max-width:900px;margin:0 auto;padding:0 1.1rem}
+
+/* Cabecera: franja roja con las lineas oblicuas del simbolo (arraigo) */
+header{background:var(--rojo);color:#fff;padding:1.9rem 0 1.6rem;margin-bottom:1.6rem;
+  position:relative;overflow:hidden}
+header .trama{position:absolute;right:-30px;top:0;height:100%;width:210px;opacity:.22}
+header h1{font-size:1.75rem;font-weight:800;margin:0;letter-spacing:-.015em;
+  position:relative;z-index:1}
+header .bajada{font-size:1rem;font-weight:400;margin:.15rem 0 0;opacity:.94;
+  position:relative;z-index:1}
+header .marca{font-size:.82rem;font-weight:600;margin:.75rem 0 0;opacity:.9;
+  position:relative;z-index:1;display:flex;align-items:center;gap:.45rem}
+header .marca::before{content:"";width:16px;height:9px;flex:none;
+  background:repeating-linear-gradient(105deg,#fff 0 2px,transparent 2px 4px)}
+.meta{color:var(--suave);font-size:.82rem;margin:0 0 1rem}
+
+.aviso{background:var(--tarjeta);border-left:3px solid var(--rosa-claro);
+  padding:.7rem .95rem;margin-bottom:1.4rem;font-size:.85rem;color:var(--suave);
+  border-radius:0 6px 6px 0}
+.aviso b{color:var(--tinta)}
+
+/* Semaforo */
+.semaforo{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.5rem}
+.semaforo button{font:inherit;font-size:.87rem;font-weight:600;padding:.5rem .8rem;
+  cursor:pointer;background:transparent;color:var(--suave);border:none;
+  border-bottom:2px solid transparent;display:flex;align-items:center;gap:.42rem}
+.semaforo button:hover{color:var(--tinta)}
+.semaforo button[aria-pressed="true"]{color:var(--tinta)}
+.semaforo button[aria-pressed="true"]#v-top_trend{border-bottom-color:var(--sem-rojo)}
+.semaforo button[aria-pressed="true"]#v-trending{border-bottom-color:var(--sem-amarillo)}
+.semaforo button[aria-pressed="true"]#v-interes{border-bottom-color:var(--sem-verde)}
+.semaforo button[aria-pressed="true"]#v-emergente{border-bottom-color:var(--sem-celeste)}
+.semaforo button[aria-pressed="true"]#v-nadie_lo_mira{border-bottom-color:var(--sem-verde)}
+.semaforo button[aria-pressed="true"]#v-ruido{border-bottom-color:var(--tenue)}
+.semaforo button[aria-pressed="true"]#v-fuera_alcance{border-bottom-color:var(--tenue)}
+.luz{width:10px;height:10px;border-radius:50%;flex:none}
+.l-top_trend{background:var(--sem-rojo)}
+.l-trending{background:var(--sem-amarillo)}
+.l-interes{background:var(--sem-verde)}
+.l-emergente{background:var(--sem-celeste)}
+.l-nadie_lo_mira{background:var(--sem-verde)}
+.l-ruido{background:var(--tenue)}
+.l-fuera_alcance{background:var(--tenue)}
+.semaforo .n{font-weight:400;opacity:.62}
+.accion{font-size:.85rem;color:var(--suave);margin:.55rem 0 1.1rem;
+  padding-left:.7rem;border-left:3px solid var(--linea);transition:border-color .15s}
+
+/* Filtros, agrupados y rotulados */
+.filtros{margin-bottom:1.3rem}
+.grupo{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-bottom:.4rem}
+.rotulo{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--tenue);font-weight:600;min-width:104px}
+.grupo button{font:inherit;font-size:.78rem;padding:.24rem .68rem;cursor:pointer;
+  background:var(--tarjeta);color:var(--suave);border:1px solid var(--linea);
+  border-radius:99px}
+.grupo button[aria-pressed="true"]{background:var(--rojo);color:#fff;border-color:var(--rojo)}
+.nota-filtro{font-size:.74rem;color:var(--tenue);margin:.45rem 0 0;font-style:italic}
+
+.item{background:var(--tarjeta);border:1px solid var(--linea);border-radius:9px;
+  padding:1rem 1.1rem;margin-bottom:.75rem}
+.item h2{font-size:1.03rem;font-weight:600;margin:0 0 .5rem;line-height:1.4}
+.item h2 a{color:inherit;text-decoration:none}
+.item h2 a:hover{color:var(--rojo)}
+.datos{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.79rem;color:var(--suave);
+  align-items:center}
+.datos .vel{font-weight:700;color:var(--tinta)}
+.sube{color:var(--rojo);font-weight:700}
+
+.fuentes{margin:.6rem 0 0;padding:.55rem 0 0;border-top:1px solid var(--linea)}
+.fuentes .tit{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--tenue);font-weight:600;margin-bottom:.3rem}
+.fuentes ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.3rem}
+.fuentes a{font-size:.77rem;padding:.16rem .55rem;border-radius:4px;
+  background:var(--fondo);border:1px solid var(--linea);color:var(--suave);
+  text-decoration:none;white-space:nowrap}
+.fuentes a:hover{color:var(--rojo);border-color:var(--rosa-claro)}
+
+.etiquetas{display:flex;gap:.28rem;flex-wrap:wrap;margin-top:.55rem}
+.et{font-size:.7rem;padding:.1rem .48rem;border-radius:3px;
+  border:1px solid var(--linea);color:var(--tenue)}
+.vacio{text-align:center;color:var(--suave);padding:2.5rem 1rem}
+footer{margin-top:2.5rem;padding-top:1.1rem;border-top:1px solid var(--linea);
+  color:var(--suave);font-size:.78rem;line-height:1.75}
+footer b{color:var(--tinta)}
+.slogan{color:var(--rojo);font-weight:600;margin-top:.8rem;display:flex;
+  align-items:center;gap:.4rem}
+.slogan::before{content:"";width:14px;height:8px;flex:none;
+  background:repeating-linear-gradient(105deg,var(--rojo) 0 2px,transparent 2px 4px)}
+@media(max-width:560px){
+  header h1{font-size:1.4rem} .rotulo{min-width:100%}
+}
 </style>
 </head>
 <body>
+<header>
+  <svg class="trama" viewBox="0 0 120 100" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="#fff">
+      <path d="M14 0h11L11 100H0z"/><path d="M38 0h11L35 100H24z"/>
+      <path d="M62 0h11L59 100H48z"/><path d="M86 0h11L83 100H72z"/>
+      <path d="M110 0h11L107 100H96z"/>
+    </g>
+  </svg>
+  <div class="c">
+    <h1>Radar Migratorio</h1>
+    <p class="bajada">Alertas de noticias sobre movilidad humana</p>
+    <p class="marca">Una herramienta de Refugio Latinoamericano</p>
+  </div>
+</header>
+
 <div class="c">
-<h1>Radar migratorio</h1>
-<p class="meta">Refugio Latinoamericano &middot; __GENERADO__ &middot; __RESUMEN__</p>
+<p class="meta">__GENERADO__ &middot; __RESUMEN__</p>
 __AVISO__
-<div class="vistas" id="vistas"></div>
-<p class="explica" id="explica"></p>
+<div class="semaforo" id="semaforo"></div>
+<p class="accion" id="accion"></p>
 <div class="filtros" id="filtros"></div>
 <div id="lista"></div>
 <footer>
 <b>Cómo leerlo.</b> Cada fila es un <i>hecho</i>, no una nota: si veinte medios publican
 sobre el mismo decreto, es un hecho con veinte medios. La cantidad de medios distintos
-es la <i>velocidad</i>, y es lo que define en qué estado está.<br>
+es la <b>velocidad</b>, y define en qué luz del semáforo está.<br>
+Cada medio listado abajo del título es un enlace directo a su publicación, para chequear
+cualquiera de las fuentes.<br>
 El radar propone. La decisión editorial es humana.
+<p class="slogan">periodismo sin fronteras</p>
 </footer>
 </div>
+
 <script>
 const ITEMS = __ITEMS__;
-let vista = null, ejeActivo = null, regionActiva = null;
+let vista=null, ejeActivo=null, regionActiva=null;
 
 const ESTADOS = {
-  interes:   { n:'De interés',   d:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Si escala, la nota ya está publicada.' },
-  trending:  { n:'Trending',     d:'8 o más medios. Publicar ya, o buscar el ángulo que nadie tomó.' },
-  top_trend: { n:'Top trend',    d:'20 o más medios. No correrla: cubrir solo con ángulo propio o dato nuevo.' },
-  emergente: { n:'Emergente',    d:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.' },
-  nadie_lo_mira:{ n:'Nadie lo mira', d:'Importante y casi sin cobertura. Investigar: posible primicia.' },
-  ruido:     { n:'Ruido',        d:'Poca cobertura y poca importancia. Visible para auditar el descarte.' }
+  trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
+  interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Si el tema escala, la nota ya está publicada.'},
+  top_trend:{n:'Top trend', a:'20 o más medios. Saturado: no correrla. Cubrir solo con ángulo propio o dato nuevo.'},
+  emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.'},
+  nadie_lo_mira:{n:'Nadie lo mira', a:'Importante y casi sin cobertura. Investigar: posible primicia.'},
+  ruido:{n:'Ruido', a:'Poca cobertura y poca importancia. Visible para auditar qué se descarta.'},
+  fuera_alcance:{n:'Fuera de alcance', a:'Migración en otras regiones: Ceuta, el Mediterráneo, Asia. No es nuestra cobertura, pero sirve como contexto comparado. Ceuta, por ejemplo, es el caso testigo de externalización de fronteras.'}
 };
-const ORDEN = ['top_trend','trending','interes','emergente','nadie_lo_mira','ruido'];
+const ORDEN=['top_trend','trending','interes','emergente','nadie_lo_mira','ruido','fuera_alcance'];
 
-function esc(s){ const d=document.createElement('div'); d.textContent=s||''; return d.innerHTML; }
+function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
 
-function armarVistas(){
-  const cont = document.getElementById('vistas');
-  ORDEN.forEach(id => {
-    const n = ITEMS.filter(i => i.estado===id).length;
-    if (!n) return;
-    if (!vista) vista = id;
-    const b = document.createElement('button');
-    b.innerHTML = ESTADOS[id].n + ' <span class="n">' + n + '</span>';
-    b.id = 'v-'+id;
-    b.onclick = () => cambiar(id);
-    cont.appendChild(b);
+function armarSemaforo(){
+  const c=document.getElementById('semaforo');
+  ORDEN.forEach(id=>{
+    const n=ITEMS.filter(i=>i.estado===id).length;
+    if(!n) return;
+    if(!vista && id!=='fuera_alcance') vista=id;
+    const b=document.createElement('button');
+    b.innerHTML='<span class="luz l-'+id+'"></span>'+ESTADOS[id].n+' <span class="n">'+n+'</span>';
+    b.id='v-'+id; b.onclick=()=>cambiar(id);
+    c.appendChild(b);
   });
 }
 
 function armarFiltros(){
-  const cont = document.getElementById('filtros');
-  const ejes = [...new Set(ITEMS.flatMap(i => i.ejes||[]))].sort();
-  const regs = [...new Set(ITEMS.map(i => i.region).filter(Boolean))].sort();
-  const grupo = (vals, tipo) => vals.forEach(v => {
-    const b = document.createElement('button');
-    b.textContent = v;
-    b.dataset.tipo = tipo; b.dataset.valor = v;
-    b.setAttribute('aria-pressed','false');
-    b.onclick = () => {
-      if (tipo==='eje') ejeActivo = ejeActivo===v ? null : v;
-      else regionActiva = regionActiva===v ? null : v;
-      dibujar();
-    };
-    cont.appendChild(b);
-  });
-  grupo(ejes,'eje'); grupo(regs,'region');
+  const c=document.getElementById('filtros');
+  const ejes=[...new Set(ITEMS.flatMap(i=>i.ejes||[]))].sort();
+  const regs=[...new Set(ITEMS.map(i=>i.region).filter(Boolean))].sort();
+  const grupo=(rotulo,vals,tipo)=>{
+    if(!vals.length) return;
+    const d=document.createElement('div'); d.className='grupo';
+    const r=document.createElement('span'); r.className='rotulo'; r.textContent=rotulo;
+    d.appendChild(r);
+    vals.forEach(v=>{
+      const b=document.createElement('button');
+      b.textContent=v; b.dataset.tipo=tipo; b.dataset.valor=v;
+      b.setAttribute('aria-pressed','false');
+      b.onclick=()=>{ if(tipo==='eje') ejeActivo=ejeActivo===v?null:v;
+                      else regionActiva=regionActiva===v?null:v; dibujar(); };
+      d.appendChild(b);
+    });
+    c.appendChild(d);
+  };
+  grupo('Tema',ejes,'eje');
+  grupo('Región',regs,'region');
+  const n=document.createElement('p'); n.className='nota-filtro';
+  n.textContent='Los temas son provisorios: indican qué búsqueda trajo la nota, no un análisis de su contenido.';
+  c.appendChild(n);
 }
 
 function cambiar(v){
-  vista = v;
-  ORDEN.forEach(id => { const b=document.getElementById('v-'+id);
-    if (b) b.setAttribute('aria-pressed', String(id===v)); });
-  document.getElementById('explica').textContent = ESTADOS[v].d;
+  vista=v;
+  ORDEN.forEach(id=>{const b=document.getElementById('v-'+id);
+    if(b) b.setAttribute('aria-pressed',String(id===v))});
+  const acc=document.getElementById('accion');
+  acc.textContent=ESTADOS[v].a;
+  acc.style.borderLeftColor=getComputedStyle(
+    document.querySelector('.l-'+v)||document.body).backgroundColor;
   dibujar();
 }
 
 function dibujar(){
-  document.querySelectorAll('#filtros button').forEach(b => {
-    const act = b.dataset.tipo==='eje' ? ejeActivo : regionActiva;
-    b.setAttribute('aria-pressed', String(b.dataset.valor===act));
+  document.querySelectorAll('.grupo button').forEach(b=>{
+    const act=b.dataset.tipo==='eje'?ejeActivo:regionActiva;
+    b.setAttribute('aria-pressed',String(b.dataset.valor===act));
   });
-  const vis = ITEMS
-    .filter(i => i.estado===vista)
-    .filter(i => !ejeActivo || (i.ejes||[]).includes(ejeActivo))
-    .filter(i => !regionActiva || i.region===regionActiva)
-    .sort((a,b) => b.puntaje - a.puntaje);
-  const l = document.getElementById('lista');
-  if (!vis.length){ l.innerHTML='<p class="vacio">Sin resultados con estos filtros.</p>'; return; }
-  l.innerHTML = vis.map(i => `
-    <article class="item">
+  const vis=ITEMS.filter(i=>i.estado===vista)
+    .filter(i=>!ejeActivo||(i.ejes||[]).includes(ejeActivo))
+    .filter(i=>!regionActiva||i.region===regionActiva)
+    .sort((a,b)=>b.puntaje-a.puntaje);
+  const l=document.getElementById('lista');
+  if(!vis.length){l.innerHTML='<p class="vacio">Sin resultados con estos filtros.</p>';return}
+  l.innerHTML=vis.map(i=>{
+    const cob=i.coberturas||[];
+    return `<article class="item">
       <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
       <div class="datos">
-        <span><b>${i.velocidad}</b> ${i.velocidad===1?'medio':'medios'}</span>
+        <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>
         ${i.notas>1?`<span>${i.notas} notas</span>`:''}
         ${i.horas!=null?`<span>hace ${i.horas<1?'menos de 1 h':Math.round(i.horas)+' h'}</span>`:''}
-        ${i.aceleracion>0?`<span style="color:var(--alerta);font-weight:600">+${i.aceleracion} en 3h</span>`:''}
+        ${i.aceleracion>0?`<span class="sube">+${i.aceleracion} en 3 h</span>`:''}
       </div>
-      ${i.medios&&i.medios.length?`<p class="medios">${esc(i.medios.slice(0,10).join(' · '))}${i.medios.length>10?' · …':''}</p>`:''}
+      ${cob.length?`<div class="fuentes"><div class="tit">Publicado por</div><ul>${
+        cob.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`).join('')
+      }</ul></div>`:''}
       <div class="etiquetas">
         ${(i.ejes||[]).map(e=>`<span class="et">${esc(e)}</span>`).join('')}
         ${i.region?`<span class="et">${esc(i.region)}</span>`:''}
         ${(i.paises||[]).slice(0,4).map(p=>`<span class="et">${esc(p)}</span>`).join('')}
       </div>
-    </article>`).join('');
+    </article>`}).join('');
 }
 
-armarVistas();
+armarSemaforo();
 armarFiltros();
-cambiar(vista || 'emergente');
+cambiar(vista||'emergente');
 </script>
 </body>
 </html>
@@ -247,21 +363,21 @@ def main() -> int:
 
     generado = datos.get("generado", "")
     try:
-        dt = datetime.fromisoformat(generado.replace("Z", "+00:00"))
-        local = dt.astimezone(timezone(datetime.now().astimezone().utcoffset() or
-                                       -datetime.now().astimezone().utcoffset()))
-        generado = dt.strftime("%d/%m/%Y %H:%M UTC")
+        generado = datetime.fromisoformat(
+            generado.replace("Z", "+00:00")).strftime("%d/%m/%Y %H:%M UTC")
     except ValueError:
         pass
 
-    resumen = f"{len(items)} hechos de {datos.get('notas_totales', 0)} notas"
+    en_alcance = sum(1 for i in items if not i.get("fuera_de_alcance"))
+    resumen = (f"{en_alcance} hechos en la región, de {datos.get('notas_totales', 0)} "
+               f"notas relevadas")
 
     aviso = ""
     if not datos.get("clasificado"):
-        aviso = ('<p class="aviso"><b>Clasificación pendiente.</b> Estos son datos reales, '
+        aviso = ('<p class="aviso"><b>Clasificación pendiente.</b> Los datos son reales, '
                  'pero todavía sin análisis por IA: no hay puntaje de importancia ni ejes '
-                 'temáticos analizados. El eje que se muestra viene de qué búsqueda trajo la '
-                 'nota. La aceleración necesita al menos dos corridas de historial.</p>')
+                 'temáticos analizados. La aceleración necesita al menos dos corridas de '
+                 'historial.</p>')
 
     html = (PLANTILLA
             .replace("__GENERADO__", generado)
@@ -272,13 +388,17 @@ def main() -> int:
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text(html, encoding="utf-8")
 
-    from collections import Counter
     c = Counter(i["estado"] for i in items)
-    log.info("Escrito %s  (%d hechos, %d KB)", SALIDA.relative_to(RAIZ), len(items), len(html) // 1024)
-    for e in ("top_trend", "trending", "interes", "emergente"):
+    log.info("Escrito %s  (%d hechos, %d KB)",
+             SALIDA.relative_to(RAIZ), len(items), len(html) // 1024)
+    for e in ORDEN_LOG:
         if c[e]:
-            log.info("   %-12s %d", e, c[e])
+            log.info("   %-16s %d", e, c[e])
     return 0
+
+
+ORDEN_LOG = ("top_trend", "trending", "interes", "emergente",
+             "nadie_lo_mira", "ruido", "fuera_alcance")
 
 
 if __name__ == "__main__":
