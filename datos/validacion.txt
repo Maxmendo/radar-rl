@@ -1,2 +1,8 @@
 
-24 vivas / 24 probadas
+23 vivas / 24 probadas
+
+Revisar en fuentes.yaml:
+  - cels: HTTP 403
+
+Corregir la URL o dar de baja la fuente. No implementar módulos
+de ingesta para fuentes que no validan.
