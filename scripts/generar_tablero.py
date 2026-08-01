@@ -176,8 +176,22 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .accion{font-size:.85rem;color:var(--suave);margin:.55rem 0 1.1rem;
   padding-left:.7rem;border-left:3px solid var(--linea);transition:border-color .15s}
 
-/* Filtros, agrupados y rotulados */
-.filtros{margin-bottom:1.3rem}
+/* Filtros: colapsados por defecto para que las noticias tengan la portada */
+.barra{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:0 0 1rem}
+.abrir{font:inherit;font-size:.8rem;font-weight:600;padding:.34rem .8rem;cursor:pointer;
+  background:var(--tarjeta);color:var(--suave);border:1px solid var(--linea);
+  border-radius:99px;display:flex;align-items:center;gap:.35rem}
+.abrir::after{content:"▾";font-size:.7rem;transition:transform .15s}
+.abrir[aria-expanded="true"]{color:var(--rojo);border-color:var(--rosa-claro)}
+.abrir[aria-expanded="true"]::after{transform:rotate(180deg)}
+.abrir #cuenta:not(:empty){background:var(--rojo);color:#fff;border-radius:99px;
+  padding:0 .38rem;font-size:.72rem}
+.limpiar{font:inherit;font-size:.78rem;padding:.3rem .7rem;cursor:pointer;
+  background:transparent;color:var(--rojo);border:none;text-decoration:underline}
+.resultado{font-size:.79rem;color:var(--tenue);margin-left:auto}
+.filtros{margin:0 0 1.3rem;padding:.9rem 1rem;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:9px}
+.filtros[hidden]{display:none}
 .grupo{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-bottom:.4rem}
 .rotulo{font-size:.69rem;text-transform:uppercase;letter-spacing:.06em;
   color:var(--tenue);font-weight:600;min-width:132px;line-height:1.35}
@@ -256,7 +270,12 @@ footer b{color:var(--tinta)}
 __AVISO__
 <div class="semaforo" id="semaforo"></div>
 <p class="accion" id="accion"></p>
-<div class="filtros" id="filtros"></div>
+<div class="barra">
+  <button class="abrir" id="abrir" aria-expanded="false">Filtros <span id="cuenta"></span></button>
+  <button class="limpiar" id="limpiar" hidden>Quitar filtros</button>
+  <span class="resultado" id="resultado"></span>
+</div>
+<div class="filtros" id="filtros" hidden></div>
 <div id="lista"></div>
 <footer>
 <b>Cómo leerlo.</b> Cada fila es un <i>hecho</i>, no una nota: si veinte medios publican
@@ -336,8 +355,10 @@ function armarFiltros(){
       const presentes=m.ejes.filter(e=>ejes.includes(e));
       if(presentes.length) grupo(m.nombre,presentes,'eje');
     });
+    // Ejes que no pertenecen a ninguna macroarea: quedaron de una version
+    // anterior del vocabulario. Se muestran aparte para poder detectarlos.
     const sueltos=ejes.filter(e=>!Object.values(MACRO).some(m=>m.ejes.includes(e)));
-    if(sueltos.length) grupo('Otros',sueltos,'eje');
+    if(sueltos.length) grupo('Vocabulario viejo',sueltos,'eje');
     if(pobls.length) grupo('Población',pobls,'pobl');
     const actores=[...new Set(ITEMS.flatMap(i=>i.actores||[]))].sort();
     if(actores.length) grupo('Actor',actores,'actor');
@@ -352,6 +373,30 @@ function armarFiltros(){
     'El <b>dónde</b> sale de los países que menciona el titular. «Regional» es un hecho '+
     'que cruza más de un bloque; «Sin determinar», uno cuyo titular no nombra ningún país.';
   c.appendChild(n);
+}
+
+function activos(){
+  return [ejeActivo,poblActiva,actorActivo,regionActiva].filter(Boolean).length;
+}
+
+function refrescarBarra(n){
+  const c=activos();
+  document.getElementById('cuenta').textContent=c?c:'';
+  document.getElementById('limpiar').hidden=!c;
+  document.getElementById('resultado').textContent=
+    n===null?'':`${n} ${n===1?'hecho':'hechos'}`;
+}
+
+function alternarFiltros(){
+  const caja=document.getElementById('filtros'), b=document.getElementById('abrir');
+  const abierto=b.getAttribute('aria-expanded')==='true';
+  b.setAttribute('aria-expanded',String(!abierto));
+  caja.hidden=abierto;
+}
+
+function limpiarFiltros(){
+  ejeActivo=poblActiva=actorActivo=regionActiva=null;
+  dibujar();
 }
 
 function cambiar(v){
@@ -377,6 +422,7 @@ function dibujar(){
     .filter(i=>!actorActivo||(i.actores||[]).includes(actorActivo))
     .filter(i=>!regionActiva||i.region===regionActiva)
     .sort((a,b)=>b.puntaje-a.puntaje);
+  refrescarBarra(vis.length);
   const l=document.getElementById('lista');
   if(!vis.length){l.innerHTML='<p class="vacio">Sin resultados con estos filtros.</p>';return}
   l.innerHTML=vis.map(i=>{
@@ -409,6 +455,8 @@ function dibujar(){
     </article>`}).join('');
 }
 
+document.getElementById('abrir').onclick=alternarFiltros;
+document.getElementById('limpiar').onclick=limpiarFiltros;
 armarSemaforo();
 armarFiltros();
 cambiar(vista||'emergente');
