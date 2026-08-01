@@ -39,8 +39,21 @@ RAIZ = Path(__file__).resolve().parent.parent
 ITEMS = RAIZ / "datos" / "items.json"
 PROMPT = RAIZ / "prompts" / "clasificacion.md"
 
-MODELO = "gemini-2.0-flash"
-URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODELO}:generateContent"
+# Cascada de modelos: si el primero falla por no existir o por cupo, se pasa al
+# siguiente. Los nombres de modelos de Google cambian seguido y las versiones
+# viejas se apagan: `gemini-2.5-flash` se apaga el 16/10/2026.
+#
+# NO usar el alias `gemini-flash-latest`: apunta a modelos experimentales, no
+# aptos para produccion y con limites de tasa mas restrictivos.
+#
+# Flash-Lite va primero a proposito: clasificar titulares es una tarea acotada
+# con salida JSON estricta, justo el caso de uso del modelo mas barato.
+MODELOS = [
+    "gemini-3.5-flash-lite",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
+]
+BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 TIMEOUT = 120
 LOTE = 20
 REINTENTOS = 3
@@ -113,43 +126,69 @@ def extraer_json(texto: str) -> list[dict]:
     return datos if isinstance(datos, list) else [datos]
 
 
-def llamar(clave: str, sistema: str, lote: list[dict]) -> list[dict]:
-    """Una llamada a la API por lote, con reintentos ante limite de tasa."""
+def llamar_modelo(clave: str, modelo: str, cuerpo: dict) -> tuple[list[dict], str]:
+    """Intenta un modelo. Devuelve (resultado, motivo_de_fallo).
+
+    El motivo distingue fallos que justifican pasar al siguiente modelo
+    ("inexistente", "cupo") de los que no ("config").
+    """
+    url = f"{BASE}/{modelo}:generateContent"
+
+    for intento in range(1, REINTENTOS + 1):
+        try:
+            r = requests.post(url, params={"key": clave}, json=cuerpo, timeout=TIMEOUT)
+        except requests.RequestException as e:
+            log.warning("      red (%s), intento %d/%d", type(e).__name__, intento, REINTENTOS)
+            time.sleep(ESPERA_BASE * intento)
+            continue
+
+        if r.status_code == 404:
+            return [], "inexistente"
+        if r.status_code == 429:
+            if intento == REINTENTOS:
+                return [], "cupo"
+            espera = ESPERA_BASE * (2 ** intento)
+            log.warning("      limite de tasa; espero %ds (%d/%d)", espera, intento, REINTENTOS)
+            time.sleep(espera)
+            continue
+        if r.status_code in (400, 401, 403):
+            log.warning("      HTTP %s: %s", r.status_code, r.text[:200])
+            return [], "config"
+        if r.status_code != 200:
+            log.warning("      HTTP %s, intento %d/%d", r.status_code, intento, REINTENTOS)
+            time.sleep(ESPERA_BASE * intento)
+            continue
+
+        try:
+            texto = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            return extraer_json(texto), ""
+        except (KeyError, IndexError, json.JSONDecodeError) as e:
+            log.warning("      respuesta ilegible (%s), intento %d/%d",
+                        type(e).__name__, intento, REINTENTOS)
+            time.sleep(ESPERA_BASE * intento)
+
+    return [], "agotado"
+
+
+def llamar(clave: str, sistema: str, lote: list[dict], modelos: list[str]) -> list[dict]:
+    """Recorre la cascada de modelos hasta obtener una respuesta utilizable."""
     cuerpo = {
         "systemInstruction": {"parts": [{"text": sistema}]},
         "contents": [{"parts": [{"text": json.dumps(lote, ensure_ascii=False)}]}],
         "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"},
     }
 
-    for intento in range(1, REINTENTOS + 1):
-        try:
-            r = requests.post(URL, params={"key": clave}, json=cuerpo, timeout=TIMEOUT)
-        except requests.RequestException as e:
-            log.warning("   error de red (%s), intento %d/%d", type(e).__name__, intento, REINTENTOS)
-            time.sleep(ESPERA_BASE * intento)
-            continue
+    for modelo in modelos:
+        log.info("   modelo: %s", modelo)
+        resultado, motivo = llamar_modelo(clave, modelo, cuerpo)
+        if resultado:
+            return resultado
+        if motivo == "config":
+            log.error("   error de configuracion; revisar la clave de API")
+            return []
+        log.warning("   %s no sirvio (%s); paso al siguiente", modelo, motivo or "sin datos")
 
-        if r.status_code == 429:
-            espera = ESPERA_BASE * (2 ** intento)
-            log.warning("   limite de tasa; esperando %ds (intento %d/%d)", espera, intento, REINTENTOS)
-            time.sleep(espera)
-            continue
-
-        if r.status_code != 200:
-            log.warning("   HTTP %s: %s", r.status_code, r.text[:180])
-            if r.status_code in (400, 401, 403):
-                return []          # error de configuracion: reintentar no ayuda
-            time.sleep(ESPERA_BASE * intento)
-            continue
-
-        try:
-            texto = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return extraer_json(texto)
-        except (KeyError, IndexError, json.JSONDecodeError) as e:
-            log.warning("   respuesta ilegible (%s), intento %d/%d",
-                        type(e).__name__, intento, REINTENTOS)
-            time.sleep(ESPERA_BASE * intento)
-
+    log.error("   ningun modelo de la cascada respondio")
     return []
 
 
@@ -203,6 +242,7 @@ def main() -> int:
     ap.add_argument("--lote", type=int, default=LOTE)
     ap.add_argument("--max-hechos", type=int, default=200,
                     help="tope de seguridad por corrida")
+    ap.add_argument("--modelo", help="fuerza un modelo en vez de usar la cascada")
     ap.add_argument("--simular", action="store_true",
                     help="arma los lotes y muestra el plan, sin llamar a la API")
     args = ap.parse_args()
@@ -233,6 +273,7 @@ def main() -> int:
     if args.simular:
         log.info("\nSIMULACION. No se llama a la API.")
         log.info("Prompt de sistema: %d palabras", len(cargar_prompt().split()))
+        log.info("Cascada de modelos: %s", " -> ".join(MODELOS))
         log.info("\nPrimeros hechos del primer lote:")
         for h in lotes[0][:3]:
             log.info("   %s", json.dumps(resumir(h), ensure_ascii=False)[:150])
@@ -253,13 +294,15 @@ def main() -> int:
         "colectividades": set(cfg.get("colectividades", {}).get("valores", [])),
     }
 
+    modelos = [args.modelo] if args.modelo else MODELOS
+    log.info("Cascada de modelos: %s", " -> ".join(modelos))
     sistema = cargar_prompt() + instruccion_de_lote(args.lote)
     por_id = {h["id"]: h for h in hechos}
     ok = fallidos = 0
 
     for n, lote in enumerate(lotes, 1):
         log.info("Lote %d/%d (%d hechos)...", n, len(lotes), len(lote))
-        respuesta = llamar(clave, sistema, [resumir(h) for h in lote])
+        respuesta = llamar(clave, sistema, [resumir(h) for h in lote], modelos)
 
         if not respuesta:
             log.warning("   sin respuesta utilizable; quedan pendientes para la proxima")
