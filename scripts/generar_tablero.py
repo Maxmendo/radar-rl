@@ -193,6 +193,7 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .etiquetas{display:flex;gap:.28rem;flex-wrap:wrap;margin-top:.55rem}
 .et{font-size:.7rem;padding:.1rem .48rem;border-radius:3px;
   border:1px solid var(--linea);color:var(--tenue)}
+.et.inferido{border-style:dashed;opacity:.7}
 .vacio{text-align:center;color:var(--suave);padding:2.5rem 1rem}
 footer{margin-top:2.5rem;padding-top:1.1rem;border-top:1px solid var(--linea);
   color:var(--suave);font-size:.78rem;line-height:1.75}
@@ -235,6 +236,8 @@ sobre el mismo decreto, es un hecho con veinte medios. La cantidad de medios dis
 es la <b>velocidad</b>, y define en qué luz del semáforo está.<br>
 Cada medio listado abajo del título es un enlace directo a su publicación, para chequear
 cualquiera de las fuentes.<br>
+Los países con <span class="et inferido">borde punteado</span> son inferidos de la
+búsqueda, no del titular: menos confiables.<br>
 El radar propone. La decisión editorial es humana.
 <p class="slogan">periodismo sin fronteras</p>
 </footer>
@@ -273,7 +276,10 @@ function armarSemaforo(){
 function armarFiltros(){
   const c=document.getElementById('filtros');
   const ejes=[...new Set(ITEMS.flatMap(i=>i.ejes||[]))].sort();
-  const regs=[...new Set(ITEMS.map(i=>i.region).filter(Boolean))].sort();
+  const ORDEN_REG=['Cono Sur','Region Andina','Brasil','Mexico y Centroamerica',
+                   'Caribe','Estados Unidos','Regional','Sin determinar'];
+  const regs=[...new Set(ITEMS.map(i=>i.region).filter(Boolean))]
+    .sort((a,b)=>ORDEN_REG.indexOf(a)-ORDEN_REG.indexOf(b));
   const grupo=(rotulo,vals,tipo)=>{
     if(!vals.length) return;
     const d=document.createElement('div'); d.className='grupo';
@@ -289,10 +295,13 @@ function armarFiltros(){
     });
     c.appendChild(d);
   };
-  grupo('Tema',ejes,'eje');
-  grupo('Región',regs,'region');
+  grupo('Tema · provisorio',ejes,'eje');
+  grupo('Dónde ocurre',regs,'region');
   const n=document.createElement('p'); n.className='nota-filtro';
-  n.textContent='Los temas son provisorios: indican qué búsqueda trajo la nota, no un análisis de su contenido.';
+  n.innerHTML='Los <b>temas</b> son provisorios: indican qué búsqueda trajo la nota, '+
+    'no un análisis de su contenido. Se reemplazan cuando esté la clasificación por IA.<br>'+
+    'El <b>dónde</b> sale de los países que menciona el titular. «Regional» es un hecho '+
+    'que cruza más de un bloque; «Sin determinar», uno cuyo titular no nombra ningún país.';
   c.appendChild(n);
 }
 
@@ -334,7 +343,7 @@ function dibujar(){
       <div class="etiquetas">
         ${(i.ejes||[]).map(e=>`<span class="et">${esc(e)}</span>`).join('')}
         ${i.region?`<span class="et">${esc(i.region)}</span>`:''}
-        ${(i.paises||[]).slice(0,4).map(p=>`<span class="et">${esc(p)}</span>`).join('')}
+        ${(i.paises||[]).slice(0,4).map(p=>`<span class="et${i.pais_inferido?' inferido':''}">${esc(p)}</span>`).join('')}
       </div>
     </article>`}).join('');
 }

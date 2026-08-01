@@ -70,6 +70,49 @@ EN_ALCANCE = {
 # Toponimos de otras regiones que, si aparecen, definen el hecho aunque tambien
 # se mencione un pais del alcance. Ej: "Trump opina sobre Ceuta" es sobre Ceuta.
 FUERA_DOMINANTE = {"ceuta", "melilla", "marruecos", "myanmar", "schengen", "frontex"}
+
+# Paises mencionados en el titulo -> codigo ISO. Es lo que define la region del
+# HECHO. La consulta que lo trajo solo dice de donde salio el dato, no donde
+# ocurre: una nota sobre ICE encontrada por la consulta de Colombia sigue siendo
+# de Estados Unidos.
+GENTILICIOS = {
+    "AR": ("argentina", "argentino", "milei", "buenos aires", "cordoba"),
+    "CL": ("chile", "chileno", "santiago de chile", "boric"),
+    "UY": ("uruguay", "uruguayo", "montevideo"),
+    "PY": ("paraguay", "paraguayo", "asuncion"),
+    "BO": ("bolivia", "boliviano", "la paz"),
+    "PE": ("peru", "peruano", "lima"),
+    "EC": ("ecuador", "ecuatoriano", "quito", "guayaquil"),
+    "CO": ("colombia", "colombiano", "bogota", "petro", "medellin"),
+    "VE": ("venezuela", "venezolano", "caracas", "maduro"),
+    "BR": ("brasil", "brasileno", "brasilena", "lula", "sao paulo"),
+    "MX": ("mexico", "mexicano", "sheinbaum", "chiapas", "tijuana"),
+    "GT": ("guatemala", "guatemalteco"),
+    "HN": ("honduras", "hondureno"),
+    "SV": ("salvador", "salvadoreno", "bukele"),
+    "NI": ("nicaragua", "nicaraguense", "ortega"),
+    "CR": ("costa rica", "costarricense"),
+    "PA": ("panama", "panameno", "darien"),
+    "DO": ("dominicana", "dominicano", "santo domingo"),
+    "HT": ("haiti", "haitiano"),
+    "CU": ("cuba", "cubano", "habana"),
+    "PR": ("puerto rico", "puertorriqueno"),
+    "US": ("estados unidos", "eeuu", "ee uu", "ice", "trump", "washington",
+           "california", "texas", "florida", "chicago", "nueva york"),
+}
+
+# Bloque regional al que pertenece cada pais. Es la region que se muestra.
+REGION_DE = {}
+for _r, _ps in {
+    "Cono Sur": ("AR", "CL", "UY", "PY"),
+    "Region Andina": ("BO", "PE", "EC", "CO", "VE"),
+    "Brasil": ("BR",),
+    "Mexico y Centroamerica": ("MX", "GT", "HN", "SV", "NI", "CR", "PA"),
+    "Caribe": ("DO", "HT", "CU", "PR"),
+    "Estados Unidos": ("US",),
+}.items():
+    for _p in _ps:
+        REGION_DE[_p] = _r
 SIMILITUD_MINIMA = 0.35     # umbral para considerar que dos notas son el mismo hecho
 MINIMO_COMPARTIDO = 2       # palabras significativas en comun, como piso
 LARGO_RAIZ = 6              # truncado de palabras para unificar formas flexionadas
@@ -170,6 +213,29 @@ def fuera_de_alcance(titulo: str) -> bool:
             and not any(p in t for p in EN_ALCANCE))
 
 
+def paises_del_titulo(titulo: str) -> list[str]:
+    """Codigos ISO de los paises que menciona el titulo, en orden de aparicion."""
+    t = sin_acentos(titulo.lower())
+    hallados = []
+    for iso, terminos in GENTILICIOS.items():
+        pos = min((t.find(x) for x in terminos if x in t), default=-1)
+        if pos >= 0:
+            hallados.append((pos, iso))
+    return [iso for _, iso in sorted(hallados)]
+
+
+def region_de(paises: list[str]) -> str:
+    """Bloque regional del hecho. Si abarca varios bloques, es Regional."""
+    regiones = []
+    for p in paises:
+        r = REGION_DE.get(p)
+        if r and r not in regiones:
+            regiones.append(r)
+    if not regiones:
+        return "Sin determinar"
+    return regiones[0] if len(regiones) == 1 else "Regional"
+
+
 def fecha_de(entrada) -> datetime | None:
     """Fecha de publicacion en UTC, o None si el feed no la trae."""
     t = entrada.get("published_parsed") or entrada.get("updated_parsed")
@@ -255,8 +321,18 @@ def agrupar(items: list[dict]) -> list[dict]:
         medios = [c["medio"] for c in coberturas]
         fechas = sorted(i["fecha"] for i in g)
         ejes = [i["eje_esperado"] for i in g if i["eje_esperado"]]
-        regiones = sorted({i["region"] for i in g})
-        paises = sorted({p for i in g for p in i["pais"]})
+
+        # Los paises salen del titulo, no de la consulta. Si el titulo no
+        # menciona ninguno, se cae a los paises del bloque que trajo la nota.
+        paises = paises_del_titulo(g[0]["titulo"])
+        if not paises:
+            for i in g:
+                paises = paises_del_titulo(i["titulo"])
+                if paises:
+                    break
+        de_titulo = bool(paises)
+        if not paises:
+            paises = sorted({p for i in g for p in i["pais"]})[:3]
 
         primera = datetime.fromisoformat(fechas[0])
         horas = round((datetime.now(timezone.utc) - primera).total_seconds() / 3600, 1)
@@ -274,9 +350,9 @@ def agrupar(items: list[dict]) -> list[dict]:
             "notas": len(g),
             "otras_urls": [i["url"] for i in g[1:8]],
             "ejes": [e for e, _ in Counter(ejes).most_common(2)],
-            "regiones": regiones,
-            "region": regiones[0] if regiones else "",
+            "region": region_de(paises),
             "paises": paises,
+            "pais_inferido": not de_titulo,
             "fuera_de_alcance": fuera_de_alcance(g[0]["titulo"]),
             "importancia": None,          # requiere clasificacion por LLM
             "clasificado": False,
