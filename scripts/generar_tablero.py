@@ -19,6 +19,8 @@ Uso:
 import json
 import logging
 import sys
+
+import yaml
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -31,6 +33,13 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 log = logging.getLogger("tablero")
 
 
+def mapa_macroareas() -> dict:
+    """Devuelve {macroarea: {"nombre":..., "ejes":[...]}} desde fuentes.yaml."""
+    cfg = yaml.safe_load((RAIZ / "fuentes.yaml").read_text(encoding="utf-8"))
+    return {mid: {"nombre": m["nombre"], "ejes": m["ejes"]}
+            for mid, m in cfg.get("macroareas", {}).items()}
+
+
 def estado(item: dict) -> str:
     """Ubica un hecho en su ciclo de vida segun cuantos medios lo publicaron.
 
@@ -39,6 +48,9 @@ def estado(item: dict) -> str:
     """
     if item.get("fuera_de_alcance"):
         return "fuera_alcance"
+    # El clasificador ya evaluo que no trata de personas en movilidad.
+    if item.get("clasificado") and item.get("es_migratorio") is False:
+        return "ruido"
 
     vel = item.get("velocidad") or 0
     acel = item.get("aceleracion") or 0
@@ -69,7 +81,11 @@ def frescura(horas) -> float:
 
 
 def puntaje(item: dict) -> float:
-    """Orden dentro de cada estado. Sin importancia, manda velocidad y frescura."""
+    """Orden dentro de cada estado.
+
+    Con clasificacion, la importancia editorial pondera. Sin ella, el 5 neutro
+    hace que manden velocidad y frescura.
+    """
     imp = item.get("importancia") or 5
     vel = item.get("velocidad") or 0
     acel = max(0, item.get("aceleracion") or 0)
@@ -163,8 +179,8 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 /* Filtros, agrupados y rotulados */
 .filtros{margin-bottom:1.3rem}
 .grupo{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-bottom:.4rem}
-.rotulo{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
-  color:var(--tenue);font-weight:600;min-width:104px}
+.rotulo{font-size:.69rem;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--tenue);font-weight:600;min-width:132px;line-height:1.35}
 .grupo button{font:inherit;font-size:.78rem;padding:.24rem .68rem;cursor:pointer;
   background:var(--tarjeta);color:var(--suave);border:1px solid var(--linea);
   border-radius:99px}
@@ -194,6 +210,14 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .et{font-size:.7rem;padding:.1rem .48rem;border-radius:3px;
   border:1px solid var(--linea);color:var(--tenue)}
 .et.inferido{border-style:dashed;opacity:.7}
+.et.eje{border-color:var(--rosa-claro);color:var(--rosa)}
+.et.pobl{background:var(--fondo);border-color:var(--marron-med);color:var(--marron-med)}
+.imp{background:var(--fondo);padding:.05rem .42rem;border-radius:3px;
+  border:1px solid var(--linea)}
+.imp b{color:var(--rojo)}
+.angulo{font-size:.85rem;margin:.5rem 0 0;padding-left:.7rem;
+  border-left:2px solid var(--sem-verde);color:var(--tinta)}
+.termino{font-size:.78rem;margin:.45rem 0 0;color:var(--sem-rojo)}
 .vacio{text-align:center;color:var(--suave);padding:2.5rem 1rem}
 footer{margin-top:2.5rem;padding-top:1.1rem;border-top:1px solid var(--linea);
   color:var(--suave);font-size:.78rem;line-height:1.75}
@@ -245,16 +269,18 @@ El radar propone. La decisión editorial es humana.
 
 <script>
 const ITEMS = __ITEMS__;
-let vista=null, ejeActivo=null, regionActiva=null;
+const CLASIFICADO = __CLASIFICADO__;
+const MACRO = __MACRO__;
+let vista=null, ejeActivo=null, regionActiva=null, poblActiva=null;
 
 const ESTADOS = {
   trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
   interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Si el tema escala, la nota ya está publicada.'},
   top_trend:{n:'Top trend', a:'20 o más medios. Saturado: no correrla. Cubrir solo con ángulo propio o dato nuevo.'},
   emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.'},
-  nadie_lo_mira:{n:'Nadie lo mira', a:'Importante y casi sin cobertura. Investigar: posible primicia.'},
-  ruido:{n:'Ruido', a:'Poca cobertura y poca importancia. Visible para auditar qué se descarta.'},
-  fuera_alcance:{n:'Fuera de alcance', a:'Migración en otras regiones: Ceuta, el Mediterráneo, Asia. No es nuestra cobertura, pero sirve como contexto comparado. Ceuta, por ejemplo, es el caso testigo de externalización de fronteras.'}
+  nadie_lo_mira:{n:'Posibles alertas', a:'Posible noticia de impacto. Para investigar. Alta importancia editorial y casi sin cobertura: si se confirma, es una primicia.'},
+  ruido:{n:'Para auditar', a:'Baja cobertura y baja importancia, o el clasificador determinó que no trata de personas en movilidad. Visible para controlar qué se está descartando.'},
+  fuera_alcance:{n:'Noticias extrarregionales', a:'Noticias sobre migración de otros continentes, para contexto comparado. Ceuta, por ejemplo, es el caso testigo de externalización de fronteras.'}
 };
 const ORDEN=['top_trend','trending','interes','emergente','nadie_lo_mira','ruido','fuera_alcance'];
 
@@ -276,6 +302,7 @@ function armarSemaforo(){
 function armarFiltros(){
   const c=document.getElementById('filtros');
   const ejes=[...new Set(ITEMS.flatMap(i=>i.ejes||[]))].sort();
+  const pobls=[...new Set(ITEMS.flatMap(i=>i.poblaciones||[]))].sort();
   const ORDEN_REG=['Cono Sur','Region Andina','Brasil','Mexico y Centroamerica',
                    'Caribe','Estados Unidos','Regional','Sin determinar'];
   const regs=[...new Set(ITEMS.map(i=>i.region).filter(Boolean))]
@@ -289,17 +316,32 @@ function armarFiltros(){
       const b=document.createElement('button');
       b.textContent=v; b.dataset.tipo=tipo; b.dataset.valor=v;
       b.setAttribute('aria-pressed','false');
-      b.onclick=()=>{ if(tipo==='eje') ejeActivo=ejeActivo===v?null:v;
-                      else regionActiva=regionActiva===v?null:v; dibujar(); };
+      b.onclick=()=>{
+        if(tipo==='eje') ejeActivo=ejeActivo===v?null:v;
+        else if(tipo==='pobl') poblActiva=poblActiva===v?null:v;
+        else regionActiva=regionActiva===v?null:v;
+        dibujar(); };
       d.appendChild(b);
     });
     c.appendChild(d);
   };
-  grupo('Tema · provisorio',ejes,'eje');
+  if(CLASIFICADO){
+    // Un grupo por macroarea, solo con los ejes que aparecen en esta corrida.
+    Object.values(MACRO).forEach(m=>{
+      const presentes=m.ejes.filter(e=>ejes.includes(e));
+      if(presentes.length) grupo(m.nombre,presentes,'eje');
+    });
+    const sueltos=ejes.filter(e=>!Object.values(MACRO).some(m=>m.ejes.includes(e)));
+    if(sueltos.length) grupo('Otros',sueltos,'eje');
+    if(pobls.length) grupo('Población',pobls,'pobl');
+  } else {
+    grupo('Tema · provisorio',ejes,'eje');
+  }
   grupo('Dónde ocurre',regs,'region');
   const n=document.createElement('p'); n.className='nota-filtro';
-  n.innerHTML='Los <b>temas</b> son provisorios: indican qué búsqueda trajo la nota, '+
-    'no un análisis de su contenido. Se reemplazan cuando esté la clasificación por IA.<br>'+
+  n.innerHTML=(CLASIFICADO
+    ?'Los <b>ejes</b> están agrupados por macroárea y los asigna el clasificador leyendo cada titular.<br>'
+    :'Los <b>temas</b> son provisorios: indican qué búsqueda trajo la nota, no un análisis de su contenido.<br>')+
     'El <b>dónde</b> sale de los países que menciona el titular. «Regional» es un hecho '+
     'que cruza más de un bloque; «Sin determinar», uno cuyo titular no nombra ningún país.';
   c.appendChild(n);
@@ -318,11 +360,12 @@ function cambiar(v){
 
 function dibujar(){
   document.querySelectorAll('.grupo button').forEach(b=>{
-    const act=b.dataset.tipo==='eje'?ejeActivo:regionActiva;
+    const act=b.dataset.tipo==='eje'?ejeActivo:(b.dataset.tipo==='pobl'?poblActiva:regionActiva);
     b.setAttribute('aria-pressed',String(b.dataset.valor===act));
   });
   const vis=ITEMS.filter(i=>i.estado===vista)
     .filter(i=>!ejeActivo||(i.ejes||[]).includes(ejeActivo))
+    .filter(i=>!poblActiva||(i.poblaciones||[]).includes(poblActiva))
     .filter(i=>!regionActiva||i.region===regionActiva)
     .sort((a,b)=>b.puntaje-a.puntaje);
   const l=document.getElementById('lista');
@@ -332,16 +375,22 @@ function dibujar(){
     return `<article class="item">
       <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
       <div class="datos">
+        ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">imp <b>${i.importancia}</b></span>`:''}
         <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>
         ${i.notas>1?`<span>${i.notas} notas</span>`:''}
         ${i.horas!=null?`<span>hace ${i.horas<1?'menos de 1 h':Math.round(i.horas)+' h'}</span>`:''}
         ${i.aceleracion>0?`<span class="sube">+${i.aceleracion} en 3 h</span>`:''}
       </div>
+      ${i.angulo_sugerido?`<p class="angulo">${esc(i.angulo_sugerido)}</p>`:''}
+      ${(i.terminologia_problematica||[]).length?`<p class="termino">Lenguaje a revisar en la cobertura: ${
+        i.terminologia_problematica.map(x=>esc(x)).join(', ')}</p>`:''}
       ${cob.length?`<div class="fuentes"><div class="tit">Publicado por</div><ul>${
         cob.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`).join('')
       }</ul></div>`:''}
       <div class="etiquetas">
-        ${(i.ejes||[]).map(e=>`<span class="et">${esc(e)}</span>`).join('')}
+        ${(i.ejes||[]).map(e=>`<span class="et eje">${esc(e)}</span>`).join('')}
+        ${(i.poblaciones||[]).map(x=>`<span class="et pobl">${esc(x)}</span>`).join('')}
+        ${i.etapa?`<span class="et">${esc(i.etapa)}</span>`:''}
         ${i.region?`<span class="et">${esc(i.region)}</span>`:''}
         ${(i.paises||[]).slice(0,4).map(p=>`<span class="et${i.pais_inferido?' inferido':''}">${esc(p)}</span>`).join('')}
       </div>
@@ -392,6 +441,8 @@ def main() -> int:
             .replace("__GENERADO__", generado)
             .replace("__RESUMEN__", resumen)
             .replace("__AVISO__", aviso)
+            .replace("__CLASIFICADO__", "true" if datos.get("clasificado") else "false")
+            .replace("__MACRO__", json.dumps(mapa_macroareas(), ensure_ascii=False))
             .replace("__ITEMS__", json.dumps(items, ensure_ascii=False)))
 
     SALIDA.parent.mkdir(parents=True, exist_ok=True)

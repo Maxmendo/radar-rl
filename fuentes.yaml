@@ -636,167 +636,362 @@ descartadas:
   motivo: 'HTTP 403 desde Actions: bloqueo por IP de datacenter.'
   fecha: '2026-07-31'
 ejes:
-- id: normativa
-  nombre: Normativa migratoria
-  alcance: Leyes, decretos, resoluciones y reglamentos migratorios. QUE DICE la norma.
-  familia: politica
+- id: politica_migratoria
+  nombre: Política migratoria
+  macroarea: gobernanza
+  alcance: Qué DICE la norma o el programa. El instrumento, no su orientación.
+  subejes:
+  - legislacion
+  - decretos
+  - reglamentacion
+  - programas
+  - acuerdos_bilaterales
+  - mercosur
+  - integracion_regional
+  - organismos_internacionales
+  activo: true
+- id: fronteras
+  nombre: Fronteras
+  macroarea: gobernanza
+  alcance: Lo que ocurre EN o SOBRE la frontera. La biometría acá es la aplicada al control fronterizo;
+    la biometría como debate tecnológico va a `tecnologia`.
+  subejes:
+  - control_fronterizo
+  - pasos_fronterizos
+  - externalizacion
+  - vigilancia_fronteriza
+  - biometria_en_frontera
+  - rechazo_en_frontera
+  activo: true
+- id: deportaciones
+  nombre: Deportaciones, detención y retornos forzados
+  macroarea: gobernanza
+  alcance: TODA detención de personas migrantes va acá, sea en frontera, en un centro de detención o
+    en una redada en el interior. También las expulsiones y los retornos forzados.
+  subejes:
+  - expulsiones
+  - devoluciones
+  - readmisiones
+  - retorno_forzado
+  - vuelos_de_deportacion
+  - separacion_familiar
+  - detencion_migratoria
+  - centros_de_detencion
+  - redadas
+  - arrestos_migratorios
   activo: true
 - id: securitizacion
-  nombre: Securitizacion de la migracion
-  alcance: Endurecimiento, criminalizacion de la migracion como politica de Estado, militarizacion,
-    migracion tratada como amenaza. QUE DIRECCION tiene la politica. Puede existir sin norma.
-  familia: politica
-  activo: true
-- id: frontera
-  nombre: Control y externalizacion de fronteras
-  alcance: Control fronterizo, externalizacion de fronteras, acuerdos con terceros paises, detencion
-    en frontera, devoluciones en caliente, rechazos.
-  familia: politica
+  nombre: Securitización
+  macroarea: gobernanza
+  alcance: 'Qué DIRECCIÓN tiene la política: la migración tratada como amenaza. Puede existir sin norma:
+    declaraciones, despliegues, planes no publicados.'
+  subejes:
+  - militarizacion
+  - criminalizacion
+  - perfilamiento_racial
+  - vigilancia_digital
+  - inteligencia
+  - estado_de_excepcion
   activo: true
 - id: rutas
-  nombre: Rutas y transito
-  alcance: Darien, corredores terrestres, Caribe maritimo, naufragios, caravanas, personas desaparecidas
-    en ruta.
-  familia: politica
+  nombre: Rutas migratorias
+  macroarea: gobernanza
+  alcance: 'El trayecto en sí: corredores, riesgos, naufragios, desapariciones en ruta.'
+  subejes:
+  - darien
+  - caribe
+  - amazonia
+  - andes
+  - rutas_maritimas
+  - rutas_terrestres
+  - naufragios
+  - personas_desaparecidas
+  - caravanas
   activo: true
 - id: asilo
-  nombre: Asilo y proteccion internacional
-  alcance: Refugio, asilo, apatridia, proteccion internacional, non-refoulement, devolucion al riesgo.
-  familia: proteccion
+  nombre: Asilo y protección internacional
+  macroarea: proteccion
+  alcance: El régimen jurídico de protección internacional.
+  subejes:
+  - refugio
+  - proteccion_complementaria
+  - apatridia
+  - non_refoulement
+  - solicitudes_de_asilo
+  - reasentamiento
   activo: true
-- id: ddhh
-  nombre: Derechos humanos de personas migrantes
-  alcance: Violaciones de derechos humanos, informes de organismos, denuncias, sistema interamericano
-    y de Naciones Unidas EN MATERIA MIGRATORIA.
-  familia: proteccion
+- id: exilio
+  nombre: Exilios políticos
+  macroarea: proteccion
+  alcance: Desplazamiento por persecución política. Si el desplazamiento es por causas climáticas, va
+    a `movilidad_ambiental`.
+  subejes:
+  - persecucion_politica
+  - periodistas_exiliados
+  - defensores_ddhh
+  - opositores
+  - desplazamiento_por_persecucion
+  activo: true
+- id: derechos_humanos
+  nombre: Derechos humanos
+  macroarea: proteccion
+  alcance: Violaciones, informes de organismos, denuncias. En materia migratoria.
+  subejes:
+  - informes
+  - monitoreo
+  - violaciones
+  - desapariciones
+  - uso_excesivo_de_la_fuerza
+  - muertes_bajo_custodia
   activo: true
 - id: justicia
-  nombre: Justicia y litigio migratorio
-  alcance: Fallos, litigio estrategico, amparos y causas judiciales EN MATERIA MIGRATORIA O DE ASILO.
-    No cualquier tema judicial.
-  familia: proteccion
+  nombre: Justicia
+  macroarea: proteccion
+  alcance: Fallos y litigio EN MATERIA MIGRATORIA O DE ASILO. No cualquier tema judicial.
+  subejes:
+  - jurisprudencia
+  - litigio_estrategico
+  - acceso_a_la_justicia
+  - corte_idh
+  - tribunales
+  - amparos
+  - debido_proceso
   activo: true
 - id: trata
-  nombre: Trata y trafico de personas
-  alcance: Trata, trafico ilicito de migrantes, explotacion, redes.
-  familia: proteccion
+  nombre: Trata y explotación
+  macroarea: proteccion
+  alcance: Redes de trata y tráfico. Si es explotación laboral sin red criminal, puede ir a `trabajo`.
+  subejes:
+  - trata
+  - trafico_de_migrantes
+  - explotacion_laboral
+  - explotacion_sexual
+  - trabajo_forzoso
+  - esclavitud_moderna
   activo: true
 - id: estatus
-  nombre: Situacion migratoria
-  alcance: Regularizacion, irregularidad, residencia permanente y transitoria, precaria, permisos, documentacion,
-    visados.
-  familia: cotidiano
+  nombre: Estatus migratorio
+  macroarea: integracion
+  alcance: 'La situación jurídica de la persona: qué papeles tiene o le faltan.'
+  subejes:
+  - residencia
+  - regularizacion
+  - irregularidad
+  - ciudadania
+  - naturalizacion
+  - documentacion
+  - visas
+  - permisos
+  - radicacion
   activo: true
 - id: acceso_derechos
-  nombre: Acceso efectivo a derechos
-  alcance: 'Salud, educacion, vivienda, inclusion financiera: el acceso concreto en el dia a dia.'
-  familia: cotidiano
+  nombre: Acceso a derechos
+  macroarea: integracion
+  alcance: El acceso concreto a servicios en el día a día.
+  subejes:
+  - salud
+  - educacion
+  - vivienda
+  - seguridad_social
+  - bancarizacion
+  - alquileres
   activo: true
 - id: trabajo
-  nombre: Trabajo y economia migrante
-  alcance: Condiciones laborales, informalidad, credenciales, explotacion laboral.
-  familia: cotidiano
+  nombre: Trabajo y economía
+  macroarea: integracion
+  alcance: Condiciones laborales y economía migrante.
+  subejes:
+  - empleo
+  - empleo_informal
+  - economia_popular
+  - cooperativas
+  - emprendimientos
+  - homologacion_de_titulos
+  - derechos_laborales
   activo: true
-- id: servicio
-  nombre: Tramites y periodismo de servicio
-  alcance: 'Requisitos, plazos, turnos, costos, oficinas: informacion accionable para quien migra.'
-  familia: cotidiano
+- id: servicios
+  nombre: Servicios y trámites
+  macroarea: integracion
+  alcance: 'Información ACCIONABLE: qué hacer, dónde, con qué requisitos.'
+  subejes:
+  - guias
+  - tutoriales
+  - tramites
+  - preguntas_frecuentes
+  - directorios
+  - recursos_utiles
+  - turnos
+  - requisitos
   activo: true
 - id: odio
-  nombre: Discurso de odio y desinformacion
-  alcance: Xenofobia, discurso de odio, desinformacion antimigrante, criminalizacion mediatica.
-  familia: discurso
+  nombre: Discursos de odio
+  macroarea: narrativas
+  alcance: 'El discurso en sí: quién lo emite y qué dice.'
+  subejes:
+  - xenofobia
+  - racismo
+  - discriminacion
+  - desinformacion
+  - fake_news
+  - campanas_digitales
   activo: true
 - id: medios
-  nombre: Representacion mediatica
-  alcance: 'Como la prensa representa a las personas migrantes: encuadres, terminologia, invisibilizacion.'
-  familia: discurso
+  nombre: Medios y representación
+  macroarea: narrativas
+  alcance: Cómo la prensa representa la migración. Se asigna cuando la nota TRATA sobre la cobertura,
+    o cuando su propio lenguaje es problemático.
+  subejes:
+  - framing
+  - cobertura_periodistica
+  - estereotipos
+  - lenguaje
+  - verificacion
   activo: true
-- id: contexto
-  nombre: Causas y contexto regional
-  alcance: Crisis politicas, economicas o sociales que originan movilidad.
-  familia: contexto
-  activo: false
+- id: interculturalidad
+  nombre: Interculturalidad
+  macroarea: narrativas
+  alcance: Encuentro entre culturas, convivencia, integración cultural.
+  subejes:
+  - convivencia
+  - inclusion
+  - diversidad
+  - dialogo_intercultural
+  activo: true
 - id: comunidad
-  nombre: Comunidades y organizacion
-  alcance: Vida comunitaria, organizacion colectiva, interculturalidad.
-  familia: contexto
-  activo: false
+  nombre: Comunidad migrante
+  macroarea: narrativas
+  alcance: Organización colectiva de las comunidades migrantes.
+  subejes:
+  - organizaciones
+  - asociaciones
+  - liderazgo
+  - participacion
+  - voluntariado
+  - colectividades
+  activo: true
 - id: cultura
-  nombre: Cultura y diasporas
-  alcance: Produccion cultural, lengua, gastronomia, aportes de las diasporas.
-  familia: contexto
-  activo: false
+  nombre: Cultura
+  macroarea: sociedad
+  alcance: Producción y expresión cultural de las diásporas.
+  subejes:
+  - gastronomia
+  - musica
+  - literatura
+  - cine
+  - arte
+  - patrimonio
+  - religiones
+  - festividades
+  activo: true
 - id: memoria
-  nombre: Memoria y exilio
-  alcance: Exilio, memoria migrante, historia de las migraciones.
-  familia: contexto
-  activo: false
-- id: clima
-  nombre: Movilidad climatica
-  alcance: Desplazamiento por causas climaticas y ambientales.
-  familia: contexto
-  activo: false
+  nombre: Memoria migrante
+  macroarea: sociedad
+  alcance: Historia y memoria de las migraciones.
+  subejes:
+  - historia
+  - archivos
+  - testimonios
+  - biografias
+  - efemerides
+  activo: true
+- id: movilidad_ambiental
+  nombre: Movilidad climática y ambiental
+  macroarea: sociedad
+  alcance: Desplazamiento por causas climáticas o ambientales.
+  subejes:
+  - cambio_climatico
+  - migraciones_ambientales
+  - desplazamiento_interno
+  - inundaciones
+  - incendios
+  - sequias
+  - huracanes
+  - desertificacion
+  - aumento_del_nivel_del_mar
+  - reubicacion_planificada
+  activo: true
 - id: tecnologia
-  nombre: Tecnologia y control migratorio
-  alcance: Biometria, vigilancia, IA en control migratorio, decisiones algoritmicas.
-  familia: contexto
-  activo: false
-- id: remesas
-  nombre: Remesas y economia de la migracion
-  alcance: Remesas, costos de envio, impacto economico.
-  familia: contexto
-  activo: false
-- id: politica_diaspora
-  nombre: Participacion politica transnacional
-  alcance: Voto en el exterior, participacion politica de las diasporas.
-  familia: contexto
-  activo: false
+  nombre: Tecnología
+  macroarea: sociedad
+  alcance: La tecnología como objeto de debate. Si es biometría aplicada al control fronterizo, va a
+    `fronteras`.
+  subejes:
+  - inteligencia_artificial
+  - biometria
+  - vigilancia_digital
+  - plataformas
+  - digitalizacion
+  - algoritmos
+  - datos_personales
+  activo: true
+- id: diaspora
+  nombre: Diásporas y transnacionalismo
+  macroarea: sociedad
+  alcance: Vínculos entre origen y destino. El retorno VOLUNTARIO va acá; el forzado, a `deportaciones`.
+  subejes:
+  - voto_exterior
+  - participacion_politica
+  - remesas
+  - comunidades_transnacionales
+  - identidad
+  - retorno_voluntario
+  - reintegracion
+  activo: true
 poblaciones:
 - id: ninez
-  alcance: Ninas, ninos y adolescentes, incluidos NNA no acompanados
+  alcance: Niñas, niños y adolescentes, incluidos NNA no acompañados
 - id: mujeres
-  alcance: Mujeres migrantes, violencia de genero
+  alcance: Mujeres migrantes, violencia de género
 - id: lgbtiq
-  alcance: Personas LGBTIQ+, migracion por orientacion o identidad
+  alcance: Personas LGBTIQ+
 - id: indigenas
-  alcance: Pueblos indigenas en movilidad
+  alcance: Pueblos indígenas en movilidad
 - id: afro
   alcance: Personas afrodescendientes
 - id: personas_mayores
   alcance: Personas adultas mayores
 - id: discapacidad
   alcance: Personas con discapacidad
-- id: trabajadoras_hogar
-  alcance: Trabajo domestico y de cuidados
-- id: refugiados
-  alcance: Solicitantes de asilo y personas refugiadas
-- id: retornados
-  alcance: Personas retornadas o deportadas
 - id: familias
-  alcance: Grupos familiares, reunificacion, separacion
+  alcance: Grupos familiares, reunificación, separación
+- id: trabajadoras_hogar
+  alcance: Trabajo doméstico y de cuidados
 etapas:
 - id: origen
-  alcance: 'Pais de salida: causas, decision de migrar'
+  alcance: 'País de salida: causas, decisión de migrar'
 - id: transito
   alcance: 'En camino: rutas, corredores, riesgos'
 - id: frontera
-  alcance: 'En el paso fronterizo: control, rechazo, detencion'
+  alcance: 'En el paso fronterizo: control, rechazo, detención'
 - id: destino
-  alcance: Asentamiento, integracion, vida cotidiana
+  alcance: Asentamiento, integración, vida cotidiana
 - id: retorno
-  alcance: Retorno voluntario o forzado, reintegracion
+  alcance: Retorno voluntario o forzado, reintegración
 notas_vocabulario:
-  ejes: '14 activos en cuatro familias: politica, proteccion, cotidiano, discurso. Para activar uno
-    inactivo, cambiar `activo` a true; no requiere tocar codigo.'
-  poblaciones: Multiple. Quien esta afectado. Independiente del eje tematico.
-  colectividades: 'Multiple, codigos ISO de pais de origen. No es lista fija: el clasificador la completa
-    con la nacionalidad de la comunidad involucrada. Distinta de `poblaciones`: origen nacional, no
-    condicion de vulnerabilidad.'
+  version: 2.0 (2026-08-01)
+  ejes: '23 ejes en 5 macroareas. Los SUBEJES no son salida del clasificador: son el vocabulario que
+    define el alcance de cada eje dentro del prompt. Pedirle a un modelo que elija entre ~120 subejes
+    desde un titular de 15 palabras produce ruido; darle esos terminos como definicion mejora la asignacion
+    del eje.'
+  poblaciones: Solo condicion de VULNERABILIDAD. La condicion juridica (solicitante de asilo, refugiada,
+    apatrida, deportada) la cubren los ejes `asilo`, `estatus` y `deportaciones`.
+  colectividades: 'Codigos ISO del pais de origen de la comunidad involucrada. Distinta de `poblaciones`:
+    es origen nacional, no vulnerabilidad.'
   etapas: Seleccion unica. En que momento del recorrido ocurre el hecho.
-  terminologia: 'El sistema NO busca ''migracion ilegal'' como termino: trae demasiado ruido y reproduce
-    una categoria que rechazamos. Esa cobertura entra igual por otros terminos, y cuando usa lenguaje
-    deshumanizante el clasificador lo registra en `terminologia_problematica`, que alimenta el eje `medios`.'
+  fuera_del_clasificador: 'FORMATOS (noticia, cronica, perfil, podcast) describe lo que Refugio PRODUCE,
+    no lo que el radar detecta: desde un titular ajeno no es determinable ni cambia la decision de cubrir.
+    ENFOQUES TRANSVERSALES se solapaba con `poblaciones` (ninez_y_adolescencia / ninez, perspectiva_de_genero
+    / mujeres). ESCALAS (barrial a internacional) es util y determinable, pero cada dimension extra
+    degrada la precision de todas: queda para evaluar mas adelante.'
+  desambiguacion:
+    biometria: En control fronterizo -> `fronteras`. Como debate tecnologico -> `tecnologia`.
+    detencion: TODA detencion de personas migrantes -> `deportaciones`, sea en frontera, en centro de
+      detencion o en redada interior.
+    desplazamiento: Por persecucion politica -> `exilio`. Por clima -> `movilidad_ambiental`.
+    retorno: Voluntario -> `diaspora`. Forzado -> `deportaciones`.
+    explotacion: Con red criminal -> `trata`. Sin red -> `trabajo`.
+    vigilancia: En frontera -> `fronteras`. Politica de Estado -> `securitizacion`. Debate tecnologico
+      -> `tecnologia`.
 estados:
   _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
     24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las
@@ -842,3 +1037,47 @@ estados:
     importancia_minima: 7
     max_por_corrida: 3
     no_repetir: Un hecho alerta una sola vez por estado. Registro en datos/alertados.json.
+macroareas:
+  gobernanza:
+    nombre: Gobernanza de la movilidad humana
+    pregunta: ¿Cómo los Estados regulan, controlan y administran la movilidad humana?
+    ejes:
+    - politica_migratoria
+    - fronteras
+    - deportaciones
+    - securitizacion
+    - rutas
+  proteccion:
+    nombre: Protección y derechos
+    pregunta: ¿Qué derechos tienen las personas migrantes y cómo se garantizan?
+    ejes:
+    - asilo
+    - exilio
+    - derechos_humanos
+    - justicia
+    - trata
+  integracion:
+    nombre: Integración y vida cotidiana
+    pregunta: ¿Cómo viven las personas migrantes en las sociedades de destino?
+    ejes:
+    - estatus
+    - acceso_derechos
+    - trabajo
+    - servicios
+  narrativas:
+    nombre: Narrativas e interculturalidad
+    pregunta: ¿Cómo se representa y debate la migración en la sociedad?
+    ejes:
+    - odio
+    - medios
+    - interculturalidad
+    - comunidad
+  sociedad:
+    nombre: Sociedad, cultura y futuro
+    pregunta: ¿Cómo transforman las migraciones nuestras sociedades?
+    ejes:
+    - cultura
+    - memoria
+    - movilidad_ambiental
+    - tecnologia
+    - diaspora

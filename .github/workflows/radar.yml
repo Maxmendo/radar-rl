@@ -74,6 +74,20 @@ jobs:
       - name: Ingesta
         run: python -m nucleo.ingesta --prioridad 1
 
+      # CLASIFICACION. Solo los hechos nuevos y dentro del alcance, en lotes de
+      # 20. `continue-on-error` a proposito: si la API falla o se agota el cupo,
+      # el radar sigue funcionando sin clasificacion y reintenta en la proxima.
+      # El prompt se genera desde fuentes.yaml, no se edita a mano: asi el
+      # vocabulario del clasificador y el registro no pueden desincronizarse.
+      - name: Generar prompt
+        run: python scripts/generar_prompt.py
+
+      - name: Clasificar
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m nucleo.clasificar --lote 20 --max-hechos 120
+
       # Diagnostico, solo en la corrida del digest para no gastar tiempo.
       - name: Muestrear feeds
         if: steps.cuando.outputs.digest == 'true'
