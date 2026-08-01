@@ -212,6 +212,10 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .et.inferido{border-style:dashed;opacity:.7}
 .et.eje{border-color:var(--rosa-claro);color:var(--rosa)}
 .et.pobl{background:var(--fondo);border-color:var(--marron-med);color:var(--marron-med)}
+.et.actor{border-style:dotted;color:var(--suave)}
+.alerta-mini{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
+  background:var(--fondo);border:1px solid var(--sem-amarillo);color:var(--sem-amarillo);
+  font-weight:600}
 .imp{background:var(--fondo);padding:.05rem .42rem;border-radius:3px;
   border:1px solid var(--linea)}
 .imp b{color:var(--rojo)}
@@ -271,7 +275,7 @@ El radar propone. La decisión editorial es humana.
 const ITEMS = __ITEMS__;
 const CLASIFICADO = __CLASIFICADO__;
 const MACRO = __MACRO__;
-let vista=null, ejeActivo=null, regionActiva=null, poblActiva=null;
+let vista=null, ejeActivo=null, regionActiva=null, poblActiva=null, actorActivo=null;
 
 const ESTADOS = {
   trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
@@ -319,6 +323,7 @@ function armarFiltros(){
       b.onclick=()=>{
         if(tipo==='eje') ejeActivo=ejeActivo===v?null:v;
         else if(tipo==='pobl') poblActiva=poblActiva===v?null:v;
+        else if(tipo==='actor') actorActivo=actorActivo===v?null:v;
         else regionActiva=regionActiva===v?null:v;
         dibujar(); };
       d.appendChild(b);
@@ -334,6 +339,8 @@ function armarFiltros(){
     const sueltos=ejes.filter(e=>!Object.values(MACRO).some(m=>m.ejes.includes(e)));
     if(sueltos.length) grupo('Otros',sueltos,'eje');
     if(pobls.length) grupo('Población',pobls,'pobl');
+    const actores=[...new Set(ITEMS.flatMap(i=>i.actores||[]))].sort();
+    if(actores.length) grupo('Actor',actores,'actor');
   } else {
     grupo('Tema · provisorio',ejes,'eje');
   }
@@ -360,12 +367,14 @@ function cambiar(v){
 
 function dibujar(){
   document.querySelectorAll('.grupo button').forEach(b=>{
-    const act=b.dataset.tipo==='eje'?ejeActivo:(b.dataset.tipo==='pobl'?poblActiva:regionActiva);
+    const T=b.dataset.tipo;
+    const act=T==='eje'?ejeActivo:(T==='pobl'?poblActiva:(T==='actor'?actorActivo:regionActiva));
     b.setAttribute('aria-pressed',String(b.dataset.valor===act));
   });
   const vis=ITEMS.filter(i=>i.estado===vista)
     .filter(i=>!ejeActivo||(i.ejes||[]).includes(ejeActivo))
     .filter(i=>!poblActiva||(i.poblaciones||[]).includes(poblActiva))
+    .filter(i=>!actorActivo||(i.actores||[]).includes(actorActivo))
     .filter(i=>!regionActiva||i.region===regionActiva)
     .sort((a,b)=>b.puntaje-a.puntaje);
   const l=document.getElementById('lista');
@@ -376,6 +385,8 @@ function dibujar(){
       <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
       <div class="datos">
         ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">imp <b>${i.importancia}</b></span>`:''}
+        ${i.requiere_verificacion?`<span class="alerta-mini" title="El titular afirma cifras o hechos sin citar fuente">verificar</span>`:''}
+        ${i.contiene_datos_personales?`<span class="alerta-mini" title="Identifica a una persona migrante concreta">dato personal</span>`:''}
         <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>
         ${i.notas>1?`<span>${i.notas} notas</span>`:''}
         ${i.horas!=null?`<span>hace ${i.horas<1?'menos de 1 h':Math.round(i.horas)+' h'}</span>`:''}
@@ -390,6 +401,7 @@ function dibujar(){
       <div class="etiquetas">
         ${(i.ejes||[]).map(e=>`<span class="et eje">${esc(e)}</span>`).join('')}
         ${(i.poblaciones||[]).map(x=>`<span class="et pobl">${esc(x)}</span>`).join('')}
+        ${(i.actores||[]).map(x=>`<span class="et actor">${esc(x)}</span>`).join('')}
         ${i.etapa?`<span class="et">${esc(i.etapa)}</span>`:''}
         ${i.region?`<span class="et">${esc(i.region)}</span>`:''}
         ${(i.paises||[]).slice(0,4).map(p=>`<span class="et${i.pais_inferido?' inferido':''}">${esc(p)}</span>`).join('')}

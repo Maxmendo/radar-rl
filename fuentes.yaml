@@ -669,16 +669,17 @@ ejes:
   alcance: TODA detención de personas migrantes va acá, sea en frontera, en un centro de detención o
     en una redada en el interior. También las expulsiones y los retornos forzados.
   subejes:
-  - expulsiones
-  - devoluciones
-  - readmisiones
-  - retorno_forzado
-  - vuelos_de_deportacion
-  - separacion_familiar
-  - detencion_migratoria
-  - centros_de_detencion
-  - redadas
   - arrestos_migratorios
+  - centros_de_detencion
+  - detencion_migratoria
+  - devoluciones
+  - expulsiones
+  - readmisiones
+  - reasentamiento_forzado
+  - redadas
+  - retorno_forzado
+  - separacion_familiar
+  - vuelos_de_deportacion
   activo: true
 - id: securitizacion
   nombre: Securitización
@@ -698,15 +699,19 @@ ejes:
   macroarea: gobernanza
   alcance: 'El trayecto en sí: corredores, riesgos, naufragios, desapariciones en ruta.'
   subejes:
-  - darien
-  - caribe
   - amazonia
   - andes
-  - rutas_maritimas
-  - rutas_terrestres
+  - caravanas
+  - caribe
+  - corredores_humanitarios
+  - darien
+  - familiares_de_desaparecidos
+  - flujos_mixtos
   - naufragios
   - personas_desaparecidas
-  - caravanas
+  - personas_desaparecidas_en_ruta
+  - rutas_maritimas
+  - rutas_terrestres
   activo: true
 - id: asilo
   nombre: Asilo y protección internacional
@@ -726,11 +731,13 @@ ejes:
   alcance: Desplazamiento por persecución política. Si el desplazamiento es por causas climáticas, va
     a `movilidad_ambiental`.
   subejes:
-  - persecucion_politica
-  - periodistas_exiliados
   - defensores_ddhh
-  - opositores
+  - desplazamiento_interno_por_violencia
+  - desplazamiento_por_crimen_organizado
   - desplazamiento_por_persecucion
+  - opositores
+  - periodistas_exiliados
+  - persecucion_politica
   activo: true
 - id: derechos_humanos
   nombre: Derechos humanos
@@ -774,15 +781,18 @@ ejes:
   macroarea: integracion
   alcance: 'La situación jurídica de la persona: qué papeles tiene o le faltan.'
   subejes:
-  - residencia
-  - regularizacion
-  - irregularidad
   - ciudadania
-  - naturalizacion
   - documentacion
-  - visas
+  - estudiantes_internacionales
+  - irregularidad
+  - matrimonios_binacionales
+  - naturalizacion
   - permisos
   - radicacion
+  - regularizacion
+  - residencia
+  - reunificacion_familiar
+  - visas
   activo: true
 - id: acceso_derechos
   nombre: Acceso a derechos
@@ -801,13 +811,17 @@ ejes:
   macroarea: integracion
   alcance: Condiciones laborales y economía migrante.
   subejes:
+  - cooperativas
+  - derechos_laborales
+  - economia_popular
   - empleo
   - empleo_informal
-  - economia_popular
-  - cooperativas
   - emprendimientos
   - homologacion_de_titulos
-  - derechos_laborales
+  - trabajadores_de_plataformas
+  - trabajadores_fronterizos
+  - trabajadores_rurales
+  - trabajadores_temporales
   activo: true
 - id: servicios
   nombre: Servicios y trámites
@@ -899,16 +913,19 @@ ejes:
   macroarea: sociedad
   alcance: Desplazamiento por causas climáticas o ambientales.
   subejes:
-  - cambio_climatico
-  - migraciones_ambientales
-  - desplazamiento_interno
-  - inundaciones
-  - incendios
-  - sequias
-  - huracanes
-  - desertificacion
   - aumento_del_nivel_del_mar
+  - cambio_climatico
+  - comunidades_relocalizadas
+  - desertificacion
+  - desplazamiento_interno
+  - desplazamiento_por_desastres
+  - huracanes
+  - incendios
+  - inundaciones
+  - migraciones_ambientales
+  - poblaciones_insulares_en_riesgo
   - reubicacion_planificada
+  - sequias
   activo: true
 - id: tecnologia
   nombre: Tecnología
@@ -929,25 +946,50 @@ ejes:
   macroarea: sociedad
   alcance: Vínculos entre origen y destino. El retorno VOLUNTARIO va acá; el forzado, a `deportaciones`.
   subejes:
-  - voto_exterior
-  - participacion_politica
-  - remesas
   - comunidades_transnacionales
+  - descendientes_de_migrantes
+  - exiliados_historicos
   - identidad
-  - retorno_voluntario
+  - participacion_politica
   - reintegracion
+  - remesas
+  - retorno_voluntario
+  - segunda_generacion
+  - voto_exterior
+  activo: true
+- id: inmovilidad
+  nombre: Inmovilidad forzada
+  macroarea: proteccion
+  alcance: Personas que quieren o necesitan migrar y no pueden, o que quedaron detenidas a mitad de
+    camino. Es el reverso de la movilidad y casi no tiene cobertura.
+  subejes:
+  - personas_varadas
+  - poblaciones_atrapadas
+  - bloqueo_en_frontera
+  - limbo_juridico
+  - expedientes_paralizados
+  - cierre_de_cupos
+  - imposibilidad_de_salir
   activo: true
 poblaciones:
+- id: primera_infancia
+  alcance: Menores de 6 años
 - id: ninez
   alcance: Niñas, niños y adolescentes, incluidos NNA no acompañados
 - id: mujeres
   alcance: Mujeres migrantes, violencia de género
 - id: lgbtiq
-  alcance: Personas LGBTIQ+
+  alcance: Personas LGBTIQ+ en general
+- id: personas_trans
+  alcance: Personas trans y travestis, cuando la nota lo especifica
+- id: no_binarias
+  alcance: Personas no binarias, cuando la nota lo especifica
 - id: indigenas
   alcance: Pueblos indígenas en movilidad
 - id: afro
   alcance: Personas afrodescendientes
+- id: pueblo_rom
+  alcance: Pueblo rom o gitano
 - id: personas_mayores
   alcance: Personas adultas mayores
 - id: discapacidad
@@ -968,13 +1010,12 @@ etapas:
 - id: retorno
   alcance: Retorno voluntario o forzado, reintegración
 notas_vocabulario:
-  version: 2.0 (2026-08-01)
-  ejes: '23 ejes en 5 macroareas. Los SUBEJES no son salida del clasificador: son el vocabulario que
-    define el alcance de cada eje dentro del prompt. Pedirle a un modelo que elija entre ~120 subejes
-    desde un titular de 15 palabras produce ruido; darle esos terminos como definicion mejora la asignacion
-    del eje.'
-  poblaciones: Solo condicion de VULNERABILIDAD. La condicion juridica (solicitante de asilo, refugiada,
-    apatrida, deportada) la cubren los ejes `asilo`, `estatus` y `deportaciones`.
+  version: 3.0 (2026-08-01)
+  ejes: '24 ejes en 5 macroareas. Los SUBEJES no son salida del clasificador: son el vocabulario que
+    define el alcance de cada eje dentro del prompt.'
+  poblaciones: 13 valores, solo condicion de VULNERABILIDAD. La condicion juridica (solicitante de asilo,
+    refugiada, apatrida, deportada) la cubren los ejes `asilo`, `estatus` y `deportaciones`. Tenerla
+    en las dos dimensiones obligaba al clasificador a decidir dos veces lo mismo.
   colectividades: 'Codigos ISO del pais de origen de la comunidad involucrada. Distinta de `poblaciones`:
     es origen nacional, no vulnerabilidad.'
   etapas: Seleccion unica. En que momento del recorrido ocurre el hecho.
@@ -992,6 +1033,17 @@ notas_vocabulario:
     explotacion: Con red criminal -> `trata`. Sin red -> `trabajo`.
     vigilancia: En frontera -> `fronteras`. Politica de Estado -> `securitizacion`. Debate tecnologico
       -> `tecnologia`.
+    inmovilidad: Si la persona QUIERE moverse y no puede -> `inmovilidad`. Si esta detenida en proceso
+      de expulsion -> `deportaciones`.
+    desaparecidos: En ruta migratoria -> `rutas`. Por persecucion politica -> `exilio`.
+  actores: 'Dimension nueva en v3. Unica del YAML de sujetos que no duplicaba nada: ninguna otra dimension
+    dice QUIEN esta involucrado.'
+  sujetos_no_incorporados: 'El YAML de sujetos (v1.1) tenia ~70 categorias, la mitad ya codificadas
+    como eje: migrantes_deportados -> `deportaciones`, solicitantes_de_asilo -> `asilo`, trabajadores_migrantes
+    -> `trabajo`, condicion_migratoria -> `estatus`. Pedirlas en dos dimensiones a la vez obliga al
+    clasificador a decidir dos veces lo mismo y las respuestas se contradicen. Ademas, distinciones
+    como migrantes_circulares vs estacionales vs temporales requieren conocer el regimen laboral, que
+    ningun titular menciona. Se absorbieron como subejes los que aportaban vocabulario.'
 estados:
   _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
     24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las
@@ -1056,6 +1108,7 @@ macroareas:
     - derechos_humanos
     - justicia
     - trata
+    - inmovilidad
   integracion:
     nombre: Integración y vida cotidiana
     pregunta: ¿Cómo viven las personas migrantes en las sociedades de destino?
@@ -1081,3 +1134,66 @@ macroareas:
     - movilidad_ambiental
     - tecnologia
     - diaspora
+colectividades:
+  _nota: Codigos ISO del pais de ORIGEN de la comunidad involucrada. Distinta de `paises`, que es donde
+    ocurre el hecho. Una nota sobre la comunidad boliviana en Argentina lleva colectividades ['BO']
+    y paises ['AR']. Usar LATAM o CARIBE solo cuando la nota habla de la comunidad migrante en general
+    sin identificar nacionalidad.
+  valores:
+  - AR
+  - BO
+  - BR
+  - CL
+  - CO
+  - CR
+  - CU
+  - DO
+  - EC
+  - SV
+  - GT
+  - GY
+  - HT
+  - HN
+  - MX
+  - NI
+  - PA
+  - PY
+  - PE
+  - SR
+  - UY
+  - VE
+  - LATAM
+  - CARIBE
+actores:
+- id: organizaciones_migrantes
+  alcance: Colectivos y asociaciones de personas migrantes
+- id: sociedad_civil
+  alcance: ONG, organismos de derechos humanos, fundaciones
+- id: organismos_internacionales
+  alcance: ACNUR, OIM, ONU, CIDH, OEA
+- id: estado_nacional
+  alcance: Poder Ejecutivo, ministerios, presidencia
+- id: organismos_migratorios
+  alcance: Direcciones de migraciones, ICE, patrullas fronterizas
+- id: poder_judicial
+  alcance: Tribunales, cortes, fiscalías, defensorías
+- id: poder_legislativo
+  alcance: Congresos, parlamentos, legislaturas
+- id: gobiernos_locales
+  alcance: Provincias, estados, municipios
+- id: consulados
+  alcance: Consulados y embajadas
+- id: universidades
+  alcance: Universidades y centros de investigación
+- id: sindicatos
+  alcance: Sindicatos y gremios
+- id: empresas
+  alcance: Sector privado, empleadores, plataformas
+- id: organizaciones_religiosas
+  alcance: Iglesias, congregaciones, casas del migrante
+- id: albergues
+  alcance: Albergues, refugios, comedores
+- id: medios
+  alcance: Medios de comunicación como actor de la nota
+- id: comunidades_receptoras
+  alcance: Vecinos y comunidades de destino

@@ -118,9 +118,20 @@ etapa `destino` a la vez.
 > La condición jurídica (solicitante de asilo, refugiada, apátrida, deportada) NO va
 > acá: la cubren los ejes `asilo`, `estatus` y `deportaciones`.
 
-**`colectividades`** — múltiple, códigos ISO de dos letras del **país de origen de la
-comunidad** involucrada. Una nota sobre la comunidad boliviana en Argentina lleva
-`["BO"]`. Es origen nacional, no vulnerabilidad. Vacío si no se identifica ninguna.
+**`colectividades`** — múltiple. Códigos ISO del **país de origen de la comunidad**
+involucrada. Una nota sobre la comunidad boliviana en Argentina lleva `["BO"]` y
+`paises: ["AR"]`. Es origen nacional, no vulnerabilidad. Valores admitidos:
+
+{colectividades}
+
+Usá `LATAM` o `CARIBE` solo cuando la nota habla de la comunidad migrante en general
+sin identificar nacionalidad. Vacío si no se identifica ninguna.
+
+**`actores`** — múltiple, vacío si no aplica. **Quién** protagoniza o interviene en el
+hecho. Cambia el abordaje editorial: si el actor es el poder judicial hay documento
+público; si son organizaciones migrantes, hay fuentes contactables.
+
+{actores}
 
 **`etapa`** — **una sola**, o `null` si no se puede determinar:
 
@@ -132,6 +143,10 @@ deportaciones, acuerdos bilaterales), listalos todos. Distinto de `colectividade
 ---
 
 ## PASO 4 — Terminología
+
+**`requiere_verificacion`** — `true` cuando el titular afirma cifras, hechos o
+atribuciones **sin citar fuente**. Ejemplo: "48.000 personas cruzaron" sin decir quién
+lo registró. No baja la `importancia`: señala que antes de cubrirlo hay que chequear.
 
 **`terminologia_problematica`** — lista de términos deshumanizantes que **la propia
 cobertura** usa, no vos. Registralos textualmente si aparecen: `ilegal`, `ilegales`,
@@ -192,6 +207,7 @@ público, según nuestra línea editorial.
   "ejes": ["deportaciones", "derechos_humanos"],
   "poblaciones": [],
   "colectividades": ["MX"],
+  "actores": ["organismos_migratorios"],
   "etapa": "destino",
   "paises": ["US", "MX"],
   "tipo": "normativa|caso|dato|evento|discurso|servicio",
@@ -200,6 +216,7 @@ público, según nuestra línea editorial.
   "confianza": 0.9,
   "tiene_fuente_primaria": false,
   "contiene_datos_personales": true,
+  "requiere_verificacion": false,
   "terminologia_problematica": [],
   "angulo_sugerido": "<max 20 palabras, o null>",
   "nota": "<max 30 palabras: por que esta puntuacion, o que lo hace ambiguo>"
@@ -216,31 +233,37 @@ habría que preguntar, no a cómo escribirlo.
 **1. Decreto que endurece la política migratoria**
 
 ```json
-{{"id":"x1","es_migratorio":true,"ejes":["politica_migratoria","securitizacion","fronteras"],"poblaciones":[],"colectividades":[],"etapa":"destino","paises":["AR"],"tipo":"normativa","importancia":10,"cobertura":9,"confianza":0.95,"tiene_fuente_primaria":true,"contiene_datos_personales":false,"terminologia_problematica":[],"angulo_sugerido":"Que organo define que es un mensaje de odio y con que recurso se impugna","nota":"Habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico."}}
+{{"id":"x1","es_migratorio":true,"ejes":["politica_migratoria","securitizacion","fronteras"],"poblaciones":[],"colectividades":[],"actores":["estado_nacional"],"etapa":"destino","paises":["AR"],"tipo":"normativa","importancia":10,"cobertura":9,"confianza":0.95,"tiene_fuente_primaria":true,"contiene_datos_personales":false,"requiere_verificacion":false,"terminologia_problematica":[],"angulo_sugerido":"Que organo define que es un mensaje de odio y con que recurso se impugna","nota":"Habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico."}}
 ```
 
 **2. Muerte bajo custodia migratoria**
 
 ```json
-{{"id":"x2","es_migratorio":true,"ejes":["deportaciones","derechos_humanos"],"poblaciones":[],"colectividades":["MX"],"etapa":"destino","paises":["US","MX"],"tipo":"caso","importancia":9,"cobertura":6,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"terminologia_problematica":[],"angulo_sugerido":"Cuantas muertes bajo custodia hubo en ese centro en el ultimo ano","nota":"Detencion migratoria con resultado de muerte. Va a deportaciones por ser detencion de migrantes."}}
+{{"id":"x2","es_migratorio":true,"ejes":["deportaciones","derechos_humanos"],"poblaciones":[],"colectividades":["MX"],"actores":["organismos_migratorios","sociedad_civil"],"etapa":"destino","paises":["US","MX"],"tipo":"caso","importancia":9,"cobertura":6,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"terminologia_problematica":[],"angulo_sugerido":"Cuantas muertes bajo custodia hubo en ese centro en el ultimo ano","nota":"Detencion migratoria con resultado de muerte. Va a deportaciones por ser detencion de migrantes."}}
 ```
 
 **3. Cobertura con terminología deshumanizante**
 
 ```json
-{{"id":"x3","es_migratorio":true,"ejes":["odio","medios","fronteras"],"poblaciones":[],"colectividades":[],"etapa":"frontera","paises":["MX","US"],"tipo":"discurso","importancia":6,"cobertura":7,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"terminologia_problematica":["avalancha","ilegales"],"angulo_sugerido":"Contrastar el encuadre con datos oficiales de cruces registrados","nota":"Encuadre de amenaza sin respaldo estadistico. Material para analisis mediatico."}}
+{{"id":"x3","es_migratorio":true,"ejes":["odio","medios","fronteras"],"poblaciones":[],"colectividades":[],"actores":["medios"],"etapa":"frontera","paises":["MX","US"],"tipo":"discurso","importancia":6,"cobertura":7,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":["avalancha","ilegales"],"angulo_sugerido":"Contrastar el encuadre con datos oficiales de cruces registrados","nota":"Encuadre de amenaza sin respaldo estadistico. Material para analisis mediatico."}}
 ```
 
 **4. Ítem que no es migratorio**
 
 ```json
-{{"id":"x4","es_migratorio":false,"ejes":["justicia"],"poblaciones":[],"colectividades":[],"etapa":null,"paises":["AR"],"tipo":"caso","importancia":2,"cobertura":null,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"terminologia_problematica":[],"angulo_sugerido":null,"nota":"Causa penal. La deportacion es consecuencia accesoria, no el eje del hecho."}}
+{{"id":"x4","es_migratorio":false,"ejes":["justicia"],"poblaciones":[],"colectividades":[],"actores":["poder_judicial"],"etapa":null,"paises":["AR"],"tipo":"caso","importancia":2,"cobertura":null,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"terminologia_problematica":[],"angulo_sugerido":null,"nota":"Causa penal. La deportacion es consecuencia accesoria, no el eje del hecho."}}
 ```
 
 **5. Naufragio en ruta, con población y colectividad**
 
 ```json
-{{"id":"x5","es_migratorio":true,"ejes":["rutas","derechos_humanos"],"poblaciones":["ninez","familias"],"colectividades":["HT"],"etapa":"transito","paises":["HT","DO"],"tipo":"evento","importancia":9,"cobertura":2,"confianza":0.85,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"terminologia_problematica":[],"angulo_sugerido":"Contrastar cifras oficiales con registros de organizaciones haitianas","nota":"Alta importancia y casi sin cobertura regional. Prioridad editorial."}}
+{{"id":"x5","es_migratorio":true,"ejes":["rutas","derechos_humanos"],"poblaciones":["ninez","familias"],"colectividades":["HT"],"actores":["organismos_internacionales"],"etapa":"transito","paises":["HT","DO"],"tipo":"evento","importancia":9,"cobertura":2,"confianza":0.85,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":[],"angulo_sugerido":"Contrastar cifras oficiales con registros de organizaciones haitianas","nota":"Alta importancia y casi sin cobertura regional. Prioridad editorial."}}
+```
+
+**6. Inmovilidad forzada**
+
+```json
+{{"id":"x6","es_migratorio":true,"ejes":["inmovilidad","estatus"],"poblaciones":["familias"],"colectividades":["VE"],"actores":["organismos_migratorios"],"etapa":"transito","paises":["PE"],"tipo":"caso","importancia":8,"cobertura":1,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":[],"angulo_sugerido":"Cuantos expedientes estan paralizados y desde cuando","nota":"Personas varadas sin poder avanzar ni volver. Casi sin cobertura."}}
 ```
 
 ---
@@ -276,18 +299,21 @@ def main() -> int:
         for k, v in (notas.get("desambiguacion") or {}).items())
     pobl = "\n".join(f"- `{p['id']}` — {p['alcance']}" for p in cfg["poblaciones"])
     etap = "\n".join(f"- `{e['id']}` — {e['alcance']}" for e in cfg["etapas"])
+    acto = "\n".join(f"- `{a['id']}` — {a['alcance']}" for a in cfg["actores"])
+    cole = ", ".join(f"`{v}`" for v in cfg["colectividades"]["valores"])
 
     texto = (CABECERA.format(version=notas.get("version", "s/d"), fecha=date.today())
              + bloque_ejes(cfg)
-             + CIERRE.format(desambiguacion=desamb, poblaciones=pobl, etapas=etap))
+             + CIERRE.format(desambiguacion=desamb, poblaciones=pobl, etapas=etap,
+                             actores=acto, colectividades=cole))
 
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text(texto, encoding="utf-8")
 
     log.info("Escrito %s", SALIDA.relative_to(RAIZ))
-    log.info("   %d macroareas, %d ejes, %d poblaciones, %d etapas",
-             len(cfg["macroareas"]), len(cfg["ejes"]),
-             len(cfg["poblaciones"]), len(cfg["etapas"]))
+    log.info("   %d macroareas, %d ejes, %d poblaciones, %d actores, %d etapas",
+             len(cfg["macroareas"]), len(cfg["ejes"]), len(cfg["poblaciones"]),
+             len(cfg["actores"]), len(cfg["etapas"]))
     log.info("   %d palabras", len(texto.split()))
     return 0
 
