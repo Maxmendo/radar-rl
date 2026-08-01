@@ -51,13 +51,25 @@ FUERA_DE_ALCANCE = {
     "sanchez", "mediterraneo", "italia", "finlandia", "grecia", "malasia", "myanmar",
     "sudafrica", "ucrania", "canarias", "frontex", "union europea",
 }
+# Solo topónimos y actores identificables de la región. NUNCA palabras genéricas
+# como "migrantes" o "migraciones": aparecen en todas las notas, incluidas las de
+# otras regiones, y anulan el filtro. Fue exactamente lo que dejó pasar la
+# cobertura de Ceuta el 2026-08-01.
 EN_ALCANCE = {
-    "argentina", "argentinos", "milei", "chile", "uruguay", "paraguay", "bolivia",
-    "peru", "ecuador", "colombia", "venezuela", "brasil", "mexico", "guatemala",
-    "honduras", "salvador", "nicaragua", "costa rica", "panama", "dominicana",
-    "haiti", "cuba", "estados unidos", "eeuu", "ice", "trump", "darien",
-    "latinoamerica", "america latina", "migraciones",
+    "argentina", "argentino", "milei", "chile", "chileno", "uruguay", "uruguayo",
+    "paraguay", "paraguayo", "bolivia", "boliviano", "peru", "peruano", "ecuador",
+    "ecuatoriano", "colombia", "colombiano", "venezuela", "venezolano", "brasil",
+    "brasileno", "mexico", "mexicano", "guatemala", "guatemalteco", "honduras",
+    "hondureno", "salvador", "salvadoreno", "nicaragua", "nicaraguense",
+    "costa rica", "costarricense", "panama", "panameno", "dominicana",
+    "dominicano", "haiti", "haitiano", "cuba", "cubano", "puerto rico",
+    "estados unidos", "eeuu", "ee uu", "ice", "trump", "darien", "rio bravo",
+    "latinoamerica", "america latina", "mercosur", "conurbano",
 }
+
+# Toponimos de otras regiones que, si aparecen, definen el hecho aunque tambien
+# se mencione un pais del alcance. Ej: "Trump opina sobre Ceuta" es sobre Ceuta.
+FUERA_DOMINANTE = {"ceuta", "melilla", "marruecos", "myanmar", "schengen", "frontex"}
 SIMILITUD_MINIMA = 0.35     # umbral para considerar que dos notas son el mismo hecho
 MINIMO_COMPARTIDO = 2       # palabras significativas en comun, como piso
 LARGO_RAIZ = 6              # truncado de palabras para unificar formas flexionadas
@@ -140,15 +152,22 @@ def parecido(a: set[str], b: set[str], pesos: dict[str, float]) -> float:
 
 
 def fuera_de_alcance(titulo: str) -> bool:
-    """True si el hecho parece ocurrir fuera de America Latina, el Caribe o EEUU.
+    """True si el hecho ocurre fuera de America Latina, el Caribe o Estados Unidos.
 
-    Heuristica deliberadamente conservadora: solo marca cuando hay senal de otra
-    region Y ninguna del alcance propio. Ante la duda, deja el hecho adentro.
+    Dos reglas:
+      1. Si aparece un toponimo dominante de otra region (Ceuta, Marruecos...),
+         el hecho es de alla aunque se mencione un pais del alcance. "Trump opina
+         sobre Ceuta" sigue siendo una nota sobre Ceuta.
+      2. Si no, marca solo cuando hay senal de otra region y ninguna propia.
+
+    Ante la duda, el hecho queda adentro: es preferible revisar de mas que
+    perder cobertura de la region.
     """
     t = sin_acentos(titulo.lower())
-    hay_fuera = any(p in t for p in FUERA_DE_ALCANCE)
-    hay_dentro = any(p in t for p in EN_ALCANCE)
-    return hay_fuera and not hay_dentro
+    if any(p in t for p in FUERA_DOMINANTE):
+        return True
+    return (any(p in t for p in FUERA_DE_ALCANCE)
+            and not any(p in t for p in EN_ALCANCE))
 
 
 def fecha_de(entrada) -> datetime | None:
