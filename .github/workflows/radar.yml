@@ -133,10 +133,28 @@ jobs:
         run: |
           git config user.name "radar-rl"
           git config user.email "radar@refugiolatinoamericano.com"
-          git add datos/ docs/
+
+          # `prompts/` va incluido a proposito: el paso "Generar prompt" lo
+          # reescribe en cada corrida. Si queda fuera del commit, el archivo
+          # aparece como cambio sin agregar y `pull --rebase` se niega a
+          # trabajar. Fue la causa del fallo del 2026-08-02.
+          git add datos/ docs/ prompts/
+
+          # Descarta cualquier resto no rastreado antes del pull. Sin esto,
+          # un archivo temporal de una corrida rota bloquea todas las siguientes.
+          git checkout -- . 2>/dev/null || true
+
           git diff --staged --quiet || git commit -m "Radar: corrida $(date -u '+%Y-%m-%d %H:%M') UTC"
-          git pull --rebase origin main
-          git push
+
+          # Reintentos: con ocho corridas diarias mas commits manuales, el push
+          # puede rebotar si alguien subio algo mientras esta corria.
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push rechazado, reintento $i/3"
+            sleep 5
+          done
+          echo "No se pudo guardar despues de 3 intentos"
+          exit 1
 
       # Solo en la corrida del digest: adjuntar es util para inspeccionar,
       # pero hacerlo ocho veces por dia llena la pestana de artifacts.
