@@ -40,6 +40,9 @@ SALIDA = RAIZ / "datos" / "items.json"
 TIMEOUT = 25
 UA = "radar-rl/0.2 (Refugio Latinoamericano; contacto@refugiolatinoamericano.com)"
 VENTANA_HORAS = 30          # margen sobre las 24h para no perder nada del borde
+SIMILITUD_MINIMA = 0.35     # umbral para considerar que dos notas son el mismo hecho
+MINIMO_COMPARTIDO = 2       # palabras significativas en comun, como piso
+LARGO_RAIZ = 6              # truncado de palabras para unificar formas flexionadas
 
 # Alcance del medio: America Latina, el Caribe y Estados Unidos.
 # Entra mucha cobertura de la crisis de Ceuta y del Mediterraneo porque la
@@ -71,52 +74,6 @@ EN_ALCANCE = {
 # se mencione un pais del alcance. Ej: "Trump opina sobre Ceuta" es sobre Ceuta.
 FUERA_DOMINANTE = {"ceuta", "melilla", "marruecos", "myanmar", "schengen", "frontex"}
 
-# Paises mencionados en el titulo -> codigo ISO. Es lo que define la region del
-# HECHO. La consulta que lo trajo solo dice de donde salio el dato, no donde
-# ocurre: una nota sobre ICE encontrada por la consulta de Colombia sigue siendo
-# de Estados Unidos.
-GENTILICIOS = {
-    "AR": ("argentina", "argentino", "milei", "buenos aires", "cordoba"),
-    "CL": ("chile", "chileno", "santiago de chile", "boric"),
-    "UY": ("uruguay", "uruguayo", "montevideo"),
-    "PY": ("paraguay", "paraguayo", "asuncion"),
-    "BO": ("bolivia", "boliviano", "la paz"),
-    "PE": ("peru", "peruano", "lima"),
-    "EC": ("ecuador", "ecuatoriano", "quito", "guayaquil"),
-    "CO": ("colombia", "colombiano", "bogota", "petro", "medellin"),
-    "VE": ("venezuela", "venezolano", "caracas", "maduro"),
-    "BR": ("brasil", "brasileno", "brasilena", "lula", "sao paulo"),
-    "MX": ("mexico", "mexicano", "sheinbaum", "chiapas", "tijuana"),
-    "GT": ("guatemala", "guatemalteco"),
-    "HN": ("honduras", "hondureno"),
-    "SV": ("salvador", "salvadoreno", "bukele"),
-    "NI": ("nicaragua", "nicaraguense", "ortega"),
-    "CR": ("costa rica", "costarricense"),
-    "PA": ("panama", "panameno", "darien"),
-    "DO": ("dominicana", "dominicano", "santo domingo"),
-    "HT": ("haiti", "haitiano"),
-    "CU": ("cuba", "cubano", "habana"),
-    "PR": ("puerto rico", "puertorriqueno"),
-    "US": ("estados unidos", "eeuu", "ee uu", "ice", "trump", "washington",
-           "california", "texas", "florida", "chicago", "nueva york"),
-}
-
-# Bloque regional al que pertenece cada pais. Es la region que se muestra.
-REGION_DE = {}
-for _r, _ps in {
-    "Cono Sur": ("AR", "CL", "UY", "PY"),
-    "Region Andina": ("BO", "PE", "EC", "CO", "VE"),
-    "Brasil": ("BR",),
-    "Mexico y Centroamerica": ("MX", "GT", "HN", "SV", "NI", "CR", "PA"),
-    "Caribe": ("DO", "HT", "CU", "PR"),
-    "Estados Unidos": ("US",),
-}.items():
-    for _p in _ps:
-        REGION_DE[_p] = _r
-SIMILITUD_MINIMA = 0.35     # umbral para considerar que dos notas son el mismo hecho
-MINIMO_COMPARTIDO = 2       # palabras significativas en comun, como piso
-LARGO_RAIZ = 6              # truncado de palabras para unificar formas flexionadas
-
 # Palabras sin valor discriminante al comparar titulos.
 VACIAS = {
     "de", "la", "el", "los", "las", "un", "una", "unos", "unas", "y", "o", "a", "en",
@@ -125,8 +82,77 @@ VACIAS = {
     "on", "at", "is", "are", "da", "do", "das", "dos", "em", "com", "nao", "ao",
 }
 
-logging.basicConfig(level=logging.INFO, format="%(message)s")
-log = logging.getLogger("ingesta")
+# Paises mencionados en el titulo -> codigo ISO. Es lo que define DONDE OCURRE
+# el hecho. La consulta que lo trajo solo dice de donde salio el dato: una nota
+# sobre ICE encontrada por la consulta de Colombia sigue siendo de Estados Unidos.
+GENTILICIOS = {
+    # Sudamerica
+    "AR": ("argentina", "argentino", "milei", "buenos aires", "cordoba", "rosario"),
+    "BO": ("bolivia", "boliviano", "la paz", "santa cruz de la sierra", "el alto"),
+    "BR": ("brasil", "brasileno", "brasilena", "lula", "sao paulo", "rio de janeiro"),
+    "CL": ("chile", "chileno", "santiago de chile", "boric", "antofagasta", "iquique"),
+    "CO": ("colombia", "colombiano", "bogota", "petro", "medellin", "cucuta"),
+    "EC": ("ecuador", "ecuatoriano", "quito", "guayaquil", "noboa"),
+    "GY": ("guyana", "guyanes"),
+    "PY": ("paraguay", "paraguayo", "asuncion", "ciudad del este"),
+    "PE": ("peru", "peruano", "lima", "tacna", "tumbes"),
+    "SR": ("surinam", "surinames"),
+    "UY": ("uruguay", "uruguayo", "montevideo"),
+    "VE": ("venezuela", "venezolano", "caracas", "maduro", "tachira"),
+    # Centroamerica
+    "BZ": ("belice", "belicena"),
+    "CR": ("costa rica", "costarricense", "san jose de costa rica"),
+    "SV": ("el salvador", "salvadoreno", "bukele", "san salvador"),
+    "GT": ("guatemala", "guatemalteco"),
+    "HN": ("honduras", "hondureno", "tegucigalpa", "san pedro sula"),
+    "NI": ("nicaragua", "nicaraguense", "ortega", "managua"),
+    "PA": ("panama", "panameno", "darien", "tapon del darien"),
+    # Norteamerica
+    "MX": ("mexico", "mexicano", "sheinbaum", "chiapas", "tijuana", "tapachula",
+           "ciudad juarez", "sonora"),
+    "US": ("estados unidos", "eeuu", "ee uu", " ice ", "trump", "washington",
+           "california", "texas", "florida", "chicago", "nueva york", "arizona"),
+    "CA": ("canada", "canadiense", "ottawa", "toronto"),
+    # Caribe
+    "CU": ("cuba", "cubano", "habana"),
+    "DO": ("republica dominicana", "dominicana", "dominicano", "santo domingo"),
+    "HT": ("haiti", "haitiano", "puerto principe"),
+    "PR": ("puerto rico", "puertorriqueno", "san juan de puerto rico"),
+    "JM": ("jamaica", "jamaiquino"),
+    "TT": ("trinidad y tobago", "trinitense"),
+    "BS": ("bahamas",),
+    "BB": ("barbados",),
+}
+
+# Bloque regional de cada pais. Es la region que se muestra y con la que se filtra.
+REGION_DE = {}
+for _r, _ps in {
+    "Sudamérica": ("AR", "BO", "BR", "CL", "CO", "EC", "GY", "PY", "PE", "SR", "UY", "VE"),
+    "Centroamérica": ("BZ", "CR", "SV", "GT", "HN", "NI", "PA"),
+    "Norteamérica": ("MX", "US", "CA"),
+    "Caribe": ("CU", "DO", "HT", "PR", "JM", "TT", "BS", "BB"),
+}.items():
+    for _p in _ps:
+        REGION_DE[_p] = _r
+
+# Menciones regionales sin pais concreto.
+REGIONES_SUELTAS = {
+    "América Latina": ("america latina", "latinoamerica", "latinoamericano", "latinoamericana"),
+    "Caribe": ("el caribe", "caribeno", "antillas"),
+    "Centroamérica": ("centroamerica", "centroamericano", "istmo centroamericano"),
+    "Sudamérica": ("sudamerica", "sudamericano", "america del sur", "cono sur",
+                   "region andina", "mercosur"),
+}
+
+NOMBRE_PAIS = {
+    "AR": "Argentina", "BO": "Bolivia", "BR": "Brasil", "CL": "Chile", "CO": "Colombia",
+    "EC": "Ecuador", "GY": "Guyana", "PY": "Paraguay", "PE": "Perú", "SR": "Surinam",
+    "UY": "Uruguay", "VE": "Venezuela", "BZ": "Belice", "CR": "Costa Rica",
+    "SV": "El Salvador", "GT": "Guatemala", "HN": "Honduras", "NI": "Nicaragua",
+    "PA": "Panamá", "MX": "México", "US": "Estados Unidos", "CA": "Canadá",
+    "CU": "Cuba", "DO": "República Dominicana", "HT": "Haití", "PR": "Puerto Rico",
+    "JM": "Jamaica", "TT": "Trinidad y Tobago", "BS": "Bahamas", "BB": "Barbados",
+}
 
 
 def sin_acentos(t: str) -> str:
@@ -169,8 +195,7 @@ def pesos_por_rareza(items: list[dict]) -> dict[str, float]:
     """Peso de cada palabra segun su rareza en el conjunto (IDF).
 
     Compartir "Milei" o "migraciones" es evidencia fuerte de que dos titulos
-    hablan del mismo hecho. Compartir "para" no dice nada. Sin este peso, un
-    Jaccard plano no agrupa notas del mismo hecho escritas con otras palabras.
+    hablan del mismo hecho. Compartir "para" no dice nada.
     """
     n = max(len(items), 1)
     frecuencia: Counter = Counter()
@@ -224,16 +249,32 @@ def paises_del_titulo(titulo: str) -> list[str]:
     return [iso for _, iso in sorted(hallados)]
 
 
-def region_de(paises: list[str]) -> str:
-    """Bloque regional del hecho. Si abarca varios bloques, es Regional."""
+def region_de(paises: list[str], titulo: str = "") -> str:
+    """Region del hecho. Si abarca varios bloques, es Regional.
+
+    Si el titulo no nombra ningun pais pero si una region ("America Latina",
+    "el Caribe"), se usa esa.
+    """
     regiones = []
     for p in paises:
         r = REGION_DE.get(p)
         if r and r not in regiones:
             regiones.append(r)
-    if not regiones:
-        return "Sin determinar"
-    return regiones[0] if len(regiones) == 1 else "Regional"
+    if len(regiones) == 1:
+        return regiones[0]
+    if len(regiones) > 1:
+        return "Regional"
+
+    t = sin_acentos(titulo.lower())
+    for region, terminos in REGIONES_SUELTAS.items():
+        if any(x in t for x in terminos):
+            return region
+    return "Sin determinar"
+
+
+def nombres_de(paises: list[str]) -> list[str]:
+    """Nombres legibles de los paises. El tablero no muestra codigos ISO."""
+    return [NOMBRE_PAIS.get(p, p) for p in paises]
 
 
 def fecha_de(entrada) -> datetime | None:
@@ -350,8 +391,9 @@ def agrupar(items: list[dict]) -> list[dict]:
             "notas": len(g),
             "otras_urls": [i["url"] for i in g[1:8]],
             "ejes": [e for e, _ in Counter(ejes).most_common(2)],
-            "region": region_de(paises),
+            "region": region_de(paises, g[0]["titulo"]),
             "paises": paises,
+            "paises_nombres": nombres_de(paises),
             "pais_inferido": not de_titulo,
             "fuera_de_alcance": fuera_de_alcance(g[0]["titulo"]),
             "importancia": None,          # requiere clasificacion por LLM

@@ -33,11 +33,27 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 log = logging.getLogger("tablero")
 
 
-def mapa_macroareas() -> dict:
-    """Devuelve {macroarea: {"nombre":..., "ejes":[...]}} desde fuentes.yaml."""
+def contexto() -> dict:
+    """Diccionarios de traduccion que necesita el tablero, desde fuentes.yaml."""
     cfg = yaml.safe_load((RAIZ / "fuentes.yaml").read_text(encoding="utf-8"))
-    return {mid: {"nombre": m["nombre"], "ejes": m["ejes"]}
-            for mid, m in cfg.get("macroareas", {}).items()}
+    return {
+        "alias": cfg.get("alias_ejes", {}).get("mapa", {}),
+        "nombre_eje": {e["id"]: e["nombre"] for e in cfg.get("ejes", [])},
+        "macro_de": {eid: m["nombre"] for m in cfg.get("macroareas", {}).values()
+                     for eid in m["ejes"]},
+        "colectividades": cfg.get("colectividades", {}).get("nombres", {}),
+        "regiones": cfg.get("paises_catalogo", {}).get("regiones", []),
+    }
+
+
+def normalizar_ejes(items: list[dict], alias: dict) -> None:
+    """Traduce ejes de versiones anteriores al vocabulario vigente.
+
+    Sin esto, los hechos clasificados antes de un cambio de vocabulario quedan
+    huerfanos y aparecen en un cajon aparte que no le dice nada a nadie.
+    """
+    for i in items:
+        i["ejes"] = list(dict.fromkeys(alias.get(e, e) for e in (i.get("ejes") or [])))
 
 
 def estado(item: dict) -> str:
@@ -81,10 +97,10 @@ def frescura(horas) -> float:
 
 
 def puntaje(item: dict) -> float:
-    """Orden dentro de cada estado.
+    """Desempate dentro de una misma importancia.
 
-    Con clasificacion, la importancia editorial pondera. Sin ella, el 5 neutro
-    hace que manden velocidad y frescura.
+    El orden principal es por IMPORTANCIA, de mayor a menor. Este puntaje solo
+    ordena los hechos que comparten importancia: ahi mandan velocidad y frescura.
     """
     imp = item.get("importancia") or 5
     vel = item.get("velocidad") or 0
@@ -107,23 +123,24 @@ PLANTILLA = """<!DOCTYPE html>
 :root{
   --rojo:#ff5f5d; --marron:#554242; --marron-med:#806e6e;
   --rosa:#a97776; --rosa-claro:#d47270;
-  /* Semaforo. Codigo de color universal, deliberadamente fuera de la paleta
-     de marca: es senaletica funcional, no identidad. Se usa solo en puntos
-     de 10px, sin invadir el resto de la interfaz.
-       rojo    top trend  -> saturado, ya paso
-       amarillo trending  -> instalado, publicar ya
-       verde   de interes -> el punto justo, se llega temprano
-       celeste emergente  -> sin confirmar, mirar a mano                     */
-  --sem-rojo:#d92d20; --sem-amarillo:#e5a000; --sem-verde:#12805c;
-  --sem-celeste:#2e90d9;
+  /* Semaforo. Senaletica funcional, fuera de la paleta de marca a proposito.
+     Se usa solo en puntos de 10px y subrayados, sin invadir la interfaz.
+       rojo     trending          -> urgente, publicar ahora
+       verde    de interes        -> el punto justo, se llega temprano
+       celeste  posibles alertas  -> investigar, posible primicia
+       marron   para auditar      -> descarte, control de calidad
+       gris     extrarregionales  -> contexto comparado
+       amarillo top trend         -> saturado, ya paso                       */
+  --sem-rojo:#d92d20; --sem-verde:#12805c; --sem-celeste:#2e90d9;
+  --sem-marron:#8a5a33; --sem-amarillo:#b58600;
   --fondo:#fbf9f8; --tarjeta:#fff; --linea:#eae3e1;
   --tinta:#3a2e2e; --suave:#806e6e; --tenue:#a2938f;
 }
 @media (prefers-color-scheme:dark){
   :root{ --fondo:#211a1a; --tarjeta:#2b2222; --linea:#3d3130;
     --tinta:#f2ebe9; --suave:#bfaeab; --tenue:#8d7a77;
-    --sem-rojo:#f97066; --sem-amarillo:#fdb022; --sem-verde:#47cd9a;
-    --sem-celeste:#53b1fd; }
+    --sem-rojo:#f97066; --sem-verde:#47cd9a; --sem-celeste:#53b1fd;
+    --sem-marron:#c99163; --sem-amarillo:#e5b04a; }
 }
 *{box-sizing:border-box}
 body{margin:0;padding:0 0 4rem;background:var(--fondo);color:var(--tinta);
@@ -157,20 +174,20 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   border-bottom:2px solid transparent;display:flex;align-items:center;gap:.42rem}
 .semaforo button:hover{color:var(--tinta)}
 .semaforo button[aria-pressed="true"]{color:var(--tinta)}
-.semaforo button[aria-pressed="true"]#v-top_trend{border-bottom-color:var(--sem-rojo)}
-.semaforo button[aria-pressed="true"]#v-trending{border-bottom-color:var(--sem-amarillo)}
+.semaforo button[aria-pressed="true"]#v-top_trend{border-bottom-color:var(--sem-amarillo)}
+.semaforo button[aria-pressed="true"]#v-trending{border-bottom-color:var(--sem-rojo)}
 .semaforo button[aria-pressed="true"]#v-interes{border-bottom-color:var(--sem-verde)}
 .semaforo button[aria-pressed="true"]#v-emergente{border-bottom-color:var(--sem-celeste)}
-.semaforo button[aria-pressed="true"]#v-nadie_lo_mira{border-bottom-color:var(--sem-verde)}
-.semaforo button[aria-pressed="true"]#v-ruido{border-bottom-color:var(--tenue)}
+.semaforo button[aria-pressed="true"]#v-nadie_lo_mira{border-bottom-color:var(--sem-celeste)}
+.semaforo button[aria-pressed="true"]#v-ruido{border-bottom-color:var(--sem-marron)}
 .semaforo button[aria-pressed="true"]#v-fuera_alcance{border-bottom-color:var(--tenue)}
 .luz{width:10px;height:10px;border-radius:50%;flex:none}
-.l-top_trend{background:var(--sem-rojo)}
-.l-trending{background:var(--sem-amarillo)}
+.l-top_trend{background:var(--sem-amarillo)}
+.l-trending{background:var(--sem-rojo)}
 .l-interes{background:var(--sem-verde)}
 .l-emergente{background:var(--sem-celeste)}
-.l-nadie_lo_mira{background:var(--sem-verde)}
-.l-ruido{background:var(--tenue)}
+.l-nadie_lo_mira{background:var(--sem-celeste)}
+.l-ruido{background:var(--sem-marron)}
 .l-fuera_alcance{background:var(--tenue)}
 .semaforo .n{font-weight:400;opacity:.62}
 .accion{font-size:.85rem;color:var(--suave);margin:.55rem 0 1.1rem;
@@ -227,8 +244,9 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .et.eje{border-color:var(--rosa-claro);color:var(--rosa)}
 .et.pobl{background:var(--fondo);border-color:var(--marron-med);color:var(--marron-med)}
 .et.actor{border-style:dotted;color:var(--suave)}
+.et.cole{border-color:var(--rosa);color:var(--rosa)}
 .alerta-mini{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
-  background:var(--fondo);border:1px solid var(--sem-amarillo);color:var(--sem-amarillo);
+  background:var(--fondo);border:1px solid var(--rosa-claro);color:var(--rosa);
   font-weight:600}
 .imp{background:var(--fondo);padding:.05rem .42rem;border-radius:3px;
   border:1px solid var(--linea)}
@@ -293,8 +311,8 @@ El radar propone. La decisión editorial es humana.
 <script>
 const ITEMS = __ITEMS__;
 const CLASIFICADO = __CLASIFICADO__;
-const MACRO = __MACRO__;
-let vista=null, ejeActivo=null, regionActiva=null, poblActiva=null, actorActivo=null;
+const CTX = __CTX__;
+let vista=null, regionActiva=null, paisActivo=null;
 
 const ESTADOS = {
   trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
@@ -340,43 +358,27 @@ function armarFiltros(){
       b.textContent=v; b.dataset.tipo=tipo; b.dataset.valor=v;
       b.setAttribute('aria-pressed','false');
       b.onclick=()=>{
-        if(tipo==='eje') ejeActivo=ejeActivo===v?null:v;
-        else if(tipo==='pobl') poblActiva=poblActiva===v?null:v;
-        else if(tipo==='actor') actorActivo=actorActivo===v?null:v;
+        if(tipo==='pais') paisActivo=paisActivo===v?null:v;
         else regionActiva=regionActiva===v?null:v;
         dibujar(); };
       d.appendChild(b);
     });
     c.appendChild(d);
   };
-  if(CLASIFICADO){
-    // Un grupo por macroarea, solo con los ejes que aparecen en esta corrida.
-    Object.values(MACRO).forEach(m=>{
-      const presentes=m.ejes.filter(e=>ejes.includes(e));
-      if(presentes.length) grupo(m.nombre,presentes,'eje');
-    });
-    // Ejes que no pertenecen a ninguna macroarea: quedaron de una version
-    // anterior del vocabulario. Se muestran aparte para poder detectarlos.
-    const sueltos=ejes.filter(e=>!Object.values(MACRO).some(m=>m.ejes.includes(e)));
-    if(sueltos.length) grupo('Vocabulario viejo',sueltos,'eje');
-    if(pobls.length) grupo('Población',pobls,'pobl');
-    const actores=[...new Set(ITEMS.flatMap(i=>i.actores||[]))].sort();
-    if(actores.length) grupo('Actor',actores,'actor');
-  } else {
-    grupo('Tema · provisorio',ejes,'eje');
-  }
-  grupo('Dónde ocurre',regs,'region');
+  // El usuario filtra SOLO por region y pais. Ejes, poblaciones, actores y
+  // colectividades se muestran como etiquetas en cada titular: ocho filas de
+  // filtros hacian que las categorias predominaran sobre las noticias.
+  grupo('Región',regs,'region');
+  grupo('País',paises,'pais');
   const n=document.createElement('p'); n.className='nota-filtro';
-  n.innerHTML=(CLASIFICADO
-    ?'Los <b>ejes</b> están agrupados por macroárea y los asigna el clasificador leyendo cada titular.<br>'
-    :'Los <b>temas</b> son provisorios: indican qué búsqueda trajo la nota, no un análisis de su contenido.<br>')+
-    'El <b>dónde</b> sale de los países que menciona el titular. «Regional» es un hecho '+
-    'que cruza más de un bloque; «Sin determinar», uno cuyo titular no nombra ningún país.';
+  n.innerHTML='La región y el país salen de lo que menciona el titular. «Regional» es un hecho '+
+    'que cruza más de una región; «Sin determinar», uno cuyo titular no nombra ningún lugar.<br>'+
+    'Los ejes temáticos, poblaciones y actores aparecen como etiquetas debajo de cada titular.';
   c.appendChild(n);
 }
 
 function activos(){
-  return [ejeActivo,poblActiva,actorActivo,regionActiva].filter(Boolean).length;
+  return [regionActiva,paisActivo].filter(Boolean).length;
 }
 
 function refrescarBarra(n){
@@ -395,7 +397,7 @@ function alternarFiltros(){
 }
 
 function limpiarFiltros(){
-  ejeActivo=poblActiva=actorActivo=regionActiva=null;
+  regionActiva=paisActivo=null;
   dibujar();
 }
 
@@ -412,16 +414,14 @@ function cambiar(v){
 
 function dibujar(){
   document.querySelectorAll('.grupo button').forEach(b=>{
-    const T=b.dataset.tipo;
-    const act=T==='eje'?ejeActivo:(T==='pobl'?poblActiva:(T==='actor'?actorActivo:regionActiva));
+    const act=b.dataset.tipo==='pais'?paisActivo:regionActiva;
     b.setAttribute('aria-pressed',String(b.dataset.valor===act));
   });
   const vis=ITEMS.filter(i=>i.estado===vista)
-    .filter(i=>!ejeActivo||(i.ejes||[]).includes(ejeActivo))
-    .filter(i=>!poblActiva||(i.poblaciones||[]).includes(poblActiva))
-    .filter(i=>!actorActivo||(i.actores||[]).includes(actorActivo))
     .filter(i=>!regionActiva||i.region===regionActiva)
-    .sort((a,b)=>b.puntaje-a.puntaje);
+    .filter(i=>!paisActivo||(i.paises_nombres||[]).includes(paisActivo))
+    // Orden principal: IMPORTANCIA de mayor a menor. El puntaje solo desempata.
+    .sort((a,b)=>(b.importancia||0)-(a.importancia||0)||b.puntaje-a.puntaje);
   refrescarBarra(vis.length);
   const l=document.getElementById('lista');
   if(!vis.length){l.innerHTML='<p class="vacio">Sin resultados con estos filtros.</p>';return}
@@ -430,7 +430,7 @@ function dibujar(){
     return `<article class="item">
       <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
       <div class="datos">
-        ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">imp <b>${i.importancia}</b></span>`:''}
+        ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">Importancia <b>${i.importancia}</b></span>`:''}
         ${i.requiere_verificacion?`<span class="alerta-mini" title="El titular afirma cifras o hechos sin citar fuente">verificar</span>`:''}
         ${i.contiene_datos_personales?`<span class="alerta-mini" title="Identifica a una persona migrante concreta">dato personal</span>`:''}
         <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>
@@ -475,6 +475,8 @@ def main() -> int:
     datos = json.loads(ENTRADA.read_text(encoding="utf-8"))
     items = datos.get("items", [])
 
+    ctx = contexto()
+    normalizar_ejes(items, ctx["alias"])
     for i in items:
         i["estado"] = estado(i)
         i["puntaje"] = puntaje(i)
@@ -502,7 +504,7 @@ def main() -> int:
             .replace("__RESUMEN__", resumen)
             .replace("__AVISO__", aviso)
             .replace("__CLASIFICADO__", "true" if datos.get("clasificado") else "false")
-            .replace("__MACRO__", json.dumps(mapa_macroareas(), ensure_ascii=False))
+            .replace("__CTX__", json.dumps(ctx, ensure_ascii=False))
             .replace("__ITEMS__", json.dumps(items, ensure_ascii=False)))
 
     SALIDA.parent.mkdir(parents=True, exist_ok=True)

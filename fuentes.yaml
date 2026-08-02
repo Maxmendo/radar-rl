@@ -641,14 +641,18 @@ ejes:
   macroarea: gobernanza
   alcance: Qué DICE la norma o el programa. El instrumento, no su orientación.
   subejes:
-  - legislacion
-  - decretos
-  - reglamentacion
-  - programas
   - acuerdos_bilaterales
-  - mercosur
+  - amnistia_migratoria
+  - cupos_migratorios
+  - decretos
   - integracion_regional
+  - legislacion
+  - mercosur
+  - normativa_migratoria
   - organismos_internacionales
+  - programas
+  - reglamentacion
+  - regularizacion_migratoria
   activo: true
 - id: fronteras
   nombre: Fronteras
@@ -656,12 +660,14 @@ ejes:
   alcance: Lo que ocurre EN o SOBRE la frontera. La biometría acá es la aplicada al control fronterizo;
     la biometría como debate tecnológico va a `tecnologia`.
   subejes:
-  - control_fronterizo
-  - pasos_fronterizos
-  - externalizacion
-  - vigilancia_fronteriza
   - biometria_en_frontera
+  - control_fronterizo
+  - denegacion_de_ingreso
+  - externalizacion
+  - pasos_fronterizos
   - rechazo_en_frontera
+  - rechazo_en_puesto_fronterizo
+  - vigilancia_fronteriza
   activo: true
 - id: deportaciones
   nombre: Deportaciones, detención y retornos forzados
@@ -673,7 +679,10 @@ ejes:
   - centros_de_detencion
   - detencion_migratoria
   - devoluciones
+  - expulsion_administrativa
   - expulsiones
+  - expulsiones_migrantes
+  - orden_de_expulsion
   - readmisiones
   - reasentamiento_forzado
   - redadas
@@ -718,12 +727,18 @@ ejes:
   macroarea: proteccion
   alcance: El régimen jurídico de protección internacional.
   subejes:
-  - refugio
-  - proteccion_complementaria
+  - apatridas
   - apatridia
+  - cesacion_del_refugio
+  - estatuto_de_refugiado
+  - no_devolucion
   - non_refoulement
-  - solicitudes_de_asilo
+  - personas_refugiadas
+  - principio_de_no_devolucion
+  - proteccion_complementaria
   - reasentamiento
+  - refugio
+  - solicitudes_de_asilo
   activo: true
 - id: exilio
   nombre: Exilios políticos
@@ -744,12 +759,15 @@ ejes:
   macroarea: proteccion
   alcance: Violaciones, informes de organismos, denuncias. En materia migratoria.
   subejes:
+  - derechos_de_las_personas_migrantes
+  - derechos_migrantes
+  - desapariciones
   - informes
   - monitoreo
-  - violaciones
-  - desapariciones
-  - uso_excesivo_de_la_fuerza
   - muertes_bajo_custodia
+  - uso_excesivo_de_la_fuerza
+  - violaciones
+  - violencia_institucional
   activo: true
 - id: justicia
   nombre: Justicia
@@ -781,17 +799,23 @@ ejes:
   macroarea: integracion
   alcance: 'La situación jurídica de la persona: qué papeles tiene o le faltan.'
   subejes:
+  - certificado_de_residencia
   - ciudadania
   - documentacion
+  - estatus_migratorio
   - estudiantes_internacionales
   - irregularidad
   - matrimonios_binacionales
+  - migrantes_indocumentados
+  - migrantes_irregulares
   - naturalizacion
   - permisos
   - radicacion
   - regularizacion
   - residencia
+  - residencia_precaria
   - reunificacion_familiar
+  - situacion_irregular
   - visas
   activo: true
 - id: acceso_derechos
@@ -975,9 +999,11 @@ poblaciones:
 - id: primera_infancia
   alcance: Menores de 6 años
 - id: ninez
-  alcance: Niñas, niños y adolescentes, incluidos NNA no acompañados
+  alcance: 'Niñas, niños y adolescentes. Incluye: infancias migrantes, niñez migrante, NNA no acompañados,
+    menores migrantes, infancia separada'
 - id: mujeres
-  alcance: Mujeres migrantes, violencia de género
+  alcance: 'Mujeres migrantes. Incluye: mujeres en movilidad, migrantes mujeres, violencia de género,
+    feminización de la migración'
 - id: lgbtiq
   alcance: Personas LGBTIQ+ en general
 - id: personas_trans
@@ -985,9 +1011,9 @@ poblaciones:
 - id: no_binarias
   alcance: Personas no binarias, cuando la nota lo especifica
 - id: indigenas
-  alcance: Pueblos indígenas en movilidad
+  alcance: 'Pueblos indígenas en movilidad. Incluye: comunidades originarias, migración indígena'
 - id: afro
-  alcance: Personas afrodescendientes
+  alcance: 'Personas afrodescendientes. Incluye: comunidades afro, migración afrodescendiente'
 - id: pueblo_rom
   alcance: Pueblo rom o gitano
 - id: personas_mayores
@@ -995,7 +1021,8 @@ poblaciones:
 - id: discapacidad
   alcance: Personas con discapacidad
 - id: familias
-  alcance: Grupos familiares, reunificación, separación
+  alcance: 'Grupos familiares. Incluye: familias migrantes, reunificación familiar, separación familiar,
+    familias transnacionales'
 - id: trabajadoras_hogar
   alcance: Trabajo doméstico y de cuidados
 etapas:
@@ -1010,7 +1037,7 @@ etapas:
 - id: retorno
   alcance: Retorno voluntario o forzado, reintegración
 notas_vocabulario:
-  version: 3.0 (2026-08-01)
+  version: 3.1 (2026-08-02)
   ejes: '24 ejes en 5 macroareas. Los SUBEJES no son salida del clasificador: son el vocabulario que
     define el alcance de cada eje dentro del prompt.'
   poblaciones: 13 valores, solo condicion de VULNERABILIDAD. La condicion juridica (solicitante de asilo,
@@ -1044,6 +1071,9 @@ notas_vocabulario:
     clasificador a decidir dos veces lo mismo y las respuestas se contradicen. Ademas, distinciones
     como migrantes_circulares vs estacionales vs temporales requieren conocer el regimen laboral, que
     ningun titular menciona. Se absorbieron como subejes los que aportaban vocabulario.'
+  filtros_del_tablero: El usuario filtra SOLO por pais y region. Ejes, poblaciones, actores y colectividades
+    se muestran como etiquetas en cada titular. Ocho filas de filtros antes de la primera noticia hacian
+    que las categorias predominaran visualmente sobre el contenido.
 estados:
   _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
     24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las
@@ -1135,10 +1165,9 @@ macroareas:
     - tecnologia
     - diaspora
 colectividades:
-  _nota: Codigos ISO del pais de ORIGEN de la comunidad involucrada. Distinta de `paises`, que es donde
-    ocurre el hecho. Una nota sobre la comunidad boliviana en Argentina lleva colectividades ['BO']
-    y paises ['AR']. Usar LATAM o CARIBE solo cuando la nota habla de la comunidad migrante en general
-    sin identificar nacionalidad.
+  _nota: Pais de ORIGEN de la comunidad involucrada, en ISO. Distinta de `paises`, que es donde ocurre
+    el hecho. Una nota sobre la comunidad boliviana en Argentina lleva colectividades ['BO'] y paises
+    ['AR']. El tablero muestra el nombre legible, no el codigo.
   valores:
   - AR
   - BO
@@ -1154,16 +1183,49 @@ colectividades:
   - GY
   - HT
   - HN
+  - JM
   - MX
   - NI
   - PA
   - PY
   - PE
+  - PR
   - SR
+  - TT
   - UY
   - VE
+  - BZ
   - LATAM
   - CARIBE
+  nombres:
+    AR: comunidad argentina
+    BO: comunidad boliviana
+    BR: comunidad brasileña
+    CL: comunidad chilena
+    CO: comunidad colombiana
+    CR: comunidad costarricense
+    CU: comunidad cubana
+    DO: comunidad dominicana
+    EC: comunidad ecuatoriana
+    SV: comunidad salvadoreña
+    GT: comunidad guatemalteca
+    GY: comunidad guyanesa
+    HT: comunidad haitiana
+    HN: comunidad hondureña
+    JM: comunidad jamaiquina
+    MX: comunidad mexicana
+    NI: comunidad nicaragüense
+    PA: comunidad panameña
+    PY: comunidad paraguaya
+    PE: comunidad peruana
+    PR: comunidad puertorriqueña
+    SR: comunidad surinamesa
+    TT: comunidad trinitense
+    UY: comunidad uruguaya
+    VE: comunidad venezolana
+    BZ: comunidad beliceña
+    LATAM: comunidad latinoamericana
+    CARIBE: comunidad caribeña
 actores:
 - id: organizaciones_migrantes
   alcance: Colectivos y asociaciones de personas migrantes
@@ -1197,3 +1259,135 @@ actores:
   alcance: Medios de comunicación como actor de la nota
 - id: comunidades_receptoras
   alcance: Vecinos y comunidades de destino
+alias_ejes:
+  _nota: IDs de versiones anteriores del vocabulario. El tablero los traduce al vigente para que los
+    hechos ya clasificados no queden huerfanos.
+  mapa:
+    normativa: politica_migratoria
+    frontera: fronteras
+    ddhh: derechos_humanos
+    derechos: derechos_humanos
+    servicio: servicios
+    acceso_derechos: acceso_derechos
+    securitizacion: securitizacion
+paises_catalogo:
+  _nota: 'Donde OCURRE el hecho. Sale de los paises que menciona el titular. Es, junto con la region,
+    la unica dimension con la que filtra el usuario: ejes, poblaciones y actores se muestran como etiquetas
+    en cada titular, no como filtros.'
+  paises:
+    AR:
+      nombre: Argentina
+      region: Sudamérica
+    BO:
+      nombre: Bolivia
+      region: Sudamérica
+    BR:
+      nombre: Brasil
+      region: Sudamérica
+    CL:
+      nombre: Chile
+      region: Sudamérica
+    CO:
+      nombre: Colombia
+      region: Sudamérica
+    EC:
+      nombre: Ecuador
+      region: Sudamérica
+    GY:
+      nombre: Guyana
+      region: Sudamérica
+    PY:
+      nombre: Paraguay
+      region: Sudamérica
+    PE:
+      nombre: Perú
+      region: Sudamérica
+    SR:
+      nombre: Surinam
+      region: Sudamérica
+    UY:
+      nombre: Uruguay
+      region: Sudamérica
+    VE:
+      nombre: Venezuela
+      region: Sudamérica
+    BZ:
+      nombre: Belice
+      region: Centroamérica
+    CR:
+      nombre: Costa Rica
+      region: Centroamérica
+    SV:
+      nombre: El Salvador
+      region: Centroamérica
+    GT:
+      nombre: Guatemala
+      region: Centroamérica
+    HN:
+      nombre: Honduras
+      region: Centroamérica
+    NI:
+      nombre: Nicaragua
+      region: Centroamérica
+    PA:
+      nombre: Panamá
+      region: Centroamérica
+    MX:
+      nombre: México
+      region: Norteamérica
+    US:
+      nombre: Estados Unidos
+      region: Norteamérica
+    CA:
+      nombre: Canadá
+      region: Norteamérica
+    CU:
+      nombre: Cuba
+      region: Caribe
+    DO:
+      nombre: República Dominicana
+      region: Caribe
+    HT:
+      nombre: Haití
+      region: Caribe
+    PR:
+      nombre: Puerto Rico
+      region: Caribe
+    JM:
+      nombre: Jamaica
+      region: Caribe
+    TT:
+      nombre: Trinidad y Tobago
+      region: Caribe
+    BS:
+      nombre: Bahamas
+      region: Caribe
+    BB:
+      nombre: Barbados
+      region: Caribe
+  regiones:
+  - Sudamérica
+  - Centroamérica
+  - Norteamérica
+  - Caribe
+  - América Latina
+  - Regional
+  sinonimos_region:
+    América Latina:
+    - latinoamerica
+    - america latina
+    - latinoamericano
+    Caribe:
+    - caribe
+    - caribeno
+    - antillas
+    Centroamérica:
+    - centroamerica
+    - centroamericano
+    - istmo centroamericano
+    Sudamérica:
+    - sudamerica
+    - sudamericano
+    - america del sur
+    - cono sur
+    - region andina

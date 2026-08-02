@@ -4,7 +4,7 @@
 No editar a mano: los cambios se pierden en la próxima generación. Para modificar
 el vocabulario, editar `fuentes.yaml` y volver a correr el script.
 
-Versión del vocabulario: 3.0 (2026-08-01)
+Versión del vocabulario: 3.1 (2026-08-02)
 Generado: 2026-08-02
 
 ---
@@ -77,11 +77,11 @@ devolver**, son el vocabulario que define qué entra en ese eje.
 *¿Cómo los Estados regulan, controlan y administran la movilidad humana?*
 
 - **`politica_migratoria`** — Política migratoria. Qué DICE la norma o el programa. El instrumento, no su orientación.
-  <br>*Cubre:* legislacion, decretos, reglamentacion, programas, acuerdos_bilaterales, mercosur, integracion_regional, organismos_internacionales
+  <br>*Cubre:* acuerdos_bilaterales, amnistia_migratoria, cupos_migratorios, decretos, integracion_regional, legislacion, mercosur, normativa_migratoria, organismos_internacionales, programas, reglamentacion, regularizacion_migratoria
 - **`fronteras`** — Fronteras. Lo que ocurre EN o SOBRE la frontera. La biometría acá es la aplicada al control fronterizo; la biometría como debate tecnológico va a `tecnologia`.
-  <br>*Cubre:* control_fronterizo, pasos_fronterizos, externalizacion, vigilancia_fronteriza, biometria_en_frontera, rechazo_en_frontera
+  <br>*Cubre:* biometria_en_frontera, control_fronterizo, denegacion_de_ingreso, externalizacion, pasos_fronterizos, rechazo_en_frontera, rechazo_en_puesto_fronterizo, vigilancia_fronteriza
 - **`deportaciones`** — Deportaciones, detención y retornos forzados. TODA detención de personas migrantes va acá, sea en frontera, en un centro de detención o en una redada en el interior. También las expulsiones y los retornos forzados.
-  <br>*Cubre:* arrestos_migratorios, centros_de_detencion, detencion_migratoria, devoluciones, expulsiones, readmisiones, reasentamiento_forzado, redadas, retorno_forzado, separacion_familiar, vuelos_de_deportacion
+  <br>*Cubre:* arrestos_migratorios, centros_de_detencion, detencion_migratoria, devoluciones, expulsion_administrativa, expulsiones, expulsiones_migrantes, orden_de_expulsion, readmisiones, reasentamiento_forzado, redadas, retorno_forzado, separacion_familiar, vuelos_de_deportacion
 - **`securitizacion`** — Securitización. Qué DIRECCIÓN tiene la política: la migración tratada como amenaza. Puede existir sin norma: declaraciones, despliegues, planes no publicados.
   <br>*Cubre:* militarizacion, criminalizacion, perfilamiento_racial, vigilancia_digital, inteligencia, estado_de_excepcion
 - **`rutas`** — Rutas migratorias. El trayecto en sí: corredores, riesgos, naufragios, desapariciones en ruta.
@@ -92,11 +92,11 @@ devolver**, son el vocabulario que define qué entra en ese eje.
 *¿Qué derechos tienen las personas migrantes y cómo se garantizan?*
 
 - **`asilo`** — Asilo y protección internacional. El régimen jurídico de protección internacional.
-  <br>*Cubre:* refugio, proteccion_complementaria, apatridia, non_refoulement, solicitudes_de_asilo, reasentamiento
+  <br>*Cubre:* apatridas, apatridia, cesacion_del_refugio, estatuto_de_refugiado, no_devolucion, non_refoulement, personas_refugiadas, principio_de_no_devolucion, proteccion_complementaria, reasentamiento, refugio, solicitudes_de_asilo
 - **`exilio`** — Exilios políticos. Desplazamiento por persecución política. Si el desplazamiento es por causas climáticas, va a `movilidad_ambiental`.
   <br>*Cubre:* defensores_ddhh, desplazamiento_interno_por_violencia, desplazamiento_por_crimen_organizado, desplazamiento_por_persecucion, opositores, periodistas_exiliados, persecucion_politica
 - **`derechos_humanos`** — Derechos humanos. Violaciones, informes de organismos, denuncias. En materia migratoria.
-  <br>*Cubre:* informes, monitoreo, violaciones, desapariciones, uso_excesivo_de_la_fuerza, muertes_bajo_custodia
+  <br>*Cubre:* derechos_de_las_personas_migrantes, derechos_migrantes, desapariciones, informes, monitoreo, muertes_bajo_custodia, uso_excesivo_de_la_fuerza, violaciones, violencia_institucional
 - **`justicia`** — Justicia. Fallos y litigio EN MATERIA MIGRATORIA O DE ASILO. No cualquier tema judicial.
   <br>*Cubre:* jurisprudencia, litigio_estrategico, acceso_a_la_justicia, corte_idh, tribunales, amparos, debido_proceso
 - **`trata`** — Trata y explotación. Redes de trata y tráfico. Si es explotación laboral sin red criminal, puede ir a `trabajo`.
@@ -109,7 +109,7 @@ devolver**, son el vocabulario que define qué entra en ese eje.
 *¿Cómo viven las personas migrantes en las sociedades de destino?*
 
 - **`estatus`** — Estatus migratorio. La situación jurídica de la persona: qué papeles tiene o le faltan.
-  <br>*Cubre:* ciudadania, documentacion, estudiantes_internacionales, irregularidad, matrimonios_binacionales, naturalizacion, permisos, radicacion, regularizacion, residencia, reunificacion_familiar, visas
+  <br>*Cubre:* certificado_de_residencia, ciudadania, documentacion, estatus_migratorio, estudiantes_internacionales, irregularidad, matrimonios_binacionales, migrantes_indocumentados, migrantes_irregulares, naturalizacion, permisos, radicacion, regularizacion, residencia, residencia_precaria, reunificacion_familiar, situacion_irregular, visas
 - **`acceso_derechos`** — Acceso a derechos. El acceso concreto a servicios en el día a día.
   <br>*Cubre:* salud, educacion, vivienda, seguridad_social, bancarizacion, alquileres
 - **`trabajo`** — Trabajo y economía. Condiciones laborales y economía migrante.
@@ -167,17 +167,17 @@ etapa `destino` a la vez.
 **`poblaciones`** — múltiple, vacío si no aplica. Solo condición de **vulnerabilidad**:
 
 - `primera_infancia` — Menores de 6 años
-- `ninez` — Niñas, niños y adolescentes, incluidos NNA no acompañados
-- `mujeres` — Mujeres migrantes, violencia de género
+- `ninez` — Niñas, niños y adolescentes. Incluye: infancias migrantes, niñez migrante, NNA no acompañados, menores migrantes, infancia separada
+- `mujeres` — Mujeres migrantes. Incluye: mujeres en movilidad, migrantes mujeres, violencia de género, feminización de la migración
 - `lgbtiq` — Personas LGBTIQ+ en general
 - `personas_trans` — Personas trans y travestis, cuando la nota lo especifica
 - `no_binarias` — Personas no binarias, cuando la nota lo especifica
-- `indigenas` — Pueblos indígenas en movilidad
-- `afro` — Personas afrodescendientes
+- `indigenas` — Pueblos indígenas en movilidad. Incluye: comunidades originarias, migración indígena
+- `afro` — Personas afrodescendientes. Incluye: comunidades afro, migración afrodescendiente
 - `pueblo_rom` — Pueblo rom o gitano
 - `personas_mayores` — Personas adultas mayores
 - `discapacidad` — Personas con discapacidad
-- `familias` — Grupos familiares, reunificación, separación
+- `familias` — Grupos familiares. Incluye: familias migrantes, reunificación familiar, separación familiar, familias transnacionales
 - `trabajadoras_hogar` — Trabajo doméstico y de cuidados
 
 > La condición jurídica (solicitante de asilo, refugiada, apátrida, deportada) NO va
@@ -187,7 +187,7 @@ etapa `destino` a la vez.
 involucrada. Una nota sobre la comunidad boliviana en Argentina lleva `["BO"]` y
 `paises: ["AR"]`. Es origen nacional, no vulnerabilidad. Valores admitidos:
 
-`AR`, `BO`, `BR`, `CL`, `CO`, `CR`, `CU`, `DO`, `EC`, `SV`, `GT`, `GY`, `HT`, `HN`, `MX`, `NI`, `PA`, `PY`, `PE`, `SR`, `UY`, `VE`, `LATAM`, `CARIBE`
+`AR`, `BO`, `BR`, `CL`, `CO`, `CR`, `CU`, `DO`, `EC`, `SV`, `GT`, `GY`, `HT`, `HN`, `JM`, `MX`, `NI`, `PA`, `PY`, `PE`, `PR`, `SR`, `TT`, `UY`, `VE`, `BZ`, `LATAM`, `CARIBE`
 
 Usá `LATAM` o `CARIBE` solo cuando la nota habla de la comunidad migrante en general
 sin identificar nacionalidad. Vacío si no se identifica ninguna.
