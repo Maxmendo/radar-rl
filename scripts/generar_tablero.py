@@ -205,6 +205,13 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   padding:0 .38rem;font-size:.72rem}
 .limpiar{font:inherit;font-size:.78rem;padding:.3rem .7rem;cursor:pointer;
   background:transparent;color:var(--rojo);border:none;text-decoration:underline}
+/* Los filtros aplicados se ven siempre, tambien con el panel cerrado: un filtro
+   activo e invisible hace parecer que el radar no encontro nada. */
+.activos{display:flex;gap:.3rem;flex-wrap:wrap}
+.activos button{font:inherit;font-size:.76rem;padding:.22rem .5rem .22rem .62rem;
+  cursor:pointer;background:var(--rojo);color:#fff;border:none;border-radius:99px;
+  display:flex;align-items:center;gap:.3rem}
+.activos button::after{content:"×";font-size:.95rem;line-height:1;opacity:.85}
 .resultado{font-size:.79rem;color:var(--tenue);margin-left:auto}
 .filtros{margin:0 0 1.3rem;padding:.9rem 1rem;background:var(--tarjeta);
   border:1px solid var(--linea);border-radius:9px}
@@ -290,6 +297,7 @@ __AVISO__
 <p class="accion" id="accion"></p>
 <div class="barra">
   <button class="abrir" id="abrir" aria-expanded="false">Filtros <span id="cuenta"></span></button>
+  <span class="activos" id="activos"></span>
   <button class="limpiar" id="limpiar" hidden>Quitar filtros</button>
   <span class="resultado" id="resultado"></span>
 </div>
@@ -340,14 +348,24 @@ function armarSemaforo(){
   });
 }
 
+function nombresPais(i){
+  // Respaldo a codigos ISO si el hecho viene de una corrida anterior a que la
+  // ingesta empezara a guardar nombres legibles.
+  return (i.paises_nombres && i.paises_nombres.length) ? i.paises_nombres : (i.paises||[]);
+}
+
 function armarFiltros(){
   const c=document.getElementById('filtros');
-  const ejes=[...new Set(ITEMS.flatMap(i=>i.ejes||[]))].sort();
-  const pobls=[...new Set(ITEMS.flatMap(i=>i.poblaciones||[]))].sort();
-  const ORDEN_REG=['Cono Sur','Region Andina','Brasil','Mexico y Centroamerica',
-                   'Caribe','Estados Unidos','Regional','Sin determinar'];
+
+  const ORDEN_REG=[...(CTX.regiones||[]),'Regional','Sin determinar'];
   const regs=[...new Set(ITEMS.map(i=>i.region).filter(Boolean))]
-    .sort((a,b)=>ORDEN_REG.indexOf(a)-ORDEN_REG.indexOf(b));
+    .sort((a,b)=>{
+      const ia=ORDEN_REG.indexOf(a), ib=ORDEN_REG.indexOf(b);
+      return (ia<0?99:ia)-(ib<0?99:ib);
+    });
+  const paises=[...new Set(ITEMS.flatMap(nombresPais))].filter(Boolean)
+    .sort((a,b)=>a.localeCompare(b,'es'));
+
   const grupo=(rotulo,vals,tipo)=>{
     if(!vals.length) return;
     const d=document.createElement('div'); d.className='grupo';
@@ -358,18 +376,21 @@ function armarFiltros(){
       b.textContent=v; b.dataset.tipo=tipo; b.dataset.valor=v;
       b.setAttribute('aria-pressed','false');
       b.onclick=()=>{
-        if(tipo==='pais') paisActivo=paisActivo===v?null:v;
-        else regionActiva=regionActiva===v?null:v;
-        dibujar(); };
+        if(tipo==='pais') paisActivo = paisActivo===v ? null : v;
+        else regionActiva = regionActiva===v ? null : v;
+        dibujar();
+      };
       d.appendChild(b);
     });
     c.appendChild(d);
   };
+
   // El usuario filtra SOLO por region y pais. Ejes, poblaciones, actores y
   // colectividades se muestran como etiquetas en cada titular: ocho filas de
   // filtros hacian que las categorias predominaran sobre las noticias.
   grupo('Región',regs,'region');
   grupo('País',paises,'pais');
+
   const n=document.createElement('p'); n.className='nota-filtro';
   n.innerHTML='La región y el país salen de lo que menciona el titular. «Regional» es un hecho '+
     'que cruza más de una región; «Sin determinar», uno cuyo titular no nombra ningún lugar.<br>'+
@@ -377,16 +398,22 @@ function armarFiltros(){
   c.appendChild(n);
 }
 
-function activos(){
-  return [regionActiva,paisActivo].filter(Boolean).length;
-}
-
 function refrescarBarra(n){
-  const c=activos();
-  document.getElementById('cuenta').textContent=c?c:'';
-  document.getElementById('limpiar').hidden=!c;
+  const puestos=[['region',regionActiva],['pais',paisActivo]].filter(x=>x[1]);
+  document.getElementById('cuenta').textContent=puestos.length?puestos.length:'';
+  document.getElementById('limpiar').hidden=!puestos.length;
   document.getElementById('resultado').textContent=
     n===null?'':`${n} ${n===1?'hecho':'hechos'}`;
+
+  const caja=document.getElementById('activos');
+  caja.innerHTML='';
+  puestos.forEach(([tipo,valor])=>{
+    const b=document.createElement('button');
+    b.textContent=valor;
+    b.title='Quitar este filtro';
+    b.onclick=()=>{ if(tipo==='pais') paisActivo=null; else regionActiva=null; dibujar(); };
+    caja.appendChild(b);
+  });
 }
 
 function alternarFiltros(){
@@ -419,7 +446,7 @@ function dibujar(){
   });
   const vis=ITEMS.filter(i=>i.estado===vista)
     .filter(i=>!regionActiva||i.region===regionActiva)
-    .filter(i=>!paisActivo||(i.paises_nombres||[]).includes(paisActivo))
+    .filter(i=>!paisActivo||nombresPais(i).includes(paisActivo))
     // Orden principal: IMPORTANCIA de mayor a menor. El puntaje solo desempata.
     .sort((a,b)=>(b.importancia||0)-(a.importancia||0)||b.puntaje-a.puntaje);
   refrescarBarra(vis.length);

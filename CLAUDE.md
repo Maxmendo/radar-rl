@@ -97,7 +97,7 @@ aceleracion  = velocidad actual - velocidad de la corrida anterior (3h atras)
 
 | Estado | Condición | Acción editorial |
 |---|---|---|
-| `top_trend` | velocidad >= 20 | No correrla. Solo con ángulo propio o dato nuevo |
+| `top_trend` | velocidad >= 20 regional, **>= 30 extrarregional** | No correrla. Solo con ángulo propio o dato nuevo |
 | `trending` | velocidad >= 8, **o** >= 5 con aceleración >= 4 | Publicar ya, o buscar el ángulo que nadie tomó |
 | `interes` | velocidad >= 3, **o** >= 2 con aceleración >= 2 | **El punto justo.** Publicar temprano: si escala, la nota ya está |
 | `nadie_lo_mira` | velocidad <= 2 **e** importancia >= 7 | Investigar. Posible primicia. Requiere reportería propia |
@@ -115,6 +115,15 @@ aceleracion  = velocidad actual - velocidad de la corrida anterior (3h atras)
 
 3. **`interes` es la vista por defecto.** Es el estado donde una redacción chica todavía
    puede llegar primero. `top_trend` es donde ya perdió.
+
+4. **Excepción extrarregional en `top_trend`.** Un hecho de otra región con cobertura
+   masiva entra a `top_trend` para mostrar cuál es la conversación dominante sobre
+   movilidad humana en el mundo. Dos salvaguardas, porque en agosto de 2026 la cobertura
+   de Ceuta llegó a encabezar la portada y empujar abajo lo latinoamericano:
+   - **Umbral más alto: 30 medios**, no 20. La cobertura del Mediterráneo en prensa
+     hispana es estructuralmente más voluminosa que la de un decreto argentino.
+   - **Siempre ordenado debajo de lo regional**, sin importar cuántos medios tenga, y
+     con una marca visible en la tarjeta.
 
 Ordenamiento dentro de cada estado: por `alerta` en los tres de arriba, por
 `subcobertura` en `nadie_lo_mira` y `ruido`.
