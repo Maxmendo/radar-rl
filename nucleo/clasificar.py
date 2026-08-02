@@ -249,6 +249,10 @@ def main() -> int:
     ap.add_argument("--modelo", help="fuerza un modelo en vez de usar la cascada")
     ap.add_argument("--simular", action="store_true",
                     help="arma los lotes y muestra el plan, sin llamar a la API")
+    ap.add_argument("--reclasificar", action="store_true",
+                    help="vuelve a clasificar TODO, ignorando lo ya hecho. Usarlo "
+                         "solo cuando cambia el criterio del prompt: cuesta una "
+                         "corrida completa de la API.")
     args = ap.parse_args()
 
     if not ITEMS.exists():
@@ -261,7 +265,10 @@ def main() -> int:
 
     # Fuera de alcance no se clasifica: gastar tokens en Ceuta no tiene sentido.
     pendientes = [h for h in hechos
-                  if not h.get("clasificado") and not h.get("fuera_de_alcance")]
+                  if (args.reclasificar or not h.get("clasificado"))
+                  and not h.get("fuera_de_alcance")]
+    if args.reclasificar:
+        log.info("RECLASIFICANDO TODO: se ignora lo ya clasificado.")
     pendientes = pendientes[:args.max_hechos]
 
     log.info("Hechos totales: %d | ya clasificados: %d | pendientes: %d",

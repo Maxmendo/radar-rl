@@ -144,19 +144,32 @@ deportaciones, acuerdos bilaterales), listalos todos. Distinto de `colectividade
 
 ## PASO 4 — Terminología
 
-**`termino_busqueda`** — de 1 a 3 palabras que **una persona escribiria en Google**
-para informarse sobre este hecho. No es el titular ni un resumen: es una consulta.
+**`termino_busqueda`** — de 1 a 3 palabras que **mucha gente escribiría en Google**
+para informarse sobre el TEMA de este hecho.
 
-- Decreto de expulsion en Argentina → `decreto migratorio` (no "Milei firma decreto")
-- Muerte bajo custodia de ICE → `ICE detenciones`
-- Crisis en el Darien → `Darien migrantes`
-- Naufragio de haitianos → `migrantes haitianos`
+**Generalizá.** No es el hecho puntual: es la consulta amplia bajo la que ese hecho
+cae. Google Trends no tiene volumen para combinaciones específicas y devuelve series
+vacías. Verificado el 2026-08-02: `ICE detenciones Miami` y `deportaciones Casa
+Blanca` no arrojaron ningún dato.
 
-Sin nombres propios de personas salvo que sean el eje del hecho. Sin comillas.
-`null` si el hecho es demasiado especifico como para que alguien lo busque.
+| Hecho | Mal (muy específico) | Bien (tema general) |
+|---|---|---|
+| ICE suma camas en un centro de Miami | `ICE detenciones Miami` | `deportaciones` |
+| La Casa Blanca difunde un video de deportaciones | `deportaciones Casa Blanca` | `deportaciones` |
+| Decreto de expulsión en Argentina | `decreto Milei extranjeros` | `migraciones` |
+| Naufragio de haitianos en el Caribe | `naufragio haitianos Caribe` | `migrantes haitianos` |
+| Cierre de turnos en Migraciones | `turnos Migraciones cerrados` | `turno migraciones` |
 
-Se usa para medir si el interes de busqueda esta subiendo, lo que anticipa que un
-tema esta por escalar.
+**Reglas:**
+- **Sin nombres de personas.** Ni Milei, ni Trump, ni Bukele.
+- **Sin ciudades ni provincias**, salvo que la ciudad sea el tema (Darién, Ceuta).
+- **Sin verbos ni frases.** Sustantivos: `deportaciones`, no `deportan migrantes`.
+- Preferí **una o dos palabras** antes que tres.
+- Si dudás entre lo preciso y lo general, elegí lo general.
+- `null` si el hecho no tiene un tema que alguien buscaría.
+
+Se usa para medir si el interés de búsqueda está subiendo, lo que anticipa que un
+tema está por escalar. Un término sin volumen no mide nada.
 
 **`requiere_verificacion`** — `true` cuando el titular afirma cifras, hechos o
 atribuciones **sin citar fuente**. Ejemplo: "48.000 personas cruzaron" sin decir quién
@@ -231,7 +244,7 @@ público, según nuestra línea editorial.
   "tiene_fuente_primaria": false,
   "contiene_datos_personales": true,
   "requiere_verificacion": false,
-  "termino_busqueda": "decreto migratorio",
+  "termino_busqueda": "migraciones",
   "terminologia_problematica": [],
   "angulo_sugerido": "<max 20 palabras, o null>",
   "nota": "<max 30 palabras: por que esta puntuacion, o que lo hace ambiguo>"
@@ -248,19 +261,19 @@ habría que preguntar, no a cómo escribirlo.
 **1. Decreto que endurece la política migratoria**
 
 ```json
-{{"id":"x1","es_migratorio":true,"ejes":["politica_migratoria","securitizacion","fronteras"],"poblaciones":[],"colectividades":[],"actores":["estado_nacional"],"etapa":"destino","paises":["AR"],"tipo":"normativa","importancia":10,"cobertura":9,"confianza":0.95,"tiene_fuente_primaria":true,"contiene_datos_personales":false,"requiere_verificacion":false,"terminologia_problematica":[],"termino_busqueda":"decreto migratorio","angulo_sugerido":"Que organo define que es un mensaje de odio y con que recurso se impugna","nota":"Habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico."}}
+{{"id":"x1","es_migratorio":true,"ejes":["politica_migratoria","securitizacion","fronteras"],"poblaciones":[],"colectividades":[],"actores":["estado_nacional"],"etapa":"destino","paises":["AR"],"tipo":"normativa","importancia":10,"cobertura":9,"confianza":0.95,"tiene_fuente_primaria":true,"contiene_datos_personales":false,"requiere_verificacion":false,"terminologia_problematica":[],"termino_busqueda":"migraciones","angulo_sugerido":"Que organo define que es un mensaje de odio y con que recurso se impugna","nota":"Habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico."}}
 ```
 
 **2. Muerte bajo custodia migratoria**
 
 ```json
-{{"id":"x2","es_migratorio":true,"ejes":["deportaciones","derechos_humanos"],"poblaciones":[],"colectividades":["MX"],"actores":["organismos_migratorios","sociedad_civil"],"etapa":"destino","paises":["US","MX"],"tipo":"caso","importancia":9,"cobertura":6,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"terminologia_problematica":[],"termino_busqueda":"ICE detenciones","angulo_sugerido":"Cuantas muertes bajo custodia hubo en ese centro en el ultimo ano","nota":"Detencion migratoria con resultado de muerte. Va a deportaciones por ser detencion de migrantes."}}
+{{"id":"x2","es_migratorio":true,"ejes":["deportaciones","derechos_humanos"],"poblaciones":[],"colectividades":["MX"],"actores":["organismos_migratorios","sociedad_civil"],"etapa":"destino","paises":["US","MX"],"tipo":"caso","importancia":9,"cobertura":6,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"terminologia_problematica":[],"termino_busqueda":"deportaciones","angulo_sugerido":"Cuantas muertes bajo custodia hubo en ese centro en el ultimo ano","nota":"Detencion migratoria con resultado de muerte. Va a deportaciones por ser detencion de migrantes."}}
 ```
 
 **3. Cobertura con terminología deshumanizante**
 
 ```json
-{{"id":"x3","es_migratorio":true,"ejes":["odio","medios","fronteras"],"poblaciones":[],"colectividades":[],"actores":["medios"],"etapa":"frontera","paises":["MX","US"],"tipo":"discurso","importancia":6,"cobertura":7,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":["avalancha","ilegales"],"termino_busqueda":"frontera migrantes","angulo_sugerido":"Contrastar el encuadre con datos oficiales de cruces registrados","nota":"Encuadre de amenaza sin respaldo estadistico. Material para analisis mediatico."}}
+{{"id":"x3","es_migratorio":true,"ejes":["odio","medios","fronteras"],"poblaciones":[],"colectividades":[],"actores":["medios"],"etapa":"frontera","paises":["MX","US"],"tipo":"discurso","importancia":6,"cobertura":7,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":["avalancha","ilegales"],"termino_busqueda":"migrantes","angulo_sugerido":"Contrastar el encuadre con datos oficiales de cruces registrados","nota":"Encuadre de amenaza sin respaldo estadistico. Material para analisis mediatico."}}
 ```
 
 **4. Ítem que no es migratorio**
@@ -278,7 +291,7 @@ habría que preguntar, no a cómo escribirlo.
 **6. Inmovilidad forzada**
 
 ```json
-{{"id":"x6","es_migratorio":true,"ejes":["inmovilidad","estatus"],"poblaciones":["familias"],"colectividades":["VE"],"actores":["organismos_migratorios"],"etapa":"transito","paises":["PE"],"tipo":"caso","importancia":8,"cobertura":1,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":[],"termino_busqueda":"migrantes varados","angulo_sugerido":"Cuantos expedientes estan paralizados y desde cuando","nota":"Personas varadas sin poder avanzar ni volver. Casi sin cobertura."}}
+{{"id":"x6","es_migratorio":true,"ejes":["inmovilidad","estatus"],"poblaciones":["familias"],"colectividades":["VE"],"actores":["organismos_migratorios"],"etapa":"transito","paises":["PE"],"tipo":"caso","importancia":8,"cobertura":1,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":[],"termino_busqueda":"migrantes","angulo_sugerido":"Cuantos expedientes estan paralizados y desde cuando","nota":"Personas varadas sin poder avanzar ni volver. Casi sin cobertura."}}
 ```
 
 ---
