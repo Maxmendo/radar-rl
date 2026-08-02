@@ -74,6 +74,9 @@ EN_ALCANCE = {
 # se mencione un pais del alcance. Ej: "Trump opina sobre Ceuta" es sobre Ceuta.
 FUERA_DOMINANTE = {"ceuta", "melilla", "marruecos", "myanmar", "schengen", "frontex"}
 
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+log = logging.getLogger("ingesta")
+
 # Palabras sin valor discriminante al comparar titulos.
 VACIAS = {
     "de", "la", "el", "los", "las", "un", "una", "unos", "unas", "y", "o", "a", "en",
