@@ -1,0 +1,3 @@
+# El radar es una herramienta interna de Refugio Latinoamericano.
+User-agent: *
+Disallow: /

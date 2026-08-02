@@ -1,0 +1,11 @@
+# Cabeceras para Cloudflare Pages.
+#
+# El tablero queda detras de Cloudflare Access, pero estas cabeceras son una
+# segunda linea: evitan que quede en cache de intermediarios y que buscadores
+# lo indexen si alguna vez se publica sin proteccion.
+
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store, max-age=0
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer

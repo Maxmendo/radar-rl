@@ -123,6 +123,9 @@ jobs:
       #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #   run: python -m nucleo.alertar --umbral 40 --max 3
 
+      # Escribe docs/index.html. La carpeta docs/ es la raiz del sitio en
+      # Cloudflare Pages: cada push la redespliega automaticamente. Ahi viven
+      # tambien _headers y robots.txt, que no se regeneran.
       - name: Generar tablero
         run: python scripts/generar_tablero.py
 
