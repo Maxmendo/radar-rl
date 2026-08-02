@@ -1,0 +1,38 @@
+PRUEBA DE related_queries — 2026-08-02T16:27:23+00:00
+
+Titulares en estado `interes` hoy: 2
+   Avanza el ICE en Miami: busca sumar 700 nuevas camas en centros de detención de migrantes tras el ci
+   🔴🔵 Increíble pero cierto: Casa Blanca difunde video de deportaciones con canción de BAD BUNNY. La ad
+
+======================================================================
+
+deportaciones  (US)
+----------------------------------------
+   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+
+deportaciones  (MX)
+----------------------------------------
+   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+
+migrantes  (AR)
+----------------------------------------
+   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+
+migrantes  (CL)
+----------------------------------------
+   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+
+asilo  (US)
+----------------------------------------
+   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+
+refugiados  (CO)
+----------------------------------------
+   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+
+======================================================================
+RESULTADO: 0 consultas con datos, 6 sin datos
+
+related_queries NO devuelve datos. El vinculo por hecho no es viable
+con Google Trends: el valor queda en los paneles de atencion publica
+y demanda de servicio, que si funcionan.
