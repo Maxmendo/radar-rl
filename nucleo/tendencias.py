@@ -47,6 +47,7 @@ ITEMS = RAIZ / "datos" / "items.json"
 SALIDA = RAIZ / "datos" / "tendencias.json"
 
 LOTE = 5              # tope de terminos por consulta que admite Google Trends
+BIBLIOTECA = "trendspy"   # pytrends esta archivado desde abril de 2025
 ESPERA = 3            # segundos entre consultas
 FALLOS_SEGUIDOS = 3   # si tantas fallan seguidas, se abandona en vez de gastar minutos
 MAX_HECHOS = 15       # tope de seguridad si `interes` creciera mucho
@@ -109,23 +110,28 @@ def puntuar(serie, umbrales: dict) -> tuple[int, dict]:
                     "ratio": round(ratio, 2)}
 
 
-def consultar(pytrends, terminos: list[str], geo: str, ventana: str,
+def consultar(cliente, terminos: list[str], geo: str, ventana: str,
               umbrales: dict) -> dict:
     """Consulta un lote de terminos para un pais y los puntua."""
     try:
-        pytrends.build_payload(terminos, timeframe=ventana, geo=geo)
-        df = pytrends.interest_over_time()
+        df = cliente.interest_over_time(terminos, timeframe=ventana, geo=geo)
     except Exception as e:
-        log.warning("      %s / %s: %s", geo, ", ".join(terminos)[:38], type(e).__name__)
+        log.warning("      %s / %s: %s: %s", geo, ", ".join(terminos)[:34],
+                    type(e).__name__, str(e)[:60])
         return {}
-    if df is None or df.empty:
+    if df is None or getattr(df, "empty", True):
         return {}
 
     salida = {}
     for t in terminos:
-        if t in df.columns:
-            p, d = puntuar(df[t].tolist(), umbrales)
-            salida[t] = {"puntaje": p, **d}
+        # trendspy puede devolver la columna con el termino tal cual o
+        # normalizado: se busca sin distinguir mayusculas ni espacios.
+        col = next((c for c in df.columns
+                    if str(c).strip().lower() == t.strip().lower()), None)
+        if col is None:
+            continue
+        p, d = puntuar(df[col].tolist(), umbrales)
+        salida[t] = {"puntaje": p, **d}
     return salida
 
 
@@ -174,11 +180,11 @@ def main() -> int:
         return 0
 
     try:
-        from pytrends.request import TrendReq
-        pytrends = TrendReq(hl="es", tz=180, timeout=(10, 30), retries=2, backoff_factor=1)
+        from trendspy import Trends
+        cliente = Trends(hl="es", tz=180, request_delay=2.0)
     except Exception as e:
-        log.warning("pytrends no disponible (%s); panel vacio", type(e).__name__)
-        SALIDA.write_text(json.dumps(vacio(f"pytrends: {type(e).__name__}"),
+        log.warning("trendspy no disponible (%s); panel vacio", type(e).__name__)
+        SALIDA.write_text(json.dumps(vacio(f"trendspy: {type(e).__name__}"),
                                      ensure_ascii=False, indent=1), encoding="utf-8")
         return 0
 
@@ -203,7 +209,7 @@ def main() -> int:
             if seguidos >= FALLOS_SEGUIDOS:
                 break
             lote = terminos[i:i + LOTE]
-            res = consultar(pytrends, lote, geo, ventana, umbrales)
+            res = consultar(cliente, lote, geo, ventana, umbrales)
             seguidos = 0 if res else seguidos + 1
             for h in grupo:
                 d = res.get(h["termino_busqueda"])
@@ -219,7 +225,7 @@ def main() -> int:
     demanda: dict = {}
     if seguidos < FALLOS_SEGUIDOS:
         for i in range(0, len(servicio), LOTE):
-            res = consultar(pytrends, servicio[i:i + LOTE], geo_servicio, ventana, umbrales)
+            res = consultar(cliente, servicio[i:i + LOTE], geo_servicio, ventana, umbrales)
             seguidos = 0 if res else seguidos + 1
             for t, d in res.items():
                 if d["puntaje"] > 0:

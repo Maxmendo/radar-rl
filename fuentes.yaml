@@ -1381,7 +1381,11 @@ tendencias:
 
     NO se usa para ordenar el tablero. Trends refleja las busquedas con retraso y lo que las hace subir
     suele ser la propia cobertura mediatica: sumarlo al ranking contaminaria una metrica que funciona.
-    Sirve para disparar ALERTAS.'
+    Sirve para disparar ALERTAS.
+
+    BIBLIOTECA: trendspy, NO pytrends. pytrends fue archivado en abril de 2025 y devuelve 429 en la
+    primera llamada: verificado en produccion el 2026-08-02, cero consultas exitosas. Los datos siguen
+    siendo publicos y gratuitos; el problema era la biblioteca.'
   activo: true
   solo_en_digest: true
   horas_de_cache: 20
@@ -1402,3 +1406,4 @@ tendencias:
     ratio_minimo: 1.2
     ratio_maximo: 3.0
     interes_minimo: 15
+  biblioteca: trendspy

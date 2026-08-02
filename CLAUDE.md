@@ -189,10 +189,26 @@ interés absoluto bajo se ignora aunque suba mucho — pasar de 2 a 6 es ruido.
 trámite, no de gente leyendo. Un pico ahí señala una demora o un cambio operativo
 que probablemente ningún medio cubrió: es la señal más independiente del sistema.
 
-**Fragilidad asumida.** pytrends es una biblioteca no oficial que se rompe cada vez
-que Google cambia algo. Corre una vez por día, cachea 20 horas, abandona tras 3
-consultas seguidas sin respuesta, y ante cualquier error escribe un panel vacío
-para que el resto del sistema siga funcionando.
+**Biblioteca: `trendspy`, no `pytrends`.** pytrends fue archivado por su autor el 17
+de abril de 2025 y su última versión es de abril de 2023. Devuelve HTTP 429 en la
+primera llamada porque su manejo de sesión quedó viejo, no porque haya bloqueo.
+Verificado en producción el 2026-08-02: cero consultas exitosas.
+
+Los datos de Google Trends siguen siendo públicos y gratuitos; el problema era la
+biblioteca. `trendspy` es el sucesor mantenido y expone la misma interfaz. Existe
+además una API oficial de Google Trends anunciada en julio de 2025, pero sigue
+siendo un alpha con acceso por solicitud.
+
+**Fragilidad asumida.** Cualquier cliente no oficial depende de endpoints que Google
+no se compromete a mantener. Por eso: corre una vez por día, cachea 20 horas,
+abandona tras 3 consultas seguidas sin respuesta, y ante cualquier error escribe un
+panel vacío para que el resto del sistema siga funcionando con los hechos sin dato
+de búsquedas.
+
+**Cómo diagnosticar si vuelve a fallar.** Mirar `datos/tendencias.json`: el campo
+`motivo` dice qué pasó. Si el log muestra 429 en la primera llamada, la biblioteca
+volvió a quedar obsoleta y hay que revisar si `trendspy` sigue mantenido. Si muestra
+403, es bloqueo de red o de IP.
 
 ## 6. Alertas
 
