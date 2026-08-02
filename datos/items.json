@@ -1,7 +1,7 @@
 {
- "generado": "2026-08-02T15:31:52+00:00",
+ "generado": "2026-08-02T15:35:55+00:00",
  "clasificado": true,
- "notas_totales": 222,
+ "notas_totales": 221,
  "items": [
   {
    "id": "f3db8a912110",
@@ -62,7 +62,7 @@
    "velocidad": 8,
    "aceleracion": null,
    "trends": null,
-   "horas": 23.6,
+   "horas": 23.7,
    "notas": 9,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMihgJBVV95cUxPQ0RkQ1FKUUtLZ0lfVThXNHlMVnpQckxhb1FjQkpxYVVVOV9sZmJteG9TSTFrYjlTZkt2N19SZlNjZ2hfbXhvTXRTSTNDLXFZM3dkT3F0LWNUbnBNY0RHb3hKQkx4ZjVMNExsVTFSTGhWNTlOZTMzenVxRkh2dEQ5ejVwd09kN2hLMmlzMlZMdDFad29ob0hUM282QlN0OFRuckVHWTR2eXhaLWRqR0YtNnY2b05XQ0xWaFAwRVJrWkNXVHRLQlF4bk9WTlFYNTRCNjJtNVRESTJ2Q3VEdW5IYS05RWFsMElhQzR0M0tDU2cwaXZnZjF0ME9VSXFzcVpUM041ODB30gGGAkFVX3lxTE9DRGRDUUpRS0tnSV9VOFc0eUxWelByTGFvUWNCSnFhVVU5X2xmYm14b1NJMWtiOVNmS3Y3X1JmU2NnaF9teG9NdFNJM0MtcVkzd2RPcXQtY1RucE1jREdveEpCTHhmNUw0TGxVMVJMaFY1OU5lMzN6dXFGSHZ0RDl6NXB3T2Q3aEsyaXMyVkx0MVp3b2hvSFQzbzZCU3Q4VG5yRUdZNHZ5eFotZGpHRi02djZvTldDTFZoUDBFUmtaQ1dUdEtCUXhuT1ZOUVg1NEI2Mm01VERJMnZDdUR1bkhhLTlFYWwwSWFDNHQzS0NTZzBpdmdmMXQwT1VJcXNxWlQzTjU4MHc?oc=5",
@@ -99,6 +99,7 @@
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYXRWUGMtRWEtLUJRRG1CVlNBZzY2S1RYX1lXNHhZS1kwaHlMTUtWREgzREdzcmRpWXBGbUxBZ3Z5T0x0YU1hRnhIRXctMjdfOEM4bXdGbHNSYk5vd2UxMy1RUWloTkNTcjI2YVNGVEpiUWhMNU9JR0themZMVTE5V0ZVdGI3Q1NlQkJXblFhSFBSV2VGUWQycmVIRHctakNaS2otemVSVWdYSVVhZG0ya0FHbnQ3dU9nZ2ZvX0JR0gHDAUFVX3lxTE9OcmNCM3drMjczSkZobEVKLWpKTk5EanBEbmZrYUY2eXZpNFp4LW1xUFlDSFZnVGN3bkZOTGlxQVBER2NGQU9Xa3BBWmE1dFpxN3ZvUkZxZW94Q3AzRFFCLW5RZWxDclAxeU1lRTdyTHQ1UjBXUVc5RkkzS3FVa0M1Q0xwaXpSRXI3Tktxd3NiNXBzQzdtQUZsblNLQkZqRFJKWDJfMFc3WWZWZ0pYX3I0dGs5d2k3UFBHVnU4eHVPX0lwWQ?oc=5",
    "medios": [
     "Acento",
+    "Caracol Radio",
     "CR Hoy",
     "Diario Hoy En la noticia",
     "Meganoticias",
@@ -110,6 +111,11 @@
      "medio": "Acento",
      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZVZyUkc3YUxfOHNXQW9vUUFXMDR2d1gyVlVqTFJKbTBtcEtZTnRVcVZ0SXdFTjdDQ1dsVU9XcXV1TTVjaGplejc0QWhmeF81TkMxRFZ6MTE4aDE1VTFSRzBFMkR0NHUxX09GMmdvREJVbUN0UzB6NWlIQzBXMl8tdnc4UWhrSkhIR0Y5X0FacFplRlA5dmVRSnA0OHEwZXhwbTRXVklNX0lRUjBNUlFEaEVRc3l4ajhLakHSAboBQVVfeXFMUGVWclJHN2FMXzhzV0Fvb1FBVzA0dndYMlZVakxSSm0wbXBLWU50VXFWdEl3RU43Q0NXbFVPV3F1dU01Y2hqZXo3NEFoZnhfNU5DMURWejExOGgxNVUxUkcwRTJEdDR1MV9PRjJnb0RCVW1DdFMwejVpSEMwVzJfLXZ3OFFoa0pISEdGOV9BWnBaZUZQOXZlUUpwNDhxMGV4cG00V1ZJTV9JUVIwTVJRRGhFUXN5eGo4S2pB?oc=5",
      "fecha": "2026-08-02T13:47:04+00:00"
+    },
+    {
+     "medio": "Caracol Radio",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTHdJbFV3cHptcjVPaTBGRWNPdDZmWFg1RHdwVDdOZUQ3MVhJM19QenJ3VUlrZi0wOEZnNDU3ZmNrajQ4SnZtYU9XczhJb0dFSGRIOFFpMkVKNWZoUVc0aEZoRGNIQmhvV1ZFa1RXX05tRndhckkzME1lOFd6QWFfeDM0Y2k4eG1TN1pOM2JxYnhWb3QzQVczYUtKTHQ1TEdWbVJTbXlTaERBYlh2LXJrLVAwSG40N25DYjJMZTJMOGI3dXlw0gHYAUFVX3lxTE1ORUYwWE96NVV1WDhDTkZwSVFaZHhmRmVDTXI0a1ExSXZMZTZhUU9tZU1GRnY5Z203NlFlTjR2YUM3NV9oZG5xTDYwSTFnaTVsZlVRZ1hvRDNoVFlKdFlIZXl6SDdRNVBndmJGTThUcTV4Znc0NWswRWkzNUJTQjFkenBrb3A5cXY2UV9CS3ktUmRKRklfWFpHaFE1bmVkb1dNMkx6cHd0YWJ3RzFBV1pDbnhTWTFQT1plSUFId1V1ai1Zci1NREMybUhybUNCZlM1Z3RUeEZOWQ?oc=5",
+     "fecha": "2026-08-02T12:48:05+00:00"
     },
     {
      "medio": "CR Hoy",
@@ -137,19 +143,19 @@
      "fecha": "2026-08-02T13:00:23+00:00"
     }
    ],
-   "velocidad": 6,
+   "velocidad": 7,
    "aceleracion": null,
    "trends": null,
    "horas": 19.4,
-   "notas": 8,
+   "notas": 9,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYXRWUGMtRWEtLUJRRG1CVlNBZzY2S1RYX1lXNHhZS1kwaHlMTUtWREgzREdzcmRpWXBGbUxBZ3Z5T0x0YU1hRnhIRXctMjdfOEM4bXdGbHNSYk5vd2UxMy1RUWloTkNTcjI2YVNGVEpiUWhMNU9JR0themZMVTE5V0ZVdGI3Q1NlQkJXblFhSFBSV2VGUWQycmVIRHctakNaS2otemVSVWdYSVVhZG0ya0FHbnQ3dU9nZ2ZvX0JR0gHDAUFVX3lxTE9OcmNCM3drMjczSkZobEVKLWpKTk5EanBEbmZrYUY2eXZpNFp4LW1xUFlDSFZnVGN3bkZOTGlxQVBER2NGQU9Xa3BBWmE1dFpxN3ZvUkZxZW94Q3AzRFFCLW5RZWxDclAxeU1lRTdyTHQ1UjBXUVc5RkkzS3FVa0M1Q0xwaXpSRXI3Tktxd3NiNXBzQzdtQUZsblNLQkZqRFJKWDJfMFc3WWZWZ0pYX3I0dGs5d2k3UFBHVnU4eHVPX0lwWQ?oc=5",
+    "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTHdJbFV3cHptcjVPaTBGRWNPdDZmWFg1RHdwVDdOZUQ3MVhJM19QenJ3VUlrZi0wOEZnNDU3ZmNrajQ4SnZtYU9XczhJb0dFSGRIOFFpMkVKNWZoUVc0aEZoRGNIQmhvV1ZFa1RXX05tRndhckkzME1lOFd6QWFfeDM0Y2k4eG1TN1pOM2JxYnhWb3QzQVczYUtKTHQ1TEdWbVJTbXlTaERBYlh2LXJrLVAwSG40N25DYjJMZTJMOGI3dXlw0gHYAUFVX3lxTE1ORUYwWE96NVV1WDhDTkZwSVFaZHhmRmVDTXI0a1ExSXZMZTZhUU9tZU1GRnY5Z203NlFlTjR2YUM3NV9oZG5xTDYwSTFnaTVsZlVRZ1hvRDNoVFlKdFlIZXl6SDdRNVBndmJGTThUcTV4Znc0NWswRWkzNUJTQjFkenBrb3A5cXY2UV9CS3ktUmRKRklfWFpHaFE1bmVkb1dNMkx6cHd0YWJ3RzFBV1pDbnhTWTFQT1plSUFId1V1ai1Zci1NREMybUhybUNCZlM1Z3RUeEZOWQ?oc=5",
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZVZyUkc3YUxfOHNXQW9vUUFXMDR2d1gyVlVqTFJKbTBtcEtZTnRVcVZ0SXdFTjdDQ1dsVU9XcXV1TTVjaGplejc0QWhmeF81TkMxRFZ6MTE4aDE1VTFSRzBFMkR0NHUxX09GMmdvREJVbUN0UzB6NWlIQzBXMl8tdnc4UWhrSkhIR0Y5X0FacFplRlA5dmVRSnA0OHEwZXhwbTRXVklNX0lRUjBNUlFEaEVRc3l4ajhLakHSAboBQVVfeXFMUGVWclJHN2FMXzhzV0Fvb1FBVzA0dndYMlZVakxSSm0wbXBLWU50VXFWdEl3RU43Q0NXbFVPV3F1dU01Y2hqZXo3NEFoZnhfNU5DMURWejExOGgxNVUxUkcwRTJEdDR1MV9PRjJnb0RCVW1DdFMwejVpSEMwVzJfLXZ3OFFoa0pISEdGOV9BWnBaZUZQOXZlUUpwNDhxMGV4cG00V1ZJTV9JUVIwTVJRRGhFUXN5eGo4S2pB?oc=5",
     "https://news.google.com/rss/articles/CBMixAFBVV95cUxObExWODIxM0dTZlJxNWhqTzFQQXcxSzYxX3IzbE5tUy16ejQ1Zi1NR2EzalFMSnZCVERtMkQ1TVZzeUlrRHhENDZnQTJXMjFPQ19zVC1jWXhCT3BEOGJOeVpXdUJJc2dLc3lhWHN5MVlhUWlWcFBLd0E2dGV1cl9VcG1UWG0ySHI4aFZjNXdobnp1azZXcmNWTmVBUzlFOUlXeU1HYnJNQUVEY0dTblJCNkI4UWU3NHRHMjBYcDlPZkZFaXdK0gHEAUFVX3lxTFB3bHcwUEtJQ3oteWdINkFsZzUtc3ZlM2J5cjNVejc0OGpoTVN6ZVEyVlpMUzVYbTRSaGVFeTZBMmQ0Q2Foc3hDM3RlSENOSVhsOGlSa0IydUlDdVE1SWxsaXNHVlBXSGg3Q3kweTNsN2dPNXZtY3lzYTlQSFpSbHN5RDNpa20wYzI5MTlCaTFGbWllUmhob19VTEx5T1ZOVE5VOVZoS1dVN2p6UDlzVVB1MHVBTmJmeWNUQUJGdDJ0TW5icUk?oc=5",
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxOV0ZhX3poZEFWTmNkWFhFWWtwN3FYTEJUSlNQMFFrVlRMSXIxUVhpbkUxMmpZVXU4TzlBbUlqMnZvdFhGSC02TERpbWVlTktEZURna1FRNnRhT1hXYmpYanNvYTB1R2ItNjRoelhlRDBiRHFjcTBVZFlqMWhzeFdoc0xoekFUckJfRUJXQy1RNm5UdjVGUlZ1bkhnVF8yZ2oyTEZoMHk4aTVKekM0SENkMEVnemMybzJ1X2NVNTZwdw?oc=5",
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaDVNVlBqRFBiaDZ2OEd6elNwME9TSE9yX0ZxaWFFMjJ3dGxrcVJ1WWlkNDRGWkM3VEV3X282SnhvNk1ZanpiMngzaFhaX1NpZm1kcTA0ZWdCajhjMGw4NnZGRlhJbWdZZjYxT1VCcnNiZDllOVVCM0JieFJ5T1dqbTBXdDI1QlBUQ0YwSm5neVppY0tIZWZHTHF4el9jTFdHZ0JGdDBscTdfNlg1T2lNTDdYQjE3eGx1MVdZNVItaFVDWVZUVVloU1FR?oc=5",
-    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc0lRVGVsS0FwbnJIRDV3Y1pKTVBMb2lvVXNjSFZUUGlnTUQycWRfM2hNMW42SG5vV0lVclBYLXl1Y2NoWmNGNVVOdW56bS1ta280ZmNaZUdWMGsxUFRrOVFsNUxpY21fZlp5Y3lyNGlXNTVpeHNjRlBJN0JJcHZRRHFLT2VHZUhG?oc=5",
-    "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZnBxaTZGajFwbTlGT0J3a0ZfMjRKYUppQ1R0UDhaRFNJTDcyLXdBLVNPV0xHU3B5elRlczdCSUtBekhleXJKWWVsVkt2Ykg1TW5UX01kT1YteERvZFFha3p0V2JDSnZqbkE1bzdmaXhPSkZtMXBXZDNrdjQweTZGNlllMGVqTWRLNWdlNV9QVWfSAZYBQVVfeXFMT21kZVFZdFJSSktQS3pzQUFKdkk3YldoUWNEUjZ3dnJJcER3VXluVjhmUmZVTlp3M1FKUEcwdEQ1cGZDZnlKbE1hVlREUmdNTHJVYlZmM1ZsRzFvNHVUeGVxRWJ2MDJMMzRJREFJNUNLM0FLSTVRVjBranpJREo5QVp5b2luZVdYVXlTSDZfWlNKZEJaOGVB?oc=5"
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc0lRVGVsS0FwbnJIRDV3Y1pKTVBMb2lvVXNjSFZUUGlnTUQycWRfM2hNMW42SG5vV0lVclBYLXl1Y2NoWmNGNVVOdW56bS1ta280ZmNaZUdWMGsxUFRrOVFsNUxpY21fZlp5Y3lyNGlXNTVpeHNjRlBJN0JJcHZRRHFLT2VHZUhG?oc=5"
    ],
    "ejes": [
     "estatus"
@@ -211,7 +217,7 @@
    "velocidad": 5,
    "aceleracion": null,
    "trends": null,
-   "horas": 20.2,
+   "horas": 20.3,
    "notas": 6,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV3dlZG95dUZYc1kxRndaWXJFeWowVE5XY1JwVWNUX2tsOTh3OWFkUmpoQWljSGJpc0JZc3N4aS0zeDJrT0J3b01UZUpmVFBMWV9sMEpzdmNNSDZvZHIzb2F5UV9Ldk5sWkg4Q1lVeF9ka0xMNEpVUHJ4dGpLS3JvcWhOWXNwVnVpSmU5WXdGRThfS0pDRUNmdTdoT3RxOWNQelFENnFEZDBXUnBFbUpxS3VZQjFDN29ua2Mzci1vNA?oc=5",
@@ -277,7 +283,7 @@
    "velocidad": 5,
    "aceleracion": null,
    "trends": null,
-   "horas": 23.7,
+   "horas": 23.8,
    "notas": 7,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMitwFBVV95cUxOU3ZTRkNJdFlxTXg1TldEM3FSQkNLdGNSVVUtUUVfLXFBZnExcTJQUkZzRnBTdWxPdzY0czc5QUdCXzFDMVlaTEFHX1phSHQ5Z1NFelIyTWZXZVNwYVBtWnVYMUpuNHhMZ2Vhdm1zVUg1N25MVG5CWUNtRUZOM0YxRHdmNkFwU3dNV2p6cVhYTk1nOTctRkJzMXJiMTZ5ajVGcExzRVMyWGZlaWNGdmJZY3JKcDJsYms?oc=5",
@@ -342,9 +348,10 @@
    "velocidad": 4,
    "aceleracion": null,
    "trends": null,
-   "horas": 18.3,
-   "notas": 4,
+   "horas": 18.4,
+   "notas": 5,
    "otras_urls": [
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRmw3cjN3d09aYTVPU3ZRN25QVElrZjlkc09kNy13QmNZUkNGSlMwVVZQS2J6Y3dSQ1BhZTB3anlSd1VhekJyVy1oLTFjXzlteUV4SnVOdTVBYjBCVzBTT3RSbTBJYmU4UjN4a3phYWpoUmZabXFEWDhoc0hWTXBEcl9MSVVaYllCRWZxN1o3aFNDa3lOZ0Nxc21Gc3hZd0N6S3Bqc2pUTFpGTF9faDhvYUF0MTc5QdIBuwFBVV95cUxPbHp6b3VnS2lqSXVpWlR2eVdiWmdwWml3YUZJV0hXUW9RWjVKR0o1SGllMlFuaEVGc19ITGdCSE15cmRzY3k3SENMWGJwYTB6YUZMdEVKRkVrMjhBSDdOVDhwa0NQWDYwYkNIVEhhMnUtU09adzVHdGpUMV9lLUlEVmVwNFd1aFhnRTB3ZURrQnpGSXpKZENxYlFHYUw0bmhxM2w4dl9mMnFKNjQyODJQRWpLR1hWcDRpSVVF?oc=5",
     "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kR05LZkxUTklFMHc4N3A4SlBZZS1qMjgwNVJZNlNDT2NoVF9rRXhCcy1TcUo0eG91WTZQWXhydDNPa256Wkpha2xfY1RqSjVXYzZIb0tVTWZETGV3OGxsZmktUWJVSnkwaFg2STNkbEJxVjZLWFE?oc=5",
     "https://news.google.com/rss/articles/CBMisAFBVV95cUxNR3N3dTRQM0RrODBvZFRvb0F2WDEwekhxYWFvRVdaR0dGQkFIRWtpMWtWclBXUkItdWt0X0VhVzhmS29YM0lLZ0J5djJzbUFBaXkwX2xUZURxeUFyWl9waU9kb0IxVlJRZFhoUnV0TnhKb29NX2FZSjU2ZUFpM3VGNkEzaEdXLVZJa211SnlYY3hTTGkyQzZVNy1LUTF5UTBBRnBTaHp0Rk5Xck5IT1pFSQ?oc=5",
     "https://news.google.com/rss/articles/CBMisAFBVV95cUxNR3N3dTRQM0RrODBvZFRvb0F2WDEwekhxYWFvRVdaR0dGQkFIRWtpMWtWclBXUkItdWt0X0VhVzhmS29YM0lLZ0J5djJzbUFBaXkwX2xUZURxeUFyWl9waU9kb0IxVlJRZFhoUnV0TnhKb29NX2FZSjU2ZUFpM3VGNkEzaEdXLVZJa211SnlYY3hTTGkyQzZVNy1LUTF5UTBBRnBTaHp0Rk5Xck5IT1pFSQ?oc=5"
@@ -403,7 +410,7 @@
    "velocidad": 4,
    "aceleracion": null,
    "trends": null,
-   "horas": 20.0,
+   "horas": 20.1,
    "notas": 4,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMihwJBVV95cUxPR3E1LW1tV1cxdXRnZDR2WThxSDFaQk5QcnM3MDVoNFA0M3p5UjN6YUIyWnY0ZzNraHlNN1lKMmh3SjljMmtvWGo4dml4eFJuNGx4d0F5RVM3Z21YSzQ2RmJlNlpsblM2NzlJb1RTNVFZczQwZTA4TDZiM2lfV1paX0xtbWhzdlR6eWJSdFhCWnNJNDNOSHRBYzF4WXpYVzRPLWFhNm1mS1RodktxdS1JN2VKZU5uQVRhclZmZVQzazEwcjRhUkd4dU4wUjY1YWFyMUZXN1VsZWxDblF4cE9uMUxOYUJnNlNpQWx2a2JidFJLeks5SmxZeEhnSzY1ZjN3XzBPNkJKdw?oc=5",
@@ -411,7 +418,8 @@
     "https://news.google.com/rss/articles/CBMid0FVX3lxTFBGTnlDc014eFhORmI1RFhISTBLTGZudDBwbUFmM3hzVG1CaE14TzQ5ZDEtdFVzYXUxMUh2LVVhRDUwTnNjLVlORDBFT2ZrbFQ1N01idmZpRHY5d3ZSTG85cDFBSXl2UWpwdG9QR2stS3ZZaVk3dTBB?oc=5"
    ],
    "ejes": [
-    "deportaciones"
+    "deportaciones",
+    "securitizacion"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -426,21 +434,23 @@
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
-   "colectividades": [],
+   "colectividades": [
+    "CU"
+   ],
    "actores": [
     "organismos_migratorios"
    ],
    "etapa": "destino",
    "tipo": "evento",
    "cobertura": 4,
-   "confianza": 0.95,
+   "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "ICE detenciones",
-   "angulo_sugerido": "Verificar las condiciones de los centros de detención ante la ampliación de plazas",
-   "nota": "Ampliación de capacidad de detención migratoria en Miami."
+   "termino_busqueda": "ICE detenciones Miami",
+   "angulo_sugerido": "Impacto de la ampliación de centros de detención en las comunidades migrantes de Florida.",
+   "nota": "Expansión de la capacidad de detención del ICE en Miami. Afecta directamente condiciones de vida."
   },
   {
    "id": "16d0ada3335d",
@@ -529,15 +539,16 @@
    "velocidad": 3,
    "aceleracion": null,
    "trends": null,
-   "horas": 0.6,
+   "horas": 0.7,
    "notas": 3,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQTYxVmRUS1pXd1J3RFl2Y2xBV2dSbWM3TEd0R0V5eW1raFJqWTJTNUpQcWFaOTRsWmItSXVLVGdTeE4wNkFTc0swOEVGcmJPbWsxM0NMVUU2MHN4UGtQWE5kRHdpWGNEa2hNQ3RrNEZIUjBuR3pyMVotY0dxMnpQN3RCU0twbkg4QVI4T3dYa0FvR01zTWg2Mk1SanJmZHo3WHUwSkliWXBGTnlnTFZIS3dzMTVWZ2tzdHEtczlESGpPTGRDS1VrdjVR?oc=5",
     "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV2ZVXzN4RU5jTXhTUmlHR3BJa0RyVTVReFdVVU1KblhxYnpmTFVVcGlRTFcxLXc0Y1p1QTh0RXotZlFkTlZyNklndDc5aEdld2Fsb0p5V1poZWpIa3prZmVHa2ZVZjdHUF9LRy1oTmNsLWZybmc1bVAxc0xUbUVtY2lDNnQ4c2E4U0FKSm1mbUdXMEFBVXotWUlhbmFVSlZpTGtSeXVkVUdua0hDbE9jX3Z5eVlRbHg2T0NVNEhLNzk?oc=5"
    ],
    "ejes": [
-    "deportaciones",
-    "odio"
+    "odio",
+    "medios",
+    "securitizacion"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -564,116 +575,9 @@
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "deportaciones EEUU",
-   "angulo_sugerido": "Analizar el uso de operativos de deportación como contenido de entretenimiento institucional",
-   "nota": "Difusión oficial de deportaciones con tono banalizado."
-  },
-  {
-   "id": "bd049c2894d9",
-   "titulo_original": "Crisis humanitaria en Ceuta, en directo | Ceuta vive una madrugada sin incidentes y sigue recuperándose tras la crisis migratoria",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
-   "medios": [
-    "Diario Río Negro",
-    "LaSexta",
-    "Primera Edición"
-   ],
-   "coberturas": [
-    {
-     "medio": "Diario Río Negro",
-     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaHBPaTJ3bDR3QUxCdnBoUURFTWZJZEp0ekx2Y19PbmNKVms3clN5RmlZZ01BTWlJN3hVOXdRdHdySmw0dXUyUVgxWXJIVFBVelZRQnU5MXl0Wmk2RU1DbUk4NXI5YldSR3JrSGxpMlpfM2Vfc1owMFBfalpOczdJSm15R3ZzNlJNVkY0eVNmLW5IS09kVk1pdjlTOWtvWGg1TXBUVndFVnFXUXdiaWEyeThoRWUzVExtTm9KSWpVT2x0ZVZ4UDVDVWR2TEh0QlRfY3pyTXRR0gHeAUFVX3lxTFB0Y0FHcDdjV3lFUjFZRE5Jc3BQRlVzZWxMcGViRldNTlZMazUtYUNVdUNLbzdYQ3JxT3Fnb0RITkMwOGtETTFvUGdNbXlIOHpLRElETDJnZmJzLWFPenFVdWhXTlVjd1pZeXlYQ3o0QVo1UzQ3U2JWdFdwMDY5Q2VvTHBsbnQ1alJ3VklBZ3pHanhCT2FHWGMydVZZeTQzMzVrRERhQTNxVGFMNVlyT3B6UC1mTGRtaFNGbHdXejJIcVZIWW1RS1BxYmpkVVhXRDAtVElVeWJWRzVKNXFVdw?oc=5",
-     "fecha": "2026-08-01T21:35:08+00:00"
-    },
-    {
-     "medio": "LaSexta",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
-     "fecha": "2026-08-02T11:47:32+00:00"
-    },
-    {
-     "medio": "Primera Edición",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOF83N2JKdE5JWU9IRmhPRC1uVUdKalZ0QW9UTzJsM2x6RlZpYVNvang3UmVBRE43cy04OVRLS3pSaWdfSC1KWHpuWGRRY0M0dm1HQlJ2OGJrWlBfRjRyR3FZeXVZZ0twX1JVMEdETFpkNG1FMUVlaEV5MVI3SnBuWkdUR3BqS0RhZEtPRThkQ1ppeGkyeEhMTXlSZk1zMG93NTNudjVfalREbzJza0RsVm9WVnhydEkzY0xNZldJSQ?oc=5",
-     "fecha": "2026-08-01T21:46:31+00:00"
-    }
-   ],
-   "velocidad": 3,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 17.9,
-   "notas": 5,
-   "otras_urls": [
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
-    "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaHBPaTJ3bDR3QUxCdnBoUURFTWZJZEp0ekx2Y19PbmNKVms3clN5RmlZZ01BTWlJN3hVOXdRdHdySmw0dXUyUVgxWXJIVFBVelZRQnU5MXl0Wmk2RU1DbUk4NXI5YldSR3JrSGxpMlpfM2Vfc1owMFBfalpOczdJSm15R3ZzNlJNVkY0eVNmLW5IS09kVk1pdjlTOWtvWGg1TXBUVndFVnFXUXdiaWEyeThoRWUzVExtTm9KSWpVT2x0ZVZ4UDVDVWR2TEh0QlRfY3pyTXRR0gHeAUFVX3lxTFB0Y0FHcDdjV3lFUjFZRE5Jc3BQRlVzZWxMcGViRldNTlZMazUtYUNVdUNLbzdYQ3JxT3Fnb0RITkMwOGtETTFvUGdNbXlIOHpLRElETDJnZmJzLWFPenFVdWhXTlVjd1pZeXlYQ3o0QVo1UzQ3U2JWdFdwMDY5Q2VvTHBsbnQ1alJ3VklBZ3pHanhCT2FHWGMydVZZeTQzMzVrRERhQTNxVGFMNVlyT3B6UC1mTGRtaFNGbHdXejJIcVZIWW1RS1BxYmpkVVhXRDAtVElVeWJWRzVKNXFVdw?oc=5",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOF83N2JKdE5JWU9IRmhPRC1uVUdKalZ0QW9UTzJsM2x6RlZpYVNvang3UmVBRE43cy04OVRLS3pSaWdfSC1KWHpuWGRRY0M0dm1HQlJ2OGJrWlBfRjRyR3FZeXVZZ0twX1JVMEdETFpkNG1FMUVlaEV5MVI3SnBuWkdUR3BqS0RhZEtPRThkQ1ppeGkyeEhMTXlSZk1zMG93NTNudjVfalREbzJza0RsVm9WVnhydEkzY0xNZldJSQ?oc=5"
-   ],
-   "ejes": [
-    "estatus",
-    "normativa"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "AR"
-   ],
-   "paises_nombres": [
-    "Argentina"
-   ],
-   "pais_inferido": false,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
-  },
-  {
-   "id": "9e04b09d0801",
-   "titulo_original": "España instala una barrera marítima de 500 metros en Ceuta para frenar los cruces desde Marruecos",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObDM2WXNuRVhZRzF3QU9IOS1DTFZvREFFNmtnZ19Td0sxRkdwcnM4Ym9pcUQzUXN1MnEtVWQ5anpiWTFUU19KV0tvYVhaOXhGbDVFZEEyNk5nSXZDeVBlci1ROEo4bWdrb1Rob21pUHMzUHF3VE5DM1l0NFF5Vm9OX01qa0hoMlV4S0dfVlh5UHVxUnMzZ1hSUlN3THpHa0c5UHhVN2tfMzFiOVRTS0Q5N1NuR0JoYXRDWUQzNVZsUWFzcHl3em5RWm00TjNiN1lGREUtM3g2ajF6dHhzNEVVdQ?oc=5",
-   "medios": [
-    "El Nuevo Día",
-    "France 24",
-    "mendozatoday.com.ar"
-   ],
-   "coberturas": [
-    {
-     "medio": "El Nuevo Día",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMXYwc0tkamI0UGllWHZ0VFVYZVVmeURONGkwdXlJazFNbXVjSGhmVnlUWEI0UnVqVWt4dWlER3NMb0syTm5UdUFIZVZObVdMZ3lUb1hSNGJqU3ZtVzg0THlUZGtpQklrcXo5UVdLRHNRZExWWUtVNHk2a2pVbUdnTmJIejcwZlFKRGF5V0RlcjB1cEk2bGpYdEpHSXI2eEdmS1cyWElXN0ZqOFd3Um9FTXJya2ZYNFVqRXc?oc=5",
-     "fecha": "2026-08-01T22:17:00+00:00"
-    },
-    {
-     "medio": "France 24",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdHFEcHZYWWpta3dYQ0hFMFQxWFhXNDZITE1VSi1WNjZsNlBjaWN6Vm1EaWI2d0F3a0ZDSDNNbFFkS0k0eUV6TURHWDdPVFI1bDV6azZHc2N2Zmg3SHF6WTl4UWV3NWdPd1NYWFBVTVlMWmRNMF9LdGx4SC1ueV8zcWJJTThDZTJJdXAydE9rRFVBTzFWak1DVEhOMS1FREo4RmpFdGlLUEMxVWludlhKczcxWWNqcU4yTVliTThXTTdmdw?oc=5",
-     "fecha": "2026-08-01T20:53:13+00:00"
-    },
-    {
-     "medio": "mendozatoday.com.ar",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObDM2WXNuRVhZRzF3QU9IOS1DTFZvREFFNmtnZ19Td0sxRkdwcnM4Ym9pcUQzUXN1MnEtVWQ5anpiWTFUU19KV0tvYVhaOXhGbDVFZEEyNk5nSXZDeVBlci1ROEo4bWdrb1Rob21pUHMzUHF3VE5DM1l0NFF5Vm9OX01qa0hoMlV4S0dfVlh5UHVxUnMzZ1hSUlN3THpHa0c5UHhVN2tfMzFiOVRTS0Q5N1NuR0JoYXRDWUQzNVZsUWFzcHl3em5RWm00TjNiN1lGREUtM3g2ajF6dHhzNEVVdQ?oc=5",
-     "fecha": "2026-08-01T16:30:19+00:00"
-    }
-   ],
-   "velocidad": 3,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 23.0,
-   "notas": 3,
-   "otras_urls": [
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdHFEcHZYWWpta3dYQ0hFMFQxWFhXNDZITE1VSi1WNjZsNlBjaWN6Vm1EaWI2d0F3a0ZDSDNNbFFkS0k0eUV6TURHWDdPVFI1bDV6azZHc2N2Zmg3SHF6WTl4UWV3NWdPd1NYWFBVTVlMWmRNMF9LdGx4SC1ueV8zcWJJTThDZTJJdXAydE9rRFVBTzFWak1DVEhOMS1FREo4RmpFdGlLUEMxVWludlhKczcxWWNqcU4yTVliTThXTTdmdw?oc=5",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMXYwc0tkamI0UGllWHZ0VFVYZVVmeURONGkwdXlJazFNbXVjSGhmVnlUWEI0UnVqVWt4dWlER3NMb0syTm5UdUFIZVZObVdMZ3lUb1hSNGJqU3ZtVzg0THlUZGtpQklrcXo5UVdLRHNRZExWWUtVNHk2a2pVbUdnTmJIejcwZlFKRGF5V0RlcjB1cEk2bGpYdEpHSXI2eEdmS1cyWElXN0ZqOFd3Um9FTXJya2ZYNFVqRXc?oc=5"
-   ],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "BO",
-    "CO",
-    "EC"
-   ],
-   "paises_nombres": [
-    "Bolivia",
-    "Colombia",
-    "Ecuador"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
+   "termino_busqueda": "deportaciones Casa Blanca",
+   "angulo_sugerido": "Analizar la banalización de los operativos de deportación en la comunicación oficial.",
+   "nota": "Uso de contenido cultural en campañas de comunicación institucional sobre deportaciones."
   },
   {
    "id": "d68beeeb3d03",
@@ -698,7 +602,7 @@
    "velocidad": 2,
    "aceleracion": null,
    "trends": null,
-   "horas": 1.2,
+   "horas": 1.3,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOX1VHaVE5TzdRcVpPWWlyMEFMRVpOQnpLeVhFcXg2ZXVmNExrSWh0UlJZX1lSb3RfN0MzNGxNalVnMUNBVE84SXk4U2NlQS12S3dBaVpxYXk2VWtPdGhzdkowZmY4ZmF0TzhoVzRkMmdEMmp4VzN4RG1WTHhFOHZpSE5MZTVHdkdVenU2QWhUdHV1bjI5YUx5YzJXOGNzYmFLS1ljV0xCZDg4SkthbXFNcXJ3aF9VUjAxUzRkYUo0b2U2enRXajhmNzFuRzJ2ZHIwZjVfOER0SDdtSDRBLU9PeVk1Nmh4d9IB6wFBVV95cUxQV29FOTVDRmFiSTZsNUJBc1pCTl9MZXRxQXNsOHVCSkdrZzB1V3FiU3JydlNTM1VBVjdWTkVMRXdFaFZROHZVUVZHMEJhZVdMNWV6LU5uUjM1YnhKSmpuMWp2ZzF5X2REV09pZ2YzU2hkWnFQaGdvd1ZKbl9JX2p3WVhkWVJFb3JKV0FWaV84M0pTazJfdlhDcDF2cXdfdFhwNHA5YnJyVG95SUJXTDg5V1V3NE1ZTDljVDVlUTFGYm9kM2xVRGdJcThSeXhXekRCSlM0d09NMTlGXzhveUlQb2taZjBRMERsRXJv?oc=5"
@@ -718,7 +622,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 5,
+   "importancia": 6,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -729,16 +633,78 @@
    "etapa": "transito",
    "tipo": "dato",
    "cobertura": 2,
-   "confianza": 0.8,
-   "tiene_fuente_primaria": false,
+   "confianza": 0.9,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
-   "requiere_verificacion": true,
+   "requiere_verificacion": false,
    "terminologia_problematica": [
     "inmigrantes"
    ],
-   "termino_busqueda": "migrantes Canal de",
-   "angulo_sugerido": "Contrastar las cifras de cruces con las políticas de asilo vigentes",
-   "nota": "Fuera del foco latinoamericano principal, pero relevante sobre flujos en frontera."
+   "termino_busqueda": "Canal de la",
+   "angulo_sugerido": "Verificar la trazabilidad de las cifras oficiales sobre cruces marítimos.",
+   "nota": "Fuera del alcance geográfico principal de América Latina/EEUU, pero mantiene relevancia en flujos migratorios."
+  },
+  {
+   "id": "0b6636e9d515",
+   "titulo_original": "Fronteras cerradas y derechos negados, El “limbo jurídico” de los migrantes en México",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWE5pZE1RRHVlLURmYVJqblFWREtTS2hyOU03WWs5SUxMSEJ2aTNIV041N1BFRE9hdmxkUTVfUERQY2NCNDVlMnJVXzJCTUlmN0lzVm5kbW5yN0R4Yk9Qcm9CWEc4Y011aFZqZmpqNklLOEtVSXpKcF8zZmo3WVFSTVpNb05Ya2xxSGk3SEVuMldYRDVGZld4NklGVk5kdFFZQjBGT3cwMUVUWWIyWS1ReXJxejBQeHJyNE5YcWtWXzg?oc=5",
+   "medios": [
+    "El Observador de la Actualidad",
+    "elobservadorenlinea.com"
+   ],
+   "coberturas": [
+    {
+     "medio": "El Observador de la Actualidad",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWE5pZE1RRHVlLURmYVJqblFWREtTS2hyOU03WWs5SUxMSEJ2aTNIV041N1BFRE9hdmxkUTVfUERQY2NCNDVlMnJVXzJCTUlmN0lzVm5kbW5yN0R4Yk9Qcm9CWEc4Y011aFZqZmpqNklLOEtVSXpKcF8zZmo3WVFSTVpNb05Ya2xxSGk3SEVuMldYRDVGZld4NklGVk5kdFFZQjBGT3cwMUVUWWIyWS1ReXJxejBQeHJyNE5YcWtWXzg?oc=5",
+     "fecha": "2026-08-02T12:00:46+00:00"
+    },
+    {
+     "medio": "elobservadorenlinea.com",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWE5pZE1RRHVlLURmYVJqblFWREtTS2hyOU03WWs5SUxMSEJ2aTNIV041N1BFRE9hdmxkUTVfUERQY2NCNDVlMnJVXzJCTUlmN0lzVm5kbW5yN0R4Yk9Qcm9CWEc4Y011aFZqZmpqNklLOEtVSXpKcF8zZmo3WVFSTVpNb05Ya2xxSGk3SEVuMldYRDVGZld4NklGVk5kdFFZQjBGT3cwMUVUWWIyWS1ReXJxejBQeHJyNE5YcWtWXzg?oc=5",
+     "fecha": "2026-08-02T12:00:46+00:00"
+    }
+   ],
+   "velocidad": 2,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 3.6,
+   "notas": 2,
+   "otras_urls": [
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWE5pZE1RRHVlLURmYVJqblFWREtTS2hyOU03WWs5SUxMSEJ2aTNIV041N1BFRE9hdmxkUTVfUERQY2NCNDVlMnJVXzJCTUlmN0lzVm5kbW5yN0R4Yk9Qcm9CWEc4Y011aFZqZmpqNklLOEtVSXpKcF8zZmo3WVFSTVpNb05Ya2xxSGk3SEVuMldYRDVGZld4NklGVk5kdFFZQjBGT3cwMUVUWWIyWS1ReXJxejBQeHJyNE5YcWtWXzg?oc=5"
+   ],
+   "ejes": [
+    "inmovilidad",
+    "estatus",
+    "derechos_humanos"
+   ],
+   "region": "Norteamérica",
+   "paises": [
+    "MX"
+   ],
+   "paises_nombres": [
+    "México"
+   ],
+   "pais_inferido": false,
+   "fuera_de_alcance": false,
+   "importancia": 9,
+   "clasificado": true,
+   "es_migratorio": true,
+   "poblaciones": [],
+   "colectividades": [],
+   "actores": [
+    "sociedad_civil"
+   ],
+   "etapa": "transito",
+   "tipo": "caso",
+   "cobertura": 2,
+   "confianza": 0.95,
+   "tiene_fuente_primaria": false,
+   "contiene_datos_personales": false,
+   "requiere_verificacion": false,
+   "terminologia_problematica": [],
+   "termino_busqueda": "migrantes limbo juridico",
+   "angulo_sugerido": "Revisar los mecanismos institucionales que generan inmovilidad forzada en territorio mexicano.",
+   "nota": "Alto valor editorial sobre inmovilidad y barreras institucionales en tránsito."
   },
   {
    "id": "71d399375c01",
@@ -810,7 +776,7 @@
    "velocidad": 2,
    "aceleracion": null,
    "trends": null,
-   "horas": 6.2,
+   "horas": 6.3,
    "notas": 3,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxQLS0zSHdKNVl6ZWU4ZkNFWVdUbWpacDZlbkZvR0c0REVLaTRCZEFTcEJ0VDhoUi02c1ZWb0dIak1iOWIxOGhXb09ITGJlazZzR0hzekdtdW1FS1M1UzJSVGZiWTh3SGp3Ykhyazl2VlA0LWxCOFJfSVdpeXdFWUdWX1BjOHMtNmM1c0piTlVRMkUxWXpLWlFtM2FCa0MyTUdQZkZFYml6cGpMSlNaREtJRVRCUEk0YjNRd1lCdFM3cHdBYXNtN2wtMEpTY3rSAeABQVVfeXFMT0stYWQ3QldMTlRabk5GbEoweXh2RzVIdmFKR1VyVTdqVi1neVQ2WGU2cExiN293SXgtRXAwXzkycjJNUEZDWS02MF9kYTRDeTA2REVEbjRnU0VlcXhiMGIyblQ4eU84WTcyUzRMSUZqejdfOXRYWFpIWnVJLWxHQkdGTjF6NVZzQzNCRGkzdjlLT1phZjBKd0RUckNQVlVaYUdGVjVkYm40Mzd5dXRSQU9JUlQwT3hPZmVJLUpfTjRPU1M3N1pOV0xONEZxZlVzY3hxVHcyVG9WLTJRRkhyaHY?oc=5",
@@ -836,68 +802,66 @@
    "clasificado": false
   },
   {
-   "id": "0f970d2cf928",
-   "titulo_original": "México secunda una demanda por el maltrato del ICE en un centro de California: gas pimienta para mitigar los reclamos y comida pasada de fecha",
-   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPT0RrYzU1QW13Q3BNZWVMYktESkZVanBaQzZIZjVEc1VFclBELUZwc2hWUnl4bFp1MzFJTzh1Y0xVb2dmVWpjVXBPZzhiWGt1Y3I1bVNvdHp0eWhpeWRXZVdTRTk4T2RBSVFNMUZUZmZIdjgzcDZid3M5QWhwS194R25lcl81b1kzdDdtWTZONEZzVHM3SXpCWkxDR1VBbXhGcmRRRG5UVlFiM2ZPbWRGcnZkM0lpbHAxcl9vQV9GMDRCcjVtbUlvQ2FDRkFqb1MyYUhiZmNhUHlvbF9udWVOTlFrR2U0cnBDLXowQU5YemE1bGp5OWZmQVRoNmZ5T0x4bDdYaGJ5VjFZTklKeXJqXzFpeXbSAagCQVVfeXFMUEs3Z2RMRndUVFd4aDhQZG9UblZ6OTd6bXJJcnVack4tanBJc3ZYejN5bGhBTWUxTndnWUxGS0JRRFlHMUJNLTk5RnVXcl94Nm90Z2hlZDd2aVBlSEM2V2d4ejcxYWpwMTRnelFmcTd0Sk9USHhta1U2YTNLR2dYUElreWhYazQ5Y3E1RlA4WWRWQ0NnWkJWQTNKaWFXbHVVSEhWNnB0UUw2bldWR0hoNnJPSlZ4YTNSOUhJVUl2S1VQR1l4UlNYVEFnWjJjS194X1I4R2dKOXEyVzNZYnNZZ2o0Ym85cjA3Mk5nUW96VlZzNWFwYl9PUXUwRjVTRHFIaXRmeUgtRTh0bnpTZE1iRmdjX3JXRzJERWN5dHUzQ3lKMWNkVEwxY0Y?oc=5",
+   "id": "de9e426fb296",
+   "titulo_original": "El Gobierno de Milei habilita la expulsión de extranjeros por mensajes de odio contra Argentina",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNjQwNUF2ZVYtT0hHeGJaVGdxam9rbzlHZVVnSWJWLWFRWU9tSHFpcXk0M0tKYWRNaWxqMHhqN05DR1NyOE81UTRxcmZHSWwtSXhRbkduMVlDNE5zVk82OGtUSHdzeDJ6MUJiV0VaZ2o4b1FiQVRSYTE2czhBTWd1aWVwTVVlYTI2M3FPbjlGMnoxbnlqWDBkMU52dTc1Zlg0ZVJINEZDV1ZhQUdibzFuajFiSEFIN0l5aTl2VzFWeVBrSy00MHVwLVc4b0J5QmM4QV9LbHEwbzc?oc=5",
    "medios": [
-    "EL PAÍS",
-    "elpais.com"
+    "Agencia NOVA",
+    "laradiodelmercosur.com.ar"
    ],
    "coberturas": [
     {
-     "medio": "EL PAÍS",
-     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPT0RrYzU1QW13Q3BNZWVMYktESkZVanBaQzZIZjVEc1VFclBELUZwc2hWUnl4bFp1MzFJTzh1Y0xVb2dmVWpjVXBPZzhiWGt1Y3I1bVNvdHp0eWhpeWRXZVdTRTk4T2RBSVFNMUZUZmZIdjgzcDZid3M5QWhwS194R25lcl81b1kzdDdtWTZONEZzVHM3SXpCWkxDR1VBbXhGcmRRRG5UVlFiM2ZPbWRGcnZkM0lpbHAxcl9vQV9GMDRCcjVtbUlvQ2FDRkFqb1MyYUhiZmNhUHlvbF9udWVOTlFrR2U0cnBDLXowQU5YemE1bGp5OWZmQVRoNmZ5T0x4bDdYaGJ5VjFZTklKeXJqXzFpeXbSAagCQVVfeXFMUEs3Z2RMRndUVFd4aDhQZG9UblZ6OTd6bXJJcnVack4tanBJc3ZYejN5bGhBTWUxTndnWUxGS0JRRFlHMUJNLTk5RnVXcl94Nm90Z2hlZDd2aVBlSEM2V2d4ejcxYWpwMTRnelFmcTd0Sk9USHhta1U2YTNLR2dYUElreWhYazQ5Y3E1RlA4WWRWQ0NnWkJWQTNKaWFXbHVVSEhWNnB0UUw2bldWR0hoNnJPSlZ4YTNSOUhJVUl2S1VQR1l4UlNYVEFnWjJjS194X1I4R2dKOXEyVzNZYnNZZ2o0Ym85cjA3Mk5nUW96VlZzNWFwYl9PUXUwRjVTRHFIaXRmeUgtRTh0bnpTZE1iRmdjX3JXRzJERWN5dHUzQ3lKMWNkVEwxY0Y?oc=5",
-     "fecha": "2026-08-02T04:00:00+00:00"
+     "medio": "Agencia NOVA",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85Y2dNZzB3Zk95dUxDZzR4OU1LMVc5dkoxX0tQZ1R2MDdJOVNaS09TR3dRaUI2NjRWODRWb0g4TWRxTEd0ZkZOc01lcU1nNGJVcTFvSEZTeFlsX29xZngtSDJZSllJRzd0UHhBT1YtX1VLMlBOSlpkdDVxYw?oc=5",
+     "fecha": "2026-08-02T03:12:07+00:00"
     },
     {
-     "medio": "elpais.com",
-     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPT0RrYzU1QW13Q3BNZWVMYktESkZVanBaQzZIZjVEc1VFclBELUZwc2hWUnl4bFp1MzFJTzh1Y0xVb2dmVWpjVXBPZzhiWGt1Y3I1bVNvdHp0eWhpeWRXZVdTRTk4T2RBSVFNMUZUZmZIdjgzcDZid3M5QWhwS194R25lcl81b1kzdDdtWTZONEZzVHM3SXpCWkxDR1VBbXhGcmRRRG5UVlFiM2ZPbWRGcnZkM0lpbHAxcl9vQV9GMDRCcjVtbUlvQ2FDRkFqb1MyYUhiZmNhUHlvbF9udWVOTlFrR2U0cnBDLXowQU5YemE1bGp5OWZmQVRoNmZ5T0x4bDdYaGJ5VjFZTklKeXJqXzFpeXbSAagCQVVfeXFMUEs3Z2RMRndUVFd4aDhQZG9UblZ6OTd6bXJJcnVack4tanBJc3ZYejN5bGhBTWUxTndnWUxGS0JRRFlHMUJNLTk5RnVXcl94Nm90Z2hlZDd2aVBlSEM2V2d4ejcxYWpwMTRnelFmcTd0Sk9USHhta1U2YTNLR2dYUElreWhYazQ5Y3E1RlA4WWRWQ0NnWkJWQTNKaWFXbHVVSEhWNnB0UUw2bldWR0hoNnJPSlZ4YTNSOUhJVUl2S1VQR1l4UlNYVEFnWjJjS194X1I4R2dKOXEyVzNZYnNZZ2o0Ym85cjA3Mk5nUW96VlZzNWFwYl9PUXUwRjVTRHFIaXRmeUgtRTh0bnpTZE1iRmdjX3JXRzJERWN5dHUzQ3lKMWNkVEwxY0Y?oc=5",
-     "fecha": "2026-08-02T04:00:00+00:00"
+     "medio": "laradiodelmercosur.com.ar",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNjQwNUF2ZVYtT0hHeGJaVGdxam9rbzlHZVVnSWJWLWFRWU9tSHFpcXk0M0tKYWRNaWxqMHhqN05DR1NyOE81UTRxcmZHSWwtSXhRbkduMVlDNE5zVk82OGtUSHdzeDJ6MUJiV0VaZ2o4b1FiQVRSYTE2czhBTWd1aWVwTVVlYTI2M3FPbjlGMnoxbnlqWDBkMU52dTc1Zlg0ZVJINEZDV1ZhQUdibzFuajFiSEFIN0l5aTl2VzFWeVBrSy00MHVwLVc4b0J5QmM4QV9LbHEwbzc?oc=5",
+     "fecha": "2026-08-02T07:46:06+00:00"
     }
    ],
    "velocidad": 2,
    "aceleracion": null,
    "trends": null,
-   "horas": 11.5,
-   "notas": 2,
+   "horas": 12.4,
+   "notas": 3,
    "otras_urls": [
-    "https://news.google.com/rss/articles/CBMilAJBVV95cUxPT0RrYzU1QW13Q3BNZWVMYktESkZVanBaQzZIZjVEc1VFclBELUZwc2hWUnl4bFp1MzFJTzh1Y0xVb2dmVWpjVXBPZzhiWGt1Y3I1bVNvdHp0eWhpeWRXZVdTRTk4T2RBSVFNMUZUZmZIdjgzcDZid3M5QWhwS194R25lcl81b1kzdDdtWTZONEZzVHM3SXpCWkxDR1VBbXhGcmRRRG5UVlFiM2ZPbWRGcnZkM0lpbHAxcl9vQV9GMDRCcjVtbUlvQ2FDRkFqb1MyYUhiZmNhUHlvbF9udWVOTlFrR2U0cnBDLXowQU5YemE1bGp5OWZmQVRoNmZ5T0x4bDdYaGJ5VjFZTklKeXJqXzFpeXbSAagCQVVfeXFMUEs3Z2RMRndUVFd4aDhQZG9UblZ6OTd6bXJJcnVack4tanBJc3ZYejN5bGhBTWUxTndnWUxGS0JRRFlHMUJNLTk5RnVXcl94Nm90Z2hlZDd2aVBlSEM2V2d4ejcxYWpwMTRnelFmcTd0Sk9USHhta1U2YTNLR2dYUElreWhYazQ5Y3E1RlA4WWRWQ0NnWkJWQTNKaWFXbHVVSEhWNnB0UUw2bldWR0hoNnJPSlZ4YTNSOUhJVUl2S1VQR1l4UlNYVEFnWjJjS194X1I4R2dKOXEyVzNZYnNZZ2o0Ym85cjA3Mk5nUW96VlZzNWFwYl9PUXUwRjVTRHFIaXRmeUgtRTh0bnpTZE1iRmdjX3JXRzJERWN5dHUzQ3lKMWNkVEwxY0Y?oc=5"
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTE85Y2dNZzB3Zk95dUxDZzR4OU1LMVc5dkoxX0tQZ1R2MDdJOVNaS09TR3dRaUI2NjRWODRWb0g4TWRxTEd0ZkZOc01lcU1nNGJVcTFvSEZTeFlsX29xZngtSDJZSllJRzd0UHhBT1YtX1VLMlBOSlpkdDVxYw?oc=5",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWGhFOEZwd1BjWnRtcWNzUnE1eUdHR3FQalNIWWF3NGFsUXpIMUh1VDNnQXR4cHd2RG1ObjRhdkVkV0ZWMkVPcWNKX2o3aEt5SW1PUUlrcXZ5UUNsQVpRWlhfQ3FDV09rQ1hnMEZ4NGZ2eUtEa05wNkQta25OaUktX1dHOFJ5ZXZxOEdRS3dxTE1jX3BhckpoNExXcmNKS2pDeDV1TGk1MVFXZ1owZ1Y3eGNhbE51RVFjQVBMZUlYdGdSWG15bmdUR2UyNjkxZw?oc=5"
    ],
    "ejes": [
-    "deportaciones",
-    "derechos_humanos"
+    "politica_migratoria",
+    "securitizacion"
    ],
-   "region": "Norteamérica",
+   "region": "Sudamérica",
    "paises": [
-    "US",
-    "MX"
+    "AR"
    ],
    "paises_nombres": [
-    "México",
-    "Estados Unidos"
+    "Argentina"
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 9,
+   "importancia": 10,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
    "colectividades": [],
    "actores": [
-    "organismos_migratorios",
     "estado_nacional"
    ],
    "etapa": "destino",
-   "tipo": "caso",
+   "tipo": "normativa",
    "cobertura": 2,
    "confianza": 0.95,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "maltrato ICE denuncias",
-   "angulo_sugerido": "Evaluar el alcance legal de la demanda diplomática interpuesta por México",
-   "nota": "Demanda estatal por violaciones a derechos en detención migratoria."
+   "termino_busqueda": "decreto migratorio expulsion",
+   "angulo_sugerido": "Analizar la constitucionalidad de la norma y su impacto sobre la libertad de expresión de migrantes.",
+   "nota": "Cambio normativo directo que afecta derechos fundamentales y amplía causales de expulsión."
   },
   {
    "id": "db7f5a4470bd",
@@ -922,7 +886,7 @@
    "velocidad": 2,
    "aceleracion": null,
    "trends": null,
-   "horas": 14.1,
+   "horas": 14.2,
    "notas": 7,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB4NFZIcEJCcThpN1poUnVyMVQ5ZjB6NTV3dVRKZGliYXhOZ0hsbkVvc2hHVG5iekhBaGVsQVpiTnE3ZXRRbXNkQTRBN2htX29ERmdVM01DeENIMnV0OHc?oc=5",
@@ -947,12 +911,18 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [],
+   "poblaciones": [
+    "familias"
+   ],
+   "colectividades": [
+    "LATAM"
+   ],
+   "actores": [
+    "sociedad_civil"
+   ],
    "etapa": "transito",
    "tipo": "evento",
    "cobertura": 2,
@@ -962,8 +932,8 @@
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "caravana migrante frontera",
-   "angulo_sugerido": "Revisar la respuesta institucional prevista frente a la movilidad colectiva",
-   "nota": "Organización de nueva caravana en la frontera sur de México."
+   "angulo_sugerido": "Indagar en las causas estructurales que impulsan la organización de nuevas caravanas.",
+   "nota": "Movilización colectiva en ruta migratoria hacia la frontera sur de México."
   },
   {
    "id": "7f9ad63e8b70",
@@ -996,11 +966,12 @@
    ],
    "ejes": [
     "estatus",
-    "diaspora"
+    "asilo"
    ],
    "region": "Regional",
    "paises": [
-    "US"
+    "US",
+    "VE"
    ],
    "paises_nombres": [
     "Venezuela",
@@ -1008,25 +979,77 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
    "colectividades": [
     "VE"
    ],
-   "actores": [],
+   "actores": [
+    "organismos_migratorios"
+   ],
    "etapa": "destino",
    "tipo": "dato",
    "cobertura": 2,
    "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "migrantes venezolanos EEUU",
-   "angulo_sugerido": "Analizar los factores estructurales detrás de las estadísticas de movilidad venezolana",
-   "nota": "Datos estadísticos sobre población venezolana en el flujo hacia EE. UU."
+   "angulo_sugerido": "Contextualizar las cifras de migración venezolana frente a los cambios en los programas de regularización.",
+   "nota": "Datos estadísticos relevantes sobre la diáspora venezolana en el sistema migratorio estadounidense."
+  },
+  {
+   "id": "bd049c2894d9",
+   "titulo_original": "Crisis humanitaria en Ceuta, en directo | Ceuta vive una madrugada sin incidentes y sigue recuperándose tras la crisis migratoria",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
+   "medios": [
+    "Diario Río Negro",
+    "LaSexta"
+   ],
+   "coberturas": [
+    {
+     "medio": "Diario Río Negro",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaHBPaTJ3bDR3QUxCdnBoUURFTWZJZEp0ekx2Y19PbmNKVms3clN5RmlZZ01BTWlJN3hVOXdRdHdySmw0dXUyUVgxWXJIVFBVelZRQnU5MXl0Wmk2RU1DbUk4NXI5YldSR3JrSGxpMlpfM2Vfc1owMFBfalpOczdJSm15R3ZzNlJNVkY0eVNmLW5IS09kVk1pdjlTOWtvWGg1TXBUVndFVnFXUXdiaWEyeThoRWUzVExtTm9KSWpVT2x0ZVZ4UDVDVWR2TEh0QlRfY3pyTXRR0gHeAUFVX3lxTFB0Y0FHcDdjV3lFUjFZRE5Jc3BQRlVzZWxMcGViRldNTlZMazUtYUNVdUNLbzdYQ3JxT3Fnb0RITkMwOGtETTFvUGdNbXlIOHpLRElETDJnZmJzLWFPenFVdWhXTlVjd1pZeXlYQ3o0QVo1UzQ3U2JWdFdwMDY5Q2VvTHBsbnQ1alJ3VklBZ3pHanhCT2FHWGMydVZZeTQzMzVrRERhQTNxVGFMNVlyT3B6UC1mTGRtaFNGbHdXejJIcVZIWW1RS1BxYmpkVVhXRDAtVElVeWJWRzVKNXFVdw?oc=5",
+     "fecha": "2026-08-01T21:35:08+00:00"
+    },
+    {
+     "medio": "LaSexta",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
+     "fecha": "2026-08-02T11:47:32+00:00"
+    }
+   ],
+   "velocidad": 2,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 18.0,
+   "notas": 4,
+   "otras_urls": [
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmwySHZHbWxUOEkzdjBMaGZYRURqTVNQLTJoYXBjV1o1V09jUEVEMGlVeVNJT09rZXpKdWg0VEtiazFxLXh5OVpvcHc1T2plQW5jV0dzYWc5TFBVSmFVWGNIcVpNZGYtbjI3TTNzbVRvd2NZZFpEaFVMVjFndThoN0dGM1FhX3hRTkNFY1RPY2dtaUpxSjFmbW9HYVd0RUs2MG4ydmdva9IBpwFBVV95cUxQVDlDODZRaVNraTdKSGR0bHAyMFViX2hZX21NaUtPS21vc1gybHR4WkVBTE00azhHSkNGMkxMRkJSRHhsVHNBTjYtZFBOc0kyV2NvMFB5ZkFNNnZ2Mk96Qzc3ZXl3cXJ0SEVYcHdNNVZLY0MxVEE1SzJ3T1ZGazlYRjVLaFpnQ0dyRl9qRGkzU01Od2lEaGcyci1FWWFfQjYwb1gycDJyVQ?oc=5",
+    "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaHBPaTJ3bDR3QUxCdnBoUURFTWZJZEp0ekx2Y19PbmNKVms3clN5RmlZZ01BTWlJN3hVOXdRdHdySmw0dXUyUVgxWXJIVFBVelZRQnU5MXl0Wmk2RU1DbUk4NXI5YldSR3JrSGxpMlpfM2Vfc1owMFBfalpOczdJSm15R3ZzNlJNVkY0eVNmLW5IS09kVk1pdjlTOWtvWGg1TXBUVndFVnFXUXdiaWEyeThoRWUzVExtTm9KSWpVT2x0ZVZ4UDVDVWR2TEh0QlRfY3pyTXRR0gHeAUFVX3lxTFB0Y0FHcDdjV3lFUjFZRE5Jc3BQRlVzZWxMcGViRldNTlZMazUtYUNVdUNLbzdYQ3JxT3Fnb0RITkMwOGtETTFvUGdNbXlIOHpLRElETDJnZmJzLWFPenFVdWhXTlVjd1pZeXlYQ3o0QVo1UzQ3U2JWdFdwMDY5Q2VvTHBsbnQ1alJ3VklBZ3pHanhCT2FHWGMydVZZeTQzMzVrRERhQTNxVGFMNVlyT3B6UC1mTGRtaFNGbHdXejJIcVZIWW1RS1BxYmpkVVhXRDAtVElVeWJWRzVKNXFVdw?oc=5"
+   ],
+   "ejes": [
+    "estatus",
+    "rutas"
+   ],
+   "region": "Regional",
+   "paises": [
+    "BO",
+    "CO",
+    "CR"
+   ],
+   "paises_nombres": [
+    "Bolivia",
+    "Colombia",
+    "Costa Rica"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
   },
   {
    "id": "826cca0ca043",
@@ -1128,7 +1151,7 @@
     "estado_nacional"
    ],
    "etapa": null,
-   "tipo": "normativa",
+   "tipo": "evento",
    "cobertura": 2,
    "confianza": 0.8,
    "tiene_fuente_primaria": false,
@@ -1137,7 +1160,51 @@
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Enfoque en seguridad y crimen organizado sin eje principal en migraciones."
+   "nota": "Acuerdo de cooperación militar y de seguridad regional sin eje en movilidad humana."
+  },
+  {
+   "id": "a6f6d0aa97ca",
+   "titulo_original": "67 inmigrantes, que pueden ser muchos más, asesinados por las políticas racistas e imperialistas de la UE. Ceuta, mucho más que una \"crisis migratoria\"",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd1I4WDJwSnZtZENseEt6VFNwUHJYVUhBN1RUWk41a3BWalVhN05RRHJ5Z2lTQ1FKek00XzMxcm1zWHV2LTlmNXpkNks4b0ZrcWlPczY4enJ0QXprRmZlQlU5VnF1Zk5ITGpYWkpET0g1UEJUTkFnYndHT2d5N3l3N0Y2cEtjR1lhM3F3Skk3bEhiMmtGckFsUndnUEVrM2ZET3hNSnRZLTlic3dsMXQyNTcwS3ZkN0l0Qjlv?oc=5",
+   "medios": [
+    "Izquierda Revolucionaria",
+    "Primera Edición"
+   ],
+   "coberturas": [
+    {
+     "medio": "Izquierda Revolucionaria",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd1I4WDJwSnZtZENseEt6VFNwUHJYVUhBN1RUWk41a3BWalVhN05RRHJ5Z2lTQ1FKek00XzMxcm1zWHV2LTlmNXpkNks4b0ZrcWlPczY4enJ0QXprRmZlQlU5VnF1Zk5ITGpYWkpET0g1UEJUTkFnYndHT2d5N3l3N0Y2cEtjR1lhM3F3Skk3bEhiMmtGckFsUndnUEVrM2ZET3hNSnRZLTlic3dsMXQyNTcwS3ZkN0l0Qjlv?oc=5",
+     "fecha": "2026-08-01T18:59:40+00:00"
+    },
+    {
+     "medio": "Primera Edición",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOF83N2JKdE5JWU9IRmhPRC1uVUdKalZ0QW9UTzJsM2x6RlZpYVNvang3UmVBRE43cy04OVRLS3pSaWdfSC1KWHpuWGRRY0M0dm1HQlJ2OGJrWlBfRjRyR3FZeXVZZ0twX1JVMEdETFpkNG1FMUVlaEV5MVI3SnBuWkdUR3BqS0RhZEtPRThkQ1ppeGkyeEhMTXlSZk1zMG93NTNudjVfalREbzJza0RsVm9WVnhydEkzY0xNZldJSQ?oc=5",
+     "fecha": "2026-08-01T21:46:31+00:00"
+    }
+   ],
+   "velocidad": 2,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 20.6,
+   "notas": 2,
+   "otras_urls": [
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOF83N2JKdE5JWU9IRmhPRC1uVUdKalZ0QW9UTzJsM2x6RlZpYVNvang3UmVBRE43cy04OVRLS3pSaWdfSC1KWHpuWGRRY0M0dm1HQlJ2OGJrWlBfRjRyR3FZeXVZZ0twX1JVMEdETFpkNG1FMUVlaEV5MVI3SnBuWkdUR3BqS0RhZEtPRThkQ1ppeGkyeEhMTXlSZk1zMG93NTNudjVfalREbzJza0RsVm9WVnhydEkzY0xNZldJSQ?oc=5"
+   ],
+   "ejes": [
+    "estatus",
+    "normativa"
+   ],
+   "region": "Sudamérica",
+   "paises": [
+    "AR"
+   ],
+   "paises_nombres": [
+    "Argentina"
+   ],
+   "pais_inferido": false,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
   },
   {
    "id": "8e7269f7eb42",
@@ -1162,7 +1229,7 @@
    "velocidad": 2,
    "aceleracion": null,
    "trends": null,
-   "horas": 20.6,
+   "horas": 20.7,
    "notas": 4,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdFFBWjZLdTNXOWsxU3BvblFpbTZsZ0lqUTZJOFk5bkZVZDQ2cDVYYkZyUnB6aEw4a3NnRmlrUUdOTUpxVDF3Y0g0NjM4TkF3aVlHdEdkZHpmVE9MNzgtNVRSN0Y0alh0VDBNV1R2VzRTX1NKM1gtQTdkamhBclFtazZwSHlBTE1zOTR0ZjZidWFybTB2Qmg0Rjl4cmZZMVdJdHhCZ2kwRnVoY3VqSDJtdkV0bnBhX3dhSUg3QlB2NEEzQdIBwgFBVV95cUxQNzlkbF9JYkhSUjB4NHV2MC04U3h3M3VHSGFrcllxbmNRSHdqVDdzZTExWjM0eEl5Y3dnTmE3dy14T3pEeFVWdmV3LWVZSUUtckxWMzhoZm85eWYwLWZWLWtZQUl1b1NFdndnLWJrVU1MYU1Idk05VC1GcFpmZkhEQnhsUFVUcVBCMDB4UVlWalBpakpBdUJ2Z3BudmpleWlOVzlvSElkcFhSRWliSVk2Nm55dWx5U2ZXT3U2ck9NOV9ldw?oc=5",
@@ -1190,19 +1257,20 @@
    "poblaciones": [],
    "colectividades": [],
    "actores": [
+    "sociedad_civil",
     "universidades"
    ],
    "etapa": "frontera",
    "tipo": "discurso",
    "cobertura": 2,
-   "confianza": 0.95,
+   "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "frontera digital migrantes",
-   "angulo_sugerido": "Identificar qué tecnologías de vigilancia específica vulneran derechos en la frontera",
-   "nota": "Análisis experto sobre impacto de vigilancia digital en frontera."
+   "termino_busqueda": "frontera digital inteligencia",
+   "angulo_sugerido": "Examinar el impacto de la vigilancia digital y la IA en la vulneración de derechos en frontera.",
+   "nota": "Debate crítico sobre el uso de tecnología y vigilancia digital en la frontera México-EEUU."
   },
   {
    "id": "feadb2a1cb80",
@@ -1227,15 +1295,14 @@
    "velocidad": 2,
    "aceleracion": null,
    "trends": null,
-   "horas": 21.5,
+   "horas": 21.6,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ2daYUlCMzhsZWJoRUMzekhBTWFHNmxCQ1pXcWhReFlEVnhZakt0Z2Y1WnhIMmJuM3hJQ3hYSjBIR01GMnIyb1dLcTRwME5JbXlrUTlQQzJDZ3RHVWwyLUlxd090R3BLM2hOYjJBUzBDRE9mLW1sWTVQQjNqeU1QVXdGMTBfVUlvVHRKUkphMzhyYWhUYVB3ZmN4aDRnTjQxbDJ0SFJxVXZXZ3ZydmF6Q2RLb0k0Y3pvVUZCeXJiMA?oc=5"
    ],
    "ejes": [
     "justicia",
-    "deportaciones",
-    "asilo"
+    "deportaciones"
    ],
    "region": "Sudamérica",
    "paises": [
@@ -1248,7 +1315,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 8,
+   "importancia": 9,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -1259,14 +1326,78 @@
    "etapa": "destino",
    "tipo": "dato",
    "cobertura": 2,
-   "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "confianza": 0.95,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "tribunales migratorios EEUU",
-   "angulo_sugerido": "Revisar el embotellamiento procesal y su impacto en las garantías de debido proceso",
-   "nota": "Saturación de tribunales de inmigración y aumento de órdenes de expulsión."
+   "angulo_sugerido": "Analizar la saturación del sistema judicial migratorio y la afectación al debido proceso.",
+   "nota": "Funcionamiento de los tribunales de inmigración en EEUU y su impacto en el aceleramiento de deportaciones."
+  },
+  {
+   "id": "9bf62948820b",
+   "titulo_original": "Qué se sabe de Renee Good, la mujer a la que un agente de ICE mató a disparos durante una operación contra la migración ilegal en Minneapolis",
+   "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOMmw3ODIwTTlfRTlDa3ZRS2tJN3RBSVR4cUgtTGlodk5pQlQzYnVFVVQ0VmlQODFURTlSN19zbmlfMllYeWR0elNMUVpjeGg2bGFzQVl5SW9MbS0yOUcwbk5sZmxLVG9naU1Oc1lCS2psRGdhR0RUSVhsWWZrNEtpaVJwTWNBeENGNG1fU05NVXpGakFySUNBT2cyalQ1NndaTnVPbzNIZUd1bTNVWEk2RHNLMUg2UFZuQ1IxV3E1eEZKQnJWSlhrTUVJVUFSZ0UwZGRvM3BGVFNPMkpiNVBRZ2JZQUpzNUxfMmhTNElYdXljMXFPZzZYVGFXS3lfWHJCbmFnYmUwTjlrY05PSHUtWkJTLW5HcHpLUkc2NFVtcGdtSDg4RjhfUEhCLWlMVVFEaE9N?oc=5",
+   "medios": [
+    "El Comercio Perú",
+    "Luces del Siglo"
+   ],
+   "coberturas": [
+    {
+     "medio": "El Comercio Perú",
+     "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOMmw3ODIwTTlfRTlDa3ZRS2tJN3RBSVR4cUgtTGlodk5pQlQzYnVFVVQ0VmlQODFURTlSN19zbmlfMllYeWR0elNMUVpjeGg2bGFzQVl5SW9MbS0yOUcwbk5sZmxLVG9naU1Oc1lCS2psRGdhR0RUSVhsWWZrNEtpaVJwTWNBeENGNG1fU05NVXpGakFySUNBT2cyalQ1NndaTnVPbzNIZUd1bTNVWEk2RHNLMUg2UFZuQ1IxV3E1eEZKQnJWSlhrTUVJVUFSZ0UwZGRvM3BGVFNPMkpiNVBRZ2JZQUpzNUxfMmhTNElYdXljMXFPZzZYVGFXS3lfWHJCbmFnYmUwTjlrY05PSHUtWkJTLW5HcHpLUkc2NFVtcGdtSDg4RjhfUEhCLWlMVVFEaE9N?oc=5",
+     "fecha": "2026-08-01T17:20:00+00:00"
+    },
+    {
+     "medio": "Luces del Siglo",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1NTdXV6MkJhdWdhbDNKV1FxZWhXcXhDejlONGdRcDN5Z3gzMXhJdHQ3TEIyLXN0RFhuSXBUclpTWkxKcEpCelJmLTJlVEUzMzJDdjRzQXY4WlU1V1E0T1FOTWI3Vm1tR0pqY3FXWE5ZaGlfSHpaZjlpM3FSRUoxYVZ3Rm5WVThuWm1tUGtn?oc=5",
+     "fecha": "2026-08-02T14:54:10+00:00"
+    }
+   ],
+   "velocidad": 2,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 22.3,
+   "notas": 2,
+   "otras_urls": [
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1NTdXV6MkJhdWdhbDNKV1FxZWhXcXhDejlONGdRcDN5Z3gzMXhJdHQ3TEIyLXN0RFhuSXBUclpTWkxKcEpCelJmLTJlVEUzMzJDdjRzQXY4WlU1V1E0T1FOTWI3Vm1tR0pqY3FXWE5ZaGlfSHpaZjlpM3FSRUoxYVZ3Rm5WVThuWm1tUGtn?oc=5"
+   ],
+   "ejes": [
+    "deportaciones",
+    "derechos_humanos"
+   ],
+   "region": "Norteamérica",
+   "paises": [
+    "US"
+   ],
+   "paises_nombres": [
+    "Estados Unidos"
+   ],
+   "pais_inferido": false,
+   "fuera_de_alcance": false,
+   "importancia": 10,
+   "clasificado": true,
+   "es_migratorio": true,
+   "poblaciones": [],
+   "colectividades": [],
+   "actores": [
+    "organismos_migratorios",
+    "sociedad_civil"
+   ],
+   "etapa": "destino",
+   "tipo": "caso",
+   "cobertura": 2,
+   "confianza": 0.95,
+   "tiene_fuente_primaria": false,
+   "contiene_datos_personales": true,
+   "requiere_verificacion": false,
+   "terminologia_problematica": [
+    "migración ilegal"
+   ],
+   "termino_busqueda": "ICE disparos Minneapolis",
+   "angulo_sugerido": "Investigar los protocolos de uso de la fuerza en operativos de agencias migratorias.",
+   "nota": "Muerte de una persona bajo custodia o durante un operativo de agencias migratorias."
   },
   {
    "id": "afc1c6ae2962",
@@ -1299,7 +1430,7 @@
    ],
    "ejes": [
     "politica_migratoria",
-    "estatus"
+    "diaspora"
    ],
    "region": "Sudamérica",
    "paises": [
@@ -1324,16 +1455,63 @@
     "consulados"
    ],
    "etapa": "destino",
-   "tipo": "normativa",
+   "tipo": "evento",
    "cobertura": 2,
    "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "relaciones consulares Venezuela",
-   "angulo_sugerido": "Examinar cómo impacta la reapertura consular en la regularización de la diáspora",
-   "nota": "Restablecimiento de vínculos bilaterales con impacto directo en trámites consulares."
+   "angulo_sugerido": "Evaluar el impacto de la reactivación consular en la tramitación de documentos para la comunidad migrante.",
+   "nota": "Acuerdo bilateral sobre relaciones consulares que impacta en la atención a la diáspora."
+  },
+  {
+   "id": "9e04b09d0801",
+   "titulo_original": "España instala una barrera marítima de 500 metros en Ceuta para frenar los cruces desde Marruecos",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObDM2WXNuRVhZRzF3QU9IOS1DTFZvREFFNmtnZ19Td0sxRkdwcnM4Ym9pcUQzUXN1MnEtVWQ5anpiWTFUU19KV0tvYVhaOXhGbDVFZEEyNk5nSXZDeVBlci1ROEo4bWdrb1Rob21pUHMzUHF3VE5DM1l0NFF5Vm9OX01qa0hoMlV4S0dfVlh5UHVxUnMzZ1hSUlN3THpHa0c5UHhVN2tfMzFiOVRTS0Q5N1NuR0JoYXRDWUQzNVZsUWFzcHl3em5RWm00TjNiN1lGREUtM3g2ajF6dHhzNEVVdQ?oc=5",
+   "medios": [
+    "France 24",
+    "mendozatoday.com.ar"
+   ],
+   "coberturas": [
+    {
+     "medio": "France 24",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdHFEcHZYWWpta3dYQ0hFMFQxWFhXNDZITE1VSi1WNjZsNlBjaWN6Vm1EaWI2d0F3a0ZDSDNNbFFkS0k0eUV6TURHWDdPVFI1bDV6azZHc2N2Zmg3SHF6WTl4UWV3NWdPd1NYWFBVTVlMWmRNMF9LdGx4SC1ueV8zcWJJTThDZTJJdXAydE9rRFVBTzFWak1DVEhOMS1FREo4RmpFdGlLUEMxVWludlhKczcxWWNqcU4yTVliTThXTTdmdw?oc=5",
+     "fecha": "2026-08-01T20:53:13+00:00"
+    },
+    {
+     "medio": "mendozatoday.com.ar",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObDM2WXNuRVhZRzF3QU9IOS1DTFZvREFFNmtnZ19Td0sxRkdwcnM4Ym9pcUQzUXN1MnEtVWQ5anpiWTFUU19KV0tvYVhaOXhGbDVFZEEyNk5nSXZDeVBlci1ROEo4bWdrb1Rob21pUHMzUHF3VE5DM1l0NFF5Vm9OX01qa0hoMlV4S0dfVlh5UHVxUnMzZ1hSUlN3THpHa0c5UHhVN2tfMzFiOVRTS0Q5N1NuR0JoYXRDWUQzNVZsUWFzcHl3em5RWm00TjNiN1lGREUtM3g2ajF6dHhzNEVVdQ?oc=5",
+     "fecha": "2026-08-01T16:30:19+00:00"
+    }
+   ],
+   "velocidad": 2,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 23.1,
+   "notas": 2,
+   "otras_urls": [
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdHFEcHZYWWpta3dYQ0hFMFQxWFhXNDZITE1VSi1WNjZsNlBjaWN6Vm1EaWI2d0F3a0ZDSDNNbFFkS0k0eUV6TURHWDdPVFI1bDV6azZHc2N2Zmg3SHF6WTl4UWV3NWdPd1NYWFBVTVlMWmRNMF9LdGx4SC1ueV8zcWJJTThDZTJJdXAydE9rRFVBTzFWak1DVEhOMS1FREo4RmpFdGlLUEMxVWludlhKczcxWWNqcU4yTVliTThXTTdmdw?oc=5"
+   ],
+   "ejes": [
+    "estatus"
+   ],
+   "region": "Sudamérica",
+   "paises": [
+    "BO",
+    "CO",
+    "EC"
+   ],
+   "paises_nombres": [
+    "Bolivia",
+    "Colombia",
+    "Ecuador"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
   },
   {
    "id": "335ee2304a5e",
@@ -1444,9 +1622,9 @@
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "ICE detenciones aeropuertos",
-   "angulo_sugerido": "Documentar casos específicos de perfilamiento en controles aeroportuarios",
-   "nota": "Redadas y detenciones del ICE en aeropuertos norteamericanos."
+   "termino_busqueda": "ICE redadas aeropuertos",
+   "angulo_sugerido": "Revisar las facultades de control y detención de agencias migratorias en zonas de tránsito aéreo.",
+   "nota": "Redadas y detenciones de viajeros por parte del ICE en aeropuertos estadounidenses."
   },
   {
    "id": "e7187fedfe1b",
@@ -1465,7 +1643,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 0.2,
+   "horas": 0.3,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -1494,16 +1672,16 @@
     "estado_nacional"
    ],
    "etapa": "destino",
-   "tipo": "discurso",
+   "tipo": "evento",
    "cobertura": 1,
    "confianza": 0.85,
-   "tiene_fuente_primaria": false,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "cooperacion Venezuela Chile",
-   "angulo_sugerido": "Verificar acuerdos concretos derivados de la propuesta diplomática",
-   "nota": "Propuesta de cooperación política con implicancias migratorias bilaterales."
+   "angulo_sugerido": "Seguimiento a los acuerdos bilaterales de cooperación política y migratoria.",
+   "nota": "Propuesta de cooperación política entre gobiernos con implicancias migratorias indirectas."
   },
   {
    "id": "6870b1bcafed",
@@ -1543,7 +1721,7 @@
    "actores": [],
    "etapa": null,
    "tipo": "evento",
-   "cobertura": null,
+   "cobertura": 1,
    "confianza": 0.5,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
@@ -1551,7 +1729,7 @@
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Título vacío o genérico sin contenido informativo relevante."
+   "nota": "Título genérico sin contenido informativo relevante ni contexto migratorio."
   },
   {
    "id": "45765237ebc9",
@@ -1570,7 +1748,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 0.5,
+   "horas": 0.6,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZkZOQ2lCcW9Sc002eTNNMXBRaWhQZmJ6ZkRiOU5VTEZyWWNUcWpNZVdLenMwcm1mWGotTU5TN2MzeGVjaExFb0RSYmVjLUlKbnpKcm9jeUJEZ0J1NjMxMUV2T0pxaWExem55WmtsekljNUNILTRLVGFLcFVCcGlPSzUtNVAxY1gtWVYtYllZMGZ0V1QyWnN5TXhWR0t2Z2dXSEtZTE5oTUNqbGo1QXJqOGt1d0xfX2tYenJOVUp2akllM1lpOU1lS1lfWTVyQXZBamEtNkhvam9kcmhjWXIySlRPS1JubmJpQ1BTOV9mNGRYN0dveFhlYkZUMkVGY0N5OTVJYw?oc=5"
@@ -1599,6 +1777,7 @@
     "VE"
    ],
    "actores": [
+    "organismos_internacionales",
     "sociedad_civil"
    ],
    "etapa": "retorno",
@@ -1610,64 +1789,8 @@
    "requiere_verificacion": true,
    "terminologia_problematica": [],
    "termino_busqueda": "venezolanos deportados desaparecidos",
-   "angulo_sugerido": "Investigar el paradero de personas retornadas forzosamente afectadas por desastres",
-   "nota": "Situación crítica de migrantes deportados afectados por catástrofe natural."
-  },
-  {
-   "id": "edac29cbc697",
-   "titulo_original": "Reducen paisanos migración ilegal a EU",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1NTdXV6MkJhdWdhbDNKV1FxZWhXcXhDejlONGdRcDN5Z3gzMXhJdHQ3TEIyLXN0RFhuSXBUclpTWkxKcEpCelJmLTJlVEUzMzJDdjRzQXY4WlU1V1E0T1FOTWI3Vm1tR0pqY3FXWE5ZaGlfSHpaZjlpM3FSRUoxYVZ3Rm5WVThuWm1tUGtn?oc=5",
-   "medios": [
-    "Luces del Siglo"
-   ],
-   "coberturas": [
-    {
-     "medio": "Luces del Siglo",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT1NTdXV6MkJhdWdhbDNKV1FxZWhXcXhDejlONGdRcDN5Z3gzMXhJdHQ3TEIyLXN0RFhuSXBUclpTWkxKcEpCelJmLTJlVEUzMzJDdjRzQXY4WlU1V1E0T1FOTWI3Vm1tR0pqY3FXWE5ZaGlfSHpaZjlpM3FSRUoxYVZ3Rm5WVThuWm1tUGtn?oc=5",
-     "fecha": "2026-08-02T14:54:10+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 0.6,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus",
-    "politica_migratoria"
-   ],
-   "region": "Norteamérica",
-   "paises": [
-    "MX",
-    "US"
-   ],
-   "paises_nombres": [
-    "Estados Unidos"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": false,
-   "importancia": 6,
-   "clasificado": true,
-   "es_migratorio": true,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [
-    "estado_nacional"
-   ],
-   "etapa": "origen",
-   "tipo": "dato",
-   "cobertura": 1,
-   "confianza": 0.85,
-   "tiene_fuente_primaria": false,
-   "contiene_datos_personales": false,
-   "requiere_verificacion": true,
-   "terminologia_problematica": [
-    "migración ilegal"
-   ],
-   "termino_busqueda": "migracion ilegal Mexico",
-   "angulo_sugerido": "Contrastar datos oficiales de reducción de cruces con el endurecimiento de controles",
-   "nota": "Reporte sobre supuesta disminución de cruces irregulares."
+   "angulo_sugerido": "Investigar el paradero de personas deportadas afectadas por desastres naturales en origen.",
+   "nota": "Personas deportadas desaparecidas tras catástrofe ambiental en país de origen. Alta prioridad."
   },
   {
    "id": "b939333a11ca",
@@ -1686,7 +1809,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 1.3,
+   "horas": 1.4,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -1725,7 +1848,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 1.4,
+   "horas": 1.5,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -1743,25 +1866,27 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 6,
+   "importancia": 7,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
    "colectividades": [],
-   "actores": [],
+   "actores": [
+    "organismos_migratorios"
+   ],
    "etapa": "transito",
    "tipo": "evento",
    "cobertura": 1,
    "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [
     "inmigrantes"
    ],
-   "termino_busqueda": "migrantes embarcaciones Cadiz",
-   "angulo_sugerido": "Verificar la asistencia humanitaria brindada tras los rescates en ruta marítima",
-   "nota": "Intercepción de embarcaciones con personas en ruta marítima hacia España (fuera de LATAM directa, pero relevante en flujos)."
+   "termino_busqueda": "pateras Algeciras rescate",
+   "angulo_sugerido": "Monitoreo de flujos migratorios y rescates en rutas marítimas hacia Europa.",
+   "nota": "Interceptación de embarcaciones con personas migrantes en España."
   },
   {
    "id": "55c8d715fadb",
@@ -1794,99 +1919,6 @@
     "Argentina"
    ],
    "pais_inferido": false,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
-  },
-  {
-   "id": "1825d9c8ef66",
-   "titulo_original": "Milei decreta la prohibición de entrada a extranjeros que expresen odio hacia Argentina",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWGhFOEZwd1BjWnRtcWNzUnE1eUdHR3FQalNIWWF3NGFsUXpIMUh1VDNnQXR4cHd2RG1ObjRhdkVkV0ZWMkVPcWNKX2o3aEt5SW1PUUlrcXZ5UUNsQVpRWlhfQ3FDV09rQ1hnMEZ4NGZ2eUtEa05wNkQta25OaUktX1dHOFJ5ZXZxOEdRS3dxTE1jX3BhckpoNExXcmNKS2pDeDV1TGk1MVFXZ1owZ1Y3eGNhbE51RVFjQVBMZUlYdGdSWG15bmdUR2UyNjkxZw?oc=5",
-   "medios": [
-    "laradiodelmercosur.com.ar"
-   ],
-   "coberturas": [
-    {
-     "medio": "laradiodelmercosur.com.ar",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWGhFOEZwd1BjWnRtcWNzUnE1eUdHR3FQalNIWWF3NGFsUXpIMUh1VDNnQXR4cHd2RG1ObjRhdkVkV0ZWMkVPcWNKX2o3aEt5SW1PUUlrcXZ5UUNsQVpRWlhfQ3FDV09rQ1hnMEZ4NGZ2eUtEa05wNkQta25OaUktX1dHOFJ5ZXZxOEdRS3dxTE1jX3BhckpoNExXcmNKS2pDeDV1TGk1MVFXZ1owZ1Y3eGNhbE51RVFjQVBMZUlYdGdSWG15bmdUR2UyNjkxZw?oc=5",
-     "fecha": "2026-08-02T13:46:52+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 1.8,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "politica_migratoria",
-    "securitizacion",
-    "odio"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "AR"
-   ],
-   "paises_nombres": [
-    "Argentina"
-   ],
-   "pais_inferido": false,
-   "fuera_de_alcance": false,
-   "importancia": 10,
-   "clasificado": true,
-   "es_migratorio": true,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [
-    "estado_nacional"
-   ],
-   "etapa": "destino",
-   "tipo": "normativa",
-   "cobertura": 1,
-   "confianza": 0.95,
-   "tiene_fuente_primaria": true,
-   "contiene_datos_personales": false,
-   "requiere_verificacion": false,
-   "terminologia_problematica": [],
-   "termino_busqueda": "decreto prohibicion entrada",
-   "angulo_sugerido": "Analizar la arbitrariedad potencial en la definición de discursos de odio como causal de inadmisión",
-   "nota": "Cambio normativo grave que restringe derechos de admisión por expresiones."
-  },
-  {
-   "id": "e70b3621a268",
-   "titulo_original": "Fronteras distintas, preocupaciones diferentes: por qué 22 países de la UE firmaron una carta señalando la política migratoria de España y cinco decidieron quedarse al margen",
-   "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQRzVJZy1tQ2RnSmVPZ1BhYWVzeFVBdjlkTW9uMGExS0ZycXRqODRHOEFMWXNMeDNXcnFOZVZHdVRaVkRzendsUjJrclphd3ZTaDFHZ1hqb21wLTliSzhvWlREdWxyYkp1aEt6TDhkOFo4emdaSllWOGY0Y3dxeDdRdkdDWkFBb2tSOGJidEJzMDYtYTFtNDBfdHJ6RGVndmpkSjdzbmNBVE9UUzdQOW93UnFvT2R1Z0RMeTVycTgtZ2FWMldfM0dBRUZGVzdRQVJxSXlEWDU1c2x4ejN4OVpfbVd0VjIwUWJ2Wm1rb3YyWW5YRVU3Y0lmdnBWNEpnVUVGVWZnRXNPeDhQa0Ytem9MRXVzVmNnc2NhUlBwamhFSzdTRzUyOWdGSzUwN3huRlRk0gHLAkFVX3lxTFBBb0tYYU1vUWs3eDdfQ3VxVW5jTmFNbEVWQnVkLWdOYzZXaGxieFI3cHdEd1cwem1XVWRKUFUzcGVyZTV5WFpFcEMxa0VrNnlYUy1rbXFqNjlPb1lkNnVBR094QmswVWI5RWlhbTBTd3hWQXVSOE5LQTZvNjRrTXplSVJHdjBOcW1QRG54NFkxRUF4d2FtLW1tdEVPa0lPZXd5ZkxhYVk2RjFHa3pkTlJLT2E5LWZyamxXQ29ReEFDdjJXeVR0WkpBaGV2YzU0VkRCRHA3dHNiT192T0tRLTk3QUp6UUVkT2VHajlsUHo3YzJucTBTR3Vwc09KN0NKa1ZGWW9mYzdyNDY2SlBubmY5eTcwUXg4cDM0TjVXX2R1ckhnd0hHc0FsM2ZPSVBJRmVjUTc5Q2UzNzRMQW1yNUZ3SGRaeUQ4RjhaVW8?oc=5",
-   "medios": [
-    "Infobae"
-   ],
-   "coberturas": [
-    {
-     "medio": "Infobae",
-     "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQRzVJZy1tQ2RnSmVPZ1BhYWVzeFVBdjlkTW9uMGExS0ZycXRqODRHOEFMWXNMeDNXcnFOZVZHdVRaVkRzendsUjJrclphd3ZTaDFHZ1hqb21wLTliSzhvWlREdWxyYkp1aEt6TDhkOFo4emdaSllWOGY0Y3dxeDdRdkdDWkFBb2tSOGJidEJzMDYtYTFtNDBfdHJ6RGVndmpkSjdzbmNBVE9UUzdQOW93UnFvT2R1Z0RMeTVycTgtZ2FWMldfM0dBRUZGVzdRQVJxSXlEWDU1c2x4ejN4OVpfbVd0VjIwUWJ2Wm1rb3YyWW5YRVU3Y0lmdnBWNEpnVUVGVWZnRXNPeDhQa0Ytem9MRXVzVmNnc2NhUlBwamhFSzdTRzUyOWdGSzUwN3huRlRk0gHLAkFVX3lxTFBBb0tYYU1vUWs3eDdfQ3VxVW5jTmFNbEVWQnVkLWdOYzZXaGxieFI3cHdEd1cwem1XVWRKUFUzcGVyZTV5WFpFcEMxa0VrNnlYUy1rbXFqNjlPb1lkNnVBR094QmswVWI5RWlhbTBTd3hWQXVSOE5LQTZvNjRrTXplSVJHdjBOcW1QRG54NFkxRUF4d2FtLW1tdEVPa0lPZXd5ZkxhYVk2RjFHa3pkTlJLT2E5LWZyamxXQ29ReEFDdjJXeVR0WkpBaGV2YzU0VkRCRHA3dHNiT192T0tRLTk3QUp6UUVkT2VHajlsUHo3YzJucTBTR3Vwc09KN0NKa1ZGWW9mYzdyNDY2SlBubmY5eTcwUXg4cDM0TjVXX2R1ckhnd0hHc0FsM2ZPSVBJRmVjUTc5Q2UzNzRMQW1yNUZ3SGRaeUQ4RjhaVW8?oc=5",
-     "fecha": "2026-08-02T12:55:07+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 2.6,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "AR",
-    "CL",
-    "PY"
-   ],
-   "paises_nombres": [
-    "Argentina",
-    "Chile",
-    "Paraguay"
-   ],
-   "pais_inferido": true,
    "fuera_de_alcance": true,
    "importancia": null,
    "clasificado": false
@@ -1927,6 +1959,45 @@
    "clasificado": false
   },
   {
+   "id": "e70b3621a268",
+   "titulo_original": "Fronteras distintas, preocupaciones diferentes: por qué 22 países de la UE firmaron una carta señalando la política migratoria de España y cinco decidieron quedarse al margen",
+   "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQRzVJZy1tQ2RnSmVPZ1BhYWVzeFVBdjlkTW9uMGExS0ZycXRqODRHOEFMWXNMeDNXcnFOZVZHdVRaVkRzendsUjJrclphd3ZTaDFHZ1hqb21wLTliSzhvWlREdWxyYkp1aEt6TDhkOFo4emdaSllWOGY0Y3dxeDdRdkdDWkFBb2tSOGJidEJzMDYtYTFtNDBfdHJ6RGVndmpkSjdzbmNBVE9UUzdQOW93UnFvT2R1Z0RMeTVycTgtZ2FWMldfM0dBRUZGVzdRQVJxSXlEWDU1c2x4ejN4OVpfbVd0VjIwUWJ2Wm1rb3YyWW5YRVU3Y0lmdnBWNEpnVUVGVWZnRXNPeDhQa0Ytem9MRXVzVmNnc2NhUlBwamhFSzdTRzUyOWdGSzUwN3huRlRk0gHLAkFVX3lxTFBBb0tYYU1vUWs3eDdfQ3VxVW5jTmFNbEVWQnVkLWdOYzZXaGxieFI3cHdEd1cwem1XVWRKUFUzcGVyZTV5WFpFcEMxa0VrNnlYUy1rbXFqNjlPb1lkNnVBR094QmswVWI5RWlhbTBTd3hWQXVSOE5LQTZvNjRrTXplSVJHdjBOcW1QRG54NFkxRUF4d2FtLW1tdEVPa0lPZXd5ZkxhYVk2RjFHa3pkTlJLT2E5LWZyamxXQ29ReEFDdjJXeVR0WkpBaGV2YzU0VkRCRHA3dHNiT192T0tRLTk3QUp6UUVkT2VHajlsUHo3YzJucTBTR3Vwc09KN0NKa1ZGWW9mYzdyNDY2SlBubmY5eTcwUXg4cDM0TjVXX2R1ckhnd0hHc0FsM2ZPSVBJRmVjUTc5Q2UzNzRMQW1yNUZ3SGRaeUQ4RjhaVW8?oc=5",
+   "medios": [
+    "Infobae"
+   ],
+   "coberturas": [
+    {
+     "medio": "Infobae",
+     "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQRzVJZy1tQ2RnSmVPZ1BhYWVzeFVBdjlkTW9uMGExS0ZycXRqODRHOEFMWXNMeDNXcnFOZVZHdVRaVkRzendsUjJrclphd3ZTaDFHZ1hqb21wLTliSzhvWlREdWxyYkp1aEt6TDhkOFo4emdaSllWOGY0Y3dxeDdRdkdDWkFBb2tSOGJidEJzMDYtYTFtNDBfdHJ6RGVndmpkSjdzbmNBVE9UUzdQOW93UnFvT2R1Z0RMeTVycTgtZ2FWMldfM0dBRUZGVzdRQVJxSXlEWDU1c2x4ejN4OVpfbVd0VjIwUWJ2Wm1rb3YyWW5YRVU3Y0lmdnBWNEpnVUVGVWZnRXNPeDhQa0Ytem9MRXVzVmNnc2NhUlBwamhFSzdTRzUyOWdGSzUwN3huRlRk0gHLAkFVX3lxTFBBb0tYYU1vUWs3eDdfQ3VxVW5jTmFNbEVWQnVkLWdOYzZXaGxieFI3cHdEd1cwem1XVWRKUFUzcGVyZTV5WFpFcEMxa0VrNnlYUy1rbXFqNjlPb1lkNnVBR094QmswVWI5RWlhbTBTd3hWQXVSOE5LQTZvNjRrTXplSVJHdjBOcW1QRG54NFkxRUF4d2FtLW1tdEVPa0lPZXd5ZkxhYVk2RjFHa3pkTlJLT2E5LWZyamxXQ29ReEFDdjJXeVR0WkpBaGV2YzU0VkRCRHA3dHNiT192T0tRLTk3QUp6UUVkT2VHajlsUHo3YzJucTBTR3Vwc09KN0NKa1ZGWW9mYzdyNDY2SlBubmY5eTcwUXg4cDM0TjVXX2R1ckhnd0hHc0FsM2ZPSVBJRmVjUTc5Q2UzNzRMQW1yNUZ3SGRaeUQ4RjhaVW8?oc=5",
+     "fecha": "2026-08-02T12:55:07+00:00"
+    }
+   ],
+   "velocidad": 1,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 2.7,
+   "notas": 1,
+   "otras_urls": [],
+   "ejes": [
+    "estatus"
+   ],
+   "region": "Sudamérica",
+   "paises": [
+    "AR",
+    "CL",
+    "PY"
+   ],
+   "paises_nombres": [
+    "Argentina",
+    "Chile",
+    "Paraguay"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
+  },
+  {
    "id": "a9b5b4aaf0e8",
    "titulo_original": "De Laos a Posadas: Tun, el histórico “huesero” de los deportistas",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVTlBU3hiYTE3YzZkYmxnaF9UbmVuRVRET003S09HOHhiOTlPbkJZZG5MSVMwNk5waW9vYzdxdEowVTZqb3lyQlZKaElScVV5S21JaVdxUHlkRmZ5eUhtUWlzSFBKSThTSl9nVF82dWhHakQ1WTFyVm55TlFRS0lLZmh2bm1fSkw3dUt6Yk1XRHpvZnB0ZWlHaQ?oc=5",
@@ -1947,8 +2018,7 @@
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "cultura",
-    "diaspora"
+    "memoria"
    ],
    "region": "Sudamérica",
    "paises": [
@@ -1961,23 +2031,23 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 4,
+   "importancia": 2,
    "clasificado": true,
-   "es_migratorio": true,
+   "es_migratorio": false,
    "poblaciones": [],
    "colectividades": [],
    "actores": [],
-   "etapa": "destino",
+   "etapa": null,
    "tipo": "caso",
    "cobertura": 1,
-   "confianza": 0.9,
+   "confianza": 0.8,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": true,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "migrante Laos Posadas",
-   "angulo_sugerido": "Rescatar la trayectoria de integración comunitaria de migrantes poco habituales",
-   "nota": "Perfil biográfico de una persona migrante en Argentina."
+   "termino_busqueda": null,
+   "angulo_sugerido": null,
+   "nota": "Perfil biográfico de un personaje local. La mención al origen geográfico es tangencial."
   },
   {
    "id": "c5381bb5c193",
@@ -2019,73 +2089,17 @@
    "clasificado": false
   },
   {
-   "id": "0b6636e9d515",
-   "titulo_original": "Fronteras cerradas y derechos negados, El “limbo jurídico” de los migrantes en México",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWE5pZE1RRHVlLURmYVJqblFWREtTS2hyOU03WWs5SUxMSEJ2aTNIV041N1BFRE9hdmxkUTVfUERQY2NCNDVlMnJVXzJCTUlmN0lzVm5kbW5yN0R4Yk9Qcm9CWEc4Y011aFZqZmpqNklLOEtVSXpKcF8zZmo3WVFSTVpNb05Ya2xxSGk3SEVuMldYRDVGZld4NklGVk5kdFFZQjBGT3cwMUVUWWIyWS1ReXJxejBQeHJyNE5YcWtWXzg?oc=5",
-   "medios": [
-    "El Observador de la Actualidad"
-   ],
-   "coberturas": [
-    {
-     "medio": "El Observador de la Actualidad",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWE5pZE1RRHVlLURmYVJqblFWREtTS2hyOU03WWs5SUxMSEJ2aTNIV041N1BFRE9hdmxkUTVfUERQY2NCNDVlMnJVXzJCTUlmN0lzVm5kbW5yN0R4Yk9Qcm9CWEc4Y011aFZqZmpqNklLOEtVSXpKcF8zZmo3WVFSTVpNb05Ya2xxSGk3SEVuMldYRDVGZld4NklGVk5kdFFZQjBGT3cwMUVUWWIyWS1ReXJxejBQeHJyNE5YcWtWXzg?oc=5",
-     "fecha": "2026-08-02T12:00:46+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 3.5,
-   "notas": 2,
-   "otras_urls": [
-    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWE5pZE1RRHVlLURmYVJqblFWREtTS2hyOU03WWs5SUxMSEJ2aTNIV041N1BFRE9hdmxkUTVfUERQY2NCNDVlMnJVXzJCTUlmN0lzVm5kbW5yN0R4Yk9Qcm9CWEc4Y011aFZqZmpqNklLOEtVSXpKcF8zZmo3WVFSTVpNb05Ya2xxSGk3SEVuMldYRDVGZld4NklGVk5kdFFZQjBGT3cwMUVUWWIyWS1ReXJxejBQeHJyNE5YcWtWXzg?oc=5"
-   ],
-   "ejes": [
-    "inmovilidad",
-    "estatus",
-    "derechos_humanos"
-   ],
-   "region": "Norteamérica",
-   "paises": [
-    "MX"
-   ],
-   "paises_nombres": [
-    "México"
-   ],
-   "pais_inferido": false,
-   "fuera_de_alcance": false,
-   "importancia": 8,
-   "clasificado": true,
-   "es_migratorio": true,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [
-    "sociedad_civil"
-   ],
-   "etapa": "transito",
-   "tipo": "dato",
-   "cobertura": 1,
-   "confianza": 0.95,
-   "tiene_fuente_primaria": false,
-   "contiene_datos_personales": false,
-   "requiere_verificacion": true,
-   "terminologia_problematica": [],
-   "termino_busqueda": "limbo juridico migrantes",
-   "angulo_sugerido": "Mapear las trabas administrativas que generan inmovilidad forzada en territorio mexicano",
-   "nota": "Informe sobre el limbo jurídico y derechos negados a personas en tránsito."
-  },
-  {
-   "id": "2c8b83e5c318",
+   "id": "acd45ed74297",
    "titulo_original": "¿Quién vigila a los que juegan con la realidad?",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVUdsME00Z1B6dkktaW0tRUYxb2tQaFVkeHdJZWE3U1VndldibkRMMTE4eWtpUTBLcTN4eXQtWjlMN0czckFkZUJjb3RGRzluV0kzaFdvY1lHcHhSOXY1dmhVU2E2UkNxcUNUZm1JZS1oaXhHaDRoRktoLVd5Yy1QaHJDRWVyM3NTazdGb1pZTQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNHRVUTQ1aWJhVjRDWXlQWURJRnQ0WXQtSmRRcVVxdUd1WkpMbE1GSXFKY0RhRkhyV0hSbXItTXFzSHlWZ1hJUjJlWlZNc3Q0MjY0M3c3cEV2Y1p5U1AwdkxGMWdrbGt5OUZaeE1welVJTmdtRnBQb01oV0lRNlhFSnpFbThlaTI4eTBBckdUaHdRYlQt?oc=5",
    "medios": [
     "Enrique Dans"
    ],
    "coberturas": [
     {
      "medio": "Enrique Dans",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVUdsME00Z1B6dkktaW0tRUYxb2tQaFVkeHdJZWE3U1VndldibkRMMTE4eWtpUTBLcTN4eXQtWjlMN0czckFkZUJjb3RGRzluV0kzaFdvY1lHcHhSOXY1dmhVU2E2UkNxcUNUZm1JZS1oaXhHaDRoRktoLVd5Yy1QaHJDRWVyM3NTazdGb1pZTQ?oc=5",
-     "fecha": "2026-08-02T11:37:30+00:00"
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNHRVUTQ1aWJhVjRDWXlQWURJRnQ0WXQtSmRRcVVxdUd1WkpMbE1GSXFKY0RhRkhyV0hSbXItTXFzSHlWZ1hJUjJlWlZNc3Q0MjY0M3c3cEV2Y1p5U1AwdkxGMWdrbGt5OUZaeE1welVJTmdtRnBQb01oV0lRNlhFSnpFbThlaTI4eTBBckdUaHdRYlQt?oc=5",
+     "fecha": "2026-08-02T11:41:14+00:00"
     }
    ],
    "velocidad": 1,
@@ -2122,58 +2136,7 @@
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Reflexión general sobre medios y desinformación sin mención específica a migraciones."
-  },
-  {
-   "id": "9606d1d40378",
-   "titulo_original": "Qué pasará con los migrantes que tienen casa propia y deben abandonar EE.UU., según una abogada migratoria",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9YUWhPLXhNdV9pQ1VMa2pWMVdWN0hfYnk0RG5NM3REUVFsb3JNT3Z6SFlFMi1jenEtLXVjV3BnV21udVY0c2tKMFg1QmJ3Zw?oc=5",
-   "medios": [
-    "Impacto Castex"
-   ],
-   "coberturas": [
-    {
-     "medio": "Impacto Castex",
-     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9YUWhPLXhNdV9pQ1VMa2pWMVdWN0hfYnk0RG5NM3REUVFsb3JNT3Z6SFlFMi1jenEtLXVjV3BnV21udVY0c2tKMFg1QmJ3Zw?oc=5",
-     "fecha": "2026-08-02T11:25:31+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 4.1,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "deportaciones",
-    "estatus"
-   ],
-   "region": "Norteamérica",
-   "paises": [
-    "US"
-   ],
-   "paises_nombres": [
-    "Estados Unidos"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": false,
-   "importancia": 7,
-   "clasificado": true,
-   "es_migratorio": true,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [],
-   "etapa": "destino",
-   "tipo": "servicio",
-   "cobertura": 2,
-   "confianza": 0.85,
-   "tiene_fuente_primaria": false,
-   "contiene_datos_personales": false,
-   "requiere_verificacion": false,
-   "terminologia_problematica": [],
-   "termino_busqueda": "migrantes bienes raices",
-   "angulo_sugerido": "Qué sucede legalmente con los bienes inmuebles tras una orden de deportación",
-   "nota": "Afecta condiciones prácticas de vida ante procesos de expulsión."
+   "nota": "Reflexión periodística general sobre desinformación sin mención a movilidad humana."
   },
   {
    "id": "f674db0af65e",
@@ -2216,7 +2179,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 8,
+   "importancia": 9,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -2228,15 +2191,17 @@
    ],
    "etapa": "destino",
    "tipo": "normativa",
-   "cobertura": 3,
-   "confianza": 0.9,
+   "cobertura": 1,
+   "confianza": 0.85,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": true,
-   "terminologia_problematica": [],
-   "termino_busqueda": "acuerdo deportacion Cuba",
-   "angulo_sugerido": "Verificar los términos del acuerdo bilateral y las garantías de no devolución",
-   "nota": "Posible acuerdo de externalización de deportaciones hacia un tercer país."
+   "terminologia_problematica": [
+    "migrantes irregulares"
+   ],
+   "termino_busqueda": "deportacion cubanos EEUU",
+   "angulo_sugerido": "Verificar los términos del acuerdo bilateral para la reubicación de personas deportadas.",
+   "nota": "Acuerdo potencial de deportación de ciudadanos cubanos a un tercer país (Uruguay)."
   },
   {
    "id": "3b61153f7976",
@@ -2260,13 +2225,10 @@
    "otras_urls": [],
    "ejes": [
     "rutas",
-    "derechos_humanos"
+    "trata"
    ],
    "region": "Centroamérica",
-   "paises": [
-    "MX",
-    "US"
-   ],
+   "paises": [],
    "paises_nombres": [
     "Costa Rica",
     "Guatemala",
@@ -2274,7 +2236,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 8,
+   "importancia": 7,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -2282,15 +2244,15 @@
    "actores": [],
    "etapa": "transito",
    "tipo": "caso",
-   "cobertura": 4,
-   "confianza": 0.9,
+   "cobertura": 3,
+   "confianza": 0.85,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "rutas migrantes trenes",
-   "angulo_sugerido": "Abordar los riesgos estructurales del tránsito ferroviario en la ruta migratoria",
-   "nota": "Relato sobre los peligros y violencias extremas en las rutas de tránsito."
+   "termino_busqueda": "ruta migrantes coyotes",
+   "angulo_sugerido": "Investigar las redes operativas detrás del tráfico de personas en la ruta.",
+   "nota": "Aborda los peligros de las rutas migratorias y la acción de los traficantes."
   },
   {
    "id": "483c01377fd2",
@@ -2325,26 +2287,76 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 9,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
    "colectividades": [],
    "actores": [
-    "organismos_migratorios",
-    "sociedad_civil"
+    "organismos_migratorios"
    ],
    "etapa": "destino",
    "tipo": "caso",
-   "cobertura": 5,
-   "confianza": 0.95,
+   "cobertura": 4,
+   "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "ICE detencion condiciones",
-   "angulo_sugerido": "Investigar violaciones sistemáticas a los derechos humanos dentro de los centros del ICE",
-   "nota": "Condiciones de detención bajo custodia de ICE con fuerte impacto en derechos."
+   "termino_busqueda": "ICE detenciones",
+   "angulo_sugerido": "Condiciones de detención bajo la custodia de ICE.",
+   "nota": "Trata sobre detenciones migratorias y condiciones bajo custodia."
+  },
+  {
+   "id": "390cf4607232",
+   "titulo_original": "Qué pasará con los migrantes que tienen casa propia y deben abandonar EE.UU., según una abogada migratoria",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQX3Rwendyb3hFNGJlYTNzdDMyMlo5czkxa1F6T3BFOWpOUjA1X2NyM19vQmdGcGV1SGpFODZGXzVMa3M5QXg2QzFYcENOZk83elBkNUF0dzFMLTNmaWtBSmQyRm50S1REQ3BfcmVVaHhGck1DU2dYY1ZaQTdFRUtrQ0FaQ3dBWFAxNFZFb3hza0xYMzcwVmRRdW5vTERZSkt4Sk5xTmJZOUJ4enJYLUdzaWtySWhNcG1qbzRON2RxdXdpWFc5MlF5d2dRRE9oWmgwS245VVZtUDg4V3RnUkNWb1FYaEh5T0hRRkN5M0EzRm1qZw?oc=5",
+   "medios": [
+    "La Nación"
+   ],
+   "coberturas": [
+    {
+     "medio": "La Nación",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQX3Rwendyb3hFNGJlYTNzdDMyMlo5czkxa1F6T3BFOWpOUjA1X2NyM19vQmdGcGV1SGpFODZGXzVMa3M5QXg2QzFYcENOZk83elBkNUF0dzFMLTNmaWtBSmQyRm50S1REQ3BfcmVVaHhGck1DU2dYY1ZaQTdFRUtrQ0FaQ3dBWFAxNFZFb3hza0xYMzcwVmRRdW5vTERZSkt4Sk5xTmJZOUJ4enJYLUdzaWtySWhNcG1qbzRON2RxdXdpWFc5MlF5d2dRRE9oWmgwS245VVZtUDg4V3RnUkNWb1FYaEh5T0hRRkN5M0EzRm1qZw?oc=5",
+     "fecha": "2026-08-02T11:00:00+00:00"
+    }
+   ],
+   "velocidad": 1,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 4.6,
+   "notas": 1,
+   "otras_urls": [],
+   "ejes": [
+    "estatus",
+    "servicios"
+   ],
+   "region": "Norteamérica",
+   "paises": [
+    "US"
+   ],
+   "paises_nombres": [
+    "Estados Unidos"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": false,
+   "importancia": 6,
+   "clasificado": true,
+   "es_migratorio": true,
+   "poblaciones": [],
+   "colectividades": [],
+   "actores": [],
+   "etapa": "destino",
+   "tipo": "servicio",
+   "cobertura": 2,
+   "confianza": 0.9,
+   "tiene_fuente_primaria": false,
+   "contiene_datos_personales": false,
+   "requiere_verificacion": false,
+   "terminologia_problematica": [],
+   "termino_busqueda": "migrantes bienes inmuebles",
+   "angulo_sugerido": "Opciones legales y patrimoniales ante órdenes de salida.",
+   "nota": "Información accionable sobre estatus migratorio y propiedades."
   },
   {
    "id": "3b79440dd9f6",
@@ -2363,12 +2375,12 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 4.9,
+   "horas": 5.0,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
     "deportaciones",
-    "asilo"
+    "politica_migratoria"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -2383,25 +2395,24 @@
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [
-    "ninez",
-    "familias"
+    "ninez"
    ],
    "colectividades": [],
    "actores": [
-    "organismos_migratorios",
-    "sociedad_civil"
+    "organismos_internacionales",
+    "organismos_migratorios"
    ],
    "etapa": "frontera",
    "tipo": "dato",
-   "cobertura": 4,
-   "confianza": 0.9,
+   "cobertura": 5,
+   "confianza": 0.95,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "menores no acompañados",
-   "angulo_sugerido": "Analizar el uso instrumental de normativas de protección a la infancia para acelerar expulsiones",
-   "nota": "Informe sobre el uso de programas de protección a la niñez para fines de deportación."
+   "angulo_sugerido": "Analizar los datos del informe sobre uso de programas de protección para expulsiones.",
+   "nota": "Informe oficial sobre el uso del programa de NNA para deportaciones."
   },
   {
    "id": "c557e40a9875",
@@ -2420,14 +2431,12 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 6.1,
+   "horas": 6.2,
    "notas": 1,
    "otras_urls": [],
    "ejes": [],
    "region": "Sudamérica",
-   "paises": [
-    "RU"
-   ],
+   "paises": [],
    "paises_nombres": [
     "Argentina",
     "Chile",
@@ -2451,7 +2460,7 @@
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Conflicto bélico general, sin relación con movilidad humana."
+   "nota": "Conflicto militar internacional sin relación con movilidad humana."
   },
   {
    "id": "336bb890cbe2",
@@ -2501,7 +2510,7 @@
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Proceso electoral en Cachemira, ajeno a cuestiones migratorias."
+   "nota": "Procesos electorales locales sin vínculo con migraciones."
   },
   {
    "id": "5f033a3a2e25",
@@ -2563,8 +2572,7 @@
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "deportaciones",
-    "securitizacion"
+    "deportaciones"
    ],
    "region": "Caribe",
    "paises": [
@@ -2590,13 +2598,13 @@
    "tipo": "caso",
    "cobertura": 3,
    "confianza": 0.9,
-   "tiene_fuente_primaria": true,
-   "contiene_datos_personales": false,
+   "tiene_fuente_primaria": false,
+   "contiene_datos_personales": true,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "ICE deportacion cubano",
-   "angulo_sugerido": "Analizar la estigmatización en los reportes oficiales de agencias de deportación",
-   "nota": "Caso individual de detención con enfoque securitizado por parte de ICE."
+   "termino_busqueda": "ICE cubano deportacion",
+   "angulo_sugerido": "Revisar los criterios de categorización de ICE para deportaciones prioritarias.",
+   "nota": "Acciones de ICE sobre un ciudadano cubano tras causa penal."
   },
   {
    "id": "3dfe8fd592a1",
@@ -2620,7 +2628,8 @@
    "otras_urls": [],
    "ejes": [
     "deportaciones",
-    "securitizacion"
+    "securitizacion",
+    "derechos_humanos"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -2640,19 +2649,20 @@
     "MX"
    ],
    "actores": [
-    "organismos_migratorios"
+    "organismos_migratorios",
+    "sociedad_civil"
    ],
    "etapa": "destino",
-   "tipo": "evento",
-   "cobertura": 3,
+   "tipo": "caso",
+   "cobertura": 5,
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "redadas ICE migrantes",
-   "angulo_sugerido": "Monitorear el impacto de las redadas en comunidades específicas y las redes de apoyo local",
-   "nota": "Denuncias de temor y abusos por operativos de ICE en comunidades migrantes."
+   "termino_busqueda": "redadas ICE temor",
+   "angulo_sugerido": "Impacto psicológico y social de las redadas en comunidades mexicanas.",
+   "nota": "Denuncias de comunidades migrantes por el clima de redadas."
   },
   {
    "id": "e915277485e4",
@@ -2671,14 +2681,15 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 8.5,
+   "horas": 8.6,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPcjNydmViSWNqUkt0dFlDVVNQc0xGS1hLbUI0cTNDYU0zc2lWaGpadlI2VDFVem5iNS1oeDk5eXhXdHBwd0RlR0xUUmlIYkw0LWsteFk5RExWMnZ5UkNYNWFsV3EtNElHVzdyeG4yNld6SThYa19ERDJ1Vl9JNEFVc1hDTkV3b2ZyazFqQ0IyVFZJMGdNdWZLTUlxbTcyZWt4YU14dlk3VTFqUnhsQjk3Z25NckxXSTNXRy1pc2Y2b05WejRLM0IyM1puZzBxTHRlX1NHdHlleGVWN1l6dWVqYmR2RTNLV2diN0Fmd1VYbw?oc=5"
    ],
    "ejes": [
     "asilo",
-    "derechos_humanos"
+    "derechos_humanos",
+    "politica_migratoria"
    ],
    "region": "Sudamérica",
    "paises": [],
@@ -2697,17 +2708,17 @@
    "actores": [
     "organismos_internacionales"
    ],
-   "etapa": "destino",
+   "etapa": null,
    "tipo": "evento",
-   "cobertura": 5,
+   "cobertura": 6,
    "confianza": 0.95,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "convencion refugiados aniversario",
-   "angulo_sugerido": "Evaluar la vigencia del derecho de asilo ante las políticas actuales de restricción global",
-   "nota": "Aniversario de la Convención sobre el Estatuto de los Refugiados y contexto político actual."
+   "angulo_sugerido": "Vigencia del derecho de asilo ante las actuales restricciones globales.",
+   "nota": "Aniversario de la Convención sobre el Estatuto de los Refugiados y contexto político."
   },
   {
    "id": "47d1d4a0a560",
@@ -2726,7 +2737,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 8.8,
+   "horas": 8.9,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcHQzcTBiQkpFYmZkZGIxWmVmNjE0Y2lDRlRsY0dmbThOczVOWFlZSk91cHgwRXdiU2RoRHkyd2dmd3B6UHZUV0MzcVAwRmdnVFVRV2pfVHZ5Z1FJZHJJLWtIUXlUNjNFZEhoN2NCNGZqVkhCMkFoRXpGRDJTWFVTVm16LTFJS1NLbFdpc3BlM1M4YTMwcmdhOXlnbU5PWUFYLVMxODdkRGxVNGF3blk1M0w2WjNKSzB1d09UcQ?oc=5"
@@ -2767,12 +2778,12 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 9.5,
+   "horas": 9.6,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
     "deportaciones",
-    "securitizacion",
+    "fronteras",
     "tecnologia"
    ],
    "region": "Norteamérica",
@@ -2784,7 +2795,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 9,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -2792,17 +2803,17 @@
    "actores": [
     "organismos_migratorios"
    ],
-   "etapa": "transito",
+   "etapa": "frontera",
    "tipo": "dato",
-   "cobertura": 4,
+   "cobertura": 5,
    "confianza": 0.9,
-   "tiene_fuente_primaria": true,
+   "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "TSA ICE intercambio",
-   "angulo_sugerido": "Analizar la interoperabilidad de bases de datos estatales para el control migratorio",
-   "nota": "Intercambio de información entre agencias de transporte y control migratorio incrementa arrestos."
+   "angulo_sugerido": "Alcance del intercambio de información entre agencias de seguridad e inmigración.",
+   "nota": "Incremento de detenciones por cruce de datos entre TSA e ICE."
   },
   {
    "id": "737f57a789fe",
@@ -2821,7 +2832,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 9.6,
+   "horas": 9.7,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -2860,7 +2871,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 10.4,
+   "horas": 10.5,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -2877,7 +2888,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 9,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -2887,16 +2898,16 @@
     "gobiernos_locales"
    ],
    "etapa": "destino",
-   "tipo": "normativa",
+   "tipo": "caso",
    "cobertura": 4,
    "confianza": 0.9,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "DOJ demanda Colorado",
-   "angulo_sugerido": "Analizar el litigio federal sobre el acceso a la educación superior para estudiantes sin papeles",
-   "nota": "Demanda del Departamento de Justicia contra políticas estatales de acceso educativo."
+   "termino_busqueda": "estudiantes indocumentados matricula",
+   "angulo_sugerido": "Implicancias de la demanda del DOJ sobre el acceso a la educación superior.",
+   "nota": "Litigio sobre acceso a tarifas universitarias para estudiantes indocumentados."
   },
   {
    "id": "41f6cad8e152",
@@ -2915,12 +2926,12 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 10.5,
+   "horas": 10.6,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "securitizacion",
     "deportaciones",
+    "securitizacion",
     "tecnologia"
    ],
    "region": "Norteamérica",
@@ -2932,7 +2943,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 9,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -2949,9 +2960,9 @@
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "Patrulla Fronteriza redadas",
-   "angulo_sugerido": "Investigar el uso de herramientas tecnológicas cotidianas para el perfilamiento y operativos migratorios",
-   "nota": "Litigio revela uso de herramientas digitales para planificar redadas urbanas."
+   "termino_busqueda": "patrulla fronteriza redadas",
+   "angulo_sugerido": "Criterios algorítmicos y perfilamiento en operaciones de control migratorio.",
+   "nota": "Demanda revela uso de herramientas digitales para planificar redadas."
   },
   {
    "id": "e4b38fe06061",
@@ -2970,45 +2981,6 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 11.4,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "BO",
-    "CO",
-    "EC"
-   ],
-   "paises_nombres": [
-    "Bolivia",
-    "Colombia",
-    "Ecuador"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
-  },
-  {
-   "id": "ee9d875b9e03",
-   "titulo_original": "Miles de inmigrantes irrumpieron en Ceuta tras cruzar a nado desde Marruecos",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1aMzlodldtWkVKdmFWaG1UbVE4NWNET3JpaUJVc2RaTUJqRUhRT0JNNEt4TDJBZFB5SFJDa09uS1NLYjRJODM3RnhrdjZWeG9UOEJQSF9MMG4xbTB2Z0NBU21rR0Y3Mzc0N2JTUFJMOWFtNU5oTndOdlhYSVRnZw?oc=5",
-   "medios": [
-    "Agencia NOVA"
-   ],
-   "coberturas": [
-    {
-     "medio": "Agencia NOVA",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1aMzlodldtWkVKdmFWaG1UbVE4NWNET3JpaUJVc2RaTUJqRUhRT0JNNEt4TDJBZFB5SFJDa09uS1NLYjRJODM3RnhrdjZWeG9UOEJQSF9MMG4xbTB2Z0NBU21rR0Y3Mzc0N2JTUFJMOWFtNU5oTndOdlhYSVRnZw?oc=5",
-     "fecha": "2026-08-02T04:03:54+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
    "horas": 11.5,
    "notas": 1,
    "otras_urls": [],
@@ -3032,62 +3004,63 @@
    "clasificado": false
   },
   {
-   "id": "89d676fe52da",
-   "titulo_original": "Se realiza en Tandil el 5º Encuentro Nacional de Dirigentes de Colectividades",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNGxrVlA1U2FQMnZtdTd1aTZzSnhUQVRkbFBKdXN1SWFLU2RaVnB4NmpBWWUzWmY1UDlKMThFTFlSOGZlYUpIdjlFRFg2Z3pOY0tlLXRjZTBEZmJqeHIxaFlLVEJod09FdVBCdHB3a0FZVlZDX251a2JUeVY1aWZXaW1ZUVZDc1hSWjhBWTRyMjNkcDlIT2hVbDd6YmlScEwwWVc4LXpxZ3g1VzIwZzlRWnVqd3hlVWstU0xSb2h0Skl5dDFPOHc?oc=5",
+   "id": "0f970d2cf928",
+   "titulo_original": "México secunda una demanda por el maltrato del ICE en un centro de California: gas pimienta para mitigar los reclamos y comida pasada de fecha",
+   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPT0RrYzU1QW13Q3BNZWVMYktESkZVanBaQzZIZjVEc1VFclBELUZwc2hWUnl4bFp1MzFJTzh1Y0xVb2dmVWpjVXBPZzhiWGt1Y3I1bVNvdHp0eWhpeWRXZVdTRTk4T2RBSVFNMUZUZmZIdjgzcDZid3M5QWhwS194R25lcl81b1kzdDdtWTZONEZzVHM3SXpCWkxDR1VBbXhGcmRRRG5UVlFiM2ZPbWRGcnZkM0lpbHAxcl9vQV9GMDRCcjVtbUlvQ2FDRkFqb1MyYUhiZmNhUHlvbF9udWVOTlFrR2U0cnBDLXowQU5YemE1bGp5OWZmQVRoNmZ5T0x4bDdYaGJ5VjFZTklKeXJqXzFpeXbSAagCQVVfeXFMUEs3Z2RMRndUVFd4aDhQZG9UblZ6OTd6bXJJcnVack4tanBJc3ZYejN5bGhBTWUxTndnWUxGS0JRRFlHMUJNLTk5RnVXcl94Nm90Z2hlZDd2aVBlSEM2V2d4ejcxYWpwMTRnelFmcTd0Sk9USHhta1U2YTNLR2dYUElreWhYazQ5Y3E1RlA4WWRWQ0NnWkJWQTNKaWFXbHVVSEhWNnB0UUw2bldWR0hoNnJPSlZ4YTNSOUhJVUl2S1VQR1l4UlNYVEFnWjJjS194X1I4R2dKOXEyVzNZYnNZZ2o0Ym85cjA3Mk5nUW96VlZzNWFwYl9PUXUwRjVTRHFIaXRmeUgtRTh0bnpTZE1iRmdjX3JXRzJERWN5dHUzQ3lKMWNkVEwxY0Y?oc=5",
    "medios": [
-    "El diario de Tandil"
+    "EL PAÍS"
    ],
    "coberturas": [
     {
-     "medio": "El diario de Tandil",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNGxrVlA1U2FQMnZtdTd1aTZzSnhUQVRkbFBKdXN1SWFLU2RaVnB4NmpBWWUzWmY1UDlKMThFTFlSOGZlYUpIdjlFRFg2Z3pOY0tlLXRjZTBEZmJqeHIxaFlLVEJod09FdVBCdHB3a0FZVlZDX251a2JUeVY1aWZXaW1ZUVZDc1hSWjhBWTRyMjNkcDlIT2hVbDd6YmlScEwwWVc4LXpxZ3g1VzIwZzlRWnVqd3hlVWstU0xSb2h0Skl5dDFPOHc?oc=5",
-     "fecha": "2026-08-02T04:04:13+00:00"
+     "medio": "EL PAÍS",
+     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPT0RrYzU1QW13Q3BNZWVMYktESkZVanBaQzZIZjVEc1VFclBELUZwc2hWUnl4bFp1MzFJTzh1Y0xVb2dmVWpjVXBPZzhiWGt1Y3I1bVNvdHp0eWhpeWRXZVdTRTk4T2RBSVFNMUZUZmZIdjgzcDZid3M5QWhwS194R25lcl81b1kzdDdtWTZONEZzVHM3SXpCWkxDR1VBbXhGcmRRRG5UVlFiM2ZPbWRGcnZkM0lpbHAxcl9vQV9GMDRCcjVtbUlvQ2FDRkFqb1MyYUhiZmNhUHlvbF9udWVOTlFrR2U0cnBDLXowQU5YemE1bGp5OWZmQVRoNmZ5T0x4bDdYaGJ5VjFZTklKeXJqXzFpeXbSAagCQVVfeXFMUEs3Z2RMRndUVFd4aDhQZG9UblZ6OTd6bXJJcnVack4tanBJc3ZYejN5bGhBTWUxTndnWUxGS0JRRFlHMUJNLTk5RnVXcl94Nm90Z2hlZDd2aVBlSEM2V2d4ejcxYWpwMTRnelFmcTd0Sk9USHhta1U2YTNLR2dYUElreWhYazQ5Y3E1RlA4WWRWQ0NnWkJWQTNKaWFXbHVVSEhWNnB0UUw2bldWR0hoNnJPSlZ4YTNSOUhJVUl2S1VQR1l4UlNYVEFnWjJjS194X1I4R2dKOXEyVzNZYnNZZ2o0Ym85cjA3Mk5nUW96VlZzNWFwYl9PUXUwRjVTRHFIaXRmeUgtRTh0bnpTZE1iRmdjX3JXRzJERWN5dHUzQ3lKMWNkVEwxY0Y?oc=5",
+     "fecha": "2026-08-02T04:00:00+00:00"
     }
    ],
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 11.5,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "comunidad",
-    "interculturalidad"
+   "horas": 11.6,
+   "notas": 2,
+   "otras_urls": [
+    "https://news.google.com/rss/articles/CBMilAJBVV95cUxPT0RrYzU1QW13Q3BNZWVMYktESkZVanBaQzZIZjVEc1VFclBELUZwc2hWUnl4bFp1MzFJTzh1Y0xVb2dmVWpjVXBPZzhiWGt1Y3I1bVNvdHp0eWhpeWRXZVdTRTk4T2RBSVFNMUZUZmZIdjgzcDZid3M5QWhwS194R25lcl81b1kzdDdtWTZONEZzVHM3SXpCWkxDR1VBbXhGcmRRRG5UVlFiM2ZPbWRGcnZkM0lpbHAxcl9vQV9GMDRCcjVtbUlvQ2FDRkFqb1MyYUhiZmNhUHlvbF9udWVOTlFrR2U0cnBDLXowQU5YemE1bGp5OWZmQVRoNmZ5T0x4bDdYaGJ5VjFZTklKeXJqXzFpeXbSAagCQVVfeXFMUEs3Z2RMRndUVFd4aDhQZG9UblZ6OTd6bXJJcnVack4tanBJc3ZYejN5bGhBTWUxTndnWUxGS0JRRFlHMUJNLTk5RnVXcl94Nm90Z2hlZDd2aVBlSEM2V2d4ejcxYWpwMTRnelFmcTd0Sk9USHhta1U2YTNLR2dYUElreWhYazQ5Y3E1RlA4WWRWQ0NnWkJWQTNKaWFXbHVVSEhWNnB0UUw2bldWR0hoNnJPSlZ4YTNSOUhJVUl2S1VQR1l4UlNYVEFnWjJjS194X1I4R2dKOXEyVzNZYnNZZ2o0Ym85cjA3Mk5nUW96VlZzNWFwYl9PUXUwRjVTRHFIaXRmeUgtRTh0bnpTZE1iRmdjX3JXRzJERWN5dHUzQ3lKMWNkVEwxY0Y?oc=5"
    ],
-   "region": "Sudamérica",
+   "ejes": [
+    "deportaciones",
+    "derechos_humanos"
+   ],
+   "region": "Norteamérica",
    "paises": [
-    "AR"
+    "US",
+    "MX"
    ],
    "paises_nombres": [
-    "Argentina",
-    "Chile",
-    "Paraguay"
+    "México",
+    "Estados Unidos"
    ],
-   "pais_inferido": true,
+   "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 5,
+   "importancia": 9,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
-   "colectividades": [
-    "LATAM"
-   ],
+   "colectividades": [],
    "actores": [
-    "organizaciones_migrantes",
-    "gobiernos_locales"
+    "organismos_migratorios",
+    "estado_nacional",
+    "sociedad_civil"
    ],
    "etapa": "destino",
-   "tipo": "evento",
-   "cobertura": 1,
-   "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "tipo": "caso",
+   "cobertura": 5,
+   "confianza": 0.95,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "encuentro nacional colectividades",
-   "angulo_sugerido": "Destacar la organización asociativa de las comunidades migrantes en el ámbito local",
-   "nota": "Encuentro organizativo de colectividades migrantes en Argentina."
+   "termino_busqueda": "ICE centro detencion",
+   "angulo_sugerido": "Acciones diplomáticas y legales frente a violaciones de derechos en centros de ICE.",
+   "nota": "México respalda demanda por abusos y condiciones en centro de detención."
   },
   {
    "id": "05b9015d110f",
@@ -3106,136 +3079,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 11.8,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Norteamérica",
-   "paises": [
-    "US"
-   ],
-   "paises_nombres": [
-    "Estados Unidos"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
-  },
-  {
-   "id": "cb6295976fba",
-   "titulo_original": "La mitad de los inmigrantes que reciben el Ingreso Mínimo Vital son marroquíes",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdm1PZ19TUnNVd292OFh3VWlZLUdLMTJ4bWZLa0s5VUE2UU9vdExkcFZKRVBSb3NGVlNoNG5zZURydHl6VzBHNHVXUFlpWlc4NlBKTm9aVFVEYnp3WXpZaE1STXVOMS1OWmVzaGR3Rlp1MWJNN0NKc004SzVuVkNYN0R3S1RUa0htSGFnaVY3am5fOUhwNzZYM2IwXzI0cV9GaEZhOUtXLS1fU2JXYnfSAbMBQVVfeXFMT1VLV0VIbkd6Qmo5SEFBX25QRHo0MFZ0RUNFV2ozeENFaENNTHR4V3BPbGwxYkVNUmkzaXk4a1JpYWhOcnJWUDI0UGpZSHc3Qkc2bTNuUGoyNTkzZF81RzZlRTJrM21oZkRSeDNwbEhsdkE0cGhGSnBCbnJXdVQ3Z05CSjIzUVd5NXVrdzQySkRpSENQSERKX2RCc0NiamVfRHZ4X3dEeWVaMU1DQi01T2FrRlk?oc=5",
-   "medios": [
-    "The Objective"
-   ],
-   "coberturas": [
-    {
-     "medio": "The Objective",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdm1PZ19TUnNVd292OFh3VWlZLUdLMTJ4bWZLa0s5VUE2UU9vdExkcFZKRVBSb3NGVlNoNG5zZURydHl6VzBHNHVXUFlpWlc4NlBKTm9aVFVEYnp3WXpZaE1STXVOMS1OWmVzaGR3Rlp1MWJNN0NKc004SzVuVkNYN0R3S1RUa0htSGFnaVY3am5fOUhwNzZYM2IwXzI0cV9GaEZhOUtXLS1fU2JXYnfSAbMBQVVfeXFMT1VLV0VIbkd6Qmo5SEFBX25QRHo0MFZ0RUNFV2ozeENFaENNTHR4V3BPbGwxYkVNUmkzaXk4a1JpYWhOcnJWUDI0UGpZSHc3Qkc2bTNuUGoyNTkzZF81RzZlRTJrM21oZkRSeDNwbEhsdkE0cGhGSnBCbnJXdVQ3Z05CSjIzUVd5NXVrdzQySkRpSENQSERKX2RCc0NiamVfRHZ4X3dEeWVaMU1DQi01T2FrRlk?oc=5",
-     "fecha": "2026-08-02T03:25:00+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 12.1,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "BO",
-    "CO",
-    "EC"
-   ],
-   "paises_nombres": [
-    "Bolivia",
-    "Colombia",
-    "Ecuador"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
-  },
-  {
-   "id": "bc354622defd",
-   "titulo_original": "Se pasó la Constitución por el traste: por decreto, el presidemente Milei habilitó la expulsión de extranjeros",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85Y2dNZzB3Zk95dUxDZzR4OU1LMVc5dkoxX0tQZ1R2MDdJOVNaS09TR3dRaUI2NjRWODRWb0g4TWRxTEd0ZkZOc01lcU1nNGJVcTFvSEZTeFlsX29xZngtSDJZSllJRzd0UHhBT1YtX1VLMlBOSlpkdDVxYw?oc=5",
-   "medios": [
-    "Agencia NOVA"
-   ],
-   "coberturas": [
-    {
-     "medio": "Agencia NOVA",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85Y2dNZzB3Zk95dUxDZzR4OU1LMVc5dkoxX0tQZ1R2MDdJOVNaS09TR3dRaUI2NjRWODRWb0g4TWRxTEd0ZkZOc01lcU1nNGJVcTFvSEZTeFlsX29xZngtSDJZSllJRzd0UHhBT1YtX1VLMlBOSlpkdDVxYw?oc=5",
-     "fecha": "2026-08-02T03:12:07+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 12.3,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "politica_migratoria",
-    "deportaciones",
-    "securitizacion"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "AR"
-   ],
-   "paises_nombres": [
-    "Argentina"
-   ],
-   "pais_inferido": false,
-   "fuera_de_alcance": false,
-   "importancia": 10,
-   "clasificado": true,
-   "es_migratorio": true,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [
-    "estado_nacional",
-    "poder_judicial"
-   ],
-   "etapa": "destino",
-   "tipo": "normativa",
-   "cobertura": 8,
-   "confianza": 0.95,
-   "tiene_fuente_primaria": true,
-   "contiene_datos_personales": false,
-   "requiere_verificacion": false,
-   "terminologia_problematica": [],
-   "termino_busqueda": "decreto expulsion extranjeros",
-   "angulo_sugerido": "Analizar la constitucionalidad de las modificaciones a los procedimientos de expulsión express",
-   "nota": "Modificación por decreto de normativas de expulsión con alto impacto en derechos."
-  },
-  {
-   "id": "ff457db39a80",
-   "titulo_original": "De Ceuta al Río Grande: las barreras flotantes que España y EE.UU. usan contra los migrantes",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1djNG52UVJSWHNMUDFFVzhlVk5OQ2FBM2laUWplQ1ozZjRaV0RfT085a01OOUNybFNNR2s4SEZYV0h1NFVoV2Q5ajdSVFpSMXMwb3hUTy1RUmFBdE1pdVRQM0dTR0NZNEZOcGx0WVlZY0h6SHF0LVFVbWZvX3JXMjNTT0w3VUZGNm5wMmozaXgzTE1UMFg1dWRzUWxuYjVjMGNiM1VKTTlyMVFWTlhaMlItOE5oUTNBVkI0bUlfa2twQQ?oc=5",
-   "medios": [
-    "laopinion.com"
-   ],
-   "coberturas": [
-    {
-     "medio": "laopinion.com",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1djNG52UVJSWHNMUDFFVzhlVk5OQ2FBM2laUWplQ1ozZjRaV0RfT085a01OOUNybFNNR2s4SEZYV0h1NFVoV2Q5ajdSVFpSMXMwb3hUTy1RUmFBdE1pdVRQM0dTR0NZNEZOcGx0WVlZY0h6SHF0LVFVbWZvX3JXMjNTT0w3VUZGNm5wMmozaXgzTE1UMFg1dWRzUWxuYjVjMGNiM1VKTTlyMVFWTlhaMlItOE5oUTNBVkI0bUlfa2twQQ?oc=5",
-     "fecha": "2026-08-02T03:14:00+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 12.3,
+   "horas": 11.9,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -3286,25 +3130,115 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 6,
+   "importancia": 5,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
-   "colectividades": [],
+   "colectividades": [
+    "LATAM"
+   ],
    "actores": [
     "medios"
    ],
    "etapa": "destino",
    "tipo": "dato",
    "cobertura": 2,
-   "confianza": 0.9,
+   "confianza": 0.85,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "cobertura mediatica migracion",
-   "angulo_sugerido": "Revisar cómo los medios regionales encuadran los procesos migratorios descentralizados",
-   "nota": "Análisis sobre la representación mediática de la migración en regiones chilenas."
+   "termino_busqueda": "migracion regiones chile",
+   "angulo_sugerido": "Análisis de cómo los medios regionales retratan los flujos migratorios.",
+   "nota": "Editorial sobre el tratamiento informativo de la migración en Chile."
+  },
+  {
+   "id": "ff457db39a80",
+   "titulo_original": "De Ceuta al Río Grande: las barreras flotantes que España y EE.UU. usan contra los migrantes",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1djNG52UVJSWHNMUDFFVzhlVk5OQ2FBM2laUWplQ1ozZjRaV0RfT085a01OOUNybFNNR2s4SEZYV0h1NFVoV2Q5ajdSVFpSMXMwb3hUTy1RUmFBdE1pdVRQM0dTR0NZNEZOcGx0WVlZY0h6SHF0LVFVbWZvX3JXMjNTT0w3VUZGNm5wMmozaXgzTE1UMFg1dWRzUWxuYjVjMGNiM1VKTTlyMVFWTlhaMlItOE5oUTNBVkI0bUlfa2twQQ?oc=5",
+   "medios": [
+    "laopinion.com"
+   ],
+   "coberturas": [
+    {
+     "medio": "laopinion.com",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV1djNG52UVJSWHNMUDFFVzhlVk5OQ2FBM2laUWplQ1ozZjRaV0RfT085a01OOUNybFNNR2s4SEZYV0h1NFVoV2Q5ajdSVFpSMXMwb3hUTy1RUmFBdE1pdVRQM0dTR0NZNEZOcGx0WVlZY0h6SHF0LVFVbWZvX3JXMjNTT0w3VUZGNm5wMmozaXgzTE1UMFg1dWRzUWxuYjVjMGNiM1VKTTlyMVFWTlhaMlItOE5oUTNBVkI0bUlfa2twQQ?oc=5",
+     "fecha": "2026-08-02T03:14:00+00:00"
+    }
+   ],
+   "velocidad": 1,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 12.4,
+   "notas": 1,
+   "otras_urls": [],
+   "ejes": [
+    "estatus"
+   ],
+   "region": "Norteamérica",
+   "paises": [
+    "US"
+   ],
+   "paises_nombres": [
+    "Estados Unidos"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
+  },
+  {
+   "id": "ea94e155f0bb",
+   "titulo_original": "La ayuda humanitaria de EE.UU. llega a Venezuela tras devastadores terremotos",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMURpS3N0Wi0yQno4UUFjQ3hiR0RyeThaNWtwd3kzb0w5UmpfMDlWNTBQSExJYVc1VXZVT0hyRUVvZzNfSDJzWjNldGZ2R2hUYVZ6T3dvNlRVRElLVk5ZOWx1enMwRFBZSUdnUXM3SUViNktMYmZIQU4xTkdNTkNPVHNsV2NFQmJPT2NPNjRWZUxZeWlNUDdXWENQcUdsNzRsZVpTVVJrNG5YNEs3b09hSEZQeGM2REJ2YkUzWDEzN2xPSFk?oc=5",
+   "medios": [
+    "Contexto Tucumán"
+   ],
+   "coberturas": [
+    {
+     "medio": "Contexto Tucumán",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMURpS3N0Wi0yQno4UUFjQ3hiR0RyeThaNWtwd3kzb0w5UmpfMDlWNTBQSExJYVc1VXZVT0hyRUVvZzNfSDJzWjNldGZ2R2hUYVZ6T3dvNlRVRElLVk5ZOWx1enMwRFBZSUdnUXM3SUViNktMYmZIQU4xTkdNTkNPVHNsV2NFQmJPT2NPNjRWZUxZeWlNUDdXWENQcUdsNzRsZVpTVVJrNG5YNEs3b09hSEZQeGM2REJ2YkUzWDEzN2xPSFk?oc=5",
+     "fecha": "2026-08-02T03:04:00+00:00"
+    }
+   ],
+   "velocidad": 1,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 12.5,
+   "notas": 1,
+   "otras_urls": [],
+   "ejes": [
+    "movilidad_ambiental"
+   ],
+   "region": "Sudamérica",
+   "paises": [
+    "US",
+    "VE"
+   ],
+   "paises_nombres": [
+    "Venezuela"
+   ],
+   "pais_inferido": false,
+   "fuera_de_alcance": false,
+   "importancia": 4,
+   "clasificado": true,
+   "es_migratorio": false,
+   "poblaciones": [],
+   "colectividades": [],
+   "actores": [
+    "estado_nacional"
+   ],
+   "etapa": null,
+   "tipo": "evento",
+   "cobertura": 6,
+   "confianza": 0.8,
+   "tiene_fuente_primaria": false,
+   "contiene_datos_personales": false,
+   "requiere_verificacion": false,
+   "terminologia_problematica": [],
+   "termino_busqueda": "ayuda humanitaria terremotos",
+   "angulo_sugerido": null,
+   "nota": "Ayuda humanitaria por desastres naturales, sin eje principal en migraciones."
   },
   {
    "id": "80069c995f5f",
@@ -3323,7 +3257,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 12.5,
+   "horas": 12.6,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMinwJBVV95cUxQMnlIRkhsOGJ4anJhcmRnS1lnMHJISXd5S20zeTZPNGZQN1dNOVpMYkg5dU80aUNEZ3ZpVG84cEV1X2YwZVFsb1pGbnpMRG1qRW11RU94bWJIVUpYVU41X1BRNVlxSXg0MzA1cW51bzNQeE1zTC1pWWtsWExZTkZuT2tSUjNkNkp0YzEzVkZLSjBHcGpaVnB4VmtfUkcyeXZnNzlwQ0xPTl85Sy1tUWRYZFdmMzlnOExtbEdjR1diRGhIWUxKeElrbWhWSzNPSTZiVUEzczlDd0w1bXBncmhJR2p5SDZCdlpFNndNNmlYeHNWYzViNUl3eXVBYk1XRnhmRnlXYnVrd3pDWjZSNHY0LXRHTWtQVzM3TjdkaDlXNA?oc=5"
@@ -3348,20 +3282,19 @@
    "poblaciones": [],
    "colectividades": [],
    "actores": [
-    "organismos_migratorios",
-    "sociedad_civil"
+    "organismos_migratorios"
    ],
    "etapa": "destino",
    "tipo": "caso",
-   "cobertura": 3,
+   "cobertura": 4,
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": true,
    "terminologia_problematica": [],
-   "termino_busqueda": "ICE detencion estatus",
-   "angulo_sugerido": "Investigar fallas sistemáticas en detenciones administrativas a personas con residencia regular",
-   "nota": "Denuncias graves sobre detención de personas migrantes con estatus legal vigente."
+   "termino_busqueda": "inmigrantes legales detenidos",
+   "angulo_sugerido": "Investigar cuántas personas con estatus regular enfrentan detenciones arbitrarias.",
+   "nota": "Denuncia sobre arresto de personas con estatus legal en centros de ICE."
   },
   {
    "id": "eca3fa546172",
@@ -3380,12 +3313,12 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 12.5,
+   "horas": 12.6,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "odio",
-    "politica_migratoria"
+    "politica_migratoria",
+    "odio"
    ],
    "region": "Sudamérica",
    "paises": [
@@ -3397,7 +3330,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 6,
+   "importancia": 5,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -3405,17 +3338,17 @@
    "actores": [
     "estado_nacional"
    ],
-   "etapa": "destino",
+   "etapa": null,
    "tipo": "discurso",
-   "cobertura": 5,
+   "cobertura": 6,
    "confianza": 0.9,
-   "tiene_fuente_primaria": true,
+   "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "declaraciones conflicto migratorio",
-   "angulo_sugerido": "Contrastar las declaraciones políticas con los datos reales sobre flujos y políticas europeas",
-   "nota": "Declaraciones de mandatario sobre políticas migratorias europeas."
+   "termino_busqueda": "conflicto migratorio España",
+   "angulo_sugerido": "Repercusiones políticas de las declaraciones sobre política migratoria europea.",
+   "nota": "Declaraciones políticas sobre el manejo de la migración en España."
   },
   {
    "id": "69daba3b5461",
@@ -3434,7 +3367,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 12.5,
+   "horas": 12.6,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -3457,103 +3390,6 @@
    "clasificado": false
   },
   {
-   "id": "ea94e155f0bb",
-   "titulo_original": "La ayuda humanitaria de EE.UU. llega a Venezuela tras devastadores terremotos",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMURpS3N0Wi0yQno4UUFjQ3hiR0RyeThaNWtwd3kzb0w5UmpfMDlWNTBQSExJYVc1VXZVT0hyRUVvZzNfSDJzWjNldGZ2R2hUYVZ6T3dvNlRVRElLVk5ZOWx1enMwRFBZSUdnUXM3SUViNktMYmZIQU4xTkdNTkNPVHNsV2NFQmJPT2NPNjRWZUxZeWlNUDdXWENQcUdsNzRsZVpTVVJrNG5YNEs3b09hSEZQeGM2REJ2YkUzWDEzN2xPSFk?oc=5",
-   "medios": [
-    "contextotucuman.com"
-   ],
-   "coberturas": [
-    {
-     "medio": "contextotucuman.com",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMURpS3N0Wi0yQno4UUFjQ3hiR0RyeThaNWtwd3kzb0w5UmpfMDlWNTBQSExJYVc1VXZVT0hyRUVvZzNfSDJzWjNldGZ2R2hUYVZ6T3dvNlRVRElLVk5ZOWx1enMwRFBZSUdnUXM3SUViNktMYmZIQU4xTkdNTkNPVHNsV2NFQmJPT2NPNjRWZUxZeWlNUDdXWENQcUdsNzRsZVpTVVJrNG5YNEs3b09hSEZQeGM2REJ2YkUzWDEzN2xPSFk?oc=5",
-     "fecha": "2026-08-02T03:04:00+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 12.5,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [],
-   "region": "Sudamérica",
-   "paises": [
-    "VE",
-    "US"
-   ],
-   "paises_nombres": [
-    "Venezuela"
-   ],
-   "pais_inferido": false,
-   "fuera_de_alcance": false,
-   "importancia": 2,
-   "clasificado": true,
-   "es_migratorio": false,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [],
-   "etapa": null,
-   "tipo": "evento",
-   "cobertura": null,
-   "confianza": 0.9,
-   "tiene_fuente_primaria": false,
-   "contiene_datos_personales": false,
-   "requiere_verificacion": false,
-   "terminologia_problematica": [],
-   "termino_busqueda": null,
-   "angulo_sugerido": null,
-   "nota": "Ayuda humanitaria por desastres naturales, sin movilidad humana como eje."
-  },
-  {
-   "id": "00d6f55bc86a",
-   "titulo_original": "Ola de CALOR EXTREMO en EE. UU. PONE EN PELIGRO a 40 millones de personas en estos estados: reportan mareos y deshidratación",
-   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOQ0RLZHQyZUw1VEtuRHM3ZThKTE5JZXM0S21rNTVMRWQ0NUdieEJ6ZXF5Yk9VMVNOdFplNUQwRTBkRV85U2d1YklsWDlROVBKbS1NUHN2N2JxcVE0c0JkeGpkb3hWNEpWdjRNUGE1d1N3OEFOUm5EaHdydWliYTh5anYtLUk0Y0c3Mlhud24tU291aGx3QkxIYUdXVHhkc2Z2XzFHUEJ5RklWb3BFa1lnYlh5cmhBSldGVGxqMGk5NmxkOXB4YlhvWUcxaE5yNTEzQl80cmtZSzFxRGxmZE5GRlk5dUJiRGUwbjA1d0xYUEU0di1sRF9RQTRZZEtVMFdQMzRJX3c2UjVSUWVnTUF1cFpFb3ptNmJL0gGYAkFVX3lxTE5DREtkdDJlTDVUS25EczdlOEpMTkllczRLbWs1NUxFZDQ1R2J4QnplcXliT1UxU050WmU1RDBFMGRFXzlTZ3ViSWxYOVE5UEptLU1Qc3Y3YnFxUTRzQmR4amRveFY0SlZ2NE1QYTV3U3c4QU5SbkRod3J1aWJhOHlqdi0tSTRjRzcyWG53bi1Tb3VobHdCTEhhR1dUeGRzZnZfMUdQQnlGSVZvcEVrWWdiWHlyaEFKV0ZUbGowaTk2bGQ5cHhiWG9ZRzFoTnI1MTNCXzRya1lLMXFEbGZkTkZGWTl1QmJEZTBuMDV3TFhQRTR2LWxEX1FBNFlkS1UwV1AzNElfdzZSNVJRZWdNQXVwWkVvem02Yks?oc=5",
-   "medios": [
-    "Diario Libero"
-   ],
-   "coberturas": [
-    {
-     "medio": "Diario Libero",
-     "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOQ0RLZHQyZUw1VEtuRHM3ZThKTE5JZXM0S21rNTVMRWQ0NUdieEJ6ZXF5Yk9VMVNOdFplNUQwRTBkRV85U2d1YklsWDlROVBKbS1NUHN2N2JxcVE0c0JkeGpkb3hWNEpWdjRNUGE1d1N3OEFOUm5EaHdydWliYTh5anYtLUk0Y0c3Mlhud24tU291aGx3QkxIYUdXVHhkc2Z2XzFHUEJ5RklWb3BFa1lnYlh5cmhBSldGVGxqMGk5NmxkOXB4YlhvWUcxaE5yNTEzQl80cmtZSzFxRGxmZE5GRlk5dUJiRGUwbjA1d0xYUEU0di1sRF9RQTRZZEtVMFdQMzRJX3c2UjVSUWVnTUF1cFpFb3ptNmJL0gGYAkFVX3lxTE5DREtkdDJlTDVUS25EczdlOEpMTkllczRLbWs1NUxFZDQ1R2J4QnplcXliT1UxU050WmU1RDBFMGRFXzlTZ3ViSWxYOVE5UEptLU1Qc3Y3YnFxUTRzQmR4amRveFY0SlZ2NE1QYTV3U3c4QU5SbkRod3J1aWJhOHlqdi0tSTRjRzcyWG53bi1Tb3VobHdCTEhhR1dUeGRzZnZfMUdQQnlGSVZvcEVrWWdiWHlyaEFKV0ZUbGowaTk2bGQ5cHhiWG9ZRzFoTnI1MTNCXzRya1lLMXFEbGZkTkZGWTl1QmJEZTBuMDV3TFhQRTR2LWxEX1FBNFlkS1UwV1AzNElfdzZSNVJRZWdNQXVwWkVvem02Yks?oc=5",
-     "fecha": "2026-08-02T02:56:02+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 12.6,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [],
-   "region": "Norteamérica",
-   "paises": [
-    "US"
-   ],
-   "paises_nombres": [
-    "Estados Unidos"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": false,
-   "importancia": 1,
-   "clasificado": true,
-   "es_migratorio": false,
-   "poblaciones": [],
-   "colectividades": [],
-   "actores": [],
-   "etapa": null,
-   "tipo": "evento",
-   "cobertura": null,
-   "confianza": 0.95,
-   "tiene_fuente_primaria": false,
-   "contiene_datos_personales": false,
-   "requiere_verificacion": false,
-   "terminologia_problematica": [],
-   "termino_busqueda": null,
-   "angulo_sugerido": null,
-   "nota": "Ola de calor general, sin vinculación con migraciones."
-  },
-  {
    "id": "f3269f70ecb2",
    "titulo_original": "El temor a ICE ya cambia la vida en el campo: trabajadores evitan médicos y compras",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNekJSaGVQSDdGck94TWhpcHllblFiUDdVUkNoY0dNSXVqSF91ZFhQRGJTZTFyeWs2ajZxYnVLSl9oRzdxR1UzN1ZnRm9XLU4wMEhWUkZuX0dVenA0N2k4RzNfY18tazdEdVBkQkduQkxTNjktNl90NENvN0luTWFEVS02N3l1LXduN3JKUVRrZDdqeFU?oc=5",
@@ -3570,13 +3406,13 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 12.7,
+   "horas": 12.8,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
     "deportaciones",
     "acceso_derechos",
-    "securitizacion"
+    "trabajo"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -3590,13 +3426,10 @@
    "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
-   "poblaciones": [
-    "trabajadoras_hogar"
-   ],
+   "poblaciones": [],
    "colectividades": [],
    "actores": [
-    "organismos_migratorios",
-    "comunidades_receptoras"
+    "organismos_migratorios"
    ],
    "etapa": "destino",
    "tipo": "caso",
@@ -3606,9 +3439,9 @@
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "ICE operativos temor",
-   "angulo_sugerido": "Relevar el impacto de las redadas en el acceso a servicios básicos de salud.",
-   "nota": "El miedo a los operativos de ICE restringe el acceso a derechos fundamentales."
+   "termino_busqueda": "temor ICE trabajadores",
+   "angulo_sugerido": "Impacto del miedo a la deportación en el acceso a salud de trabajadores rurales.",
+   "nota": "Efectos colaterales del temor a redadas en servicios básicos y laborales."
   },
   {
    "id": "dbfec63d9970",
@@ -3658,14 +3491,14 @@
    "etapa": "destino",
    "tipo": "caso",
    "cobertura": 7,
-   "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "confianza": 0.95,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "fallo judicial migrantes",
-   "angulo_sugerido": "Analizar los fundamentos jurídicos del fallo frente a las políticas de la administración.",
-   "nota": "Litigio migratorio con impacto directo sobre derechos de personas migrantes."
+   "angulo_sugerido": "Análisis del fallo judicial y su impacto en la política migratoria vigente.",
+   "nota": "Decisión judicial favorable a migrantes frente a medidas de la administración."
   },
   {
    "id": "6a0519b65c0f",
@@ -3684,7 +3517,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 14.4,
+   "horas": 14.5,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -3693,7 +3526,8 @@
    ],
    "region": "Caribe",
    "paises": [
-    "US"
+    "US",
+    "HT"
    ],
    "paises_nombres": [
     "Haití"
@@ -3704,8 +3538,7 @@
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [
-    "personas_mayores",
-    "familias"
+    "personas_mayores"
    ],
    "colectividades": [
     "HT"
@@ -3719,9 +3552,48 @@
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "fin TPS impacto",
-   "angulo_sugerido": "Examinar el efecto dominó de la caída del TPS en las redes de cuidado comunitario.",
-   "nota": "El fin del estatus de protección temporal impacta en cadenas intergeneracionales de cuidado."
+   "termino_busqueda": "fin TPS haitianos",
+   "angulo_sugerido": "Efectos colaterales de la finalización del TPS en redes de cuidado y adultos mayores.",
+   "nota": "Análisis sobre el impacto del fin del TPS en personas dependientes de beneficiarios."
+  },
+  {
+   "id": "234ae44a3ab4",
+   "titulo_original": "Rey Felipe VI condena la crisis migratoria en Ceuta: Exige medidas estrictas de seguridad y control",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPOVg2ODdtdUtxZGsxSml2dVZyNi1wME84eHZGQWF5Y0VISlZXdUhUZ1pacHZobzZsNWdkdGF3NkN1Z284RVVib0Q3c19WVFRmWTBpMHVNTkQzdmFyR3BoNE1QaHRnR25sQlFaMzU4QVdSUUJEUldLbUo2T1dDb1EwWUlmb3JwWGZac2JMS2FyOVNxYy1pV1poVXpMNEQ2eTlGN0k1RGNBTkpLVXVNZlRTWFo3dUhSSUNrMXhjWkVXX1V0WnpHdko1ZjhEV091WmFlMmI4T0hkQzByRlhZLWQwMFdTTGdjUXcwRGk1NTBn?oc=5",
+   "medios": [
+    "heraldousa.com"
+   ],
+   "coberturas": [
+    {
+     "medio": "heraldousa.com",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPOVg2ODdtdUtxZGsxSml2dVZyNi1wME84eHZGQWF5Y0VISlZXdUhUZ1pacHZobzZsNWdkdGF3NkN1Z284RVVib0Q3c19WVFRmWTBpMHVNTkQzdmFyR3BoNE1QaHRnR25sQlFaMzU4QVdSUUJEUldLbUo2T1dDb1EwWUlmb3JwWGZac2JMS2FyOVNxYy1pV1poVXpMNEQ2eTlGN0k1RGNBTkpLVXVNZlRTWFo3dUhSSUNrMXhjWkVXX1V0WnpHdko1ZjhEV091WmFlMmI4T0hkQzByRlhZLWQwMFdTTGdjUXcwRGk1NTBn?oc=5",
+     "fecha": "2026-08-02T00:05:00+00:00"
+    }
+   ],
+   "velocidad": 1,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 15.5,
+   "notas": 1,
+   "otras_urls": [],
+   "ejes": [
+    "estatus"
+   ],
+   "region": "Sudamérica",
+   "paises": [
+    "BO",
+    "CO",
+    "EC"
+   ],
+   "paises_nombres": [
+    "Bolivia",
+    "Colombia",
+    "Ecuador"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
   },
   {
    "id": "2ec6356bab60",
@@ -3740,7 +3612,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 15.6,
+   "horas": 15.7,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRGZyMDRtV1l5RVV5Si00YjV2aER1YWdqQ3RYNkcwTWt1ZzFoQW1Kc1E2dGhJQVJ3MUJzd21MMjJ2QVlfUlRmV1lYMDJpTXhpeUNjRjd3akIxQ3RURHB1bk5sWDQ0c2wwTC1mTWVjQjZDQW9RTXo1VFUxaHV3UFl5MlNDbmcwTjNZWllqdkJtZ2MwVzZLTElxeWt5UUZtLXZlSUpwX05wSERuUGpRV0R4MUlDZmNITU8zd1BsWnpHSU9iQkpxWHB4S2RDUnVkVUM4dDVB0gHnAUFVX3lxTE50SnF4cXlpdzRxRlVpSjVJOUhYSXdZZDJPTjlWRkZHemZFX1NsbFNMQ0U1LWN4MTgxQmRiWXF4SVlweXI5VXEzWG83UVZDQTkwNHgzUEZlRHlGNjVrWnYyTzhvVzVLZVB3ZWhra1JQR2c1RHRUUUNFNzlpOEQ3WllIekVveFBkM3ppak95N0htRFJROUNvRm1oNjFiNFFZTjVnbXpXM2tFeTBDbVI4dGk0U0k2WlpPaHN2ZTVUdm02VHpfN01jN3Q0NjYxYWV1SlRKSHBlaGQybVNHVlh2OHNNUVlmQWxZWQ?oc=5"
@@ -3781,7 +3653,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 15.7,
+   "horas": 15.8,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -3820,8 +3692,8 @@
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "comunidad",
-    "deportaciones"
+    "deportaciones",
+    "comunidad"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -3840,19 +3712,20 @@
     "LATAM"
    ],
    "actores": [
-    "organizaciones_migrantes"
+    "organizaciones_migrantes",
+    "organismos_migratorios"
    ],
    "etapa": "destino",
-   "tipo": "evento",
-   "cobertura": 4,
+   "tipo": "servicio",
+   "cobertura": 3,
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "redes comunitarias contra",
-   "angulo_sugerido": "Documentar las estrategias comunitarias de autodefensa frente a las redadas.",
-   "nota": "Organización comunitaria frente al avance de operativos de control."
+   "termino_busqueda": "ICE operativos alertas",
+   "angulo_sugerido": "Cómo se organizan las redes comunitarias de autoprotección frente a las redadas.",
+   "nota": "Estrategias comunitarias frente a operativos de control migratorio."
   },
   {
    "id": "ec3f4e4c221f",
@@ -3914,7 +3787,7 @@
    ],
    "ejes": [
     "deportaciones",
-    "securitizacion"
+    "odio"
    ],
    "region": "Regional",
    "paises": [
@@ -3927,7 +3800,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 6,
+   "importancia": 5,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -3935,12 +3808,11 @@
     "GT"
    ],
    "actores": [
-    "organismos_migratorios",
-    "poder_judicial"
+    "organismos_migratorios"
    ],
    "etapa": "destino",
    "tipo": "caso",
-   "cobertura": 5,
+   "cobertura": 6,
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
@@ -3949,8 +3821,8 @@
     "ilegal"
    ],
    "termino_busqueda": "ICE arrestos guatemalteco",
-   "angulo_sugerido": "Analizar los fallos en los sistemas de excarcelación y su uso político.",
-   "nota": "Uso de terminología problemática en el titular. Tratamiento de detención y deportación."
+   "angulo_sugerido": null,
+   "nota": "Caso policial de detención individual por parte de ICE con uso de terminología estigmatizante."
   },
   {
    "id": "ff5f611fefce",
@@ -3969,7 +3841,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 16.5,
+   "horas": 16.6,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4012,7 +3884,6 @@
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "servicios",
     "acceso_derechos",
     "comunidad"
    ],
@@ -4025,7 +3896,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 6,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [
@@ -4044,9 +3915,9 @@
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "ayuda humanitaria migrantes",
-   "angulo_sugerido": "Mapear redes de apoyo alimentario para población migrante atemorizada por redadas.",
-   "nota": "Información accionable y de apoyo comunitario frente a contexto de persecución."
+   "termino_busqueda": "ayuda alimentos migrantes",
+   "angulo_sugerido": "Redes de apoyo solidario ante el temor generalizado a salir de los hogares.",
+   "nota": "Acciones comunitarias de asistencia básica ante clima de temor por operativos."
   },
   {
    "id": "c721818aea2b",
@@ -4071,8 +3942,8 @@
     "https://news.google.com/rss/articles/CBMitwFBVV95cUxObHc4bHdNS0FKZlJRdS14Q3RRaW1XdDNrQXNPcl9aMjJlcHJUMm94Ti1FZHVVQ3VKYlhyZThRT01CSV8xMmxNSWpYc0tGVHpDTzd2TmtnOXJ0VGM0SkoxeU56aFpFLVlJLTVRdUQwdk5fUC1TWXJPT1BYVF9uZWFmeS1vNndGR0dBZVBVUXYwdVBJbmJHWHNqNXJkUUtCQlVNWnZySmFCYlNRdVhVVDdvRjE3SFRlZk3SAbwBQVVfeXFMTmlEVlpObDdxSEQxNnFHbm1xVnlSTEN3ZndjMjJWX2xBeXhjV1J0WVkxeXFhdnhad2MzX0RSeVdhQU5MalF0TGx6TlVLSUF4eTE0YVV0enBBSW5GaHBjSHVwd3ZmcE01QUZTSGpoSHZhejFoY2RLTzg0Z1BHaHAxMlROaktwbFkyLVNOODNUTXVZbmV5MUZiQXhTM3R0cGxsMmxnczU2aHpFZjFNVFRwazdIYlRleVJ6dWlZRHM?oc=5"
    ],
    "ejes": [
-    "odio",
-    "estatus"
+    "estatus",
+    "odio"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -4083,7 +3954,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 6,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -4100,7 +3971,7 @@
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "estudiantes internacionales xenofobia",
-   "angulo_sugerido": "Analizar las barreras simbólicas y administrativas que enfrentan los estudiantes extranjeros.",
+   "angulo_sugerido": "Barreras y hostilidad institucional que enfrentan los estudiantes extranjeros.",
    "nota": "Aborda la xenofobia institucional y social hacia estudiantes internacionales."
   },
   {
@@ -4136,7 +4007,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 8,
+   "importancia": 7,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -4146,15 +4017,15 @@
    ],
    "etapa": "destino",
    "tipo": "discurso",
-   "cobertura": 3,
+   "cobertura": 4,
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "centros de detencion",
-   "angulo_sugerido": "Recuperar denuncias sobre violaciones a derechos humanos en centros de detención.",
-   "nota": "Denuncia sobre las condiciones sistemáticas en centros de detención."
+   "angulo_sugerido": "Denuncia sobre las condiciones de reclusión en los centros de detención.",
+   "nota": "Entrevista o declaración centrada en las violaciones a derechos humanos en centros de detención."
   },
   {
    "id": "ee0184a8b7ab",
@@ -4173,7 +4044,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 17.0,
+   "horas": 17.1,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4192,23 +4063,23 @@
    "clasificado": false
   },
   {
-   "id": "1c51a74845e1",
+   "id": "589eeed316f4",
    "titulo_original": "Órdago de Sánchez a la UE",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU2hxWUFpd2RwLWdwN2xxWXd0UHlCV2xSaHU2bEhfd2JId3lObml0UTFGWUtYUnc3VkNXY0dTUEE4MlVGOVBTbXFTa2l6U0ZyemlQZnhBMXVRemo1cHRTMGlrclBhQzhyU2kzTTJCWFh4eEpNbEsxZEpHWV9WblE3cHo3Z9IBiAFBVV95cUxPT3VhZmhtT1I1SEhsUWFXQ3lRdk5oVE1qa1lqajAtT3hqeDNXSUhFU3A1V2VZOTB6RGhfYVo1UDZRTnRDal83RUZlcG8xWl9TWnJKNllET1BhMzZKLV9SR2lDODU1WVBqM0xDMlpsWjV0LXJieEtoNm1HNlZRZDZsdkQ2aGpWdVVt?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT3VhZmhtT1I1SEhsUWFXQ3lRdk5oVE1qa1lqajAtT3hqeDNXSUhFU3A1V2VZOTB6RGhfYVo1UDZRTnRDal83RUZlcG8xWl9TWnJKNllET1BhMzZKLV9SR2lDODU1WVBqM0xDMlpsWjV0LXJieEtoNm1HNlZRZDZsdkQ2aGpWdVVt0gGIAUFVX3lxTE9PdWFmaG1PUjVISGxRYVdDeVF2TmhUTWprWWpqMC1PeGp4M1dJSEVTcDVXZVk5MHpEaF9hWjVQNlFOdENqXzdFRmVwbzFaX1Nacko2WURPUGEzNkotX1JHaUM4NTVZUGozTEMyWmxaNXQtcmJ4S2g2bUc2VlFkNmx2RDZoalZ1VW0?oc=5",
    "medios": [
     "La Vanguardia"
    ],
    "coberturas": [
     {
      "medio": "La Vanguardia",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU2hxWUFpd2RwLWdwN2xxWXd0UHlCV2xSaHU2bEhfd2JId3lObml0UTFGWUtYUnc3VkNXY0dTUEE4MlVGOVBTbXFTa2l6U0ZyemlQZnhBMXVRemo1cHRTMGlrclBhQzhyU2kzTTJCWFh4eEpNbEsxZEpHWV9WblE3cHo3Z9IBiAFBVV95cUxPT3VhZmhtT1I1SEhsUWFXQ3lRdk5oVE1qa1lqajAtT3hqeDNXSUhFU3A1V2VZOTB6RGhfYVo1UDZRTnRDal83RUZlcG8xWl9TWnJKNllET1BhMzZKLV9SR2lDODU1WVBqM0xDMlpsWjV0LXJieEtoNm1HNlZRZDZsdkQ2aGpWdVVt?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT3VhZmhtT1I1SEhsUWFXQ3lRdk5oVE1qa1lqajAtT3hqeDNXSUhFU3A1V2VZOTB6RGhfYVo1UDZRTnRDal83RUZlcG8xWl9TWnJKNllET1BhMzZKLV9SR2lDODU1WVBqM0xDMlpsWjV0LXJieEtoNm1HNlZRZDZsdkQ2aGpWdVVt0gGIAUFVX3lxTE9PdWFmaG1PUjVISGxRYVdDeVF2TmhUTWprWWpqMC1PeGp4M1dJSEVTcDVXZVk5MHpEaF9hWjVQNlFOdENqXzdFRmVwbzFaX1Nacko2WURPUGEzNkotX1JHaUM4NTVZUGozTEMyWmxaNXQtcmJ4S2g2bUc2VlFkNmx2RDZoalZ1VW0?oc=5",
      "fecha": "2026-08-01T22:05:00+00:00"
     }
    ],
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 17.4,
+   "horas": 17.5,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4247,7 +4118,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 17.7,
+   "horas": 17.8,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4268,11 +4139,12 @@
    "poblaciones": [],
    "colectividades": [],
    "actores": [
-    "empresas"
+    "empresas",
+    "estado_nacional"
    ],
    "etapa": null,
    "tipo": "caso",
-   "cobertura": null,
+   "cobertura": 5,
    "confianza": 0.95,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
@@ -4280,7 +4152,7 @@
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Sanción corporativa por prácticas comerciales engañosas, sin vínculo con migraciones."
+   "nota": "Demanda y acuerdo económico por prácticas comerciales engañosas de una corporación. Sin vínculo migratorio."
   },
   {
    "id": "62c85d0e64b1",
@@ -4299,7 +4171,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 17.7,
+   "horas": 17.8,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4338,7 +4210,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 18.3,
+   "horas": 18.4,
    "notas": 6,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMipAJBVV95cUxOYUpudkVoXzJMVzVlSEV3X2lQQmVwbHloWHpySUs4NERLVko5MmRWRXJtZW94eU83d3czeTl3RjZ3aWtSYU5LSDdtRGhkUlFPeGQ0c3VOQVlSTF9WRjBYT05zRzFmM1JZYktEV25UVk41RnNBa1hRYXpWMVhXRzM2S0pHZmZkT3lrMlkxRWJTNnRBV0ZlZkVXMXpJaHJjSnEwZE45Y0RWeVNTQTNGZFNmaG1XUGlLVmd5dGZubEhPdmh1RFpuOTRQT09KbndrZngwLUhlbDJfQm9ObG9kaTNPNHZ3NXVyU2k1VFpfZFpqUW9ZdFZSNWdqNjBiUE5hWmhJYjlsRmdvVWNYbHBpWHJuUXlfUjBwNTExbG5GUkhBVWlVY3Nu0gGkAkFVX3lxTE5hSm52RWhfMkxXNWVIRXdfaVBCZXBseWhYenJJSzg0REtWSjkyZFZFcm1lb3h5Tzd3dzN5OXdGNndpa1JhTktIN21EaGRSUU94ZDRzdU5BWVJMX1ZGMFhPTnNHMWYzUlliS0RXblRWTjVGc0FrWFFhelYxWFdHMzZLSkdmZmRPeWsyWTFFYlM2dEFXRmVmRVcxeklocmNKcTBkTjljRFZ5U1NBM0ZkU2ZobVdQaUtWZ3l0Zm5sSE92aHVEWm45NFBPT0pud2tmeDAtSGVsMl9Cb05sb2RpM080dnc1dXJTaTVUWl9kWmpRb1l0VlI1Z2o2MGJQTmFaaEliOWxGZ29VY1hscGlYcm5ReV9SMHA1MTFsbkZSSEFVaVVjc24?oc=5",
@@ -4360,27 +4232,25 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 9,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
-   "poblaciones": [
-    "familias"
-   ],
+   "poblaciones": [],
    "colectividades": [],
    "actores": [
     "organismos_migratorios"
    ],
    "etapa": "destino",
    "tipo": "caso",
-   "cobertura": 6,
+   "cobertura": 5,
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": true,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "ICE detenciones Glendale",
-   "angulo_sugerido": "Registrar el impacto de las detenciones arbitrarias en la separación familiar.",
-   "nota": "Detención por ICE con afectación directa a la dinámica familiar."
+   "termino_busqueda": "ICE detencion Glendale",
+   "angulo_sugerido": "Circunstancias de la detención y vulneración de debido proceso.",
+   "nota": "Caso individual de detención arbitraria por parte de ICE."
   },
   {
    "id": "9249eb2008df",
@@ -4399,7 +4269,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 18.3,
+   "horas": 18.4,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4433,8 +4303,8 @@
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "exilio guerra civil",
-   "angulo_sugerido": "Rescatar testimonios históricos sobre desplazamientos políticos pasados.",
-   "nota": "Testimonio histórico de exilio y desplazamiento por guerra civil."
+   "angulo_sugerido": "Testimonio histórico sobre el exilio republicano español y el rol del Winnipeg.",
+   "nota": "Memoria histórica e institucional sobre el exilio y desplazamiento político."
   },
   {
    "id": "920c688e294e",
@@ -4453,7 +4323,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 18.3,
+   "horas": 18.4,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4492,7 +4362,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 18.3,
+   "horas": 18.4,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4526,9 +4396,9 @@
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "vivienda subsidio familias",
-   "angulo_sugerido": "Analizar las restricciones a beneficios habitacionales en hogares con estatus mixto.",
-   "nota": "Modificación regulatoria que afecta el acceso a vivienda en familias con integrantes indocumentados."
+   "termino_busqueda": "ayuda vivienda familias",
+   "angulo_sugerido": "Impacto de las restricciones normativas en hogares con estatus migratorio mixto.",
+   "nota": "Modificación normativa que afecta el acceso a vivienda en familias con integrantes indocumentados."
   },
   {
    "id": "5d91f7e1c3dd",
@@ -4586,7 +4456,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 19.0,
+   "horas": 19.1,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4625,11 +4495,12 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 19.1,
+   "horas": 19.2,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
     "odio",
+    "medios",
     "interculturalidad"
    ],
    "region": "Sudamérica",
@@ -4641,7 +4512,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 6,
+   "importancia": 7,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -4650,14 +4521,14 @@
    "etapa": "destino",
    "tipo": "discurso",
    "cobertura": 3,
-   "confianza": 0.85,
+   "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "racismo estructural sociedades",
-   "angulo_sugerido": "Reflexionar sobre la persistencia de prejuicios raciales más allá de la integración formal.",
-   "nota": "Debate conceptual sobre racismo y recepción de migrantes."
+   "termino_busqueda": "sociedad migrantes racismo",
+   "angulo_sugerido": "Análisis sobre racismo estructural más allá de la recepción numérica de migrantes.",
+   "nota": "Reflexión conceptual sobre discriminación, racismo y acogida migratoria."
   },
   {
    "id": "a4fd267fac7e",
@@ -4676,13 +4547,14 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 19.1,
+   "horas": 19.2,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX0tBa2VLcEtYcW9FZTI2QWZDd3RjWV9CclFZNEc2ZXVSLWFBajk1bmhBd2hzd0x4eEQwOGgyS1RnOGd2dmJfNVphN0NoQ3BoMzlBWEYtRjIyaGlkdHd6bHpxTi1VckNEVXd3NlZhSkxFZFFHVHBweDFVVmt6Y3ZVbVloTdIBgwFBVV95cUxNX0tBa2VLcEtYcW9FZTI2QWZDd3RjWV9CclFZNEc2ZXVSLWFBajk1bmhBd2hzd0x4eEQwOGgyS1RnOGd2dmJfNVphN0NoQ3BoMzlBWEYtRjIyaGlkdHd6bHpxTi1VckNEVXd3NlZhSkxFZFFHVHBweDFVVmt6Y3ZVbVloTQ?oc=5"
    ],
    "ejes": [
-    "deportaciones"
+    "deportaciones",
+    "medios"
    ],
    "region": "Sudamérica",
    "paises": [],
@@ -4702,14 +4574,14 @@
    "etapa": "retorno",
    "tipo": "discurso",
    "cobertura": 2,
-   "confianza": 0.8,
+   "confianza": 0.7,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "deportados antecedentes penales",
-   "angulo_sugerido": "Analizar el estigma asociado a las personas deportadas.",
-   "nota": "Artículo de opinión o análisis sobre la figura del deportado."
+   "termino_busqueda": "deportados problematicos",
+   "angulo_sugerido": "Análisis crítico sobre la etiqueta de 'problemáticos' aplicada a personas deportadas.",
+   "nota": "Titular de opinión o análisis sobre procesos de deportación."
   },
   {
    "id": "63f0e28a1b2c",
@@ -4728,7 +4600,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 19.2,
+   "horas": 19.3,
    "notas": 4,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNFViZXQxRFVOU3hLSzVUdFlYMkhrdWdNQ0ZFNkZUblVXOUhuTk0wUkZmbTFwVWQyMzRWZ0t2UGN4RzRVcE1oTXZvSURlSG8wb1E3MnVjNmJiOEdVXzBhNU1DTUFScUVjTkhtcEMzc1VEcFZnSXpXbkxFakJ4cEp1R1Q4RFFnQ0I5UzJRbG9SakdvNXJoV25oNHZBOEZWcHlZVTl2MXp0dU12OV9ZWGNORV9Ibzhhdk0tNUxvX181amI5eXJvMnlobWMxMWdzcHFBaG9nSDM5YVRJNEQweE1DRFg2U29Mb005UVdGV3NWelgzNzhsNFF0R9IBkwJBVV95cUxQX0hnS2Z0NHMzMW80WGFIRXZ3R3FPZVNveXNFLVBiM0ZvMGM1aGtLMTRUQ2p2cW9rYU0tcHY5VnRvQ0tISFJ6YWo5VjZWaWtQYkViZ2owSlFlU0ZYNjlEWjNvN1RmZmF4ZHFxSW1jckxPaERHS1F2Ym0wWVZtSDV6LXBzX1hadEZ5YkRpZ0lPUzZuZU04YlZnX0poaDBvSzU0dHlaMlpfdWpscVVoYU5CVGlBWGtuNlVBa21zNzRLQm1pTmp6aTRJWWFkOEtuekcwT0R5RjludjEtTHB0dE5Rb0RLenRJYzNNTnNpcmpKY2pNckVHdzJ2RFpob2xmS3dWekU1dnJFOGxPZHozTXRMZ3VNVQ?oc=5",
@@ -4752,26 +4624,26 @@
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [
-    "ninez",
-    "familias"
+    "ninez"
    ],
    "colectividades": [
     "LATAM"
    ],
    "actores": [
-    "sociedad_civil"
+    "sociedad_civil",
+    "organismos_internacionales"
    ],
    "etapa": "transito",
    "tipo": "dato",
-   "cobertura": 5,
-   "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "cobertura": 4,
+   "confianza": 0.95,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "infancias migrantes mexico",
-   "angulo_sugerido": "Exponer las fallas estatales en la protección integral de niñez migrante en México.",
-   "nota": "Vulnerabilidad extrema y falta de protección institucional para infancias en movilidad."
+   "angulo_sugerido": "Vulnerabilidad estructural y falta de garantías efectivas para niñez migrante en tránsito por México.",
+   "nota": "Informe sobre desprotección de infancias migrantes en México."
   },
   {
    "id": "a6393045d4b9",
@@ -4795,8 +4667,7 @@
    "otras_urls": [],
    "ejes": [
     "deportaciones",
-    "estatus",
-    "trabajo"
+    "estatus"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -4827,9 +4698,9 @@
    "contiene_datos_personales": true,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "chef detenido deportacion",
-   "angulo_sugerido": "Seguir el caso de referentes comunitarios bajo amenaza de expulsión.",
-   "nota": "Caso individual de riesgo de deportación con fuerte arraigo comunitario."
+   "termino_busqueda": "chef mexicano detencion",
+   "angulo_sugerido": "Contraste entre la labor comunitaria y el riesgo inminente de expulsión.",
+   "nota": "Caso humano de perfil individual con riesgo de deportación tras paso por detención."
   },
   {
    "id": "0e0585e3311d",
@@ -4848,12 +4719,12 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 19.9,
+   "horas": 20.0,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "politica_migratoria",
-    "securitizacion"
+    "securitizacion",
+    "politica_migratoria"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -4875,15 +4746,15 @@
    ],
    "etapa": "destino",
    "tipo": "discurso",
-   "cobertura": 6,
+   "cobertura": 7,
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "declaraciones trump migracion",
-   "angulo_sugerido": "Contrastar las declaraciones políticas con los datos migratorios reales de España.",
-   "nota": "Declaraciones políticas que vinculan contextos migratorios transatlánticos."
+   "termino_busqueda": "crisis migratoriaespana estados",
+   "angulo_sugerido": "Uso político de la migración transatlántica como narrativa de crisis.",
+   "nota": "Declaraciones de figura política internacional sobre flujos migratorios."
   },
   {
    "id": "ca1ab67187e0",
@@ -4902,7 +4773,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 20.0,
+   "horas": 20.1,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -4921,10 +4792,7 @@
    "importancia": 9,
    "clasificado": true,
    "es_migratorio": true,
-   "poblaciones": [
-    "mujeres",
-    "ninez"
-   ],
+   "poblaciones": [],
    "colectividades": [
     "LATAM"
    ],
@@ -4933,54 +4801,15 @@
    ],
    "etapa": "transito",
    "tipo": "dato",
-   "cobertura": 5,
-   "confianza": 0.9,
+   "cobertura": 4,
+   "confianza": 0.95,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "trata de personas",
-   "angulo_sugerido": "Relevar informes eclesiales sobre redes de trata en rutas migratorias mexicanas.",
-   "nota": "Informe institucional sobre la vulnerabilidad de personas migrantes frente a redes de trata."
-  },
-  {
-   "id": "a6f6d0aa97ca",
-   "titulo_original": "67 inmigrantes, que pueden ser muchos más, asesinados por las políticas racistas e imperialistas de la UE. Ceuta, mucho más que una \"crisis migratoria\"",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd1I4WDJwSnZtZENseEt6VFNwUHJYVUhBN1RUWk41a3BWalVhN05RRHJ5Z2lTQ1FKek00XzMxcm1zWHV2LTlmNXpkNks4b0ZrcWlPczY4enJ0QXprRmZlQlU5VnF1Zk5ITGpYWkpET0g1UEJUTkFnYndHT2d5N3l3N0Y2cEtjR1lhM3F3Skk3bEhiMmtGckFsUndnUEVrM2ZET3hNSnRZLTlic3dsMXQyNTcwS3ZkN0l0Qjlv?oc=5",
-   "medios": [
-    "Izquierda Revolucionaria"
-   ],
-   "coberturas": [
-    {
-     "medio": "Izquierda Revolucionaria",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd1I4WDJwSnZtZENseEt6VFNwUHJYVUhBN1RUWk41a3BWalVhN05RRHJ5Z2lTQ1FKek00XzMxcm1zWHV2LTlmNXpkNks4b0ZrcWlPczY4enJ0QXprRmZlQlU5VnF1Zk5ITGpYWkpET0g1UEJUTkFnYndHT2d5N3l3N0Y2cEtjR1lhM3F3Skk3bEhiMmtGckFsUndnUEVrM2ZET3hNSnRZLTlic3dsMXQyNTcwS3ZkN0l0Qjlv?oc=5",
-     "fecha": "2026-08-01T18:59:40+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 20.5,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Centroamérica",
-   "paises": [
-    "CR",
-    "GT",
-    "HN"
-   ],
-   "paises_nombres": [
-    "Costa Rica",
-    "Guatemala",
-    "Honduras"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
+   "termino_busqueda": "migrantes trata de",
+   "angulo_sugerido": "Denuncia eclesiástica sobre redes de trata que operan en rutas migratorias mexicanas.",
+   "nota": "Informe de la Iglesia católica sobre vulnerabilidad extrema a la trata de personas."
   },
   {
    "id": "5a1384b47ef6",
@@ -5004,8 +4833,7 @@
    "otras_urls": [],
    "ejes": [
     "politica_migratoria",
-    "estatus",
-    "servicios"
+    "estatus"
    ],
    "region": "Sudamérica",
    "paises": [
@@ -5018,7 +4846,7 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 9,
+   "importancia": 10,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -5028,15 +4856,15 @@
    ],
    "etapa": "destino",
    "tipo": "normativa",
-   "cobertura": 5,
+   "cobertura": 8,
    "confianza": 0.95,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "DNU migratorio argentina",
-   "angulo_sugerido": "Detallar el impacto operativo y jurídico del nuevo DNU sobre los trámites de residencia.",
-   "nota": "Cambio normativo central que modifica derechos y procedimientos migratorios."
+   "termino_busqueda": "DNU migratorio Argentina",
+   "angulo_sugerido": "Implicancias prácticas de los cambios normativos sobre radicación y derechos.",
+   "nota": "Análisis de especialista sobre modificaciones normativas (DNU migratorio)."
   },
   {
    "id": "e563e2dd8b5e",
@@ -5055,7 +4883,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 21.1,
+   "horas": 21.2,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -5090,7 +4918,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 21.3,
+   "horas": 21.4,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOekc0UlpoamNGeVNSMnYzUWswMExPUVJYLTNQSjdWbGF4d0tSWXN6VlJuNHF5RUZ3bTI2VWxnWGhHWmxCLWg5cElBLUFBU3ZWWVNSLUltV0FXNGphVFcwMUZQWi1kNDJNMWFsU2JMNTJMUExJZFp1S0tvUGZsVHlIRk4yVTA0R3drWnFVX3hvaG9vVVdvWjJjWTJpdHRYVWRxX0NKaWhqcnhabzlnMXlZOTZwbU5TdlBoSXBVSXhET2M3d3ZpZVEzLXJwUkV1TV9OVk1RVUo1NHhMZ9IB3wFBVV95cUxQZ0V0YjVEdC1XOTlRQ2NxWURnRTdGLXFvbUxIYTAtVlZtMzNXY3gxY0NxUWJhRGxEQ0FZSkNfZkZSbDEtUnRQTEZ2b2Nab0VqWHJKaVQ2S1JSellGOHlabXVnUXNlaDNOcTVQamdTUTJUMl96bzY4U3l5YUxpc0lXQi0tMXNpNnkyOEZ1dENNeE9aSUpBa3JhblBQTFNMTDh0clNZU1YxMHViV2hnRExkbGhxOFhVcmZMVm4xblZ0MUlUenZ2RURzbTZNNTM0b0VYaEhhdjA3VFZHSlJEVzB3?oc=5"
@@ -5135,7 +4963,6 @@
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "servicios",
     "acceso_derechos",
     "comunidad"
    ],
@@ -5148,7 +4975,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 6,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [
@@ -5161,19 +4988,19 @@
    "actores": [
     "consulados",
     "universidades",
-    "albergues"
+    "sociedad_civil"
    ],
-   "etapa": "transito",
-   "tipo": "evento",
-   "cobertura": 2,
+   "etapa": "destino",
+   "tipo": "servicio",
+   "cobertura": 1,
    "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "jornada solidaria campamento",
-   "angulo_sugerido": "Visibilizar las acciones de asistencia humanitaria en centros transitorios.",
-   "nota": "Acciones de cooperación institucional para niñez en situación de vulnerabilidad."
+   "termino_busqueda": "jornada solidaria ninos",
+   "angulo_sugerido": "Acciones de asistencia humanitaria y cooperación institucional para niñez en situación de vulnerabilidad.",
+   "nota": "Jornada solidaria y asistencia comunitaria organizada por misión diplomática y academia."
   },
   {
    "id": "5c0e0109a47e",
@@ -5233,14 +5060,16 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 21.6,
+   "horas": 21.7,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
     "trabajo"
    ],
    "region": "Centroamérica",
-   "paises": [],
+   "paises": [
+    "MA"
+   ],
    "paises_nombres": [
     "Costa Rica",
     "Guatemala",
@@ -5248,23 +5077,25 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 2,
+   "importancia": 3,
    "clasificado": true,
    "es_migratorio": false,
-   "poblaciones": [],
+   "poblaciones": [
+    "ninez"
+   ],
    "colectividades": [],
    "actores": [],
-   "etapa": null,
+   "etapa": "origen",
    "tipo": "dato",
-   "cobertura": 1,
-   "confianza": 0.8,
-   "tiene_fuente_primaria": false,
+   "cobertura": 5,
+   "confianza": 0.9,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": null,
+   "termino_busqueda": "juventud marroqui empleo",
    "angulo_sugerido": null,
-   "nota": "Trata sobre juventud local en Marruecos, sin implicar movilidad internacional."
+   "nota": "Situación socioeconómica de jóvenes en Marruecos (desempleo estructural), sin eje migratorio directo."
   },
   {
    "id": "8196e7dcf720",
@@ -5283,7 +5114,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 22.0,
+   "horas": 22.1,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -5322,7 +5153,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 22.0,
+   "horas": 22.1,
    "notas": 2,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYVc5TUhtNXJLaGVpZGJJSzR1WUFzZHl0WWRLWThkdHN6MDRKYzFWYjVGYmp4Y3pWdGdIUzRxWTByMHNodHBCT1ZENTN2eEtiQXROSVdrSmNhWVZlY3MzMGQ2cDdzREpQYURCNW1SaU42Wi1wcXFNR3JZMFRpSjB0bWV3bDlKeWJGVHN2ZGxEcGNCX1lhUkxBdjdlU09xMUl6MEJFcHktMU0wQnJrWWV4NHJFb2x1N2l1ZkUyWENwRDNrSzRUbDVQV0pHLTZubVVLNE5qMVJR0gHWAUFVX3lxTE1hVzlNSG01cktoZWlkYklLNHVZQXNkeXRZZEtZOGR0c3owNEpjMVZiNUZianhjelZ0Z0hTNHFZMHIwc2h0cEJPVkQ1M3Z4S2JBdE5JV2tKY2FZVmVjczMwZDZwN3NESlBhREI1bVJpTjZaLXBxcU1HclkwVGlKMHRtZXdsOUp5YkZUc3ZkbERwY0JfWWFSTEF2N2VTT3ExSXowQkVweS0xTTBCcmtZZXg0ckVvbHU3aXVmRTJYQ3BEM2tLNFRsNVBXSkctNm5tVUs0TmoxUlE?oc=5"
@@ -5333,7 +5164,6 @@
    ],
    "region": "Norteamérica",
    "paises": [
-    "UY",
     "US"
    ],
    "paises_nombres": [
@@ -5341,25 +5171,26 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
    "colectividades": [],
    "actores": [
-    "estado_nacional"
+    "estado_nacional",
+    "poder_legislativo"
    ],
    "etapa": "destino",
-   "tipo": "discurso",
-   "cobertura": 1,
+   "tipo": "evento",
+   "cobertura": 5,
    "confianza": 0.9,
-   "tiene_fuente_primaria": false,
+   "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "deportados Estados Unidos",
-   "angulo_sugerido": "Verificar los términos exactos del posible acuerdo bilateral",
-   "nota": "Reacción política ante un eventual acuerdo de recepción de personas deportadas."
+   "termino_busqueda": "acuerdo deportados estados",
+   "angulo_sugerido": "Debates legislativos sobre la aceptación de vuelos de deportación o terceros países seguros.",
+   "nota": "Posicionamiento político frente a acuerdos de recepción de personas deportadas desde EE.UU."
   },
   {
    "id": "e4d712eea93b",
@@ -5378,7 +5209,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 22.4,
+   "horas": 22.5,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -5417,7 +5248,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 22.5,
+   "horas": 22.6,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
@@ -5456,7 +5287,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 22.5,
+   "horas": 22.6,
    "notas": 3,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMirgFBVV95cUxORVdZTDhqaTdtWHdzMVJzNTlGczRSa05fYUNreWZuSEdOdUNyZ0RxajNsSmxrTThJSVlDRWFjTHpKTVpTSGFPN2gzYkltRjEwbWcxVDNyM0ZFaUxBQ3BIYndZbVRFUFNGZHYybXdMYTJOX3BGWVZJU09EV29fZ3VneDdSY0VqaXJBOF9rZDVZR3oxMDFsWERfYmp0S0IzR1d2cEZRck9CZnVna29TR2c?oc=5",
@@ -5476,58 +5307,27 @@
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 8,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
-   "colectividades": [],
-   "actores": [],
+   "colectividades": [
+    "LATAM"
+   ],
+   "actores": [
+    "organismos_internacionales"
+   ],
    "etapa": "destino",
    "tipo": "dato",
-   "cobertura": 1,
-   "confianza": 0.9,
+   "cobertura": 7,
+   "confianza": 0.95,
    "tiene_fuente_primaria": true,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "inmigrantes sin estatus",
-   "angulo_sugerido": "Analizar la fuente y la metodología del registro estadístico",
-   "nota": "Cifra sobre población migrante en situación irregular en Estados Unidos."
-  },
-  {
-   "id": "936cf1136761",
-   "titulo_original": "Ursula von der Leyen pide reforzar fronteras de la UE tras crisis migratoria en Ceuta",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWmI1bVB5M3pJUDQzYkhVRjFQSVNxU1lEQ3lkM1pESUVDZENyY25LdXYwdzJ1My1aeFpGWEZFb1U4eXYwUnZXQ3ZWbGw0NkNTa1NFenVqUEpGdzlJTmZjTnFZVVI3SmE4aFZUSHJnX2I3aGR5YjAxaGVtM2s1NFJNWWszb0duZDFYVVREdm5RdW5MNVZQdnNrd1plUkdIVmwzclVMZjB5RXYxUi1hLXNXaDYydHgtWkhUQzlZTnpFQkJOMWY3eUhGZVpPcEdPQl9uV3lR0gHYAUFVX3lxTE16V3RxdVhjYnJ0LVMta0NSbzF0bGpTTEpFOTZQa09Ea0Jpak5QVXp4S3VaWkwwYXJqSmdJYmd6Uml3dU9zSVcybzVITmpUYW9xalhvTHpHbE5QSXFEQng0QVMzRFcybHloVU5YUXJfSVgyR2N6QkxhWFVhZDZnZmtEVnVtVVpZZm5PeWdCSmVvWEg2Ul81WDFUMGpZd3pYSW5FbVhiZmlHbWRoOTBJSm9RaEItbWlnX3JUbmh3aVh2ZVFDS3hHa0Z6TGI3MVdTSFR5bXNfSm9QWg?oc=5",
-   "medios": [
-    "Por Esto!"
-   ],
-   "coberturas": [
-    {
-     "medio": "Por Esto!",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWmI1bVB5M3pJUDQzYkhVRjFQSVNxU1lEQ3lkM1pESUVDZENyY25LdXYwdzJ1My1aeFpGWEZFb1U4eXYwUnZXQ3ZWbGw0NkNTa1NFenVqUEpGdzlJTmZjTnFZVVI3SmE4aFZUSHJnX2I3aGR5YjAxaGVtM2s1NFJNWWszb0duZDFYVVREdm5RdW5MNVZQdnNrd1plUkdIVmwzclVMZjB5RXYxUi1hLXNXaDYydHgtWkhUQzlZTnpFQkJOMWY3eUhGZVpPcEdPQl9uV3lR0gHYAUFVX3lxTE16V3RxdVhjYnJ0LVMta0NSbzF0bGpTTEpFOTZQa09Ea0Jpak5QVXp4S3VaWkwwYXJqSmdJYmd6Uml3dU9zSVcybzVITmpUYW9xalhvTHpHbE5QSXFEQng0QVMzRFcybHloVU5YUXJfSVgyR2N6QkxhWFVhZDZnZmtEVnVtVVpZZm5PeWdCSmVvWEg2Ul81WDFUMGpZd3pYSW5FbVhiZmlHbWRoOTBJSm9RaEItbWlnX3JUbmh3aVh2ZVFDS3hHa0Z6TGI3MVdTSFR5bXNfSm9QWg?oc=5",
-     "fecha": "2026-08-01T16:50:24+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 22.7,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Norteamérica",
-   "paises": [
-    "US"
-   ],
-   "paises_nombres": [
-    "Estados Unidos"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
+   "angulo_sugerido": "Evolución demográfica y estimaciones oficiales de la población indocumentada.",
+   "nota": "Estadísticas oficiales sobre el incremento de población migrante en situación irregular."
   },
   {
    "id": "36d3a123fd22",
@@ -5569,6 +5369,41 @@
    "clasificado": false
   },
   {
+   "id": "936cf1136761",
+   "titulo_original": "Ursula von der Leyen pide reforzar fronteras de la UE tras crisis migratoria en Ceuta",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWmI1bVB5M3pJUDQzYkhVRjFQSVNxU1lEQ3lkM1pESUVDZENyY25LdXYwdzJ1My1aeFpGWEZFb1U4eXYwUnZXQ3ZWbGw0NkNTa1NFenVqUEpGdzlJTmZjTnFZVVI3SmE4aFZUSHJnX2I3aGR5YjAxaGVtM2s1NFJNWWszb0duZDFYVVREdm5RdW5MNVZQdnNrd1plUkdIVmwzclVMZjB5RXYxUi1hLXNXaDYydHgtWkhUQzlZTnpFQkJOMWY3eUhGZVpPcEdPQl9uV3lR0gHYAUFVX3lxTE16V3RxdVhjYnJ0LVMta0NSbzF0bGpTTEpFOTZQa09Ea0Jpak5QVXp4S3VaWkwwYXJqSmdJYmd6Uml3dU9zSVcybzVITmpUYW9xalhvTHpHbE5QSXFEQng0QVMzRFcybHloVU5YUXJfSVgyR2N6QkxhWFVhZDZnZmtEVnVtVVpZZm5PeWdCSmVvWEg2Ul81WDFUMGpZd3pYSW5FbVhiZmlHbWRoOTBJSm9RaEItbWlnX3JUbmh3aVh2ZVFDS3hHa0Z6TGI3MVdTSFR5bXNfSm9QWg?oc=5",
+   "medios": [
+    "Por Esto!"
+   ],
+   "coberturas": [
+    {
+     "medio": "Por Esto!",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWmI1bVB5M3pJUDQzYkhVRjFQSVNxU1lEQ3lkM1pESUVDZENyY25LdXYwdzJ1My1aeFpGWEZFb1U4eXYwUnZXQ3ZWbGw0NkNTa1NFenVqUEpGdzlJTmZjTnFZVVI3SmE4aFZUSHJnX2I3aGR5YjAxaGVtM2s1NFJNWWszb0duZDFYVVREdm5RdW5MNVZQdnNrd1plUkdIVmwzclVMZjB5RXYxUi1hLXNXaDYydHgtWkhUQzlZTnpFQkJOMWY3eUhGZVpPcEdPQl9uV3lR0gHYAUFVX3lxTE16V3RxdVhjYnJ0LVMta0NSbzF0bGpTTEpFOTZQa09Ea0Jpak5QVXp4S3VaWkwwYXJqSmdJYmd6Uml3dU9zSVcybzVITmpUYW9xalhvTHpHbE5QSXFEQng0QVMzRFcybHloVU5YUXJfSVgyR2N6QkxhWFVhZDZnZmtEVnVtVVpZZm5PeWdCSmVvWEg2Ul81WDFUMGpZd3pYSW5FbVhiZmlHbWRoOTBJSm9RaEItbWlnX3JUbmh3aVh2ZVFDS3hHa0Z6TGI3MVdTSFR5bXNfSm9QWg?oc=5",
+     "fecha": "2026-08-01T16:50:24+00:00"
+    }
+   ],
+   "velocidad": 1,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 22.8,
+   "notas": 1,
+   "otras_urls": [],
+   "ejes": [
+    "estatus"
+   ],
+   "region": "Norteamérica",
+   "paises": [
+    "US"
+   ],
+   "paises_nombres": [
+    "Estados Unidos"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
+  },
+  {
    "id": "b0971fcce022",
    "titulo_original": "Periodista argentino plantea deportar a Rosalía por publicación sobre la final del Mundial",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZ2tpUGtjRzhhVWdMYzFKdFIwaWNGN2dQbHFrVFlpRXVDYzMyaXVGZTI3Ump3S1hWRnE2Y2VfSVlDRnVHdGVrc0x3NEtaTGNnZElEZktKVXVHM2JQZkJveFE4NjRRRkd0X3FFWUZHQ1VMckFxb21xaWpmWUhhVnBIc0x4MGhfSG9JellZenVwQTI4VGJmUGVveXVDQ3AwcGlscXN3YTNUNG5SX0FjbEJMRjJ2azZRSExoNjFrdDNON0RBTmE3UnNSZlhQeDFUTXc5TWxJM2VQc1YwbmN3RV9kaFFoMNIB6AFBVV95cUxPdTYxUTBVenNHcGl5VkZtclYtNWFXMVVNVVVVRG5RbEFWNm5fdU44NVprYmtqeGJhX1VaWjJ4Yy1Ka21nR0FBX3VGa1Zvald5YmFhZTdwdzhzTENwby0zaTkzajB1cDA2eEh6RGlZcU5fcG5feHR0MFpmTS1PcWNDeU5URUd5SzNkcFROTjUyekxWQzRGdHZZOVhub01NWEVmT0k0b1BaZzJOeFZHUG1aS3ZVQlRrNDZBMW11UmFtQXp5VmRpZ0RCZEgxQlN0a1d1blhyUGZSOFo0QzhxQk0wNUo4WS1ScXJY?oc=5",
@@ -5585,10 +5420,11 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 22.7,
+   "horas": 22.8,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
+    "deportaciones",
     "odio"
    ],
    "region": "Sudamérica",
@@ -5601,7 +5437,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 3,
+   "importancia": 2,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -5614,12 +5450,12 @@
    "cobertura": 1,
    "confianza": 0.85,
    "tiene_fuente_primaria": false,
-   "contiene_datos_personales": true,
+   "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Declaración mediática individual instrumentalizando la figura de la deportación."
+   "nota": "Declaración mediática aislada con uso trivializado del concepto de deportación. Baja importancia."
   },
   {
    "id": "371ed796f8b2",
@@ -5638,12 +5474,13 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 22.9,
+   "horas": 23.0,
    "notas": 1,
    "otras_urls": [],
    "ejes": [
-    "deportaciones",
-    "politica_migratoria"
+    "politica_migratoria",
+    "securitizacion",
+    "odio"
    ],
    "region": "Norteamérica",
    "paises": [
@@ -5655,7 +5492,7 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 7,
+   "importancia": 5,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
@@ -5666,14 +5503,14 @@
    "etapa": "destino",
    "tipo": "discurso",
    "cobertura": 1,
-   "confianza": 0.9,
+   "confianza": 0.85,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "acuerdo deportacion Estados",
-   "angulo_sugerido": null,
-   "nota": "Declaraciones de legislador sobre posibles acuerdos de recepción de deportados."
+   "termino_busqueda": "politica migratoria Uruguay",
+   "angulo_sugerido": "Analizar el impacto de discursos políticos que vinculan migración con descarte.",
+   "nota": "Declaración de legislador con matices deshumanizantes en el debate político migratorio."
   },
   {
    "id": "c4f95bc51432",
@@ -5700,70 +5537,29 @@
     "derechos_humanos"
    ],
    "region": "Norteamérica",
-   "paises": [
-    "ES"
-   ],
+   "paises": [],
    "paises_nombres": [
     "Estados Unidos"
    ],
    "pais_inferido": true,
    "fuera_de_alcance": false,
-   "importancia": 8,
+   "importancia": 4,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [],
    "colectividades": [],
    "actores": [],
    "etapa": "transito",
-   "tipo": "evento",
-   "cobertura": 1,
-   "confianza": 0.9,
+   "tipo": "dato",
+   "cobertura": 2,
+   "confianza": 0.8,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": true,
    "terminologia_problematica": [],
-   "termino_busqueda": "ruta del Atlantico",
-   "angulo_sugerido": "Revisar datos de organizaciones humanitarias sobre naufragios en la ruta",
-   "nota": "Trágico balance de muertes en ruta migratoria hacia Europa."
-  },
-  {
-   "id": "e592be9e1c0e",
-   "titulo_original": "Nuevos intentos de entrada de migrantes irregulares marroquíes a Melilla mantienen en alerta a las fuerzas de seguridad",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQU5zU2tWYmsyLUZ3bHZPWFFwSll1LW1Wdmp5UGNYSXRSeXFOSGx4WUVmX2E2czBEYzFoTFkyWHZtekdjc2NDSXdVbTRLWjdqclQyZVFZZ1ctM3hkMEpWRjNiZ2kyQjN3OHpJcEcxT3hDOGFLdVFOMG9adzFGUDE4OEZSLWdIdGVkN0N6THo2WDFzc3hQUkRRU28wY3BpZEdqNThTTks3LXB1MS1valNaWnpNWGUwN2c1SXY0aHVLMkJtWmlUdHhPMEJVSDlYb1Z4dVhkUGFGellQUjZhTFhkREhFZVJpM19KUmhtWHZOUXg4ckdaeDUw?oc=5",
-   "medios": [
-    "PressDigital"
-   ],
-   "coberturas": [
-    {
-     "medio": "PressDigital",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQU5zU2tWYmsyLUZ3bHZPWFFwSll1LW1Wdmp5UGNYSXRSeXFOSGx4WUVmX2E2czBEYzFoTFkyWHZtekdjc2NDSXdVbTRLWjdqclQyZVFZZ1ctM3hkMEpWRjNiZ2kyQjN3OHpJcEcxT3hDOGFLdVFOMG9adzFGUDE4OEZSLWdIdGVkN0N6THo2WDFzc3hQUkRRU28wY3BpZEdqNThTTks3LXB1MS1valNaWnpNWGUwN2c1SXY0aHVLMkJtWmlUdHhPMEJVSDlYb1Z4dVhkUGFGellQUjZhTFhkREhFZVJpM19KUmhtWHZOUXg4ckdaeDUw?oc=5",
-     "fecha": "2026-08-01T16:07:00+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 23.4,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "BO",
-    "CO",
-    "EC"
-   ],
-   "paises_nombres": [
-    "Bolivia",
-    "Colombia",
-    "Ecuador"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
+   "termino_busqueda": "ruta atlantica migrantes",
+   "angulo_sugerido": null,
+   "nota": "Fuera del alcance geográfico principal (África hacia Europa), aunque aborda rutas migratorias mortales."
   },
   {
    "id": "ff2b2fa857b0",
@@ -5812,11 +5608,50 @@
    "confianza": 0.9,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
-   "requiere_verificacion": false,
+   "requiere_verificacion": true,
    "terminologia_problematica": [],
-   "termino_busqueda": "migrantes muertos rio",
-   "angulo_sugerido": null,
-   "nota": "Registro de muertes de personas migrantes en el río Bravo."
+   "termino_busqueda": "migrantes rio bravo",
+   "angulo_sugerido": "Revisar las medidas de prevención y rescate en la frontera norte de México.",
+   "nota": "Muertes en ruta migratoria. Alta importancia por vulneración extrema de derechos."
+  },
+  {
+   "id": "e592be9e1c0e",
+   "titulo_original": "Nuevos intentos de entrada de migrantes irregulares marroquíes a Melilla mantienen en alerta a las fuerzas de seguridad",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQU5zU2tWYmsyLUZ3bHZPWFFwSll1LW1Wdmp5UGNYSXRSeXFOSGx4WUVmX2E2czBEYzFoTFkyWHZtekdjc2NDSXdVbTRLWjdqclQyZVFZZ1ctM3hkMEpWRjNiZ2kyQjN3OHpJcEcxT3hDOGFLdVFOMG9adzFGUDE4OEZSLWdIdGVkN0N6THo2WDFzc3hQUkRRU28wY3BpZEdqNThTTks3LXB1MS1valNaWnpNWGUwN2c1SXY0aHVLMkJtWmlUdHhPMEJVSDlYb1Z4dVhkUGFGellQUjZhTFhkREhFZVJpM19KUmhtWHZOUXg4ckdaeDUw?oc=5",
+   "medios": [
+    "PressDigital"
+   ],
+   "coberturas": [
+    {
+     "medio": "PressDigital",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQU5zU2tWYmsyLUZ3bHZPWFFwSll1LW1Wdmp5UGNYSXRSeXFOSGx4WUVmX2E2czBEYzFoTFkyWHZtekdjc2NDSXdVbTRLWjdqclQyZVFZZ1ctM3hkMEpWRjNiZ2kyQjN3OHpJcEcxT3hDOGFLdVFOMG9adzFGUDE4OEZSLWdIdGVkN0N6THo2WDFzc3hQUkRRU28wY3BpZEdqNThTTks3LXB1MS1valNaWnpNWGUwN2c1SXY0aHVLMkJtWmlUdHhPMEJVSDlYb1Z4dVhkUGFGellQUjZhTFhkREhFZVJpM19KUmhtWHZOUXg4ckdaeDUw?oc=5",
+     "fecha": "2026-08-01T16:07:00+00:00"
+    }
+   ],
+   "velocidad": 1,
+   "aceleracion": null,
+   "trends": null,
+   "horas": 23.5,
+   "notas": 1,
+   "otras_urls": [],
+   "ejes": [
+    "estatus"
+   ],
+   "region": "Sudamérica",
+   "paises": [
+    "BO",
+    "CO",
+    "EC"
+   ],
+   "paises_nombres": [
+    "Bolivia",
+    "Colombia",
+    "Ecuador"
+   ],
+   "pais_inferido": true,
+   "fuera_de_alcance": true,
+   "importancia": null,
+   "clasificado": false
   },
   {
    "id": "05cce37b4e35",
@@ -5835,7 +5670,7 @@
    "velocidad": 1,
    "aceleracion": null,
    "trends": null,
-   "horas": 23.5,
+   "horas": 23.6,
    "notas": 4,
    "otras_urls": [
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxPY1dKMFpNVW9jVFRmVE80MVpYTUhRU1k3YlJQTjhNcnZaeGwyb1JBVE8tNEdiR2JLTVFNZHZsakVjQ25UcTNvRjV4WXJiZjNSNWkxakY2X2pnVE1xbVpIR3VyLXc4akgxOWsyT2YwS2c5NDczSTdCRDZpakVvNmlFSmNkRHE2LUs0bHdNQjdLX1oxRFB0c0MybVktNV9aWWdXSElKd0kzblNBVlB3UEF2d203MFYyYVFGWmcxRTExZWtWOUxDdWp2TDJn?oc=5",
@@ -5844,6 +5679,7 @@
    ],
    "ejes": [
     "rutas",
+    "derechos_humanos",
     "comunidad"
    ],
    "region": "Regional",
@@ -5857,15 +5693,16 @@
    ],
    "pais_inferido": false,
    "fuera_de_alcance": false,
-   "importancia": 8,
+   "importancia": 9,
    "clasificado": true,
    "es_migratorio": true,
    "poblaciones": [
+    "mujeres",
     "familias"
    ],
    "colectividades": [
-    "GT",
-    "MX"
+    "MX",
+    "GT"
    ],
    "actores": [
     "sociedad_civil",
@@ -5873,15 +5710,15 @@
    ],
    "etapa": "transito",
    "tipo": "evento",
-   "cobertura": 1,
+   "cobertura": 2,
    "confianza": 0.95,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": false,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
-   "termino_busqueda": "familiares migrantes desaparecidos",
-   "angulo_sugerido": "Acompañar las demandas de colectivos de búsqueda en frontera",
-   "nota": "Acción colectiva de familiares buscando a personas migrantes desaparecidas."
+   "termino_busqueda": "migrantes desaparecidos frontera",
+   "angulo_sugerido": "Acompañar la labor de los colectivos de familiares en la búsqueda en ruta.",
+   "nota": "Acción colectiva de familiares de migrantes desaparecidos. Alta relevancia con enfoque de derechos."
   },
   {
    "id": "8f2ef4e8548c",
@@ -5970,7 +5807,7 @@
    "terminologia_problematica": [],
    "termino_busqueda": null,
    "angulo_sugerido": null,
-   "nota": "Noticia deportiva sin relación con migraciones."
+   "nota": "Noticia deportiva sobre fútbol argentino. Sin relación con movilidad humana."
   },
   {
    "id": "058eaa7c49a2",
@@ -6019,54 +5856,15 @@
    ],
    "etapa": "destino",
    "tipo": "caso",
-   "cobertura": 1,
+   "cobertura": 3,
    "confianza": 0.95,
    "tiene_fuente_primaria": false,
    "contiene_datos_personales": true,
    "requiere_verificacion": false,
    "terminologia_problematica": [],
    "termino_busqueda": "ICE detenciones muertes",
-   "angulo_sugerido": "Investigar protocolos médicos en centros de detención del ICE",
-   "nota": "Grave vulneración de derechos bajo custodia de ICE."
-  },
-  {
-   "id": "b55122aff312",
-   "titulo_original": "Youssef, inmigrante marroquí, tras pasar un día en Ceuta: “Aquí no hay nada, no he podido ni recargar el móvil”",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNbUhXLWFLNUtlb2Jsb2s5VkgtYkJZRlhPQmxyZS1pYmdMZUtwbjFodTcwSkNHcVc2U2lIQnpodVpiYjZNdy1UVk1TZndmLWxPZnh5cVdmZFYtZE5jeHRuTnR1cVZsM1NkbUJmS1BrbnpuQ3pRT3NJbEhyOGJ6MG1rNTEwN2c4bWVuTzhUSlVldTZkV1p6QndhcTQwcnpyY1diY3FxOHQtLU5wLTBWVXhralJ6NDFVcnRaSFJsVVd4bmxsLS1idzNpZ1JfelNsZmhsNExIbHdSc0tLSDBxbnNUdGxYSVUwUElBMmluYmthV2syWXVySjliUjQwSldNd1hpTUHSAYICQVVfeXFMTW1IVy1hSzVLZW9ibG9rOVZILWJCWUZYT0JscmUtaWJnTGVLcG4xaHU3MEpDR3FXNlNpSEJ6aHVaYmI2TXctVFZNU2Z3Zi1sT2Z4eXFXZmRWLWROY3h0bk50dXFWbDNTZG1CZktQa256bkN6UU9zSWxIcjhiejBtazUxMDdnOG1lbk84VEpVZXU2ZFdaekJ3YXE0MHJ6cmNXYmNxcTh0LS1OcC0wVlV4a2pSejQxVXJ0WkhSbFVXeG5sbC0tYnczaWdSX3pTbGZobDRMSGx3UnNLS0gwcW5zVHRsWElVMFBJQTJpbmJrYVdrMll1cko5YlI0MEpXTXdYaU1B?oc=5",
-   "medios": [
-    "El Cronista"
-   ],
-   "coberturas": [
-    {
-     "medio": "El Cronista",
-     "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNbUhXLWFLNUtlb2Jsb2s5VkgtYkJZRlhPQmxyZS1pYmdMZUtwbjFodTcwSkNHcVc2U2lIQnpodVpiYjZNdy1UVk1TZndmLWxPZnh5cVdmZFYtZE5jeHRuTnR1cVZsM1NkbUJmS1BrbnpuQ3pRT3NJbEhyOGJ6MG1rNTEwN2c4bWVuTzhUSlVldTZkV1p6QndhcTQwcnpyY1diY3FxOHQtLU5wLTBWVXhralJ6NDFVcnRaSFJsVVd4bmxsLS1idzNpZ1JfelNsZmhsNExIbHdSc0tLSDBxbnNUdGxYSVUwUElBMmluYmthV2syWXVySjliUjQwSldNd1hpTUHSAYICQVVfeXFMTW1IVy1hSzVLZW9ibG9rOVZILWJCWUZYT0JscmUtaWJnTGVLcG4xaHU3MEpDR3FXNlNpSEJ6aHVaYmI2TXctVFZNU2Z3Zi1sT2Z4eXFXZmRWLWROY3h0bk50dXFWbDNTZG1CZktQa256bkN6UU9zSWxIcjhiejBtazUxMDdnOG1lbk84VEpVZXU2ZFdaekJ3YXE0MHJ6cmNXYmNxcTh0LS1OcC0wVlV4a2pSejQxVXJ0WkhSbFVXeG5sbC0tYnczaWdSX3pTbGZobDRMSGx3UnNLS0gwcW5zVHRsWElVMFBJQTJpbmJrYVdrMll1cko5YlI0MEpXTXdYaU1B?oc=5",
-     "fecha": "2026-08-01T15:33:03+00:00"
-    }
-   ],
-   "velocidad": 1,
-   "aceleracion": null,
-   "trends": null,
-   "horas": 24.0,
-   "notas": 1,
-   "otras_urls": [],
-   "ejes": [
-    "estatus"
-   ],
-   "region": "Sudamérica",
-   "paises": [
-    "AR",
-    "CL",
-    "PY"
-   ],
-   "paises_nombres": [
-    "Argentina",
-    "Chile",
-    "Paraguay"
-   ],
-   "pais_inferido": true,
-   "fuera_de_alcance": true,
-   "importancia": null,
-   "clasificado": false
+   "angulo_sugerido": "Investigar los protocolos médicos y de liberación de personas bajo custodia de ICE.",
+   "nota": "Muerte bajo custodia de ICE. Alta gravedad institucional y violación de derechos humanos."
   }
  ]
 }
