@@ -21,6 +21,10 @@ on:
         description: "Generar el digest diario aunque no sean las 09:00 UTC"
         type: boolean
         default: false
+      probar_related:
+        description: "Diagnostico: probar si related_queries de Google Trends sirve"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -97,6 +101,15 @@ jobs:
         if: steps.cuando.outputs.digest == 'true'
         continue-on-error: true
         run: python -m nucleo.tendencias
+
+      # DIAGNOSTICO PUNTUAL. No corre nunca solo: hay que tildarlo al disparar
+      # la corrida a mano. Prueba si `related_queries` puede vincular Google
+      # Trends con hechos individuales, que es lo que fallo dos veces con
+      # `interest_over_time`. Escribe datos/prueba_related.txt
+      - name: Probar related_queries
+        if: inputs.probar_related == true
+        continue-on-error: true
+        run: python scripts/probar_related.py
 
       # Diagnostico, solo en la corrida del digest para no gastar tiempo.
       - name: Muestrear feeds

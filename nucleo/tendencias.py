@@ -16,7 +16,18 @@ con retraso y lo que las hace subir suele ser la propia cobertura mediatica.
 Sumarlo al ranking contaminaria una metrica que funciona con una senal
 correlacionada. Sirve para DISPARAR ALERTAS, no para rankear.
 
-SEGUNDA FUNCION: DEMANDA DE SERVICIO
+SEGUNDA FUNCION: ATENCION PUBLICA POR PAIS
+------------------------------------------
+Terminos amplios ("migrantes", "extranjeros", "remesas") medidos en cada pais.
+No miden demanda de tramite: miden cuanto esta la migracion en la cabeza de la
+gente. Un pico en Chile significa que algo esta pasando alli aunque no haya
+llegado a los medios que monitoreamos.
+
+La geografia va en el parametro `geo`, NO en el termino. Consultar "migrantes"
+con geo=AR ES "cuanto buscan los argentinos sobre migrantes"; escribir "migrantes
+en argentina" seria una frase sin volumen suficiente para medir.
+
+TERCERA FUNCION: DEMANDA DE SERVICIO
 ------------------------------------
 Un panel fijo de terminos de tramite ("turno migraciones", "residencia precaria")
 que no cruza con noticias. Son busquedas de gente resolviendo un problema, no de
@@ -63,6 +74,7 @@ def vacio(motivo: str) -> dict:
         "disponible": False,
         "motivo": motivo,
         "hechos": {},
+        "general": {},
         "servicio": {},
         "alertas": [],
     }
@@ -188,6 +200,10 @@ def main() -> int:
                                      ensure_ascii=False, indent=1), encoding="utf-8")
         return 0
 
+    global FALLOS_SEGUIDOS, ESPERA
+    FALLOS_SEGUIDOS = cfg.get("fallos_seguidos_antes_de_abandonar", FALLOS_SEGUIDOS)
+    ESPERA = cfg.get("espera_entre_consultas", ESPERA)
+
     ventana = cfg.get("ventana", "today 3-m")
     umbrales = cfg.get("umbrales", {"ratio_minimo": 1.2, "ratio_maximo": 3.0,
                                     "interes_minimo": 15})
@@ -221,7 +237,46 @@ def main() -> int:
                     }
             time.sleep(ESPERA)
 
-    # --- Demanda de servicio: panel fijo, senal independiente ---------------
+    # --- Atencion publica por pais: un pico = ese pais esta mirando el tema --
+    generales = cfg.get("terminos_generales", [])
+    geos_gen = cfg.get("geos_generales", [])
+    atencion: dict = {}
+
+    sin_datos: list[str] = []
+
+    if generales and geos_gen and seguidos < FALLOS_SEGUIDOS:
+        log.info("")
+        log.info("Atencion publica: %d terminos en %d paises", len(generales), len(geos_gen))
+        for geo in geos_gen:
+            if seguidos >= FALLOS_SEGUIDOS:
+                log.warning("   %d consultas seguidas sin respuesta: se abandona.", seguidos)
+                break
+            # Los 5 terminos entran en una sola consulta: es el tope de Google.
+            res = consultar(cliente, generales[:LOTE], geo, ventana, umbrales)
+            if res:
+                seguidos = 0
+                en_alza = {k: v for k, v in res.items() if v["puntaje"] > 0}
+                if en_alza:
+                    atencion[geo] = en_alza
+                    for termino, d in en_alza.items():
+                        log.info("   %-4s %-14s puntaje %2d  (x%.2f)",
+                                 geo, termino, d["puntaje"], d.get("ratio") or 0)
+                else:
+                    log.info("   %-4s sin variacion", geo)
+            else:
+                # Paises chicos pueden no tener volumen suficiente. Se registra
+                # para poder darlos de baja con evidencia, no por suposicion.
+                seguidos += 1
+                sin_datos.append(geo)
+                log.info("   %-4s sin datos", geo)
+            time.sleep(ESPERA)
+
+        if sin_datos:
+            log.info("")
+            log.info("   Paises sin datos: %s", " ".join(sin_datos))
+            log.info("   Puede ser falta de volumen de busqueda, no un error.")
+
+    # --- Demanda de servicio: tramites concretos, senal independiente -------
     demanda: dict = {}
     if seguidos < FALLOS_SEGUIDOS:
         for i in range(0, len(servicio), LOTE):
@@ -243,7 +298,7 @@ def main() -> int:
     ]
     alertas.sort(key=lambda x: -x["puntaje"])
 
-    disponible = bool(resultados or demanda)
+    disponible = bool(resultados or demanda or atencion)
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text(json.dumps({
         "generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -251,12 +306,15 @@ def main() -> int:
         "motivo": "" if disponible else "sin respuesta de Google Trends",
         "ventana": ventana,
         "hechos": resultados,
+        "general": atencion,
+        "paises_sin_datos": sin_datos,
         "servicio": demanda,
         "alertas": alertas,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     log.info("")
-    log.info("Hechos consultados: %d | de servicio en alza: %d", len(resultados), len(demanda))
+    log.info("Hechos consultados: %d | paises con atencion en alza: %d | de servicio en alza: %d",
+             len(resultados), len(atencion), len(demanda))
     log.info("Escrito %s", SALIDA.relative_to(RAIZ))
 
     if alertas:
@@ -266,6 +324,14 @@ def main() -> int:
             log.info("   x%.2f  imp %s  %d medios  |  %s",
                      a.get("ratio") or 0, a.get("importancia"), a.get("velocidad") or 0,
                      a["titulo"][:58])
+    if atencion:
+        log.info("")
+        log.info("ATENCION PUBLICA EN ALZA (que paises estan mirando el tema):")
+        for geo, terminos in atencion.items():
+            top = max(terminos.items(), key=lambda x: x[1]["puntaje"])
+            log.info("   %-4s %-14s x%.2f  (%d terminos en alza)",
+                     geo, top[0], top[1].get("ratio") or 0, len(terminos))
+
     if demanda:
         log.info("")
         log.info("DEMANDA DE SERVICIO EN ALZA (gente buscando, prensa todavia no):")

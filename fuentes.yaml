@@ -1385,7 +1385,12 @@ tendencias:
 
     BIBLIOTECA: trendspy, NO pytrends. pytrends fue archivado en abril de 2025 y devuelve 429 en la
     primera llamada: verificado en produccion el 2026-08-02, cero consultas exitosas. Los datos siguen
-    siendo publicos y gratuitos; el problema era la biblioteca.'
+    siendo publicos y gratuitos; el problema era la biblioteca.
+
+    LA GEOGRAFIA VA EN EL PARAMETRO `geo`, NO EN EL TERMINO. Consultar ''migrantes'' con geo=AR ES ''cuanto
+    buscan los argentinos sobre migrantes''. Escribir ''migrantes en argentina'' lo convierte en una
+    frase que casi nadie tipea, sin volumen para medir. Es el mismo error que hizo fallar los terminos
+    por hecho el 2026-08-02.'
   activo: true
   solo_en_digest: true
   horas_de_cache: 20
@@ -1398,12 +1403,64 @@ tendencias:
   - turno migraciones
   - DNI extranjero
   - residencia precaria
-  - visa humanitaria
-  - reunificacion familiar
   - certificado de residencia
+  - regularizacion migratoria
+  - estudiantes extranjeros
   umbrales:
     _nota: Puntaje 0-10 por cuanto sube el interes reciente contra su linea de base.
     ratio_minimo: 1.2
     ratio_maximo: 3.0
     interes_minimo: 15
   biblioteca: trendspy
+  terminos_generales:
+  - migrantes
+  - inmigrantes
+  - extranjeros
+  - migracion
+  - remesas
+  geos_generales:
+  - AR
+  - BO
+  - BR
+  - CL
+  - CO
+  - EC
+  - GY
+  - PY
+  - PE
+  - SR
+  - UY
+  - VE
+  - BZ
+  - CR
+  - SV
+  - GT
+  - HN
+  - NI
+  - PA
+  - MX
+  - US
+  - CU
+  - DO
+  - HT
+  - PR
+  - JM
+  - TT
+  _nota_generales: 'Atencion publica, no demanda de tramite. Miden cuanto esta la migracion en la cabeza
+    de la gente en cada pais. Un pico en Chile significa que algo esta pasando alli aunque no haya llegado
+    a los medios que monitoreamos.
+
+    Los 5 terminos entran en UNA consulta por pais (el tope de Google es 5), asi que son tantas consultas
+    como paises. Con 27 paises la corrida tarda unos 2-3 minutos.
+
+    PAISES CHICOS: Guyana, Surinam, Belice, Trinidad y Tobago pueden no tener volumen suficiente y devolver
+    series vacias. No es un error: se registran como ''sin datos'' y quedan a la vista para poder darlos
+    de baja con evidencia.'
+  _nota_servicio: 'Consultas de TRAMITE: quien las escribe esta resolviendo un problema, no leyendo
+    noticias. Por eso son senal independiente de la prensa.
+
+    Solo Argentina por ahora: varias son categorias juridicas argentinas (''residencia precaria'', ''turno
+    migraciones''). Extenderlo a otros paises requiere armar la lista equivalente de cada uno, no traducir
+    la argentina.'
+  fallos_seguidos_antes_de_abandonar: 6
+  espera_entre_consultas: 2.5

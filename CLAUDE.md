@@ -184,10 +184,32 @@ dos órdenes con dos semanas de datos reales y decidir con evidencia.
 Puntaje: interés de la última semana contra la media de 90 días. Un término con
 interés absoluto bajo se ignora aunque suba mucho — pasar de 2 a 6 es ruido.
 
-**Demanda de servicio**, panel aparte: `turno migraciones`, `residencia precaria`,
-`DNI extranjero`. No cruzan con noticias. Son búsquedas de gente resolviendo un
-trámite, no de gente leyendo. Un pico ahí señala una demora o un cambio operativo
-que probablemente ningún medio cubrió: es la señal más independiente del sistema.
+**La geografía va en el parámetro `geo`, nunca en el término.** Consultar `migrantes`
+con `geo=AR` **es** "cuánto buscan los argentinos sobre migrantes". Escribir
+`migrantes en argentina` lo convierte en una frase que casi nadie tipea, sin volumen
+para medir. Es el mismo error que hizo fallar los términos por hecho el 2026-08-02.
+
+Además del cruce por hecho, hay **dos paneles fijos** que no dependen de las noticias:
+
+**a) Atención pública por país.** `migrantes`, `inmigrantes`, `extranjeros`,
+`migracion`, `remesas`, medidos en diez países. No miden demanda de trámite: miden
+cuánto está la migración en la cabeza de la gente. Un pico en Chile significa que algo
+está pasando allí aunque no haya llegado a los medios que monitoreamos.
+
+Los cinco términos entran en una sola consulta —el tope de Google es 5— así que son
+diez consultas. Sumar países cuesta una consulta cada uno; sumar términos por encima
+de cinco duplica todas.
+
+**b) Demanda de servicio.** `turno migraciones`, `DNI extranjero`, `residencia
+precaria`, `certificado de residencia`, `regularizacion migratoria`, `estudiantes
+extranjeros`. Consultas de trámite: quien las escribe está resolviendo un problema,
+no leyendo noticias. Un pico ahí señala una demora o un cambio operativo que
+probablemente ningún medio cubrió. **Es la señal más independiente del sistema**, y la
+primera que produjo un resultado real: el 2026-08-02, `DNI extranjero` a ×4.15 y
+`certificado de residencia` a ×3.21 en Argentina.
+
+Solo Argentina por ahora: varias son categorías jurídicas argentinas. Extenderlo a
+otros países requiere armar la lista equivalente de cada uno, no traducir la argentina.
 
 **Biblioteca: `trendspy`, no `pytrends`.** pytrends fue archivado por su autor el 17
 de abril de 2025 y su última versión es de abril de 2023. Devuelve HTTP 429 en la

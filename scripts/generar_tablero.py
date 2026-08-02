@@ -68,10 +68,21 @@ def cruzar_tendencias(items: list[dict]) -> dict:
         ({"termino": t, **d} for t, d in panel.get("servicio", {}).items()),
         key=lambda x: -x.get("puntaje", 0))[:6]
 
+    # Atencion publica: se muestra el termino mas alto de cada pais, para no
+    # llenar el tablero con cinco filas por pais.
+    general = []
+    for geo, terminos in panel.get("general", {}).items():
+        if not terminos:
+            continue
+        t_top, d_top = max(terminos.items(), key=lambda x: x[1].get("puntaje", 0))
+        general.append({"geo": geo, "termino": t_top, "otros": len(terminos) - 1, **d_top})
+    general.sort(key=lambda x: -x.get("puntaje", 0))
+
     return {
         "disponible": bool(panel.get("disponible")),
         "generado": panel.get("generado", ""),
         "servicio": servicio,
+        "general": general[:8],
         "alertas": panel.get("alertas", [])[:5],
     }
 
@@ -217,6 +228,16 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   border-left:2px solid var(--linea);line-height:1.5}
 .alertas li b{color:var(--tinta)}
 
+/* Atencion publica por pais: donde esta instalado el tema. */
+.atencion{background:var(--tarjeta);border:1px solid var(--sem-celeste);border-radius:9px;
+  padding:.8rem 1rem;margin-bottom:1rem}
+.atencion .tit{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--sem-celeste);font-weight:700;margin-bottom:.4rem}
+.atencion p{margin:0 0 .5rem;font-size:.82rem;color:var(--suave)}
+.atencion ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem}
+.atencion li{font-size:.78rem;padding:.16rem .55rem;border-radius:4px;
+  background:var(--fondo);border:1px solid var(--linea);color:var(--tinta)}
+
 /* Demanda de busqueda: lo que la gente busca antes de que sea noticia. */
 .demanda{background:var(--tarjeta);border:1px solid var(--sem-verde);border-radius:9px;
   padding:.8rem 1rem;margin-bottom:1rem}
@@ -311,6 +332,7 @@ __AVISO__
 </div>
 <div class="filtros" id="filtros" hidden></div>
 <div id="alertas"></div>
+<div id="atencion"></div>
 <div id="demanda"></div>
 <div id="lista"></div>
 <footer>
@@ -518,6 +540,21 @@ function armarAlertas(){
     '</ul></div>';
 }
 
+function armarAtencion(){
+  const t=CTX.tendencias;
+  const c=document.getElementById('atencion');
+  if(!t || !(t.general||[]).length) return;
+  const NOMBRE={AR:'Argentina',CL:'Chile',PE:'Perú',CO:'Colombia',VE:'Venezuela',
+    BO:'Bolivia',MX:'México',BR:'Brasil',EC:'Ecuador',US:'Estados Unidos'};
+  c.innerHTML='<div class="atencion"><div class="tit">Atención pública en alza</div>'+
+    '<p>Países donde las búsquedas sobre migración están por encima de lo habitual. '+
+    'No es demanda de trámite: es el tema instalado en la conversación. '+
+    'Un pico acá puede anticipar algo que todavía no llegó a los medios que monitoreamos.</p>'+
+    '<ul>'+t.general.map(x=>`<li><b>${esc(NOMBRE[x.geo]||x.geo)}</b> · `+
+      `${esc(x.termino)} ×${x.ratio}${x.otros>0?` · +${x.otros} términos`:''}</li>`).join('')+
+    '</ul></div>';
+}
+
 function armarDemanda(){
   const t=CTX.tendencias;
   const c=document.getElementById('demanda');
@@ -531,6 +568,7 @@ function armarDemanda(){
 
 armarSemaforo();
 armarAlertas();
+armarAtencion();
 armarDemanda();
 armarFiltros();
 cambiar(vista||'emergente');
