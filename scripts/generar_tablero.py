@@ -19,11 +19,14 @@ Uso:
 import json
 import logging
 import sys
-
-import yaml
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+
+import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from nucleo.estados import estado, normalizar_ejes, potencial, puntaje  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 ENTRADA = RAIZ / "datos" / "items.json"
@@ -31,6 +34,46 @@ SALIDA = RAIZ / "docs" / "index.html"
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 log = logging.getLogger("tablero")
+
+
+def cruzar_tendencias(items: list[dict]) -> dict:
+    """Adjunta a cada hecho su medicion de Google Trends, si la tiene.
+
+    Solo los hechos en estado `interes` fueron consultados: son los unicos donde
+    la senal es accionable, y ademas son pocos (2-8 por corrida), lo que permite
+    consultar POR HECHO en vez de por un panel grueso de terminos. El resto de
+    los hechos queda sin dato, no en cero.
+
+    El puntaje NO entra en el orden del tablero. Google Trends refleja las
+    busquedas con retraso y lo que las hace subir suele ser la propia cobertura
+    mediatica: rankear con eso contaminaria una metrica que funciona. Se muestra
+    como dato y dispara alertas editoriales.
+    """
+    ruta = RAIZ / "datos" / "tendencias.json"
+    if not ruta.exists():
+        return {"disponible": False, "servicio": [], "alertas": []}
+    try:
+        panel = json.loads(ruta.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"disponible": False, "servicio": [], "alertas": []}
+
+    porhecho = panel.get("hechos", {})
+    for i in items:
+        d = porhecho.get(i.get("id"))
+        if d:
+            i["trends"] = d["puntaje"]
+            i["trends_motivo"] = f"{d['termino']} en {d['geo']}, x{d.get('ratio') or 0}"
+
+    servicio = sorted(
+        ({"termino": t, **d} for t, d in panel.get("servicio", {}).items()),
+        key=lambda x: -x.get("puntaje", 0))[:6]
+
+    return {
+        "disponible": bool(panel.get("disponible")),
+        "generado": panel.get("generado", ""),
+        "servicio": servicio,
+        "alertas": panel.get("alertas", [])[:5],
+    }
 
 
 def contexto() -> dict:
@@ -44,68 +87,6 @@ def contexto() -> dict:
         "colectividades": cfg.get("colectividades", {}).get("nombres", {}),
         "regiones": cfg.get("paises_catalogo", {}).get("regiones", []),
     }
-
-
-def normalizar_ejes(items: list[dict], alias: dict) -> None:
-    """Traduce ejes de versiones anteriores al vocabulario vigente.
-
-    Sin esto, los hechos clasificados antes de un cambio de vocabulario quedan
-    huerfanos y aparecen en un cajon aparte que no le dice nada a nadie.
-    """
-    for i in items:
-        i["ejes"] = list(dict.fromkeys(alias.get(e, e) for e in (i.get("ejes") or [])))
-
-
-def estado(item: dict) -> str:
-    """Ubica un hecho en su ciclo de vida segun cuantos medios lo publicaron.
-
-    Sin clasificacion por LLM no hay importancia, asi que `nadie_lo_mira` y
-    `ruido` no se pueden separar: todo lo de baja cobertura va a `emergente`.
-    """
-    if item.get("fuera_de_alcance"):
-        return "fuera_alcance"
-    # El clasificador ya evaluo que no trata de personas en movilidad.
-    if item.get("clasificado") and item.get("es_migratorio") is False:
-        return "ruido"
-
-    vel = item.get("velocidad") or 0
-    acel = item.get("aceleracion") or 0
-    imp = item.get("importancia")
-
-    if vel >= 20:
-        return "top_trend"
-    if vel >= 8 or (vel >= 5 and acel >= 4):
-        return "trending"
-    if vel >= 3 or (vel >= 2 and acel >= 2):
-        return "interes"
-    if imp is None:
-        return "emergente"
-    return "nadie_lo_mira" if imp >= 7 else "ruido"
-
-
-def frescura(horas) -> float:
-    """Peso por antiguedad: lo que recien arranca vale mas que lo que ya paso."""
-    if horas is None:
-        return 0.4
-    if horas < 6:
-        return 1.0
-    if horas < 12:
-        return 0.7
-    if horas < 24:
-        return 0.4
-    return 0.1
-
-
-def puntaje(item: dict) -> float:
-    """Desempate dentro de una misma importancia.
-
-    El orden principal es por IMPORTANCIA, de mayor a menor. Este puntaje solo
-    ordena los hechos que comparten importancia: ahi mandan velocidad y frescura.
-    """
-    imp = item.get("importancia") or 5
-    vel = item.get("velocidad") or 0
-    acel = max(0, item.get("aceleracion") or 0)
-    return round(imp * frescura(item.get("horas")) * (vel + acel * 2), 1)
 
 
 PLANTILLA = """<!DOCTYPE html>
@@ -225,6 +206,26 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .grupo button[aria-pressed="true"]{background:var(--rojo);color:#fff;border-color:var(--rojo)}
 .nota-filtro{font-size:.74rem;color:var(--tenue);margin:.45rem 0 0;font-style:italic}
 
+/* Alerta editorial: importante + poco cubierto + busquedas subiendo. */
+.alertas{background:var(--tarjeta);border-left:4px solid var(--sem-rojo);border-radius:0 9px 9px 0;
+  padding:.85rem 1rem;margin-bottom:1rem}
+.alertas .tit{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--sem-rojo);font-weight:700;margin-bottom:.4rem}
+.alertas p{margin:0 0 .6rem;font-size:.82rem;color:var(--suave)}
+.alertas ul{list-style:none;margin:0;padding:0}
+.alertas li{font-size:.85rem;margin-bottom:.55rem;padding-left:.7rem;
+  border-left:2px solid var(--linea);line-height:1.5}
+.alertas li b{color:var(--tinta)}
+
+/* Demanda de busqueda: lo que la gente busca antes de que sea noticia. */
+.demanda{background:var(--tarjeta);border:1px solid var(--sem-verde);border-radius:9px;
+  padding:.8rem 1rem;margin-bottom:1rem}
+.demanda .tit{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--sem-verde);font-weight:700;margin-bottom:.4rem}
+.demanda p{margin:0 0 .5rem;font-size:.82rem;color:var(--suave)}
+.demanda ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem}
+.demanda li{font-size:.78rem;padding:.16rem .55rem;border-radius:4px;
+  background:var(--fondo);border:1px solid var(--linea);color:var(--tinta)}
 .item{background:var(--tarjeta);border:1px solid var(--linea);border-radius:9px;
   padding:1rem 1.1rem;margin-bottom:.75rem}
 .item h2{font-size:1.03rem;font-weight:600;margin:0 0 .5rem;line-height:1.4}
@@ -252,6 +253,13 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .et.pobl{background:var(--fondo);border-color:var(--marron-med);color:var(--marron-med)}
 .et.actor{border-style:dotted;color:var(--suave)}
 .et.cole{border-color:var(--rosa);color:var(--rosa)}
+.trend{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
+  background:var(--fondo);border:1px solid var(--sem-verde);color:var(--sem-verde);
+  font-weight:600}
+.trend.plano{border-color:var(--linea);color:var(--tenue)}
+.extrarreg{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
+  background:var(--fondo);border:1px solid var(--linea);color:var(--tenue);
+  font-weight:600;text-transform:uppercase;letter-spacing:.03em}
 .alerta-mini{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
   background:var(--fondo);border:1px solid var(--rosa-claro);color:var(--rosa);
   font-weight:600}
@@ -302,6 +310,8 @@ __AVISO__
   <span class="resultado" id="resultado"></span>
 </div>
 <div class="filtros" id="filtros" hidden></div>
+<div id="alertas"></div>
+<div id="demanda"></div>
 <div id="lista"></div>
 <footer>
 <b>Cómo leerlo.</b> Cada fila es un <i>hecho</i>, no una nota: si veinte medios publican
@@ -311,6 +321,9 @@ Cada medio listado abajo del título es un enlace directo a su publicación, par
 cualquiera de las fuentes.<br>
 Los países con <span class="et inferido">borde punteado</span> son inferidos de la
 búsqueda, no del titular: menos confiables.<br>
+En «De interés» cada hecho muestra el dato de <b>búsquedas</b> en Google: ↑ si están
+subiendo, → si se mueven poco, — si están planas. <b>No altera el orden</b>, que lo da
+la importancia editorial. Es información para decidir, no un ranking automático.<br>
 El radar propone. La decisión editorial es humana.
 <p class="slogan">periodismo sin fronteras</p>
 </footer>
@@ -324,8 +337,8 @@ let vista=null, regionActiva=null, paisActivo=null;
 
 const ESTADOS = {
   trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
-  interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Si el tema escala, la nota ya está publicada.'},
-  top_trend:{n:'Top trend', a:'20 o más medios. Saturado: no correrla. Cubrir solo con ángulo propio o dato nuevo.'},
+  interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Ordenado por importancia editorial; el dato de búsquedas en Google va al lado de cada hecho, para que la decisión combine ambas cosas.'},
+  top_trend:{n:'Top trend', a:'La conversación dominante del momento: 20 o más medios en la región, 30 o más fuera de ella. Saturado, no correrla; cubrir solo con ángulo propio. Los hechos extrarregionales aparecen abajo, marcados, para ver de qué se habla globalmente.'},
   emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.'},
   nadie_lo_mira:{n:'Posibles alertas', a:'Posible noticia de impacto. Para investigar. Alta importancia editorial y casi sin cobertura: si se confirma, es una primicia.'},
   ruido:{n:'Para auditar', a:'Baja cobertura y baja importancia, o el clasificador determinó que no trata de personas en movilidad. Visible para controlar qué se está descartando.'},
@@ -447,8 +460,14 @@ function dibujar(){
   const vis=ITEMS.filter(i=>i.estado===vista)
     .filter(i=>!regionActiva||i.region===regionActiva)
     .filter(i=>!paisActivo||nombresPais(i).includes(paisActivo))
-    // Orden principal: IMPORTANCIA de mayor a menor. El puntaje solo desempata.
-    .sort((a,b)=>(b.importancia||0)-(a.importancia||0)||b.puntaje-a.puntaje);
+    // Orden: primero lo regional, despues lo extrarregional. Dentro de cada
+    // bloque, IMPORTANCIA de mayor a menor y el puntaje desempata.
+    // Google Trends NO ordena: se muestra como dato al lado de cada hecho para
+    // que la decision editorial combine ambas cosas. Ver nucleo/estados.py.
+    .sort((a,b)=>
+      (a.fuera_de_alcance?1:0)-(b.fuera_de_alcance?1:0) ||
+      (b.importancia||0)-(a.importancia||0) ||
+      b.puntaje-a.puntaje);
   refrescarBarra(vis.length);
   const l=document.getElementById('lista');
   if(!vis.length){l.innerHTML='<p class="vacio">Sin resultados con estos filtros.</p>';return}
@@ -458,6 +477,8 @@ function dibujar(){
       <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
       <div class="datos">
         ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">Importancia <b>${i.importancia}</b></span>`:''}
+        ${i.fuera_de_alcance?`<span class="extrarreg" title="Ocurre fuera de America Latina, el Caribe y Estados Unidos">extrarregional</span>`:''}
+        ${i.trends!=null?`<span class="trend${i.trends>=5?'':' plano'}" title="${esc(i.trends_motivo||'')}">búsquedas ${i.trends>=5?'↑':(i.trends>0?'→':'—')} ${i.trends}</span>`:''}
         ${i.requiere_verificacion?`<span class="alerta-mini" title="El titular afirma cifras o hechos sin citar fuente">verificar</span>`:''}
         ${i.contiene_datos_personales?`<span class="alerta-mini" title="Identifica a una persona migrante concreta">dato personal</span>`:''}
         <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>
@@ -484,7 +505,33 @@ function dibujar(){
 
 document.getElementById('abrir').onclick=alternarFiltros;
 document.getElementById('limpiar').onclick=limpiarFiltros;
+function armarAlertas(){
+  const t=CTX.tendencias;
+  const c=document.getElementById('alertas');
+  if(!t || !(t.alertas||[]).length) return;
+  c.innerHTML='<div class="alertas"><div class="tit">Alerta editorial</div>'+
+    '<p>Temas importantes, todavía poco cubiertos, y con las búsquedas subiendo. '+
+    'Están por escalar: si se publica ahora, se llega primero.</p><ul>'+
+    t.alertas.map(a=>`<li><b>${esc(a.titulo)}</b><br>`+
+      `búsquedas de «${esc(a.termino)}» ×${a.ratio} en ${esc(a.geo)} · `+
+      `importancia ${a.importancia} · ${a.velocidad} medios</li>`).join('')+
+    '</ul></div>';
+}
+
+function armarDemanda(){
+  const t=CTX.tendencias;
+  const c=document.getElementById('demanda');
+  if(!t || !(t.servicio||[]).length) return;
+  c.innerHTML='<div class="demanda"><div class="tit">Demanda de búsqueda en alza</div>'+
+    '<p>Lo que la gente está buscando y la prensa todavía no cubrió. '+
+    'Un pico acá suele señalar un problema real: una demora, un cambio de trámite.</p>'+
+    '<ul>'+t.servicio.map(x=>`<li>${esc(x.termino)} · ${esc(x.geo)} · ×${x.ratio}</li>`).join('')+
+    '</ul></div>';
+}
+
 armarSemaforo();
+armarAlertas();
+armarDemanda();
 armarFiltros();
 cambiar(vista||'emergente');
 </script>
@@ -504,9 +551,11 @@ def main() -> int:
 
     ctx = contexto()
     normalizar_ejes(items, ctx["alias"])
+    ctx["tendencias"] = cruzar_tendencias(items)
     for i in items:
         i["estado"] = estado(i)
         i["puntaje"] = puntaje(i)
+        i["potencial"] = potencial(i)
 
     generado = datos.get("generado", "")
     try:

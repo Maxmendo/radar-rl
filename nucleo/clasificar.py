@@ -196,7 +196,7 @@ CAMPOS = ("es_migratorio", "ejes", "poblaciones", "colectividades", "actores",
           "etapa", "paises", "tipo", "importancia", "cobertura", "confianza",
           "tiene_fuente_primaria", "contiene_datos_personales",
           "requiere_verificacion", "terminologia_problematica",
-          "angulo_sugerido", "nota")
+          "termino_busqueda", "angulo_sugerido", "nota")
 
 
 def validar(obj: dict, vocab: dict) -> dict:
@@ -232,6 +232,10 @@ def validar(obj: dict, vocab: dict) -> dict:
 
     v = limpio.get("terminologia_problematica")
     limpio["terminologia_problematica"] = v if isinstance(v, list) else []
+
+    # Google Trends no acepta frases largas: se acota a 3 palabras.
+    tb = limpio.get("termino_busqueda")
+    limpio["termino_busqueda"] = " ".join(str(tb).split()[:3]) if tb else None
 
     limpio["clasificado"] = True
     return limpio

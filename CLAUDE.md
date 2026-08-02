@@ -130,17 +130,80 @@ Ordenamiento dentro de cada estado: por `alerta` en los tres de arriba, por
 
 ```
 frescura     = 1.0 si primera_vez < 6h | 0.7 < 12h | 0.4 < 24h | 0.1 despues
-trends       = 0-10, senal de Google Trends para los terminos del hecho
+trends       = 0-10, senal de Google Trends del cruce (eje, pais) del hecho
 alerta       = importancia x frescura x (velocidad + aceleracion x 2 + trends)
 subcobertura = importancia + (10 - velocidad) x 0.4
 ```
 
-Los umbrales viven en `fuentes.yaml`, sección `estados`. **Son provisorios**: hay que
-calibrarlos con datos reales de las primeras semanas. Cambiarlos no requiere tocar código.
+### Google Trends: `nucleo/tendencias.py`
 
-## 6. Alertas: se disparan por ascenso de estado
+**Se consulta SOLO para los hechos en estado `interes`.** Dos razones:
 
-**No por puntaje alto.** El momento que importa es cuando algo importante entra en
+1. Son 2 a 8 por corrida, no los ~100 del total, así que se puede consultar
+   **por hecho** en vez de por un panel grueso de términos. La precisión sube.
+2. Es el único estado donde la señal es accionable: 3 o más medios **y** búsquedas
+   subiendo significa que el tema está por escalar y todavía se llega primero. Con
+   3 medios y búsquedas planas, probablemente se quede donde está. Eso es
+   exactamente lo que la velocidad sola no distingue.
+
+El término a consultar lo devuelve el clasificador en `termino_busqueda`: de 1 a 3
+palabras que una persona escribiría en Google. Extraerlo con reglas desde un titular
+es poco confiable; el modelo ya lee el titular y lo hace bien.
+
+**No ordena: informa.** El orden lo da la importancia editorial, que tiene fundamento.
+Google Trends se muestra como dato al lado de cada hecho en `interes`, y la persona
+decide combinando ambas cosas.
+
+Se probó ordenar por `importancia x frescura x (medios + trends x 2)` y se descartó:
+
+1. La multiplicación amplificaba de más — hechos editorialmente cercanos quedaban con
+   puntajes al triple, magnificando cualquier error en la importancia, que es un juicio
+   del modelo y no un hecho.
+2. Hizo falta un piso arbitrario de importancia 6 para que un hecho menor muy buscado
+   no desplazara a uno grave poco buscado. Un parche, no un criterio.
+3. Sumaba cosas incomparables: "4 medios" es un conteo, "trends 8" es un ratio
+   convertido a una escala inventada. El peso relativo no tenía fundamento.
+
+Y hay una razón de fondo: **un criterio explicable se adopta, un puntaje opaco se
+ignora.** Si alguien pregunta por qué un hecho está arriba de otro, "porque un modelo
+le puso 7 de importancia y elegí que las búsquedas pesaran doble" no sostiene una
+decisión editorial.
+
+Las cuatro lecturas que el dato habilita, y que ninguna fórmula puede hacer:
+
+| | Lectura |
+|---|---|
+| importancia alta, búsquedas planas | Grave y nadie lo busca: donde Refugio aporta lo que nadie hace |
+| importancia alta, búsquedas subiendo | Grave y con demanda: publicar rápido |
+| importancia media, búsquedas altas | Periodismo de servicio urgente |
+| importancia baja, búsquedas altas | Muy buscado y poco relevante: descartar |
+
+`nucleo/estados.py` sigue calculando `potencial` sin usarlo, para poder comparar los
+dos órdenes con dos semanas de datos reales y decidir con evidencia.
+
+Puntaje: interés de la última semana contra la media de 90 días. Un término con
+interés absoluto bajo se ignora aunque suba mucho — pasar de 2 a 6 es ruido.
+
+**Demanda de servicio**, panel aparte: `turno migraciones`, `residencia precaria`,
+`DNI extranjero`. No cruzan con noticias. Son búsquedas de gente resolviendo un
+trámite, no de gente leyendo. Un pico ahí señala una demora o un cambio operativo
+que probablemente ningún medio cubrió: es la señal más independiente del sistema.
+
+**Fragilidad asumida.** pytrends es una biblioteca no oficial que se rompe cada vez
+que Google cambia algo. Corre una vez por día, cachea 20 horas, abandona tras 3
+consultas seguidas sin respuesta, y ante cualquier error escribe un panel vacío
+para que el resto del sistema siga funcionando.
+
+## 6. Alertas
+
+Dos disparadores, ambos apuntando al mismo momento: cuando todavía se puede llegar
+primero.
+
+**a) Cruce con Google Trends.** Un hecho en `interes` con importancia >= 7 y
+búsquedas subiendo (puntaje >= 5). Es el más específico: importante, poco cubierto
+y con demanda de información creciendo. Ya implementado en `nucleo/tendencias.py`.
+
+**b) Ascenso de estado.** PENDIENTE. **No por puntaje alto.** El momento que importa es cuando algo importante entra en
 `interes`: ahí todavía se puede llegar primero. Un umbral absoluto avisaría cuando ya
 es `top_trend`, o sea tarde.
 
@@ -190,6 +253,9 @@ Este proyecto lo mantiene un equipo chico y no técnico en su mayoría. La prior
 que se pueda leer y arreglar dentro de seis meses, no que sea elegante.
 
 - Python 3.11+.
+- **`nucleo/estados.py` es la única fuente de verdad** sobre las reglas del ciclo de
+  vida (`estado`, `frescura`, `puntaje`). Las usan el tablero y el módulo de
+  tendencias; duplicarlas garantiza que en algún momento se desincronicen.
 - **`nucleo/registro.py` es la única fuente de verdad** sobre qué fuentes existen y cómo
   consultarlas. Nunca repetir la lista ni la lógica de armar URLs en otro lado: eso fue
   lo que desincronizó a `muestrear_feeds.py` en julio de 2026.

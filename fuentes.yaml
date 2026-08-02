@@ -570,23 +570,6 @@ cobertura_agregada:
   verificado: true
   nota: 'HTTP 429 en corridas consecutivas desde Actions: las IPs de los runners son compartidas. Requiere
     reintento con espera, o IP no compartida.'
-tendencias_busqueda:
-- id: trends_tramites
-  biblioteca: pytrends
-  geo: AR
-  prioridad: 2
-  verificado: false
-  nota: pytrends se rompe periodicamente por cambios de Google. Aislar y tolerar fallo.
-  terminos:
-  - radicacion extranjeros
-  - DNI extranjero
-  - residencia precaria
-  - turno migraciones
-  - visa humanitaria
-  - reunificacion familiar
-  - convalidacion de titulo extranjero
-  - asilo
-  - regularizacion migratoria
 social:
 - id: bluesky_migracion
   nombre: Bluesky, busqueda publica
@@ -1391,3 +1374,31 @@ paises_catalogo:
     - america del sur
     - cono sur
     - region andina
+tendencias:
+  _nota: 'Se consulta Google Trends SOLO para los hechos en estado `interes`: son 2-8 por corrida, asi
+    que se puede consultar POR HECHO en vez de por un panel grueso. Y la senal ahi es predictiva: 3
+    medios MAS busquedas subiendo = esta por escalar y todavia se llega primero.
+
+    NO se usa para ordenar el tablero. Trends refleja las busquedas con retraso y lo que las hace subir
+    suele ser la propia cobertura mediatica: sumarlo al ranking contaminaria una metrica que funciona.
+    Sirve para disparar ALERTAS.'
+  activo: true
+  solo_en_digest: true
+  horas_de_cache: 20
+  ventana: today 3-m
+  max_hechos: 15
+  geo_servicio: AR
+  umbral_alerta: 5
+  importancia_minima_alerta: 7
+  terminos_servicio:
+  - turno migraciones
+  - DNI extranjero
+  - residencia precaria
+  - visa humanitaria
+  - reunificacion familiar
+  - certificado de residencia
+  umbrales:
+    _nota: Puntaje 0-10 por cuanto sube el interes reciente contra su linea de base.
+    ratio_minimo: 1.2
+    ratio_maximo: 3.0
+    interes_minimo: 15

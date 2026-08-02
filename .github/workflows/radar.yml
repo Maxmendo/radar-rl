@@ -88,6 +88,16 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m nucleo.clasificar --lote 20 --max-hechos 120
 
+      # GOOGLE TRENDS. Va DESPUES de clasificar porque necesita dos cosas que
+      # produce el clasificador: el `termino_busqueda` de cada hecho y su
+      # importancia, que definen cuales estan en estado `interes`.
+      # Solo en la corrida del digest: son 2-8 consultas, pero pytrends bloquea
+      # por tasa si se lo llama ocho veces al dia. Cachea 20 horas.
+      - name: Google Trends
+        if: steps.cuando.outputs.digest == 'true'
+        continue-on-error: true
+        run: python -m nucleo.tendencias
+
       # Diagnostico, solo en la corrida del digest para no gastar tiempo.
       - name: Muestrear feeds
         if: steps.cuando.outputs.digest == 'true'

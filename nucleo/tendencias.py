@@ -1,0 +1,273 @@
+"""Consulta Google Trends SOLO para los hechos que estan en estado `interes`.
+
+POR QUE SOLO ESOS
+-----------------
+`interes` es el estado donde una redaccion chica todavia puede llegar primero:
+3 o mas medios, pero el tema no explotó. Son entre 2 y 8 hechos por corrida, no
+los ~100 del total, asi que se puede consultar POR HECHO en vez de por un panel
+grueso de terminos.
+
+Y la senal ahi es predictiva: un hecho con 3 medios Y busquedas subiendo esta por
+escalar. Uno con 3 medios y busquedas planas probablemente se quede donde esta.
+Eso es justo lo que la velocidad sola no distingue.
+
+En cambio NO se usa para ordenar el tablero: Google Trends refleja las busquedas
+con retraso y lo que las hace subir suele ser la propia cobertura mediatica.
+Sumarlo al ranking contaminaria una metrica que funciona con una senal
+correlacionada. Sirve para DISPARAR ALERTAS, no para rankear.
+
+SEGUNDA FUNCION: DEMANDA DE SERVICIO
+------------------------------------
+Un panel fijo de terminos de tramite ("turno migraciones", "residencia precaria")
+que no cruza con noticias. Son busquedas de gente resolviendo un problema, no de
+gente leyendo. Un pico ahi señala una demora o un cambio de tramite que
+probablemente ningun medio cubrio: es la senal mas independiente del sistema.
+
+Salida: datos/tendencias.json
+
+Uso:
+    python -m nucleo.tendencias
+    python -m nucleo.tendencias --forzar
+"""
+
+import argparse
+import json
+import logging
+import sys
+import time
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from nucleo.estados import estado, normalizar_ejes  # noqa: E402
+from nucleo.registro import cargar  # noqa: E402
+
+RAIZ = Path(__file__).resolve().parent.parent
+ITEMS = RAIZ / "datos" / "items.json"
+SALIDA = RAIZ / "datos" / "tendencias.json"
+
+LOTE = 5              # tope de terminos por consulta que admite Google Trends
+ESPERA = 3            # segundos entre consultas
+FALLOS_SEGUIDOS = 3   # si tantas fallan seguidas, se abandona en vez de gastar minutos
+MAX_HECHOS = 15       # tope de seguridad si `interes` creciera mucho
+
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+log = logging.getLogger("tendencias")
+
+
+def vacio(motivo: str) -> dict:
+    """Estructura minima para que el resto del sistema siga funcionando."""
+    return {
+        "generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "disponible": False,
+        "motivo": motivo,
+        "hechos": {},
+        "servicio": {},
+        "alertas": [],
+    }
+
+
+def cache_vigente(horas: int) -> dict | None:
+    """Devuelve el panel guardado si todavia es reciente."""
+    if not SALIDA.exists():
+        return None
+    try:
+        d = json.loads(SALIDA.read_text(encoding="utf-8"))
+        gen = datetime.fromisoformat(d["generado"].replace("Z", "+00:00"))
+    except (json.JSONDecodeError, KeyError, ValueError):
+        return None
+    return d if datetime.now(timezone.utc) - gen < timedelta(hours=horas) else None
+
+
+def puntuar(serie, umbrales: dict) -> tuple[int, dict]:
+    """Convierte una serie temporal en un puntaje 0-10 de cuanto esta subiendo.
+
+    Compara el interes de la ultima semana contra la media del periodo. Un
+    termino con interes absoluto bajo se ignora aunque suba mucho: pasar de 2 a 6
+    es ruido estadistico, no una senal.
+    """
+    valores = [v for v in serie if v is not None]
+    if len(valores) < 8:
+        return 0, {}
+
+    reciente = sum(valores[-7:]) / 7
+    base = sum(valores) / len(valores)
+
+    if base <= 0 or reciente < umbrales["interes_minimo"]:
+        return 0, {"reciente": round(reciente, 1), "base": round(base, 1), "ratio": None}
+
+    ratio = reciente / base
+    lo, hi = umbrales["ratio_minimo"], umbrales["ratio_maximo"]
+    if ratio < lo:
+        p = 0
+    elif ratio >= hi:
+        p = 10
+    else:
+        p = round((ratio - lo) / (hi - lo) * 10)
+
+    return int(p), {"reciente": round(reciente, 1), "base": round(base, 1),
+                    "ratio": round(ratio, 2)}
+
+
+def consultar(pytrends, terminos: list[str], geo: str, ventana: str,
+              umbrales: dict) -> dict:
+    """Consulta un lote de terminos para un pais y los puntua."""
+    try:
+        pytrends.build_payload(terminos, timeframe=ventana, geo=geo)
+        df = pytrends.interest_over_time()
+    except Exception as e:
+        log.warning("      %s / %s: %s", geo, ", ".join(terminos)[:38], type(e).__name__)
+        return {}
+    if df is None or df.empty:
+        return {}
+
+    salida = {}
+    for t in terminos:
+        if t in df.columns:
+            p, d = puntuar(df[t].tolist(), umbrales)
+            salida[t] = {"puntaje": p, **d}
+    return salida
+
+
+def hechos_de_interes(limite: int) -> list[dict]:
+    """Los hechos en estado `interes` que tienen termino de busqueda asignado."""
+    if not ITEMS.exists():
+        return []
+    datos = json.loads(ITEMS.read_text(encoding="utf-8"))
+    items = datos.get("items", [])
+    normalizar_ejes(items)
+
+    sel = [i for i in items
+           if estado(i) == "interes" and (i.get("termino_busqueda") or "").strip()]
+    sel.sort(key=lambda x: -(x.get("importancia") or 0))
+    return sel[:limite]
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--forzar", action="store_true", help="ignora el cache")
+    args = ap.parse_args()
+
+    cfg = cargar().get("tendencias", {})
+    if not cfg.get("activo"):
+        log.info("Tendencias desactivado en fuentes.yaml")
+        SALIDA.write_text(json.dumps(vacio("desactivado"), ensure_ascii=False, indent=1),
+                          encoding="utf-8")
+        return 0
+
+    if not args.forzar:
+        previo = cache_vigente(cfg.get("horas_de_cache", 20))
+        if previo:
+            log.info("Panel en cache, generado %s. Nada que hacer.", previo["generado"])
+            return 0
+
+    seleccion = hechos_de_interes(cfg.get("max_hechos", MAX_HECHOS))
+    servicio = cfg.get("terminos_servicio", [])
+
+    log.info("Hechos en `interes` con termino de busqueda: %d", len(seleccion))
+    for h in seleccion:
+        log.info("   [%s] %s", h["termino_busqueda"], h["titulo_original"][:56])
+
+    if not seleccion and not servicio:
+        SALIDA.write_text(json.dumps(vacio("nada que consultar"), ensure_ascii=False,
+                                     indent=1), encoding="utf-8")
+        return 0
+
+    try:
+        from pytrends.request import TrendReq
+        pytrends = TrendReq(hl="es", tz=180, timeout=(10, 30), retries=2, backoff_factor=1)
+    except Exception as e:
+        log.warning("pytrends no disponible (%s); panel vacio", type(e).__name__)
+        SALIDA.write_text(json.dumps(vacio(f"pytrends: {type(e).__name__}"),
+                                     ensure_ascii=False, indent=1), encoding="utf-8")
+        return 0
+
+    ventana = cfg.get("ventana", "today 3-m")
+    umbrales = cfg.get("umbrales", {"ratio_minimo": 1.2, "ratio_maximo": 3.0,
+                                    "interes_minimo": 15})
+    geo_servicio = cfg.get("geo_servicio", "AR")
+    seguidos = 0
+
+    # --- Hechos de interes: un termino por hecho, agrupados por pais ---------
+    por_geo: dict = {}
+    for h in seleccion:
+        geo = (h.get("paises") or ["AR"])[0]
+        por_geo.setdefault(geo, []).append(h)
+
+    resultados: dict = {}
+    for geo, grupo in por_geo.items():
+        if seguidos >= FALLOS_SEGUIDOS:
+            break
+        terminos = [h["termino_busqueda"] for h in grupo]
+        for i in range(0, len(terminos), LOTE):
+            if seguidos >= FALLOS_SEGUIDOS:
+                break
+            lote = terminos[i:i + LOTE]
+            res = consultar(pytrends, lote, geo, ventana, umbrales)
+            seguidos = 0 if res else seguidos + 1
+            for h in grupo:
+                d = res.get(h["termino_busqueda"])
+                if d:
+                    resultados[h["id"]] = {
+                        "termino": h["termino_busqueda"], "geo": geo,
+                        "titulo": h["titulo_original"], "importancia": h.get("importancia"),
+                        "velocidad": h.get("velocidad"), **d,
+                    }
+            time.sleep(ESPERA)
+
+    # --- Demanda de servicio: panel fijo, senal independiente ---------------
+    demanda: dict = {}
+    if seguidos < FALLOS_SEGUIDOS:
+        for i in range(0, len(servicio), LOTE):
+            res = consultar(pytrends, servicio[i:i + LOTE], geo_servicio, ventana, umbrales)
+            seguidos = 0 if res else seguidos + 1
+            for t, d in res.items():
+                if d["puntaje"] > 0:
+                    demanda[t] = {"geo": geo_servicio, **d}
+            time.sleep(ESPERA)
+            if seguidos >= FALLOS_SEGUIDOS:
+                break
+
+    # --- Alertas: importante + poco cubierto + busquedas subiendo -----------
+    umbral_alerta = cfg.get("umbral_alerta", 5)
+    imp_minima = cfg.get("importancia_minima_alerta", 7)
+    alertas = [
+        d for d in resultados.values()
+        if d["puntaje"] >= umbral_alerta and (d.get("importancia") or 0) >= imp_minima
+    ]
+    alertas.sort(key=lambda x: -x["puntaje"])
+
+    disponible = bool(resultados or demanda)
+    SALIDA.parent.mkdir(parents=True, exist_ok=True)
+    SALIDA.write_text(json.dumps({
+        "generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "disponible": disponible,
+        "motivo": "" if disponible else "sin respuesta de Google Trends",
+        "ventana": ventana,
+        "hechos": resultados,
+        "servicio": demanda,
+        "alertas": alertas,
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    log.info("")
+    log.info("Hechos consultados: %d | de servicio en alza: %d", len(resultados), len(demanda))
+    log.info("Escrito %s", SALIDA.relative_to(RAIZ))
+
+    if alertas:
+        log.info("")
+        log.info("ALERTA EDITORIAL: importante, poco cubierto y con busquedas en alza")
+        for a in alertas:
+            log.info("   x%.2f  imp %s  %d medios  |  %s",
+                     a.get("ratio") or 0, a.get("importancia"), a.get("velocidad") or 0,
+                     a["titulo"][:58])
+    if demanda:
+        log.info("")
+        log.info("DEMANDA DE SERVICIO EN ALZA (gente buscando, prensa todavia no):")
+        for t, d in demanda.items():
+            log.info("   %-28s %s  interes %.0f contra base %.0f",
+                     t, d["geo"], d["reciente"], d["base"])
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
