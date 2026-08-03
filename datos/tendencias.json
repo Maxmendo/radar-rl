@@ -1,0 +1,88 @@
+{
+ "generado": "2026-08-03T11:26:24+00:00",
+ "disponible": true,
+ "motivo": "",
+ "ventana": "today 3-m",
+ "hechos": {
+  "17fad9f3ea68": {
+   "id_hecho": "17fad9f3ea68",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1ZG05c25CdFRlV1FNUzlTUTNjdml3WFJNcVgxcmpEWld5STNNTGNwMFJWWEdlcFJRSThiRHBfSllwdi0zVEo5ZndKaUJSWmx4emlHS1FHNERPODdTOFE?oc=5",
+   "termino": "detencion migratoria",
+   "geo": "MX",
+   "titulo": "Reportan motín en la Estación Migratoria Siglo XXI de Tapachula, Chiapas; manifestantes incendian colchonetas",
+   "importancia": 8,
+   "velocidad": 7,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
+  }
+ },
+ "audiencia": {
+  "AR": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "1065700",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos migrantes",
+     "valor": "711350",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "los migrantes",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-03T11:26:15+00:00"
+  },
+  "VE": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "359700",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "españa",
+     "valor": "67",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos",
+     "valor": "408800",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-03T11:26:20+00:00"
+  }
+ },
+ "proximo_pais": 1,
+ "paises_sin_datos": [],
+ "servicio": {
+  "DNI extranjero": {
+   "geo": "AR",
+   "puntaje": 10,
+   "reciente": 20.6,
+   "base": 5.7,
+   "ratio": 3.63
+  },
+  "certificado de residencia": {
+   "geo": "AR",
+   "puntaje": 4,
+   "reciente": 17.7,
+   "base": 9.1,
+   "ratio": 1.95
+  }
+ },
+ "alertas": []
+}
