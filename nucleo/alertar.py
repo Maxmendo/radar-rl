@@ -1,25 +1,17 @@
 """Abre un issue en el repositorio cuando se dispara una alerta editorial.
 
-POR QUE UN ISSUE Y NO OTRA COSA
--------------------------------
-La alerta vive en el tablero, pero si nadie entra no se entera nadie. Un issue de
-GitHub notifica por mail y por push a la app del celular, sin credenciales
-externas, sin costo y sin sumar infraestructura. Ademas queda registro: cada
-alerta es un issue con fecha, que se cierra cuando se cubrio o se descarto.
+COMO LLEGA
+----------
+Por CORREO, a la lista de fuentes.yaml > correo > alertas. No requiere que los
+destinatarios tengan cuenta de nada.
 
-A QUIEN LE LLEGA
-----------------
-A quienes esten como colaboradores del repositorio Y tengan las notificaciones
-activadas. Para sumar a alguien: Settings > Collaborators > Add people. Si el
-equipo crece o no todos quieren cuenta de GitHub, conviene evaluar un envio por
-mail directo, pero eso requiere credenciales de un servicio de correo.
+Opcionalmente tambien puede abrir un issue en el repositorio, pero eso queda
+desactivado por defecto: los issues solo notifican a colaboradores, y eso exige
+cuenta de GitHub a cada persona del equipo. Se activa con
+fuentes.yaml > tendencias > alertas_por_issue.
 
-Se puede mencionar gente en el cuerpo del issue con @usuario para que reciba
-notificacion aunque no siga el repositorio: se configura en fuentes.yaml,
-`alertas_mencionar`.
-
-Requiere GH_TOKEN (el GITHUB_TOKEN que provee Actions alcanza) y permiso
-`issues: write` en el workflow.
+Cada alerta se avisa UNA sola vez, aunque persista 12 horas en el tablero. El
+registro esta en datos/alertados.json
 
 Uso:
     python -m nucleo.alertar
@@ -37,6 +29,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from nucleo.correo import enviar, envoltura, hay_credenciales  # noqa: E402
 from nucleo.registro import cargar  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -115,6 +108,48 @@ def cuerpo(alerta: dict, hecho: dict | None, mencionar: list[str]) -> str:
     return "\n".join(l)
 
 
+def html_alerta(alerta: dict, hecho: dict | None) -> str:
+    """Version en HTML del aviso, para el correo."""
+    c = []
+    url = alerta.get("url") or (hecho or {}).get("url") or ""
+    titulo = alerta["titulo"]
+    c.append(f"<h2>{f'<a href=\'{url}\'>{titulo}</a>' if url else titulo}</h2>")
+
+    c.append("<table>")
+    c.append(f"<tr><td>Importancia editorial</td>"
+             f"<td class='v'>{alerta.get('importancia','?')}/10</td></tr>")
+    c.append(f"<tr><td>Medios que lo publicaron</td>"
+             f"<td class='v'>{alerta.get('velocidad','?')}</td></tr>")
+    c.append(f"<tr><td>Búsquedas en Google</td>"
+             f"<td class='v'>«{alerta['termino']}» ×{alerta.get('ratio','?')} "
+             f"en {alerta['geo']}</td></tr>")
+    if hecho and hecho.get("horas") is not None:
+        c.append(f"<tr><td>Antigüedad</td>"
+                 f"<td class='v'>{round(hecho['horas'])} h</td></tr>")
+    if hecho and hecho.get("ejes"):
+        c.append(f"<tr><td>Ejes</td><td class='v'>{', '.join(hecho['ejes'])}</td></tr>")
+    c.append("</table>")
+
+    if hecho and hecho.get("angulo_sugerido"):
+        c.append(f"<p class='angulo'><b>Ángulo sugerido:</b> {hecho['angulo_sugerido']}</p>")
+
+    if hecho and hecho.get("coberturas"):
+        enlaces = " · ".join(f"<a href='{x['url']}'>{x['medio']}</a>"
+                             for x in hecho["coberturas"][:10])
+        c.append(f"<p class='medios'><b>Publicado por</b><br>{enlaces}</p>")
+
+    avisos = []
+    if hecho and hecho.get("terminologia_problematica"):
+        avisos.append("Lenguaje a revisar en la cobertura: "
+                      + ", ".join(hecho["terminologia_problematica"]))
+    if hecho and hecho.get("requiere_verificacion"):
+        avisos.append("El titular afirma cifras o hechos sin citar fuente.")
+    if avisos:
+        c.append("<div class='aviso'>" + "<br>".join(avisos) + "</div>")
+
+    return "".join(c)
+
+
 def abrir_issue(repo: str, token: str, titulo: str, texto: str,
                 etiquetas: list[str]) -> str | None:
     """Crea el issue y devuelve su URL, o None si fallo."""
@@ -179,38 +214,65 @@ def main() -> int:
     if not nuevas:
         return 0
 
+    correo_cfg = cargar().get("correo", {})
+    destinatarios = correo_cfg.get("alertas", []) if correo_cfg.get("activo") else []
+
     if args.simular:
+        log.info("Se enviaria a: %s", ", ".join(destinatarios) or "(nadie)")
         for a in nuevas:
             log.info("\n%s", "=" * 62)
-            log.info("TITULO: Alerta editorial: %s", a["titulo"][:60])
+            log.info("ASUNTO: Alerta editorial: %s", a["titulo"][:60])
             log.info("%s", cuerpo(a, hechos.get(a["id_hecho"]), mencionar))
         return 0
 
+    # --- Correo: la via principal ------------------------------------------
+    enviados = 0
+    if destinatarios and hay_credenciales():
+        for a in nuevas:
+            h = hechos.get(a["id_hecho"])
+            asunto = f"Alerta editorial: {a['titulo'][:70]}"
+            plano = cuerpo(a, h, [])
+            pie = ("Esta alerta llega porque el hecho tiene importancia editorial alta, "
+                   "todavía pocos medios cubriéndolo, y las búsquedas en Google están "
+                   "subiendo. Está por escalar: si se publica ahora, se llega primero."
+                   "<br><br>Radar Migratorio · Una herramienta de Refugio Latinoamericano")
+            html = envoltura("Alerta editorial",
+                             "Importante, poco cubierto y con las búsquedas subiendo",
+                             html_alerta(a, h), pie)
+            log.info("Enviando: %s", a["titulo"][:56])
+            if enviar(destinatarios, asunto, plano, html):
+                enviados += 1
+    elif destinatarios:
+        log.warning("Hay destinatarios pero faltan las credenciales de correo.")
+        log.warning("Cargar CORREO_USUARIO y CORREO_CLAVE como secretos del repositorio.")
+
+    # --- Issue: respaldo opcional, desactivado por defecto ------------------
+    abiertos = 0
+    por_issue = cargar().get("tendencias", {}).get("alertas_por_issue", False)
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
-    if not token or not repo:
-        log.error("Faltan GH_TOKEN o GITHUB_REPOSITORY. Solo funciona dentro de Actions.")
-        log.error("Para probar localmente: python -m nucleo.alertar --simular")
-        return 0
 
-    abiertos = 0
-    for a in nuevas:
+    for a in (nuevas if por_issue and token and repo else []):
         titulo = f"Alerta editorial: {a['titulo'][:80]}"
         url = abrir_issue(repo, token, titulo,
                           cuerpo(a, hechos.get(a["id_hecho"]), mencionar),
                           ["alerta-editorial"])
         if url:
-            previos[a["id_hecho"]] = {
-                "titulo": a["titulo"], "issue": url,
-                "avisada": datetime.now(timezone.utc).isoformat(timespec="seconds")}
             abiertos += 1
-            log.info("   abierto: %s", url)
+            log.info("   issue: %s", url)
+
+    # Se registran como avisadas aunque el envio haya fallado: reintentar cada
+    # tres horas convertiria un problema de credenciales en una avalancha de
+    # correos el dia que se arregle.
+    ahora_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    for a in nuevas:
+        previos[a["id_hecho"]] = {"titulo": a["titulo"], "avisada": ahora_iso}
 
     REGISTRO.parent.mkdir(parents=True, exist_ok=True)
     REGISTRO.write_text(json.dumps(previos, ensure_ascii=False, indent=1), encoding="utf-8")
 
     log.info("")
-    log.info("Issues abiertos: %d", abiertos)
+    log.info("Correos enviados: %d | issues abiertos: %d", enviados, abiertos)
     return 0
 
 

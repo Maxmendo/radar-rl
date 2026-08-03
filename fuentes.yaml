@@ -1748,6 +1748,14 @@ tendencias:
     hay dos caminos: sumarlos como colaboradores (Settings > Collaborators) o
 
     listarlos aca. Ambos requieren cuenta de GitHub.'
+  alertas_por_issue: false
+  _nota_issue: 'Los issues de GitHub quedan implementados pero desactivados: notificaban solo a
+
+    colaboradores del repositorio, y eso exige cuenta de GitHub a cada persona del
+
+    equipo. Se reemplazo por envio SMTP. Poner en true si alguna vez conviene tener
+
+    ademas el registro de issues.'
 borrador:
   _nota: 'Generacion de borradores editoriales, a pedido. NUNCA automatica.
 
@@ -1772,3 +1780,38 @@ borrador:
   _nota_umbrales: 'Con una sola fuente no hay con que contrastar: eso no da para un borrador, da
 
     para reportear. La importancia 7 evita gastar la API en temas menores.'
+correo:
+  _nota: 'Envio por SMTP. NO requiere que los destinatarios tengan cuenta de GitHub ni de
+
+    ningun otro servicio: solo un correo.
+
+    Se descarto notificar por issues de GitHub porque exige cuenta a cada persona, y
+
+    Cloudflare Access porque solo controla quien ENTRA al tablero: no lleva registro
+
+    de usuarios ni puede enviar nada.
+
+    Credenciales: secretos CORREO_USUARIO y CORREO_CLAVE en GitHub. Con Gmail hace
+
+    falta una CONTRASENA DE APLICACION, no la del correo.
+
+    Los destinatarios van aca y no en los secretos: no son informacion sensible y
+
+    conviene poder editarlos sin tocar la configuracion del repositorio.'
+  activo: true
+  alertas:
+  - refugiolatinoamericano@gmail.com
+  - contacto@refugiolatinoamericano.com
+  - m.mendoza@refugiolatinoamericano.com
+  borradores:
+  - refugiolatinoamericano@gmail.com
+  - contacto@refugiolatinoamericano.com
+  _nota_destinatarios: 'ALERTAS: van a todo el equipo. Es la señal que hay que ver a tiempo.
+
+    BORRADORES: van a menos gente. Un borrador sin curaduria no deberia circular:
+
+    es material de trabajo, no una nota.
+
+    Configuracion de prueba al 2026-08-03. Sumar al resto del equipo cuando se
+
+    confirme que el envio funciona.'

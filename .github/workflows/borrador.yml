@@ -45,6 +45,8 @@ jobs:
       - name: Redactar
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CORREO_USUARIO: ${{ secrets.CORREO_USUARIO }}
+          CORREO_CLAVE: ${{ secrets.CORREO_CLAVE }}
         run: python -m nucleo.borrador --id "${{ inputs.id_hecho }}"
 
       - name: Guardar

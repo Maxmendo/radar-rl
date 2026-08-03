@@ -315,23 +315,33 @@ nadie miró en esa ventana, se perdió. Ahora se conservan con su desenlace:
 
 Cada alerta lleva el enlace directo a la nota.
 
-**Cómo llega la alerta.** `nucleo/alertar.py` abre un **issue en este repositorio**.
-GitHub notifica por mail y por push a la app del celular, sin credenciales externas ni
-costo, y queda registro: cada alerta es un issue con fecha que se cierra cuando se
-cubrió o descartó.
+**Cómo llega la alerta.** Por **correo**, con `nucleo/correo.py`. Los destinatarios
+están en `fuentes.yaml → correo`. No requiere que tengan cuenta de nada.
 
-El issue trae todo lo necesario para decidir sin abrir el tablero: importancia, medios,
-ratio de búsquedas, ángulo sugerido y los enlaces a cada cobertura.
+Se descartaron dos alternativas:
 
-**A quién le llega:** a los colaboradores del repositorio. Para sumar a alguien,
-Settings → Collaborators. También se pueden listar usuarios en
-`fuentes.yaml → tendencias → alertas_mencionar` para que reciban notificación aunque no
-sigan el repositorio. Las dos vías requieren cuenta de GitHub; si el equipo crece o no
-todos quieren una, habría que evaluar envío por mail directo, que sí requiere
-credenciales de un servicio de correo.
+- **Issues de GitHub** (implementado pero desactivado): notifican solo a colaboradores
+  del repositorio, y eso exige cuenta de GitHub a cada persona de la redacción.
+- **Cloudflare Access**: controla quién *entra* al tablero, pero no lleva registro de
+  usuarios ni puede enviar nada. Verifica un código al entrar y nada más.
 
-Cada alerta se avisa **una sola vez**, aunque persista 12 horas en el tablero. El
-registro está en `datos/alertados.json`.
+**Credenciales:** secretos `CORREO_USUARIO` y `CORREO_CLAVE`. Con Gmail hace falta una
+**contraseña de aplicación**, no la del correo.
+
+**Dos listas distintas:**
+
+| | Va a | Por qué |
+|---|---|---|
+| Alertas | Todo el equipo | Es la señal que hay que ver a tiempo |
+| Borradores | Menos gente | Material de trabajo sin curaduría; que circule de más es peor que de menos |
+
+Cada alerta se avisa **una sola vez**, aunque persista 12 horas en el tablero. Se
+registra como avisada aunque el envío falle: reintentar cada tres horas convertiría un
+problema de credenciales en una avalancha de correos el día que se arregle.
+
+El correo trae todo para decidir sin abrir el tablero —importancia, medios, ratio de
+búsquedas, ángulo sugerido, enlaces a cada cobertura— y, si el hecho califica, un
+**botón para generar el borrador** desde el propio panel de alertas.
 
 **b) Ascenso de estado.** PENDIENTE. **No por puntaje alto.** El momento que importa es cuando algo importante entra en
 `interes`: ahí todavía se puede llegar primero. Un umbral absoluto avisaría cuando ya

@@ -46,6 +46,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from nucleo.clasificar import BASE, MODELOS, extraer_json  # noqa: E402
 from nucleo.estados import estado  # noqa: E402
+from nucleo.correo import enviar, envoltura, hay_credenciales  # noqa: E402
 from nucleo.registro import cargar  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -252,6 +253,39 @@ def main() -> int:
 
     log.info("")
     log.info("Escrito %s (%d palabras)", ruta.relative_to(RAIZ), len(texto.split()))
+
+    # --- Correo -------------------------------------------------------------
+    # Los borradores van a MENOS gente que las alertas: es material de trabajo
+    # sin curaduria, no una nota. Que circule de mas es peor que que circule de
+    # menos.
+    correo_cfg = cargar().get("correo", {})
+    destinos = correo_cfg.get("borradores", []) if correo_cfg.get("activo") else []
+    if destinos and hay_credenciales():
+        cuerpo_html = (
+            "<h2>" + hecho["titulo_original"] + "</h2>"
+            "<div class='aviso'><b>Es un borrador generado por IA.</b> No publicar sin "
+            "verificar fuentes y datos. Si se publica, debe indicarse de forma visible "
+            "al lector que hubo asistencia de IA.</div>"
+            "<p class='medios'><b>Fuentes leídas:</b> "
+            + ", ".join(n["medio"] for n in mat["notas"]) + "</p>"
+            "<hr style='border:none;border-top:1px solid #eae3e1;margin:16px 0'>"
+            "<pre style='white-space:pre-wrap;font:14px/1.65 -apple-system,sans-serif;"
+            "margin:0'>" + texto.replace("<", "&lt;") + "</pre>")
+        pie = ("Este borrador se generó a pedido, leyendo las notas completas de "
+               f"{len(mat['notas'])} medios. Queda en el repositorio, en "
+               f"datos/borradores/<br><br>"
+               "Radar Migratorio · Una herramienta de Refugio Latinoamericano")
+        log.info("")
+        log.info("Enviando por correo...")
+        enviar(destinos,
+               f"Borrador: {hecho['titulo_original'][:65]}",
+               f"BORRADOR GENERADO POR IA — NO PUBLICAR SIN CURADURIA\n\n{texto}",
+               envoltura("Borrador editorial",
+                         "Generado a pedido · requiere curaduría humana",
+                         cuerpo_html, pie))
+    elif destinos:
+        log.warning("Faltan las credenciales de correo; el borrador quedo solo en el repo.")
+
     log.info("")
     log.info("RECORDATORIO: es un borrador. Verificar fuentes y datos antes de")
     log.info("publicar, y etiquetar la asistencia de IA de forma visible al lector.")

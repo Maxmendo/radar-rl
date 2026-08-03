@@ -79,12 +79,20 @@ def cruzar_tendencias(items: list[dict]) -> dict:
                  if d.get("consultas")]
     audiencia.sort(key=lambda x: x["medido"], reverse=True)
 
+    # Al panel de alertas le hace falta saber si el hecho califica para borrador.
+    # Se resuelve aca y no en el navegador para no repetir la logica.
+    alertas = panel.get("alertas", [])[:5]
+    por_id = {i.get("id"): i for i in items}
+    for a in alertas:
+        h = por_id.get(a.get("id_hecho"))
+        a["puede_borrador"] = bool(h and h.get("puede_borrador"))
+
     return {
         "disponible": bool(panel.get("disponible")),
         "generado": panel.get("generado", ""),
         "servicio": servicio,
         "audiencia": audiencia,
-        "alertas": panel.get("alertas", [])[:5],
+        "alertas": alertas,
     }
 
 
@@ -301,6 +309,7 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   cursor:pointer;background:var(--rojo);color:#fff;border:none;border-radius:99px}
 .borrador:hover{opacity:.88}
 .borrador.copiado{background:var(--sem-verde);font-family:monospace}
+.borrador.chico{font-size:.72rem;padding:.24rem .65rem;margin-top:.4rem}
 .acciones .ayuda{font-size:.73rem;color:var(--tenue)}
 .etiquetas{display:flex;gap:.28rem;flex-wrap:wrap;margin-top:.55rem}
 .et{font-size:.7rem;padding:.1rem .48rem;border-radius:3px;
@@ -613,7 +622,8 @@ function armarAlertas(){
         `${a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener"><b>${esc(a.titulo)}</b></a>`
                 :`<b>${esc(a.titulo)}</b>`}<br>`+
         `<span class="det">búsquedas de «${esc(a.termino)}» ×${a.ratio} en ${esc(a.geo)} · `+
-        `importancia ${a.importancia} · ${a.velocidad} medios · ${cuando(a.horas)}</span></li>`;
+        `importancia ${a.importancia} · ${a.velocidad} medios · ${cuando(a.horas)}</span>`+
+        `${a.puede_borrador?`<br><button class="borrador chico" data-id="${esc(a.id_hecho)}" onclick="pedirBorrador(this)">Generar borrador</button>`:''}</li>`;
     }).join('')+
     '</ul></div>';
 }
@@ -692,8 +702,6 @@ def main() -> int:
     if movidos:
         log.info("Alcance recalculado con los paises del clasificador: %d hechos cambiaron",
                  movidos)
-    ctx["tendencias"] = cruzar_tendencias(items)
-
     # Requisitos para ofrecer el borrador. Se calculan acá para que el tablero
     # no tenga que repetir la lógica: si el hecho no los cumple, no hay botón.
     cfg = yaml.safe_load((RAIZ / "fuentes.yaml").read_text(encoding="utf-8"))
@@ -707,6 +715,10 @@ def main() -> int:
             and not i.get("fuera_de_alcance")
             and (i.get("velocidad") or 0) >= vel_min
             and (i.get("importancia") or 0) >= imp_min)
+
+    # Va despues de marcar `puede_borrador`: el panel de alertas lo necesita.
+    ctx["tendencias"] = cruzar_tendencias(items)
+
     for i in items:
         i["estado"] = estado(i)
         i["puntaje"] = puntaje(i)
