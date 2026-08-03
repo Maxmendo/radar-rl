@@ -1739,3 +1739,36 @@ tendencias:
     despues: `vigente` si el hecho sigue en `interes`, `escalo` si ya paso a trending
 
     o top trend, `se_enfrio` si perdio cobertura.'
+  max_alertas_por_corrida: 3
+  alertas_mencionar: []
+  _nota_mencionar: 'Usuarios de GitHub a mencionar en el issue de alerta, sin la arroba. Reciben
+
+    notificacion aunque no sigan el repositorio. Para que le llegue a todo el equipo
+
+    hay dos caminos: sumarlos como colaboradores (Settings > Collaborators) o
+
+    listarlos aca. Ambos requieren cuenta de GitHub.'
+borrador:
+  _nota: 'Generacion de borradores editoriales, a pedido. NUNCA automatica.
+
+    Hasta el 2026-08-03 la regla era que el sistema no redactaba nada. Se modifico
+
+    de forma deliberada, con umbral alto y curaduria humana obligatoria.
+
+    El borrador se genera leyendo las NOTAS COMPLETAS, no los titulares: un texto
+
+    armado con ocho titulares es un resumen de resumenes. Con las notas a la vista
+
+    puede hacer lo que ninguna hace por separado: contrastar cifras, detectar
+
+    contradicciones y marcar que falta. Ese contraste es lo unico que lo justifica.
+
+    SIGUE PROHIBIDO generar, sintetizar o parafrasear testimonios de personas
+
+    migrantes. Esa regla no se modifico.'
+  medios_minimos: 3
+  importancia_minima: 7
+  max_notas_a_leer: 6
+  _nota_umbrales: 'Con una sola fuente no hay con que contrastar: eso no da para un borrador, da
+
+    para reportear. La importancia 7 evita gastar la API en temas menores.'

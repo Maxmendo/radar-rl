@@ -157,6 +157,16 @@ jobs:
       # Escribe docs/index.html. La carpeta docs/ es la raiz del sitio en
       # Cloudflare Pages: cada push la redespliega automaticamente. Ahi viven
       # tambien _headers y robots.txt, que no se regeneran.
+      # ALERTAS. Abre un issue cuando un hecho importante y poco cubierto tiene
+      # las busquedas subiendo. GitHub notifica por mail y por push al celular,
+      # sin credenciales externas. Cada alerta se avisa UNA sola vez: el registro
+      # esta en datos/alertados.json
+      - name: Alertas editoriales
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m nucleo.alertar
+
       - name: Generar tablero
         run: python scripts/generar_tablero.py
 

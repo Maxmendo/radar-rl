@@ -1,0 +1,71 @@
+name: Generar borrador
+
+# NO CORRE SOLO. Se dispara a mano, desde el boton del tablero o desde acá.
+#
+# El tablero solo muestra el boton en hechos que cumplen los requisitos
+# (3+ medios, importancia 7+), pero el script los vuelve a verificar: el boton
+# es una comodidad, no la validacion.
+#
+# El borrador NUNCA se publica. Queda en datos/borradores/ para curaduria humana.
+
+on:
+  workflow_dispatch:
+    inputs:
+      id_hecho:
+        description: "ID del hecho (se copia solo al apretar el botón en el tablero)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  redactar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Traer el código
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      # El prompt se genera desde fuentes.yaml, igual que el de clasificacion:
+      # asi la linea editorial no puede desincronizarse del registro.
+      - name: Generar prompt
+        run: python scripts/generar_prompt_borrador.py
+
+      - name: Redactar
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m nucleo.borrador --id "${{ inputs.id_hecho }}"
+
+      - name: Guardar
+        run: |
+          git config user.name "radar-rl"
+          git config user.email "radar@refugiolatinoamericano.com"
+          git add datos/borradores/ prompts/
+          git diff --staged --quiet || git commit -m "Borrador: ${{ inputs.id_hecho }}"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push rechazado, reintento $i/3"
+            sleep 5
+          done
+          exit 1
+
+      # El borrador queda descargable desde la pestana Actions ademas de en el
+      # repositorio, por si el commit falla.
+      - name: Adjuntar borrador
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: borrador-${{ inputs.id_hecho }}
+          path: datos/borradores/
+          retention-days: 30

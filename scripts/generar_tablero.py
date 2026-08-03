@@ -295,6 +295,13 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   text-decoration:none;white-space:nowrap}
 .fuentes a:hover{color:var(--rojo);border-color:var(--rosa-claro)}
 
+.acciones{display:flex;align-items:center;gap:.6rem;margin-top:.6rem;
+  padding-top:.55rem;border-top:1px solid var(--linea)}
+.borrador{font:inherit;font-size:.78rem;font-weight:600;padding:.32rem .8rem;
+  cursor:pointer;background:var(--rojo);color:#fff;border:none;border-radius:99px}
+.borrador:hover{opacity:.88}
+.borrador.copiado{background:var(--sem-verde);font-family:monospace}
+.acciones .ayuda{font-size:.73rem;color:var(--tenue)}
 .etiquetas{display:flex;gap:.28rem;flex-wrap:wrap;margin-top:.55rem}
 .et{font-size:.7rem;padding:.1rem .48rem;border-radius:3px;
   border:1px solid var(--linea);color:var(--tenue)}
@@ -387,6 +394,9 @@ se midió (Google limita las consultas por día). <b>No altera el orden</b>, que
 importancia editorial.<br>
 La marca <b>cobertura tardía</b> señala que el titular retoma un hecho de días
 anteriores en vez de informar algo nuevo: no es una primicia aunque tenga pocos medios.<br>
+El botón <b>Generar borrador</b> aparece solo en hechos con {MEDIOS} o más medios e
+importancia {IMP} o más. Abre GitHub con el id copiado; el borrador se escribe leyendo
+las notas completas y <b>siempre requiere curaduría humana</b> antes de publicar.<br>
 El radar propone. La decisión editorial es humana.
 <p class="slogan">periodismo sin fronteras</p>
 </footer>
@@ -410,6 +420,18 @@ const ESTADOS = {
 const ORDEN=['top_trend','trending','interes','emergente','nadie_lo_mira','ruido','fuera_alcance'];
 
 function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
+
+// El borrador no se genera en el navegador: esto abre el formulario de GitHub
+// Actions con el id del hecho ya cargado. Lo dispara una persona, a proposito.
+function pedirBorrador(boton){
+  const id=boton.dataset.id;
+  const url=`https://github.com/${CTX.borrador.repo}/actions/workflows/borrador.yml`;
+  window.open(url,'_blank','noopener');
+  boton.textContent='id: '+id;
+  boton.classList.add('copiado');
+  if(navigator.clipboard) navigator.clipboard.writeText(id).catch(()=>{});
+  boton.title='El id se copió al portapapeles. Pegalo en el formulario de GitHub.';
+}
 
 function armarSemaforo(){
   const c=document.getElementById('semaforo');
@@ -558,6 +580,7 @@ function dibujar(){
       ${cob.length?`<div class="fuentes"><div class="tit">Publicado por</div><ul>${
         cob.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`).join('')
       }</ul></div>`:''}
+      ${i.puede_borrador?`<div class="acciones"><button class="borrador" data-id="${esc(i.id)}" onclick="pedirBorrador(this)">Generar borrador</button><span class="ayuda">${i.velocidad} medios · importancia ${i.importancia}</span></div>`:''}
       <div class="etiquetas">
         ${(i.ejes||[]).map(e=>`<span class="et eje">${esc(e)}</span>`).join('')}
         ${(i.poblaciones||[]).map(x=>`<span class="et pobl">${esc(x)}</span>`).join('')}
@@ -631,10 +654,9 @@ function armarDemanda(){
   const t=CTX.tendencias;
   const c=document.getElementById('demanda');
   if(!t || !(t.servicio||[]).length) return;
-  c.innerHTML='<div class="demanda"><div class="tit">Trámites en alza · Argentina</div>'+
-    '<p>Búsquedas de trámite por encima de lo habitual. Quien las escribe está '+
-    'resolviendo un problema, no leyendo noticias: un pico acá suele señalar una '+
-    'demora o un cambio de requisito que ningún medio cubrió.</p>'+
+  c.innerHTML='<div class="demanda"><div class="tit">Consultas sobre trámites de migraciones</div>'+
+    '<p>Tendencias de búsqueda asociadas a trámites migratorios en Argentina, '+
+    'para eventualmente generar notas de soluciones.</p>'+
     '<ul>'+t.servicio.map(x=>`<li>${esc(x.termino)} · ${esc(x.geo)} · ×${x.ratio}</li>`).join('')+
     '</ul></div>';
 }
@@ -671,6 +693,20 @@ def main() -> int:
         log.info("Alcance recalculado con los paises del clasificador: %d hechos cambiaron",
                  movidos)
     ctx["tendencias"] = cruzar_tendencias(items)
+
+    # Requisitos para ofrecer el borrador. Se calculan acá para que el tablero
+    # no tenga que repetir la lógica: si el hecho no los cumple, no hay botón.
+    cfg = yaml.safe_load((RAIZ / "fuentes.yaml").read_text(encoding="utf-8"))
+    b = cfg.get("borrador", {})
+    vel_min, imp_min = b.get("medios_minimos", 3), b.get("importancia_minima", 7)
+    ctx["borrador"] = {"medios": vel_min, "importancia": imp_min,
+                       "repo": cfg.get("repositorio", "Maxmendo/radar-rl")}
+    for i in items:
+        i["puede_borrador"] = bool(
+            i.get("clasificado") and i.get("es_migratorio") is not False
+            and not i.get("fuera_de_alcance")
+            and (i.get("velocidad") or 0) >= vel_min
+            and (i.get("importancia") or 0) >= imp_min)
     for i in items:
         i["estado"] = estado(i)
         i["puntaje"] = puntaje(i)
@@ -699,6 +735,8 @@ def main() -> int:
             .replace("__RESUMEN__", resumen)
             .replace("__AVISO__", aviso)
             .replace("__CLASIFICADO__", "true" if datos.get("clasificado") else "false")
+            .replace("{MEDIOS}", str(ctx["borrador"]["medios"]))
+            .replace("{IMP}", str(ctx["borrador"]["importancia"]))
             .replace("__CTX__", json.dumps(ctx, ensure_ascii=False))
             .replace("__ITEMS__", json.dumps(items, ensure_ascii=False)))
 

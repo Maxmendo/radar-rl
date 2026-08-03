@@ -31,8 +31,27 @@ y Estados Unidos; detecta qué está creciendo en cobertura ahora; y entrega dos
 1. Un **digest diario** a las 06:00 de Argentina, rankeado por relevancia.
 2. Una **alerta inmediata** cuando un hecho supera el umbral, fuera de horario.
 
-**Lo que NO hace:** no redacta artículos, no publica, no toma decisiones editoriales,
-no notifica por Telegram ni se integra con ningún bot. Su única salida son los archivos
+**Lo que NO hace:** no publica, no toma decisiones editoriales, no notifica por
+Telegram ni se integra con ningún bot.
+
+**Sobre redactar borradores.** Hasta el 2026-08-03 la regla era que el sistema no
+redactaba nada. Se modificó de forma deliberada y con estas condiciones:
+
+- El borrador se genera **solo a pedido**, con un botón. Nunca automáticamente.
+- Requisitos: **3 o más medios** cubriendo el hecho e **importancia >= 7**. Un hecho
+  con una sola fuente no da para un borrador, da para reportear.
+- Se genera **leyendo las notas completas**, no los titulares. Un texto armado con
+  ocho titulares es un resumen de resúmenes.
+- **Nunca se publica.** Sale como borrador para curaduría humana: verificación de
+  fuentes, segundo chequeo, y reescritura.
+- **Sigue prohibido generar, sintetizar o parafrasear testimonios** de personas
+  migrantes. Esa regla no se modificó.
+
+El riesgo asumido está documentado: cuando analizamos el caso ScribNews, el
+señalamiento central del informe de SiPreBA/FATPREN fue que reescribir cobertura
+ajena a escala produce homogeneización de estilos y menos tiempo de chequeo. Por eso
+el borrador es opcional, con umbral alto, y marcado como asistido por IA en el
+etiquetado que exige la regla 2 de gobernanza. Su única salida son los archivos
 de `datos/` y `docs/`. La capa de distribución que quiera leerlos es un proyecto aparte.
 Mantener esa separación es deliberado.
 
@@ -296,6 +315,24 @@ nadie miró en esa ventana, se perdió. Ahora se conservan con su desenlace:
 
 Cada alerta lleva el enlace directo a la nota.
 
+**Cómo llega la alerta.** `nucleo/alertar.py` abre un **issue en este repositorio**.
+GitHub notifica por mail y por push a la app del celular, sin credenciales externas ni
+costo, y queda registro: cada alerta es un issue con fecha que se cierra cuando se
+cubrió o descartó.
+
+El issue trae todo lo necesario para decidir sin abrir el tablero: importancia, medios,
+ratio de búsquedas, ángulo sugerido y los enlaces a cada cobertura.
+
+**A quién le llega:** a los colaboradores del repositorio. Para sumar a alguien,
+Settings → Collaborators. También se pueden listar usuarios en
+`fuentes.yaml → tendencias → alertas_mencionar` para que reciban notificación aunque no
+sigan el repositorio. Las dos vías requieren cuenta de GitHub; si el equipo crece o no
+todos quieren una, habría que evaluar envío por mail directo, que sí requiere
+credenciales de un servicio de correo.
+
+Cada alerta se avisa **una sola vez**, aunque persista 12 horas en el tablero. El
+registro está en `datos/alertados.json`.
+
 **b) Ascenso de estado.** PENDIENTE. **No por puntaje alto.** El momento que importa es cuando algo importante entra en
 `interes`: ahí todavía se puede llegar primero. Un umbral absoluto avisaría cuando ya
 es `top_trend`, o sea tarde.
@@ -398,7 +435,9 @@ Todo prompt vive en `prompts/` como archivo versionado. **Nunca embebido en el c
 radar-rl/
 ├── CLAUDE.md
 ├── fuentes.yaml              # registro de fuentes y vocabulario
-├── prompts/clasificacion.md
+├── prompts/
+│   ├── clasificacion.md
+│   └── borrador.md           # generado desde fuentes.yaml
 ├── nucleo/
 │   ├── registro.py           # LISTO. Fuente de verdad de las fuentes
 │   ├── normalizar.py         # PENDIENTE
@@ -411,7 +450,9 @@ radar-rl/
 │   ├── validar_fuentes.py    # LISTO
 │   ├── muestrear_feeds.py    # LISTO
 │   ├── descubrir_feeds.py    # LISTO. No corre a diario
-│   └── generar_tablero.py    # LISTO
+│   ├── generar_tablero.py    # LISTO
+│   ├── generar_prompt.py     # LISTO
+│   └── generar_prompt_borrador.py
 ├── datos/
 │   ├── historico.json        # PENDIENTE. Memoria entre corridas
 │   ├── items.json            # PENDIENTE. Salida de la ultima corrida
@@ -430,3 +471,39 @@ de velocidad y aceleración, clasificación por lotes, digest y alertas.
 **Orden sugerido de construcción:** ingesta → deduplicación → memoria y velocidad →
 clasificación → tablero con datos reales → alertas. Cada etapa tiene que funcionar y
 verse antes de pasar a la siguiente.
+
+
+---
+
+## 14. Generación de borradores
+
+**No corre solo.** Se dispara desde el botón del tablero, que abre el workflow
+`borrador.yml` con el id del hecho copiado al portapapeles.
+
+**Requisitos**, en `fuentes.yaml → borrador`:
+
+- 3 o más medios cubriendo el hecho
+- importancia editorial >= 7
+- que sea migratorio y esté dentro del alcance regional
+
+El tablero solo muestra el botón si se cumplen, pero `nucleo/borrador.py` los vuelve a
+verificar: el botón es una comodidad, no la validación.
+
+**Lee las notas completas, no los titulares.** Descarga hasta 6 coberturas y extrae su
+texto. Un borrador armado con ocho titulares es un resumen de resúmenes; con las notas
+a la vista puede hacer lo que ninguna hace por separado: contrastar cifras, detectar
+contradicciones entre medios y marcar qué falta. **Ese contraste es lo único que
+justifica generarlo.**
+
+**Qué produce.** Título, bajada, cuerpo de 350-500 palabras, y una sección
+`## Para el editor` con preguntas abiertas, afirmaciones a verificar, contradicciones
+entre fuentes, fuentes a consultar y —lo más importante— si ninguna cobertura incluye
+la voz de personas migrantes afectadas.
+
+**Prohibiciones que el prompt hace explícitas:** no generar ni parafrasear testimonios
+de personas migrantes, no inventar datos, no reproducir datos personales, no usar
+lenguaje deshumanizante, no copiar frases textuales.
+
+**Nunca se publica.** Sale a `datos/borradores/` con una cabecera en comentario HTML
+que dice que es un borrador generado por IA, qué fuentes leyó, y que requiere
+verificación y etiquetado visible antes de publicar.
