@@ -112,6 +112,13 @@ jobs:
         continue-on-error: true
         run: python scripts/probar_related.py
 
+      # Descubre el feed de las fuentes marcadas `verificado: false` en el
+      # registro. Si no quedan candidatos, avisa y termina en un segundo.
+      - name: Descubrir feeds
+        if: steps.cuando.outputs.digest == 'true'
+        continue-on-error: true
+        run: python scripts/descubrir_feeds.py | tee datos/feeds.txt
+
       # Diagnostico, solo en la corrida del digest para no gastar tiempo.
       - name: Muestrear feeds
         if: steps.cuando.outputs.digest == 'true'

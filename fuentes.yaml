@@ -44,9 +44,9 @@ medios_google_news:
 - id: gnews_cono_sur_normativa
   bloque: cono_sur
   region: Cono Sur
-  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Argentina OR Chile
-    OR Uruguay) when:1d
-  largo_query: 111
+  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Argentina OR Chile)
+    when:1d
+  largo_query: 100
   gl: AR
   hl: es-419
   pais: &id001
@@ -60,9 +60,8 @@ medios_google_news:
 - id: gnews_cono_sur_estatus
   bloque: cono_sur
   region: Cono Sur
-  query: (indocumentados OR irregulares OR regularizacion) migrantes (Argentina OR Chile OR Uruguay)
-    when:1d
-  largo_query: 99
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Argentina OR Paraguay) when:1d
+  largo_query: 91
   gl: AR
   hl: es-419
   pais: *id001
@@ -72,9 +71,8 @@ medios_google_news:
 - id: gnews_cono_sur_derechos
   bloque: cono_sur
   region: Cono Sur
-  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Argentina OR Chile OR Uruguay)
-    when:1d
-  largo_query: 99
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Argentina OR Uruguay) when:1d
+  largo_query: 90
   gl: AR
   hl: es-419
   pais: *id001
@@ -84,9 +82,9 @@ medios_google_news:
 - id: gnews_cono_sur_asilo
   bloque: cono_sur
   region: Cono Sur
-  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Argentina OR Chile OR Uruguay)
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Argentina OR Chile OR Paraguay)
     when:1d
-  largo_query: 104
+  largo_query: 105
   gl: AR
   hl: es-419
   pais: *id001
@@ -96,9 +94,9 @@ medios_google_news:
 - id: gnews_cono_sur_odio
   bloque: cono_sur
   region: Cono Sur
-  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Argentina OR Chile OR Uruguay)
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Argentina OR Uruguay OR Paraguay)
     when:1d
-  largo_query: 102
+  largo_query: 105
   gl: AR
   hl: es-419
   pais: *id001
@@ -109,8 +107,8 @@ medios_google_news:
   bloque: andina
   region: Region Andina
   query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Colombia OR Peru OR
-    Venezuela) when:1d
-  largo_query: 111
+    Ecuador) when:1d
+  largo_query: 109
   gl: CO
   hl: es-419
   pais: &id002
@@ -125,9 +123,9 @@ medios_google_news:
 - id: gnews_andina_estatus
   bloque: andina
   region: Region Andina
-  query: (indocumentados OR irregulares OR regularizacion) migrantes (Colombia OR Peru OR Venezuela)
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Venezuela OR Bolivia OR Peru)
     when:1d
-  largo_query: 99
+  largo_query: 98
   gl: CO
   hl: es-419
   pais: *id002
@@ -137,9 +135,9 @@ medios_google_news:
 - id: gnews_andina_derechos
   bloque: andina
   region: Region Andina
-  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Colombia OR Peru OR Venezuela)
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Colombia OR Venezuela OR Ecuador)
     when:1d
-  largo_query: 99
+  largo_query: 102
   gl: CO
   hl: es-419
   pais: *id002
@@ -149,9 +147,9 @@ medios_google_news:
 - id: gnews_andina_asilo
   bloque: andina
   region: Region Andina
-  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Colombia OR Peru OR Venezuela)
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Colombia OR Ecuador OR Peru)
     when:1d
-  largo_query: 104
+  largo_query: 102
   gl: CO
   hl: es-419
   pais: *id002
@@ -161,7 +159,7 @@ medios_google_news:
 - id: gnews_andina_rutas
   bloque: andina
   region: Region Andina
-  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Colombia OR Peru OR Venezuela)
+  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Colombia OR Venezuela OR Peru)
     when:1d
   largo_query: 100
   gl: CO
@@ -173,9 +171,9 @@ medios_google_news:
 - id: gnews_andina_odio
   bloque: andina
   region: Region Andina
-  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Colombia OR Peru OR Venezuela)
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Colombia OR Bolivia OR Venezuela)
     when:1d
-  largo_query: 102
+  largo_query: 105
   gl: CO
   hl: es-419
   pais: *id002
@@ -204,9 +202,9 @@ medios_google_news:
 - id: gnews_mexico_ca_estatus
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: (indocumentados OR irregulares OR regularizacion) migrantes (Mexico OR Guatemala OR Honduras)
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Mexico OR "Costa Rica" OR Panama)
     when:1d
-  largo_query: 101
+  largo_query: 102
   gl: MX
   hl: es-419
   pais: *id003
@@ -216,9 +214,9 @@ medios_google_news:
 - id: gnews_mexico_ca_derechos
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Mexico OR Guatemala OR Honduras)
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Mexico OR "El Salvador" OR Nicaragua)
     when:1d
-  largo_query: 101
+  largo_query: 106
   gl: MX
   hl: es-419
   pais: *id003
@@ -228,9 +226,9 @@ medios_google_news:
 - id: gnews_mexico_ca_asilo
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Mexico OR Guatemala OR Honduras)
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Mexico OR Guatemala OR Belice)
     when:1d
-  largo_query: 106
+  largo_query: 104
   gl: MX
   hl: es-419
   pais: *id003
@@ -240,9 +238,9 @@ medios_google_news:
 - id: gnews_mexico_ca_rutas
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Mexico OR Guatemala OR Honduras)
+  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Mexico OR Panama OR Guatemala)
     when:1d
-  largo_query: 102
+  largo_query: 100
   gl: MX
   hl: es-419
   pais: *id003
@@ -252,9 +250,9 @@ medios_google_news:
 - id: gnews_mexico_ca_odio
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Mexico OR Guatemala OR Honduras)
-    when:1d
-  largo_query: 104
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Mexico OR Honduras OR "Costa
+    Rica") when:1d
+  largo_query: 107
   gl: MX
   hl: es-419
   pais: *id003
@@ -333,8 +331,8 @@ medios_google_news:
 - id: gnews_caribe_normativa
   bloque: caribe
   region: Caribe
-  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Dominicana OR Haiti
-    OR Cuba) when:1d
+  query: ("politica migratoria" OR "ley de migraciones" OR "decreto migratorio") (Dominicana OR Cuba
+    OR Haiti) when:1d
   largo_query: 109
   gl: DO
   hl: es-419
@@ -349,8 +347,9 @@ medios_google_news:
 - id: gnews_caribe_estatus
   bloque: caribe
   region: Caribe
-  query: (indocumentados OR irregulares OR regularizacion) migrantes (Dominicana OR Haiti OR Cuba) when:1d
-  largo_query: 97
+  query: (indocumentados OR irregulares OR regularizacion) migrantes (Dominicana OR "Puerto Rico" OR
+    Jamaica) when:1d
+  largo_query: 108
   gl: DO
   hl: es-419
   pais: *id005
@@ -360,8 +359,8 @@ medios_google_news:
 - id: gnews_caribe_derechos
   bloque: caribe
   region: Caribe
-  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Dominicana OR Haiti OR Cuba) when:1d
-  largo_query: 97
+  query: (deportacion OR expulsion OR redada OR detencion) migrantes (Haiti OR Cuba OR Trinidad) when:1d
+  largo_query: 95
   gl: DO
   hl: es-419
   pais: *id005
@@ -371,7 +370,7 @@ medios_google_news:
 - id: gnews_caribe_asilo
   bloque: caribe
   region: Caribe
-  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Dominicana OR Haiti OR Cuba)
+  query: ("solicitantes de asilo" OR refugiados OR "personas refugiadas") (Haiti OR Dominicana OR Cuba)
     when:1d
   largo_query: 102
   gl: DO
@@ -383,9 +382,8 @@ medios_google_news:
 - id: gnews_caribe_rutas
   bloque: caribe
   region: Caribe
-  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Dominicana OR Haiti OR Cuba)
-    when:1d
-  largo_query: 98
+  query: (Darien OR caravana OR naufragio OR desaparecidos) migrantes (Haiti OR Cuba OR Jamaica) when:1d
+  largo_query: 95
   gl: DO
   hl: es-419
   pais: *id005
@@ -395,9 +393,9 @@ medios_google_news:
 - id: gnews_caribe_odio
   bloque: caribe
   region: Caribe
-  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Dominicana OR Haiti OR Cuba)
+  query: (xenofobia OR "discurso de odio" OR criminalizacion) migrantes (Dominicana OR Haiti OR Trinidad)
     when:1d
-  largo_query: 100
+  largo_query: 104
   gl: DO
   hl: es-419
   pais: *id005
@@ -546,7 +544,7 @@ medios_google_news:
 - id: gnews_cono_sur_fiscalizacion
   bloque: cono_sur
   region: Cono Sur
-  query: (fiscalizacion OR inspeccion OR allanamiento) migrantes (Argentina OR Chile) when:1d
+  query: (fiscalizacion OR inspeccion OR allanamiento) migrantes (Argentina OR Chile OR Uruguay) when:1d
   gl: AR
   hl: es-419
   pais:
@@ -556,12 +554,12 @@ medios_google_news:
   - PY
   eje_esperado: control
   prioridad: 1
-  largo_query: 84
+  largo_query: 95
   verificado: true
 - id: gnews_andina_control
   bloque: andina
   region: Region Andina
-  query: ("control migratorio" OR "operativo migratorio" OR reten) (Colombia OR Peru OR Venezuela) when:1d
+  query: ("control migratorio" OR "operativo migratorio" OR reten) (Colombia OR Peru OR Bolivia) when:1d
   gl: CO
   hl: es-419
   pais:
@@ -572,12 +570,12 @@ medios_google_news:
   - VE
   eje_esperado: control
   prioridad: 2
-  largo_query: 97
+  largo_query: 95
   verificado: true
 - id: gnews_mexico_ca_control
   bloque: mexico_ca
   region: Mexico y Centroamerica
-  query: ("control migratorio" OR "operativo migratorio" OR reten) (Mexico OR Guatemala) when:1d
+  query: ("control migratorio" OR "operativo migratorio" OR reten) (Mexico OR Guatemala OR Panama) when:1d
   gl: MX
   hl: es-419
   pais:
@@ -590,7 +588,7 @@ medios_google_news:
   - PA
   eje_esperado: control
   prioridad: 2
-  largo_query: 87
+  largo_query: 97
   verificado: true
 - id: gnews_eeuu_es_control
   bloque: eeuu_es
@@ -603,6 +601,76 @@ medios_google_news:
   eje_esperado: control
   prioridad: 2
   largo_query: 92
+  verificado: true
+- id: gnews_cono_sur_terceros
+  bloque: cono_sur
+  region: Cono Sur
+  query: ("tercer pais" OR "terceros paises" OR "acuerdo de deportacion") migrantes (Argentina OR Uruguay
+    OR Paraguay) when:1d
+  largo_query: 117
+  gl: AR
+  hl: es-419
+  pais:
+  - AR
+  - CL
+  - UY
+  - PY
+  eje_esperado: terceros
+  prioridad: 1
+  verificado: true
+- id: gnews_andina_terceros
+  bloque: andina
+  region: Region Andina
+  query: ("tercer pais" OR "terceros paises" OR "acuerdo de deportacion") migrantes (Colombia OR Venezuela
+    OR Ecuador) when:1d
+  largo_query: 117
+  gl: CO
+  hl: es-419
+  pais:
+  - BO
+  - PE
+  - EC
+  - CO
+  - VE
+  eje_esperado: terceros
+  prioridad: 2
+  verificado: true
+- id: gnews_mexico_ca_terceros
+  bloque: mexico_ca
+  region: Mexico y Centroamerica
+  query: ("tercer pais" OR "terceros paises" OR "acuerdo de deportacion") migrantes (Mexico OR "El Salvador"
+    OR Panama) when:1d
+  largo_query: 118
+  gl: MX
+  hl: es-419
+  pais:
+  - MX
+  - GT
+  - HN
+  - SV
+  - NI
+  - CR
+  - PA
+  eje_esperado: terceros
+  prioridad: 2
+  verificado: true
+- id: gnews_caribe_terceros
+  bloque: caribe
+  region: Caribe
+  query: ("tercer pais" OR "terceros paises" OR "acuerdo de deportacion") migrantes (Jamaica OR Cuba
+    OR Haiti) when:1d
+  largo_query: 109
+  gl: DO
+  hl: es-419
+  pais:
+  - DO
+  - CU
+  - HT
+  - PR
+  - JM
+  - TT
+  eje_esperado: terceros
+  prioridad: 2
   verificado: true
 organismos:
 - id: cels
@@ -633,6 +701,99 @@ organismos:
   prioridad: 2
   verificado: false
   nota: Completar URL. Aliado institucional, contacto directo disponible.
+- id: mpi_reports
+  nombre: MPI · Informes
+  url_base: https://www.migrationpolicy.org/rss/taxonomy-term/91
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 1
+  verificado: true
+  nota: Verificado 2026-08-03. Informes del Migration Policy Institute.
+- id: mpi_datos
+  nombre: MPI · Migration Data Hub
+  url_base: https://www.migrationpolicy.org/rss/taxonomy-term/79
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 1
+  verificado: true
+  nota: Verificado 2026-08-03. Estadisticas y datos migratorios.
+- id: mpi_politica
+  nombre: MPI · Politica y derecho migratorio
+  url_base: https://www.migrationpolicy.org/rss/taxonomy-term/39
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 1
+  verificado: true
+  nota: Verificado 2026-08-03.
+- id: mpi_mexico
+  nombre: MPI · Mexico
+  url_base: https://www.migrationpolicy.org/rss/taxonomy-term/72
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 1
+  verificado: true
+  nota: Verificado 2026-08-03. El unico feed de MPI con foco regional confirmado.
+- id: oim_publicaciones
+  nombre: OIM · Publicaciones
+  url_base: https://publications.iom.int
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 2
+  verificado: false
+  nota: CANDIDATO. Correr descubrir_feeds.py. La OIM publica informes clave sobre movilidad en la region
+    que Google News no indexa.
+- id: oim_regional
+  nombre: OIM · Oficina Regional para Sudamerica
+  url_base: https://rosanjose.iom.int
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 2
+  verificado: false
+  nota: CANDIDATO. Ya se probo el 2026-07-31 y no declaraba feed. Revisar si cambio o buscar la oficina
+    de Buenos Aires.
+- id: acnur_americas
+  nombre: ACNUR · Americas
+  url_base: https://www.acnur.org
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 2
+  verificado: false
+  nota: 'CANDIDATO. Devolvio HTTP 403 desde Actions el 2026-07-31: bloqueo por IP de datacenter. Reintentar;
+    si persiste, evaluar otra via.'
+- id: cms
+  nombre: Center for Migration Studies
+  url_base: https://cmsny.org
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 2
+  verificado: false
+  nota: CANDIDATO. Investigacion sobre integracion laboral y politica migratoria en EEUU.
+- id: rli
+  nombre: Refugee Law Initiative
+  url_base: https://rli.blogs.sas.ac.uk
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 2
+  verificado: false
+  nota: CANDIDATO. Blog academico sobre desplazamiento interno y derecho de refugio.
+- id: mixed_migration
+  nombre: Mixed Migration Centre
+  url_base: https://mixedmigration.org
+  tipo_fuente: organismo
+  pais:
+  - REGIONAL
+  prioridad: 2
+  verificado: false
+  nota: CANDIDATO. Datos 4Mi sobre rutas y retornos, citados a menudo en el sector.
 cobertura_agregada:
 - id: gdelt_volumen_tema
   modo: timelinevol
@@ -703,16 +864,19 @@ ejes:
   subejes:
   - acuerdos_bilaterales
   - amnistia_migratoria
+  - cierre_de_embajadas
   - cupos_migratorios
   - decretos
   - integracion_regional
   - legislacion
   - mercosur
+  - normalizacion_diplomatica
   - normativa_migratoria
   - organismos_internacionales
   - programas
   - reglamentacion
   - regularizacion_migratoria
+  - relaciones_consulares
   activo: true
 - id: fronteras
   nombre: Fronteras
@@ -740,10 +904,12 @@ ejes:
   alcance: TODA detención de personas migrantes va acá, sea en frontera, en un centro de detención o
     en una redada en el interior. También las expulsiones y los retornos forzados.
   subejes:
+  - acuerdos_de_deportacion
   - allanamiento
   - arrestos_migratorios
   - centros_de_detencion
   - control_de_documentacion
+  - deportacion_a_terceros_paises
   - detencion_migratoria
   - devoluciones
   - expulsion_administrativa
@@ -756,6 +922,8 @@ ejes:
   - redadas
   - retorno_forzado
   - separacion_familiar
+  - tercer_pais_seguro
+  - traslados_a_paises_no_de_origen
   - vuelos_de_deportacion
   activo: true
 - id: securitizacion
@@ -1138,6 +1306,9 @@ notas_vocabulario:
       sobre la poblacion migrante -> `securitizacion`. Un mismo operativo puede llevar dos de los tres.
     fiscalizacion: De documentacion migratoria a personas -> `fronteras` o `deportaciones` segun donde
       ocurra. De empleadores que contratan migrantes -> `trabajo`.
+    terceros_paises: Deportar a alguien a un pais que NO es el suyo -> `deportaciones` (deportacion_a_terceros_paises).
+      El acuerdo entre Estados que lo habilita -> `politica_migratoria` (acuerdos_bilaterales). Suelen
+      ir juntos.
   actores: 'Dimension nueva en v3. Unica del YAML de sujetos que no duplicaba nada: ninguna otra dimension
     dice QUIEN esta involucrado.'
   sujetos_no_incorporados: 'El YAML de sujetos (v1.1) tenia ~70 categorias, la mitad ya codificadas
@@ -1159,6 +1330,11 @@ notas_vocabulario:
     PRIORIDAD ARGENTINA: el Cono Sur tiene DOS consultas en prioridad 1; el resto de las regiones, una
     en prioridad 2. El vocabulario cambia por pais: ''reten'' se usa en Mexico y la region andina, ''redada''
     en Estados Unidos, ''operativo'' y ''fiscalizacion'' en el Cono Sur.'
+  feeds_institucionales: 'Agregados el 2026-08-03 tras comparar con el boletin de Jordi Amaral. La brecha
+    estructural: Google News NO indexa revistas academicas ni informes de think tanks. Dos tercios de
+    lo que ese boletin tenia y nosotros no detectabamos era exactamente eso: papers en Globalizations
+    e International Affairs, informes de MPI y CMS, datasets judiciales. Estos feeds llenan ese hueco
+    y no consumen cuota de nada.'
 estados:
   _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
     24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las

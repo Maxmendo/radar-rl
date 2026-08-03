@@ -77,11 +77,11 @@ devolver**, son el vocabulario que define qué entra en ese eje.
 *¿Cómo los Estados regulan, controlan y administran la movilidad humana?*
 
 - **`politica_migratoria`** — Política migratoria. Qué DICE la norma o el programa. El instrumento, no su orientación.
-  <br>*Cubre:* acuerdos_bilaterales, amnistia_migratoria, cupos_migratorios, decretos, integracion_regional, legislacion, mercosur, normativa_migratoria, organismos_internacionales, programas, reglamentacion, regularizacion_migratoria
+  <br>*Cubre:* acuerdos_bilaterales, amnistia_migratoria, cierre_de_embajadas, cupos_migratorios, decretos, integracion_regional, legislacion, mercosur, normalizacion_diplomatica, normativa_migratoria, organismos_internacionales, programas, reglamentacion, regularizacion_migratoria, relaciones_consulares
 - **`fronteras`** — Fronteras. Lo que ocurre EN o SOBRE la frontera. La biometría acá es la aplicada al control fronterizo; la biometría como debate tecnológico va a `tecnologia`.
   <br>*Cubre:* biometria_en_frontera, control_fronterizo, control_migratorio, denegacion_de_ingreso, externalizacion, fiscalizacion_migratoria, inspeccion_migratoria, operativo_migratorio, pasos_fronterizos, rechazo_en_frontera, rechazo_en_puesto_fronterizo, reten_migratorio, vigilancia_fronteriza
 - **`deportaciones`** — Deportaciones, detención y retornos forzados. TODA detención de personas migrantes va acá, sea en frontera, en un centro de detención o en una redada en el interior. También las expulsiones y los retornos forzados.
-  <br>*Cubre:* allanamiento, arrestos_migratorios, centros_de_detencion, control_de_documentacion, detencion_migratoria, devoluciones, expulsion_administrativa, expulsiones, expulsiones_migrantes, operativo_en_via_publica, orden_de_expulsion, readmisiones, reasentamiento_forzado, redadas, retorno_forzado, separacion_familiar, vuelos_de_deportacion
+  <br>*Cubre:* acuerdos_de_deportacion, allanamiento, arrestos_migratorios, centros_de_detencion, control_de_documentacion, deportacion_a_terceros_paises, detencion_migratoria, devoluciones, expulsion_administrativa, expulsiones, expulsiones_migrantes, operativo_en_via_publica, orden_de_expulsion, readmisiones, reasentamiento_forzado, redadas, retorno_forzado, separacion_familiar, tercer_pais_seguro, traslados_a_paises_no_de_origen, vuelos_de_deportacion
 - **`securitizacion`** — Securitización. Qué DIRECCIÓN tiene la política: la migración tratada como amenaza. Puede existir sin norma: declaraciones, despliegues, planes no publicados.
   <br>*Cubre:* controles_en_transporte_publico, criminalizacion, estado_de_excepcion, inteligencia, militarizacion, operativos_conjuntos, perfilamiento_racial, vigilancia_digital
 - **`rutas`** — Rutas migratorias. El trayecto en sí: corredores, riesgos, naufragios, desapariciones en ruta.
@@ -156,6 +156,7 @@ devolver**, son el vocabulario que define qué entra en ese eje.
 - **Desaparecidos:** En ruta migratoria -> `rutas`. Por persecucion politica -> `exilio`.
 - **Control_migratorio:** En frontera o paso fronterizo -> `fronteras`. Operativo en via publica, transporte o lugar de trabajo, con detencion de personas -> `deportaciones`. Como politica sostenida de vigilancia sobre la poblacion migrante -> `securitizacion`. Un mismo operativo puede llevar dos de los tres.
 - **Fiscalizacion:** De documentacion migratoria a personas -> `fronteras` o `deportaciones` segun donde ocurra. De empleadores que contratan migrantes -> `trabajo`.
+- **Terceros_paises:** Deportar a alguien a un pais que NO es el suyo -> `deportaciones` (deportacion_a_terceros_paises). El acuerdo entre Estados que lo habilita -> `politica_migratoria` (acuerdos_bilaterales). Suelen ir juntos.
 
 Si el ítem no encaja en ninguno de los ejes, elegí el más cercano y bajá la `importancia`.
 
