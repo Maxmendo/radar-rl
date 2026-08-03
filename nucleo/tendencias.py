@@ -343,14 +343,34 @@ def main() -> int:
                     }
             time.sleep(ESPERA)
 
+    previo = cache_vigente(24 * 30)      # solo para leer el puntero de rotacion
+
+    # --- Tramites: VA PRIMERO ------------------------------------------------
+    # Es la senal mas independiente del sistema -quien busca 'turno migraciones'
+    # esta resolviendo un problema, no leyendo noticias- y la unica que da pauta
+    # local. Iba ultimo y se quedaba sin cuota: el 2026-08-03 devolvio cero tres
+    # corridas seguidas. Ahora consume la cuota antes que nada.
+    demanda: dict = dict((previo or {}).get("servicio", {}))
+    if seguidos < FALLOS_SEGUIDOS:
+        for i in range(0, len(servicio), LOTE):
+            res = consultar(cliente, servicio[i:i + LOTE], geo_servicio, ventana, umbrales)
+            seguidos = 0 if res else seguidos + 1
+            for t, d in res.items():
+                if d["puntaje"] > 0:
+                    demanda[t] = {"geo": geo_servicio, **d}
+            time.sleep(ESPERA)
+            if seguidos >= FALLOS_SEGUIDOS:
+                break
+
     # --- Que lee la audiencia: paises rotando, pocos por corrida ------------
+    # Va despues de los tramites: si sobra cuota, se mide; si no, se pierde esto
+    # y no la senal local.
     # No se consultan todos de una vez: eso agoto la cuota de Google. Se rotan
     # dos por corrida y, con ocho corridas diarias, cada pais se actualiza a
     # diario sin concentrar los pedidos.
     semilla = cfg.get("semilla_audiencia", "migrantes")
     geos_aud = cfg.get("geos_audiencia", [])
     por_corrida = cfg.get("paises_por_corrida", 2)
-    previo = cache_vigente(24 * 30)          # solo para leer el puntero anterior
     fijo = cfg.get("geo_fijo_audiencia")
     tope_consultas = cfg.get("max_consultas_por_pais", 3)
     toca, proximo = rotacion(previo, geos_aud, por_corrida, fijo)
@@ -379,19 +399,6 @@ def main() -> int:
                 sin_datos.append(geo)
                 log.info("   %-4s sin datos", geo)
             time.sleep(ESPERA)
-
-    # --- Demanda de servicio: tramites concretos, senal independiente -------
-    demanda: dict = dict((previo or {}).get("servicio", {}))
-    if seguidos < FALLOS_SEGUIDOS:
-        for i in range(0, len(servicio), LOTE):
-            res = consultar(cliente, servicio[i:i + LOTE], geo_servicio, ventana, umbrales)
-            seguidos = 0 if res else seguidos + 1
-            for t, d in res.items():
-                if d["puntaje"] > 0:
-                    demanda[t] = {"geo": geo_servicio, **d}
-            time.sleep(ESPERA)
-            if seguidos >= FALLOS_SEGUIDOS:
-                break
 
     # --- Alertas: importante + poco cubierto + busquedas subiendo -----------
     umbral_alerta = cfg.get("umbral_alerta", 5)

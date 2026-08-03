@@ -195,7 +195,7 @@ def llamar(clave: str, sistema: str, lote: list[dict], modelos: list[str]) -> li
 CAMPOS = ("es_migratorio", "ejes", "poblaciones", "colectividades", "actores",
           "etapa", "paises", "tipo", "importancia", "cobertura", "confianza",
           "tiene_fuente_primaria", "contiene_datos_personales",
-          "requiere_verificacion", "terminologia_problematica",
+          "requiere_verificacion", "cobertura_tardia", "terminologia_problematica",
           "termino_busqueda", "angulo_sugerido", "nota")
 
 
@@ -217,7 +217,8 @@ def validar(obj: dict, vocab: dict) -> dict:
         limpio["etapa"] = None
 
     for campo in ("es_migratorio", "tiene_fuente_primaria",
-                  "contiene_datos_personales", "requiere_verificacion"):
+                  "contiene_datos_personales", "requiere_verificacion",
+                  "cobertura_tardia"):
         limpio[campo] = bool(limpio.get(campo))
 
     for campo, tope in (("importancia", 10), ("cobertura", 10)):

@@ -307,6 +307,11 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   background:var(--fondo);border:1px solid var(--sem-verde);color:var(--sem-verde);
   font-weight:600}
 .trend.plano{border-color:var(--linea);color:var(--tenue)}
+.trend.nomedido{border-style:dashed;border-color:var(--linea);color:var(--tenue);
+  font-weight:400}
+.tardia{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
+  background:var(--fondo);border:1px solid var(--marron-med);color:var(--marron-med);
+  font-weight:600}
 .extrarreg{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
   background:var(--fondo);border:1px solid var(--linea);color:var(--tenue);
   font-weight:600;text-transform:uppercase;letter-spacing:.03em}
@@ -376,9 +381,12 @@ Cada medio listado abajo del título es un enlace directo a su publicación, par
 cualquiera de las fuentes.<br>
 Los países con <span class="et inferido">borde punteado</span> son inferidos de la
 búsqueda, no del titular: menos confiables.<br>
-En «De interés» cada hecho muestra el dato de <b>búsquedas</b> en Google: ↑ si están
-subiendo, → si se mueven poco, — si están planas. <b>No altera el orden</b>, que lo da
-la importancia editorial. Es información para decidir, no un ranking automático.<br>
+Cada hecho de la región muestra el dato de <b>búsquedas</b> en Google, de 0 a 10:
+↑ si están subiendo, → si se mueven poco, — si están planas, <i>s/d</i> si todavía no
+se midió (Google limita las consultas por día). <b>No altera el orden</b>, que lo da la
+importancia editorial.<br>
+La marca <b>cobertura tardía</b> señala que el titular retoma un hecho de días
+anteriores en vez de informar algo nuevo: no es una primicia aunque tenga pocos medios.<br>
 El radar propone. La decisión editorial es humana.
 <p class="slogan">periodismo sin fronteras</p>
 </footer>
@@ -532,8 +540,11 @@ function dibujar(){
       <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
       <div class="datos">
         ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">Importancia <b>${i.importancia}</b></span>`:''}
+        ${i.cobertura_tardia?`<span class="tardia" title="El titular retoma un hecho de días anteriores, no informa algo nuevo">cobertura tardía</span>`:''}
         ${i.fuera_de_alcance?`<span class="extrarreg" title="Ocurre fuera de America Latina, el Caribe y Estados Unidos">extrarregional</span>`:''}
-        ${i.trends!=null?`<span class="trend${i.trends>=5?'':' plano'}" title="${esc(i.trends_motivo||'')}">búsquedas ${i.trends>=5?'↑':(i.trends>0?'→':'—')} ${i.trends}</span>`:''}
+        ${!i.fuera_de_alcance?(i.trends!=null
+            ?`<span class="trend${i.trends>=5?'':' plano'}" title="${esc(i.trends_motivo||'')}">búsquedas ${i.trends>=5?'↑':(i.trends>0?'→':'—')} ${i.trends}/10</span>`
+            :`<span class="trend nomedido" title="Google Trends limita las consultas por día: este hecho no se midió todavía">búsquedas s/d</span>`):''}
         ${i.requiere_verificacion?`<span class="alerta-mini" title="El titular afirma cifras o hechos sin citar fuente">verificar</span>`:''}
         ${i.contiene_datos_personales?`<span class="alerta-mini" title="Identifica a una persona migrante concreta">dato personal</span>`:''}
         <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>

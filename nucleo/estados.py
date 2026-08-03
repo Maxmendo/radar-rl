@@ -120,6 +120,17 @@ def estado(item: dict) -> str:
     acel = item.get("aceleracion") or 0
     imp = item.get("importancia")
 
+    # Cobertura tardia: la nota retoma algo que ya paso hace dias. Con un solo
+    # medio, el radar lo leia como "nadie lo cubrio" cuando en realidad ya lo
+    # cubrieron todos. El 2026-08-03 una nota sobre un decreto de siete dias
+    # antes encabezaba `nadie_lo_mira` como si fuera una primicia.
+    #
+    # No se descarta -a veces un rezagado trae un angulo nuevo- pero deja de ser
+    # candidato a primicia. Si ademas tiene poca cobertura, va a `ruido`, donde
+    # el equipo puede auditarlo.
+    if item.get("cobertura_tardia") and vel < 3:
+        return "ruido"
+
     if vel >= 20:
         return "top_trend"
     if vel >= 8 or (vel >= 5 and acel >= 4):
@@ -158,7 +169,11 @@ def puntaje(item: dict) -> float:
     imp = item.get("importancia") or 5
     vel = item.get("velocidad") or 0
     acel = max(0, item.get("aceleracion") or 0)
-    return round(imp * frescura(item.get("horas")) * (vel + acel * 2), 1)
+    p = imp * frescura(item.get("horas")) * (vel + acel * 2)
+    # Un rezagado con varios medios sigue siendo visible, pero no encabeza.
+    if item.get("cobertura_tardia"):
+        p *= 0.4
+    return round(p, 1)
 
 
 def potencial(item: dict) -> float:

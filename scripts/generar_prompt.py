@@ -171,6 +171,28 @@ Blanca` no arrojaron ningún dato.
 Se usa para medir si el interés de búsqueda está subiendo, lo que anticipa que un
 tema está por escalar. Un término sin volumen no mide nada.
 
+**`cobertura_tardia`** — `true` cuando el titular describe un hecho que **ya ocurrió
+hace días** y esta nota lo está retomando, en vez de informar algo nuevo.
+
+Señales de cobertura tardía:
+- Análisis o explicación de una medida ya anunciada: *"El polémico decreto de X (y qué
+  tiene que ver con Y)"*, *"Qué cambia con la nueva ley"*, *"Las claves del decreto"*.
+- Reacciones o consecuencias de algo previo: *"La oposición cruzó a X por el decreto"*.
+- Balances y recuentos: *"A una semana de la medida"*.
+- Titulares sin marca temporal que describen un estado, no un acontecimiento.
+
+Señales de hecho nuevo: verbos en presente o pretérito perfecto sobre algo que acaba
+de pasar (*"firmó"*, *"detuvieron"*, *"reportan"*), cifras del día, "esta madrugada",
+"en las últimas horas".
+
+**Por qué importa.** El radar mide cuántos medios cubren un hecho para saber si todavía
+se puede llegar primero. Si un solo medio publica hoy una nota sobre algo de la semana
+pasada, el sistema lo lee como "nadie lo cubrió" cuando en realidad ya lo cubrieron
+todos. Verificado el 2026-08-03: una nota sobre un decreto de siete días antes
+encabezaba «Posibles alertas» como si fuera una primicia.
+
+En caso de duda, `false`.
+
 **`requiere_verificacion`** — `true` cuando el titular afirma cifras, hechos o
 atribuciones **sin citar fuente**. Ejemplo: "48.000 personas cruzaron" sin decir quién
 lo registró. No baja la `importancia`: señala que antes de cubrirlo hay que chequear.
@@ -244,6 +266,7 @@ público, según nuestra línea editorial.
   "tiene_fuente_primaria": false,
   "contiene_datos_personales": true,
   "requiere_verificacion": false,
+  "cobertura_tardia": false,
   "termino_busqueda": "migraciones",
   "terminologia_problematica": [],
   "angulo_sugerido": "<max 20 palabras, o null>",
@@ -261,37 +284,43 @@ habría que preguntar, no a cómo escribirlo.
 **1. Decreto que endurece la política migratoria**
 
 ```json
-{{"id":"x1","es_migratorio":true,"ejes":["politica_migratoria","securitizacion","fronteras"],"poblaciones":[],"colectividades":[],"actores":["estado_nacional"],"etapa":"destino","paises":["AR"],"tipo":"normativa","importancia":10,"cobertura":9,"confianza":0.95,"tiene_fuente_primaria":true,"contiene_datos_personales":false,"requiere_verificacion":false,"terminologia_problematica":[],"termino_busqueda":"migraciones","angulo_sugerido":"Que organo define que es un mensaje de odio y con que recurso se impugna","nota":"Habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico."}}
+{{"id":"x1","es_migratorio":true,"ejes":["politica_migratoria","securitizacion","fronteras"],"poblaciones":[],"colectividades":[],"actores":["estado_nacional"],"etapa":"destino","paises":["AR"],"tipo":"normativa","importancia":10,"cobertura":9,"confianza":0.95,"tiene_fuente_primaria":true,"contiene_datos_personales":false,"requiere_verificacion":false,"cobertura_tardia":false,"terminologia_problematica":[],"termino_busqueda":"migraciones","angulo_sugerido":"Que organo define que es un mensaje de odio y con que recurso se impugna","nota":"Habilita expulsion por expresiones. Muy cubierto: el valor esta en el analisis juridico."}}
 ```
 
 **2. Muerte bajo custodia migratoria**
 
 ```json
-{{"id":"x2","es_migratorio":true,"ejes":["deportaciones","derechos_humanos"],"poblaciones":[],"colectividades":["MX"],"actores":["organismos_migratorios","sociedad_civil"],"etapa":"destino","paises":["US","MX"],"tipo":"caso","importancia":9,"cobertura":6,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"terminologia_problematica":[],"termino_busqueda":"deportaciones","angulo_sugerido":"Cuantas muertes bajo custodia hubo en ese centro en el ultimo ano","nota":"Detencion migratoria con resultado de muerte. Va a deportaciones por ser detencion de migrantes."}}
+{{"id":"x2","es_migratorio":true,"ejes":["deportaciones","derechos_humanos"],"poblaciones":[],"colectividades":["MX"],"actores":["organismos_migratorios","sociedad_civil"],"etapa":"destino","paises":["US","MX"],"tipo":"caso","importancia":9,"cobertura":6,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"cobertura_tardia":false,"terminologia_problematica":[],"termino_busqueda":"deportaciones","angulo_sugerido":"Cuantas muertes bajo custodia hubo en ese centro en el ultimo ano","nota":"Detencion migratoria con resultado de muerte. Va a deportaciones por ser detencion de migrantes."}}
 ```
 
 **3. Cobertura con terminología deshumanizante**
 
 ```json
-{{"id":"x3","es_migratorio":true,"ejes":["odio","medios","fronteras"],"poblaciones":[],"colectividades":[],"actores":["medios"],"etapa":"frontera","paises":["MX","US"],"tipo":"discurso","importancia":6,"cobertura":7,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":["avalancha","ilegales"],"termino_busqueda":"migrantes","angulo_sugerido":"Contrastar el encuadre con datos oficiales de cruces registrados","nota":"Encuadre de amenaza sin respaldo estadistico. Material para analisis mediatico."}}
+{{"id":"x3","es_migratorio":true,"ejes":["odio","medios","fronteras"],"poblaciones":[],"colectividades":[],"actores":["medios"],"etapa":"frontera","paises":["MX","US"],"tipo":"discurso","importancia":6,"cobertura":7,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"cobertura_tardia":false,"terminologia_problematica":["avalancha","ilegales"],"termino_busqueda":"migrantes","angulo_sugerido":"Contrastar el encuadre con datos oficiales de cruces registrados","nota":"Encuadre de amenaza sin respaldo estadistico. Material para analisis mediatico."}}
 ```
 
 **4. Ítem que no es migratorio**
 
 ```json
-{{"id":"x4","es_migratorio":false,"ejes":["justicia"],"poblaciones":[],"colectividades":[],"actores":["poder_judicial"],"etapa":null,"paises":["AR"],"tipo":"caso","importancia":2,"cobertura":null,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"terminologia_problematica":[],"termino_busqueda":null,"angulo_sugerido":null,"nota":"Causa penal. La deportacion es consecuencia accesoria, no el eje del hecho."}}
+{{"id":"x4","es_migratorio":false,"ejes":["justicia"],"poblaciones":[],"colectividades":[],"actores":["poder_judicial"],"etapa":null,"paises":["AR"],"tipo":"caso","importancia":2,"cobertura":null,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":true,"requiere_verificacion":false,"cobertura_tardia":false,"terminologia_problematica":[],"termino_busqueda":null,"angulo_sugerido":null,"nota":"Causa penal. La deportacion es consecuencia accesoria, no el eje del hecho."}}
 ```
 
 **5. Naufragio en ruta, con población y colectividad**
 
 ```json
-{{"id":"x5","es_migratorio":true,"ejes":["rutas","derechos_humanos"],"poblaciones":["ninez","familias"],"colectividades":["HT"],"actores":["organismos_internacionales"],"etapa":"transito","paises":["HT","DO"],"tipo":"evento","importancia":9,"cobertura":2,"confianza":0.85,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":[],"termino_busqueda":"migrantes haitianos","angulo_sugerido":"Contrastar cifras oficiales con registros de organizaciones haitianas","nota":"Alta importancia y casi sin cobertura regional. Prioridad editorial."}}
+{{"id":"x5","es_migratorio":true,"ejes":["rutas","derechos_humanos"],"poblaciones":["ninez","familias"],"colectividades":["HT"],"actores":["organismos_internacionales"],"etapa":"transito","paises":["HT","DO"],"tipo":"evento","importancia":9,"cobertura":2,"confianza":0.85,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"cobertura_tardia":false,"terminologia_problematica":[],"termino_busqueda":"migrantes haitianos","angulo_sugerido":"Contrastar cifras oficiales con registros de organizaciones haitianas","nota":"Alta importancia y casi sin cobertura regional. Prioridad editorial."}}
 ```
 
 **6. Inmovilidad forzada**
 
 ```json
-{{"id":"x6","es_migratorio":true,"ejes":["inmovilidad","estatus"],"poblaciones":["familias"],"colectividades":["VE"],"actores":["organismos_migratorios"],"etapa":"transito","paises":["PE"],"tipo":"caso","importancia":8,"cobertura":1,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"terminologia_problematica":[],"termino_busqueda":"migrantes","angulo_sugerido":"Cuantos expedientes estan paralizados y desde cuando","nota":"Personas varadas sin poder avanzar ni volver. Casi sin cobertura."}}
+{{"id":"x6","es_migratorio":true,"ejes":["inmovilidad","estatus"],"poblaciones":["familias"],"colectividades":["VE"],"actores":["organismos_migratorios"],"etapa":"transito","paises":["PE"],"tipo":"caso","importancia":8,"cobertura":1,"confianza":0.8,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":true,"cobertura_tardia":false,"terminologia_problematica":[],"termino_busqueda":"migrantes","angulo_sugerido":"Cuantos expedientes estan paralizados y desde cuando","nota":"Personas varadas sin poder avanzar ni volver. Casi sin cobertura."}}
+```
+
+**7. Cobertura tardía de un hecho anterior**
+
+```json
+{{"id":"x7","es_migratorio":true,"ejes":["politica_migratoria","securitizacion"],"poblaciones":[],"colectividades":[],"actores":["estado_nacional"],"etapa":"destino","paises":["AR"],"tipo":"normativa","importancia":10,"cobertura":9,"confianza":0.9,"tiene_fuente_primaria":false,"contiene_datos_personales":false,"requiere_verificacion":false,"cobertura_tardia":true,"terminologia_problematica":[],"termino_busqueda":"decreto migratorio","angulo_sugerido":"Analizar la legalidad constitucional de expulsar por motivos de opinion","nota":"Analisis de un decreto ya publicado dias antes, no un hecho nuevo."}}
 ```
 
 ---

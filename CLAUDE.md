@@ -116,7 +116,20 @@ aceleracion  = velocidad actual - velocidad de la corrida anterior (3h atras)
 3. **`interes` es la vista por defecto.** Es el estado donde una redacción chica todavía
    puede llegar primero. `top_trend` es donde ya perdió.
 
-4. **El alcance se decide por LISTA BLANCA de países, no por lista negra de palabras.**
+4. **Cobertura tardía: un rezagado no es una primicia.** El clasificador marca
+   `cobertura_tardia: true` cuando el titular retoma un hecho de días anteriores en
+   vez de informar algo nuevo —análisis, reacciones, balances—. Con menos de 3 medios
+   va directo a `ruido`; con más, se queda donde está pero con el puntaje reducido al
+   40%.
+
+   El 2026-08-03 una nota sobre un decreto de siete días antes encabezaba «Posibles
+   alertas» como si fuera una primicia: un solo medio la había publicado ese día, así
+   que el radar leyó "nadie lo cubrió" cuando en realidad ya lo habían cubierto todos.
+
+   **No se descarta**, porque a veces un rezagado trae un ángulo nuevo. Queda visible
+   y marcado para que el equipo decida.
+
+5. **El alcance se decide por LISTA BLANCA de países, no por lista negra de palabras.**
    `PAISES_DEL_ALCANCE` en `nucleo/estados.py` enumera América Latina, el Caribe,
    Estados Unidos y Canadá. Si ninguno de los países del hecho está ahí, es
    extrarregional.
@@ -130,7 +143,7 @@ aceleracion  = velocidad actual - velocidad de la corrida anterior (3h atras)
    completo y acierta mucho más. Sin `recalcular_alcance()`, un hecho podía quedar
    etiquetado a la vez como `Sudamérica` y con país `GB`.
 
-5. **Excepción extrarregional en `top_trend`.** Un hecho de otra región con cobertura
+6. **Excepción extrarregional en `top_trend`.** Un hecho de otra región con cobertura
    masiva entra a `top_trend` para mostrar cuál es la conversación dominante sobre
    movilidad humana en el mundo. Dos salvaguardas, porque en agosto de 2026 la cobertura
    de Ceuta llegó a encabezar la portada y empujar abajo lo latinoamericano:
@@ -226,13 +239,17 @@ por día sin concentrar los pedidos. El puntero de rotación se guarda en
 eso no decía qué pasa en Chile: decía qué estaba leyendo la audiencia chilena. Es
 atención de nuestros lectores, no realidad local. Para lo local están los trámites.
 
-**b) Trámites en alza, Argentina.** `turno migraciones`, `DNI extranjero`, `residencia
+**b) Trámites en alza, Argentina. VA PRIMERO en la cola de consultas.** `turno migraciones`, `DNI extranjero`, `residencia
 precaria`, `certificado de residencia`, `regularizacion migratoria`, `estudiantes
 extranjeros`. Consultas de trámite: quien las escribe está resolviendo un problema,
 no leyendo noticias. Un pico ahí señala una demora o un cambio operativo que
-probablemente ningún medio cubrió. **Es la señal más independiente del sistema**, y la
-primera que produjo un resultado real: el 2026-08-02, `DNI extranjero` a ×4.15 y
-`certificado de residencia` a ×3.21 en Argentina.
+probablemente ningún medio cubrió. **Es la señal más independiente del sistema** y la única que da pauta local: el
+2026-08-02 detectó `DNI extranjero` a ×4.15 y `certificado de residencia` a ×3.21 en
+Argentina, sin cobertura mediática.
+
+Iba último en la cola y se quedaba sin cuota: devolvió cero tres corridas seguidas.
+Ahora consume la cuota antes que el panel de audiencia — si algo se pierde, que sea lo
+que menos aporta.
 
 Solo Argentina por ahora: varias son categorías jurídicas argentinas. Extenderlo a
 otros países requiere armar la lista equivalente de cada uno, no traducir la argentina.
