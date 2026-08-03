@@ -1,88 +1,9 @@
 {
- "generado": "2026-08-03T19:38:42+00:00",
+ "generado": "2026-08-03T22:11:04+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "3b76a4ffe5b0": {
-   "id_hecho": "3b76a4ffe5b0",
-   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNZ2pSTFVKYkgtQmx2cHZfcGMxbHpKOXFUS2hGQWVYMWUxaWtncFFBN2pIMk1ldlFpSFdjRjcwcFZvdV9COHdfR3NRdm5xeWphZGFUY2U1UTNiV2gtY0wzcTYxcTcwdGhHTzlCc1U5dkVxeGhXaU5pYmxFWXJDOTdjWXNoX2sxSWw4UHZOMGFrQ1RHTG0yM3EydEN1Y1luS19VNlhzY05ia2tMc05BM1FfdE93V1VTbDVScl9ITVBlZ2dwMnplaWxiM2puelo1QXZ3clJDZDlJRXZ3MGpSTndTWXphaEhmbEZKMEpvczA5S0sxLVViQVQ3LUtVbmkxUGFTTzZHYVB1R2dHR08wY2ItQUZnZ0pkX0k?oc=5",
-   "termino": "migrantes",
-   "geo": "US",
-   "titulo": "Intercepta Guardia Costera de EU embarcación con 21 migrantes frente a la isla San Clemente; un hombre fallece tras evacuación médica",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 3,
-   "reciente": 49.3,
-   "base": 29.4,
-   "ratio": 1.68
-  },
-  "c13925386ecc": {
-   "id_hecho": "c13925386ecc",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX3dCSWFHa0tjYVM5VWdQTnVUU1F2dUx0dGtIcEhRVWNzYzVwZWMyTm9LalJGa2F3Z2Ixc3lRclFXLWNoTG5URzVVSGhhZ3psQ1pSclJYcEtSMjdsOWw2Y1NlSU00M09yRU80MldRR3Fzc0lnWS1kNS1ZRWhMTWZfbWRqU1F6N19UVkxsZXZmUEUwWDFtWmozS3pIZ2dSaDdaUkdtUU83U3I1T2UwX1NjWnVZTXNFZHlGeS02T2xVSEdYdUhPY0hhd3ZB0gHkAUFVX3lxTE9yMGRwdnAxVURxXzU4YUZhYlFmVmVqVFd6dFlKR3NISklPOXZVUVZmekNmSV95UldkcERJR3VpZ2xyU20tNUNXQ3BuNEFvSUp3Y1lXM1hnZ1BHMHZFd0g4WDdhYURmZTd1cERHV1lsTWNHZ0RUaDF3elVJYl85ZDNXMFQ5Sk5nTUNWV1FGc0pxckVocmJlMWlJNlRWcUc2WVdld0N1cjFuQktIbmo5UTBMZDB2azc3Y2NQdGpZMng0QUFDcFFZc0xzUTFCcjZFVXljRUFWY0NGa2UwbFZLeEVrTjJQVw?oc=5",
-   "termino": "migrantes mexicanos",
-   "geo": "US",
-   "titulo": "La cifra de inmigrantes mexicanos cae un 5 % en EEUU por primera vez desde 1980",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "abb4ad1db822": {
-   "id_hecho": "abb4ad1db822",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPclRKSXZRbm5aajBBTzN1X1FMVUdmY2RLYmduR3JnNUlhN3N1N3I0QVR0U0pWYmoxaXJ6clo3czFnaTFqcE94aGg3bDAzMVJiUXFxVjl0TE1ocXh6YVVhZW5seU43V3RSY2RzSFZKU1cwTDNrRjl2QWtUamFuTnNzZjJjUWgxaWZSUEVjQlNyWFl3ZWNnZzc1ZEZ5M0VWTVpuQkxMaWdNdWwxRFVLaXdPNk4tR0dBZEpBazdFaXpaRnZGVEo5TG1iRWlYTmotV0g3dFczUE5Gb1BLZ9IB9AFBVV95cUxQc2JJNnUxOGMzU2dyZEFVaWZqV2hBS0lpWmUxcVVrVWNYcVdRelU3M1pyNU9JMjhGT0VpVjZzOW5KNEN5VlRxbVh2SHUySUZkLWZQMWJYZEltNzRwVEFkYzExTTJoZE1XUUxTNTRVYjI3ZEoteHFWWUVTR09BcXRfdzhmWGZheHNzZTFOR284aUo1WWh0ZWtwS3l5RVVOUlhLTnhZRXRyZDlGVkRuNHdUTGhoNXRwaEhSdjdpY0xsa2QtM3JJbWEwTF8zMnNFVTJnQURfaFhXbGNyMHJWSEpCcGdmV2tfQmwxa0xaNktVX0ZaQ1Y1?oc=5",
-   "termino": "migrantes indocumentados",
-   "geo": "US",
-   "titulo": "La cifra de inmigrantes indocumentados en Estados Unidos llega a 15,8 millones, según informe",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.2,
-   "ratio": null
-  },
-  "6b4f0064508c": {
-   "id_hecho": "6b4f0064508c",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOclhEb3VJcUxoSzlPdHFyZG1ZdmQ0V01qdnQtbUY2Y2lqNnJfSnJMNzRyNFM1WWJPbzJUOUlISzZ0X0NvVGpGQkdkbGE4WlppR2Rqdno1OHFwb3ozdTQwbW5ZbVIxUHIzUFhJSUk1VVZWYkFVbTFVSjU0TXlMSGhXd3VqMERzQnBxNDRNMWtYVGpsZkdEYU1qaVFIZk9IcWFTV202em9LMW1salUtQlAwb01iVEh3eWFqZVN5d0MyVVlzeFpueU9oRGlVeFNIblUwYnVBWDNHSlHSAeABQVVfeXFMUGUzOU5TTmNXQUVrRjExQlRXX2dENmZCRFd2ODJ5d3VFYldXM1BscWZOVWZJaUF1S0xoUlluV2NfMnM4akgyRkVXc0FBZnItTC1sbzBrU2VNX3BvTjVxOVNWc0dSeW5UMmJ0VDRWZldOMjFCdXd4SUVRQ3VZUnoxd0l2dUs3d1RLNVJaVnBfZXlBVTBGVWVaNjFuQ2l5cXQ1LWRTeTUwMXJJOTVpS1VOYUVwZVpLMHdUZ1BxaXNmaFpjazAtQ1RsNDA1Z0tTS3VmYzRxQVBkZzBKRS1CMVpsSWY?oc=5",
-   "termino": "deportaciones",
-   "geo": "MX",
-   "titulo": "Autoridades mexicanas controlan un motín de migrantes cubanos para evitar ser deportados",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 2.7,
-   "base": 0.7,
-   "ratio": null
-  },
-  "0946a7ee3488": {
-   "id_hecho": "0946a7ee3488",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcS1oZXNMQmJfNGk2YlFBRlpXNUdUSUJmXzFJQk15M3lfVlVUV3J0dUw1QWIwbHVkdlVUalZGSnduYkliM1h6VVBvTko2dUg1ZFFfQ2dQRldBYmRuRi0yNF9iN0NaSUdXWDQ4VFBVR3pFbTdXV3c5aUt5UndRR1pyQWFWN1RpTVhfZ0RFN0F0cHpJbVZhUkttdzMzTkNtZ1VnYWY5bEQzTGZfa3NjbE11cmhkakVoSXM3Y0Q2LdIBvAFBVV95cUxOcS1oZXNMQmJfNGk2YlFBRlpXNUdUSUJmXzFJQk15M3lfVlVUV3J0dUw1QWIwbHVkdlVUalZGSnduYkliM1h6VVBvTko2dUg1ZFFfQ2dQRldBYmRuRi0yNF9iN0NaSUdXWDQ4VFBVR3pFbTdXV3c5aUt5UndRR1pyQWFWN1RpTVhfZ0RFN0F0cHpJbVZhUkttdzMzTkNtZ1VnYWY5bEQzTGZfa3NjbE11cmhkakVoSXM3Y0Q2LQ?oc=5",
-   "termino": "estacion migratoria",
-   "geo": "MX",
-   "titulo": "Caos en Tapachula: Dos detenidos tras disturbios en Estación Migratoria Siglo XXI",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.3,
-   "ratio": null
-  },
-  "f784fe8f0857": {
-   "id_hecho": "f784fe8f0857",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVjVZZGt2TUhERFJoVUZoWUpYZmtncWlZWFEzMzVHdzV1WVFWLWJOQWhYQ0FXNVE0Rm02TTJ0ZEc1VWtzbUtNNVpPMW5XQlItcUxnUS1faFRiVDBVQ3dEY1dMcUtucGJHeDZrdXZqM0hOa0dlc3BrQkk4Y09PUERDdTBNUXFwWFVQT0FCcDVFZzlod09KalE?oc=5",
-   "termino": "remesas",
-   "geo": "MX",
-   "titulo": "Remesas crecen 3.1% en México durante el primer semestre de 2026 pese a política migratoria de EE.UU.",
-   "importancia": 6,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 23.0,
-   "base": 22.0,
-   "ratio": 1.05
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -171,7 +92,7 @@
    "medido": "2026-08-03T19:38:38+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
