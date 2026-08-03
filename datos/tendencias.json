@@ -1,0 +1,73 @@
+{
+ "generado": "2026-08-03T10:49:01+00:00",
+ "disponible": true,
+ "motivo": "",
+ "ventana": "today 3-m",
+ "hechos": {
+  "abb4ad1db822": {
+   "id_hecho": "abb4ad1db822",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPclRKSXZRbm5aajBBTzN1X1FMVUdmY2RLYmduR3JnNUlhN3N1N3I0QVR0U0pWYmoxaXJ6clo3czFnaTFqcE94aGg3bDAzMVJiUXFxVjl0TE1ocXh6YVVhZW5seU43V3RSY2RzSFZKU1cwTDNrRjl2QWtUamFuTnNzZjJjUWgxaWZSUEVjQlNyWFl3ZWNnZzc1ZEZ5M0VWTVpuQkxMaWdNdWwxRFVLaXdPNk4tR0dBZEpBazdFaXpaRnZGVEo5TG1iRWlYTmotV0g3dFczUE5Gb1BLZ9IB9AFBVV95cUxQc2JJNnUxOGMzU2dyZEFVaWZqV2hBS0lpWmUxcVVrVWNYcVdRelU3M1pyNU9JMjhGT0VpVjZzOW5KNEN5VlRxbVh2SHUySUZkLWZQMWJYZEltNzRwVEFkYzExTTJoZE1XUUxTNTRVYjI3ZEoteHFWWUVTR09BcXRfdzhmWGZheHNzZTFOR284aUo1WWh0ZWtwS3l5RVVOUlhLTnhZRXRyZDlGVkRuNHdUTGhoNXRwaEhSdjdpY0xsa2QtM3JJbWEwTF8zMnNFVTJnQURfaFhXbGNyMHJWSEpCcGdmV2tfQmwxa0xaNktVX0ZaQ1Y1?oc=5",
+   "termino": "migrantes indocumentados",
+   "geo": "US",
+   "titulo": "La cifra de inmigrantes indocumentados en Estados Unidos llega a 15,8 millones, según informe",
+   "importancia": 6,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
+  }
+ },
+ "audiencia": {
+  "AR": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "902750",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes marruecos",
+     "valor": "705350",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "españa migrantes",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-03T10:48:41+00:00"
+  },
+  "VE": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "366950",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "españa migrantes",
+     "valor": "73",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos",
+     "valor": "411650",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-03T10:48:45+00:00"
+  }
+ },
+ "proximo_pais": 1,
+ "paises_sin_datos": [],
+ "servicio": {},
+ "alertas": []
+}
