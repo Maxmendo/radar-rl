@@ -1,0 +1,133 @@
+{
+ "generado": "2026-08-03T10:09:35+00:00",
+ "disponible": true,
+ "motivo": "",
+ "ventana": "today 3-m",
+ "hechos": {
+  "08a8634ca3df": {
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Avanza el ICE en Miami: busca sumar 700 nuevas camas en centros de detención de migrantes tras el cierre de Alligator Alcatraz",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 16.6,
+   "base": 5.1,
+   "ratio": 3.27
+  },
+  "afc1c6ae2962": {
+   "termino": "migrantes venezolanos",
+   "geo": "VE",
+   "titulo": "Venezuela propone agenda de cooperación con Chile tras reactivación de relaciones consulares - El Tiempo",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 27.4,
+   "base": 3.0,
+   "ratio": 9.05
+  }
+ },
+ "general": {
+  "CL": [
+   {
+    "consulta": "migrantes a españa",
+    "valor": "230500",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "migrantes ceuta",
+    "valor": "175500",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "ceuta",
+    "valor": "173700",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "marruecos",
+    "valor": "110550",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "migrantes de marruecos",
+    "valor": "72750",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "migrantes en ceuta",
+    "valor": "55400",
+    "tipo": "rising"
+   }
+  ],
+  "CO": [
+   {
+    "consulta": "marruecos",
+    "valor": "510400",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "marruecos migrantes",
+    "valor": "473050",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "ceuta migrantes",
+    "valor": "323850",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "ceuta",
+    "valor": "288400",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "migrantes de marruecos a españa",
+    "valor": "194550",
+    "tipo": "rising"
+   },
+   {
+    "consulta": "ceuta españa",
+    "valor": "115350",
+    "tipo": "rising"
+   }
+  ]
+ },
+ "paises_sin_datos": [
+  "AR",
+  "BO",
+  "BR",
+  "EC",
+  "GY",
+  "PY",
+  "PE",
+  "SR",
+  "UY"
+ ],
+ "paises_con_respaldo": [],
+ "servicio": {},
+ "alertas": [
+  {
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Avanza el ICE en Miami: busca sumar 700 nuevas camas en centros de detención de migrantes tras el cierre de Alligator Alcatraz",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 16.6,
+   "base": 5.1,
+   "ratio": 3.27
+  },
+  {
+   "termino": "migrantes venezolanos",
+   "geo": "VE",
+   "titulo": "Venezuela propone agenda de cooperación con Chile tras reactivación de relaciones consulares - El Tiempo",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 27.4,
+   "base": 3.0,
+   "ratio": 9.05
+  }
+ ]
+}

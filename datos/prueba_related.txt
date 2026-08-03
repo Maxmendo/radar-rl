@@ -1,9 +1,11 @@
-PRUEBA DE related_queries — 2026-08-03T09:53:48+00:00
+PRUEBA DE related_queries — 2026-08-03T10:09:35+00:00
 
-Titulares en estado `interes` hoy: 3
+Titulares en estado `interes` hoy: 5
    Reportan motín en la Estación Migratoria Siglo XXI de Tapachula, Chiapas; manifestantes incendian co
-   Más de 2.000 inmigrantes ilegales cruzaron el canal de la Mancha hacia Reino Unido desde la llegada 
+   El Reino Unido informó que más de 2.000 inmigrantes cruzaron el Canal de la Mancha desde que Andy Bu
    Interceptadas dos embarcaciones con 17 inmigrantes en Algeciras y La Línea de la Concepción
+   Avanza el ICE en Miami: busca sumar 700 nuevas camas en centros de detención de migrantes tras el ci
+   Venezuela propone agenda de cooperación con Chile tras reactivación de relaciones consulares - El Ti
 
 ======================================================================
 
