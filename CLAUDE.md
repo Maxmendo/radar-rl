@@ -206,10 +206,16 @@ para medir. Es el mismo error que hizo fallar los términos por hecho el 2026-08
 Además del cruce por hecho, hay **dos paneles fijos** que no dependen de las noticias:
 
 **a) Qué busca nuestra audiencia.** El término `migrantes` en los países donde más
-leen a Refugio, según Google Analytics: Venezuela, Chile, México, Colombia, Uruguay,
-Estados Unidos y España. España entra por audiencia, no por alcance editorial.
+leen a Refugio, según Google Analytics. **Argentina siempre**, más un país rotando de
+la lista: Venezuela, Chile, México, Colombia, Uruguay, Estados Unidos y España.
+España entra por audiencia, no por alcance editorial.
 
-**Se rotan dos países por corrida**, no todos de una vez. El 2026-08-03 se hicieron
+**Las variantes de un mismo tema se agrupan.** Venezuela devolvió seis consultas
+—`ceuta migrantes`, `marruecos`, `ceuta`, `migrantes en ceuta`, `migrantes de
+marruecos a españa`, `ceuta españa`— que ocupaban media pantalla para decir dos
+cosas. Ahora se agrupan por palabra distintiva: `ceuta +3` y `marruecos +1`.
+
+**Se rota un país por corrida**, no todos de una vez. El 2026-08-03 se hicieron
 ~60 pedidos en una sola corrida y Google cortó en el sexto; la biblioteca advirtió
 que subiéramos la espera "antes de que Google implemente un límite de largo plazo".
 Con ocho corridas diarias y dos países cada una, cada país se mide dos o tres veces
@@ -259,7 +265,19 @@ primero.
 
 **a) Cruce con Google Trends.** Un hecho en `interes` con importancia >= 7 y
 búsquedas subiendo (puntaje >= 5). Es el más específico: importante, poco cubierto
-y con demanda de información creciendo. Ya implementado en `nucleo/tendencias.py`.
+y con demanda de información creciendo. Implementado en `nucleo/tendencias.py`.
+
+**Las alertas persisten 12 horas.** El 2026-08-03 la nota del ICE en Miami pasó de 3
+a 8 medios en media hora, salió de `interes` y la alerta desapareció del tablero. Si
+nadie miró en esa ventana, se perdió. Ahora se conservan con su desenlace:
+
+| Marca | Significa |
+|---|---|
+| `sigue abierto` | El hecho sigue en `interes`. Todavía se llega primero |
+| `ya escaló` | Pasó a trending o top trend. Solo con ángulo propio |
+| `se enfrió` | Perdió cobertura. Puede ser un tema que nadie retomó |
+
+Cada alerta lleva el enlace directo a la nota.
 
 **b) Ascenso de estado.** PENDIENTE. **No por puntaje alto.** El momento que importa es cuando algo importante entra en
 `interes`: ahí todavía se puede llegar primero. Un umbral absoluto avisaría cuando ya

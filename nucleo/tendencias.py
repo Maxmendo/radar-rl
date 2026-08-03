@@ -80,7 +80,8 @@ def vacio(motivo: str) -> dict:
     }
 
 
-def rotacion(previo: dict | None, geos: list[str], por_corrida: int) -> tuple[list[str], int]:
+def rotacion(previo: dict | None, geos: list[str], por_corrida: int,
+             fijo: str | None = None) -> tuple[list[str], int]:
     """Elige que paises tocan en esta corrida y devuelve el puntero siguiente.
 
     Consultar los 27 paises de una vez agoto la cuota de Google en el sexto
@@ -88,11 +89,12 @@ def rotacion(previo: dict | None, geos: list[str], por_corrida: int) -> tuple[li
     diarias mantiene el volumen bajo sin resignar cobertura: cada pais se
     actualiza cada pocas corridas, que para una serie de 90 dias alcanza.
     """
+    fijos = [fijo] if fijo else []
     if not geos:
-        return [], 0
+        return fijos, 0
     desde = (previo or {}).get("proximo_pais", 0) % len(geos)
-    elegidos = [geos[(desde + i) % len(geos)] for i in range(min(por_corrida, len(geos)))]
-    return elegidos, (desde + len(elegidos)) % len(geos)
+    rotan = [geos[(desde + i) % len(geos)] for i in range(min(por_corrida, len(geos)))]
+    return fijos + rotan, (desde + len(rotan)) % len(geos)
 
 
 def cache_vigente(horas: int) -> dict | None:
@@ -147,6 +149,33 @@ REFERERS = [
 ]
 
 
+VACIAS_TEMA = {"migrantes", "migrante", "migracion", "inmigrantes", "inmigracion",
+               "de", "en", "a", "los", "las", "el", "la", "y", "para", "con"}
+
+
+def agrupar_por_tema(consultas: list[dict], tope: int) -> list[dict]:
+    """Junta las consultas que comparten el mismo tema en una sola linea.
+
+    Google devuelve variantes de lo mismo: "ceuta", "migrantes ceuta",
+    "migrantes en ceuta", "ceuta espana". Seis lineas para decir una sola cosa.
+    Se agrupan por la palabra distintiva mas frecuente y se conserva la variante
+    mas corta como representante, con el conteo de las demas.
+    """
+    def clave(c: str) -> str:
+        palabras = [w for w in c.lower().split() if w not in VACIAS_TEMA and len(w) > 2]
+        return palabras[0] if palabras else c.lower()
+
+    grupos: dict = {}
+    for c in consultas:
+        grupos.setdefault(clave(c["consulta"]), []).append(c)
+
+    salida = []
+    for _, grupo in sorted(grupos.items(), key=lambda x: -len(x[1])):
+        rep = min(grupo, key=lambda c: len(c["consulta"]))
+        salida.append({**rep, "variantes": len(grupo) - 1})
+    return salida[:tope]
+
+
 def consultas_relacionadas(cliente, semilla: str, geo: str, ventana: str,
                            tope: int = 6) -> list[dict]:
     """Que se esta buscando SOBRE la semilla en ese pais, ahora.
@@ -192,9 +221,9 @@ def consultas_relacionadas(cliente, semilla: str, geo: str, ventana: str,
                                    "tipo": clave})
         except Exception as e:
             log.warning("      %s: no se pudo leer %s (%s)", geo, clave, type(e).__name__)
-        if len(salida) >= tope:
+        if len(salida) >= tope * 3:      # se piden de mas para poder agrupar
             break
-    return salida[:tope]
+    return agrupar_por_tema(salida, tope)
 
 
 def consultar(cliente, terminos: list[str], geo: str, ventana: str,
@@ -306,6 +335,8 @@ def main() -> int:
                 d = res.get(h["termino_busqueda"])
                 if d:
                     resultados[h["id"]] = {
+                        "id_hecho": h["id"],
+                        "url": h.get("url", ""),
                         "termino": h["termino_busqueda"], "geo": geo,
                         "titulo": h["titulo_original"], "importancia": h.get("importancia"),
                         "velocidad": h.get("velocidad"), **d,
@@ -320,7 +351,9 @@ def main() -> int:
     geos_aud = cfg.get("geos_audiencia", [])
     por_corrida = cfg.get("paises_por_corrida", 2)
     previo = cache_vigente(24 * 30)          # solo para leer el puntero anterior
-    toca, proximo = rotacion(previo, geos_aud, por_corrida)
+    fijo = cfg.get("geo_fijo_audiencia")
+    tope_consultas = cfg.get("max_consultas_por_pais", 3)
+    toca, proximo = rotacion(previo, geos_aud, por_corrida, fijo)
 
     # Lo medido en corridas anteriores se conserva: la rotacion actualiza de a
     # poco, no borra lo que ya sabemos.
@@ -329,13 +362,13 @@ def main() -> int:
 
     if toca and seguidos < FALLOS_SEGUIDOS:
         log.info("")
-        log.info("Audiencia: «%s» en %s  (rotan %d de %d por corrida)",
-                 semilla, " ".join(toca), por_corrida, len(geos_aud))
+        log.info("Audiencia: «%s» en %s  (%s fijo + %d rotando de %d)",
+                 semilla, " ".join(toca), fijo or "-", por_corrida, len(geos_aud))
         for geo in toca:
             if seguidos >= FALLOS_SEGUIDOS:
                 log.warning("   %d consultas seguidas sin respuesta: se abandona.", seguidos)
                 break
-            rel = consultas_relacionadas(cliente, semilla, geo, ventana)
+            rel = consultas_relacionadas(cliente, semilla, geo, ventana, tope_consultas)
             if rel:
                 seguidos = 0
                 atencion[geo] = {"consultas": rel,
@@ -363,11 +396,56 @@ def main() -> int:
     # --- Alertas: importante + poco cubierto + busquedas subiendo -----------
     umbral_alerta = cfg.get("umbral_alerta", 5)
     imp_minima = cfg.get("importancia_minima_alerta", 7)
-    alertas = [
-        d for d in resultados.values()
+    horas_vivas = cfg.get("alertas_persisten_horas", 12)
+    ahora = datetime.now(timezone.utc)
+
+    # Todos los hechos de la corrida, para poder ver que paso con los ya alertados.
+    # Los que salieron de `interes` no estan en `seleccion`, justamente porque
+    # escalaron: hay que buscarlos en el archivo completo.
+    todos = {}
+    if ITEMS.exists():
+        try:
+            todos = {h["id"]: h
+                     for h in json.loads(ITEMS.read_text(encoding="utf-8")).get("items", [])}
+        except json.JSONDecodeError:
+            pass
+
+    nuevas = {
+        d["id_hecho"]: {**d, "disparada": ahora.isoformat(timespec="seconds"),
+                        "velocidad_inicial": d.get("velocidad")}
+        for d in resultados.values()
         if d["puntaje"] >= umbral_alerta and (d.get("importancia") or 0) >= imp_minima
-    ]
-    alertas.sort(key=lambda x: -x["puntaje"])
+    }
+
+    # Las alertas viejas se conservan y se les actualiza el desenlace. Un hecho
+    # puede pasar de `interes` a `trending` en media hora: si la alerta muere con
+    # el cambio de estado y nadie miro el tablero, se perdio.
+    alertas = []
+    for a in (previo or {}).get("alertas", []):
+        try:
+            edad = (ahora - datetime.fromisoformat(a["disparada"])).total_seconds() / 3600
+        except (KeyError, ValueError):
+            continue
+        if edad > horas_vivas:
+            continue
+        if a["id_hecho"] in nuevas:
+            continue                       # se reemplaza por la version nueva
+        hecho = todos.get(a["id_hecho"])
+        if hecho:
+            vel = hecho.get("velocidad") or 0
+            ini = a.get("velocidad_inicial") or 0
+            a["desenlace"] = ("escalo" if vel >= 8 or vel > ini + 2
+                              else "se_enfrio" if vel < ini else "vigente")
+            a["velocidad"] = vel
+        a["horas"] = round(edad, 1)
+        alertas.append(a)
+
+    for a in nuevas.values():
+        a["desenlace"] = "vigente"
+        a["horas"] = 0
+        alertas.append(a)
+
+    alertas.sort(key=lambda x: (x.get("horas", 0), -x["puntaje"]))
 
     disponible = bool(resultados or demanda or atencion)
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
@@ -393,11 +471,11 @@ def main() -> int:
 
     if alertas:
         log.info("")
-        log.info("ALERTA EDITORIAL: importante, poco cubierto y con busquedas en alza")
+        log.info("ALERTAS EDITORIALES (persisten %dh):", horas_vivas)
         for a in alertas:
-            log.info("   x%.2f  imp %s  %d medios  |  %s",
-                     a.get("ratio") or 0, a.get("importancia"), a.get("velocidad") or 0,
-                     a["titulo"][:58])
+            log.info("   [%-9s] hace %4.1fh  x%.2f  imp %s  %d medios  |  %s",
+                     a.get("desenlace", "?"), a.get("horas", 0), a.get("ratio") or 0,
+                     a.get("importancia"), a.get("velocidad") or 0, a["titulo"][:50])
     if atencion:
         log.info("")
         log.info("QUE LEE LA AUDIENCIA, POR PAIS (acumulado de varias corridas):")

@@ -1418,14 +1418,24 @@ tendencias:
   - UY
   - US
   - ES
-  paises_por_corrida: 2
-  _nota_audiencia: 'Orden segun Google Analytics de Refugio, de mayor a menor audiencia.
+  paises_por_corrida: 1
+  _nota_audiencia: 'Argentina SIEMPRE, mas UN pais rotando por corrida. Con 8 corridas diarias, cada
 
-    Se consultan 2 por corrida y se rota: con 7 paises, cada uno se actualiza cada
+    pais del resto se mide aproximadamente una vez por dia.
 
-    dia aproximadamente. El puntero de rotacion se guarda en datos/tendencias.json.
+    Orden segun Google Analytics de Refugio, de mayor a menor audiencia. Espana entra
 
-    Argentina NO esta aca: tiene su propio bloque fijo con terminos de tramite.'
+    por audiencia, no por alcance editorial.
+
+    COMO LEERLO: cuando Chile y Venezuela devolvieron seis consultas sobre Ceuta, eso
+
+    no decia que pasa alli, sino que estaba leyendo su audiencia. Es atencion de
+
+    nuestros lectores, no realidad local. Para lo local estan los tramites.
+
+    AGRUPACION: las consultas que comparten el tema dominante se juntan en una sola
+
+    linea. Seis variantes de ''ceuta'' ocupaban media pantalla para decir lo mismo.'
   umbrales:
     _nota: Puntaje 0-10 por cuanto sube el interes reciente contra su linea de base.
     ratio_minimo: 1.2
@@ -1435,3 +1445,19 @@ tendencias:
   umbral_alerta: 5
   importancia_minima_alerta: 7
   biblioteca: trendspy
+  geo_fijo_audiencia: AR
+  max_consultas_por_pais: 3
+  alertas_persisten_horas: 12
+  _nota_alertas: 'Una alerta se dispara cuando un hecho en `interes` tiene importancia alta y las
+
+    busquedas subiendo. Pero los hechos cambian de estado: el 2026-08-03 la nota del
+
+    ICE en Miami paso de 3 a 8 medios en media hora y la alerta desaparecio del
+
+    tablero. Si nadie miro en esa ventana, se perdio.
+
+    Por eso las alertas persisten 12 horas y quedan marcadas segun lo que paso
+
+    despues: `vigente` si el hecho sigue en `interes`, `escalo` si ya paso a trending
+
+    o top trend, `se_enfrio` si perdio cobertura.'

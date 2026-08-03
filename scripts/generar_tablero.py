@@ -239,6 +239,14 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .alertas li{font-size:.85rem;margin-bottom:.55rem;padding-left:.7rem;
   border-left:2px solid var(--linea);line-height:1.5}
 .alertas li b{color:var(--tinta)}
+.alertas li a{color:inherit;text-decoration:none}
+.alertas li a:hover b{color:var(--sem-rojo);text-decoration:underline}
+.alertas .det{color:var(--suave);font-size:.78rem}
+.dsc{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+  padding:.08rem .4rem;border-radius:3px;margin-right:.35rem;white-space:nowrap}
+.d-vig{background:var(--sem-verde);color:#fff}
+.d-esc{background:var(--sem-amarillo);color:#fff}
+.d-frio{background:var(--tenue);color:#fff}
 
 /* Atencion publica por pais: donde esta instalado el tema. */
 .atencion{background:var(--tarjeta);border:1px solid var(--sem-celeste);border-radius:9px;
@@ -252,6 +260,8 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .atencion li{font-size:.76rem;color:var(--suave);line-height:1.5;padding-left:.55rem;
   border-left:2px solid var(--linea)}
 .atencion .sube{color:var(--sem-verde);font-weight:600;font-size:.7rem}
+.atencion .var{font-size:.65rem;color:var(--tenue);border:1px solid var(--linea);
+  padding:0 .25rem;border-radius:3px}
 .atencion .cuando{font-size:.65rem;font-weight:400;color:var(--tenue);
   float:right;text-transform:none;letter-spacing:0}
 .atencion .pie{font-size:.7rem;color:var(--tenue);margin:.5rem 0 0;line-height:1.45}
@@ -554,12 +564,23 @@ function armarAlertas(){
   const t=CTX.tendencias;
   const c=document.getElementById('alertas');
   if(!t || !(t.alertas||[]).length) return;
-  c.innerHTML='<div class="alertas"><div class="tit">Alerta editorial</div>'+
-    '<p>Temas importantes, todavía poco cubiertos, y con las búsquedas subiendo. '+
-    'Están por escalar: si se publica ahora, se llega primero.</p><ul>'+
-    t.alertas.map(a=>`<li><b>${esc(a.titulo)}</b><br>`+
-      `búsquedas de «${esc(a.termino)}» ×${a.ratio} en ${esc(a.geo)} · `+
-      `importancia ${a.importancia} · ${a.velocidad} medios</li>`).join('')+
+  const DESENLACE={
+    vigente:{t:'sigue abierto',c:'d-vig'},
+    escalo:{t:'ya escaló',c:'d-esc'},
+    se_enfrio:{t:'se enfrió',c:'d-frio'}
+  };
+  const cuando=h=>!h?'ahora':(h<1?'hace minutos':`hace ${Math.round(h)} h`);
+  c.innerHTML='<div class="alertas"><div class="tit">Alertas editoriales</div>'+
+    '<p>Temas importantes, poco cubiertos y con las búsquedas subiendo. '+
+    'Se conservan 12 horas aunque el tema cambie de estado, con lo que pasó después.</p><ul>'+
+    t.alertas.map(a=>{
+      const d=DESENLACE[a.desenlace]||DESENLACE.vigente;
+      return `<li><span class="dsc ${d.c}">${d.t}</span> `+
+        `${a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener"><b>${esc(a.titulo)}</b></a>`
+                :`<b>${esc(a.titulo)}</b>`}<br>`+
+        `<span class="det">búsquedas de «${esc(a.termino)}» ×${a.ratio} en ${esc(a.geo)} · `+
+        `importancia ${a.importancia} · ${a.velocidad} medios · ${cuando(a.horas)}</span></li>`;
+    }).join('')+
     '</ul></div>';
 }
 
@@ -584,11 +605,12 @@ function armarAtencion(){
   };
   c.innerHTML='<div class="atencion"><div class="tit">Qué busca nuestra audiencia</div>'+
     '<p>Consultas sobre migración en los países donde más nos leen. '+
-    'Los países se miden por turnos para no saturar el límite de Google, '+
-    'así que cada uno trae la fecha de su última medición.</p>'+
+    'Argentina siempre, más un país rotando. Las variantes de un mismo tema '+
+    'se agrupan: <span class="var">+3</span> significa tres búsquedas parecidas.</p>'+
     t.audiencia.map(p=>`<div class="pais"><b>${esc(NOMBRE_PAIS[p.geo]||p.geo)}`+
       `<span class="cuando">${esc(dias(p.medido))}</span></b>`+
       `<ul>${p.consultas.map(q=>`<li>${esc(q.consulta)}`+
+        `${q.variantes>0?` <span class="var">+${q.variantes}</span>`:''}`+
         `${q.valor?` <span class="sube">${esc(q.valor)}</span>`:''}</li>`).join('')}</ul>`+
       `</div>`).join('')+
     '</div>';
