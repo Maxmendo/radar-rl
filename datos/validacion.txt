@@ -1,2 +1,11 @@
 
-24 vivas / 24 probadas
+27 vivas / 31 probadas
+
+Revisar en fuentes.yaml:
+  - mpi_reports: HTTP 404
+  - mpi_datos: HTTP 404
+  - mpi_politica: HTTP 404
+  - mpi_mexico: HTTP 404
+
+Corregir la URL o dar de baja la fuente. No implementar módulos
+de ingesta para fuentes que no validan.
