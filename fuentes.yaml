@@ -527,6 +527,83 @@ medios_google_news:
   eje_esperado: odio
   prioridad: 3
   verificado: true
+- id: gnews_cono_sur_control
+  bloque: cono_sur
+  region: Cono Sur
+  query: ("control migratorio" OR "controles migratorios" OR "operativo migratorio") (Argentina OR Chile
+    OR Uruguay) when:1d
+  gl: AR
+  hl: es-419
+  pais:
+  - AR
+  - CL
+  - UY
+  - PY
+  eje_esperado: control
+  prioridad: 1
+  largo_query: 115
+  verificado: true
+- id: gnews_cono_sur_fiscalizacion
+  bloque: cono_sur
+  region: Cono Sur
+  query: (fiscalizacion OR inspeccion OR allanamiento) migrantes (Argentina OR Chile) when:1d
+  gl: AR
+  hl: es-419
+  pais:
+  - AR
+  - CL
+  - UY
+  - PY
+  eje_esperado: control
+  prioridad: 1
+  largo_query: 84
+  verificado: true
+- id: gnews_andina_control
+  bloque: andina
+  region: Region Andina
+  query: ("control migratorio" OR "operativo migratorio" OR reten) (Colombia OR Peru OR Venezuela) when:1d
+  gl: CO
+  hl: es-419
+  pais:
+  - BO
+  - PE
+  - EC
+  - CO
+  - VE
+  eje_esperado: control
+  prioridad: 2
+  largo_query: 97
+  verificado: true
+- id: gnews_mexico_ca_control
+  bloque: mexico_ca
+  region: Mexico y Centroamerica
+  query: ("control migratorio" OR "operativo migratorio" OR reten) (Mexico OR Guatemala) when:1d
+  gl: MX
+  hl: es-419
+  pais:
+  - MX
+  - GT
+  - HN
+  - SV
+  - NI
+  - CR
+  - PA
+  eje_esperado: control
+  prioridad: 2
+  largo_query: 87
+  verificado: true
+- id: gnews_eeuu_es_control
+  bloque: eeuu_es
+  region: Estados Unidos, prensa en espanol
+  query: ("control migratorio" OR "operativo migratorio" OR redada) ("Estados Unidos" OR ICE) when:1d
+  gl: US
+  hl: es-419
+  pais:
+  - US
+  eje_esperado: control
+  prioridad: 2
+  largo_query: 92
+  verificado: true
 organismos:
 - id: cels
   nombre: CELS
@@ -645,11 +722,16 @@ ejes:
   subejes:
   - biometria_en_frontera
   - control_fronterizo
+  - control_migratorio
   - denegacion_de_ingreso
   - externalizacion
+  - fiscalizacion_migratoria
+  - inspeccion_migratoria
+  - operativo_migratorio
   - pasos_fronterizos
   - rechazo_en_frontera
   - rechazo_en_puesto_fronterizo
+  - reten_migratorio
   - vigilancia_fronteriza
   activo: true
 - id: deportaciones
@@ -658,13 +740,16 @@ ejes:
   alcance: TODA detención de personas migrantes va acá, sea en frontera, en un centro de detención o
     en una redada en el interior. También las expulsiones y los retornos forzados.
   subejes:
+  - allanamiento
   - arrestos_migratorios
   - centros_de_detencion
+  - control_de_documentacion
   - detencion_migratoria
   - devoluciones
   - expulsion_administrativa
   - expulsiones
   - expulsiones_migrantes
+  - operativo_en_via_publica
   - orden_de_expulsion
   - readmisiones
   - reasentamiento_forzado
@@ -679,12 +764,14 @@ ejes:
   alcance: 'Qué DIRECCIÓN tiene la política: la migración tratada como amenaza. Puede existir sin norma:
     declaraciones, despliegues, planes no publicados.'
   subejes:
-  - militarizacion
+  - controles_en_transporte_publico
   - criminalizacion
+  - estado_de_excepcion
+  - inteligencia
+  - militarizacion
+  - operativos_conjuntos
   - perfilamiento_racial
   - vigilancia_digital
-  - inteligencia
-  - estado_de_excepcion
   activo: true
 - id: rutas
   nombre: Rutas migratorias
@@ -1046,6 +1133,11 @@ notas_vocabulario:
     inmovilidad: Si la persona QUIERE moverse y no puede -> `inmovilidad`. Si esta detenida en proceso
       de expulsion -> `deportaciones`.
     desaparecidos: En ruta migratoria -> `rutas`. Por persecucion politica -> `exilio`.
+    control_migratorio: En frontera o paso fronterizo -> `fronteras`. Operativo en via publica, transporte
+      o lugar de trabajo, con detencion de personas -> `deportaciones`. Como politica sostenida de vigilancia
+      sobre la poblacion migrante -> `securitizacion`. Un mismo operativo puede llevar dos de los tres.
+    fiscalizacion: De documentacion migratoria a personas -> `fronteras` o `deportaciones` segun donde
+      ocurra. De empleadores que contratan migrantes -> `trabajo`.
   actores: 'Dimension nueva en v3. Unica del YAML de sujetos que no duplicaba nada: ninguna otra dimension
     dice QUIEN esta involucrado.'
   sujetos_no_incorporados: 'El YAML de sujetos (v1.1) tenia ~70 categorias, la mitad ya codificadas
@@ -1057,6 +1149,16 @@ notas_vocabulario:
   filtros_del_tablero: El usuario filtra SOLO por pais y region. Ejes, poblaciones, actores y colectividades
     se muestran como etiquetas en cada titular. Ocho filas de filtros antes de la primera noticia hacian
     que las categorias predominaran visualmente sobre el contenido.
+  control_migratorio: 'Agregado el 2026-08-03. ''control migratorio'' y sus variantes no estaban en
+    NINGUNA consulta: una nota titulada ''Refuerzan los controles migratorios en la frontera norte''
+    solo entraba si ademas decia ''deportacion'' o ''migrantes''.
+
+    Es como la prensa nombra los operativos ANTES de que haya detenciones, asi que perderlo significaba
+    llegar tarde.
+
+    PRIORIDAD ARGENTINA: el Cono Sur tiene DOS consultas en prioridad 1; el resto de las regiones, una
+    en prioridad 2. El vocabulario cambia por pais: ''reten'' se usa en Mexico y la region andina, ''redada''
+    en Estados Unidos, ''operativo'' y ''fiscalizacion'' en el Cono Sur.'
 estados:
   _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
     24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las
