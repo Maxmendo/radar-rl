@@ -1375,95 +1375,63 @@ paises_catalogo:
     - cono sur
     - region andina
 tendencias:
-  _nota: 'Se consulta Google Trends SOLO para los hechos en estado `interes`: son 2-8 por corrida, asi
-    que se puede consultar POR HECHO en vez de por un panel grueso. Y la senal ahi es predictiva: 3
-    medios MAS busquedas subiendo = esta por escalar y todavia se llega primero.
-
-    NO se usa para ordenar el tablero. Trends refleja las busquedas con retraso y lo que las hace subir
-    suele ser la propia cobertura mediatica: sumarlo al ranking contaminaria una metrica que funciona.
-    Sirve para disparar ALERTAS.
-
-    BIBLIOTECA: trendspy, NO pytrends. pytrends fue archivado en abril de 2025 y devuelve 429 en la
-    primera llamada: verificado en produccion el 2026-08-02, cero consultas exitosas. Los datos siguen
-    siendo publicos y gratuitos; el problema era la biblioteca.
-
-    LA GEOGRAFIA VA EN EL PARAMETRO `geo`, NO EN EL TERMINO. Consultar ''migrantes'' con geo=AR ES ''cuanto
-    buscan los argentinos sobre migrantes''. Escribir ''migrantes en argentina'' lo convierte en una
-    frase que casi nadie tipea, sin volumen para medir. Es el mismo error que hizo fallar los terminos
-    por hecho el 2026-08-02.'
+  _nota: "Google Trends es la unica fuente que NO depende de lo que publican los medios.\n\nCUOTA: el\
+    \ 2026-08-03 se hicieron ~60 pedidos en una corrida y Google corto en el\nsexto. `related_queries`\
+    \ esta bloqueado de entrada; `interest_over_time` responde\npero se degrada. La biblioteca advirtio:\
+    \ subir la espera 'antes de que Google\nimplemente un limite de largo plazo'. Por eso ahora se hacen\
+    \ POCOS pedidos por\ncorrida, repartidos entre las ocho corridas diarias, en vez de todos juntos.\n\
+    \nDOS PREGUNTAS DISTINTAS:\n  1. Que problema local tiene la gente -> terminos de TRAMITE en Argentina,\
+    \ fijos.\n     Solo se buscan si hay un problema concreto: una demora, un cambio de requisito.\n\
+    \  2. Que lee nuestra audiencia -> termino amplio en los paises donde mas nos leen,\n     rotando\
+    \ uno o dos por corrida. Segun Analytics: AR, VE, CL, MX, CO, UY, US, ES.\n     Ojo con la lectura:\
+    \ cuando Chile y Colombia devolvieron 'ceuta' y 'marruecos',\n     eso no decia que pasa en Chile,\
+    \ sino que estaba leyendo la audiencia chilena.\n     Espana esta en la lista porque es audiencia\
+    \ real, no por error."
   activo: true
-  solo_en_digest: true
-  horas_de_cache: 20
+  solo_en_digest: false
+  horas_de_cache: 2
   ventana: today 3-m
-  max_hechos: 15
+  espera_entre_consultas: 4.0
+  fallos_seguidos_antes_de_abandonar: 3
   geo_servicio: AR
-  umbral_alerta: 5
-  importancia_minima_alerta: 7
   terminos_servicio:
   - turno migraciones
   - DNI extranjero
   - residencia precaria
   - certificado de residencia
   - regularizacion migratoria
-  - estudiantes extranjeros
+  _nota_servicio: 'Consultas de TRAMITE: quien las escribe esta resolviendo un problema, no leyendo
+
+    noticias. Los cinco entran en UNA sola consulta (el tope de Google es 5).
+
+    Son categorias juridicas argentinas. Para sumar otro pais hace falta la lista
+
+    equivalente de ESE pais, no traducir esta. El 2026-08-03 se decidio pedirsela a la
+
+    red de corresponsales en vez de inventarla.'
+  semilla_audiencia: migrantes
+  geos_audiencia:
+  - VE
+  - CL
+  - MX
+  - CO
+  - UY
+  - US
+  - ES
+  paises_por_corrida: 2
+  _nota_audiencia: 'Orden segun Google Analytics de Refugio, de mayor a menor audiencia.
+
+    Se consultan 2 por corrida y se rota: con 7 paises, cada uno se actualiza cada
+
+    dia aproximadamente. El puntero de rotacion se guarda en datos/tendencias.json.
+
+    Argentina NO esta aca: tiene su propio bloque fijo con terminos de tramite.'
   umbrales:
     _nota: Puntaje 0-10 por cuanto sube el interes reciente contra su linea de base.
     ratio_minimo: 1.2
     ratio_maximo: 3.0
     interes_minimo: 15
+  max_hechos: 6
+  umbral_alerta: 5
+  importancia_minima_alerta: 7
   biblioteca: trendspy
-  geos_generales:
-  - AR
-  - BO
-  - BR
-  - CL
-  - CO
-  - EC
-  - GY
-  - PY
-  - PE
-  - SR
-  - UY
-  - VE
-  - BZ
-  - CR
-  - SV
-  - GT
-  - HN
-  - NI
-  - PA
-  - MX
-  - US
-  - CU
-  - DO
-  - HT
-  - PR
-  - JM
-  - TT
-  _nota_generales: 'CONSULTAS RELACIONADAS, no una lista fija de terminos. Se le pregunta a Google que
-    se esta buscando SOBRE ''migrantes'' en cada pais, y devuelve terminos concretos del dia. Una lista
-    fija (''migrantes'', ''migracion'') solo confirmaba lo que ya sabemos: que el tema existe.
-
-    Una consulta por pais. Con 27 paises la corrida tarda 2-3 minutos.
-
-    PAISES CHICOS: Guyana, Surinam, Belice y Trinidad pueden no tener volumen y devolver vacio. Se registran
-    en `paises_sin_datos` para poder darlos de baja con evidencia, no por suposicion.'
-  _nota_servicio: 'Consultas de TRAMITE: quien las escribe esta resolviendo un problema, no leyendo
-    noticias. Por eso son senal independiente de la prensa.
-
-    Solo Argentina por ahora: varias son categorias juridicas argentinas (''residencia precaria'', ''turno
-    migraciones''). Extenderlo a otros paises requiere armar la lista equivalente de cada uno, no traducir
-    la argentina.'
-  fallos_seguidos_antes_de_abandonar: 6
-  espera_entre_consultas: 2.5
-  semilla_relacionadas: migrantes
-  terminos_respaldo:
-  - migrantes
-  - migracion
-  - extranjeros
-  - deportacion
-  - refugiados
-  _nota_respaldo: 'Se usan solo si `related_queries` esta con la cuota agotada, que es frecuente: verificado
-    el 2026-08-03, seis de seis consultas fallaron con TrendsQuotaExceededError desde GitHub Actions.
-    `interest_over_time` si responde. Es menos informativo -confirma que el tema existe en vez de decir
-    que se busca- pero es mejor que un panel vacio.'

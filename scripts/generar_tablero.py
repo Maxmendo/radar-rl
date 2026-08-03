@@ -71,17 +71,19 @@ def cruzar_tendencias(items: list[dict]) -> dict:
 
     # Consultas en alza sobre migracion, por pais. Son terminos concretos del
     # dia, no una lista fija que ya conocemos de antemano.
-    con_respaldo = set(panel.get("paises_con_respaldo") or [])
-    general = [{"geo": geo, "consultas": rel, "respaldo": geo in con_respaldo}
-               for geo, rel in panel.get("general", {}).items() if rel]
-    # Primero los paises con consultas reales; despues los que usaron respaldo.
-    general.sort(key=lambda x: (x["respaldo"], -len(x["consultas"]), x["geo"]))
+    # Los paises se miden por rotacion, asi que cada uno trae la fecha de su
+    # ultima medicion. Se muestran del mas reciente al mas viejo.
+    audiencia = [{"geo": geo, "consultas": d.get("consultas", []),
+                  "medido": d.get("medido", "")}
+                 for geo, d in (panel.get("audiencia") or {}).items()
+                 if d.get("consultas")]
+    audiencia.sort(key=lambda x: x["medido"], reverse=True)
 
     return {
         "disponible": bool(panel.get("disponible")),
         "generado": panel.get("generado", ""),
         "servicio": servicio,
-        "general": general,
+        "audiencia": audiencia,
         "alertas": panel.get("alertas", [])[:5],
     }
 
@@ -250,9 +252,8 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .atencion li{font-size:.76rem;color:var(--suave);line-height:1.5;padding-left:.55rem;
   border-left:2px solid var(--linea)}
 .atencion .sube{color:var(--sem-verde);font-weight:600;font-size:.7rem}
-.atencion .aprox{font-size:.62rem;font-weight:600;text-transform:uppercase;
-  letter-spacing:.04em;color:var(--tenue);border:1px solid var(--linea);
-  padding:0 .28rem;border-radius:3px}
+.atencion .cuando{font-size:.65rem;font-weight:400;color:var(--tenue);
+  float:right;text-transform:none;letter-spacing:0}
 .atencion .pie{font-size:.7rem;color:var(--tenue);margin:.5rem 0 0;line-height:1.45}
 
 /* Demanda de busqueda: lo que la gente busca antes de que sea noticia. */
@@ -567,24 +568,29 @@ const NOMBRE_PAIS={AR:'Argentina',BO:'Bolivia',BR:'Brasil',CL:'Chile',CO:'Colomb
   VE:'Venezuela',BZ:'Belice',CR:'Costa Rica',SV:'El Salvador',GT:'Guatemala',
   HN:'Honduras',NI:'Nicaragua',PA:'Panamá',MX:'México',US:'Estados Unidos',
   CA:'Canadá',CU:'Cuba',DO:'Rep. Dominicana',HT:'Haití',PR:'Puerto Rico',
-  JM:'Jamaica',TT:'Trinidad y Tobago'};
+  JM:'Jamaica',TT:'Trinidad y Tobago',
+  // Espana entra por audiencia, no por alcance editorial: segun Analytics es uno
+  // de los paises donde mas leen a Refugio.
+  ES:'España'};
 
 function armarAtencion(){
   const t=CTX.tendencias;
   const c=document.getElementById('atencion');
-  if(!t || !(t.general||[]).length) return;
-  const hayRespaldo=t.general.some(p=>p.respaldo);
-  c.innerHTML='<div class="atencion"><div class="tit">Qué se busca sobre migración</div>'+
-    '<p>Consultas en alza en cada país, hoy. Un término que aparece acá y no está en '+
-    'ninguna noticia puede señalar algo que todavía no llegó a los medios.</p>'+
-    t.general.map(p=>`<div class="pais"><b>${esc(NOMBRE_PAIS[p.geo]||p.geo)}`+
-      `${p.respaldo?' <span class="aprox">nivel</span>':''}</b>`+
+  if(!t || !(t.audiencia||[]).length) return;
+  const dias=iso=>{
+    if(!iso) return '';
+    const h=(Date.now()-new Date(iso).getTime())/36e5;
+    return h<24?'hoy':(h<48?'ayer':`hace ${Math.round(h/24)} días`);
+  };
+  c.innerHTML='<div class="atencion"><div class="tit">Qué busca nuestra audiencia</div>'+
+    '<p>Consultas sobre migración en los países donde más nos leen. '+
+    'Los países se miden por turnos para no saturar el límite de Google, '+
+    'así que cada uno trae la fecha de su última medición.</p>'+
+    t.audiencia.map(p=>`<div class="pais"><b>${esc(NOMBRE_PAIS[p.geo]||p.geo)}`+
+      `<span class="cuando">${esc(dias(p.medido))}</span></b>`+
       `<ul>${p.consultas.map(q=>`<li>${esc(q.consulta)}`+
         `${q.valor?` <span class="sube">${esc(q.valor)}</span>`:''}</li>`).join('')}</ul>`+
       `</div>`).join('')+
-    (hayRespaldo?'<p class="pie">Los países marcados <span class="aprox">nivel</span> '+
-      'muestran cuánto subió un término fijo, no qué se está buscando: Google limitó '+
-      'las consultas relacionadas ese día.</p>':'')+
     '</div>';
 }
 
@@ -592,9 +598,10 @@ function armarDemanda(){
   const t=CTX.tendencias;
   const c=document.getElementById('demanda');
   if(!t || !(t.servicio||[]).length) return;
-  c.innerHTML='<div class="demanda"><div class="tit">Demanda de búsqueda en alza</div>'+
-    '<p>Lo que la gente está buscando y la prensa todavía no cubrió. '+
-    'Un pico acá suele señalar un problema real: una demora, un cambio de trámite.</p>'+
+  c.innerHTML='<div class="demanda"><div class="tit">Trámites en alza · Argentina</div>'+
+    '<p>Búsquedas de trámite por encima de lo habitual. Quien las escribe está '+
+    'resolviendo un problema, no leyendo noticias: un pico acá suele señalar una '+
+    'demora o un cambio de requisito que ningún medio cubrió.</p>'+
     '<ul>'+t.servicio.map(x=>`<li>${esc(x.termino)} · ${esc(x.geo)} · ×${x.ratio}</li>`).join('')+
     '</ul></div>';
 }

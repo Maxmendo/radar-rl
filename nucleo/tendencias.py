@@ -80,6 +80,21 @@ def vacio(motivo: str) -> dict:
     }
 
 
+def rotacion(previo: dict | None, geos: list[str], por_corrida: int) -> tuple[list[str], int]:
+    """Elige que paises tocan en esta corrida y devuelve el puntero siguiente.
+
+    Consultar los 27 paises de una vez agoto la cuota de Google en el sexto
+    pedido (verificado el 2026-08-03). Repartirlos entre las ocho corridas
+    diarias mantiene el volumen bajo sin resignar cobertura: cada pais se
+    actualiza cada pocas corridas, que para una serie de 90 dias alcanza.
+    """
+    if not geos:
+        return [], 0
+    desde = (previo or {}).get("proximo_pais", 0) % len(geos)
+    elegidos = [geos[(desde + i) % len(geos)] for i in range(min(por_corrida, len(geos)))]
+    return elegidos, (desde + len(elegidos)) % len(geos)
+
+
 def cache_vigente(horas: int) -> dict | None:
     """Devuelve el panel guardado si todavia es reciente."""
     if not SALIDA.exists():
@@ -297,64 +312,43 @@ def main() -> int:
                     }
             time.sleep(ESPERA)
 
-    # --- Que se busca sobre migracion en cada pais, hoy ---------------------
-    # No una lista fija de terminos que ya sabemos ("migrantes", "migracion"),
-    # sino las consultas concretas que estan subiendo en cada pais. Eso es lo
-    # que puede senalar algo que todavia no llego a los medios.
-    semilla = cfg.get("semilla_relacionadas", "migrantes")
-    geos_gen = cfg.get("geos_generales", [])
-    atencion: dict = {}
-    sin_datos: list[str] = []
-    uso_respaldo: set = set()
-    respaldo = cfg.get("terminos_respaldo", [])
+    # --- Que lee la audiencia: paises rotando, pocos por corrida ------------
+    # No se consultan todos de una vez: eso agoto la cuota de Google. Se rotan
+    # dos por corrida y, con ocho corridas diarias, cada pais se actualiza a
+    # diario sin concentrar los pedidos.
+    semilla = cfg.get("semilla_audiencia", "migrantes")
+    geos_aud = cfg.get("geos_audiencia", [])
+    por_corrida = cfg.get("paises_por_corrida", 2)
+    previo = cache_vigente(24 * 30)          # solo para leer el puntero anterior
+    toca, proximo = rotacion(previo, geos_aud, por_corrida)
 
-    if geos_gen and seguidos < FALLOS_SEGUIDOS:
+    # Lo medido en corridas anteriores se conserva: la rotacion actualiza de a
+    # poco, no borra lo que ya sabemos.
+    atencion: dict = dict((previo or {}).get("audiencia", {}))
+    sin_datos: list[str] = []
+
+    if toca and seguidos < FALLOS_SEGUIDOS:
         log.info("")
-        log.info("Consultas en alza sobre «%s» en %d paises", semilla, len(geos_gen))
-        for geo in geos_gen:
+        log.info("Audiencia: «%s» en %s  (rotan %d de %d por corrida)",
+                 semilla, " ".join(toca), por_corrida, len(geos_aud))
+        for geo in toca:
             if seguidos >= FALLOS_SEGUIDOS:
                 log.warning("   %d consultas seguidas sin respuesta: se abandona.", seguidos)
                 break
             rel = consultas_relacionadas(cliente, semilla, geo, ventana)
-
-            # Respaldo: si `related_queries` esta agotado, se mide el interes de
-            # una lista fija de terminos. Es menos informativo -confirma que el
-            # tema existe en vez de decir que se busca- pero es mejor que un
-            # panel vacio, y `interest_over_time` si tiene cuota disponible.
-            if not rel and respaldo:
-                med = consultar(cliente, respaldo[:LOTE], geo, ventana, umbrales)
-                rel = [{"consulta": k, "valor": f"x{v['ratio']}", "tipo": "nivel"}
-                       for k, v in sorted(med.items(),
-                                          key=lambda x: -x[1]["puntaje"])
-                       if v["puntaje"] > 0][:4]
-                if rel:
-                    uso_respaldo.add(geo)
-
             if rel:
                 seguidos = 0
-                atencion[geo] = rel
-                log.info("   %-4s %s", geo,
-                         " · ".join(f"{x['consulta']} ({x['valor']})" for x in rel[:3]))
+                atencion[geo] = {"consultas": rel,
+                                 "medido": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+                log.info("   %-4s %s", geo, " · ".join(x["consulta"] for x in rel[:3]))
             else:
-                # Paises chicos pueden no tener volumen. Se registra para poder
-                # darlos de baja con evidencia, no por suposicion.
                 seguidos += 1
                 sin_datos.append(geo)
                 log.info("   %-4s sin datos", geo)
             time.sleep(ESPERA)
 
-        if uso_respaldo:
-            log.info("")
-            log.info("   %d paises usaron la lista fija de respaldo: %s",
-                     len(uso_respaldo), " ".join(sorted(uso_respaldo)))
-            log.info("   Significa que `related_queries` esta con la cuota agotada.")
-        if sin_datos:
-            log.info("")
-            log.info("   Paises sin datos: %s", " ".join(sin_datos))
-            log.info("   Puede ser falta de volumen de busqueda, no un error.")
-
     # --- Demanda de servicio: tramites concretos, senal independiente -------
-    demanda: dict = {}
+    demanda: dict = dict((previo or {}).get("servicio", {}))
     if seguidos < FALLOS_SEGUIDOS:
         for i in range(0, len(servicio), LOTE):
             res = consultar(cliente, servicio[i:i + LOTE], geo_servicio, ventana, umbrales)
@@ -383,16 +377,18 @@ def main() -> int:
         "motivo": "" if disponible else "sin respuesta de Google Trends",
         "ventana": ventana,
         "hechos": resultados,
-        "general": atencion,
+        "audiencia": atencion,
+        "proximo_pais": proximo,
         "paises_sin_datos": sin_datos,
-        "paises_con_respaldo": sorted(uso_respaldo),
         "servicio": demanda,
         "alertas": alertas,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     log.info("")
-    log.info("Hechos consultados: %d | paises con consultas en alza: %d | servicio en alza: %d",
+    log.info("Hechos consultados: %d | paises acumulados: %d | servicio en alza: %d",
              len(resultados), len(atencion), len(demanda))
+    log.info("Proxima corrida arranca por: %s",
+             geos_aud[proximo] if geos_aud else "-")
     log.info("Escrito %s", SALIDA.relative_to(RAIZ))
 
     if alertas:
@@ -404,9 +400,10 @@ def main() -> int:
                      a["titulo"][:58])
     if atencion:
         log.info("")
-        log.info("QUE SE BUSCA SOBRE MIGRACION, POR PAIS:")
-        for geo, rel in atencion.items():
-            log.info("   %-4s %s", geo, " · ".join(x["consulta"] for x in rel[:4]))
+        log.info("QUE LEE LA AUDIENCIA, POR PAIS (acumulado de varias corridas):")
+        for geo, d in atencion.items():
+            log.info("   %-4s %s", geo,
+                     " · ".join(x["consulta"] for x in d["consultas"][:4]))
 
     if demanda:
         log.info("")
