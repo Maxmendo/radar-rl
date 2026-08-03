@@ -672,6 +672,87 @@ medios_google_news:
   eje_esperado: terceros
   prioridad: 2
   verificado: true
+- id: gnews_andina_desplazamiento
+  bloque: andina
+  region: Region Andina
+  query: ("desplazamiento forzado" OR "desplazados internos") (Colombia OR Venezuela OR Ecuador) when:1d
+  gl: CO
+  hl: es-419
+  pais:
+  - BO
+  - PE
+  - EC
+  - CO
+  - VE
+  eje_esperado: desplazamiento
+  prioridad: 1
+  largo_query: 95
+  verificado: true
+- id: gnews_mexico_ca_desplazamiento
+  bloque: mexico_ca
+  region: Mexico y Centroamerica
+  query: ("desplazamiento forzado" OR "desplazados internos") (Mexico OR Honduras OR Guatemala) when:1d
+  gl: MX
+  hl: es-419
+  pais:
+  - MX
+  - GT
+  - HN
+  - SV
+  - NI
+  - CR
+  - PA
+  eje_esperado: desplazamiento
+  prioridad: 1
+  largo_query: 94
+  verificado: true
+- id: gnews_cono_sur_desplazamiento
+  bloque: cono_sur
+  region: Cono Sur
+  query: ("desplazamiento forzado" OR "desplazados internos") (Argentina OR Chile OR Paraguay) when:1d
+  gl: AR
+  hl: es-419
+  pais:
+  - AR
+  - CL
+  - UY
+  - PY
+  eje_esperado: desplazamiento
+  prioridad: 2
+  largo_query: 93
+  verificado: true
+- id: gnews_caribe_desplazamiento
+  bloque: caribe
+  region: Caribe
+  query: ("desplazamiento forzado" OR "desplazados internos") (Haiti OR Dominicana OR Cuba) when:1d
+  gl: DO
+  hl: es-419
+  pais:
+  - DO
+  - CU
+  - HT
+  - PR
+  - JM
+  - TT
+  eje_esperado: desplazamiento
+  prioridad: 2
+  largo_query: 90
+  verificado: true
+- id: gnews_regional_apatridia
+  bloque: andina
+  region: Region Andina
+  query: (apatridia OR apatridas OR "sin nacionalidad") (Colombia OR Dominicana OR Chile) when:1d
+  gl: CO
+  hl: es-419
+  pais:
+  - CO
+  - DO
+  - CL
+  - VE
+  eje_esperado: apatridia
+  prioridad: 2
+  largo_query: 88
+  verificado: true
 organismos:
 - id: cels
   nombre: CELS
@@ -975,7 +1056,9 @@ ejes:
   - principio_de_no_devolucion
   - proteccion_complementaria
   - reasentamiento
+  - reconocimiento_de_condicion_de_refugiado
   - refugio
+  - sin_nacionalidad
   - solicitudes_de_asilo
   activo: true
 - id: exilio
@@ -1233,6 +1316,21 @@ ejes:
   - cierre_de_cupos
   - imposibilidad_de_salir
   activo: true
+- id: desplazamiento_interno
+  nombre: Desplazamiento interno
+  macroarea: proteccion
+  alcance: Personas desplazadas por la fuerza que NO cruzaron una frontera internacional. Categoria
+    juridica distinta de la persona refugiada y de la migrante. Si cruzo una frontera huyendo de persecucion
+    -> `exilio` o `asilo`; si el desplazamiento es por causas climaticas -> `movilidad_ambiental`.
+  subejes:
+  - desplazados_internos
+  - desplazamiento_por_violencia
+  - desplazamiento_por_crimen_organizado
+  - desplazamiento_por_megaproyectos
+  - confinamiento_de_comunidades
+  - retorno_de_desplazados
+  - registro_de_victimas
+  activo: true
 poblaciones:
 - id: primera_infancia
   alcance: Menores de 6 años
@@ -1335,6 +1433,14 @@ notas_vocabulario:
     lo que ese boletin tenia y nosotros no detectabamos era exactamente eso: papers en Globalizations
     e International Affairs, informes de MPI y CMS, datasets judiciales. Estos feeds llenan ese hueco
     y no consumen cuota de nada.'
+  categorias_juridicas: "Agregado el 2026-08-03, del prompt editorial de la Gem. Las cuatro categorias\
+    \ NO son sinonimos y el sistema no debe tratarlas como tales:\n  persona refugiada        -> tiene\
+    \ el reconocimiento\n  solicitante de asilo     -> lo pidio y espera resolucion\n  persona desplazada\
+    \ interna -> NO cruzo una frontera internacional\n  persona migrante         -> se desplaza sin\
+    \ que medie persecucion, conflicto ni desastre\nCONSECUENCIA PARA LA BUSQUEDA: en cinco de nuestros\
+    \ temas el calificador es 'migrantes'. Eso sub-captura sistematicamente lo referido a personas refugiadas\
+    \ y desplazadas. Lo compensan las consultas de `asilo` y `desplazamiento`, que usan sus propios\
+    \ terminos."
 estados:
   _nota: 'Ciclo de vida de un hecho segun su propagacion. La velocidad se mide en MEDIOS DISTINTOS en
     24h, no en cantidad de notas. Umbrales provisorios: hay que calibrarlos con datos reales de las
@@ -1400,6 +1506,7 @@ macroareas:
     - justicia
     - trata
     - inmovilidad
+    - desplazamiento_interno
   integracion:
     nombre: Integración y vida cotidiana
     pregunta: ¿Cómo viven las personas migrantes en las sociedades de destino?

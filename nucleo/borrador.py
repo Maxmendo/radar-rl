@@ -145,12 +145,24 @@ def apto(hecho: dict, cfg: dict) -> tuple[bool, str]:
     return True, ""
 
 
-def llamar(clave: str, sistema: str, mat: dict) -> str:
-    """Pide el borrador. Devuelve el markdown, o cadena vacia si fallo."""
+def llamar(clave: str, sistema: str, mat: dict) -> tuple[str, list[dict]]:
+    """Pide el borrador con busqueda web habilitada.
+
+    El fact checking del prompt es obligatorio y exige URLs recuperadas en la
+    sesion. Sin la herramienta de busqueda, el prompt devuelve
+    "INSUFICIENCIA DE VERIFICACION" y no redacta nada: por eso se activa
+    `google_search`.
+
+    Devuelve (texto, fuentes_consultadas). Google exige mostrar las fuentes
+    cuando se usa grounding, asi que se extraen de la respuesta y se guardan.
+    """
     cuerpo = {
         "systemInstruction": {"parts": [{"text": sistema}]},
         "contents": [{"parts": [{"text": json.dumps(mat, ensure_ascii=False)}]}],
         "generationConfig": {"temperature": 0.4},
+        # Habilita el fact checking. No se puede combinar con herramientas que
+        # no sean de busqueda, y por eso tampoco se fija responseMimeType.
+        "tools": [{"google_search": {}}],
     }
     for modelo in MODELOS:
         log.info("   modelo: %s", modelo)
@@ -166,10 +178,29 @@ def llamar(clave: str, sistema: str, mat: dict) -> str:
             log.warning("      HTTP %s: %s", r.status_code, r.text[:150])
             continue
         try:
-            return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            cand = r.json()["candidates"][0]
+            partes = cand["content"]["parts"]
+            texto = "".join(p.get("text", "") for p in partes)
+            return texto, fuentes_consultadas(cand)
         except (KeyError, IndexError):
             log.warning("      respuesta ilegible")
-    return ""
+    return "", []
+
+
+def fuentes_consultadas(candidato: dict) -> list[dict]:
+    """Extrae las paginas que el modelo consulto durante el fact checking.
+
+    Google exige mostrar las fuentes cuando se usa grounding con busqueda.
+    Ademas sirve para auditar: si el reporte de fact checking cita una URL que
+    no esta aca, el modelo la invento.
+    """
+    meta = candidato.get("groundingMetadata") or {}
+    salida = []
+    for chunk in meta.get("groundingChunks") or []:
+        web = chunk.get("web") or {}
+        if web.get("uri"):
+            salida.append({"titulo": web.get("title", ""), "url": web["uri"]})
+    return salida
 
 
 def main() -> int:
@@ -232,21 +263,36 @@ def main() -> int:
         sistema = sistema.split("## USER", 1)[0]
 
     log.info("")
-    log.info("Generando borrador...")
-    texto = llamar(clave, sistema.strip(), mat)
+    log.info("Generando borrador con fact checking...")
+    texto, fuentes = llamar(clave, sistema.strip(), mat)
     if not texto:
         log.error("No se pudo generar.")
         return 1
+
+    if texto.lstrip().startswith("⛔"):
+        log.warning("")
+        log.warning("El modelo devolvio INSUFICIENCIA. No hay borrador:")
+        log.warning("%s", texto[:400])
+
+    if fuentes:
+        log.info("   paginas consultadas en el fact checking: %d", len(fuentes))
 
     ahora = datetime.now(timezone.utc)
     cabecera = (
         f"<!-- BORRADOR GENERADO POR IA — NO PUBLICAR SIN CURADURIA HUMANA\n"
         f"     hecho: {args.id}\n"
         f"     generado: {ahora.isoformat(timespec='seconds')}\n"
-        f"     fuentes leidas: {', '.join(n['medio'] for n in mat['notas'])}\n"
+        f"     notas leidas: {', '.join(n['medio'] for n in mat['notas'])}\n"
         f"     Verificar fuentes y datos antes de publicar. Si se publica, debe\n"
         f"     indicarse de forma visible que hubo asistencia de IA. -->\n\n"
     )
+    if fuentes:
+        # Google exige mostrar las fuentes del grounding. Y sirve para auditar:
+        # si el bloque 8 cita una URL que no esta aca, el modelo la invento.
+        cabecera += ("<!-- PAGINAS CONSULTADAS EN EL FACT CHECKING\n"
+                     + "\n".join(f"     {f['titulo'][:60]} — {f['url']}"
+                                  for f in fuentes)
+                     + "\n-->\n\n")
     SALIDA.mkdir(parents=True, exist_ok=True)
     ruta = SALIDA / f"{ahora.strftime('%Y%m%d-%H%M')}-{args.id}.md"
     ruta.write_text(cabecera + texto, encoding="utf-8")

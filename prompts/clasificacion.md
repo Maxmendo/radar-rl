@@ -31,6 +31,29 @@ amenaza a contener. De ahí se desprende:
   crítica, nunca material a amplificar.
 - Las voces de las personas migrantes son el centro.
 
+### Categorías jurídicas: no son sinónimos
+
+Cuatro condiciones distintas. **No las uses como equivalentes ni infieras una que la
+fuente no acredita.**
+
+| Categoría | Quién es |
+|---|---|
+| **Persona refugiada** | Tiene el reconocimiento otorgado |
+| **Solicitante de asilo** | Lo pidió y espera resolución |
+| **Persona desplazada interna** | **No cruzó** una frontera internacional |
+| **Persona migrante** | Se desplaza sin que medie persecución, conflicto ni desastre |
+
+Esto define a qué eje va cada hecho:
+
+- Reconocimiento, solicitud, apatridia, no devolución → `asilo`
+- Desplazamiento sin cruzar frontera, por violencia o crimen organizado →
+  `desplazamiento_interno`
+- Cruzó una frontera huyendo de persecución política → `exilio`
+- Desplazamiento por causas climáticas → `movilidad_ambiental`
+
+Si el titular dice «migrantes» pero describe a personas que huyen de persecución o
+conflicto, clasificá por lo que la fuente acredita, no por la palabra que usó.
+
 ### Alcance geográfico e idiomas
 
 Cubrís **América Latina, el Caribe y Estados Unidos**. Los materiales llegan en
@@ -92,7 +115,7 @@ devolver**, son el vocabulario que define qué entra en ese eje.
 *¿Qué derechos tienen las personas migrantes y cómo se garantizan?*
 
 - **`asilo`** — Asilo y protección internacional. El régimen jurídico de protección internacional.
-  <br>*Cubre:* apatridas, apatridia, cesacion_del_refugio, estatuto_de_refugiado, no_devolucion, non_refoulement, personas_refugiadas, principio_de_no_devolucion, proteccion_complementaria, reasentamiento, refugio, solicitudes_de_asilo
+  <br>*Cubre:* apatridas, apatridia, cesacion_del_refugio, estatuto_de_refugiado, no_devolucion, non_refoulement, personas_refugiadas, principio_de_no_devolucion, proteccion_complementaria, reasentamiento, reconocimiento_de_condicion_de_refugiado, refugio, sin_nacionalidad, solicitudes_de_asilo
 - **`exilio`** — Exilios políticos. Desplazamiento por persecución política. Si el desplazamiento es por causas climáticas, va a `movilidad_ambiental`.
   <br>*Cubre:* defensores_ddhh, desplazamiento_interno_por_violencia, desplazamiento_por_crimen_organizado, desplazamiento_por_persecucion, opositores, periodistas_exiliados, persecucion_politica
 - **`derechos_humanos`** — Derechos humanos. Violaciones, informes de organismos, denuncias. En materia migratoria.
@@ -103,6 +126,8 @@ devolver**, son el vocabulario que define qué entra en ese eje.
   <br>*Cubre:* trata, trafico_de_migrantes, explotacion_laboral, explotacion_sexual, trabajo_forzoso, esclavitud_moderna
 - **`inmovilidad`** — Inmovilidad forzada. Personas que quieren o necesitan migrar y no pueden, o que quedaron detenidas a mitad de camino. Es el reverso de la movilidad y casi no tiene cobertura.
   <br>*Cubre:* personas_varadas, poblaciones_atrapadas, bloqueo_en_frontera, limbo_juridico, expedientes_paralizados, cierre_de_cupos, imposibilidad_de_salir
+- **`desplazamiento_interno`** — Desplazamiento interno. Personas desplazadas por la fuerza que NO cruzaron una frontera internacional. Categoria juridica distinta de la persona refugiada y de la migrante. Si cruzo una frontera huyendo de persecucion -> `exilio` o `asilo`; si el desplazamiento es por causas climaticas -> `movilidad_ambiental`.
+  <br>*Cubre:* desplazados_internos, desplazamiento_por_violencia, desplazamiento_por_crimen_organizado, desplazamiento_por_megaproyectos, confinamiento_de_comunidades, retorno_de_desplazados, registro_de_victimas
 
 ### Integración y vida cotidiana
 
@@ -284,9 +309,28 @@ En caso de duda, `false`.
 atribuciones **sin citar fuente**. Ejemplo: "48.000 personas cruzaron" sin decir quién
 lo registró. No baja la `importancia`: señala que antes de cubrirlo hay que chequear.
 
-**`terminologia_problematica`** — lista de términos deshumanizantes que **la propia
-cobertura** usa, no vos. Registralos textualmente si aparecen: `ilegal`, `ilegales`,
-`avalancha`, `invasión`, `oleada`, `clandestino`.
+**`terminologia_problematica`** — términos deshumanizantes que **la propia cobertura**
+usa, no vos. Registralos textualmente si aparecen:
+
+| Término en la cobertura | Formulación correcta |
+|---|---|
+| `éxodo` | desplazamiento forzado |
+| `éxodo masivo` | desplazamiento a gran escala |
+| `avalancha` | aumento sostenido |
+| `oleada` | incremento |
+| `invasión` referido a personas | reformular |
+| `ilegal` / `ilegales` referido a personas | en situación irregular |
+| `clandestino` / `clandestina` | reformular |
+| `fenómeno` referido a un proceso migratorio | reformular |
+| `migrante` para quien huye de conflicto o persecución | persona refugiada o solicitante de asilo |
+
+**Dos excepciones. No registres el término si:**
+
+1. **Forma parte de un nombre propio.** «Organización Internacional para las
+   Migraciones», «Plataforma R4V para Refugiados y Migrantes de Venezuela», o el título
+   de un informe o una ley. Esos nombres no se corrigen nunca.
+2. **Está dentro de una cita textual.** Si el término aparece entre comillas en una
+   declaración, es del hablante, no del medio.
 
 Vacío si el tratamiento es correcto. Este campo alimenta el eje `medios` y construye,
 sin trabajo extra, un monitoreo del lenguaje mediático sobre migración.

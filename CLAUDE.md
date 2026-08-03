@@ -487,33 +487,62 @@ verse antes de pasar a la siguiente.
 
 ## 14. Generación de borradores
 
-**No corre solo.** Se dispara desde el botón del tablero, que abre el workflow
-`borrador.yml` con el id del hecho copiado al portapapeles.
+**No corre solo.** Se dispara desde el botón del tablero —en las tarjetas y en el panel
+de alertas— que abre el workflow `borrador.yml` con el id copiado al portapapeles.
 
-**Requisitos**, en `fuentes.yaml → borrador`:
+**Requisitos**, en `fuentes.yaml → borrador`: 3 o más medios, importancia >= 7, que sea
+migratorio y esté dentro del alcance. El tablero solo muestra el botón si se cumplen,
+pero `nucleo/borrador.py` los vuelve a verificar.
 
-- 3 o más medios cubriendo el hecho
-- importancia editorial >= 7
-- que sea migratorio y esté dentro del alcance regional
+### El prompt viene del equipo, no lo inventé
 
-El tablero solo muestra el botón si se cumplen, pero `nucleo/borrador.py` los vuelve a
-verificar: el botón es una comodidad, no la validación.
+`prompts/borrador.md` se genera desde el prompt **"Redactor Breaking News"** que Refugio
+ya usa como Gem de Gemini. Es sustancialmente mejor que el que yo había escrito, porque
+enfrenta el problema que yo había evitado: reescribir cobertura ajena produce
+homogeneización, y la respuesta es verificación externa obligatoria.
 
-**Lee las notas completas, no los titulares.** Descarga hasta 6 coberturas y extrae su
-texto. Un borrador armado con ocho titulares es un resumen de resúmenes; con las notas
-a la vista puede hacer lo que ninguna hace por separado: contrastar cifras, detectar
-contradicciones entre medios y marcar qué falta. **Ese contraste es lo único que
-justifica generarlo.**
+Se adaptó en cuatro puntos:
 
-**Qué produce.** Título, bajada, cuerpo de 350-500 palabras, y una sección
-`## Para el editor` con preguntas abiertas, afirmaciones a verificar, contradicciones
-entre fuentes, fuentes a consultar y —lo más importante— si ninguna cobertura incluye
-la voz de personas migrantes afectadas.
+1. La entrada la arma el radar, no una persona.
+2. Se sumó la taxonomía de 25 ejes.
+3. Se sumó el **bloque 10, «Para el editor»**, con lo que el radar ya detectó:
+   preguntas abiertas, contradicciones entre coberturas, vacíos de voz, terminología
+   problemática y qué cobertura no se pudo leer.
+4. Se conservó la salida en bloques con rótulos exactos.
 
-**Prohibiciones que el prompt hace explícitas:** no generar ni parafrasear testimonios
-de personas migrantes, no inventar datos, no reproducir datos personales, no usar
-lenguaje deshumanizante, no copiar frases textuales.
+### Fact checking con búsqueda real
 
-**Nunca se publica.** Sale a `datos/borradores/` con una cabecera en comentario HTML
-que dice que es un borrador generado por IA, qué fuentes leyó, y que requiere
+El prompt exige verificar **todas** las cifras, nombres, cargos, fechas y declaraciones
+contra fuentes primarias, y clasificar cada dato en cinco categorías —✅ verificado,
+🗞️ fuente secundaria, ⚠️ dato único, ❌ inconsistente, 🔍 enriquecido— con URL directa
+recuperada en la sesión.
+
+Por eso la llamada activa `"tools": [{"google_search": {}}]`. Sin eso, el prompt
+devuelve `⛔ INSUFICIENCIA DE VERIFICACIÓN` y no redacta nada — que es el
+comportamiento correcto, no una falla.
+
+Dos consecuencias técnicas:
+- **No se puede fijar `responseMimeType`**: Google no permite combinar la herramienta de
+  búsqueda con otras. Por eso el borrador sale en markdown y no en JSON.
+- **Las páginas consultadas se guardan** en la cabecera del archivo. Google exige mostrar
+  las fuentes del grounding, y además sirve para auditar: si el reporte de fact checking
+  cita una URL que no está en esa lista, el modelo la inventó.
+
+### Reglas que el prompt hace explícitas
+
+Regla de originalidad de **ocho palabras**: ninguna secuencia más larga puede coincidir
+con una nota de origen fuera de cita, y el orden de presentación debe ser propio.
+
+Términos prohibidos con sustitución obligatoria —`éxodo → desplazamiento forzado`,
+`avalancha → aumento sostenido`— y dos excepciones: **nombres propios** («Plataforma R4V
+para Refugiados y Migrantes de Venezuela» no se reescribe) y **citas textuales**, donde
+modificar el interior de las comillas es falta grave.
+
+Protección de identidades: nunca apellido, dirección, ruta de viaje ni datos de niñas y
+niños, salvo consentimiento acreditado. Esto reemplaza la prohibición anterior de tocar
+testimonios: es más útil, porque permite escribir sobre casos individuales protegiendo a
+la persona.
+
+**Nunca se publica.** Sale a `datos/borradores/` con una cabecera que dice que es un
+borrador generado por IA, qué notas leyó, qué páginas consultó, y que requiere
 verificación y etiquetado visible antes de publicar.
