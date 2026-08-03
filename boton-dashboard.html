@@ -1,0 +1,83 @@
+<!-- ==========================================================================
+     BOTÓN "GENERAR BORRADOR" — versión Cloudflare Function
+     Reemplaza al botón viejo que disparaba GitHub Actions.
+
+     Cómo integrarlo:
+     - El botón ya existe en tus tarjetas (clase .btn-borrador o similar).
+     - Cada tarjeta debe llevar los datos del hecho en atributos data-*.
+     - Pegá el <script> una sola vez al final del <body> del dashboard.
+     ========================================================================== -->
+
+<!-- 1) Así se ve el botón en cada tarjeta. El generador del dashboard debe
+        volcar los datos del hecho en los atributos data-*. -->
+<button
+  class="btn-borrador"
+  data-titulo="Reportan motín en la Estación Migratoria Siglo XXI de Tapachula"
+  data-resumen="Verificar las condiciones de detención y el estado de salud de las personas retenidas tras el motín"
+  data-pais="MX"
+  data-medios="Cubita NOW, Diario De México, EL PAÍS, Telemundo Miami"
+  data-tags="deportaciones, derechos_humanos, organismos_migratorios"
+  data-importancia="8"
+>Generar borrador</button>
+
+
+<!-- 2) Lógica del botón (pegar una sola vez). -->
+<script>
+document.addEventListener("click", async (ev) => {
+  const btn = ev.target.closest(".btn-borrador");
+  if (!btn) return;
+
+  // Evitar doble clic mientras procesa
+  if (btn.dataset.enviando === "1") return;
+  btn.dataset.enviando = "1";
+
+  const textoOriginal = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = "Redactando y enviando…";
+
+  // Armar el hecho desde los data-* de la tarjeta
+  const hecho = {
+    titulo: btn.dataset.titulo || "",
+    resumen: btn.dataset.resumen || "",
+    pais: btn.dataset.pais || "",
+    medios: (btn.dataset.medios || "").split(",").map((s) => s.trim()).filter(Boolean),
+    tags: (btn.dataset.tags || "").split(",").map((s) => s.trim()).filter(Boolean),
+    importancia: btn.dataset.importancia || "",
+  };
+
+  try {
+    const r = await fetch("/generar-borrador", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(hecho),
+    });
+    const data = await r.json();
+
+    if (data.ok) {
+      btn.textContent = "✓ Enviado por correo";
+      btn.style.background = "#27ae60";
+      btn.style.color = "#fff";
+    } else {
+      btn.textContent = "✗ Error — reintentar";
+      btn.style.background = "#c0392b";
+      btn.style.color = "#fff";
+      console.error("Borrador:", data.error);
+      alert("No se pudo generar el borrador:\n" + (data.error || "error desconocido"));
+    }
+  } catch (e) {
+    btn.textContent = "✗ Error de red — reintentar";
+    btn.style.background = "#c0392b";
+    btn.style.color = "#fff";
+    console.error(e);
+  } finally {
+    btn.disabled = false;
+    btn.dataset.enviando = "0";
+    // Volver al texto original después de unos segundos
+    setTimeout(() => {
+      btn.textContent = textoOriginal;
+      btn.style.background = "";
+      btn.style.color = "";
+    }, 6000);
+  }
+});
+</script>
