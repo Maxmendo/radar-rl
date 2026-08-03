@@ -1457,3 +1457,13 @@ tendencias:
   fallos_seguidos_antes_de_abandonar: 6
   espera_entre_consultas: 2.5
   semilla_relacionadas: migrantes
+  terminos_respaldo:
+  - migrantes
+  - migracion
+  - extranjeros
+  - deportacion
+  - refugiados
+  _nota_respaldo: 'Se usan solo si `related_queries` esta con la cuota agotada, que es frecuente: verificado
+    el 2026-08-03, seis de seis consultas fallaron con TrendsQuotaExceededError desde GitHub Actions.
+    `interest_over_time` si responde. Es menos informativo -confirma que el tema existe en vez de decir
+    que se busca- pero es mejor que un panel vacio.'

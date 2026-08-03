@@ -205,15 +205,26 @@ para medir. Es el mismo error que hizo fallar los términos por hecho el 2026-08
 
 Además del cruce por hecho, hay **dos paneles fijos** que no dependen de las noticias:
 
-**a) Qué se busca sobre migración, por país.** Usa `related_queries`, no
-`interest_over_time`: en vez de preguntar "¿cuánto se busca *migrantes*?" pregunta
-"¿qué consultas sobre migrantes están subiendo en este país?". Devuelve términos
-concretos del día —`alligator alcatraz`, `decreto migratorio`— en lugar de confirmar
-una lista fija que ya conocemos.
+**a) Qué se busca sobre migración, por país.** Intenta `related_queries`: en vez de
+preguntar "¿cuánto se busca *migrantes*?" pregunta "¿qué consultas sobre migrantes
+están subiendo?". Devuelve términos concretos del día —`alligator alcatraz`— en lugar
+de confirmar una lista fija que ya conocemos.
 
-Una consulta por país, en los **27 países** de América Latina, el Caribe, más Estados
-Unidos y Canadá. Los que no devuelven datos quedan registrados en `paises_sin_datos`,
-para poder darlos de baja con evidencia y no por suposición.
+**Pero `related_queries` tiene cuota mucho más estricta.** Verificado el 2026-08-03:
+seis de seis consultas fallaron con `TrendsQuotaExceededError` desde GitHub Actions,
+mientras `interest_over_time` respondía sin problema. Por eso el módulo:
+
+1. Reintenta con tres `referer` distintos, que es el primer remedio que sugiere la
+   propia biblioteca y no cuesta nada.
+2. Si igual falla, **cae a una lista fija de términos** medida con
+   `interest_over_time`. Es menos informativo —confirma que el tema existe en vez de
+   decir qué se busca— pero es mejor que un panel vacío.
+3. El tablero **marca esos países como «nivel»** y aclara al pie que el dato es de otro
+   tipo. Un panel que mezcla dos cosas sin decirlo engaña.
+
+Una consulta por país, en los **27 países** de la región más Estados Unidos y Canadá.
+Los que no devuelven nada quedan en `paises_sin_datos`; los que usaron el respaldo, en
+`paises_con_respaldo`.
 
 **b) Demanda de servicio.** `turno migraciones`, `DNI extranjero`, `residencia
 precaria`, `certificado de residencia`, `regularizacion migratoria`, `estudiantes

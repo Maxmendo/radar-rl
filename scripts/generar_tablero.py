@@ -71,9 +71,11 @@ def cruzar_tendencias(items: list[dict]) -> dict:
 
     # Consultas en alza sobre migracion, por pais. Son terminos concretos del
     # dia, no una lista fija que ya conocemos de antemano.
-    general = [{"geo": geo, "consultas": rel}
+    con_respaldo = set(panel.get("paises_con_respaldo") or [])
+    general = [{"geo": geo, "consultas": rel, "respaldo": geo in con_respaldo}
                for geo, rel in panel.get("general", {}).items() if rel]
-    general.sort(key=lambda x: (-len(x["consultas"]), x["geo"]))
+    # Primero los paises con consultas reales; despues los que usaron respaldo.
+    general.sort(key=lambda x: (x["respaldo"], -len(x["consultas"]), x["geo"]))
 
     return {
         "disponible": bool(panel.get("disponible")),
@@ -248,6 +250,10 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .atencion li{font-size:.76rem;color:var(--suave);line-height:1.5;padding-left:.55rem;
   border-left:2px solid var(--linea)}
 .atencion .sube{color:var(--sem-verde);font-weight:600;font-size:.7rem}
+.atencion .aprox{font-size:.62rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.04em;color:var(--tenue);border:1px solid var(--linea);
+  padding:0 .28rem;border-radius:3px}
+.atencion .pie{font-size:.7rem;color:var(--tenue);margin:.5rem 0 0;line-height:1.45}
 
 /* Demanda de busqueda: lo que la gente busca antes de que sea noticia. */
 .demanda{background:var(--tarjeta);border:1px solid var(--sem-verde);border-radius:9px;
@@ -567,13 +573,18 @@ function armarAtencion(){
   const t=CTX.tendencias;
   const c=document.getElementById('atencion');
   if(!t || !(t.general||[]).length) return;
+  const hayRespaldo=t.general.some(p=>p.respaldo);
   c.innerHTML='<div class="atencion"><div class="tit">Qué se busca sobre migración</div>'+
     '<p>Consultas en alza en cada país, hoy. Un término que aparece acá y no está en '+
     'ninguna noticia puede señalar algo que todavía no llegó a los medios.</p>'+
-    t.general.map(p=>`<div class="pais"><b>${esc(NOMBRE_PAIS[p.geo]||p.geo)}</b>`+
+    t.general.map(p=>`<div class="pais"><b>${esc(NOMBRE_PAIS[p.geo]||p.geo)}`+
+      `${p.respaldo?' <span class="aprox">nivel</span>':''}</b>`+
       `<ul>${p.consultas.map(q=>`<li>${esc(q.consulta)}`+
-        `${q.tipo==='rising'?` <span class="sube">${esc(q.valor)}</span>`:''}</li>`).join('')}</ul>`+
+        `${q.valor?` <span class="sube">${esc(q.valor)}</span>`:''}</li>`).join('')}</ul>`+
       `</div>`).join('')+
+    (hayRespaldo?'<p class="pie">Los países marcados <span class="aprox">nivel</span> '+
+      'muestran cuánto subió un término fijo, no qué se está buscando: Google limitó '+
+      'las consultas relacionadas ese día.</p>':'')+
     '</div>';
 }
 

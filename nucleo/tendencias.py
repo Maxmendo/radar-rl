@@ -122,6 +122,16 @@ def puntuar(serie, umbrales: dict) -> tuple[int, dict]:
                     "ratio": round(ratio, 2)}
 
 
+# `related_queries` tiene una cuota mucho mas estricta que `interest_over_time`.
+# La propia biblioteca sugiere cambiar el referer del pedido como primer remedio;
+# es gratis y no requiere proxy. Se prueban varios en orden.
+REFERERS = [
+    {"referer": "https://www.google.com/"},
+    {"referer": "https://trends.google.com/trends/explore"},
+    None,
+]
+
+
 def consultas_relacionadas(cliente, semilla: str, geo: str, ventana: str,
                            tope: int = 6) -> list[dict]:
     """Que se esta buscando SOBRE la semilla en ese pais, ahora.
@@ -134,11 +144,20 @@ def consultas_relacionadas(cliente, semilla: str, geo: str, ventana: str,
     Prioriza `rising` sobre `top`: lo que sube dice mas que lo mas buscado,
     que suele ser siempre lo mismo.
     """
-    try:
-        r = cliente.related_queries(semilla, timeframe=ventana, geo=geo)
-    except Exception as e:
-        log.warning("      %s / %s: %s: %s", geo, semilla, type(e).__name__, str(e)[:60])
-        return []
+    r = None
+    for cabeceras in REFERERS:
+        try:
+            r = (cliente.related_queries(semilla, timeframe=ventana, geo=geo,
+                                         headers=cabeceras)
+                 if cabeceras else
+                 cliente.related_queries(semilla, timeframe=ventana, geo=geo))
+            break
+        except Exception as e:
+            nombre = type(e).__name__
+            if "Quota" in nombre and cabeceras is not REFERERS[-1]:
+                continue          # se reintenta con otro referer
+            log.warning("      %s / %s: %s", geo, semilla, nombre)
+            return []
     if not isinstance(r, dict):
         return []
 
@@ -286,6 +305,8 @@ def main() -> int:
     geos_gen = cfg.get("geos_generales", [])
     atencion: dict = {}
     sin_datos: list[str] = []
+    uso_respaldo: set = set()
+    respaldo = cfg.get("terminos_respaldo", [])
 
     if geos_gen and seguidos < FALLOS_SEGUIDOS:
         log.info("")
@@ -295,6 +316,20 @@ def main() -> int:
                 log.warning("   %d consultas seguidas sin respuesta: se abandona.", seguidos)
                 break
             rel = consultas_relacionadas(cliente, semilla, geo, ventana)
+
+            # Respaldo: si `related_queries` esta agotado, se mide el interes de
+            # una lista fija de terminos. Es menos informativo -confirma que el
+            # tema existe en vez de decir que se busca- pero es mejor que un
+            # panel vacio, y `interest_over_time` si tiene cuota disponible.
+            if not rel and respaldo:
+                med = consultar(cliente, respaldo[:LOTE], geo, ventana, umbrales)
+                rel = [{"consulta": k, "valor": f"x{v['ratio']}", "tipo": "nivel"}
+                       for k, v in sorted(med.items(),
+                                          key=lambda x: -x[1]["puntaje"])
+                       if v["puntaje"] > 0][:4]
+                if rel:
+                    uso_respaldo.add(geo)
+
             if rel:
                 seguidos = 0
                 atencion[geo] = rel
@@ -308,6 +343,11 @@ def main() -> int:
                 log.info("   %-4s sin datos", geo)
             time.sleep(ESPERA)
 
+        if uso_respaldo:
+            log.info("")
+            log.info("   %d paises usaron la lista fija de respaldo: %s",
+                     len(uso_respaldo), " ".join(sorted(uso_respaldo)))
+            log.info("   Significa que `related_queries` esta con la cuota agotada.")
         if sin_datos:
             log.info("")
             log.info("   Paises sin datos: %s", " ".join(sin_datos))
@@ -345,6 +385,7 @@ def main() -> int:
         "hechos": resultados,
         "general": atencion,
         "paises_sin_datos": sin_datos,
+        "paises_con_respaldo": sorted(uso_respaldo),
         "servicio": demanda,
         "alertas": alertas,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
