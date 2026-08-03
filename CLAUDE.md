@@ -116,7 +116,21 @@ aceleracion  = velocidad actual - velocidad de la corrida anterior (3h atras)
 3. **`interes` es la vista por defecto.** Es el estado donde una redacción chica todavía
    puede llegar primero. `top_trend` es donde ya perdió.
 
-4. **Excepción extrarregional en `top_trend`.** Un hecho de otra región con cobertura
+4. **El alcance se decide por LISTA BLANCA de países, no por lista negra de palabras.**
+   `PAISES_DEL_ALCANCE` en `nucleo/estados.py` enumera América Latina, el Caribe,
+   Estados Unidos y Canadá. Si ninguno de los países del hecho está ahí, es
+   extrarregional.
+
+   Antes era una lista negra ("ceuta", "marruecos", "espana") y siempre se quedaba
+   corta: el 2026-08-03 se colaron a `interes` una nota de Algeciras y otra del canal
+   de la Mancha, porque esos nombres no estaban.
+
+   **Y se recalcula después de clasificar.** La ingesta estima los países leyendo el
+   titular con coincidencia de palabras; el clasificador los deduce leyendo el titular
+   completo y acierta mucho más. Sin `recalcular_alcance()`, un hecho podía quedar
+   etiquetado a la vez como `Sudamérica` y con país `GB`.
+
+5. **Excepción extrarregional en `top_trend`.** Un hecho de otra región con cobertura
    masiva entra a `top_trend` para mostrar cuál es la conversación dominante sobre
    movilidad humana en el mundo. Dos salvaguardas, porque en agosto de 2026 la cobertura
    de Ceuta llegó a encabezar la portada y empujar abajo lo latinoamericano:
@@ -191,14 +205,15 @@ para medir. Es el mismo error que hizo fallar los términos por hecho el 2026-08
 
 Además del cruce por hecho, hay **dos paneles fijos** que no dependen de las noticias:
 
-**a) Atención pública por país.** `migrantes`, `inmigrantes`, `extranjeros`,
-`migracion`, `remesas`, medidos en diez países. No miden demanda de trámite: miden
-cuánto está la migración en la cabeza de la gente. Un pico en Chile significa que algo
-está pasando allí aunque no haya llegado a los medios que monitoreamos.
+**a) Qué se busca sobre migración, por país.** Usa `related_queries`, no
+`interest_over_time`: en vez de preguntar "¿cuánto se busca *migrantes*?" pregunta
+"¿qué consultas sobre migrantes están subiendo en este país?". Devuelve términos
+concretos del día —`alligator alcatraz`, `decreto migratorio`— en lugar de confirmar
+una lista fija que ya conocemos.
 
-Los cinco términos entran en una sola consulta —el tope de Google es 5— así que son
-diez consultas. Sumar países cuesta una consulta cada uno; sumar términos por encima
-de cinco duplica todas.
+Una consulta por país, en los **27 países** de América Latina, el Caribe, más Estados
+Unidos y Canadá. Los que no devuelven datos quedan registrados en `paises_sin_datos`,
+para poder darlos de baja con evidencia y no por suposición.
 
 **b) Demanda de servicio.** `turno migraciones`, `DNI extranjero`, `residencia
 precaria`, `certificado de residencia`, `regularizacion migratoria`, `estudiantes

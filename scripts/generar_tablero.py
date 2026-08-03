@@ -26,7 +26,8 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from nucleo.estados import estado, normalizar_ejes, potencial, puntaje  # noqa: E402
+from nucleo.estados import (estado, normalizar_ejes, potencial,  # noqa: E402
+                            puntaje, recalcular_alcance)
 
 RAIZ = Path(__file__).resolve().parent.parent
 ENTRADA = RAIZ / "datos" / "items.json"
@@ -68,21 +69,17 @@ def cruzar_tendencias(items: list[dict]) -> dict:
         ({"termino": t, **d} for t, d in panel.get("servicio", {}).items()),
         key=lambda x: -x.get("puntaje", 0))[:6]
 
-    # Atencion publica: se muestra el termino mas alto de cada pais, para no
-    # llenar el tablero con cinco filas por pais.
-    general = []
-    for geo, terminos in panel.get("general", {}).items():
-        if not terminos:
-            continue
-        t_top, d_top = max(terminos.items(), key=lambda x: x[1].get("puntaje", 0))
-        general.append({"geo": geo, "termino": t_top, "otros": len(terminos) - 1, **d_top})
-    general.sort(key=lambda x: -x.get("puntaje", 0))
+    # Consultas en alza sobre migracion, por pais. Son terminos concretos del
+    # dia, no una lista fija que ya conocemos de antemano.
+    general = [{"geo": geo, "consultas": rel}
+               for geo, rel in panel.get("general", {}).items() if rel]
+    general.sort(key=lambda x: (-len(x["consultas"]), x["geo"]))
 
     return {
         "disponible": bool(panel.get("disponible")),
         "generado": panel.get("generado", ""),
         "servicio": servicio,
-        "general": general[:8],
+        "general": general,
         "alertas": panel.get("alertas", [])[:5],
     }
 
@@ -138,7 +135,18 @@ PLANTILLA = """<!DOCTYPE html>
 body{margin:0;padding:0 0 4rem;background:var(--fondo);color:var(--tinta);
   font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;
   -webkit-font-smoothing:antialiased}
-.c{max-width:900px;margin:0 auto;padding:0 1.1rem}
+.c{max-width:1180px;margin:0 auto;padding:0 1.1rem}
+
+/* Dos columnas: las noticias mandan, los paneles de busquedas acompanan.
+   En pantallas angostas se apilan y los paneles quedan abajo. */
+.columnas{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:1.4rem;
+  align-items:start}
+.lateral{position:sticky;top:1rem;display:flex;flex-direction:column;gap:.9rem}
+@media(max-width:880px){
+  .columnas{grid-template-columns:1fr}
+  .lateral{position:static;order:2}
+  main{order:1}
+}
 
 /* Cabecera: franja roja con las lineas oblicuas del simbolo (arraigo) */
 header{background:var(--rojo);color:#fff;padding:1.9rem 0 1.6rem;margin-bottom:1.6rem;
@@ -230,22 +238,26 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 
 /* Atencion publica por pais: donde esta instalado el tema. */
 .atencion{background:var(--tarjeta);border:1px solid var(--sem-celeste);border-radius:9px;
-  padding:.8rem 1rem;margin-bottom:1rem}
+  padding:.75rem .85rem}
 .atencion .tit{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
   color:var(--sem-celeste);font-weight:700;margin-bottom:.4rem}
 .atencion p{margin:0 0 .5rem;font-size:.82rem;color:var(--suave)}
-.atencion ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem}
-.atencion li{font-size:.78rem;padding:.16rem .55rem;border-radius:4px;
-  background:var(--fondo);border:1px solid var(--linea);color:var(--tinta)}
+.atencion .pais{margin-bottom:.6rem}
+.atencion .pais b{font-size:.78rem;color:var(--tinta);display:block;margin-bottom:.2rem}
+.atencion ul{list-style:none;margin:0;padding:0}
+.atencion li{font-size:.76rem;color:var(--suave);line-height:1.5;padding-left:.55rem;
+  border-left:2px solid var(--linea)}
+.atencion .sube{color:var(--sem-verde);font-weight:600;font-size:.7rem}
 
 /* Demanda de busqueda: lo que la gente busca antes de que sea noticia. */
 .demanda{background:var(--tarjeta);border:1px solid var(--sem-verde);border-radius:9px;
-  padding:.8rem 1rem;margin-bottom:1rem}
+  padding:.75rem .85rem}
 .demanda .tit{font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;
   color:var(--sem-verde);font-weight:700;margin-bottom:.4rem}
 .demanda p{margin:0 0 .5rem;font-size:.82rem;color:var(--suave)}
 .demanda ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem}
-.demanda li{font-size:.78rem;padding:.16rem .55rem;border-radius:4px;
+.demanda ul{flex-direction:column;gap:.25rem}
+.demanda li{font-size:.76rem;padding:.14rem .5rem;border-radius:4px;
   background:var(--fondo);border:1px solid var(--linea);color:var(--tinta)}
 .item{background:var(--tarjeta);border:1px solid var(--linea);border-radius:9px;
   padding:1rem 1.1rem;margin-bottom:.75rem}
@@ -332,9 +344,13 @@ __AVISO__
 </div>
 <div class="filtros" id="filtros" hidden></div>
 <div id="alertas"></div>
-<div id="atencion"></div>
-<div id="demanda"></div>
-<div id="lista"></div>
+<div class="columnas">
+  <main id="lista"></main>
+  <aside class="lateral">
+    <div id="atencion"></div>
+    <div id="demanda"></div>
+  </aside>
+</div>
 <footer>
 <b>Cómo leerlo.</b> Cada fila es un <i>hecho</i>, no una nota: si veinte medios publican
 sobre el mismo decreto, es un hecho con veinte medios. La cantidad de medios distintos
@@ -540,19 +556,25 @@ function armarAlertas(){
     '</ul></div>';
 }
 
+const NOMBRE_PAIS={AR:'Argentina',BO:'Bolivia',BR:'Brasil',CL:'Chile',CO:'Colombia',
+  EC:'Ecuador',GY:'Guyana',PY:'Paraguay',PE:'Perú',SR:'Surinam',UY:'Uruguay',
+  VE:'Venezuela',BZ:'Belice',CR:'Costa Rica',SV:'El Salvador',GT:'Guatemala',
+  HN:'Honduras',NI:'Nicaragua',PA:'Panamá',MX:'México',US:'Estados Unidos',
+  CA:'Canadá',CU:'Cuba',DO:'Rep. Dominicana',HT:'Haití',PR:'Puerto Rico',
+  JM:'Jamaica',TT:'Trinidad y Tobago'};
+
 function armarAtencion(){
   const t=CTX.tendencias;
   const c=document.getElementById('atencion');
   if(!t || !(t.general||[]).length) return;
-  const NOMBRE={AR:'Argentina',CL:'Chile',PE:'Perú',CO:'Colombia',VE:'Venezuela',
-    BO:'Bolivia',MX:'México',BR:'Brasil',EC:'Ecuador',US:'Estados Unidos'};
-  c.innerHTML='<div class="atencion"><div class="tit">Atención pública en alza</div>'+
-    '<p>Países donde las búsquedas sobre migración están por encima de lo habitual. '+
-    'No es demanda de trámite: es el tema instalado en la conversación. '+
-    'Un pico acá puede anticipar algo que todavía no llegó a los medios que monitoreamos.</p>'+
-    '<ul>'+t.general.map(x=>`<li><b>${esc(NOMBRE[x.geo]||x.geo)}</b> · `+
-      `${esc(x.termino)} ×${x.ratio}${x.otros>0?` · +${x.otros} términos`:''}</li>`).join('')+
-    '</ul></div>';
+  c.innerHTML='<div class="atencion"><div class="tit">Qué se busca sobre migración</div>'+
+    '<p>Consultas en alza en cada país, hoy. Un término que aparece acá y no está en '+
+    'ninguna noticia puede señalar algo que todavía no llegó a los medios.</p>'+
+    t.general.map(p=>`<div class="pais"><b>${esc(NOMBRE_PAIS[p.geo]||p.geo)}</b>`+
+      `<ul>${p.consultas.map(q=>`<li>${esc(q.consulta)}`+
+        `${q.tipo==='rising'?` <span class="sube">${esc(q.valor)}</span>`:''}</li>`).join('')}</ul>`+
+      `</div>`).join('')+
+    '</div>';
 }
 
 function armarDemanda(){
@@ -589,6 +611,14 @@ def main() -> int:
 
     ctx = contexto()
     normalizar_ejes(items, ctx["alias"])
+
+    # Los paises que asigna el clasificador son mucho mas confiables que los que
+    # infiere la ingesta por coincidencia de palabras. Sin este recalculo, un
+    # hecho de Reino Unido podia quedar como `Sudamerica` y aparecer en `interes`.
+    movidos = recalcular_alcance(items)
+    if movidos:
+        log.info("Alcance recalculado con los paises del clasificador: %d hechos cambiaron",
+                 movidos)
     ctx["tendencias"] = cruzar_tendencias(items)
     for i in items:
         i["estado"] = estado(i)

@@ -122,6 +122,47 @@ def puntuar(serie, umbrales: dict) -> tuple[int, dict]:
                     "ratio": round(ratio, 2)}
 
 
+def consultas_relacionadas(cliente, semilla: str, geo: str, ventana: str,
+                           tope: int = 6) -> list[dict]:
+    """Que se esta buscando SOBRE la semilla en ese pais, ahora.
+
+    Responde algo distinto que interest_over_time: no "cuanto se busca
+    `migrantes`" sino "que consultas sobre migrantes estan subiendo". El
+    resultado son terminos concretos y del dia, no una lista fija que ya
+    sabemos de antemano.
+
+    Prioriza `rising` sobre `top`: lo que sube dice mas que lo mas buscado,
+    que suele ser siempre lo mismo.
+    """
+    try:
+        r = cliente.related_queries(semilla, timeframe=ventana, geo=geo)
+    except Exception as e:
+        log.warning("      %s / %s: %s: %s", geo, semilla, type(e).__name__, str(e)[:60])
+        return []
+    if not isinstance(r, dict):
+        return []
+
+    salida = []
+    for clave in ("rising", "top"):
+        df = r.get(clave)
+        if df is None or getattr(df, "empty", True):
+            continue
+        try:
+            cols = list(df.columns)
+            c_q = next((c for c in cols if "quer" in str(c).lower()), cols[0])
+            c_v = next((c for c in cols if str(c).lower() in ("value", "valor")), cols[-1])
+            for _, fila in df.head(tope).iterrows():
+                consulta = str(fila[c_q]).strip()
+                if consulta and not any(x["consulta"] == consulta for x in salida):
+                    salida.append({"consulta": consulta, "valor": str(fila[c_v]),
+                                   "tipo": clave})
+        except Exception as e:
+            log.warning("      %s: no se pudo leer %s (%s)", geo, clave, type(e).__name__)
+        if len(salida) >= tope:
+            break
+    return salida[:tope]
+
+
 def consultar(cliente, terminos: list[str], geo: str, ventana: str,
               umbrales: dict) -> dict:
     """Consulta un lote de terminos para un pais y los puntua."""
@@ -237,35 +278,31 @@ def main() -> int:
                     }
             time.sleep(ESPERA)
 
-    # --- Atencion publica por pais: un pico = ese pais esta mirando el tema --
-    generales = cfg.get("terminos_generales", [])
+    # --- Que se busca sobre migracion en cada pais, hoy ---------------------
+    # No una lista fija de terminos que ya sabemos ("migrantes", "migracion"),
+    # sino las consultas concretas que estan subiendo en cada pais. Eso es lo
+    # que puede senalar algo que todavia no llego a los medios.
+    semilla = cfg.get("semilla_relacionadas", "migrantes")
     geos_gen = cfg.get("geos_generales", [])
     atencion: dict = {}
-
     sin_datos: list[str] = []
 
-    if generales and geos_gen and seguidos < FALLOS_SEGUIDOS:
+    if geos_gen and seguidos < FALLOS_SEGUIDOS:
         log.info("")
-        log.info("Atencion publica: %d terminos en %d paises", len(generales), len(geos_gen))
+        log.info("Consultas en alza sobre «%s» en %d paises", semilla, len(geos_gen))
         for geo in geos_gen:
             if seguidos >= FALLOS_SEGUIDOS:
                 log.warning("   %d consultas seguidas sin respuesta: se abandona.", seguidos)
                 break
-            # Los 5 terminos entran en una sola consulta: es el tope de Google.
-            res = consultar(cliente, generales[:LOTE], geo, ventana, umbrales)
-            if res:
+            rel = consultas_relacionadas(cliente, semilla, geo, ventana)
+            if rel:
                 seguidos = 0
-                en_alza = {k: v for k, v in res.items() if v["puntaje"] > 0}
-                if en_alza:
-                    atencion[geo] = en_alza
-                    for termino, d in en_alza.items():
-                        log.info("   %-4s %-14s puntaje %2d  (x%.2f)",
-                                 geo, termino, d["puntaje"], d.get("ratio") or 0)
-                else:
-                    log.info("   %-4s sin variacion", geo)
+                atencion[geo] = rel
+                log.info("   %-4s %s", geo,
+                         " · ".join(f"{x['consulta']} ({x['valor']})" for x in rel[:3]))
             else:
-                # Paises chicos pueden no tener volumen suficiente. Se registra
-                # para poder darlos de baja con evidencia, no por suposicion.
+                # Paises chicos pueden no tener volumen. Se registra para poder
+                # darlos de baja con evidencia, no por suposicion.
                 seguidos += 1
                 sin_datos.append(geo)
                 log.info("   %-4s sin datos", geo)
@@ -313,7 +350,7 @@ def main() -> int:
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     log.info("")
-    log.info("Hechos consultados: %d | paises con atencion en alza: %d | de servicio en alza: %d",
+    log.info("Hechos consultados: %d | paises con consultas en alza: %d | servicio en alza: %d",
              len(resultados), len(atencion), len(demanda))
     log.info("Escrito %s", SALIDA.relative_to(RAIZ))
 
@@ -326,11 +363,9 @@ def main() -> int:
                      a["titulo"][:58])
     if atencion:
         log.info("")
-        log.info("ATENCION PUBLICA EN ALZA (que paises estan mirando el tema):")
-        for geo, terminos in atencion.items():
-            top = max(terminos.items(), key=lambda x: x[1]["puntaje"])
-            log.info("   %-4s %-14s x%.2f  (%d terminos en alza)",
-                     geo, top[0], top[1].get("ratio") or 0, len(terminos))
+        log.info("QUE SE BUSCA SOBRE MIGRACION, POR PAIS:")
+        for geo, rel in atencion.items():
+            log.info("   %-4s %s", geo, " · ".join(x["consulta"] for x in rel[:4]))
 
     if demanda:
         log.info("")

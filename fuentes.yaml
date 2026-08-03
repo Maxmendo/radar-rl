@@ -1412,12 +1412,6 @@ tendencias:
     ratio_maximo: 3.0
     interes_minimo: 15
   biblioteca: trendspy
-  terminos_generales:
-  - migrantes
-  - inmigrantes
-  - extranjeros
-  - migracion
-  - remesas
   geos_generales:
   - AR
   - BO
@@ -1446,16 +1440,14 @@ tendencias:
   - PR
   - JM
   - TT
-  _nota_generales: 'Atencion publica, no demanda de tramite. Miden cuanto esta la migracion en la cabeza
-    de la gente en cada pais. Un pico en Chile significa que algo esta pasando alli aunque no haya llegado
-    a los medios que monitoreamos.
+  _nota_generales: 'CONSULTAS RELACIONADAS, no una lista fija de terminos. Se le pregunta a Google que
+    se esta buscando SOBRE ''migrantes'' en cada pais, y devuelve terminos concretos del dia. Una lista
+    fija (''migrantes'', ''migracion'') solo confirmaba lo que ya sabemos: que el tema existe.
 
-    Los 5 terminos entran en UNA consulta por pais (el tope de Google es 5), asi que son tantas consultas
-    como paises. Con 27 paises la corrida tarda unos 2-3 minutos.
+    Una consulta por pais. Con 27 paises la corrida tarda 2-3 minutos.
 
-    PAISES CHICOS: Guyana, Surinam, Belice, Trinidad y Tobago pueden no tener volumen suficiente y devolver
-    series vacias. No es un error: se registran como ''sin datos'' y quedan a la vista para poder darlos
-    de baja con evidencia.'
+    PAISES CHICOS: Guyana, Surinam, Belice y Trinidad pueden no tener volumen y devolver vacio. Se registran
+    en `paises_sin_datos` para poder darlos de baja con evidencia, no por suposicion.'
   _nota_servicio: 'Consultas de TRAMITE: quien las escribe esta resolviendo un problema, no leyendo
     noticias. Por eso son senal independiente de la prensa.
 
@@ -1464,3 +1456,4 @@ tendencias:
     la argentina.'
   fallos_seguidos_antes_de_abandonar: 6
   espera_entre_consultas: 2.5
+  semilla_relacionadas: migrantes
