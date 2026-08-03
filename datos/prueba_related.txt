@@ -1,34 +1,41 @@
-PRUEBA DE related_queries — 2026-08-02T16:27:23+00:00
+PRUEBA DE related_queries — 2026-08-03T09:53:48+00:00
 
-Titulares en estado `interes` hoy: 2
-   Avanza el ICE en Miami: busca sumar 700 nuevas camas en centros de detención de migrantes tras el ci
-   🔴🔵 Increíble pero cierto: Casa Blanca difunde video de deportaciones con canción de BAD BUNNY. La ad
+Titulares en estado `interes` hoy: 3
+   Reportan motín en la Estación Migratoria Siglo XXI de Tapachula, Chiapas; manifestantes incendian co
+   Más de 2.000 inmigrantes ilegales cruzaron el canal de la Mancha hacia Reino Unido desde la llegada 
+   Interceptadas dos embarcaciones con 17 inmigrantes en Algeciras y La Línea de la Concepción
 
 ======================================================================
 
 deportaciones  (US)
 ----------------------------------------
-   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+   FALLA: TrendsQuotaExceededError: API quota exceeded for related queries/topics. To resolve this, you can try:
+1. Use a different referer in request heade
 
 deportaciones  (MX)
 ----------------------------------------
-   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+   FALLA: TrendsQuotaExceededError: API quota exceeded for related queries/topics. To resolve this, you can try:
+1. Use a different referer in request heade
 
 migrantes  (AR)
 ----------------------------------------
-   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+   FALLA: TrendsQuotaExceededError: API quota exceeded for related queries/topics. To resolve this, you can try:
+1. Use a different referer in request heade
 
 migrantes  (CL)
 ----------------------------------------
-   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+   FALLA: TrendsQuotaExceededError: API quota exceeded for related queries/topics. To resolve this, you can try:
+1. Use a different referer in request heade
 
 asilo  (US)
 ----------------------------------------
-   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+   FALLA: TrendsQuotaExceededError: API quota exceeded for related queries/topics. To resolve this, you can try:
+1. Use a different referer in request heade
 
 refugiados  (CO)
 ----------------------------------------
-   FALLA: HTTPError: 429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://trends.google.com/trend
+   FALLA: TrendsQuotaExceededError: API quota exceeded for related queries/topics. To resolve this, you can try:
+1. Use a different referer in request heade
 
 ======================================================================
 RESULTADO: 0 consultas con datos, 6 sin datos
