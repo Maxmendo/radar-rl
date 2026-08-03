@@ -1,21 +1,34 @@
 {
- "generado": "2026-08-03T11:26:24+00:00",
+ "generado": "2026-08-03T14:06:11+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "17fad9f3ea68": {
-   "id_hecho": "17fad9f3ea68",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1ZG05c25CdFRlV1FNUzlTUTNjdml3WFJNcVgxcmpEWld5STNNTGNwMFJWWEdlcFJRSThiRHBfSllwdi0zVEo5ZndKaUJSWmx4emlHS1FHNERPODdTOFE?oc=5",
-   "termino": "detencion migratoria",
-   "geo": "MX",
-   "titulo": "Reportan motín en la Estación Migratoria Siglo XXI de Tapachula, Chiapas; manifestantes incendian colchonetas",
+  "d5738564b718": {
+   "id_hecho": "d5738564b718",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeFRYa2gxMWZsekNPeXhBUFM4dzcyRlU5aHJ3VnBVSmRPc0RjWGRHeEhOc3RYUGVTUkl2Y1ZzVV9UX0dDTDZBTVJCLWdZZlRwUk9qb3FPVnhsN21VODduaFhrdHhHSVh3RG9JRFVEWVZGamdRcVZnUkdnUEp2UWtwWFlrQWFZczZPSGZCMW5CNlFUaXhaR3dic1FsdFExd3RoSHB3cm5POGlrZHNVYUtoMThuQzNuNjVSbTNyRHc1NVp2TFRmeThWdVlQVlBqeEJMdTFVY3NlZ9IB1wFBVV95cUxOeFRYa2gxMWZsekNPeXhBUFM4dzcyRlU5aHJ3VnBVSmRPc0RjWGRHeEhOc3RYUGVTUkl2Y1ZzVV9UX0dDTDZBTVJCLWdZZlRwUk9qb3FPVnhsN21VODduaFhrdHhHSVh3RG9JRFVEWVZGamdRcVZnUkdnUEp2UWtwWFlrQWFZczZPSGZCMW5CNlFUaXhaR3dic1FsdFExd3RoSHB3cm5POGlrZHNVYUtoMThuQzNuNjVSbTNyRHc1NVp2TFRmeThWdVlQVlBqeEJMdTFVY3NlZw?oc=5",
+   "termino": "darien",
+   "geo": "PA",
+   "titulo": "Cruce de migrantes por el Tapón del Darién cae drásticamente tras cierre de estación en Panamá",
    "importancia": 8,
-   "velocidad": 7,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
-   "ratio": null
+   "reciente": 44.9,
+   "base": 42.0,
+   "ratio": 1.07
+  },
+  "d68beeeb3d03": {
+   "id_hecho": "d68beeeb3d03",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOR1lNSE82SGM0eWotXzR5M21QWldYdGJTVEdGamdmYXJCbjY1aThCY1M0LXYzdEMwZjV5N1Q1bDBYYkd6VnhfT1lwYUNSU0dPSHdLWkxLU0RHUUowNW9tbHB5aERiLTlBV184Z2VOWHJhNVN6QmtYUkg3OElqSjYyTGJKY2tTSnlzazVrUEdFdDgzemVYc0xVSGI3ellNa1ROZTkxazBOd0E3cERrS1FoR0gyYjdkeUpidk5mbTNBMFFBaWROdzlGOGwxZDZ0SzdpcU9lNUFYaGtZZ0c5QVRtM29OUzdiNGFu?oc=5",
+   "termino": "migrantes",
+   "geo": "GB",
+   "titulo": "El Reino Unido informó que más de 2.000 inmigrantes cruzaron el Canal de la Mancha desde que Andy Burnham llegó al poder",
+   "importancia": 6,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 29.6,
+   "base": 2.3,
+   "ratio": 12.97
   }
  },
  "audiencia": {
@@ -23,13 +36,13 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1065700",
+     "valor": "1071400",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos migrantes",
-     "valor": "711350",
+     "consulta": "marruecos",
+     "valor": "701350",
      "tipo": "rising",
      "variantes": 0
     },
@@ -40,7 +53,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-03T11:26:15+00:00"
+   "medido": "2026-08-03T14:06:02+00:00"
   },
   "VE": {
    "consultas": [
@@ -64,24 +77,47 @@
     }
    ],
    "medido": "2026-08-03T11:26:20+00:00"
+  },
+  "CL": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "172600",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes chile",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes marroquíes en españa",
+     "valor": "135300",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-03T14:06:07+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 20.6,
-   "base": 5.7,
-   "ratio": 3.63
+   "reciente": 21.7,
+   "base": 5.8,
+   "ratio": 3.73
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 4,
-   "reciente": 17.7,
-   "base": 9.1,
-   "ratio": 1.95
+   "puntaje": 5,
+   "reciente": 19.1,
+   "base": 9.2,
+   "ratio": 2.07
   }
  },
  "alertas": []
