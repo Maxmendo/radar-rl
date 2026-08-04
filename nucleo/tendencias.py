@@ -417,11 +417,19 @@ def main() -> int:
         except json.JSONDecodeError:
             pass
 
+    # Solo geos dentro del alcance editorial (America Latina, Caribe, Norteamerica).
+    # Sin esto, un hecho de Espana con muchas busquedas generaba una alerta que no
+    # corresponde al foco del radar. El catalogo sale de fuentes.yaml.
+    en_alcance = set(
+        (cfg.get("paises_catalogo", {}).get("paises", {}) or {}).keys()
+    )
+
     nuevas = {
         d["id_hecho"]: {**d, "disparada": ahora.isoformat(timespec="seconds"),
                         "velocidad_inicial": d.get("velocidad")}
         for d in resultados.values()
         if d["puntaje"] >= umbral_alerta and (d.get("importancia") or 0) >= imp_minima
+        and (not en_alcance or d.get("geo") in en_alcance)
     }
 
     # Las alertas viejas se conservan y se les actualiza el desenlace. Un hecho
@@ -435,6 +443,8 @@ def main() -> int:
             continue
         if edad > horas_vivas:
             continue
+        if en_alcance and a.get("geo") not in en_alcance:
+            continue                       # descarta alertas fuera de alcance ya guardadas
         if a["id_hecho"] in nuevas:
             continue                       # se reemplaza por la version nueva
         hecho = todos.get(a["id_hecho"])
