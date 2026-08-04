@@ -1,25 +1,25 @@
-// docs/_worker.js
+﻿// docs/_worker.js
 // Worker en modo "static assets" (el modelo unificado de Cloudflare 2026).
 //
 // Toma control de TODAS las requests entrantes:
-//   - POST /generar-borrador  -> redacta el borrador y lo envía por correo
-//   - cualquier otra ruta      -> sirve el dashboard estático (env.ASSETS)
+//   - POST /generar-borrador  -> redacta el borrador y lo envÃ­a por correo
+//   - cualquier otra ruta      -> sirve el dashboard estÃ¡tico (env.ASSETS)
 //
-// Importante: si no reenviáramos lo demás a env.ASSETS, el dashboard dejaría
+// Importante: si no reenviÃ¡ramos lo demÃ¡s a env.ASSETS, el dashboard dejarÃ­a
 // de verse. Por eso el fallback final es obligatorio.
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // --- Endpoint del botón ---
+    // --- Endpoint del botÃ³n ---
     if (url.pathname === "/generar-borrador") {
       if (request.method === "OPTIONS") return preflight();
       if (request.method === "POST") return manejarBorrador(request, env);
-      return json({ ok: false, error: "Método no permitido" }, 405);
+      return json({ ok: false, error: "MÃ©todo no permitido" }, 405);
     }
 
-    // --- Todo lo demás: el dashboard y sus archivos estáticos ---
+    // --- Todo lo demÃ¡s: el dashboard y sus archivos estÃ¡ticos ---
     return env.ASSETS.fetch(request);
   },
 };
@@ -32,7 +32,7 @@ const DESTINATARIOS = [
   "contacto@refugiolatinoamericano.com",
 ];
 
-// Con Gmail común, el remitente debe ser la cuenta que autorizó el token.
+// Con Gmail comÃºn, el remitente debe ser la cuenta que autorizÃ³ el token.
 const REMITENTE = {
   email: "refugiolatinoamericano@gmail.com",
   nombre: "Radar Migratorio",
@@ -46,11 +46,11 @@ async function manejarBorrador(request, env) {
   try {
     hecho = await request.json();
   } catch {
-    return json({ ok: false, error: "Cuerpo inválido" }, 400);
+    return json({ ok: false, error: "Cuerpo invÃ¡lido" }, 400);
   }
 
   if (!hecho || !hecho.titulo) {
-    return json({ ok: false, error: "Falta el título del hecho" }, 400);
+    return json({ ok: false, error: "Falta el tÃ­tulo del hecho" }, 400);
   }
 
   let borrador;
@@ -62,20 +62,20 @@ async function manejarBorrador(request, env) {
 
   try {
     await enviarPorGmail({
-      asunto: `📝 Borrador: ${hecho.titulo}`,
+      asunto: `ðŸ“ Borrador: ${hecho.titulo}`,
       html: armarHtml(hecho, borrador),
       texto: `${hecho.titulo}\n\n${borrador}`,
       env,
     });
   } catch (e) {
-    return json({ ok: false, error: "Redactado, pero falló el envío: " + e.message }, 502);
+    return json({ ok: false, error: "Redactado, pero fallÃ³ el envÃ­o: " + e.message }, 502);
   }
 
   return json({ ok: true, mensaje: "Borrador enviado por correo." }, 200);
 }
 
 // ---------------------------------------------------------------------------
-// Redacción con cascada Gemini -> Claude -> Groq (usa las claves que existan)
+// RedacciÃ³n con cascada Gemini -> Claude -> Groq (usa las claves que existan)
 // ---------------------------------------------------------------------------
 async function redactar(hecho, env) {
   const prompt = construirPrompt(hecho);
@@ -94,7 +94,7 @@ async function redactar(hecho, env) {
     catch (e) { errores.push("Groq: " + e.message); }
   }
 
-  throw new Error("Ningún modelo respondió. " + errores.join(" | "));
+  throw new Error("NingÃºn modelo respondiÃ³. " + errores.join(" | "));
 }
 
 function construirPrompt(h) {
@@ -104,37 +104,37 @@ function construirPrompt(h) {
 
   return `Sos redactor/a de Refugio Latinoamericano, medio digital de periodismo migratorio desde una perspectiva de derechos humanos e intercultural.
 
-Redactá un BORRADOR de nota a partir del siguiente hecho detectado por el Radar Migratorio. Es un punto de partida editable para el equipo, no una nota final.
+RedactÃ¡ un BORRADOR de nota a partir del siguiente hecho detectado por el Radar Migratorio. Es un punto de partida editable para el equipo, no una nota final.
 
 HECHO:
-- Título original: ${h.titulo}
-- Ángulo sugerido: ${h.angulo || "s/d"}
-- Países: ${paises}
-- Región: ${h.region || "s/d"}
+- TÃ­tulo original: ${h.titulo}
+- Ãngulo sugerido: ${h.angulo || "s/d"}
+- PaÃ­ses: ${paises}
+- RegiÃ³n: ${h.region || "s/d"}
 - Medios que lo cubrieron: ${medios}
-- Ejes temáticos: ${ejes}
+- Ejes temÃ¡ticos: ${ejes}
 - Enlace de referencia: ${h.url || "s/d"}
 
 PAUTAS EDITORIALES OBLIGATORIAS:
-- Aplicá la guía de ACNUR para cobertura no estigmatizante de la migración.
-- No reduzcas a las personas a su condición migratoria. Prohibido "un migrante", "ilegales".
-- Enmarcá desde derechos humanos. No criminalices ni deshumanices.
-- No inventes datos, cifras ni declaraciones que no estén en el material fuente. Si falta algo, marcá "[verificar]".
-- Cerrá con "Pendientes de verificación" y "Fuentes a consultar".
+- AplicÃ¡ la guÃ­a de ACNUR para cobertura no estigmatizante de la migraciÃ³n.
+- No reduzcas a las personas a su condiciÃ³n migratoria. Prohibido "un migrante", "ilegales".
+- EnmarcÃ¡ desde derechos humanos. No criminalices ni deshumanices.
+- No inventes datos, cifras ni declaraciones que no estÃ©n en el material fuente. Si falta algo, marcÃ¡ "[verificar]".
+- CerrÃ¡ con "Pendientes de verificaciÃ³n" y "Fuentes a consultar".
 
 FORMATO:
-1. Título propuesto
+1. TÃ­tulo propuesto
 2. Bajada (1-2 oraciones)
-3. Cuerpo (3-5 párrafos)
-4. Pendientes de verificación
+3. Cuerpo (3-5 pÃ¡rrafos)
+4. Pendientes de verificaciÃ³n
 5. Fuentes a consultar
 
-Español rioplatense, tono sobrio y riguroso.`;
+EspaÃ±ol rioplatense, tono sobrio y riguroso.`;
 }
 
 async function viaGemini(prompt, key) {
   const r = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${key}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -144,7 +144,7 @@ async function viaGemini(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!txt) throw new Error("respuesta vacía");
+  if (!txt) throw new Error("respuesta vacÃ­a");
   return txt;
 }
 
@@ -165,7 +165,7 @@ async function viaClaude(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.content?.map((b) => b.text || "").join("").trim();
-  if (!txt) throw new Error("respuesta vacía");
+  if (!txt) throw new Error("respuesta vacÃ­a");
   return txt;
 }
 
@@ -184,12 +184,12 @@ async function viaGroq(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.choices?.[0]?.message?.content;
-  if (!txt) throw new Error("respuesta vacía");
+  if (!txt) throw new Error("respuesta vacÃ­a");
   return txt;
 }
 
 // ---------------------------------------------------------------------------
-// Envío vía API de Gmail (cuenta común + refresh token OAuth)
+// EnvÃ­o vÃ­a API de Gmail (cuenta comÃºn + refresh token OAuth)
 // Secrets: GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN
 // ---------------------------------------------------------------------------
 async function enviarPorGmail({ asunto, html, texto, env }) {
@@ -275,13 +275,13 @@ function armarHtml(h, borrador) {
 
   return `<div style="font-family:Georgia,serif;max-width:640px;margin:auto;color:#1a1a1a">
     <div style="border-left:4px solid #c0392b;padding-left:16px;margin-bottom:24px">
-      <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#888;margin:0">Radar Migratorio · Borrador automático</p>
+      <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#888;margin:0">Radar Migratorio Â· Borrador automÃ¡tico</p>
       <h1 style="font-size:22px;margin:8px 0 0">${escapar(h.titulo)}</h1>
     </div>
     ${cuerpo}
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0">
-    <p style="font-size:12px;color:#999">Medios: ${escapar(medios)}${h.url ? ` · <a href="${escapar(h.url)}">enlace de referencia</a>` : ""}</p>
-    <p style="font-size:12px;color:#999">Borrador editable generado automáticamente. Verificá antes de publicar.</p>
+    <p style="font-size:12px;color:#999">Medios: ${escapar(medios)}${h.url ? ` Â· <a href="${escapar(h.url)}">enlace de referencia</a>` : ""}</p>
+    <p style="font-size:12px;color:#999">Borrador editable generado automÃ¡ticamente. VerificÃ¡ antes de publicar.</p>
   </div>`;
 }
 
