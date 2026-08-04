@@ -1,20 +1,20 @@
 {
- "generado": "2026-08-04T02:32:05+00:00",
+ "generado": "2026-08-04T05:48:34+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "1b7c0580ba59": {
-   "id_hecho": "1b7c0580ba59",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMWhPMUV1U1VWaHIyRExCVTNBblZkaUN4dC1pLWR1QkZ0dnVybWFKMDlXWHRlSkRRbmIzUldZeFpvX25ybXc1LUdKVU1LbDJBaE96S3pycGVkU3hhNXNHX3p4N3NPMTVubUNEX0JWa2RxTUNDTnFqeFFHaEZ5cXJqRWRIaWpGUGp5U0J5TzV2VDlya3p4M0Z5LUJhMG90ellVbFBTMjRRU0E2eVly?oc=5",
+  "c4905080feb3": {
+   "id_hecho": "c4905080feb3",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQ2RRaHM2d0NoR0FkMFVxQWUwREpiVlVFY3BrRXhRaTFoYjY4SVgwT3lrYkJTOUdPWnFlR0tiaXFXbldYaGsxdVdCSWxfazB4QmRwQTd0eFRmUFVOVThaSmp0SkJNYkRRcHotYTRIUlB4dEMzWGtRVGk0TE43YWhNT0dxcEFtVVVNaUdHU0lYcExERldmWmFjVnNoSzFqc1E2WFdCTG9qa2RodjdYcVpFOTJXT2Z5SkVYMWF1bnUwOTRRNERrOXc?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "EE. UU. envió un avión con 147 deportados a Venezuela por primera vez desde los sismos",
+   "titulo": "Muere migrante de El Salvador bajo custodia de ICE en centro de detención en Estados Unidos",
    "importancia": 9,
-   "velocidad": 3,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 10.9,
-   "base": 3.2,
+   "reciente": 14.7,
+   "base": 5.8,
    "ratio": null
   },
   "2276803863cc": {
@@ -26,8 +26,21 @@
    "importancia": 8,
    "velocidad": 5,
    "puntaje": 0,
-   "reciente": 10.9,
-   "base": 3.2,
+   "reciente": 14.7,
+   "base": 5.8,
+   "ratio": null
+  },
+  "4b4f36c43b4c": {
+   "id_hecho": "4b4f36c43b4c",
+   "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOWkptUDRpWC1zaWo5OFZZM3JyLWJnYnFKZUdpcDJyZE51eDAxSFRIY3JTc0s4RHcwZXlObkdtbnFrRTdid20zT0VZZlFKU0xfRXVlZk9ScWo4ZWtIUDBLYTVvVTNjXzY0VHQxVXhwQjYyRUpxY2d4TW1YYlg3TzVOV3FRY3B1UnBteHlaV0VReElneUp5d25JUm9NU1prSUZfYlFfQ2Y3V25TUXc3REFpWk12bWl0WlkyV2s1bUI2cC1ZaVBSeU5PSEVFUmF5RHJyc2paNEZra2tyM0RlM2R1QWU4WG8tSlNHWGh1MkhMQ0RxcmtlVEpkNGRlalY2N0kzTkc0Q3BGSFhVVFhyTEd1UVZMTnhaaEluVDlrYUgwelRfaGpYX3fSAasCQVVfeXFMTVA0VEpCVDBYN21FdkRDa3YxXzA3Mlo0N2ZQMzJMLVJ0MU1FQUNSTVhTb0F0S1NiOW1ITmRyZm9aQ0szXzUyNGZsaEJ0YWZKX2Y0Q21neU9pbnlOUlZoZnZKNTMwQ0d6aTc2VV94UFRBYm43ejNfS3FWZTZVM3lrUWE4YWx0aTJUbFdxMG04ZXBWLU9vaVAybHM3RFVWLWZINGlONnE3QWM3cHBqRFhnUUJENHEyQXhvWUtZa3AwbGNwdkUtSHBfQ2piWF8wbW1vbjY0V3FYVUdHME16NlJOLU1ySWc4M3ViMmx3SkxMRzVFMWR1dGZXUDFJUXVYRWxna29BMnJLbHJTbHBhWWk0V1ZDQmNqRHZtTWExZWNIUVZVbU10dzhYMVBlZEE?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "ALERTA MÁXIMA, inmigrantes legales e indocumentados en EE. UU.: en julio, los ARRESTOS de ICE se intensificaron y alcanzaron su nivel más alto",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 14.7,
+   "base": 5.8,
    "ratio": null
   },
   "06f7573027ac": {
@@ -39,21 +52,8 @@
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
+   "reciente": 0.4,
    "base": 0.0,
-   "ratio": null
-  },
-  "d17cbcedac00": {
-   "id_hecho": "d17cbcedac00",
-   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOczV6NWdxZVU4bjRYdEFmeTRNcXVUTmgxblBwbVlVZUR0dUd4cEZadWNGWFlLZGdndEQ5NGJHTmtnOFFjc0RydjVYd0lXUlhnRFowdFc3WTUyek9iVmRpa184QVJEQ3lhcWJMQlZzYi12U04wd1hZZldta1NVTE44LWMwd1lzUEgzSG1oNVE2cTZNaVZQNTJoTnlnYnMxSkpaZ05FLTdqV3czSTcycHhkMElsaUtPNUN4RXVMT3ZIanFCcE5HOHhDVTdndFExXzhJZUw5S3d5aENKU29LN0NDMWRxLWVpRW0xT2VlMzJIUjZQVFRNWlJyZ2dUTTYyWjFFUXdlODZFWFQ3QklOSHpYSUZGZ9IBmAJBVV95cUxORVZyNGFEbFNRYXVQbEI0OWQzcWQwNHpuQWNWOEJQX2FaYnRjT3NDQkY1S0VaMDlZSjQ1Sjg1TDJkelR1UkJ6Ym50c3RPaTluUkk2a21EdFhoaXl2Ym84TzFDYWllLXkzUEVMWXRKU0ZPdnZBN053S2ItSFNjLW5qb01wWDF3NzZtU1RaT0xXUUVkWjF5R05QbUlvN1RHVE9JdGM3T0kwMTd0WjdRalpvR1hkZ3NLT013dkREbWpxaUZHY0c0QkFENGJDLWdKQUFtRXFCQk9JbDJ4M1hZTDhyY01VTTdUU0xUaGFpekRTTFBNanpWMzVMSThNMnVQNUR5aWhsZmpzZC1wSndfcVpnVXUwM0Y5dHdK?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "ALERTA MÁXIMA, inmigrantes legales e indocumentados en EE. UU.: \"Mamá, ayúdame\", gritó un joven al ser DETENIDO por ICE en Glendale",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 10.9,
-   "base": 3.2,
    "ratio": null
   },
   "56bf595c4098": {
@@ -65,9 +65,9 @@
    "importancia": 7,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 18.3,
-   "base": 35.8,
-   "ratio": 0.51
+   "reciente": 20.6,
+   "base": 35.7,
+   "ratio": 0.58
   }
  },
  "audiencia": {
@@ -181,22 +181,25 @@
    "medido": "2026-08-04T02:32:01+00:00"
   }
  },
- "proximo_pais": 6,
- "paises_sin_datos": [],
+ "proximo_pais": 0,
+ "paises_sin_datos": [
+  "AR",
+  "ES"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 17.6,
-   "base": 4.9,
-   "ratio": 3.62
+   "reciente": 34.1,
+   "base": 10.2,
+   "ratio": 3.36
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 15.1,
-   "base": 5.2,
-   "ratio": 2.9
+   "puntaje": 10,
+   "reciente": 22.0,
+   "base": 7.1,
+   "ratio": 3.08
   }
  },
  "alertas": []
