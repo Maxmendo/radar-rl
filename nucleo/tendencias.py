@@ -59,7 +59,7 @@ SALIDA = RAIZ / "datos" / "tendencias.json"
 
 LOTE = 5              # tope de terminos por consulta que admite Google Trends
 BIBLIOTECA = "trendspy"   # pytrends esta archivado desde abril de 2025
-ESPERA = 3            # segundos entre consultas
+ESPERA = 5            # segundos entre consultas (subido de 3 para evitar 429 de Google)
 FALLOS_SEGUIDOS = 3   # si tantas fallan seguidas, se abandona en vez de gastar minutos
 MAX_HECHOS = 15       # tope de seguridad si `interes` creciera mucho
 
@@ -297,7 +297,7 @@ def main() -> int:
 
     try:
         from trendspy import Trends
-        cliente = Trends(hl="es", tz=180, request_delay=2.0)
+        cliente = Trends(hl="es", tz=180, request_delay=4.0)
     except Exception as e:
         log.warning("trendspy no disponible (%s); panel vacio", type(e).__name__)
         SALIDA.write_text(json.dumps(vacio(f"trendspy: {type(e).__name__}"),

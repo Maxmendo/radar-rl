@@ -53,6 +53,9 @@ body{margin:0;padding:0 0 4rem;background:var(--fondo);color:var(--tinta);
 header{background:var(--rojo);color:#fff;padding:1.9rem 0 1.6rem;margin-bottom:1.6rem;
   position:relative;overflow:hidden}
 header .trama{position:absolute;right:-30px;top:0;height:100%;width:210px;opacity:.22}
+header .marca-fila{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+header .logo{height:56px;width:auto;color:#fff;flex:none}
+header .titulo{border-left:2px solid rgba(255,255,255,.4);padding-left:1.4rem}
 header h1{font-size:1.75rem;font-weight:800;margin:0;letter-spacing:-.015em;
   position:relative;z-index:1}
 header .bajada{font-size:1rem;font-weight:400;margin:.15rem 0 0;opacity:.94;
@@ -255,9 +258,13 @@ footer b{color:var(--tinta)}
     </g>
   </svg>
   <div class="c">
-    <h1>Radar Migratorio</h1>
-    <p class="bajada">Alertas de noticias sobre movilidad humana</p>
-    <p class="marca">Una herramienta de Refugio Latinoamericano</p>
+    <div class="marca-fila">
+      <img class="logo" src="logo-refugio.svg" alt="Refugio Latinoamericano" width="240" height="71">
+      <div class="titulo">
+        <h1>Radar Migratorio</h1>
+        <p class="bajada">Alertas de noticias sobre movilidad humana</p>
+      </div>
+    </div>
   </div>
 </header>
 
