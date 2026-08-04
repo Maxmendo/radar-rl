@@ -351,8 +351,7 @@ async function pedirBorrador(boton){
     }else{
       boton.classList.remove('enviando'); boton.classList.add('err');
       boton.textContent='✗ Error — reintentar';
-      alert('No se pudo generar el borrador:
-'+(data.error||'error desconocido'));
+      alert('No se pudo generar el borrador. '+(data.error||'error desconocido'));
     }
   }catch(e){
     boton.classList.remove('enviando'); boton.classList.add('err');
