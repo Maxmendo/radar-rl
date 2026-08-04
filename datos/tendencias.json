@@ -1,86 +1,21 @@
 {
- "generado": "2026-08-04T11:25:27+00:00",
+ "generado": "2026-08-04T14:13:10+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "69ed00436703": {
-   "id_hecho": "69ed00436703",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPcTVSMVpVOC10bENwX1N4R3lmd0xhdFFsbmZtS1hhMm53LUM2cHdqamp3SVJNd2tTdDdFUk1XTmZ6MG1yc1dYcWxSY0JCUmJwcWlkV2tTZTctc1I2aFlwd0djN2QtSThLQXdMWkpWY0s2bDNFbERYUUotbVRXVFgtM0h2Tmh2ZmFINU9odnhxb1VlS0xFR0t5ckU2MkNNcC1vZHkxbmR5cEVoZ1p3Mk9kSWJQZTlPd2RVN3YtX1d5TnZrYWRBUEl2WG0yWXhiSllkUk8yZmU2cDd5ZUk2YWVYR1JmS1ZIY3lMM2NHMVVFTjZueHp2?oc=5",
-   "termino": "naufragio",
-   "geo": "ES",
-   "titulo": "Dos migrantes ingresados tras ser rescatados en Mallorca de una patera en la que viajaban 19 desaparecidos - El Imparcial",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.9,
-   "base": 1.6,
-   "ratio": null
-  },
-  "e7bd85f83656": {
-   "id_hecho": "e7bd85f83656",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNV1VOUHluUjhWZ0RtZWJwR2R0T3BjWVBEeEp0eVRwNWs4bGxhNHloSWJtTHV4TVpobWhJbFZQenFWaHpzQjNSbUdQSjUyVmhsM2Q4ZEZRLUprRGpPaHVPVHc5WmRFTFhFQzA3ZzFrNWVlenNoMjBIZzN2MGxyZ3RSTGprOTA5SHU1M3h3MWdaOTZiaGV1OV9hVkdGWnk5ZFgtN3RJNHZJQXQzQkpiMG96UWQzMm1DVVU4cEpLSVgyLXlZSWluUzJhU3paMWtoYm5ZNTZvOTdJMjQzT19LLVF0dERBakR0M2J3RjhCX3dSQldYbVhfdjBv0gGSAkFVX3lxTE4wanplRnRiWXhhdmxzbk5RNmlyOEdTaXNYNXhQSGl5MEhaOWg5TGZXaXRsVEluTnNBcUlfZUFHZjY5czBMbjVNTkY4Ql9YOVZkSWpIbHJwR1lxTmc4ZkRpbXdmakpRUFNMSUFpbmh0VFJPSHR5V2lzRFF6OG8zdS05OFkwc2dCcGFEU3RnU1hjbzFrT3BRU0J6VThkNDc5bXBUM0x4QVcwTnRQdzdDUUpqcjdON3lUSFBSVVhsbTVUYzFlajNxQUR4c0hSNTFKaGRKdkc1a0JiMHo3RXd0Nk1VYTNVcHMzTlo2OWFjNV82ZXBYbGtUcUVWbFJYMW82MGYxSkZZdmE4cmU5SWlCbzdBOWc?oc=5",
-   "termino": "regularizacion",
-   "geo": "ES",
-   "titulo": "La regularización extraordinaria impulsa el empleo en julio hasta un récord de afiliados e impacta en el paro de extranjeros",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 17.7,
-   "base": 30.6,
-   "ratio": 0.58
-  },
-  "c4905080feb3": {
-   "id_hecho": "c4905080feb3",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQ2RRaHM2d0NoR0FkMFVxQWUwREpiVlVFY3BrRXhRaTFoYjY4SVgwT3lrYkJTOUdPWnFlR0tiaXFXbldYaGsxdVdCSWxfazB4QmRwQTd0eFRmUFVOVThaSmp0SkJNYkRRcHotYTRIUlB4dEMzWGtRVGk0TE43YWhNT0dxcEFtVVVNaUdHU0lYcExERldmWmFjVnNoSzFqc1E2WFdCTG9qa2RodjdYcVpFOTJXT2Z5SkVYMWF1bnUwOTRRNERrOXc?oc=5",
-   "termino": "detencion migratoria",
-   "geo": "US",
-   "titulo": "Muere migrante de El Salvador bajo custodia de ICE en centro de detención en Estados Unidos",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "4b4f36c43b4c": {
-   "id_hecho": "4b4f36c43b4c",
-   "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOWkptUDRpWC1zaWo5OFZZM3JyLWJnYnFKZUdpcDJyZE51eDAxSFRIY3JTc0s4RHcwZXlObkdtbnFrRTdid20zT0VZZlFKU0xfRXVlZk9ScWo4ZWtIUDBLYTVvVTNjXzY0VHQxVXhwQjYyRUpxY2d4TW1YYlg3TzVOV3FRY3B1UnBteHlaV0VReElneUp5d25JUm9NU1prSUZfYlFfQ2Y3V25TUXc3REFpWk12bWl0WlkyV2s1bUI2cC1ZaVBSeU5PSEVFUmF5RHJyc2paNEZra2tyM0RlM2R1QWU4WG8tSlNHWGh1MkhMQ0RxcmtlVEpkNGRlalY2N0kzTkc0Q3BGSFhVVFhyTEd1UVZMTnhaaEluVDlrYUgwelRfaGpYX3fSAasCQVVfeXFMTVA0VEpCVDBYN21FdkRDa3YxXzA3Mlo0N2ZQMzJMLVJ0MU1FQUNSTVhTb0F0S1NiOW1ITmRyZm9aQ0szXzUyNGZsaEJ0YWZKX2Y0Q21neU9pbnlOUlZoZnZKNTMwQ0d6aTc2VV94UFRBYm43ejNfS3FWZTZVM3lrUWE4YWx0aTJUbFdxMG04ZXBWLU9vaVAybHM3RFVWLWZINGlONnE3QWM3cHBqRFhnUUJENHEyQXhvWUtZa3AwbGNwdkUtSHBfQ2piWF8wbW1vbjY0V3FYVUdHME16NlJOLU1ySWc4M3ViMmx3SkxMRzVFMWR1dGZXUDFJUXVYRWxna29BMnJLbHJTbHBhWWk0V1ZDQmNqRHZtTWExZWNIUVZVbU10dzhYMVBlZEE?oc=5",
-   "termino": "redadas ICE",
-   "geo": "US",
-   "titulo": "ALERTA MÁXIMA, inmigrantes legales e indocumentados en EE. UU.: en julio, los ARRESTOS de ICE se intensificaron y alcanzaron su nivel más alto",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 19.3,
-   "base": 6.1,
-   "ratio": 3.16
-  },
-  "98abc9a88a50": {
-   "id_hecho": "98abc9a88a50",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNTXZFcEQ5UXBkNWU4b2h3anNlVTFVam1XcmxDU3pNSHJRbTh6UGplRV9idkZVRUZBNUl2N0NCajM2aG8wekctMWpRcktmTThJcS1xdzIzMnJ1U1p2YUZSUUtPNlZkZllmVy02RDhBLUdtZUtoNmUxLVFHVFRfUl9oVzhOR1I2RFJMeHRkbEtIMVR5Y2l6dkFqUzdMc1FzRnBnQ1RpMGRJNmpDbGtXblFISlRYa0ZfUDlDbDg4d2ZoRXlyQk4xNmFqTW1vLVBMTlpCaGoxZlFtenNEaEM4UEYxYnRvQ0wyOHNiVjNxTmMtUVJVQQ?oc=5",
-   "termino": "centros de detencion",
-   "geo": "US",
-   "titulo": "Avanza el ICE en Miami: buscan sumar 700 nuevas camas en centros de detención de migrantes",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.6,
-   "base": 0.6,
-   "ratio": null
-  },
-  "06f7573027ac": {
-   "id_hecho": "06f7573027ac",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2xKLUJDbmVpWkt1dkN4T2dBOXdRMVJ5TmVmYU1fajl6SV85TXA5RDBHV1pRSmMzeDlNMWRseE9FY0RadlBHdlJ0QjJOMVN6d2JjWHJMU0tVZEFaR1JtWnZKdVM3azhLOW1ya0dWU3NfVk1NY0dIR1p4eHVDcmhtR0hOcGxwSWM1aGhBbDYxSkxxdEZaTXBNTEpLOXRPV3V2LTlmcHJSSGRWU1RadjEtVi1DUlVfUHdka3BhRGNDMHBsUQ?oc=5",
-   "termino": "menores no acompanados",
-   "geo": "US",
-   "titulo": "PODCAST: ¿Qué se sabe del cierre del programa de defensa legal para menores inmigrantes no acompañados?",
-   "importancia": 8,
+  "b67dc90fc8aa": {
+   "id_hecho": "b67dc90fc8aa",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPekRhbHo0S2hNTnBaR2tlWFh3UU1VS3EybTZLdFdTME93SERJSE16eHJzaS11NHJxWUZ6cy1iODV0VVNaQk5xZXI1bUFZV2NHUElmY0ZMZWRKcHVWa0RYRlBHTDhMU3YtcGNGS2NDdERGRWc2NUpuakN0OTk2S05JclZycFA3a3VnRHIyRVk1Yk5rcUxkR3lwbkJ1RmNnQ2FwQnJ2b2F2X2dyRjl5SHdHY2VfV01raDU2aFAwNzJaNkdZcDAtdTVmUXNCaVNOQQ?oc=5",
+   "termino": "migraciones",
+   "geo": "AR",
+   "titulo": "Milei veta la entrada a extranjeros que “hayan dirigido mensajes de odio al pueblo argentino”",
+   "importancia": 10,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
+   "reciente": 61.0,
+   "base": 60.4,
+   "ratio": 1.01
   }
  },
  "audiencia": {
@@ -194,7 +129,7 @@
    "medido": "2026-08-04T02:32:01+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -228,7 +163,7 @@
    "disparada": "2026-08-04T11:25:27+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 2.8
   }
  ]
 }
