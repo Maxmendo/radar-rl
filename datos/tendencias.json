@@ -1,73 +1,21 @@
 {
- "generado": "2026-08-04T05:48:34+00:00",
+ "generado": "2026-08-04T08:38:16+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "c4905080feb3": {
-   "id_hecho": "c4905080feb3",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQ2RRaHM2d0NoR0FkMFVxQWUwREpiVlVFY3BrRXhRaTFoYjY4SVgwT3lrYkJTOUdPWnFlR0tiaXFXbldYaGsxdVdCSWxfazB4QmRwQTd0eFRmUFVOVThaSmp0SkJNYkRRcHotYTRIUlB4dEMzWGtRVGk0TE43YWhNT0dxcEFtVVVNaUdHU0lYcExERldmWmFjVnNoSzFqc1E2WFdCTG9qa2RodjdYcVpFOTJXT2Z5SkVYMWF1bnUwOTRRNERrOXc?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Muere migrante de El Salvador bajo custodia de ICE en centro de detención en Estados Unidos",
+  "69ed00436703": {
+   "id_hecho": "69ed00436703",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPcTVSMVpVOC10bENwX1N4R3lmd0xhdFFsbmZtS1hhMm53LUM2cHdqamp3SVJNd2tTdDdFUk1XTmZ6MG1yc1dYcWxSY0JCUmJwcWlkV2tTZTctc1I2aFlwd0djN2QtSThLQXdMWkpWY0s2bDNFbERYUUotbVRXVFgtM0h2Tmh2ZmFINU9odnhxb1VlS0xFR0t5ckU2MkNNcC1vZHkxbmR5cEVoZ1p3Mk9kSWJQZTlPd2RVN3YtX1d5TnZrYWRBUEl2WG0yWXhiSllkUk8yZmU2cDd5ZUk2YWVYR1JmS1ZIY3lMM2NHMVVFTjZueHp2?oc=5",
+   "termino": "migrantes desaparecidos",
+   "geo": "ES",
+   "titulo": "Dos migrantes ingresados tras ser rescatados en Mallorca de una patera en la que viajaban 19 desaparecidos - El Imparcial",
    "importancia": 9,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 14.7,
-   "base": 5.8,
-   "ratio": null
-  },
-  "2276803863cc": {
-   "id_hecho": "2276803863cc",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWEoyRXp6bUI2ZnpPZjBWaDhMOGxNOVJqV3pueG9pZTVBX2lZR3JiTFM2cmY5ZmZQZFF2ZE9TV2RWWlNILWltQXBQS3k0SE5IQmVBbVVENkQ1VkZ1aHVQWDU4NDNLRlptYV9haVJqT3J2UWJRVDlSbWJXR1BUcW9RWjV5eWp1UVFQNkNRTWRUSUh5aWNjalgzNUw0bklYWHFDZjhWUmdkaGJkVGR4M282X25CbFdLTW9JSlk4dWJEdEpYb1RjaG9La01iV0c5LUlFaVFYNlRwMmswS09ydnFXZA?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "#SOSCuba: #MaríaElvira Salzar hace una advertencia a migrantes con I-220A, mientras aumentan las deportaciones en #EEUU y unos cuarenta cubanos se amotinan en un centro de detención para inmigrantes en #México. LEE MÁS en #DiarioDeCuba LIN",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 14.7,
-   "base": 5.8,
-   "ratio": null
-  },
-  "4b4f36c43b4c": {
-   "id_hecho": "4b4f36c43b4c",
-   "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOWkptUDRpWC1zaWo5OFZZM3JyLWJnYnFKZUdpcDJyZE51eDAxSFRIY3JTc0s4RHcwZXlObkdtbnFrRTdid20zT0VZZlFKU0xfRXVlZk9ScWo4ZWtIUDBLYTVvVTNjXzY0VHQxVXhwQjYyRUpxY2d4TW1YYlg3TzVOV3FRY3B1UnBteHlaV0VReElneUp5d25JUm9NU1prSUZfYlFfQ2Y3V25TUXc3REFpWk12bWl0WlkyV2s1bUI2cC1ZaVBSeU5PSEVFUmF5RHJyc2paNEZra2tyM0RlM2R1QWU4WG8tSlNHWGh1MkhMQ0RxcmtlVEpkNGRlalY2N0kzTkc0Q3BGSFhVVFhyTEd1UVZMTnhaaEluVDlrYUgwelRfaGpYX3fSAasCQVVfeXFMTVA0VEpCVDBYN21FdkRDa3YxXzA3Mlo0N2ZQMzJMLVJ0MU1FQUNSTVhTb0F0S1NiOW1ITmRyZm9aQ0szXzUyNGZsaEJ0YWZKX2Y0Q21neU9pbnlOUlZoZnZKNTMwQ0d6aTc2VV94UFRBYm43ejNfS3FWZTZVM3lrUWE4YWx0aTJUbFdxMG04ZXBWLU9vaVAybHM3RFVWLWZINGlONnE3QWM3cHBqRFhnUUJENHEyQXhvWUtZa3AwbGNwdkUtSHBfQ2piWF8wbW1vbjY0V3FYVUdHME16NlJOLU1ySWc4M3ViMmx3SkxMRzVFMWR1dGZXUDFJUXVYRWxna29BMnJLbHJTbHBhWWk0V1ZDQmNqRHZtTWExZWNIUVZVbU10dzhYMVBlZEE?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "ALERTA MÁXIMA, inmigrantes legales e indocumentados en EE. UU.: en julio, los ARRESTOS de ICE se intensificaron y alcanzaron su nivel más alto",
-   "importancia": 8,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 14.7,
-   "base": 5.8,
+   "reciente": 0.0,
+   "base": 3.0,
    "ratio": null
-  },
-  "06f7573027ac": {
-   "id_hecho": "06f7573027ac",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2xKLUJDbmVpWkt1dkN4T2dBOXdRMVJ5TmVmYU1fajl6SV85TXA5RDBHV1pRSmMzeDlNMWRseE9FY0RadlBHdlJ0QjJOMVN6d2JjWHJMU0tVZEFaR1JtWnZKdVM3azhLOW1ya0dWU3NfVk1NY0dIR1p4eHVDcmhtR0hOcGxwSWM1aGhBbDYxSkxxdEZaTXBNTEpLOXRPV3V2LTlmcHJSSGRWU1RadjEtVi1DUlVfUHdka3BhRGNDMHBsUQ?oc=5",
-   "termino": "menores no acompañados",
-   "geo": "US",
-   "titulo": "PODCAST: ¿Qué se sabe del cierre del programa de defensa legal para menores inmigrantes no acompañados?",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.4,
-   "base": 0.0,
-   "ratio": null
-  },
-  "56bf595c4098": {
-   "id_hecho": "56bf595c4098",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUXVZd21aVE9EX2x4Vi1tWDlwM0xvZ1NpQjIxRmprRVFERU5LQ2ZLX0JUV0MyZFduU2tsY2p0aS1fWV9fS1BnQWhPTENOMU9hQ0kyZEpJVE93YTg1dWlQa3NRVVY2cndWQ1JVcXI3OHZWTExBVHBIa05mQlR2WW5PTWZjdHFzX3Y3dThwXzFidXpiR1JKX2pMbHpWRDFzSTNydHFDb2ZzRlBCQndfN1h2WmZxYmJycWhub1VORmhmajZ1cHZWMkI0LTJva0xjV1hDSU1kQmRRd1JCSi0zZE8xcnpzZ3pVN1U2eVBoTkdR0gGCAkFVX3lxTE1NdEpjWDBMYzhxRjJHZk8wNkRRd3ROWWg4bXpNV2IzTXo0S1BGVUZCUDlqczNrenBKQW1YNEM2V3FOSFZBbzAyU09rdVhZY2hYaFFIMnNMdmZhUk1FMVV1RUdKTmxXY1V2d2dFOUt5ZlFVVGJsbmp1NzFxLUVRRUJlMGtpRWlpellzbGtHYjBFWkZULXFLeEFQQVRSMzhGMXpSdGN0WW94M1VBa3pralVYWEFNRzYtM19kQ21HUzdzMXFkbTctaFViem0tM3Y0b083M2RBaHR3bkxmbkJtblFyakNkLTU3V3B2VEl3YTVlb2FINEt5dzZud1ZTQlVHN1pnQQ?oc=5",
-   "termino": "remesas",
-   "geo": "US",
-   "titulo": "Las remesas a México resisten las restricciones de Trump a los migrantes en el sistema financiero de EE UU",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 20.6,
-   "base": 35.7,
-   "ratio": 0.58
   }
  },
  "audiencia": {
@@ -181,11 +129,8 @@
    "medido": "2026-08-04T02:32:01+00:00"
   }
  },
- "proximo_pais": 0,
- "paises_sin_datos": [
-  "AR",
-  "ES"
- ],
+ "proximo_pais": 1,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
