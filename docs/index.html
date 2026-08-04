@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
@@ -99,7 +99,7 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .abrir{font:inherit;font-size:.8rem;font-weight:600;padding:.34rem .8rem;cursor:pointer;
   background:var(--tarjeta);color:var(--suave);border:1px solid var(--linea);
   border-radius:99px;display:flex;align-items:center;gap:.35rem}
-.abrir::after{content:"▾";font-size:.7rem;transition:transform .15s}
+.abrir::after{content:"â–¾";font-size:.7rem;transition:transform .15s}
 .abrir[aria-expanded="true"]{color:var(--rojo);border-color:var(--rosa-claro)}
 .abrir[aria-expanded="true"]::after{transform:rotate(180deg)}
 .abrir #cuenta:not(:empty){background:var(--rojo);color:#fff;border-radius:99px;
@@ -112,7 +112,7 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
 .activos button{font:inherit;font-size:.76rem;padding:.22rem .5rem .22rem .62rem;
   cursor:pointer;background:var(--rojo);color:#fff;border:none;border-radius:99px;
   display:flex;align-items:center;gap:.3rem}
-.activos button::after{content:"×";font-size:.95rem;line-height:1;opacity:.85}
+.activos button::after{content:"Ã—";font-size:.95rem;line-height:1;opacity:.85}
 .resultado{font-size:.79rem;color:var(--tenue);margin-left:auto}
 .filtros{margin:0 0 1.3rem;padding:.9rem 1rem;background:var(--tarjeta);
   border:1px solid var(--linea);border-radius:9px}
@@ -279,23 +279,23 @@ footer b{color:var(--tinta)}
   </aside>
 </div>
 <footer>
-<b>Cómo leerlo.</b> Cada fila es un <i>hecho</i>, no una nota: si veinte medios publican
+<b>CÃ³mo leerlo.</b> Cada fila es un <i>hecho</i>, no una nota: si veinte medios publican
 sobre el mismo decreto, es un hecho con veinte medios. La cantidad de medios distintos
-es la <b>velocidad</b>, y define en qué luz del semáforo está.<br>
-Cada medio listado abajo del título es un enlace directo a su publicación, para chequear
+es la <b>velocidad</b>, y define en quÃ© luz del semÃ¡foro estÃ¡.<br>
+Cada medio listado abajo del tÃ­tulo es un enlace directo a su publicaciÃ³n, para chequear
 cualquiera de las fuentes.<br>
-Los países con <span class="et inferido">borde punteado</span> son inferidos de la
-búsqueda, no del titular: menos confiables.<br>
-Cada hecho de la región muestra el dato de <b>búsquedas</b> en Google, de 0 a 10:
-↑ si están subiendo, → si se mueven poco, — si están planas, <i>s/d</i> si todavía no
-se midió (Google limita las consultas por día). <b>No altera el orden</b>, que lo da la
+Los paÃ­ses con <span class="et inferido">borde punteado</span> son inferidos de la
+bÃºsqueda, no del titular: menos confiables.<br>
+Cada hecho de la regiÃ³n muestra el dato de <b>bÃºsquedas</b> en Google, de 0 a 10:
+â†‘ si estÃ¡n subiendo, â†’ si se mueven poco, â€” si estÃ¡n planas, <i>s/d</i> si todavÃ­a no
+se midiÃ³ (Google limita las consultas por dÃ­a). <b>No altera el orden</b>, que lo da la
 importancia editorial.<br>
-La marca <b>cobertura tardía</b> señala que el titular retoma un hecho de días
+La marca <b>cobertura tardÃ­a</b> seÃ±ala que el titular retoma un hecho de dÃ­as
 anteriores en vez de informar algo nuevo: no es una primicia aunque tenga pocos medios.<br>
-El botón <b>Generar borrador</b> aparece solo en hechos con 3 o más medios e
-importancia 7 o más. Abre GitHub con el id copiado; el borrador se escribe leyendo
-las notas completas y <b>siempre requiere curaduría humana</b> antes de publicar.<br>
-El radar propone. La decisión editorial es humana.
+El botÃ³n <b>Generar borrador</b> aparece solo en hechos con 3 o mÃ¡s medios e
+importancia 7 o mÃ¡s. Abre GitHub con el id copiado; el borrador se escribe leyendo
+las notas completas y <b>siempre requiere curadurÃ­a humana</b> antes de publicar.<br>
+El radar propone. La decisiÃ³n editorial es humana.
 <p class="slogan">periodismo sin fronteras</p>
 </footer>
 </div>
@@ -307,13 +307,13 @@ const CTX = {"alias": {"normativa": "politica_migratoria", "frontera": "frontera
 let vista=null, regionActiva=null, paisActivo=null;
 
 const ESTADOS = {
-  trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
-  interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Ordenado por importancia editorial; el dato de búsquedas en Google va al lado de cada hecho, para que la decisión combine ambas cosas.'},
-  top_trend:{n:'Top trend', a:'La conversación dominante del momento: 20 o más medios en la región, 30 o más fuera de ella. Saturado, no correrla; cubrir solo con ángulo propio. Los hechos extrarregionales aparecen abajo, marcados, para ver de qué se habla globalmente.'},
-  emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.'},
+  trending:{n:'Trending', a:'8 o mÃ¡s medios. Ya estÃ¡ instalado: publicar ahora, o buscar el Ã¡ngulo que nadie tomÃ³.'},
+  interes:{n:'De interÃ©s', a:'3 o mÃ¡s medios. EL PUNTO JUSTO: todavÃ­a se llega temprano. Ordenado por importancia editorial; el dato de bÃºsquedas en Google va al lado de cada hecho, para que la decisiÃ³n combine ambas cosas.'},
+  top_trend:{n:'Top trend', a:'La conversaciÃ³n dominante del momento: 20 o mÃ¡s medios en la regiÃ³n, 30 o mÃ¡s fuera de ella. Saturado, no correrla; cubrir solo con Ã¡ngulo propio. Los hechos extrarregionales aparecen abajo, marcados, para ver de quÃ© se habla globalmente.'},
+  emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificaciÃ³n todavÃ­a no se distingue. Es donde hay que mirar a mano.'},
   nadie_lo_mira:{n:'Posibles alertas', a:'Posible noticia de impacto. Para investigar. Alta importancia editorial y casi sin cobertura: si se confirma, es una primicia.'},
-  ruido:{n:'Para auditar', a:'Baja cobertura y baja importancia, o el clasificador determinó que no trata de personas en movilidad. Visible para controlar qué se está descartando.'},
-  fuera_alcance:{n:'Noticias extrarregionales', a:'Noticias sobre migración de otros continentes, para contexto comparado. Ceuta, por ejemplo, es el caso testigo de externalización de fronteras.'}
+  ruido:{n:'Para auditar', a:'Baja cobertura y baja importancia, o el clasificador determinÃ³ que no trata de personas en movilidad. Visible para controlar quÃ© se estÃ¡ descartando.'},
+  fuera_alcance:{n:'Noticias extrarregionales', a:'Noticias sobre migraciÃ³n de otros continentes, para contexto comparado. Ceuta, por ejemplo, es el caso testigo de externalizaciÃ³n de fronteras.'}
 };
 const ORDEN=['top_trend','trending','interes','emergente','nadie_lo_mira','ruido','fuera_alcance'];
 
@@ -321,14 +321,74 @@ function esc(s){const d=document.createElement('div');d.textContent=s||'';return
 
 // El borrador no se genera en el navegador: esto abre el formulario de GitHub
 // Actions con el id del hecho ya cargado. Lo dispara una persona, a proposito.
-function pedirBorrador(boton){
-  const id=boton.dataset.id;
-  const url=`https://github.com/${CTX.borrador.repo}/actions/workflows/borrador.yml`;
-  window.open(url,'_blank','noopener');
-  boton.textContent='id: '+id;
-  boton.classList.add('copiado');
-  if(navigator.clipboard) navigator.clipboard.writeText(id).catch(()=>{});
-  boton.title='El id se copió al portapapeles. Pegalo en el formulario de GitHub.';
+// ===========================================================================
+// REEMPLAZO de la funciÃ³n pedirBorrador en docs/index.html
+//
+// BuscÃ¡ el bloque actual (arranca en "function pedirBorrador(boton){" y abre
+// GitHub con window.open) y reemplazalo COMPLETO por esta versiÃ³n.
+// ===========================================================================
+
+async function pedirBorrador(boton){
+  const id = boton.dataset.id;
+
+  // Buscar el hecho completo en ITEMS a partir del id
+  const h = (typeof ITEMS !== 'undefined')
+    ? ITEMS.find(x => String(x.id) === String(id))
+    : null;
+
+  if(!h){
+    boton.textContent = 'No se encontrÃ³ el hecho';
+    return;
+  }
+
+  // Armar la lista de medios desde las coberturas (campo real en ITEMS)
+  const medios = (h.coberturas || [])
+    .map(c => c.medio)
+    .filter(Boolean);
+
+  const payload = {
+    titulo:      h.titulo_original || '',
+    angulo:      h.angulo_sugerido || '',
+    url:         h.url || '',
+    paises:      h.paises || [],
+    region:      h.region || '',
+    ejes:        h.ejes || [],
+    medios:      medios,
+    velocidad:   h.velocidad,
+    importancia: h.importancia,
+  };
+
+  // Estado visual: enviando
+  const textoOriginal = boton.textContent;
+  if(boton.dataset.enviando === '1') return;
+  boton.dataset.enviando = '1';
+  boton.disabled = true;
+  boton.textContent = 'Redactando y enviandoâ€¦';
+  boton.classList.remove('copiado');
+
+  try {
+    const r = await fetch('/generar-borrador', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    const data = await r.json();
+
+    if(data.ok){
+      boton.textContent = 'âœ“ Enviado por correo';
+      boton.classList.add('copiado');
+    } else {
+      boton.textContent = 'âœ— Error â€” reintentar';
+      alert('No se pudo generar el borrador:\n' + (data.error || 'error desconocido'));
+    }
+  } catch(e){
+    boton.textContent = 'âœ— Error de red â€” reintentar';
+    console.error(e);
+  } finally {
+    boton.disabled = false;
+    boton.dataset.enviando = '0';
+    setTimeout(() => { boton.textContent = textoOriginal; boton.classList.remove('copiado'); }, 6000);
+  }
 }
 
 function armarSemaforo(){
@@ -384,13 +444,13 @@ function armarFiltros(){
   // El usuario filtra SOLO por region y pais. Ejes, poblaciones, actores y
   // colectividades se muestran como etiquetas en cada titular: ocho filas de
   // filtros hacian que las categorias predominaran sobre las noticias.
-  grupo('Región',regs,'region');
-  grupo('País',paises,'pais');
+  grupo('RegiÃ³n',regs,'region');
+  grupo('PaÃ­s',paises,'pais');
 
   const n=document.createElement('p'); n.className='nota-filtro';
-  n.innerHTML='La región y el país salen de lo que menciona el titular. «Regional» es un hecho '+
-    'que cruza más de una región; «Sin determinar», uno cuyo titular no nombra ningún lugar.<br>'+
-    'Los ejes temáticos, poblaciones y actores aparecen como etiquetas debajo de cada titular.';
+  n.innerHTML='La regiÃ³n y el paÃ­s salen de lo que menciona el titular. Â«RegionalÂ» es un hecho '+
+    'que cruza mÃ¡s de una regiÃ³n; Â«Sin determinarÂ», uno cuyo titular no nombra ningÃºn lugar.<br>'+
+    'Los ejes temÃ¡ticos, poblaciones y actores aparecen como etiquetas debajo de cada titular.';
   c.appendChild(n);
 }
 
@@ -460,11 +520,11 @@ function dibujar(){
       <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
       <div class="datos">
         ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">Importancia <b>${i.importancia}</b></span>`:''}
-        ${i.cobertura_tardia?`<span class="tardia" title="El titular retoma un hecho de días anteriores, no informa algo nuevo">cobertura tardía</span>`:''}
+        ${i.cobertura_tardia?`<span class="tardia" title="El titular retoma un hecho de dÃ­as anteriores, no informa algo nuevo">cobertura tardÃ­a</span>`:''}
         ${i.fuera_de_alcance?`<span class="extrarreg" title="Ocurre fuera de America Latina, el Caribe y Estados Unidos">extrarregional</span>`:''}
         ${!i.fuera_de_alcance?(i.trends!=null
-            ?`<span class="trend${i.trends>=5?'':' plano'}" title="${esc(i.trends_motivo||'')}">búsquedas ${i.trends>=5?'↑':(i.trends>0?'→':'—')} ${i.trends}/10</span>`
-            :`<span class="trend nomedido" title="Google Trends limita las consultas por día: este hecho no se midió todavía">búsquedas s/d</span>`):''}
+            ?`<span class="trend${i.trends>=5?'':' plano'}" title="${esc(i.trends_motivo||'')}">bÃºsquedas ${i.trends>=5?'â†‘':(i.trends>0?'â†’':'â€”')} ${i.trends}/10</span>`
+            :`<span class="trend nomedido" title="Google Trends limita las consultas por dÃ­a: este hecho no se midiÃ³ todavÃ­a">bÃºsquedas s/d</span>`):''}
         ${i.requiere_verificacion?`<span class="alerta-mini" title="El titular afirma cifras o hechos sin citar fuente">verificar</span>`:''}
         ${i.contiene_datos_personales?`<span class="alerta-mini" title="Identifica a una persona migrante concreta">dato personal</span>`:''}
         <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>
@@ -478,7 +538,7 @@ function dibujar(){
       ${cob.length?`<div class="fuentes"><div class="tit">Publicado por</div><ul>${
         cob.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`).join('')
       }</ul></div>`:''}
-      ${i.puede_borrador?`<div class="acciones"><button class="borrador" data-id="${esc(i.id)}" onclick="pedirBorrador(this)">Generar borrador</button><span class="ayuda">${i.velocidad} medios · importancia ${i.importancia}</span></div>`:''}
+      ${i.puede_borrador?`<div class="acciones"><button class="borrador" data-id="${esc(i.id)}" onclick="pedirBorrador(this)">Generar borrador</button><span class="ayuda">${i.velocidad} medios Â· importancia ${i.importancia}</span></div>`:''}
       <div class="etiquetas">
         ${(i.ejes||[]).map(e=>`<span class="et eje">${esc(e)}</span>`).join('')}
         ${(i.poblaciones||[]).map(x=>`<span class="et pobl">${esc(x)}</span>`).join('')}
@@ -498,34 +558,34 @@ function armarAlertas(){
   if(!t || !(t.alertas||[]).length) return;
   const DESENLACE={
     vigente:{t:'sigue abierto',c:'d-vig'},
-    escalo:{t:'ya escaló',c:'d-esc'},
-    se_enfrio:{t:'se enfrió',c:'d-frio'}
+    escalo:{t:'ya escalÃ³',c:'d-esc'},
+    se_enfrio:{t:'se enfriÃ³',c:'d-frio'}
   };
   const cuando=h=>!h?'ahora':(h<1?'hace minutos':`hace ${Math.round(h)} h`);
   c.innerHTML='<div class="alertas"><div class="tit">Alertas editoriales</div>'+
-    '<p>Temas importantes, poco cubiertos y con las búsquedas subiendo. '+
-    'Se conservan 12 horas aunque el tema cambie de estado, con lo que pasó después.</p><ul>'+
+    '<p>Temas importantes, poco cubiertos y con las bÃºsquedas subiendo. '+
+    'Se conservan 12 horas aunque el tema cambie de estado, con lo que pasÃ³ despuÃ©s.</p><ul>'+
     t.alertas.map(a=>{
       const d=DESENLACE[a.desenlace]||DESENLACE.vigente;
       return `<li><span class="dsc ${d.c}">${d.t}</span> `+
         `${a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener"><b>${esc(a.titulo)}</b></a>`
                 :`<b>${esc(a.titulo)}</b>`}<br>`+
-        `<span class="det">búsquedas de «${esc(a.termino)}» ×${a.ratio} en ${esc(a.geo)} · `+
-        `importancia ${a.importancia} · ${a.velocidad} medios · ${cuando(a.horas)}</span>`+
+        `<span class="det">bÃºsquedas de Â«${esc(a.termino)}Â» Ã—${a.ratio} en ${esc(a.geo)} Â· `+
+        `importancia ${a.importancia} Â· ${a.velocidad} medios Â· ${cuando(a.horas)}</span>`+
         `${a.puede_borrador?`<br><button class="borrador chico" data-id="${esc(a.id_hecho)}" onclick="pedirBorrador(this)">Generar borrador</button>`:''}</li>`;
     }).join('')+
     '</ul></div>';
 }
 
 const NOMBRE_PAIS={AR:'Argentina',BO:'Bolivia',BR:'Brasil',CL:'Chile',CO:'Colombia',
-  EC:'Ecuador',GY:'Guyana',PY:'Paraguay',PE:'Perú',SR:'Surinam',UY:'Uruguay',
+  EC:'Ecuador',GY:'Guyana',PY:'Paraguay',PE:'PerÃº',SR:'Surinam',UY:'Uruguay',
   VE:'Venezuela',BZ:'Belice',CR:'Costa Rica',SV:'El Salvador',GT:'Guatemala',
-  HN:'Honduras',NI:'Nicaragua',PA:'Panamá',MX:'México',US:'Estados Unidos',
-  CA:'Canadá',CU:'Cuba',DO:'Rep. Dominicana',HT:'Haití',PR:'Puerto Rico',
+  HN:'Honduras',NI:'Nicaragua',PA:'PanamÃ¡',MX:'MÃ©xico',US:'Estados Unidos',
+  CA:'CanadÃ¡',CU:'Cuba',DO:'Rep. Dominicana',HT:'HaitÃ­',PR:'Puerto Rico',
   JM:'Jamaica',TT:'Trinidad y Tobago',
   // Espana entra por audiencia, no por alcance editorial: segun Analytics es uno
   // de los paises donde mas leen a Refugio.
-  ES:'España'};
+  ES:'EspaÃ±a'};
 
 function armarAtencion(){
   const t=CTX.tendencias;
@@ -534,12 +594,12 @@ function armarAtencion(){
   const dias=iso=>{
     if(!iso) return '';
     const h=(Date.now()-new Date(iso).getTime())/36e5;
-    return h<24?'hoy':(h<48?'ayer':`hace ${Math.round(h/24)} días`);
+    return h<24?'hoy':(h<48?'ayer':`hace ${Math.round(h/24)} dÃ­as`);
   };
-  c.innerHTML='<div class="atencion"><div class="tit">Qué busca nuestra audiencia</div>'+
-    '<p>Consultas sobre migración en los países donde más nos leen. '+
-    'Argentina siempre, más un país rotando. Las variantes de un mismo tema '+
-    'se agrupan: <span class="var">+3</span> significa tres búsquedas parecidas.</p>'+
+  c.innerHTML='<div class="atencion"><div class="tit">QuÃ© busca nuestra audiencia</div>'+
+    '<p>Consultas sobre migraciÃ³n en los paÃ­ses donde mÃ¡s nos leen. '+
+    'Argentina siempre, mÃ¡s un paÃ­s rotando. Las variantes de un mismo tema '+
+    'se agrupan: <span class="var">+3</span> significa tres bÃºsquedas parecidas.</p>'+
     t.audiencia.map(p=>`<div class="pais"><b>${esc(NOMBRE_PAIS[p.geo]||p.geo)}`+
       `<span class="cuando">${esc(dias(p.medido))}</span></b>`+
       `<ul>${p.consultas.map(q=>`<li>${esc(q.consulta)}`+
@@ -553,10 +613,10 @@ function armarDemanda(){
   const t=CTX.tendencias;
   const c=document.getElementById('demanda');
   if(!t || !(t.servicio||[]).length) return;
-  c.innerHTML='<div class="demanda"><div class="tit">Consultas sobre trámites de migraciones</div>'+
-    '<p>Tendencias de búsqueda asociadas a trámites migratorios en Argentina, '+
+  c.innerHTML='<div class="demanda"><div class="tit">Consultas sobre trÃ¡mites de migraciones</div>'+
+    '<p>Tendencias de bÃºsqueda asociadas a trÃ¡mites migratorios en Argentina, '+
     'para eventualmente generar notas de soluciones.</p>'+
-    '<ul>'+t.servicio.map(x=>`<li>${esc(x.termino)} · ${esc(x.geo)} · ×${x.ratio}</li>`).join('')+
+    '<ul>'+t.servicio.map(x=>`<li>${esc(x.termino)} Â· ${esc(x.geo)} Â· Ã—${x.ratio}</li>`).join('')+
     '</ul></div>';
 }
 
