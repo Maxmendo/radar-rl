@@ -1,21 +1,87 @@
 {
- "generado": "2026-08-03T22:11:04+00:00",
+ "generado": "2026-08-04T02:32:05+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "1b7c0580ba59": {
+   "id_hecho": "1b7c0580ba59",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMWhPMUV1U1VWaHIyRExCVTNBblZkaUN4dC1pLWR1QkZ0dnVybWFKMDlXWHRlSkRRbmIzUldZeFpvX25ybXc1LUdKVU1LbDJBaE96S3pycGVkU3hhNXNHX3p4N3NPMTVubUNEX0JWa2RxTUNDTnFqeFFHaEZ5cXJqRWRIaWpGUGp5U0J5TzV2VDlya3p4M0Z5LUJhMG90ellVbFBTMjRRU0E2eVly?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "EE. UU. envió un avión con 147 deportados a Venezuela por primera vez desde los sismos",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 10.9,
+   "base": 3.2,
+   "ratio": null
+  },
+  "2276803863cc": {
+   "id_hecho": "2276803863cc",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWEoyRXp6bUI2ZnpPZjBWaDhMOGxNOVJqV3pueG9pZTVBX2lZR3JiTFM2cmY5ZmZQZFF2ZE9TV2RWWlNILWltQXBQS3k0SE5IQmVBbVVENkQ1VkZ1aHVQWDU4NDNLRlptYV9haVJqT3J2UWJRVDlSbWJXR1BUcW9RWjV5eWp1UVFQNkNRTWRUSUh5aWNjalgzNUw0bklYWHFDZjhWUmdkaGJkVGR4M282X25CbFdLTW9JSlk4dWJEdEpYb1RjaG9La01iV0c5LUlFaVFYNlRwMmswS09ydnFXZA?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "#SOSCuba: #MaríaElvira Salzar hace una advertencia a migrantes con I-220A, mientras aumentan las deportaciones en #EEUU y unos cuarenta cubanos se amotinan en un centro de detención para inmigrantes en #México. LEE MÁS en #DiarioDeCuba LIN",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 10.9,
+   "base": 3.2,
+   "ratio": null
+  },
+  "06f7573027ac": {
+   "id_hecho": "06f7573027ac",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2xKLUJDbmVpWkt1dkN4T2dBOXdRMVJ5TmVmYU1fajl6SV85TXA5RDBHV1pRSmMzeDlNMWRseE9FY0RadlBHdlJ0QjJOMVN6d2JjWHJMU0tVZEFaR1JtWnZKdVM3azhLOW1ya0dWU3NfVk1NY0dIR1p4eHVDcmhtR0hOcGxwSWM1aGhBbDYxSkxxdEZaTXBNTEpLOXRPV3V2LTlmcHJSSGRWU1RadjEtVi1DUlVfUHdka3BhRGNDMHBsUQ?oc=5",
+   "termino": "menores no acompañados",
+   "geo": "US",
+   "titulo": "PODCAST: ¿Qué se sabe del cierre del programa de defensa legal para menores inmigrantes no acompañados?",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "d17cbcedac00": {
+   "id_hecho": "d17cbcedac00",
+   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOczV6NWdxZVU4bjRYdEFmeTRNcXVUTmgxblBwbVlVZUR0dUd4cEZadWNGWFlLZGdndEQ5NGJHTmtnOFFjc0RydjVYd0lXUlhnRFowdFc3WTUyek9iVmRpa184QVJEQ3lhcWJMQlZzYi12U04wd1hZZldta1NVTE44LWMwd1lzUEgzSG1oNVE2cTZNaVZQNTJoTnlnYnMxSkpaZ05FLTdqV3czSTcycHhkMElsaUtPNUN4RXVMT3ZIanFCcE5HOHhDVTdndFExXzhJZUw5S3d5aENKU29LN0NDMWRxLWVpRW0xT2VlMzJIUjZQVFRNWlJyZ2dUTTYyWjFFUXdlODZFWFQ3QklOSHpYSUZGZ9IBmAJBVV95cUxORVZyNGFEbFNRYXVQbEI0OWQzcWQwNHpuQWNWOEJQX2FaYnRjT3NDQkY1S0VaMDlZSjQ1Sjg1TDJkelR1UkJ6Ym50c3RPaTluUkk2a21EdFhoaXl2Ym84TzFDYWllLXkzUEVMWXRKU0ZPdnZBN053S2ItSFNjLW5qb01wWDF3NzZtU1RaT0xXUUVkWjF5R05QbUlvN1RHVE9JdGM3T0kwMTd0WjdRalpvR1hkZ3NLT013dkREbWpxaUZHY0c0QkFENGJDLWdKQUFtRXFCQk9JbDJ4M1hZTDhyY01VTTdUU0xUaGFpekRTTFBNanpWMzVMSThNMnVQNUR5aWhsZmpzZC1wSndfcVpnVXUwM0Y5dHdK?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "ALERTA MÁXIMA, inmigrantes legales e indocumentados en EE. UU.: \"Mamá, ayúdame\", gritó un joven al ser DETENIDO por ICE en Glendale",
+   "importancia": 7,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 10.9,
+   "base": 3.2,
+   "ratio": null
+  },
+  "56bf595c4098": {
+   "id_hecho": "56bf595c4098",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUXVZd21aVE9EX2x4Vi1tWDlwM0xvZ1NpQjIxRmprRVFERU5LQ2ZLX0JUV0MyZFduU2tsY2p0aS1fWV9fS1BnQWhPTENOMU9hQ0kyZEpJVE93YTg1dWlQa3NRVVY2cndWQ1JVcXI3OHZWTExBVHBIa05mQlR2WW5PTWZjdHFzX3Y3dThwXzFidXpiR1JKX2pMbHpWRDFzSTNydHFDb2ZzRlBCQndfN1h2WmZxYmJycWhub1VORmhmajZ1cHZWMkI0LTJva0xjV1hDSU1kQmRRd1JCSi0zZE8xcnpzZ3pVN1U2eVBoTkdR0gGCAkFVX3lxTE1NdEpjWDBMYzhxRjJHZk8wNkRRd3ROWWg4bXpNV2IzTXo0S1BGVUZCUDlqczNrenBKQW1YNEM2V3FOSFZBbzAyU09rdVhZY2hYaFFIMnNMdmZhUk1FMVV1RUdKTmxXY1V2d2dFOUt5ZlFVVGJsbmp1NzFxLUVRRUJlMGtpRWlpellzbGtHYjBFWkZULXFLeEFQQVRSMzhGMXpSdGN0WW94M1VBa3pralVYWEFNRzYtM19kQ21HUzdzMXFkbTctaFViem0tM3Y0b083M2RBaHR3bkxmbkJtblFyakNkLTU3V3B2VEl3YTVlb2FINEt5dzZud1ZTQlVHN1pnQQ?oc=5",
+   "termino": "remesas",
+   "geo": "US",
+   "titulo": "Las remesas a México resisten las restricciones de Trump a los migrantes en el sistema financiero de EE UU",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 18.3,
+   "base": 35.8,
+   "ratio": 0.51
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1099350",
+     "valor": "959400",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos migrantes",
-     "valor": "740450",
+     "consulta": "migrantes marruecos",
+     "valor": "757250",
      "tipo": "rising",
      "variantes": 0
     },
@@ -26,7 +92,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-03T19:38:33+00:00"
+   "medido": "2026-08-04T02:31:55+00:00"
   },
   "VE": {
    "consultas": [
@@ -90,24 +156,47 @@
     }
    ],
    "medido": "2026-08-03T19:38:38+00:00"
+  },
+  "US": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "48",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes marruecos",
+     "valor": "191250",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "santo de los migrantes",
+     "valor": "50650",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-04T02:32:01+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 23.0,
-   "base": 6.0,
-   "ratio": 3.86
+   "reciente": 17.6,
+   "base": 4.9,
+   "ratio": 3.62
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 5,
-   "reciente": 19.4,
-   "base": 9.3,
-   "ratio": 2.09
+   "puntaje": 9,
+   "reciente": 15.1,
+   "base": 5.2,
+   "ratio": 2.9
   }
  },
  "alertas": []
