@@ -78,9 +78,6 @@ def cruzar_tendencias(items: list[dict]) -> dict:
                  for geo, d in (panel.get("audiencia") or {}).items()
                  if d.get("consultas")]
     audiencia.sort(key=lambda x: x["medido"], reverse=True)
-    fija = [a for a in audiencia if a["geo"] == "AR"]
-    otros = [a for a in audiencia if a["geo"] != "AR"][:2]
-    audiencia = fija + otros
 
     # Al panel de alertas le hace falta saber si el hecho califica para borrador.
     # Se resuelve aca y no en el navegador para no repetir la logica.

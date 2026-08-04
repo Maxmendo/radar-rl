@@ -195,7 +195,22 @@ jobs:
           # Reintentos: con ocho corridas diarias mas commits manuales, el push
           # puede rebotar si alguien subio algo mientras esta corria.
           for i in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
+            # Si el rebase entra en conflicto (tipico en docs/index.html porque
+            # es un archivo generado), no intentamos mezclar: regeneramos el HTML
+            # desde la plantilla, que es la unica fuente de verdad. Asi los cambios
+            # de las fuentes (.py) subidos por fuera del radar nunca se pierden.
+            if git pull --rebase origin main; then
+              git push && exit 0
+            else
+              echo "conflicto en rebase, regenerando index.html desde la plantilla"
+              git checkout --theirs -- docs/index.html 2>/dev/null || true
+              git add docs/index.html 2>/dev/null || true
+              git rebase --continue 2>/dev/null || git rebase --abort
+              python scripts/generar_tablero.py
+              git add docs/
+              git commit -m "Radar: regenera index tras conflicto" 2>/dev/null || true
+              git push && exit 0
+            fi
             echo "push rechazado, reintento $i/3"
             sleep 5
           done
