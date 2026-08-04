@@ -169,7 +169,7 @@ header{background:var(--rojo);color:#fff;padding:1.9rem 0 1.6rem;margin-bottom:1
   position:relative;overflow:hidden}
 header .trama{position:absolute;right:-30px;top:0;height:100%;width:210px;opacity:.22}
 header .marca-fila{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
-header .logo{height:56px;width:auto;color:#fff;flex:none}
+header .logo{height:60px;width:auto;flex:none}
 header .titulo{border-left:2px solid rgba(255,255,255,.4);padding-left:1.4rem}
 header h1{font-size:1.75rem;font-weight:800;margin:0;letter-spacing:-.015em;
   position:relative;z-index:1}
