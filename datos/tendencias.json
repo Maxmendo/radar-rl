@@ -1,21 +1,86 @@
 {
- "generado": "2026-08-04T14:13:10+00:00",
+ "generado": "2026-08-04T16:53:13+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "b67dc90fc8aa": {
-   "id_hecho": "b67dc90fc8aa",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPekRhbHo0S2hNTnBaR2tlWFh3UU1VS3EybTZLdFdTME93SERJSE16eHJzaS11NHJxWUZ6cy1iODV0VVNaQk5xZXI1bUFZV2NHUElmY0ZMZWRKcHVWa0RYRlBHTDhMU3YtcGNGS2NDdERGRWc2NUpuakN0OTk2S05JclZycFA3a3VnRHIyRVk1Yk5rcUxkR3lwbkJ1RmNnQ2FwQnJ2b2F2X2dyRjl5SHdHY2VfV01raDU2aFAwNzJaNkdZcDAtdTVmUXNCaVNOQQ?oc=5",
-   "termino": "migraciones",
-   "geo": "AR",
-   "titulo": "Milei veta la entrada a extranjeros que “hayan dirigido mensajes de odio al pueblo argentino”",
-   "importancia": 10,
+  "d854b110d7a2": {
+   "id_hecho": "d854b110d7a2",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNajJzanhmNHBnZ1NVRVVmYk5pVWpmaWZBbG9hdFNzNU1hcEVsSlBXbzNtQlhsSzI1ZlJua3RWbThZUkktaVpmNVpremhhdEo3eUkxamQxZVM4cjlRQnY2X3lzYVhxM3RrVUZMUDF4a28xeHhVeEtXb0JBOHNrZG1nNVZ3X2VfSy1OcF8xTGp2bDZFZ3pScF82UV94RmQ3RkNZUWN5WkJFbk1hVk9EVVEzY1dEcFh0T3BlWVpMN25ESHIxQ2RmcUNSSjEwaFVreHN1eDdJZE5BQjR2enpaRHVuMlAtLUZsdw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Telemundo Atlanta. . EN VIVO | ICE estaría deteniendo a solicitantes de asilo en sus propias viviendas. Además, la agencia está arrestando entre 20 y 40 inmigrantes al día en aeropuertos de Estados Unidos.",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 12.1,
+   "base": 5.3,
+   "ratio": null
+  },
+  "2276803863cc": {
+   "id_hecho": "2276803863cc",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWEoyRXp6bUI2ZnpPZjBWaDhMOGxNOVJqV3pueG9pZTVBX2lZR3JiTFM2cmY5ZmZQZFF2ZE9TV2RWWlNILWltQXBQS3k0SE5IQmVBbVVENkQ1VkZ1aHVQWDU4NDNLRlptYV9haVJqT3J2UWJRVDlSbWJXR1BUcW9RWjV5eWp1UVFQNkNRTWRUSUh5aWNjalgzNUw0bklYWHFDZjhWUmdkaGJkVGR4M282X25CbFdLTW9JSlk4dWJEdEpYb1RjaG9La01iV0c5LUlFaVFYNlRwMmswS09ydnFXZA?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "#SOSCuba: #MaríaElvira Salzar hace una advertencia a migrantes con I-220A, mientras aumentan las deportaciones en #EEUU y unos cuarenta cubanos se amotinan en un centro de detención para inmigrantes en #México. LEE MÁS en #DiarioDeCuba LIN",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 12.1,
+   "base": 5.3,
+   "ratio": null
+  },
+  "91780e8a26b7": {
+   "id_hecho": "91780e8a26b7",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQTjA4ZkVhQUI1LXd5VnlHa1hSZkloNWZtYk9vNlFYbGdVNFlyTnpIMV8yVlEyRTRELUNrS3JpcWZWenh6SzByZXJGOWd4NUVkcERydEVlVUt5X0Z3eGdUZzhDTDBPdFBOV05Nc2NuQnBDRE9jLWtHc0ZpZmJDRm52bnBZSWZmeEw3MXk3WGUwZUc3a1Bua2xsdVdELVBZQzlrRklTVVhxRlZDc19rekY0dFJKRnA4c1ltZ21uYWxmZ2pDaXMyZEZSWXV5ejZkRFdKY0FmQ0Z2VUVnX3I2c2ExaE9sUjdpNGdrVDFQQnVDWEPSAYQCQVVfeXFMT0ZSQXVIWDZBOHd3MU1aTEZUMkVOZkxLVklPbHI5SzBZcUF6NE1iQkpUNXphSEhtMFRlWnBZMVplak50WGRXRGYxRHpGbWxUZ0xLLVViYnpFWUk1WHltQzJBWVhJQlJ2ZnNYV3hjM1JmODRZcUdWMEVxbHF4MVZHRVduZS1XTFN6d082dGhCYkxUdm00dU03eTlLYkZuakJ5cVAwR0hPUlRZMkE0QU5zZXJxeUx4VTR3VjR1Snh2b1V3U2ZSQTZzTWFtOVBjbmxuOTdPYVBfRHdfTkFSOTZCbFpOd0xCLTFpVXI1Z2FhWWx4RFNkWTBod1V2ZHhzVkZ3RVIzQW0?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Cómo los migrantes luchan solos para salir de los centros del ICE con un recurso legal que Trump busca eliminar",
+   "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 61.0,
-   "base": 60.4,
-   "ratio": 1.01
+   "reciente": 12.1,
+   "base": 5.3,
+   "ratio": null
+  },
+  "56bf595c4098": {
+   "id_hecho": "56bf595c4098",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUXVZd21aVE9EX2x4Vi1tWDlwM0xvZ1NpQjIxRmprRVFERU5LQ2ZLX0JUV0MyZFduU2tsY2p0aS1fWV9fS1BnQWhPTENOMU9hQ0kyZEpJVE93YTg1dWlQa3NRVVY2cndWQ1JVcXI3OHZWTExBVHBIa05mQlR2WW5PTWZjdHFzX3Y3dThwXzFidXpiR1JKX2pMbHpWRDFzSTNydHFDb2ZzRlBCQndfN1h2WmZxYmJycWhub1VORmhmajZ1cHZWMkI0LTJva0xjV1hDSU1kQmRRd1JCSi0zZE8xcnpzZ3pVN1U2eVBoTkdR0gGCAkFVX3lxTE1NdEpjWDBMYzhxRjJHZk8wNkRRd3ROWWg4bXpNV2IzTXo0S1BGVUZCUDlqczNrenBKQW1YNEM2V3FOSFZBbzAyU09rdVhZY2hYaFFIMnNMdmZhUk1FMVV1RUdKTmxXY1V2d2dFOUt5ZlFVVGJsbmp1NzFxLUVRRUJlMGtpRWlpellzbGtHYjBFWkZULXFLeEFQQVRSMzhGMXpSdGN0WW94M1VBa3pralVYWEFNRzYtM19kQ21HUzdzMXFkbTctaFViem0tM3Y0b083M2RBaHR3bkxmbkJtblFyakNkLTU3V3B2VEl3YTVlb2FINEt5dzZud1ZTQlVHN1pnQQ?oc=5",
+   "termino": "remesas",
+   "geo": "US",
+   "titulo": "Las remesas a México resisten las restricciones de Trump a los migrantes en el sistema financiero de EE UU",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 18.9,
+   "base": 33.6,
+   "ratio": 0.56
+  },
+  "9a620310ee63": {
+   "id_hecho": "9a620310ee63",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pMGEzWUprS0FrZ01kb3pZUjk5LU1Sa3c3R3RzZndQZGR0WHpFcHZ2STJSOWhoenFoQXBCbkpYTzhtQVRyM3FMN3hVMGNOcS03bTF4d0VwUE9seUctMkpQVWRobkNYSmw5bDBCRll2UU82NWtfRnZfNzZ3R0R0OGs?oc=5",
+   "termino": "migrantes",
+   "geo": "ES",
+   "titulo": "Ingresados en Mallorca dos migrantes que viajaban en una patera con otros 17 ocupantes desaparecidos - EFE",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 33.7,
+   "base": 7.1,
+   "ratio": 4.75
+  },
+  "e7bd85f83656": {
+   "id_hecho": "e7bd85f83656",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNV1VOUHluUjhWZ0RtZWJwR2R0T3BjWVBEeEp0eVRwNWs4bGxhNHloSWJtTHV4TVpobWhJbFZQenFWaHpzQjNSbUdQSjUyVmhsM2Q4ZEZRLUprRGpPaHVPVHc5WmRFTFhFQzA3ZzFrNWVlenNoMjBIZzN2MGxyZ3RSTGprOTA5SHU1M3h3MWdaOTZiaGV1OV9hVkdGWnk5ZFgtN3RJNHZJQXQzQkpiMG96UWQzMm1DVVU4cEpLSVgyLXlZSWluUzJhU3paMWtoYm5ZNTZvOTdJMjQzT19LLVF0dERBakR0M2J3RjhCX3dSQldYbVhfdjBv0gGSAkFVX3lxTE4wanplRnRiWXhhdmxzbk5RNmlyOEdTaXNYNXhQSGl5MEhaOWg5TGZXaXRsVEluTnNBcUlfZUFHZjY5czBMbjVNTkY4Ql9YOVZkSWpIbHJwR1lxTmc4ZkRpbXdmakpRUFNMSUFpbmh0VFJPSHR5V2lzRFF6OG8zdS05OFkwc2dCcGFEU3RnU1hjbzFrT3BRU0J6VThkNDc5bXBUM0x4QVcwTnRQdzdDUUpqcjdON3lUSFBSVVhsbTVUYzFlajNxQUR4c0hSNTFKaGRKdkc1a0JiMHo3RXd0Nk1VYTNVcHMzTlo2OWFjNV82ZXBYbGtUcUVWbFJYMW82MGYxSkZZdmE4cmU5SWlCbzdBOWc?oc=5",
+   "termino": "regularizacion",
+   "geo": "ES",
+   "titulo": "La regularización extraordinaria impulsa el empleo en julio hasta un récord de afiliados e impacta en el paro de extranjeros",
+   "importancia": 8,
+   "velocidad": 6,
+   "puntaje": 0,
+   "reciente": 17.7,
+   "base": 30.6,
+   "ratio": 0.58
   }
  },
  "audiencia": {
@@ -23,24 +88,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1060700",
+     "valor": "981900",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 2
     },
     {
-     "consulta": "españa",
-     "valor": "47",
+     "consulta": "migrantes marruecos",
+     "valor": "676100",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "los migrantes",
+     "valor": "100",
      "tipo": "top",
-     "variantes": 1
-    },
-    {
-     "consulta": "marruecos",
-     "valor": "735200",
-     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-04T11:25:18+00:00"
+   "medido": "2026-08-04T16:53:04+00:00"
   },
   "VE": {
    "consultas": [
@@ -91,19 +156,25 @@
   "CO": {
    "consultas": [
     {
-     "consulta": "marruecos",
-     "valor": "436100",
-     "tipo": "rising",
+     "consulta": "españa",
+     "valor": "96",
+     "tipo": "top",
      "variantes": 2
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 2
+     "consulta": "ceuta",
+     "valor": "299700",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos migrantes",
+     "valor": "457350",
+     "tipo": "rising",
+     "variantes": 0
     }
    ],
-   "medido": "2026-08-03T19:38:38+00:00"
+   "medido": "2026-08-04T16:53:09+00:00"
   },
   "US": {
    "consultas": [
@@ -129,25 +200,42 @@
    "medido": "2026-08-04T02:32:01+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 17.4,
-   "base": 5.8,
-   "ratio": 2.99
+   "reciente": 33.9,
+   "base": 10.1,
+   "ratio": 3.35
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 22.0,
-   "base": 7.1,
-   "ratio": 3.08
+   "reciente": 28.4,
+   "base": 7.7,
+   "ratio": 3.7
   }
  },
  "alertas": [
+  {
+   "id_hecho": "9a620310ee63",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pMGEzWUprS0FrZ01kb3pZUjk5LU1Sa3c3R3RzZndQZGR0WHpFcHZ2STJSOWhoenFoQXBCbkpYTzhtQVRyM3FMN3hVMGNOcS03bTF4d0VwUE9seUctMkpQVWRobkNYSmw5bDBCRll2UU82NWtfRnZfNzZ3R0R0OGs?oc=5",
+   "termino": "migrantes",
+   "geo": "ES",
+   "titulo": "Ingresados en Mallorca dos migrantes que viajaban en una patera con otros 17 ocupantes desaparecidos - EFE",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 33.7,
+   "base": 7.1,
+   "ratio": 4.75,
+   "disparada": "2026-08-04T16:53:13+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  },
   {
    "id_hecho": "4b4f36c43b4c",
    "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOWkptUDRpWC1zaWo5OFZZM3JyLWJnYnFKZUdpcDJyZE51eDAxSFRIY3JTc0s4RHcwZXlObkdtbnFrRTdid20zT0VZZlFKU0xfRXVlZk9ScWo4ZWtIUDBLYTVvVTNjXzY0VHQxVXhwQjYyRUpxY2d4TW1YYlg3TzVOV3FRY3B1UnBteHlaV0VReElneUp5d25JUm9NU1prSUZfYlFfQ2Y3V25TUXc3REFpWk12bWl0WlkyV2s1bUI2cC1ZaVBSeU5PSEVFUmF5RHJyc2paNEZra2tyM0RlM2R1QWU4WG8tSlNHWGh1MkhMQ0RxcmtlVEpkNGRlalY2N0kzTkc0Q3BGSFhVVFhyTEd1UVZMTnhaaEluVDlrYUgwelRfaGpYX3fSAasCQVVfeXFMTVA0VEpCVDBYN21FdkRDa3YxXzA3Mlo0N2ZQMzJMLVJ0MU1FQUNSTVhTb0F0S1NiOW1ITmRyZm9aQ0szXzUyNGZsaEJ0YWZKX2Y0Q21neU9pbnlOUlZoZnZKNTMwQ0d6aTc2VV94UFRBYm43ejNfS3FWZTZVM3lrUWE4YWx0aTJUbFdxMG04ZXBWLU9vaVAybHM3RFVWLWZINGlONnE3QWM3cHBqRFhnUUJENHEyQXhvWUtZa3AwbGNwdkUtSHBfQ2piWF8wbW1vbjY0V3FYVUdHME16NlJOLU1ySWc4M3ViMmx3SkxMRzVFMWR1dGZXUDFJUXVYRWxna29BMnJLbHJTbHBhWWk0V1ZDQmNqRHZtTWExZWNIUVZVbU10dzhYMVBlZEE?oc=5",
@@ -163,7 +251,7 @@
    "disparada": "2026-08-04T11:25:27+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 2.8
+   "horas": 5.5
   }
  ]
 }
