@@ -309,6 +309,9 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   cursor:pointer;background:var(--rojo);color:#fff;border:none;border-radius:99px}
 .borrador:hover{opacity:.88}
 .borrador.copiado{background:var(--sem-verde);font-family:monospace}
+.borrador.enviando{background:var(--tenue);cursor:wait}
+.borrador.ok{background:var(--sem-verde);color:#fff}
+.borrador.err{background:var(--sem-rojo);color:#fff}
 .borrador.chico{font-size:.72rem;padding:.24rem .65rem;margin-top:.4rem}
 .acciones .ayuda{font-size:.73rem;color:var(--tenue)}
 .etiquetas{display:flex;gap:.28rem;flex-wrap:wrap;margin-top:.55rem}
@@ -422,7 +425,7 @@ const ESTADOS = {
   interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Ordenado por importancia editorial; el dato de búsquedas en Google va al lado de cada hecho, para que la decisión combine ambas cosas.'},
   top_trend:{n:'Top trend', a:'La conversación dominante del momento: 20 o más medios en la región, 30 o más fuera de ella. Saturado, no correrla; cubrir solo con ángulo propio. Los hechos extrarregionales aparecen abajo, marcados, para ver de qué se habla globalmente.'},
   emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.'},
-  nadie_lo_mira:{n:'Posibles alertas', a:'Posible noticia de impacto. Para investigar. Alta importancia editorial y casi sin cobertura: si se confirma, es una primicia.'},
+  nadie_lo_mira:{n:'Posibles alertas', a:'Posible noticia de impacto. Para investigar. Alta importancia editorial y aún con poca cobertura.'},
   ruido:{n:'Para auditar', a:'Baja cobertura y baja importancia, o el clasificador determinó que no trata de personas en movilidad. Visible para controlar qué se está descartando.'},
   fuera_alcance:{n:'Noticias extrarregionales', a:'Noticias sobre migración de otros continentes, para contexto comparado. Ceuta, por ejemplo, es el caso testigo de externalización de fronteras.'}
 };
@@ -430,16 +433,46 @@ const ORDEN=['top_trend','trending','interes','emergente','nadie_lo_mira','ruido
 
 function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
 
-// El borrador no se genera en el navegador: esto abre el formulario de GitHub
-// Actions con el id del hecho ya cargado. Lo dispara una persona, a proposito.
-function pedirBorrador(boton){
+// El borrador se pide al Worker (/generar-borrador): redacta y envia por correo.
+// El boton transiciona rojo -> "Enviando..." -> verde "Borrador enviado".
+async function pedirBorrador(boton){
   const id=boton.dataset.id;
-  const url=`https://github.com/${CTX.borrador.repo}/actions/workflows/borrador.yml`;
-  window.open(url,'_blank','noopener');
-  boton.textContent='id: '+id;
-  boton.classList.add('copiado');
-  if(navigator.clipboard) navigator.clipboard.writeText(id).catch(()=>{});
-  boton.title='El id se copió al portapapeles. Pegalo en el formulario de GitHub.';
+  const h=(typeof ITEMS!=='undefined')?ITEMS.find(x=>String(x.id)===String(id)):null;
+  if(!h){ boton.textContent='No se encontró el hecho'; return; }
+  const medios=(h.coberturas||[]).map(c=>c.medio).filter(Boolean);
+  const payload={
+    titulo:h.titulo_original||'', angulo:h.angulo_sugerido||'', url:h.url||'',
+    paises:h.paises||[], region:h.region||'', ejes:h.ejes||[], medios:medios,
+    velocidad:h.velocidad, importancia:h.importancia
+  };
+  if(boton.dataset.enviando==='1') return;
+  boton.dataset.enviando='1';
+  const original=boton.textContent;
+  boton.disabled=true;
+  boton.classList.remove('ok','err');
+  boton.classList.add('enviando');
+  boton.textContent='Enviando borrador…';
+  try{
+    const r=await fetch('/generar-borrador',{method:'POST',
+      headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const data=await r.json();
+    if(data.ok){
+      boton.classList.remove('enviando'); boton.classList.add('ok');
+      boton.textContent='✓ Borrador enviado';
+    }else{
+      boton.classList.remove('enviando'); boton.classList.add('err');
+      boton.textContent='✗ Error — reintentar';
+      alert('No se pudo generar el borrador:\n'+(data.error||'error desconocido'));
+    }
+  }catch(e){
+    boton.classList.remove('enviando'); boton.classList.add('err');
+    boton.textContent='✗ Error de red — reintentar';
+    console.error(e);
+  }finally{
+    boton.disabled=false; boton.dataset.enviando='0';
+    setTimeout(()=>{ boton.textContent=original;
+      boton.classList.remove('ok','err','enviando'); },6000);
+  }
 }
 
 function armarSemaforo(){
