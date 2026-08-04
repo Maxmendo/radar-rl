@@ -1,88 +1,9 @@
 {
- "generado": "2026-08-04T16:53:13+00:00",
+ "generado": "2026-08-04T19:39:36+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "d854b110d7a2": {
-   "id_hecho": "d854b110d7a2",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNajJzanhmNHBnZ1NVRVVmYk5pVWpmaWZBbG9hdFNzNU1hcEVsSlBXbzNtQlhsSzI1ZlJua3RWbThZUkktaVpmNVpremhhdEo3eUkxamQxZVM4cjlRQnY2X3lzYVhxM3RrVUZMUDF4a28xeHhVeEtXb0JBOHNrZG1nNVZ3X2VfSy1OcF8xTGp2bDZFZ3pScF82UV94RmQ3RkNZUWN5WkJFbk1hVk9EVVEzY1dEcFh0T3BlWVpMN25ESHIxQ2RmcUNSSjEwaFVreHN1eDdJZE5BQjR2enpaRHVuMlAtLUZsdw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Telemundo Atlanta. . EN VIVO | ICE estaría deteniendo a solicitantes de asilo en sus propias viviendas. Además, la agencia está arrestando entre 20 y 40 inmigrantes al día en aeropuertos de Estados Unidos.",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 12.1,
-   "base": 5.3,
-   "ratio": null
-  },
-  "2276803863cc": {
-   "id_hecho": "2276803863cc",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWEoyRXp6bUI2ZnpPZjBWaDhMOGxNOVJqV3pueG9pZTVBX2lZR3JiTFM2cmY5ZmZQZFF2ZE9TV2RWWlNILWltQXBQS3k0SE5IQmVBbVVENkQ1VkZ1aHVQWDU4NDNLRlptYV9haVJqT3J2UWJRVDlSbWJXR1BUcW9RWjV5eWp1UVFQNkNRTWRUSUh5aWNjalgzNUw0bklYWHFDZjhWUmdkaGJkVGR4M282X25CbFdLTW9JSlk4dWJEdEpYb1RjaG9La01iV0c5LUlFaVFYNlRwMmswS09ydnFXZA?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "#SOSCuba: #MaríaElvira Salzar hace una advertencia a migrantes con I-220A, mientras aumentan las deportaciones en #EEUU y unos cuarenta cubanos se amotinan en un centro de detención para inmigrantes en #México. LEE MÁS en #DiarioDeCuba LIN",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 12.1,
-   "base": 5.3,
-   "ratio": null
-  },
-  "91780e8a26b7": {
-   "id_hecho": "91780e8a26b7",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQTjA4ZkVhQUI1LXd5VnlHa1hSZkloNWZtYk9vNlFYbGdVNFlyTnpIMV8yVlEyRTRELUNrS3JpcWZWenh6SzByZXJGOWd4NUVkcERydEVlVUt5X0Z3eGdUZzhDTDBPdFBOV05Nc2NuQnBDRE9jLWtHc0ZpZmJDRm52bnBZSWZmeEw3MXk3WGUwZUc3a1Bua2xsdVdELVBZQzlrRklTVVhxRlZDc19rekY0dFJKRnA4c1ltZ21uYWxmZ2pDaXMyZEZSWXV5ejZkRFdKY0FmQ0Z2VUVnX3I2c2ExaE9sUjdpNGdrVDFQQnVDWEPSAYQCQVVfeXFMT0ZSQXVIWDZBOHd3MU1aTEZUMkVOZkxLVklPbHI5SzBZcUF6NE1iQkpUNXphSEhtMFRlWnBZMVplak50WGRXRGYxRHpGbWxUZ0xLLVViYnpFWUk1WHltQzJBWVhJQlJ2ZnNYV3hjM1JmODRZcUdWMEVxbHF4MVZHRVduZS1XTFN6d082dGhCYkxUdm00dU03eTlLYkZuakJ5cVAwR0hPUlRZMkE0QU5zZXJxeUx4VTR3VjR1Snh2b1V3U2ZSQTZzTWFtOVBjbmxuOTdPYVBfRHdfTkFSOTZCbFpOd0xCLTFpVXI1Z2FhWWx4RFNkWTBod1V2ZHhzVkZ3RVIzQW0?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Cómo los migrantes luchan solos para salir de los centros del ICE con un recurso legal que Trump busca eliminar",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 12.1,
-   "base": 5.3,
-   "ratio": null
-  },
-  "56bf595c4098": {
-   "id_hecho": "56bf595c4098",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUXVZd21aVE9EX2x4Vi1tWDlwM0xvZ1NpQjIxRmprRVFERU5LQ2ZLX0JUV0MyZFduU2tsY2p0aS1fWV9fS1BnQWhPTENOMU9hQ0kyZEpJVE93YTg1dWlQa3NRVVY2cndWQ1JVcXI3OHZWTExBVHBIa05mQlR2WW5PTWZjdHFzX3Y3dThwXzFidXpiR1JKX2pMbHpWRDFzSTNydHFDb2ZzRlBCQndfN1h2WmZxYmJycWhub1VORmhmajZ1cHZWMkI0LTJva0xjV1hDSU1kQmRRd1JCSi0zZE8xcnpzZ3pVN1U2eVBoTkdR0gGCAkFVX3lxTE1NdEpjWDBMYzhxRjJHZk8wNkRRd3ROWWg4bXpNV2IzTXo0S1BGVUZCUDlqczNrenBKQW1YNEM2V3FOSFZBbzAyU09rdVhZY2hYaFFIMnNMdmZhUk1FMVV1RUdKTmxXY1V2d2dFOUt5ZlFVVGJsbmp1NzFxLUVRRUJlMGtpRWlpellzbGtHYjBFWkZULXFLeEFQQVRSMzhGMXpSdGN0WW94M1VBa3pralVYWEFNRzYtM19kQ21HUzdzMXFkbTctaFViem0tM3Y0b083M2RBaHR3bkxmbkJtblFyakNkLTU3V3B2VEl3YTVlb2FINEt5dzZud1ZTQlVHN1pnQQ?oc=5",
-   "termino": "remesas",
-   "geo": "US",
-   "titulo": "Las remesas a México resisten las restricciones de Trump a los migrantes en el sistema financiero de EE UU",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 18.9,
-   "base": 33.6,
-   "ratio": 0.56
-  },
-  "9a620310ee63": {
-   "id_hecho": "9a620310ee63",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pMGEzWUprS0FrZ01kb3pZUjk5LU1Sa3c3R3RzZndQZGR0WHpFcHZ2STJSOWhoenFoQXBCbkpYTzhtQVRyM3FMN3hVMGNOcS03bTF4d0VwUE9seUctMkpQVWRobkNYSmw5bDBCRll2UU82NWtfRnZfNzZ3R0R0OGs?oc=5",
-   "termino": "migrantes",
-   "geo": "ES",
-   "titulo": "Ingresados en Mallorca dos migrantes que viajaban en una patera con otros 17 ocupantes desaparecidos - EFE",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 33.7,
-   "base": 7.1,
-   "ratio": 4.75
-  },
-  "e7bd85f83656": {
-   "id_hecho": "e7bd85f83656",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNV1VOUHluUjhWZ0RtZWJwR2R0T3BjWVBEeEp0eVRwNWs4bGxhNHloSWJtTHV4TVpobWhJbFZQenFWaHpzQjNSbUdQSjUyVmhsM2Q4ZEZRLUprRGpPaHVPVHc5WmRFTFhFQzA3ZzFrNWVlenNoMjBIZzN2MGxyZ3RSTGprOTA5SHU1M3h3MWdaOTZiaGV1OV9hVkdGWnk5ZFgtN3RJNHZJQXQzQkpiMG96UWQzMm1DVVU4cEpLSVgyLXlZSWluUzJhU3paMWtoYm5ZNTZvOTdJMjQzT19LLVF0dERBakR0M2J3RjhCX3dSQldYbVhfdjBv0gGSAkFVX3lxTE4wanplRnRiWXhhdmxzbk5RNmlyOEdTaXNYNXhQSGl5MEhaOWg5TGZXaXRsVEluTnNBcUlfZUFHZjY5czBMbjVNTkY4Ql9YOVZkSWpIbHJwR1lxTmc4ZkRpbXdmakpRUFNMSUFpbmh0VFJPSHR5V2lzRFF6OG8zdS05OFkwc2dCcGFEU3RnU1hjbzFrT3BRU0J6VThkNDc5bXBUM0x4QVcwTnRQdzdDUUpqcjdON3lUSFBSVVhsbTVUYzFlajNxQUR4c0hSNTFKaGRKdkc1a0JiMHo3RXd0Nk1VYTNVcHMzTlo2OWFjNV82ZXBYbGtUcUVWbFJYMW82MGYxSkZZdmE4cmU5SWlCbzdBOWc?oc=5",
-   "termino": "regularizacion",
-   "geo": "ES",
-   "titulo": "La regularización extraordinaria impulsa el empleo en julio hasta un récord de afiliados e impacta en el paro de extranjeros",
-   "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 0,
-   "reciente": 17.7,
-   "base": 30.6,
-   "ratio": 0.58
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -200,7 +121,7 @@
    "medido": "2026-08-04T02:32:01+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -234,7 +155,7 @@
    "disparada": "2026-08-04T16:53:13+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 2.8
   },
   {
    "id_hecho": "4b4f36c43b4c",
@@ -251,7 +172,7 @@
    "disparada": "2026-08-04T11:25:27+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 5.5
+   "horas": 8.2
   }
  ]
 }
