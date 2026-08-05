@@ -1,32 +1,46 @@
 {
- "generado": "2026-08-05T11:23:22+00:00",
+ "generado": "2026-08-05T19:32:18+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "4009d1f1a1b0": {
+   "id_hecho": "4009d1f1a1b0",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN2I3NmhhZ2pQT2sxMnVBRUNfZzRidHVqWXZjNkRhbTY2R0xHalZjekpYOEY0N3hfcmJ0dElFalZ2YWs5ZUxrZUhhM0VaSVZlRERrWlRybXdzUDV6bElqM3NQMm1mQnZTUkRtRzNhSmFBVVZOQnB0UEM4R3FwdnVPcVF2bTA1ZE5wRGxMQnlBWERENmQ4UE9IVHM4RW5mVHN2OEhmZi1mMXh2LXEwNVREZTNIdWRIQ3VFRnVVcm10ZVplbzh0c0xtN0stQWV5UkNaS1RXVlQ4VmZUU1FINWxCRlp0M2pPalU?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Más de 50 cónyuges y padres de militares detenidos en redada migratoria del gobierno Trump",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 17.0,
+   "base": 5.8,
+   "ratio": 2.93
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "974000",
+     "consulta": "marruecos",
+     "valor": "746750",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "españa",
-     "valor": "46",
+     "consulta": "ceuta migrantes",
+     "valor": "1006500",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "los migrantes",
+     "valor": "100",
      "tipo": "top",
-     "variantes": 1
-    },
-    {
-     "consulta": "migrantes marruecos",
-     "valor": "714650",
-     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-05T08:37:06+00:00"
+   "medido": "2026-08-05T19:32:01+00:00"
   },
   "VE": {
    "consultas": [
@@ -77,25 +91,25 @@
   "CO": {
    "consultas": [
     {
-     "consulta": "españa",
-     "valor": "96",
+     "consulta": "marruecos",
+     "valor": "39",
      "tipo": "top",
      "variantes": 2
     },
     {
-     "consulta": "ceuta",
-     "valor": "299700",
-     "tipo": "rising",
+     "consulta": "españa migrantes",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "marruecos migrantes",
-     "valor": "457350",
+     "consulta": "migrantes ceuta",
+     "valor": "362850",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-04T16:53:09+00:00"
+   "medido": "2026-08-05T19:32:10+00:00"
   },
   "US": {
    "consultas": [
@@ -144,25 +158,42 @@
    "medido": "2026-08-05T02:31:16+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 31.1,
-   "base": 6.1,
-   "ratio": 5.08
+   "reciente": 24.6,
+   "base": 6.9,
+   "ratio": 3.56
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 21.9,
-   "base": 7.9,
-   "ratio": 2.77
+   "puntaje": 10,
+   "reciente": 21.4,
+   "base": 6.0,
+   "ratio": 3.55
   }
  },
  "alertas": [
+  {
+   "id_hecho": "4009d1f1a1b0",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN2I3NmhhZ2pQT2sxMnVBRUNfZzRidHVqWXZjNkRhbTY2R0xHalZjekpYOEY0N3hfcmJ0dElFalZ2YWs5ZUxrZUhhM0VaSVZlRERrWlRybXdzUDV6bElqM3NQMm1mQnZTUkRtRzNhSmFBVVZOQnB0UEM4R3FwdnVPcVF2bTA1ZE5wRGxMQnlBWERENmQ4UE9IVHM4RW5mVHN2OEhmZi1mMXh2LXEwNVREZTNIdWRIQ3VFRnVVcm10ZVplbzh0c0xtN0stQWV5UkNaS1RXVlQ4VmZUU1FINWxCRlp0M2pPalU?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Más de 50 cónyuges y padres de militares detenidos en redada migratoria del gobierno Trump",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 17.0,
+   "base": 5.8,
+   "ratio": 2.93,
+   "disparada": "2026-08-05T19:32:18+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  },
   {
    "id_hecho": "1bf4d82a13a2",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
@@ -178,7 +209,7 @@
    "disparada": "2026-08-05T08:37:15+00:00",
    "velocidad_inicial": 6,
    "desenlace": "escalo",
-   "horas": 2.8
+   "horas": 10.9
   }
  ]
 }
