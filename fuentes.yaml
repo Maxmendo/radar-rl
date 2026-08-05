@@ -1774,9 +1774,9 @@ tendencias:
     \ real, no por error."
   activo: true
   solo_en_digest: false
-  horas_de_cache: 2
+  horas_de_cache: 8
   ventana: today 3-m
-  espera_entre_consultas: 4.0
+  espera_entre_consultas: 8.0
   fallos_seguidos_antes_de_abandonar: 3
   geo_servicio: AR
   terminos_servicio:

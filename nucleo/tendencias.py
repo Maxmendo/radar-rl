@@ -298,7 +298,7 @@ def main() -> int:
 
     try:
         from trendspy import Trends
-        cliente = Trends(hl="es", tz=180, request_delay=4.0)
+        cliente = Trends(hl="es", tz=180, request_delay=8.0)
     except Exception as e:
         log.warning("trendspy no disponible (%s); panel vacio", type(e).__name__)
         SALIDA.write_text(json.dumps(vacio(f"trendspy: {type(e).__name__}"),
@@ -442,6 +442,7 @@ def main() -> int:
         for d in resultados.values()
         if d["puntaje"] >= umbral_alerta and (d.get("importancia") or 0) >= imp_minima
         and d.get("geo") in en_alcance
+        and not (todos.get(d["id_hecho"]) or {}).get("fuera_de_alcance")
     }
 
     # Las alertas viejas se conservan y se les actualiza el desenlace. Un hecho
@@ -460,6 +461,13 @@ def main() -> int:
         if a["id_hecho"] in nuevas:
             continue                       # se reemplaza por la version nueva
         hecho = todos.get(a["id_hecho"])
+        # Re-chequeo contra el estado ACTUAL del hecho. El `geo` de la alerta se
+        # congela al dispararse y puede haber sido un error del clasificador
+        # (p. ej. un naufragio en aguas de Cabrera, Baleares, etiquetado DO en vez
+        # de ES). Si el clasificador ya corrigio el hecho a fuera de alcance, la
+        # alerta se descarta aunque su geo viejo siguiera en el catalogo.
+        if hecho and hecho.get("fuera_de_alcance"):
+            continue
         if hecho:
             vel = hecho.get("velocidad") or 0
             ini = a.get("velocidad_inicial") or 0
