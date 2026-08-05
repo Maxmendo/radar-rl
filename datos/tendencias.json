@@ -1,88 +1,9 @@
 {
- "generado": "2026-08-05T08:37:15+00:00",
+ "generado": "2026-08-05T11:23:22+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "1bf4d82a13a2": {
-   "id_hecho": "1bf4d82a13a2",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
-   "termino": "migrantes",
-   "geo": "DO",
-   "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
-   "importancia": 9,
-   "velocidad": 6,
-   "puntaje": 10,
-   "reciente": 44.7,
-   "base": 3.9,
-   "ratio": 11.58
-  },
-  "d854b110d7a2": {
-   "id_hecho": "d854b110d7a2",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNajJzanhmNHBnZ1NVRVVmYk5pVWpmaWZBbG9hdFNzNU1hcEVsSlBXbzNtQlhsSzI1ZlJua3RWbThZUkktaVpmNVpremhhdEo3eUkxamQxZVM4cjlRQnY2X3lzYVhxM3RrVUZMUDF4a28xeHhVeEtXb0JBOHNrZG1nNVZ3X2VfSy1OcF8xTGp2bDZFZ3pScF82UV94RmQ3RkNZUWN5WkJFbk1hVk9EVVEzY1dEcFh0T3BlWVpMN25ESHIxQ2RmcUNSSjEwaFVreHN1eDdJZE5BQjR2enpaRHVuMlAtLUZsdw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Telemundo Atlanta. . EN VIVO | ICE estaría deteniendo a solicitantes de asilo en sus propias viviendas. Además, la agencia está arrestando entre 20 y 40 inmigrantes al día en aeropuertos de Estados Unidos.",
-   "importancia": 9,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 3.9,
-   "base": 1.4,
-   "ratio": null
-  },
-  "ceeddabb16d9": {
-   "id_hecho": "ceeddabb16d9",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRNIBhAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRA?oc=5",
-   "termino": "ciudadania",
-   "geo": "US",
-   "titulo": "Donald Trump recibe nuevo revés de la Corte Suprema: ciudadanía por nacimiento, se mantiene en Estados Unidos",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 40.6,
-   "base": 40.1,
-   "ratio": 1.01
-  },
-  "607e46578bba": {
-   "id_hecho": "607e46578bba",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVlQZnRvREkxQzdfQTM5cXFDbXgyUXpwQ2VJSWFtclEwMnRYdEprQ3o1ZG9tWmFGSURVSlhmVlo2NXBpaUFtR3h1Mk1OZXJ4ZGI3clZEbkpPRFJ2UE5VU2xnMkJ2bm9xSHBQM2U4dDFkQ05qNVZVREJ4bHo4OFFEb3liWkhlUGJ4S1JLOWdZbnl5QlNVR2JkTXh2UGs3Ui0xaGtDTkJCZmJPZzlVd3k40gG3AUFVX3lxTE4zR0JGNU9aOTZ4cTA2RFU2TWwtbHVQeXh3Q1BfUXVoQWtYdzdHNFBmMlhzallONl9GVGVTcDJDWURDS1Nxc2Vjd2ZWemtEejZ4YVJlcEVzNDZRRFQzbHhNVzRJWG9NckZoNzEwTXNJbUtuUjlXTzMwTTlJSWFPc0RJYnBqRUJHMTRpdENKMWRFTlI4WFZRSFR1M1NnZ0dNckR2cm1KTHlpZ1NCcnVTSDlvVUpxVHpVOA?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Demócratas denuncian que ICE ocultó pruebas sobre muerte de inmigrante en Houston",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 3.9,
-   "base": 1.4,
-   "ratio": null
-  },
-  "ad4b53d0651f": {
-   "id_hecho": "ad4b53d0651f",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNamx4ZWVsYjFWQmg4d3pBd2VnNmhDeDBkRl85UnZrVHFHdmp4X0hVOXpOdUZ6YTFtR0ZyVVBSMkxibUMyYk9QTzE1d0VaZGtsdkZQc1g1cmVOWkNxd1VYelQ0em9CTlBGMS1kaWJVUWFyLXB4N1ZKS2d1M0xtODZDbXU5YXoyQ1Jhc1dTS1Jva2gzZUt0bWZHSWI4V29oVTgzTWYxRzlIRXZTaVVTX3k3d3ZRTk9GbG5XWHlEY2RtNG5rc1o3dXk1Z3NuOFU0bUEzLTdWSTlSNzE1OXlJUnZIN3NSWjhJVGo5a2p2V3FBSdIB7wFBVV95cUxNamx4ZWVsYjFWQmg4d3pBd2VnNmhDeDBkRl85UnZrVHFHdmp4X0hVOXpOdUZ6YTFtR0ZyVVBSMkxibUMyYk9QTzE1d0VaZGtsdkZQc1g1cmVOWkNxd1VYelQ0em9CTlBGMS1kaWJVUWFyLXB4N1ZKS2d1M0xtODZDbXU5YXoyQ1Jhc1dTS1Jva2gzZUt0bWZHSWI4V29oVTgzTWYxRzlIRXZTaVVTX3k3d3ZRTk9GbG5XWHlEY2RtNG5rc1o3dXk1Z3NuOFU0bUEzLTdWSTlSNzE1OXlJUnZIN3NSWjhJVGo5a2p2V3FBSQ?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Detención de migrantes en EEUU alcanza su punto más alto durante el Gobierno de Trump",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 3.9,
-   "base": 1.4,
-   "ratio": null
-  },
-  "93e4878bdff1": {
-   "id_hecho": "93e4878bdff1",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbmgyMEZ5WWZGN0dHeXRVdGlEMG9jbXB3MnhZM2xuazBIM2hXYWotclozMnZZcU1KYnlpSzlhVWRxN1phVXNLWFQ4UEt2SFRvUmZaTS1meDJFVWdKTUlQMGxHU284MlltS2lyc00xMkxxbzJ4YkxuOG56UDJLNnNzckE3ZzFLNldla0ZtWjN5NzBlYW5sZnRETHFaRVg4Mnd3?oc=5",
-   "termino": "regularizacion",
-   "geo": "ES",
-   "titulo": "La regularización de migrantes suma 262.475 afiliados a la Seguridad Social en la Comunitat Valenciana, cuarta autonomía",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 17.6,
-   "base": 29.9,
-   "ratio": 0.59
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -223,7 +144,7 @@
    "medido": "2026-08-05T02:31:16+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -249,15 +170,15 @@
    "geo": "DO",
    "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
    "importancia": 9,
-   "velocidad": 6,
+   "velocidad": 8,
    "puntaje": 10,
    "reciente": 44.7,
    "base": 3.9,
    "ratio": 11.58,
    "disparada": "2026-08-05T08:37:15+00:00",
    "velocidad_inicial": 6,
-   "desenlace": "vigente",
-   "horas": 0
+   "desenlace": "escalo",
+   "horas": 2.8
   }
  ]
 }
