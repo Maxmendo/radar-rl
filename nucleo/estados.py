@@ -77,16 +77,42 @@ def region_de_paises(paises: list[str]) -> str:
     return regiones[0] if len(regiones) == 1 else "Regional"
 
 
+def _catalogo_nombres() -> dict:
+    """Codigo ISO -> nombre legible, desde fuentes.yaml. Se carga una sola vez."""
+    global _NOMBRES_CACHE
+    try:
+        return _NOMBRES_CACHE
+    except NameError:
+        pass
+    nombres = {}
+    try:
+        cfg = yaml.safe_load((RAIZ / "fuentes.yaml").read_text(encoding="utf-8"))
+        for iso, d in (cfg.get("paises_catalogo", {}).get("paises", {}) or {}).items():
+            nombres[iso] = d.get("nombre", iso)
+    except Exception:
+        pass
+    globals()["_NOMBRES_CACHE"] = nombres
+    return nombres
+
+
 def recalcular_alcance(items: list[dict]) -> int:
-    """Recalcula `fuera_de_alcance` y `region` con los paises del clasificador.
+    """Recalcula `fuera_de_alcance`, `region` y `paises_nombres` con los paises
+    del clasificador.
 
     La ingesta los estima leyendo el titular con coincidencia de palabras; el
     clasificador los deduce leyendo el titular completo y acierta mucho mas.
     Sin este paso, un hecho podia quedar etiquetado a la vez como `Sudamerica`
     y con pais `GB`, y aparecer en `interes` en lugar de en extrarregionales.
 
+    Ademas re-deriva `paises_nombres` de `paises`. Sin esto quedaban
+    desincronizados: un naufragio en Espana (paises=['ES']) conservaba
+    paises_nombres=['Bolivia','Colombia'...] de las nacionalidades inferidas por
+    la ingesta, y el hecho aparecia al filtrar por Bolivia. El filtro del tablero
+    usa paises_nombres, asi que tiene que reflejar DONDE ocurre el hecho.
+
     Devuelve cuantos hechos cambiaron de alcance.
     """
+    nombres = _catalogo_nombres()
     cambiados = 0
     for i in items:
         if not i.get("clasificado"):
@@ -99,6 +125,9 @@ def recalcular_alcance(items: list[dict]) -> int:
             cambiados += 1
         i["fuera_de_alcance"] = fuera
         i["region"] = region_de_paises(paises)
+        # Re-derivar nombres desde los paises corregidos. Los que no esten en el
+        # catalogo (extrarregionales como ES, GB) se muestran con su codigo.
+        i["paises_nombres"] = [nombres.get(p, p) for p in paises]
     return cambiados
 
 

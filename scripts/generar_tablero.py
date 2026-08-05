@@ -309,9 +309,17 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   background:var(--fondo);border:1px solid var(--linea);color:var(--suave);
   text-decoration:none;white-space:nowrap}
 .fuentes a:hover{color:var(--rojo);border-color:var(--rosa-claro)}
-.fuentes .mas{font-size:.77rem;padding:.16rem .55rem;border-radius:4px;
-  background:transparent;border:1px dashed var(--linea);color:var(--tenue);
-  white-space:nowrap;cursor:default}
+.fuentes .mas-wrap{display:inline-flex}
+.fuentes .mas{font:inherit;font-size:.77rem;padding:.16rem .55rem;border-radius:4px;
+  background:transparent;border:1px dashed var(--rosa-claro);color:var(--rosa);
+  white-space:nowrap;cursor:pointer;font-weight:600}
+.fuentes .mas:hover{background:var(--fondo);color:var(--rojo)}
+.fuentes .mas[aria-expanded="true"]::after{content:" ▴"}
+.fuentes .mas[aria-expanded="false"]::after{content:" ▾"}
+.fuentes .ocultas{flex-basis:100%;margin:0;padding:0;display:none}
+.fuentes .ocultas>ul{list-style:none;margin:.35rem 0 0;padding:0;display:flex;
+  flex-wrap:wrap;gap:.3rem}
+.fuentes.mostrar-todo .ocultas{display:block}
 
 .acciones{display:flex;align-items:center;gap:.6rem;margin-top:.6rem;
   padding-top:.55rem;border-top:1px solid var(--linea)}
@@ -718,10 +726,19 @@ function dibujar(){
       ${cob.length?(()=>{
         const ord=fuentesOrdenadas(cob);          // punto 4: agencias y legacy primero
         const TOPE=7;                              // punto 3: hasta 7 chips visibles
-        const vis=ord.slice(0,TOPE), resto=ord.length-vis.length;
+        const vis=ord.slice(0,TOPE), ocultas=ord.slice(TOPE);
+        const chip=c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`;
         return `<div class="fuentes"><div class="tit">Publicado por</div><ul>${
-          vis.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`).join('')
-        }${resto>0?`<li class="mas" title="${esc(ord.slice(TOPE).map(c=>c.medio).join(', '))}">+${resto} ${resto===1?'fuente':'fuentes'}</li>`:''}</ul></div>`;
+          vis.map(chip).join('')
+        }${ocultas.length?
+            `<li class="mas-wrap">`+
+              `<button type="button" class="mas" aria-expanded="false" `+
+                `onclick="var f=this.closest('.fuentes');var a=f.classList.toggle('mostrar-todo');`+
+                `this.setAttribute('aria-expanded',a)">`+
+                `+${ocultas.length} ${ocultas.length===1?'fuente':'fuentes'}</button>`+
+            `</li>`+
+            `<li class="ocultas"><ul>${ocultas.map(chip).join('')}</ul></li>`
+          :''}</ul></div>`;
       })():''}
       ${i.puede_borrador?`<div class="acciones"><button class="borrador" data-id="${esc(i.id)}" onclick="pedirBorrador(this)">Generar borrador</button><span class="ayuda">${i.velocidad} medios · importancia ${i.importancia}</span></div>`:''}
       <div class="etiquetas">

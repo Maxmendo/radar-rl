@@ -330,6 +330,55 @@ def descargar(f) -> list[dict]:
     return salida
 
 
+AGENCIAS_ING = ("efe", "reuters", "afp", "associated press", "europa press",
+                "télam", "telam", "ansa", "dpa", "notimex", "bloomberg", "xinhua")
+LEGACY_ING = ("la nación", "la nacion", "clarín", "clarin", "infobae", "página 12",
+              "pagina 12", "el país", "el pais", "el mundo", "el observador",
+              "la vanguardia", "abc", "el cronista", "ámbito", "ambito", "perfil",
+              "el universal", "el tiempo", "el espectador", "el comercio", "milenio",
+              "proceso", "excélsior", "excelsior", "reforma", "la tercera",
+              "el mercurio", "la república", "la republica", "el nacional",
+              "el universo", "semana", "el heraldo", "la prensa", "el colombiano",
+              "o globo", "folha", "the new york times", "washington post",
+              "the guardian", "bbc", "cnn", "univision", "telemundo", "france 24",
+              "deutsche welle", "telesur", "euronews")
+
+
+def _rango_medio(nombre: str) -> int:
+    n = (nombre or "").lower()
+    if any(a in n for a in AGENCIAS_ING):
+        return 0
+    if any(a in n for a in LEGACY_ING):
+        return 1
+    return 2
+
+
+def _calidad_titular(t: str) -> tuple:
+    """Menor es mejor. Penaliza titulares con pinta de estar mal formados."""
+    t = t or ""
+    tiene_emoji = any(ord(c) >= 0x1F000 or 0x2600 <= ord(c) <= 0x27BF for c in t)
+    largo = len(t)
+    # Un titular sano ronda 40-110 caracteres. Muy largo suele ser titular+bajada
+    # pegados; muy corto suele ser un fragmento. Se busca el mas "de titular".
+    exceso = max(0, largo - 110) + max(0, 40 - largo)
+    return (int(tiene_emoji), exceso, largo)
+
+
+def elegir_titular(coberturas: list[dict]) -> str:
+    """Elige el mejor titular del hecho (punto 2).
+
+    Prioriza el rango del medio (agencia > legacy > resto) y, dentro del mismo
+    rango, el titular mejor formado: sin emojis, de largo tipico y mas corto.
+    Devuelve '' si ninguna cobertura trae titulo (hechos de corridas viejas).
+    """
+    conz = [c for c in coberturas if (c.get("titulo") or "").strip()]
+    if not conz:
+        return ""
+    conz.sort(key=lambda c: (_rango_medio(c.get("medio", "")),
+                             _calidad_titular(c.get("titulo", ""))))
+    return conz[0].get("titulo", "").strip()
+
+
 def agrupar(items: list[dict]) -> list[dict]:
     """Agrupa notas del mismo hecho comparando palabras del titulo.
 
@@ -356,15 +405,23 @@ def agrupar(items: list[dict]) -> list[dict]:
     hechos = []
     for g in grupos:
         # Un medio, un enlace. Se guarda emparejado para que el tablero pueda
-        # linkear cada fuente y el equipo chequee cualquiera de ellas.
+        # linkear cada fuente y el equipo chequee cualquiera de ellas. Ahora
+        # tambien se guarda el titulo de cada nota: el tablero elige cual mostrar.
         vistos: dict[str, dict] = {}
         for i in sorted(g, key=lambda x: x["fecha"]):
             if i["medio"] != "desconocido" and i["medio"] not in vistos:
-                vistos[i["medio"]] = {"medio": i["medio"], "url": i["url"], "fecha": i["fecha"]}
+                vistos[i["medio"]] = {"medio": i["medio"], "url": i["url"],
+                                      "fecha": i["fecha"], "titulo": i["titulo"]}
         coberturas = sorted(vistos.values(), key=lambda x: x["medio"].lower())
         medios = [c["medio"] for c in coberturas]
         fechas = sorted(i["fecha"] for i in g)
         ejes = [i["eje_esperado"] for i in g if i["eje_esperado"]]
+
+        # Titular a mostrar (punto 2): en vez del primero del grupo -que es
+        # arbitrario y a veces trae emojis, titular+bajada pegados o cortes a
+        # mitad de palabra-, se elige el mejor: de un medio importante (agencia
+        # o legacy) y, a igual rango, el mas corto y mejor formado.
+        titulo_hecho = elegir_titular(coberturas) or g[0]["titulo"]
 
         # Los paises salen del titulo, no de la consulta. Si el titulo no
         # menciona ninguno, se cae a los paises del bloque que trajo la nota.
@@ -383,7 +440,7 @@ def agrupar(items: list[dict]) -> list[dict]:
 
         hechos.append({
             "id": g[0]["id"],
-            "titulo_original": g[0]["titulo"],
+            "titulo_original": titulo_hecho,
             "url": g[0]["url"],
             "medios": medios,
             "coberturas": coberturas,
