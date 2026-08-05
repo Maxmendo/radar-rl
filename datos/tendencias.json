@@ -1,9 +1,22 @@
 {
- "generado": "2026-08-05T05:47:58+00:00",
+ "generado": "2026-08-05T08:37:15+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
+  "1bf4d82a13a2": {
+   "id_hecho": "1bf4d82a13a2",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
+   "termino": "migrantes",
+   "geo": "DO",
+   "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
+   "importancia": 9,
+   "velocidad": 6,
+   "puntaje": 10,
+   "reciente": 44.7,
+   "base": 3.9,
+   "ratio": 11.58
+  },
   "d854b110d7a2": {
    "id_hecho": "d854b110d7a2",
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNajJzanhmNHBnZ1NVRVVmYk5pVWpmaWZBbG9hdFNzNU1hcEVsSlBXbzNtQlhsSzI1ZlJua3RWbThZUkktaVpmNVpremhhdEo3eUkxamQxZVM4cjlRQnY2X3lzYVhxM3RrVUZMUDF4a28xeHhVeEtXb0JBOHNrZG1nNVZ3X2VfSy1OcF8xTGp2bDZFZ3pScF82UV94RmQ3RkNZUWN5WkJFbk1hVk9EVVEzY1dEcFh0T3BlWVpMN25ESHIxQ2RmcUNSSjEwaFVreHN1eDdJZE5BQjR2enpaRHVuMlAtLUZsdw?oc=5",
@@ -11,10 +24,10 @@
    "geo": "US",
    "titulo": "Telemundo Atlanta. . EN VIVO | ICE estaría deteniendo a solicitantes de asilo en sus propias viviendas. Además, la agencia está arrestando entre 20 y 40 inmigrantes al día en aeropuertos de Estados Unidos.",
    "importancia": 9,
-   "velocidad": 7,
+   "velocidad": 5,
    "puntaje": 0,
    "reciente": 3.9,
-   "base": 1.3,
+   "base": 1.4,
    "ratio": null
   },
   "ceeddabb16d9": {
@@ -26,9 +39,22 @@
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 40.7,
+   "reciente": 40.6,
    "base": 40.1,
-   "ratio": 1.02
+   "ratio": 1.01
+  },
+  "607e46578bba": {
+   "id_hecho": "607e46578bba",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVlQZnRvREkxQzdfQTM5cXFDbXgyUXpwQ2VJSWFtclEwMnRYdEprQ3o1ZG9tWmFGSURVSlhmVlo2NXBpaUFtR3h1Mk1OZXJ4ZGI3clZEbkpPRFJ2UE5VU2xnMkJ2bm9xSHBQM2U4dDFkQ05qNVZVREJ4bHo4OFFEb3liWkhlUGJ4S1JLOWdZbnl5QlNVR2JkTXh2UGs3Ui0xaGtDTkJCZmJPZzlVd3k40gG3AUFVX3lxTE4zR0JGNU9aOTZ4cTA2RFU2TWwtbHVQeXh3Q1BfUXVoQWtYdzdHNFBmMlhzallONl9GVGVTcDJDWURDS1Nxc2Vjd2ZWemtEejZ4YVJlcEVzNDZRRFQzbHhNVzRJWG9NckZoNzEwTXNJbUtuUjlXTzMwTTlJSWFPc0RJYnBqRUJHMTRpdENKMWRFTlI4WFZRSFR1M1NnZ0dNckR2cm1KTHlpZ1NCcnVTSDlvVUpxVHpVOA?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Demócratas denuncian que ICE ocultó pruebas sobre muerte de inmigrante en Houston",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 3.9,
+   "base": 1.4,
+   "ratio": null
   },
   "ad4b53d0651f": {
    "id_hecho": "ad4b53d0651f",
@@ -37,50 +63,24 @@
    "geo": "US",
    "titulo": "Detención de migrantes en EEUU alcanza su punto más alto durante el Gobierno de Trump",
    "importancia": 8,
-   "velocidad": 4,
+   "velocidad": 3,
    "puntaje": 0,
    "reciente": 3.9,
-   "base": 1.3,
+   "base": 1.4,
    "ratio": null
   },
-  "f98a3a17d2a7": {
-   "id_hecho": "f98a3a17d2a7",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOS2MyQXRIWHV2OUM2Q2ppTU5idV9ScVlqamZuSXd1YkZ1M25IYTYtT2xPNlJ4WXJ6eHNvcXB6WHI4WjY3aTJpTE4ySUpRaVRQLVg3Z0Q1S0FxMk5hU2RyeHV1ZnMzVHZpRm9OMnAwM0J6cU5wS0dzN3drRzAxTTdadkN2MUFNN09lay0tQVp3Yjk2WlJYdFhYSVFvdw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Demócratas concluyen que agentes de ICE ocultaron pruebas en muerte inmigrante en Houston",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.9,
-   "base": 1.3,
-   "ratio": null
-  },
-  "76ef757d6650": {
-   "id_hecho": "76ef757d6650",
-   "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQbVpSRUdRSFVHZDFZdlJDLWs4aks3TTRfOTRrbkkyUWtBUmMzY2pzd01wZlR4SnpVR1Nfb1otUXJwdkZWQm5UbER0TEdWNGZ5eVFGbGxQZ3lBM3M2WTBNejEwTXV6a25PamMtWFpGdF9JTXcyRG4yUlpVX3FtSzF0X2VHX2xRaFdSRV9lVmlzYm0zdndRUmVtVUY2cHZxSzdTLUtndWlHbDN1a0JwbGhVSmRjQVg0NEctMXEwRVV3UkZLZWxzS0RtT2xwSFJLaThiU0cwTlprYTZFRnlzdlVyT1djSTVlbkxSa2s3MVNOQnEtX01wZG1FVG1QaVEydkxKQklUZkE2dlZ6VDZXRFc0MXBkX1lEcjdpb1BlcDdJWW1zcUk5RG0wbi1IY0VNbkdobFlWMw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "\"Hay personas que la están pasando peor ahí adentro\": futbolista venezolana relata cómo vivió en los centros de detención tras ser arrestada por ICE",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.9,
-   "base": 1.3,
-   "ratio": null
-  },
-  "1bf4d82a13a2": {
-   "id_hecho": "1bf4d82a13a2",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
-   "termino": "migrantes",
+  "93e4878bdff1": {
+   "id_hecho": "93e4878bdff1",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbmgyMEZ5WWZGN0dHeXRVdGlEMG9jbXB3MnhZM2xuazBIM2hXYWotclozMnZZcU1KYnlpSzlhVWRxN1phVXNLWFQ4UEt2SFRvUmZaTS1meDJFVWdKTUlQMGxHU284MlltS2lyc00xMkxxbzJ4YkxuOG56UDJLNnNzckE3ZzFLNldla0ZtWjN5NzBlYW5sZnRETHFaRVg4Mnd3?oc=5",
+   "termino": "regularizacion",
    "geo": "ES",
-   "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
-   "importancia": 9,
-   "velocidad": 6,
-   "puntaje": 10,
-   "reciente": 47.7,
-   "base": 9.9,
-   "ratio": 4.82
+   "titulo": "La regularización de migrantes suma 262.475 afiliados a la Seguridad Social en la Comunitat Valenciana, cuarta autonomía",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 17.6,
+   "base": 29.9,
+   "ratio": 0.59
   }
  },
  "audiencia": {
@@ -88,24 +88,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "944950",
+     "valor": "974000",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos",
-     "valor": "656400",
-     "tipo": "rising",
-     "variantes": 0
+     "consulta": "españa",
+     "valor": "46",
+     "tipo": "top",
+     "variantes": 1
     },
     {
-     "consulta": "los migrantes",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "migrantes marruecos",
+     "valor": "714650",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-05T02:31:10+00:00"
+   "medido": "2026-08-05T08:37:06+00:00"
   },
   "VE": {
    "consultas": [
@@ -134,7 +134,7 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "187350",
+     "valor": "213300",
      "tipo": "rising",
      "variantes": 1
     },
@@ -146,12 +146,12 @@
     },
     {
      "consulta": "marruecos",
-     "valor": "116900",
+     "valor": "129550",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-04T11:25:23+00:00"
+   "medido": "2026-08-05T08:37:11+00:00"
   },
   "CO": {
    "consultas": [
@@ -223,24 +223,22 @@
    "medido": "2026-08-05T02:31:16+00:00"
   }
  },
- "proximo_pais": 1,
- "paises_sin_datos": [
-  "AR"
- ],
+ "proximo_pais": 2,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 33.3,
-   "base": 7.1,
-   "ratio": 4.7
+   "reciente": 31.1,
+   "base": 6.1,
+   "ratio": 5.08
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 9,
-   "reciente": 25.6,
-   "base": 8.8,
-   "ratio": 2.9
+   "reciente": 21.9,
+   "base": 7.9,
+   "ratio": 2.77
   }
  },
  "alertas": [
@@ -248,15 +246,15 @@
    "id_hecho": "1bf4d82a13a2",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
    "termino": "migrantes",
-   "geo": "ES",
+   "geo": "DO",
    "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
    "importancia": 9,
    "velocidad": 6,
    "puntaje": 10,
-   "reciente": 47.7,
-   "base": 9.9,
-   "ratio": 4.82,
-   "disparada": "2026-08-05T05:47:58+00:00",
+   "reciente": 44.7,
+   "base": 3.9,
+   "ratio": 11.58,
+   "disparada": "2026-08-05T08:37:15+00:00",
    "velocidad_inicial": 6,
    "desenlace": "vigente",
    "horas": 0
@@ -276,7 +274,7 @@
    "disparada": "2026-08-05T02:31:20+00:00",
    "velocidad_inicial": 3,
    "desenlace": "se_enfrio",
-   "horas": 3.3
+   "horas": 6.1
   }
  ]
 }
