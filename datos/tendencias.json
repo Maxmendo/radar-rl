@@ -1,240 +1,280 @@
 {
-  "generado": "2026-08-04T22:28:27+00:00",
-  "disponible": true,
-  "motivo": "",
-  "ventana": "today 3-m",
-  "hechos": {
-    "ceeddabb16d9": {
-      "id_hecho": "ceeddabb16d9",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRNIBhAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRA?oc=5",
-      "termino": "ciudadania",
-      "geo": "US",
-      "titulo": "Donald Trump recibe nuevo revés de la Corte Suprema: ciudadanía por nacimiento, se mantiene en Estados Unidos",
-      "importancia": 9,
-      "velocidad": 6,
-      "puntaje": 0,
-      "reciente": 40.6,
-      "base": 40.2,
-      "ratio": 1.01
-    },
-    "d854b110d7a2": {
-      "id_hecho": "d854b110d7a2",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNajJzanhmNHBnZ1NVRVVmYk5pVWpmaWZBbG9hdFNzNU1hcEVsSlBXbzNtQlhsSzI1ZlJua3RWbThZUkktaVpmNVpremhhdEo3eUkxamQxZVM4cjlRQnY2X3lzYVhxM3RrVUZMUDF4a28xeHhVeEtXb0JBOHNrZG1nNVZ3X2VfSy1OcF8xTGp2bDZFZ3pScF82UV94RmQ3RkNZUWN5WkJFbk1hVk9EVVEzY1dEcFh0T3BlWVpMN25ESHIxQ2RmcUNSSjEwaFVreHN1eDdJZE5BQjR2enpaRHVuMlAtLUZsdw?oc=5",
-      "termino": "deportaciones",
-      "geo": "US",
-      "titulo": "Telemundo Atlanta. . EN VIVO | ICE estaría deteniendo a solicitantes de asilo en sus propias viviendas. Además, la agencia está arrestando entre 20 y 40 inmigrantes al día en aeropuertos de Estados Unidos.",
-      "importancia": 9,
-      "velocidad": 6,
-      "puntaje": 0,
-      "reciente": 4.0,
-      "base": 1.7,
-      "ratio": null
-    },
-    "0c944a9c3e94": {
-      "id_hecho": "0c944a9c3e94",
-      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdzA5N1llOGdtSmNWdFljeDI0akFSakozcjlLZGo0c0I5c3g1NUpKSG5laEVNZEpKOGVYUi1VNG1FMFNnblhUZ1FhMGFZMlN5R1RBeFVLYWR6eVE3TkMyS0U1ajJPenFMT3pidmpUMDYxVEJzajlRa1FBdFJXUlFqREQ3WkZUSUtYTElscmRfdW9udlpvZ3ZxdWNyUVVocWo5R3pDR2xiaFJwaExfTW5xNE5NYUlzMEtFaHFqaWZQTjNuUTI2MmoxcElVX3pENXl1WW9rV2c1cjRWUEIweXNPdGNtYWN2WWViamhBN0xjbFpUZ2NYXy12bGJTUllpV1pjeU16Q2NxaE5rQ1lrOHFJejdjTUhtRk4wZ182QUh2T3FGeWhYUDJWUklDcHpLSVN5UEHSAbcCQVVfeXFMT01zNjIyWVJieWV3OUVBU3NTWHBIMzNNR2pYcTMtbGN2NTVmTVI1NjdvS0lralZ5S3ZTN2E5djlqRTJFRkVUS2R1Y3FSOHJmNWh5Ti1ISnlEZXhHazFvY0ZHY3JhRVFpSGJmRXAyalNWaDRkUk5teGJURzlxTFFuVTJxdVlhaTdaUnEtbU12Z3ZueFhFUFlSQjdFaUFUZzA2d2JMejBRVFdQU0hXOS1aOXVWOEkwcFNuRzNnT0djaG5NSXppdms0YlJadEZyWFR5bmhlNFEtTkRORVlrdTExTE00dXg5cEtxc0x6eHE1Q3RQSlhXQTl3RFUtR3ozeTBDSXEyMV9PMnJYeHlzQW5jdDVvNkVVU0Z6djUwOEVjdl96NVVPbldsWllzTFhEaDVBWnUzd2VHV2c?oc=5",
-      "termino": "deportaciones",
-      "geo": "US",
-      "titulo": "ALERTA MÁXIMA en este centro de detención de ICE para inmigrantes legales e indocumentados en EE. UU.: SALVADOREÑO falleció tras sufrir una \"emergencia médica\"",
-      "importancia": 9,
-      "velocidad": 3,
-      "puntaje": 0,
-      "reciente": 4.0,
-      "base": 1.7,
-      "ratio": null
-    },
-    "91780e8a26b7": {
-      "id_hecho": "91780e8a26b7",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQTjA4ZkVhQUI1LXd5VnlHa1hSZkloNWZtYk9vNlFYbGdVNFlyTnpIMV8yVlEyRTRELUNrS3JpcWZWenh6SzByZXJGOWd4NUVkcERydEVlVUt5X0Z3eGdUZzhDTDBPdFBOV05Nc2NuQnBDRE9jLWtHc0ZpZmJDRm52bnBZSWZmeEw3MXk3WGUwZUc3a1Bua2xsdVdELVBZQzlrRklTVVhxRlZDc19rekY0dFJKRnA4c1ltZ21uYWxmZ2pDaXMyZEZSWXV5ejZkRFdKY0FmQ0Z2VUVnX3I2c2ExaE9sUjdpNGdrVDFQQnVDWEPSAYQCQVVfeXFMT0ZSQXVIWDZBOHd3MU1aTEZUMkVOZkxLVklPbHI5SzBZcUF6NE1iQkpUNXphSEhtMFRlWnBZMVplak50WGRXRGYxRHpGbWxUZ0xLLVViYnpFWUk1WHltQzJBWVhJQlJ2ZnNYV3hjM1JmODRZcUdWMEVxbHF4MVZHRVduZS1XTFN6d082dGhCYkxUdm00dU03eTlLYkZuakJ5cVAwR0hPUlRZMkE0QU5zZXJxeUx4VTR3VjR1Snh2b1V3U2ZSQTZzTWFtOVBjbmxuOTdPYVBfRHdfTkFSOTZCbFpOd0xCLTFpVXI1Z2FhWWx4RFNkWTBod1V2ZHhzVkZ3RVIzQW0?oc=5",
-      "termino": "deportaciones",
-      "geo": "US",
-      "titulo": "Cómo los migrantes luchan solos para salir de los centros del ICE con un recurso legal que Trump busca eliminar",
-      "importancia": 8,
-      "velocidad": 3,
-      "puntaje": 0,
-      "reciente": 4.0,
-      "base": 1.7,
-      "ratio": null
-    },
-    "1bf4d82a13a2": {
-      "id_hecho": "1bf4d82a13a2",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
-      "termino": "migrantes",
-      "geo": "ES",
-      "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
-      "importancia": 9,
-      "velocidad": 4,
-      "puntaje": 10,
-      "reciente": 33.3,
-      "base": 7.0,
-      "ratio": 4.75
-    },
-    "e7bd85f83656": {
-      "id_hecho": "e7bd85f83656",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNV1VOUHluUjhWZ0RtZWJwR2R0T3BjWVBEeEp0eVRwNWs4bGxhNHloSWJtTHV4TVpobWhJbFZQenFWaHpzQjNSbUdQSjUyVmhsM2Q4ZEZRLUprRGpPaHVPVHc5WmRFTFhFQzA3ZzFrNWVlenNoMjBIZzN2MGxyZ3RSTGprOTA5SHU1M3h3MWdaOTZiaGV1OV9hVkdGWnk5ZFgtN3RJNHZJQXQzQkpiMG96UWQzMm1DVVU4cEpLSVgyLXlZSWluUzJhU3paMWtoYm5ZNTZvOTdJMjQzT19LLVF0dERBakR0M2J3RjhCX3dSQldYbVhfdjBv0gGSAkFVX3lxTE4wanplRnRiWXhhdmxzbk5RNmlyOEdTaXNYNXhQSGl5MEhaOWg5TGZXaXRsVEluTnNBcUlfZUFHZjY5czBMbjVNTkY4Ql9YOVZkSWpIbHJwR1lxTmc4ZkRpbXdmakpRUFNMSUFpbmh0VFJPSHR5V2lzRFF6OG8zdS05OFkwc2dCcGFEU3RnU1hjbzFrT3BRU0J6VThkNDc5bXBUM0x4QVcwTnRQdzdDUUpqcjdON3lUSFBSVVhsbTVUYzFlajNxQUR4c0hSNTFKaGRKdkc1a0JiMHo3RXd0Nk1VYTNVcHMzTlo2OWFjNV82ZXBYbGtUcUVWbFJYMW82MGYxSkZZdmE4cmU5SWlCbzdBOWc?oc=5",
-      "termino": "regularizacion",
-      "geo": "ES",
-      "titulo": "La regularización extraordinaria impulsa el empleo en julio hasta un récord de afiliados e impacta en el paro de extranjeros",
-      "importancia": 8,
-      "velocidad": 6,
-      "puntaje": 0,
-      "reciente": 17.4,
-      "base": 30.2,
-      "ratio": 0.58
-    }
+ "generado": "2026-08-05T02:31:20+00:00",
+ "disponible": true,
+ "motivo": "",
+ "ventana": "today 3-m",
+ "hechos": {
+  "d854b110d7a2": {
+   "id_hecho": "d854b110d7a2",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNajJzanhmNHBnZ1NVRVVmYk5pVWpmaWZBbG9hdFNzNU1hcEVsSlBXbzNtQlhsSzI1ZlJua3RWbThZUkktaVpmNVpremhhdEo3eUkxamQxZVM4cjlRQnY2X3lzYVhxM3RrVUZMUDF4a28xeHhVeEtXb0JBOHNrZG1nNVZ3X2VfSy1OcF8xTGp2bDZFZ3pScF82UV94RmQ3RkNZUWN5WkJFbk1hVk9EVVEzY1dEcFh0T3BlWVpMN25ESHIxQ2RmcUNSSjEwaFVreHN1eDdJZE5BQjR2enpaRHVuMlAtLUZsdw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Telemundo Atlanta. . EN VIVO | ICE estaría deteniendo a solicitantes de asilo en sus propias viviendas. Además, la agencia está arrestando entre 20 y 40 inmigrantes al día en aeropuertos de Estados Unidos.",
+   "importancia": 9,
+   "velocidad": 7,
+   "puntaje": 0,
+   "reciente": 9.9,
+   "base": 5.1,
+   "ratio": null
   },
-  "audiencia": {
-    "AR": {
-      "consultas": [
-        {
-          "consulta": "ceuta",
-          "valor": "978650",
-          "tipo": "rising",
-          "variantes": 1
-        },
-        {
-          "consulta": "marruecos migrantes",
-          "valor": "688000",
-          "tipo": "rising",
-          "variantes": 0
-        },
-        {
-          "consulta": "los migrantes",
-          "valor": "100",
-          "tipo": "top",
-          "variantes": 0
-        }
-      ],
-      "medido": "2026-08-04T21:46:05+00:00"
-    },
-    "VE": {
-      "consultas": [
-        {
-          "consulta": "ceuta",
-          "valor": "359700",
-          "tipo": "rising",
-          "variantes": 1
-        },
-        {
-          "consulta": "españa",
-          "valor": "67",
-          "tipo": "top",
-          "variantes": 1
-        },
-        {
-          "consulta": "marruecos",
-          "valor": "408800",
-          "tipo": "rising",
-          "variantes": 0
-        }
-      ],
-      "medido": "2026-08-03T11:26:20+00:00"
-    },
-    "CL": {
-      "consultas": [
-        {
-          "consulta": "ceuta",
-          "valor": "187350",
-          "tipo": "rising",
-          "variantes": 1
-        },
-        {
-          "consulta": "migrantes chile",
-          "valor": "100",
-          "tipo": "top",
-          "variantes": 1
-        },
-        {
-          "consulta": "marruecos",
-          "valor": "116900",
-          "tipo": "rising",
-          "variantes": 0
-        }
-      ],
-      "medido": "2026-08-04T11:25:23+00:00"
-    },
-    "CO": {
-      "consultas": [
-        {
-          "consulta": "españa",
-          "valor": "96",
-          "tipo": "top",
-          "variantes": 2
-        },
-        {
-          "consulta": "ceuta",
-          "valor": "299700",
-          "tipo": "rising",
-          "variantes": 1
-        },
-        {
-          "consulta": "marruecos migrantes",
-          "valor": "457350",
-          "tipo": "rising",
-          "variantes": 0
-        }
-      ],
-      "medido": "2026-08-04T16:53:09+00:00"
-    },
-    "US": {
-      "consultas": [
-        {
-          "consulta": "ceuta",
-          "valor": "52",
-          "tipo": "top",
-          "variantes": 1
-        },
-        {
-          "consulta": "marruecos",
-          "valor": "259450",
-          "tipo": "rising",
-          "variantes": 0
-        },
-        {
-          "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
-          "valor": "38950",
-          "tipo": "rising",
-          "variantes": 0
-        }
-      ],
-      "medido": "2026-08-04T21:46:10+00:00"
-    }
+  "ceeddabb16d9": {
+   "id_hecho": "ceeddabb16d9",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRNIBhAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRA?oc=5",
+   "termino": "migraciones",
+   "geo": "US",
+   "titulo": "Donald Trump recibe nuevo revés de la Corte Suprema: ciudadanía por nacimiento, se mantiene en Estados Unidos",
+   "importancia": 9,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 15.1,
+   "base": 42.8,
+   "ratio": 0.35
   },
-  "proximo_pais": 6,
-  "paises_sin_datos": [],
-  "servicio": {
-    "DNI extranjero": {
-      "geo": "AR",
-      "puntaje": 10,
-      "reciente": 33.9,
-      "base": 10.1,
-      "ratio": 3.35
-    },
-    "certificado de residencia": {
-      "geo": "AR",
-      "puntaje": 10,
-      "reciente": 28.4,
-      "base": 7.7,
-      "ratio": 3.7
-    }
+  "76ef757d6650": {
+   "id_hecho": "76ef757d6650",
+   "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQbVpSRUdRSFVHZDFZdlJDLWs4aks3TTRfOTRrbkkyUWtBUmMzY2pzd01wZlR4SnpVR1Nfb1otUXJwdkZWQm5UbER0TEdWNGZ5eVFGbGxQZ3lBM3M2WTBNejEwTXV6a25PamMtWFpGdF9JTXcyRG4yUlpVX3FtSzF0X2VHX2xRaFdSRV9lVmlzYm0zdndRUmVtVUY2cHZxSzdTLUtndWlHbDN1a0JwbGhVSmRjQVg0NEctMXEwRVV3UkZLZWxzS0RtT2xwSFJLaThiU0cwTlprYTZFRnlzdlVyT1djSTVlbkxSa2s3MVNOQnEtX01wZG1FVG1QaVEydkxKQklUZkE2dlZ6VDZXRFc0MXBkX1lEcjdpb1BlcDdJWW1zcUk5RG0wbi1IY0VNbkdobFlWMw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "\"Hay personas que la están pasando peor ahí adentro\": futbolista venezolana relata cómo vivió en los centros de detención tras ser arrestada por ICE",
+   "importancia": 8,
+   "velocidad": 6,
+   "puntaje": 0,
+   "reciente": 9.9,
+   "base": 5.1,
+   "ratio": null
   },
-  "alertas": [
+  "1bf4d82a13a2": {
+   "id_hecho": "1bf4d82a13a2",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
+   "termino": "migrantes",
+   "geo": "ES",
+   "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
+   "importancia": 9,
+   "velocidad": 6,
+   "puntaje": 10,
+   "reciente": 33.4,
+   "base": 7.2,
+   "ratio": 4.67
+  },
+  "5faf89e515eb": {
+   "id_hecho": "5faf89e515eb",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMENsbzB6Zzh4VnViVzBWQ1loYVFFc200OW5yZmFScE5pYUhZWC1yaFpEZk1yczVMMEVxMjA0NFUwdDNiWTR3MVBiMm0tS1k4alFJMGVBQy1KQV90a2RBVGV1OVNKRnRNM0h0MjNIY0J1X0hyNkVtdFdvQ09aMk9KN1g3VQ?oc=5",
+   "termino": "migrantes",
+   "geo": "ES",
+   "titulo": "Rescatados 17 migrantes y hallados dos cuerpos tras el naufragio de una patera en Baleares - EFE",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 33.4,
+   "base": 7.2,
+   "ratio": 4.67
+  },
+  "895481f3c593": {
+   "id_hecho": "895481f3c593",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOS3EwMXJiVW92UC1Gd01lTHdISVFOOHVsVzQxRGtoR3hVUEo1c0h6MUNJWUxPX0p3ZjlpeEJmZUgwZ0hxbTlNQV9YRENZeElCWTl6MWs4cHpnSFJvS1ZyRi11eHY1M0tnQk9aQ0tlUnJOS25fRnlRbzdocWpGVmZTVnlSbEFKM3diaGZHNVJUd045N0J0WnFXcA?oc=5",
+   "termino": "regularizacion",
+   "geo": "ES",
+   "titulo": "La regularización extraordinaria suma 262.475 afiliados al mercado laboral hasta julio - EFE",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 16.6,
+   "base": 29.7,
+   "ratio": 0.56
+  }
+ },
+ "audiencia": {
+  "AR": {
+   "consultas": [
     {
-      "id_hecho": "4b4f36c43b4c",
-      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOWkptUDRpWC1zaWo5OFZZM3JyLWJnYnFKZUdpcDJyZE51eDAxSFRIY3JTc0s4RHcwZXlObkdtbnFrRTdid20zT0VZZlFKU0xfRXVlZk9ScWo4ZWtIUDBLYTVvVTNjXzY0VHQxVXhwQjYyRUpxY2d4TW1YYlg3TzVOV3FRY3B1UnBteHlaV0VReElneUp5d25JUm9NU1prSUZfYlFfQ2Y3V25TUXc3REFpWk12bWl0WlkyV2s1bUI2cC1ZaVBSeU5PSEVFUmF5RHJyc2paNEZra2tyM0RlM2R1QWU4WG8tSlNHWGh1MkhMQ0RxcmtlVEpkNGRlalY2N0kzTkc0Q3BGSFhVVFhyTEd1UVZMTnhaaEluVDlrYUgwelRfaGpYX3fSAasCQVVfeXFMTVA0VEpCVDBYN21FdkRDa3YxXzA3Mlo0N2ZQMzJMLVJ0MU1FQUNSTVhTb0F0S1NiOW1ITmRyZm9aQ0szXzUyNGZsaEJ0YWZKX2Y0Q21neU9pbnlOUlZoZnZKNTMwQ0d6aTc2VV94UFRBYm43ejNfS3FWZTZVM3lrUWE4YWx0aTJUbFdxMG04ZXBWLU9vaVAybHM3RFVWLWZINGlONnE3QWM3cHBqRFhnUUJENHEyQXhvWUtZa3AwbGNwdkUtSHBfQ2piWF8wbW1vbjY0V3FYVUdHME16NlJOLU1ySWc4M3ViMmx3SkxMRzVFMWR1dGZXUDFJUXVYRWxna29BMnJLbHJTbHBhWWk0V1ZDQmNqRHZtTWExZWNIUVZVbU10dzhYMVBlZEE?oc=5",
-      "termino": "redadas ICE",
-      "geo": "US",
-      "titulo": "ALERTA MÁXIMA, inmigrantes legales e indocumentados en EE. UU.: en julio, los ARRESTOS de ICE se intensificaron y alcanzaron su nivel más alto",
-      "importancia": 9,
-      "velocidad": 3,
-      "puntaje": 10,
-      "reciente": 19.3,
-      "base": 6.1,
-      "ratio": 3.16,
-      "disparada": "2026-08-04T11:25:27+00:00",
-      "velocidad_inicial": 3,
-      "desenlace": "vigente",
-      "horas": 10.3
+     "consulta": "ceuta",
+     "valor": "944950",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos",
+     "valor": "656400",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "los migrantes",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 0
     }
-  ]
+   ],
+   "medido": "2026-08-05T02:31:10+00:00"
+  },
+  "VE": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "359700",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "españa",
+     "valor": "67",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos",
+     "valor": "408800",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-03T11:26:20+00:00"
+  },
+  "CL": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "187350",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes chile",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos",
+     "valor": "116900",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-04T11:25:23+00:00"
+  },
+  "CO": {
+   "consultas": [
+    {
+     "consulta": "españa",
+     "valor": "96",
+     "tipo": "top",
+     "variantes": 2
+    },
+    {
+     "consulta": "ceuta",
+     "valor": "299700",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos migrantes",
+     "valor": "457350",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-04T16:53:09+00:00"
+  },
+  "US": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "52",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "marruecos",
+     "valor": "259450",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
+     "valor": "38950",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-04T21:46:10+00:00"
+  },
+  "ES": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "75",
+     "tipo": "top",
+     "variantes": 3
+    },
+    {
+     "consulta": "marruecos ceuta",
+     "valor": "232600",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes españa",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-05T02:31:16+00:00"
+  }
+ },
+ "proximo_pais": 0,
+ "paises_sin_datos": [],
+ "servicio": {
+  "DNI extranjero": {
+   "geo": "AR",
+   "puntaje": 9,
+   "reciente": 27.6,
+   "base": 9.6,
+   "ratio": 2.88
+  },
+  "certificado de residencia": {
+   "geo": "AR",
+   "puntaje": 10,
+   "reciente": 22.7,
+   "base": 7.2,
+   "ratio": 3.16
+  }
+ },
+ "alertas": [
+  {
+   "id_hecho": "1bf4d82a13a2",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
+   "termino": "migrantes",
+   "geo": "ES",
+   "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
+   "importancia": 9,
+   "velocidad": 6,
+   "puntaje": 10,
+   "reciente": 33.4,
+   "base": 7.2,
+   "ratio": 4.67,
+   "disparada": "2026-08-05T02:31:20+00:00",
+   "velocidad_inicial": 6,
+   "desenlace": "vigente",
+   "horas": 0
+  },
+  {
+   "id_hecho": "5faf89e515eb",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMENsbzB6Zzh4VnViVzBWQ1loYVFFc200OW5yZmFScE5pYUhZWC1yaFpEZk1yczVMMEVxMjA0NFUwdDNiWTR3MVBiMm0tS1k4alFJMGVBQy1KQV90a2RBVGV1OVNKRnRNM0h0MjNIY0J1X0hyNkVtdFdvQ09aMk9KN1g3VQ?oc=5",
+   "termino": "migrantes",
+   "geo": "ES",
+   "titulo": "Rescatados 17 migrantes y hallados dos cuerpos tras el naufragio de una patera en Baleares - EFE",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 33.4,
+   "base": 7.2,
+   "ratio": 4.67,
+   "disparada": "2026-08-05T02:31:20+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
