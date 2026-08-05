@@ -169,7 +169,7 @@ header{background:var(--rojo);color:#fff;padding:1.9rem 0 1.6rem;margin-bottom:1
   position:relative;overflow:hidden}
 header .trama{position:absolute;right:-30px;top:0;height:100%;width:210px;opacity:.22}
 header .marca-fila{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
-header .logo{height:60px;width:auto;flex:none}
+header .logo{height:96px;width:auto;flex:none}
 header .titulo{border-left:2px solid rgba(255,255,255,.4);padding-left:1.4rem}
 header h1{font-size:1.75rem;font-weight:800;margin:0;letter-spacing:-.015em;
   position:relative;z-index:1}
@@ -309,6 +309,9 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   background:var(--fondo);border:1px solid var(--linea);color:var(--suave);
   text-decoration:none;white-space:nowrap}
 .fuentes a:hover{color:var(--rojo);border-color:var(--rosa-claro)}
+.fuentes .mas{font-size:.77rem;padding:.16rem .55rem;border-radius:4px;
+  background:transparent;border:1px dashed var(--linea);color:var(--tenue);
+  white-space:nowrap;cursor:default}
 
 .acciones{display:flex;align-items:center;gap:.6rem;margin-top:.6rem;
   padding-top:.55rem;border-top:1px solid var(--linea)}
@@ -333,6 +336,7 @@ header .marca::before{content:"";width:16px;height:9px;flex:none;
   background:var(--fondo);border:1px solid var(--sem-verde);color:var(--sem-verde);
   font-weight:600}
 .trend.plano{border-color:var(--linea);color:var(--tenue)}
+.trend.medido0{border-color:var(--linea);color:var(--tenue);opacity:.85}
 .trend.nomedido{border-style:dashed;border-color:var(--linea);color:var(--tenue);
   font-weight:400}
 .tardia{font-size:.7rem;padding:.05rem .42rem;border-radius:3px;
@@ -374,7 +378,7 @@ footer b{color:var(--tinta)}
   </svg>
   <div class="c">
     <div class="marca-fila">
-      <img class="logo" src="logo-refugio.svg" alt="Refugio Latinoamericano" width="240" height="71">
+      <img class="logo" src="logo-refugio.svg" alt="Refugio Latinoamericano" width="324" height="96">
       <div class="titulo">
         <h1>Radar Migratorio</h1>
         <p class="bajada">Alertas de noticias sobre movilidad humana</p>
@@ -443,6 +447,83 @@ const ESTADOS = {
 const ORDEN=['top_trend','trending','interes','emergente','nadie_lo_mira','ruido','fuera_alcance'];
 
 function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
+
+// --- Jerarquia de fuentes (puntos 4 y 5) --------------------------------
+// Rango 0 = agencias de noticias (la referencia mas confiable y la que suele
+// tener el titular mejor redactado). Rango 1 = legacy media y diarios de
+// referencia. Rango 2 = todo lo demas. Se compara por subcadena en minusculas
+// contra el nombre del medio, asi tolera variantes ("EFE", "EFE - Agencia...").
+const AGENCIAS=['efe','reuters','afp','associated press',' ap ','ap)','europa press',
+  'télam','telam','ansa','dpa','notimex','bloomberg','xinhua'];
+const LEGACY=['la nación','la nacion','clarín','clarin','infobae','página 12','pagina 12',
+  'el país','el pais','el mundo','el observador','la vanguardia','abc','el cronista',
+  'ámbito','ambito','perfil','el universal','el tiempo','el espectador','el comercio',
+  'milenio','proceso','excélsior','excelsior','reforma','la tercera','el mercurio',
+  'la república','la republica','el nacional','el universo','semana','el heraldo',
+  'la prensa','el colombiano','o globo','folha','estadão','estadao','the new york times',
+  'washington post','the guardian','bbc','cnn','univision','telemundo','france 24',
+  'deutsche welle','dw','telesur','euronews'];
+function rangoMedio(nombre){
+  const n=(nombre||'').toLowerCase();
+  if(AGENCIAS.some(a=>n.includes(a.trim()))) return 0;
+  if(LEGACY.some(a=>n.includes(a))) return 1;
+  return 2;
+}
+// Ordena las coberturas de un hecho por importancia de la fuente (punto 4).
+// Estable: dentro del mismo rango se conserva el orden original.
+function fuentesOrdenadas(cob){
+  return (cob||[]).map((c,idx)=>({c,idx,r:rangoMedio(c.medio)}))
+    .sort((a,b)=>a.r-b.r || a.idx-b.idx).map(x=>x.c);
+}
+
+// Limpia un titular crudo de RSS (punto 5): saca emojis y simbolos sueltos del
+// arranque, colapsa espacios, y si el "titular" trae la bajada pegada sin
+// puntuacion (o quedo cortado a mitad de palabra por el feed), corta en el
+// primer limite razonable. No inventa texto: solo recorta lo que sobra.
+function limpiarTitular(t){
+  if(!t) return '';
+  // Filtrar emojis y simbolos por code point (sin regex unicode, para no chocar
+  // con el escapado del template). Se conservan letras, numeros, puntuacion y
+  // acentos; se descartan pictogramas, dingbats y variation selectors.
+  let out='';
+  for(const ch of t){
+    const cp=ch.codePointAt(0);
+    const emoji = cp>=0x1F000 || (cp>=0x2600&&cp<=0x27BF) ||
+                  (cp>=0x2B00&&cp<=0x2BFF) || cp===0xFE0F || cp===0x200D ||
+                  (cp>=0x2190&&cp<=0x21FF && cp!==0x2013 && cp!==0x2014);
+    if(!emoji) out+=ch;
+  }
+  // Colapsar espacios y limpiar simbolos sueltos del arranque.
+  let s=out.replace(/\\s+/g,' ').trim();
+  while(s && '-\u2013\u2014|.,:;>#*'.indexOf(s[0])>=0) s=s.slice(1).trim();
+  // Los titulares bien formados de agencias y legacy rara vez pasan de ~110
+  // caracteres. Los que se pasan suelen ser feeds que pegan titular + bajada en
+  // un mismo campo. No se intenta adivinar la frontera semantica (los nombres
+  // propios en espanol -Delaney Hall, El Salvador, ICE- hacen que cualquier
+  // heuristica de mayusculas falle): se corta parejo y predecible.
+  //   1) si hay puntuacion fuerte temprana (una oracion completa corta), ahi.
+  //   2) si no, recorte por palabra a ~110 con elipsis, senal honesta de "sigue".
+  const TOPE=115;
+  if(s.length>TOPE){
+    const m=s.match(/^(.{40,110}?[.;!?])(?:\\s|$)/);
+    if(m){ s=m[1]; }
+    else{
+      s=s.slice(0,TOPE);
+      const sp=s.lastIndexOf(' ');
+      if(sp>70) s=s.slice(0,sp);
+      s=s.replace(/[\\s.,:;|_-]+$/,'')+'\u2026';
+    }
+  }
+  return s.trim();
+}
+// Titular a mostrar (punto 5): el del hecho, pero limpiado. Si el propio
+// titulo_original vino roto, se usa igual limpiado — no hay texto por fuente en
+// los datos actuales, asi que la mejora esta en la limpieza, no en cambiar de
+// fuente. (Cuando la ingesta guarde titulo por cobertura, aca se elegiria el de
+// la fuente de menor rango.)
+function tituloMostrar(i){
+  return limpiarTitular(i.titulo_original||'');
+}
 
 // El borrador se pide al Worker (/generar-borrador): redacta y envia por correo.
 // El boton transiciona rojo -> "Enviando..." -> verde "Borrador enviado".
@@ -612,14 +693,18 @@ function dibujar(){
   l.innerHTML=vis.map(i=>{
     const cob=i.coberturas||[];
     return `<article class="item">
-      <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titulo_original)}</a></h2>
+      <h2><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(tituloMostrar(i))}</a></h2>
       <div class="datos">
         ${i.importancia?`<span class="imp" title="Importancia editorial, 1 a 10">Importancia <b>${i.importancia}</b></span>`:''}
         ${i.cobertura_tardia?`<span class="tardia" title="El titular retoma un hecho de días anteriores, no informa algo nuevo">cobertura tardía</span>`:''}
         ${i.fuera_de_alcance?`<span class="extrarreg" title="Ocurre fuera de America Latina, el Caribe y Estados Unidos">extrarregional</span>`:''}
         ${!i.fuera_de_alcance?(i.trends!=null
-            ?`<span class="trend${i.trends>=5?'':' plano'}" title="${esc(i.trends_motivo||'')}">búsquedas ${i.trends>=5?'↑':(i.trends>0?'→':'—')} ${i.trends}/10</span>`
-            :`<span class="trend nomedido" title="Google Trends limita las consultas por día: este hecho no se midió todavía">búsquedas s/d</span>`):''}
+            ?`<span class="trend${i.trends>=5?'':(i.trends>0?' plano':' medido0')}" title="${
+                i.trends>=5?('Búsquedas subiendo. '+esc(i.trends_motivo||''))
+                :(i.trends>0?('Búsquedas con movimiento leve. '+esc(i.trends_motivo||''))
+                :('Google Trends SÍ lo midió, pero las búsquedas están planas: '+esc(i.trends_motivo||'sin ratio significativo')))
+              }">búsquedas ${i.trends>=5?'↑':(i.trends>0?'→':'≈')} ${i.trends}/10</span>`
+            :`<span class="trend nomedido" title="Google Trends limita las consultas por día: este hecho todavía NO se midió (distinto de medido en 0)">búsquedas s/d</span>`):''}
         ${i.requiere_verificacion?`<span class="alerta-mini" title="El titular afirma cifras o hechos sin citar fuente">verificar</span>`:''}
         ${i.contiene_datos_personales?`<span class="alerta-mini" title="Identifica a una persona migrante concreta">dato personal</span>`:''}
         <span><span class="vel">${i.velocidad}</span> ${i.velocidad===1?'medio':'medios'}</span>
@@ -630,9 +715,14 @@ function dibujar(){
       ${i.angulo_sugerido?`<p class="angulo">${esc(i.angulo_sugerido)}</p>`:''}
       ${(i.terminologia_problematica||[]).length?`<p class="termino">Lenguaje a revisar en la cobertura: ${
         i.terminologia_problematica.map(x=>esc(x)).join(', ')}</p>`:''}
-      ${cob.length?`<div class="fuentes"><div class="tit">Publicado por</div><ul>${
-        cob.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`).join('')
-      }</ul></div>`:''}
+      ${cob.length?(()=>{
+        const ord=fuentesOrdenadas(cob);          // punto 4: agencias y legacy primero
+        const TOPE=7;                              // punto 3: hasta 7 chips visibles
+        const vis=ord.slice(0,TOPE), resto=ord.length-vis.length;
+        return `<div class="fuentes"><div class="tit">Publicado por</div><ul>${
+          vis.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.medio)}</a></li>`).join('')
+        }${resto>0?`<li class="mas" title="${esc(ord.slice(TOPE).map(c=>c.medio).join(', '))}">+${resto} ${resto===1?'fuente':'fuentes'}</li>`:''}</ul></div>`;
+      })():''}
       ${i.puede_borrador?`<div class="acciones"><button class="borrador" data-id="${esc(i.id)}" onclick="pedirBorrador(this)">Generar borrador</button><span class="ayuda">${i.velocidad} medios · importancia ${i.importancia}</span></div>`:''}
       <div class="etiquetas">
         ${(i.ejes||[]).map(e=>`<span class="et eje">${esc(e)}</span>`).join('')}
@@ -663,8 +753,8 @@ function armarAlertas(){
     t.alertas.map(a=>{
       const d=DESENLACE[a.desenlace]||DESENLACE.vigente;
       return `<li><span class="dsc ${d.c}">${d.t}</span> `+
-        `${a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener"><b>${esc(a.titulo)}</b></a>`
-                :`<b>${esc(a.titulo)}</b>`}<br>`+
+        `${a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener"><b>${esc(limpiarTitular(a.titulo))}</b></a>`
+                :`<b>${esc(limpiarTitular(a.titulo))}</b>`}<br>`+
         `<span class="det">búsquedas de «${esc(a.termino)}» ×${a.ratio} en ${esc(a.geo)} · `+
         `importancia ${a.importancia} · ${a.velocidad} medios · ${cuando(a.horas)}</span>`+
         `${a.puede_borrador?`<br><button class="borrador chico" data-id="${esc(a.id_hecho)}" onclick="pedirBorrador(this)">Generar borrador</button>`:''}</li>`;

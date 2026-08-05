@@ -270,7 +270,8 @@ def main() -> int:
     ap.add_argument("--forzar", action="store_true", help="ignora el cache")
     args = ap.parse_args()
 
-    cfg = cargar().get("tendencias", {})
+    cfg_full = cargar()
+    cfg = cfg_full.get("tendencias", {})
     if not cfg.get("activo"):
         log.info("Tendencias desactivado en fuentes.yaml")
         SALIDA.write_text(json.dumps(vacio("desactivado"), ensure_ascii=False, indent=1),
@@ -419,17 +420,28 @@ def main() -> int:
 
     # Solo geos dentro del alcance editorial (America Latina, Caribe, Norteamerica).
     # Sin esto, un hecho de Espana con muchas busquedas generaba una alerta que no
-    # corresponde al foco del radar. El catalogo sale de fuentes.yaml.
+    # corresponde al foco del radar. Las alertas editoriales SON de la region.
+    #
+    # OJO: `paises_catalogo` es una seccion de PRIMER NIVEL de fuentes.yaml, no
+    # esta dentro de `tendencias`. Leerlo de `cfg` (que es solo la subseccion
+    # `tendencias`) devolvia siempre {}. Y como el filtro tenia un `not en_alcance`
+    # de respaldo, un catalogo vacio DESACTIVABA el filtro entero: por eso Espana
+    # volvia a colarse. Ahora se lee del YAML completo y, si por algun motivo
+    # quedara vacio, se aborta ruidosamente en vez de dejar pasar todo.
     en_alcance = set(
-        (cfg.get("paises_catalogo", {}).get("paises", {}) or {}).keys()
+        (cfg_full.get("paises_catalogo", {}).get("paises", {}) or {}).keys()
     )
+    if not en_alcance:
+        raise RuntimeError(
+            "paises_catalogo.paises vacio: no puedo filtrar alertas por alcance. "
+            "Revisar fuentes.yaml antes de generar alertas editoriales.")
 
     nuevas = {
         d["id_hecho"]: {**d, "disparada": ahora.isoformat(timespec="seconds"),
                         "velocidad_inicial": d.get("velocidad")}
         for d in resultados.values()
         if d["puntaje"] >= umbral_alerta and (d.get("importancia") or 0) >= imp_minima
-        and (not en_alcance or d.get("geo") in en_alcance)
+        and d.get("geo") in en_alcance
     }
 
     # Las alertas viejas se conservan y se les actualiza el desenlace. Un hecho
@@ -443,7 +455,7 @@ def main() -> int:
             continue
         if edad > horas_vivas:
             continue
-        if en_alcance and a.get("geo") not in en_alcance:
+        if a.get("geo") not in en_alcance:
             continue                       # descarta alertas fuera de alcance ya guardadas
         if a["id_hecho"] in nuevas:
             continue                       # se reemplaza por la version nueva

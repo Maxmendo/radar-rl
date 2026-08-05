@@ -258,23 +258,6 @@
    "velocidad_inicial": 6,
    "desenlace": "vigente",
    "horas": 0
-  },
-  {
-   "id_hecho": "5faf89e515eb",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMENsbzB6Zzh4VnViVzBWQ1loYVFFc200OW5yZmFScE5pYUhZWC1yaFpEZk1yczVMMEVxMjA0NFUwdDNiWTR3MVBiMm0tS1k4alFJMGVBQy1KQV90a2RBVGV1OVNKRnRNM0h0MjNIY0J1X0hyNkVtdFdvQ09aMk9KN1g3VQ?oc=5",
-   "termino": "migrantes",
-   "geo": "ES",
-   "titulo": "Rescatados 17 migrantes y hallados dos cuerpos tras el naufragio de una patera en Baleares - EFE",
-   "importancia": 9,
-   "velocidad": 1,
-   "puntaje": 10,
-   "reciente": 33.4,
-   "base": 7.2,
-   "ratio": 4.67,
-   "disparada": "2026-08-05T02:31:20+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "se_enfrio",
-   "horas": 6.1
   }
  ]
 }
