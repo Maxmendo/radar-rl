@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-05T02:31:20+00:00",
+ "generado": "2026-08-05T05:47:58+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -13,22 +13,48 @@
    "importancia": 9,
    "velocidad": 7,
    "puntaje": 0,
-   "reciente": 9.9,
-   "base": 5.1,
+   "reciente": 3.9,
+   "base": 1.3,
    "ratio": null
   },
   "ceeddabb16d9": {
    "id_hecho": "ceeddabb16d9",
    "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRNIBhAJBVV95cUxQR0t5OHpBODg2TVBjekdmSk80VzRQN242UUtGdTlXT3pwcTJjaVpZOG03X3o5NXJJWGFrWEdycnJRVEw1VjNJV1pvcDJPdFlSS0xHYk05UWpxN1d1aFZvemJtUkxSbUpnM21GSTZxY1hnUVQ0RjZSbnBoYm5lMmplREE1STZLWDBYTkhwZnZEUVFLajFyeXYtRWlBU3ZJdGdGRUs5Qjd1ckRLcWJmMDJLek5iMEVJZzBjY211R2hDZGtHX1llazFMbGZfZklBT0s1VWVUNFhuaFNSTVFEUWZmODJUOFRBZFJZVFFYVDZuTnhGTWJ2eEF1U3BvNHlqLUNDdFVBRA?oc=5",
-   "termino": "migraciones",
+   "termino": "ciudadania",
    "geo": "US",
    "titulo": "Donald Trump recibe nuevo revés de la Corte Suprema: ciudadanía por nacimiento, se mantiene en Estados Unidos",
    "importancia": 9,
-   "velocidad": 5,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 15.1,
-   "base": 42.8,
-   "ratio": 0.35
+   "reciente": 40.7,
+   "base": 40.1,
+   "ratio": 1.02
+  },
+  "ad4b53d0651f": {
+   "id_hecho": "ad4b53d0651f",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNamx4ZWVsYjFWQmg4d3pBd2VnNmhDeDBkRl85UnZrVHFHdmp4X0hVOXpOdUZ6YTFtR0ZyVVBSMkxibUMyYk9QTzE1d0VaZGtsdkZQc1g1cmVOWkNxd1VYelQ0em9CTlBGMS1kaWJVUWFyLXB4N1ZKS2d1M0xtODZDbXU5YXoyQ1Jhc1dTS1Jva2gzZUt0bWZHSWI4V29oVTgzTWYxRzlIRXZTaVVTX3k3d3ZRTk9GbG5XWHlEY2RtNG5rc1o3dXk1Z3NuOFU0bUEzLTdWSTlSNzE1OXlJUnZIN3NSWjhJVGo5a2p2V3FBSdIB7wFBVV95cUxNamx4ZWVsYjFWQmg4d3pBd2VnNmhDeDBkRl85UnZrVHFHdmp4X0hVOXpOdUZ6YTFtR0ZyVVBSMkxibUMyYk9QTzE1d0VaZGtsdkZQc1g1cmVOWkNxd1VYelQ0em9CTlBGMS1kaWJVUWFyLXB4N1ZKS2d1M0xtODZDbXU5YXoyQ1Jhc1dTS1Jva2gzZUt0bWZHSWI4V29oVTgzTWYxRzlIRXZTaVVTX3k3d3ZRTk9GbG5XWHlEY2RtNG5rc1o3dXk1Z3NuOFU0bUEzLTdWSTlSNzE1OXlJUnZIN3NSWjhJVGo5a2p2V3FBSQ?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Detención de migrantes en EEUU alcanza su punto más alto durante el Gobierno de Trump",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 3.9,
+   "base": 1.3,
+   "ratio": null
+  },
+  "f98a3a17d2a7": {
+   "id_hecho": "f98a3a17d2a7",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOS2MyQXRIWHV2OUM2Q2ppTU5idV9ScVlqamZuSXd1YkZ1M25IYTYtT2xPNlJ4WXJ6eHNvcXB6WHI4WjY3aTJpTE4ySUpRaVRQLVg3Z0Q1S0FxMk5hU2RyeHV1ZnMzVHZpRm9OMnAwM0J6cU5wS0dzN3drRzAxTTdadkN2MUFNN09lay0tQVp3Yjk2WlJYdFhYSVFvdw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Demócratas concluyen que agentes de ICE ocultaron pruebas en muerte inmigrante en Houston",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 3.9,
+   "base": 1.3,
+   "ratio": null
   },
   "76ef757d6650": {
    "id_hecho": "76ef757d6650",
@@ -37,10 +63,10 @@
    "geo": "US",
    "titulo": "\"Hay personas que la están pasando peor ahí adentro\": futbolista venezolana relata cómo vivió en los centros de detención tras ser arrestada por ICE",
    "importancia": 8,
-   "velocidad": 6,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 9.9,
-   "base": 5.1,
+   "reciente": 3.9,
+   "base": 1.3,
    "ratio": null
   },
   "1bf4d82a13a2": {
@@ -52,35 +78,9 @@
    "importancia": 9,
    "velocidad": 6,
    "puntaje": 10,
-   "reciente": 33.4,
-   "base": 7.2,
-   "ratio": 4.67
-  },
-  "5faf89e515eb": {
-   "id_hecho": "5faf89e515eb",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMENsbzB6Zzh4VnViVzBWQ1loYVFFc200OW5yZmFScE5pYUhZWC1yaFpEZk1yczVMMEVxMjA0NFUwdDNiWTR3MVBiMm0tS1k4alFJMGVBQy1KQV90a2RBVGV1OVNKRnRNM0h0MjNIY0J1X0hyNkVtdFdvQ09aMk9KN1g3VQ?oc=5",
-   "termino": "migrantes",
-   "geo": "ES",
-   "titulo": "Rescatados 17 migrantes y hallados dos cuerpos tras el naufragio de una patera en Baleares - EFE",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 33.4,
-   "base": 7.2,
-   "ratio": 4.67
-  },
-  "895481f3c593": {
-   "id_hecho": "895481f3c593",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOS3EwMXJiVW92UC1Gd01lTHdISVFOOHVsVzQxRGtoR3hVUEo1c0h6MUNJWUxPX0p3ZjlpeEJmZUgwZ0hxbTlNQV9YRENZeElCWTl6MWs4cHpnSFJvS1ZyRi11eHY1M0tnQk9aQ0tlUnJOS25fRnlRbzdocWpGVmZTVnlSbEFKM3diaGZHNVJUd045N0J0WnFXcA?oc=5",
-   "termino": "regularizacion",
-   "geo": "ES",
-   "titulo": "La regularización extraordinaria suma 262.475 afiliados al mercado laboral hasta julio - EFE",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 16.6,
-   "base": 29.7,
-   "ratio": 0.56
+   "reciente": 47.7,
+   "base": 9.9,
+   "ratio": 4.82
   }
  },
  "audiencia": {
@@ -111,24 +111,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "359700",
+     "valor": "402600",
      "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "españa",
-     "valor": "67",
-     "tipo": "top",
      "variantes": 1
     },
     {
      "consulta": "marruecos",
-     "valor": "408800",
-     "tipo": "rising",
-     "variantes": 0
+     "valor": "31",
+     "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "españa migrantes",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 1
     }
    ],
-   "medido": "2026-08-03T11:26:20+00:00"
+   "medido": "2026-08-05T05:47:54+00:00"
   },
   "CL": {
    "consultas": [
@@ -223,22 +223,24 @@
    "medido": "2026-08-05T02:31:16+00:00"
   }
  },
- "proximo_pais": 0,
- "paises_sin_datos": [],
+ "proximo_pais": 1,
+ "paises_sin_datos": [
+  "AR"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 27.6,
-   "base": 9.6,
-   "ratio": 2.88
+   "puntaje": 10,
+   "reciente": 33.3,
+   "base": 7.1,
+   "ratio": 4.7
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 22.7,
-   "base": 7.2,
-   "ratio": 3.16
+   "puntaje": 9,
+   "reciente": 25.6,
+   "base": 8.8,
+   "ratio": 2.9
   }
  },
  "alertas": [
@@ -251,10 +253,10 @@
    "importancia": 9,
    "velocidad": 6,
    "puntaje": 10,
-   "reciente": 33.4,
-   "base": 7.2,
-   "ratio": 4.67,
-   "disparada": "2026-08-05T02:31:20+00:00",
+   "reciente": 47.7,
+   "base": 9.9,
+   "ratio": 4.82,
+   "disparada": "2026-08-05T05:47:58+00:00",
    "velocidad_inicial": 6,
    "desenlace": "vigente",
    "horas": 0
@@ -266,15 +268,15 @@
    "geo": "ES",
    "titulo": "Rescatados 17 migrantes y hallados dos cuerpos tras el naufragio de una patera en Baleares - EFE",
    "importancia": 9,
-   "velocidad": 3,
+   "velocidad": 1,
    "puntaje": 10,
    "reciente": 33.4,
    "base": 7.2,
    "ratio": 4.67,
    "disparada": "2026-08-05T02:31:20+00:00",
    "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
+   "desenlace": "se_enfrio",
+   "horas": 3.3
   }
  ]
 }
