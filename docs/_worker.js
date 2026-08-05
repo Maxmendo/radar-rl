@@ -53,6 +53,14 @@ async function manejarBorrador(request, env) {
     return json({ ok: false, error: "Falta el tÃ­tulo del hecho" }, 400);
   }
 
+  // El texto pesado de las fuentes no viaja en el payload (inflaria el HTML):
+  // se lee aca de items.json, que la ingesta ya enriquecio con fuentes_texto.
+  try {
+    hecho.fuentes_texto = await leerFuentesTexto(hecho.id, request, env);
+  } catch {
+    hecho.fuentes_texto = [];           // sin texto -> el prompt hara fallo seguro
+  }
+
   let borrador;
   try {
     borrador = await redactar(hecho, env);
@@ -74,9 +82,33 @@ async function manejarBorrador(request, env) {
   return json({ ok: true, mensaje: "Borrador enviado por correo." }, 200);
 }
 
+// Lee datos/items.json (servido como asset) y devuelve el fuentes_texto del
+// hecho pedido. items.json esta en la raiz de los assets como /items.json o
+// bajo /datos/; se prueban ambas rutas.
+async function leerFuentesTexto(id, request, env) {
+  if (!id || !env.ASSETS) return [];
+  const base = new URL(request.url).origin;
+  for (const ruta of ["/items.json", "/datos/items.json"]) {
+    try {
+      const r = await env.ASSETS.fetch(new Request(base + ruta));
+      if (!r.ok) continue;
+      const data = await r.json();
+      const items = data.items || [];
+      const h = items.find((x) => String(x.id) === String(id));
+      if (h && Array.isArray(h.fuentes_texto)) return h.fuentes_texto;
+      return [];
+    } catch {
+      continue;
+    }
+  }
+  return [];
+}
+
 // ---------------------------------------------------------------------------
 // RedacciÃ³n con cascada Gemini -> Claude -> Groq (usa las claves que existan)
 // ---------------------------------------------------------------------------
+// El texto de las fuentes lo baja la INGESTA (Python, robusto) y llega ya listo
+// en hecho.fuentes_texto. El Worker no resuelve URLs en vivo: solo redacta.
 async function redactar(hecho, env) {
   const prompt = construirPrompt(hecho);
   const errores = [];
@@ -98,39 +130,99 @@ async function redactar(hecho, env) {
 }
 
 function construirPrompt(h) {
-  const medios = Array.isArray(h.medios) ? h.medios.join(", ") : (h.medios || "s/d");
   const ejes = Array.isArray(h.ejes) ? h.ejes.join(", ") : (h.ejes || "s/d");
   const paises = Array.isArray(h.paises) ? h.paises.join(", ") : (h.paises || h.pais || "s/d");
+  const pobl = Array.isArray(h.poblaciones) ? h.poblaciones.join(", ") : "";
 
-  return `Sos redactor/a de Refugio Latinoamericano, medio digital de periodismo migratorio desde una perspectiva de derechos humanos e intercultural.
+  const fuentes = Array.isArray(h.fuentes_texto) ? h.fuentes_texto : [];
+  const conTexto = fuentes.filter((f) => f && f.ok && f.texto);
+  const sinTexto = fuentes.filter((f) => !f || !f.ok || !f.texto);
 
-RedactÃ¡ un BORRADOR de nota a partir del siguiente hecho detectado por el Radar Migratorio. Es un punto de partida editable para el equipo, no una nota final.
+  const AGENCIAS = ["reuters", "apnews", "afp", "efe", "dpa"];
+  const catDe = (dom) => {
+    dom = (dom || "").toLowerCase();
+    if (AGENCIAS.some((a) => dom.includes(a))) return "A (agencia)";
+    return "B (medio de referencia)";
+  };
 
-HECHO:
-- TÃ­tulo original: ${h.titulo}
-- Ãngulo sugerido: ${h.angulo || "s/d"}
-- PaÃ­ses: ${paises}
-- RegiÃ³n: ${h.region || "s/d"}
-- Medios que lo cubrieron: ${medios}
-- Ejes temÃ¡ticos: ${ejes}
-- Enlace de referencia: ${h.url || "s/d"}
+  const material = conTexto
+    .map((f, i) => `--- FUENTE ${i + 1}: ${f.medio} [${catDe(f.dominio)}] (${f.dominio || "dominio s/d"})
+URL: ${f.url}
+TEXTO:
+${f.texto}`)
+    .join("\n\n");
 
-PAUTAS EDITORIALES OBLIGATORIAS:
-- AplicÃ¡ la guÃ­a de ACNUR para cobertura no estigmatizante de la migraciÃ³n.
-- No reduzcas a las personas a su condiciÃ³n migratoria. Prohibido "un migrante", "ilegales".
-- EnmarcÃ¡ desde derechos humanos. No criminalices ni deshumanices.
-- No inventes datos, cifras ni declaraciones que no estÃ©n en el material fuente. Si falta algo, marcÃ¡ "[verificar]".
-- CerrÃ¡ con "Pendientes de verificaciÃ³n" y "Fuentes a consultar".
+  if (conTexto.length < 3) {
+    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero NO se pudo acceder al texto de al menos 3 fuentes (se accedio a ${conTexto.length}). NO inventes una nota.
 
-FORMATO:
-1. TÃ­tulo propuesto
-2. Bajada (1-2 oraciones)
-3. Cuerpo (3-5 pÃ¡rrafos)
-4. Pendientes de verificaciÃ³n
-5. Fuentes a consultar
+HECHO: ${h.titulo}
+Paises: ${paises} | Region: ${h.region || "s/d"} | Ejes: ${ejes}
+Fuentes con texto: ${conTexto.map((f) => f.medio).join(", ") || "ninguna"}
+Fuentes sin acceso: ${sinTexto.map((f) => f.medio).join(", ") || "-"}
 
-EspaÃ±ol rioplatense, tono sobrio y riguroso.`;
+Responde SOLO con este unico bloque, sin ningun otro:
+
+NOTA INCOMPLETA - INFORMACION INSUFICIENTE
+En texto corrido y sin vinetas, en 2 o 3 parrafos: (1) que se sabe del hecho por el titular y el material disponible; (2) que datos centrales faltan para responder las 7W; (3) que fuentes convendria consultar. No agregues nada mas.`;
+  }
+
+  return `ROL
+Sos periodista de Refugio Latinoamericano, medio de periodismo migratorio con perspectiva de derechos humanos e intercultural. Redactas un BORRADOR de nota como informe: original, verificado, narrativamente cohesionado. Es un punto de partida editable para el equipo, no la nota final.
+
+MATERIAL (texto real de las fuentes principales del hecho; es tu materia prima exclusiva):
+${material}
+
+DATOS DEL RADAR (contexto ya clasificado; respetalo, no lo redefinas):
+- Titulo detectado: ${h.titulo}
+- Angulo sugerido: ${h.angulo || "s/d"}
+- Paises donde ocurre: ${paises}
+- Region: ${h.region || "s/d"}
+- Ejes tematicos: ${ejes}${pobl ? `
+- Poblaciones mencionadas: ${pobl}` : ""}
+${sinTexto.length ? `
+FUENTES SIN ACCESO (no uses su contenido, solo mencionalas como pendientes): ${sinTexto.map((f) => f.medio).join(", ")}` : ""}
+
+TAREA
+1. Extrae de cada fuente los hechos centrales: que paso, datos duros (cifras, fechas, nombres, cargos), declaraciones textuales, contexto.
+2. Contrasta entre las fuentes: coincidencias (dato en 2+ fuentes = establecido), divergencias (si discrepan, prevalece la mayoritaria y se menciona la discrepancia con atribucion), vacios (dato en una sola fuente, se incorpora con su atribucion).
+3. Sintetiza UNA pieza original. No copies frases ni la estructura de las fuentes.
+
+REGLAS DE REDACCION
+- El LEAD (primer parrafo) debe responder las 7W: quien, que, cuando, donde, por que, como y con que consecuencias. Puede extenderse a dos parrafos si hace falta.
+- Atribui cada dato a su fuente en el texto: "segun EFE", "de acuerdo con Infobae", "declaro ante Reuters". Toda declaracion con nombre y cargo completos.
+- No inventes datos, cifras, cargos ni declaraciones que no esten en el MATERIAL. Si un dato clave falta, marcalo "[a verificar por el equipo]".
+- No opines. Solo informas hechos constatados en el material.
+- Subtitulos internos declarativos y autocontenidos (oraciones completas con informacion), no metaforicos ni interrogativos.
+- Parrafos cortos (max 4 lineas). Ninguna linea empieza con guion, asterisco, numero+punto ni vineta. Sin tablas.
+- Respeta la categoria legal que ya fijo el Radar (migrante, refugiado, solicitante de asilo, desplazado): no la cambies.
+- PROHIBIDO generar, sintetizar o parafrasear testimonios de personas migrantes. Si una fuente cita un testimonio, podes referirlo con atribucion, nunca recrearlo.
+
+FACT CHECKING
+No tenes acceso a web en vivo: NO verifiques contra fuentes externas. En el bloque de fact-checking, lista los datos centrales con su fuente y marcalos "a verificar por el equipo".
+
+FORMATO DE SALIDA (exactamente estos bloques, en este orden, sin texto antes ni despues):
+
+TITULO PROPUESTO
+Informativo, voz activa, sin infinitivo ni signos de interrogacion/exclamacion. Max 12 palabras.
+
+BAJADA
+Una oracion que amplia el titulo con un dato clave. 20-35 palabras. No repite palabras del titulo.
+
+LEAD
+Primer parrafo con las 7W. Presenta el hecho central, no el contexto.
+
+CUERPO
+Prosa periodistica continua con subtitulos declarativos. Causas, impacto, contexto, perspectivas. Toda afirmacion atribuida.
+
+FACT CHECKING - A VERIFICAR POR EL EQUIPO
+Una linea por dato central: [dato] - [fuente] - a verificar por el equipo. Sin vinetas ni tablas.
+
+PENDIENTES Y FUENTES A CONSULTAR
+Que falta para completar la nota y que fuentes adicionales convendria sumar (inclui las fuentes sin acceso, si las hay).
+
+Espanol rioplatense, tono sobrio, riguroso y humanizador, sin sensacionalismo.`;
 }
+
 
 async function viaGemini(prompt, key) {
   const r = await fetch(
@@ -138,7 +230,10 @@ async function viaGemini(prompt, key) {
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { maxOutputTokens: 4000, temperature: 0.4 },
+      }),
     }
   );
   if (!r.ok) throw new Error("HTTP " + r.status);
@@ -158,7 +253,7 @@ async function viaClaude(prompt, key) {
     },
     body: JSON.stringify({
       model: "claude-opus-4-8",
-      max_tokens: 2000,
+      max_tokens: 4000,
       messages: [{ role: "user", content: prompt }],
     }),
   });

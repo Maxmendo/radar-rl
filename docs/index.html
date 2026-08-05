@@ -338,7 +338,7 @@ let vista=null, regionActiva=null, paisActivo=null;
 
 const ESTADOS = {
   trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
-  interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Ordenado por importancia editorial; el dato de búsquedas en Google va al lado de cada hecho, para que la decisión combine ambas cosas.'},
+  interes:{n:'De interés', a:'Noticias que están subiendo en importancia y búsquedas. Posible punto justo para publicar.'},
   top_trend:{n:'Top trend', a:'La conversación dominante del momento: 20 o más medios en la región, 30 o más fuera de ella. Cubrir solo con ángulo propio.'},
   emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.'},
   nadie_lo_mira:{n:'Posibles alertas', a:'Posible noticia de impacto. Para investigar. Alta importancia editorial y aún con poca cobertura.'},
@@ -434,8 +434,10 @@ async function pedirBorrador(boton){
   if(!h){ boton.textContent='No se encontró el hecho'; return; }
   const medios=(h.coberturas||[]).map(c=>c.medio).filter(Boolean);
   const payload={
+    id:h.id,
     titulo:h.titulo_original||'', angulo:h.angulo_sugerido||'', url:h.url||'',
     paises:h.paises||[], region:h.region||'', ejes:h.ejes||[], medios:medios,
+    poblaciones:h.poblaciones||[], colectividades:h.colectividades||[],
     velocidad:h.velocidad, importancia:h.importancia
   };
   if(boton.dataset.enviando==='1') return;

@@ -453,7 +453,7 @@ let vista=null, regionActiva=null, paisActivo=null;
 
 const ESTADOS = {
   trending:{n:'Trending', a:'8 o más medios. Ya está instalado: publicar ahora, o buscar el ángulo que nadie tomó.'},
-  interes:{n:'De interés', a:'3 o más medios. EL PUNTO JUSTO: todavía se llega temprano. Ordenado por importancia editorial; el dato de búsquedas en Google va al lado de cada hecho, para que la decisión combine ambas cosas.'},
+  interes:{n:'De interés', a:'Noticias que están subiendo en importancia y búsquedas. Posible punto justo para publicar.'},
   top_trend:{n:'Top trend', a:'La conversación dominante del momento: 20 o más medios en la región, 30 o más fuera de ella. Cubrir solo con ángulo propio.'},
   emergente:{n:'Emergente', a:'1 o 2 medios. Puede ser una primicia o puede ser irrelevante: sin clasificación todavía no se distingue. Es donde hay que mirar a mano.'},
   nadie_lo_mira:{n:'Posibles alertas', a:'Posible noticia de impacto. Para investigar. Alta importancia editorial y aún con poca cobertura.'},
@@ -549,8 +549,10 @@ async function pedirBorrador(boton){
   if(!h){ boton.textContent='No se encontró el hecho'; return; }
   const medios=(h.coberturas||[]).map(c=>c.medio).filter(Boolean);
   const payload={
+    id:h.id,
     titulo:h.titulo_original||'', angulo:h.angulo_sugerido||'', url:h.url||'',
     paises:h.paises||[], region:h.region||'', ejes:h.ejes||[], medios:medios,
+    poblaciones:h.poblaciones||[], colectividades:h.colectividades||[],
     velocidad:h.velocidad, importancia:h.importancia
   };
   if(boton.dataset.enviando==='1') return;
@@ -935,6 +937,15 @@ def main() -> int:
 
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text(html, encoding="utf-8")
+
+    # El Worker del borrador lee el texto pre-bajado de las fuentes desde
+    # docs/items.json (servido como asset). Se copia solo lo que el Worker
+    # necesita -id + fuentes_texto de los hechos que lo tienen- para no publicar
+    # todo el dataset ni pesar de mas.
+    fuentes_min = {"items": [{"id": i["id"], "fuentes_texto": i["fuentes_texto"]}
+                             for i in items if i.get("fuentes_texto")]}
+    (RAIZ / "docs" / "items.json").write_text(
+        json.dumps(fuentes_min, ensure_ascii=False), encoding="utf-8")
 
     c = Counter(i["estado"] for i in items)
     log.info("Escrito %s  (%d hechos, %d KB)",
