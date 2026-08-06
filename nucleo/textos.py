@@ -35,7 +35,16 @@ log = logging.getLogger("textos")
 
 TIMEOUT = 20
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/122.0 Safari/537.36")
+      "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36")
+# Headers de navegador real: algunos medios rechazan pedidos sin estos.
+HEADERS = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+}
 MAX_CARACTERES = 4000       # por nota: alcanza para lead 7W y datos duros
 
 
@@ -61,7 +70,7 @@ def resolver_google_news(url: str, sesion: requests.Session) -> str:
 
     try:
         # 1) Traer la pagina del articulo para extraer los tokens.
-        r = sesion.get(url, timeout=TIMEOUT, headers={"User-Agent": UA})
+        r = sesion.get(url, timeout=TIMEOUT, headers=HEADERS)
         r.raise_for_status()
         html = r.text
 
@@ -147,7 +156,7 @@ def bajar_texto(url: str, sesion: requests.Session | None = None) -> tuple[str, 
         if "news.google.com" in real:
             return real, "", ""          # no se pudo resolver
         try:
-            r = sesion.get(real, timeout=TIMEOUT, headers={"User-Agent": UA})
+            r = sesion.get(real, timeout=TIMEOUT, headers=HEADERS)
             r.raise_for_status()
             return real, _dominio(real), _extraer_texto(r.text)
         except Exception as e:
@@ -159,27 +168,41 @@ def bajar_texto(url: str, sesion: requests.Session | None = None) -> tuple[str, 
 
 
 def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
-                       espera: float = 1.0) -> list[dict]:
-    """Baja el texto de las `tope` primeras coberturas (ya vienen ordenadas por
-    importancia desde la ingesta). Devuelve una lista de dicts listos para el
-    borrador. Nunca lanza: las que fallan quedan con texto vacio y ok=False.
+                       espera: float = 1.0, max_intentos: int = 6) -> list[dict]:
+    """Baja el texto de las coberturas hasta juntar `tope` con texto util.
+
+    Las coberturas vienen ordenadas por jerarquia (agencias y legacy primero).
+    En vez de bajar solo las primeras `tope` -que pueden ser justo las que mas
+    fallan, porque los medios grandes tienen mas proteccion anti-bot-, se
+    recorren en orden e se intenta hasta juntar `tope` con texto o agotar
+    `max_intentos`. Asi, si France 24 (1a) falla, sigue con la 4a y 5a en vez de
+    quedarse con dos portales menores.
+
+    Devuelve TODAS las intentadas (con y sin texto), para que el borrador vea
+    tanto el material como que fuentes quedaron sin acceso. Nunca lanza.
     """
     sesion = requests.Session()
     salida = []
+    con_texto = 0
     try:
-        for c in coberturas[:tope]:
+        for c in coberturas[:max_intentos]:
             url = c.get("url", "")
             if not url:
                 continue
             real, dom, texto = bajar_texto(url, sesion)
+            ok = bool(texto and len(texto) > 200)
             salida.append({
                 "medio": c.get("medio", "") or dom or "fuente",
                 "dominio": dom,
                 "url": real,
                 "texto": texto,
-                "ok": bool(texto and len(texto) > 200),
+                "ok": ok,
             })
+            if ok:
+                con_texto += 1
             time.sleep(espera)          # cortesia con los servidores
+            if con_texto >= tope:       # ya juntamos suficientes buenas
+                break
     finally:
         sesion.close()
     return salida
