@@ -1,21 +1,34 @@
 {
- "generado": "2026-08-05T19:32:18+00:00",
+ "generado": "2026-08-06T05:52:10+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "4009d1f1a1b0": {
-   "id_hecho": "4009d1f1a1b0",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN2I3NmhhZ2pQT2sxMnVBRUNfZzRidHVqWXZjNkRhbTY2R0xHalZjekpYOEY0N3hfcmJ0dElFalZ2YWs5ZUxrZUhhM0VaSVZlRERrWlRybXdzUDV6bElqM3NQMm1mQnZTUkRtRzNhSmFBVVZOQnB0UEM4R3FwdnVPcVF2bTA1ZE5wRGxMQnlBWERENmQ4UE9IVHM4RW5mVHN2OEhmZi1mMXh2LXEwNVREZTNIdWRIQ3VFRnVVcm10ZVplbzh0c0xtN0stQWV5UkNaS1RXVlQ4VmZUU1FINWxCRlp0M2pPalU?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Más de 50 cónyuges y padres de militares detenidos en redada migratoria del gobierno Trump",
+  "a5a80da02b13": {
+   "id_hecho": "a5a80da02b13",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeTc1NU5ScTJmT3c0RjRKd3Itd2NvQjBkaVZjRG9HenVPQWQtSVNVNXFsbVJnUjFmSzNEcU9jSE1kS1o1SVZnNzF0LXBMZFVMcjk4QTBnZUdMYl9SNTJPX2otT0hVUThLZFNnSFhjemZRLU55NHRiZUNUbk1QYXhkcFd0elZYYjkzbVU4RGdoOGlXeXpIdkJrQ2VYSzUtNTJMUzRfSHl0Q3NKZEdFOE5KRW5TV1FhNWRy0gG4AUFVX3lxTE95NzU1TlJxMmZPdzRGNEp3ci13Y29CMGRpVmNEb0d6dU9BZC1JU1U1cWxtUmdSMWZLM0RxT2NITWRLWjVJVmc3MXQtcExkVUxyOThBMGdlR0xiX1I1Mk9fai1PSFVROEtkU2dIWGN6ZlEtTnk0dGJlQ1RuTVBheGRwV3R6VlhiOTNtVThEZ2g4aVd5ekh2QmtDZVhLNS01MkxTNF9IeXRDc0pkR0U4TkpFblNXUWE1ZHI?oc=5",
+   "termino": "desplazamiento interno",
+   "geo": "MX",
+   "titulo": "Familias del sur de México huyen de la violencia hasta la frontera norte con EE.UU.",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 10,
-   "reciente": 17.0,
-   "base": 5.8,
-   "ratio": 2.93
+   "reciente": 26.6,
+   "base": 5.1,
+   "ratio": 5.17
+  },
+  "27ddd12c2ee3": {
+   "id_hecho": "27ddd12c2ee3",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQc0JaRHdycnR3S0Roa0RzdFdDNnZmQnlrYkNLZ1RHdVEzUDZ2YmxGRk1lYlJMMy1rNmhUWXRwUnQ5TWctN2NFeHVCSXFQMmxEX20tMWRQeGtzYndTb0oyVUZ3VnMyQjNiLXBxaEJzMWNYZlRSVWVvM05LLTFZU0VidHlNZDVSMXFKZDk1OVpZMGNZcXlPM25id1EzNy1QZ1V1VnF3OVZmUjdWVUpLQ1dVX0xqNVc5bVZqdDlsTFdVajZTcHdzQ1R4UkNYZHpXVFRHd2NaSWJfTnNvdmdyUE1zVjE2d0JjSzJJWmJJcdIB7AFBVV95cUxQc0JaRHdycnR3S0Roa0RzdFdDNnZmQnlrYkNLZ1RHdVEzUDZ2YmxGRk1lYlJMMy1rNmhUWXRwUnQ5TWctN2NFeHVCSXFQMmxEX20tMWRQeGtzYndTb0oyVUZ3VnMyQjNiLXBxaEJzMWNYZlRSVWVvM05LLTFZU0VidHlNZDVSMXFKZDk1OVpZMGNZcXlPM25id1EzNy1QZ1V1VnF3OVZmUjdWVUpLQ1dVX0xqNVc5bVZqdDlsTFdVajZTcHdzQ1R4UkNYZHpXVFRHd2NaSWJfTnNvdmdyUE1zVjE2d0JjSzJJWmJJcQ?oc=5",
+   "termino": "refugiados",
+   "geo": "IL",
+   "titulo": "Israel lanza amplia redada en campo de refugiados de Jerusalén y asalta centro de la UNRWA",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -158,25 +171,45 @@
    "medido": "2026-08-05T02:31:16+00:00"
   }
  },
- "proximo_pais": 4,
- "paises_sin_datos": [],
+ "proximo_pais": 5,
+ "paises_sin_datos": [
+  "AR",
+  "UY"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 24.6,
-   "base": 6.9,
-   "ratio": 3.56
+   "reciente": 26.3,
+   "base": 5.3,
+   "ratio": 4.92
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 21.4,
-   "base": 6.0,
-   "ratio": 3.55
+   "reciente": 21.1,
+   "base": 6.4,
+   "ratio": 3.29
   }
  },
  "alertas": [
+  {
+   "id_hecho": "a5a80da02b13",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeTc1NU5ScTJmT3c0RjRKd3Itd2NvQjBkaVZjRG9HenVPQWQtSVNVNXFsbVJnUjFmSzNEcU9jSE1kS1o1SVZnNzF0LXBMZFVMcjk4QTBnZUdMYl9SNTJPX2otT0hVUThLZFNnSFhjemZRLU55NHRiZUNUbk1QYXhkcFd0elZYYjkzbVU4RGdoOGlXeXpIdkJrQ2VYSzUtNTJMUzRfSHl0Q3NKZEdFOE5KRW5TV1FhNWRy0gG4AUFVX3lxTE95NzU1TlJxMmZPdzRGNEp3ci13Y29CMGRpVmNEb0d6dU9BZC1JU1U1cWxtUmdSMWZLM0RxT2NITWRLWjVJVmc3MXQtcExkVUxyOThBMGdlR0xiX1I1Mk9fai1PSFVROEtkU2dIWGN6ZlEtTnk0dGJlQ1RuTVBheGRwV3R6VlhiOTNtVThEZ2g4aVd5ekh2QmtDZVhLNS01MkxTNF9IeXRDc0pkR0U4TkpFblNXUWE1ZHI?oc=5",
+   "termino": "desplazamiento interno",
+   "geo": "MX",
+   "titulo": "Familias del sur de México huyen de la violencia hasta la frontera norte con EE.UU.",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 26.6,
+   "base": 5.1,
+   "ratio": 5.17,
+   "disparada": "2026-08-06T05:52:10+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  },
   {
    "id_hecho": "4009d1f1a1b0",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN2I3NmhhZ2pQT2sxMnVBRUNfZzRidHVqWXZjNkRhbTY2R0xHalZjekpYOEY0N3hfcmJ0dElFalZ2YWs5ZUxrZUhhM0VaSVZlRERrWlRybXdzUDV6bElqM3NQMm1mQnZTUkRtRzNhSmFBVVZOQnB0UEM4R3FwdnVPcVF2bTA1ZE5wRGxMQnlBWERENmQ4UE9IVHM4RW5mVHN2OEhmZi1mMXh2LXEwNVREZTNIdWRIQ3VFRnVVcm10ZVplbzh0c0xtN0stQWV5UkNaS1RXVlQ4VmZUU1FINWxCRlp0M2pPalU?oc=5",
@@ -192,24 +225,7 @@
    "disparada": "2026-08-05T19:32:18+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "1bf4d82a13a2",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVGOW0wUVZpUUYyUHI1NUVKSHZSZDM0dnRBWXQ5amxRbjFWSEFPMGFzS1JZZ2J5eTZjZGRTX0RYaTVkVzl3QjNCcnRoaFRiZFU3UGg1VkZNaUU5eEh2SWgtT2xWRGxDd2tuRFZhSXpHQXh1dlRCbS1LU3pjQVF0T2NuRzM4SUhqdjJyR1p6NEpneHRSX0syMDExMDhaUzlraWZ4TzNQWETSAagBQVVfeXFMT3JlRjltMFFWaVFGMlByNTVFSkh2UmQzNHZ0QVl0OWpsUW4xVkhBTzBhc0tSWWdieXk2Y2RkU19EWGk1ZFc5d0IzQnJ0aGhUYmRVN1BoNVZGTWlFOXhIdkloLU9sVkRsQ3drbkRWYUl6R0F4dXZUQm0tS1N6Y0FRdE9jbkczOElIanYyckdaejRKZ3h0Ul9LMjAxMTA4WlM5a2lmeE8zUFhE?oc=5",
-   "termino": "migrantes",
-   "geo": "DO",
-   "titulo": "Nuevo naufragio en aguas de Cabrera: hallan 2 cadáveres y buscan una decena de migrantes desaparecidos",
-   "importancia": 9,
-   "velocidad": 8,
-   "puntaje": 10,
-   "reciente": 44.7,
-   "base": 3.9,
-   "ratio": 11.58,
-   "disparada": "2026-08-05T08:37:15+00:00",
-   "velocidad_inicial": 6,
-   "desenlace": "escalo",
-   "horas": 10.9
+   "horas": 10.3
   }
  ]
 }
