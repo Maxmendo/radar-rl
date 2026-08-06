@@ -160,19 +160,13 @@ TEXTO:
 ${f.texto}`)
     .join("\n\n");
 
-  // Fallo seguro de dos niveles (criterio editorial):
-  //  - 3 o mas fuentes con texto: siempre alcanza (hay contraste).
-  //  - exactamente 2: alcanza SOLO si al menos una es confiable (agencia o
-  //    legacy). Dos medios menores no dan garantia suficiente.
-  //  - menos de 2: nunca.
-  const confiables = conTexto.filter((f) => nivelDe(f) <= 1).length;
-  const suficiente = conTexto.length >= 3 || (conTexto.length === 2 && confiables >= 1);
+  // Umbral: basta con 3 fuentes con texto para redactar (criterio editorial:
+  // el fact-check y la evaluacion de confiabilidad los hace el equipo). Menos de
+  // 3 no da material para contrastar, asi que ahi si va nota incompleta.
+  const suficiente = conTexto.length >= 3;
 
   if (!suficiente) {
-    const motivo = conTexto.length < 2
-      ? `solo se accedio a ${conTexto.length} fuente(s) con texto`
-      : `las 2 fuentes con texto no son de referencia (ninguna es agencia ni medio legacy)`;
-    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero el material no alcanza para una nota completa: ${motivo}. NO inventes una nota.
+    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero solo se accedio al texto de ${conTexto.length} fuente(s), menos de las 3 necesarias para contrastar. NO inventes una nota.
 
 HECHO: ${h.titulo}
 Paises: ${paises} | Region: ${h.region || "s/d"} | Ejes: ${ejes}
@@ -407,6 +401,30 @@ function armarHtml(h, borrador) {
     })
     .join("");
 
+  // Fuentes efectivamente usadas (las que bajaron texto), ordenadas por
+  // jerarquia (agencia > legacy > resto), cada una con su enlace real.
+  const AGEN = ["reuters", "apnews", "afp", "efe", "dpa", "europapress", "ansa"];
+  const LEG = ["infobae", "clarin", "lanacion", "pagina12", "eltiempo", "elpais",
+    "elmundo", "abc.es", "lavanguardia", "milenio", "eluniversal", "proceso",
+    "latercera", "semana", "elespectador", "bbc", "cnn", "univision", "telemundo",
+    "france24", "dw.com", "aljazeera", "nytimes", "washingtonpost", "theguardian",
+    "abc7", "elcomercio", "oglobo", "folha", "elnuevoherald", "rionegro"];
+  const nivel = (f) => {
+    const d = ((f.dominio || "") + " " + (f.medio || "")).toLowerCase().replace(/\s/g, "");
+    if (AGEN.some((a) => d.includes(a))) return 0;
+    if (LEG.some((a) => d.includes(a))) return 1;
+    return 2;
+  };
+  const usadas = (Array.isArray(h.fuentes_texto) ? h.fuentes_texto : [])
+    .filter((f) => f && f.ok && f.texto)
+    .sort((a, b) => nivel(a) - nivel(b));
+  const listaFuentes = usadas.length
+    ? `<p style="font-size:13px;color:#555;margin:0 0 6px"><strong>Fuentes utilizadas</strong> (por jerarquía):</p>
+       <ol style="font-size:13px;color:#555;margin:0 0 12px;padding-left:20px">${
+         usadas.map((f) => `<li style="margin:0 0 4px"><a href="${escapar(f.url)}" style="color:#c0392b">${escapar(f.medio)}</a></li>`).join("")
+       }</ol>`
+    : `<p style="font-size:12px;color:#999">Medios: ${escapar(medios)}</p>`;
+
   return `<div style="font-family:Georgia,serif;max-width:640px;margin:auto;color:#1a1a1a">
     <div style="border-left:4px solid #c0392b;padding-left:16px;margin-bottom:24px">
       <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#888;margin:0">Radar Migratorio · Borrador automático</p>
@@ -414,7 +432,7 @@ function armarHtml(h, borrador) {
     </div>
     ${cuerpo}
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0">
-    <p style="font-size:12px;color:#999">Medios: ${escapar(medios)}${h.url ? ` · <a href="${escapar(h.url)}">enlace de referencia</a>` : ""}</p>
+    ${listaFuentes}
     <p style="font-size:12px;color:#999">Borrador editable generado automáticamente. Verificá antes de publicar.</p>
   </div>`;
 }
