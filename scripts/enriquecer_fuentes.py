@@ -77,9 +77,30 @@ def main() -> int:
 
     datos = json.loads(ITEMS.read_text(encoding="utf-8"))
     items = datos.get("items", [])
+    por_id = {h.get("id"): h for h in items}
 
+    # Candidatos por importancia/velocidad (los que muestran el boton en el listado).
     candidatos = [h for h in items if _califica(h, vel_min, imp_min)]
-    log.info("Hechos que califican para borrador: %d de %d", len(candidatos), len(items))
+    ids = {h.get("id") for h in candidatos}
+
+    # Sumar los hechos que estan en ALERTA editorial: tambien muestran boton de
+    # borrador, pero se eligen por otra logica (busquedas subiendo) y su id puede
+    # no calificar por importancia/velocidad. Sin esto, el borrador de una alerta
+    # daba "No se encontro el hecho" porque su texto no se habia bajado.
+    tend = RAIZ / "datos" / "tendencias.json"
+    if tend.exists():
+        try:
+            alertas = json.loads(tend.read_text(encoding="utf-8")).get("alertas", [])
+            for a in alertas:
+                idh = a.get("id_hecho")
+                if idh and idh in por_id and idh not in ids:
+                    candidatos.append(por_id[idh])
+                    ids.add(idh)
+        except Exception:
+            pass
+
+    log.info("Hechos a enriquecer (califican + en alerta): %d de %d",
+             len(candidatos), len(items))
 
     total_ok = 0
     for h in candidatos:

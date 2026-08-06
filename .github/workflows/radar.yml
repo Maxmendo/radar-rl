@@ -92,15 +92,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m nucleo.clasificar --lote 20 --max-hechos 120
 
-      # ENRIQUECER FUENTES. Baja el texto de las 3 fuentes principales de los
-      # hechos que califican para borrador (pocos por corrida). Va DESPUES de
-      # clasificar porque necesita la importancia. Sin esto, el borrador se
-      # redacta solo con el titular y sale generico. Tolera fallos: las fuentes
-      # que no se puedan bajar quedan sin texto y el borrador lo marca.
-      - name: Enriquecer fuentes
-        continue-on-error: true
-        run: python scripts/enriquecer_fuentes.py
-
       # GOOGLE TRENDS. Va DESPUES de clasificar porque necesita el
       # `termino_busqueda` de cada hecho y su importancia, que definen cuales
       # estan en estado `interes`.
@@ -177,6 +168,17 @@ jobs:
           CORREO_USUARIO: ${{ secrets.CORREO_USUARIO }}
           CORREO_CLAVE: ${{ secrets.CORREO_CLAVE }}
         run: python -m nucleo.alertar
+
+      # ENRIQUECER FUENTES. Baja el texto de las 3 fuentes principales de los
+      # hechos que califican para borrador Y de los que estan en alerta editorial
+      # (pocos por corrida). Va DESPUES de Trends y Alertas para que los hechos en
+      # alerta ya existan y su texto quede listo. Sin esto el borrador se redacta
+      # solo con el titular. Tolera fallos: las fuentes que no bajen quedan sin
+      # texto y el borrador lo marca. Debe ir ANTES de Generar tablero, que copia
+      # el texto a docs/items.json para que lo lea el Worker.
+      - name: Enriquecer fuentes
+        continue-on-error: true
+        run: python scripts/enriquecer_fuentes.py
 
       - name: Generar tablero
         run: python scripts/generar_tablero.py
