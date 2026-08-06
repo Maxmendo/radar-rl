@@ -55,61 +55,50 @@ def _dominio(url: str) -> str:
         return ""
 
 
-def resolver_google_news(url: str, sesion: requests.Session) -> str:
+def resolver_google_news(url: str, sesion: requests.Session = None) -> str:
     """Devuelve la URL real del medio a partir de una URL de Google News.
 
-    Metodo para el formato CBMi (2026): se pide la pagina del articulo, se
-    extraen los tokens `signature` y `timestamp` incrustados en el HTML, y con
-    ellos se llama a `batchexecute`, que responde la URL de destino.
+    Google envuelve cada enlace en un redireccionador (CBMi...) que SOLO se
+    resuelve ejecutando JavaScript: las peticiones HTTP planas reciben la pagina
+    de "trafico inusual" (captcha). Por eso se usa Playwright, un navegador
+    headless real que Google trata como una visita legitima. Es el metodo que
+    usan las librerias del rubro (gnews, etc.) para esto.
 
-    Si algo falla, devuelve la URL original: el que llama vera que sigue siendo
-    news.google.com y sabra que no se pudo resolver.
+    Si Playwright no esta instalado o la resolucion falla, devuelve la URL
+    original: el que llama vera que sigue siendo news.google.com y sabra que no
+    se pudo resolver. Nunca lanza.
     """
     if "news.google.com" not in url:
         return url                      # ya es una URL directa
 
     try:
-        # 1) Traer la pagina del articulo para extraer los tokens.
-        r = sesion.get(url, timeout=TIMEOUT, headers=HEADERS)
-        r.raise_for_status()
-        html = r.text
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        log.warning("playwright no instalado; no se puede resolver Google News")
+        return url
 
-        # Los tokens vienen en un div con data-n-a-sg (signature) y data-n-a-ts
-        # (timestamp), o embebidos en un JSON del HTML.
-        sig = re.search(r'data-n-a-sg="([^"]+)"', html)
-        ts = re.search(r'data-n-a-ts="([^"]+)"', html)
-        art = re.search(r'data-n-a-id="([^"]+)"', html)
-
-        if not (sig and ts):
-            # Formato alternativo: buscar la URL directa ya presente en el HTML.
-            m = re.search(r'https?://(?!news\.google\.com|www\.google\.com)'
-                          r'[^\s"\'<>]+', html)
-            return m.group(0) if m else url
-
-        # 2) Armar el payload de batchexecute con los tokens.
-        art_id = art.group(1) if art else url.rsplit("/", 1)[-1].split("?")[0]
-        payload = [
-            "Fbv4je",
-            f'["garturlreq",[["X","X",["X","X"],null,null,1,1,'
-            f'"US:en",null,1,null,null,null,null,null,0,1],'
-            f'"X","X",1,[1,1,1],1,1,null,0,0,null,0],'
-            f'"{art_id}","{ts.group(1)}","{sig.group(1)}"]',
-        ]
-        body = "f.req=" + requests.utils.quote(json.dumps([[payload]]))
-
-        r2 = sesion.post(
-            "https://news.google.com/_/DotsSplashUi/data/batchexecute",
-            data=body, timeout=TIMEOUT,
-            headers={"User-Agent": UA,
-                     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"},
-        )
-        r2.raise_for_status()
-        # La respuesta es JSON con basura antes; se busca la URL directa.
-        m = re.search(r'https?://(?!news\.google\.com)[^\s"\\]+', r2.text)
-        return m.group(0) if m else url
-
+    try:
+        with sync_playwright() as p:
+            navegador = p.chromium.launch(
+                headless=True,
+                args=["--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage"])
+            try:
+                ctx = navegador.new_context(user_agent=UA)
+                pagina = ctx.new_page()
+                pagina.goto(url, wait_until="domcontentloaded", timeout=30000)
+                # Google redirige (via JS) a la URL real del medio: se espera a
+                # que la URL de la pagina deje de ser news.google.com.
+                try:
+                    pagina.wait_for_url(
+                        lambda u: "news.google.com" not in u, timeout=30000)
+                except Exception:
+                    pass
+                final = pagina.url
+                return final if "news.google.com" not in final else url
+            finally:
+                navegador.close()
     except Exception as e:
-        log.debug("no se resolvio %s: %s", url[:60], type(e).__name__)
+        log.debug("playwright no resolvio %s: %s", url[:60], type(e).__name__)
         return url
 
 
@@ -167,29 +156,86 @@ def bajar_texto(url: str, sesion: requests.Session | None = None) -> tuple[str, 
             sesion.close()
 
 
+def _resolver_lote(urls: list[str]) -> dict:
+    """Resuelve varias URLs de Google News en UNA sola sesion de navegador.
+
+    Abrir Playwright es caro; abrirlo una vez y reusar la pagina para todas las
+    URLs del hecho es mucho mas rapido que un navegador por URL. Devuelve un dict
+    {url_original: url_real}. Las que no se resuelven quedan con su valor original.
+    """
+    salida = {u: u for u in urls}
+    gnews = [u for u in urls if "news.google.com" in u]
+    if not gnews:
+        return salida
+
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        log.warning("playwright no instalado; no se resuelven URLs de Google News")
+        return salida
+
+    try:
+        with sync_playwright() as p:
+            navegador = p.chromium.launch(
+                headless=True,
+                args=["--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage"])
+            try:
+                ctx = navegador.new_context(user_agent=UA)
+                for u in gnews:
+                    try:
+                        pagina = ctx.new_page()
+                        pagina.goto(u, wait_until="domcontentloaded", timeout=30000)
+                        try:
+                            pagina.wait_for_url(
+                                lambda x: "news.google.com" not in x, timeout=30000)
+                        except Exception:
+                            pass
+                        final = pagina.url
+                        if "news.google.com" not in final:
+                            salida[u] = final
+                        pagina.close()
+                    except Exception as e:
+                        log.debug("no resolvio %s: %s", u[:50], type(e).__name__)
+            finally:
+                navegador.close()
+    except Exception as e:
+        log.warning("playwright fallo: %s", type(e).__name__)
+    return salida
+
+
 def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
                        espera: float = 1.0, max_intentos: int = 6) -> list[dict]:
     """Baja el texto de las coberturas hasta juntar `tope` con texto util.
 
     Las coberturas vienen ordenadas por jerarquia (agencias y legacy primero).
-    En vez de bajar solo las primeras `tope` -que pueden ser justo las que mas
-    fallan, porque los medios grandes tienen mas proteccion anti-bot-, se
+    Primero se resuelven TODAS las URLs de Google News en una sola sesion de
+    navegador (Playwright), luego se baja el texto de cada medio por HTTP. Se
     recorren en orden e se intenta hasta juntar `tope` con texto o agotar
-    `max_intentos`. Asi, si France 24 (1a) falla, sigue con la 4a y 5a en vez de
-    quedarse con dos portales menores.
+    `max_intentos`: si una fuente grande falla, sigue con las siguientes.
 
     Devuelve TODAS las intentadas (con y sin texto), para que el borrador vea
     tanto el material como que fuentes quedaron sin acceso. Nunca lanza.
     """
+    candidatas = [c for c in coberturas[:max_intentos] if c.get("url")]
+    # Paso 1: resolver todas las URLs de una, con un solo navegador.
+    reales = _resolver_lote([c["url"] for c in candidatas])
+
+    # Paso 2: bajar el texto de cada medio por HTTP (esto no lo bloquea Google).
     sesion = requests.Session()
     salida = []
     con_texto = 0
     try:
-        for c in coberturas[:max_intentos]:
-            url = c.get("url", "")
-            if not url:
-                continue
-            real, dom, texto = bajar_texto(url, sesion)
+        for c in candidatas:
+            real = reales.get(c["url"], c["url"])
+            texto, dom = "", ""
+            if "news.google.com" not in real:      # se resolvio
+                dom = _dominio(real)
+                try:
+                    r = sesion.get(real, timeout=TIMEOUT, headers=HEADERS)
+                    r.raise_for_status()
+                    texto = _extraer_texto(r.text)
+                except Exception as e:
+                    log.debug("no se bajo %s: %s", real[:60], type(e).__name__)
             ok = bool(texto and len(texto) > 200)
             salida.append({
                 "medio": c.get("medio", "") or dom or "fuente",
@@ -200,8 +246,7 @@ def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
             })
             if ok:
                 con_texto += 1
-            time.sleep(espera)          # cortesia con los servidores
-            if con_texto >= tope:       # ya juntamos suficientes buenas
+            if con_texto >= tope:
                 break
     finally:
         sesion.close()

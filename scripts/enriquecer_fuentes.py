@@ -114,8 +114,14 @@ def main() -> int:
         h["fuentes_texto"] = fuentes
         ok = sum(1 for f in fuentes if f.get("ok"))
         total_ok += ok
-        estado = "  ".join(
-            f"{f['medio'][:18]}:{'OK' if f.get('ok') else 'sin texto'}" for f in fuentes)
+
+        def _estado(f):
+            if f.get("ok"):
+                return f"{f['medio'][:16]}:OK({len(f.get('texto',''))}c)"
+            if "news.google.com" in f.get("url", ""):
+                return f"{f['medio'][:16]}:NO-RESOLVIO"   # Playwright no pudo
+            return f"{f['medio'][:16]}:sin-texto"          # resolvio, medio bloqueo
+        estado = "  ".join(_estado(f) for f in fuentes)
         log.info("   [%s medios, imp %s] %s", h.get("velocidad"), h.get("importancia"),
                  h.get("titulo_original", "")[:44])
         log.info("      %s", estado or "(sin fuentes con URL)")

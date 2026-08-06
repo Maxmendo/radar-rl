@@ -52,6 +52,12 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
+      # Navegador headless para resolver las URLs de Google News (las peticiones
+      # HTTP planas reciben captcha; Playwright ejecuta JS y Google no bloquea).
+      # --with-deps instala tambien las librerias de sistema que Chromium necesita.
+      - name: Instalar navegador Playwright
+        run: python -m playwright install --with-deps chromium
+
       # ¿Esta corrida genera el digest diario?
       - name: Decidir si toca digest
         id: cuando
