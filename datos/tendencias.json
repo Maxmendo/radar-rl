@@ -1,9 +1,74 @@
 {
- "generado": "2026-08-06T05:52:10+00:00",
+ "generado": "2026-08-06T14:11:01+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
+  "c32b0ccb2657": {
+   "id_hecho": "c32b0ccb2657",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcHgwWHM5NUJOQk05X0ZQeC1RUi1LRjBGSFFZQ3p1UUloWkVSVzVDRzNTc0dJMXBLd1p0a2pvTUpIVU83U3dOMUtrTWVQNUNzaFBHU01sSW05WnlmYTdmZWJ0UENrUkk1czlYdFBRNVllelpVU05KbjlkUTE4RWZrRGxGNEJSbnlER1hvU3ZWdkJGZ3JRTEkya3oxZWEzS0tXRk45NXZlZk5XUEVBZzY1RUFKU1A4aGZ5X0o3ekhSYVdfRlJSYk1xaW1rbzJBdG5yQVhCRy02YmU3cXEyWUxEdQ?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Redada migratoria de Trump detuvo a más de 50 cónyuges y padres de militares",
+   "importancia": 9,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 13.9,
+   "base": 5.3,
+   "ratio": null
+  },
+  "0c944a9c3e94": {
+   "id_hecho": "0c944a9c3e94",
+   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdzA5N1llOGdtSmNWdFljeDI0akFSakozcjlLZGo0c0I5c3g1NUpKSG5laEVNZEpKOGVYUi1VNG1FMFNnblhUZ1FhMGFZMlN5R1RBeFVLYWR6eVE3TkMyS0U1ajJPenFMT3pidmpUMDYxVEJzajlRa1FBdFJXUlFqREQ3WkZUSUtYTElscmRfdW9udlpvZ3ZxdWNyUVVocWo5R3pDR2xiaFJwaExfTW5xNE5NYUlzMEtFaHFqaWZQTjNuUTI2MmoxcElVX3pENXl1WW9rV2c1cjRWUEIweXNPdGNtYWN2WWViamhBN0xjbFpUZ2NYXy12bGJTUllpV1pjeU16Q2NxaE5rQ1lrOHFJejdjTUhtRk4wZ182QUh2T3FGeWhYUDJWUklDcHpLSVN5UEHSAbcCQVVfeXFMT01zNjIyWVJieWV3OUVBU3NTWHBIMzNNR2pYcTMtbGN2NTVmTVI1NjdvS0lralZ5S3ZTN2E5djlqRTJFRkVUS2R1Y3FSOHJmNWh5Ti1ISnlEZXhHazFvY0ZHY3JhRVFpSGJmRXAyalNWaDRkUk5teGJURzlxTFFuVTJxdVlhaTdaUnEtbU12Z3ZueFhFUFlSQjdFaUFUZzA2d2JMejBRVFdQU0hXOS1aOXVWOEkwcFNuRzNnT0djaG5NSXppdms0YlJadEZyWFR5bmhlNFEtTkRORVlrdTExTE00dXg5cEtxc0x6eHE1Q3RQSlhXQTl3RFUtR3ozeTBDSXEyMV9PMnJYeHlzQW5jdDVvNkVVU0Z6djUwOEVjdl96NVVPbldsWllzTFhEaDVBWnUzd2VHV2c?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "¿Negligencia del ICE? Qué se sabe de la muerte de un migrante salvadoreño en un centro de detención",
+   "importancia": 9,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 13.9,
+   "base": 5.3,
+   "ratio": null
+  },
+  "83a658b734e8": {
+   "id_hecho": "83a658b734e8",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS09KWUNxYVExb0dnVXNtVjdjcnlfRWpBUUtQcTJyZlpwTnBIcHIwZE16ZlZqR2FRdmxTYjJEOWc2MWs1RUYyY0dQdDd4OEswRnNla29vWUt3bU5WcDZwU01EUVF1a3ZuOHJHMXQ3OWVNWjZBcU5LbEI5WFppMEZoZ2Ruanh3SldRb2tFQkV4NXBxcVJ4TTViaWtCR3d5Z2RRc1Y2b2IzZGtYWTZMcUVTUEVrV2xJajNETnQ4aFgzZTMzcVdaQkhOX1U4LTFsUndGdE55WEFUWnkwZHdtR1V0RdIB-wFBVV95cUxOWkpqTUlrY0c3ZTd0UUk0YU9qQzd6eTVOT0QxLXlmZnVKUDdZNGlVWm8taFhFd0NOcFlscFRQS1k3LXUtM1p2YzdsUUpDbGZDajgxSmljVktUY3FGdG1PczFpU1Z3TXotcUhBSXBEMEIxZEN6eXdySmpmUjdzRmJQNkM3Mi1sQUR5XzF3R1R5dEU4SnVIcUNUVjYyenpmSzl3Wnd1SnZHMHA1NnFaSURNTXRfYVVPbVphbkZ3ZnM3b0djNXVKSENYYXYyVlBKTEU1TE5DakdwaGtBZlBVbWNnYVlRTVh5NjVKVW1IUDFoeXc3Zmgyb0o0V0lGOA?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "La familia de Lorenzo Salgado se reunió con el embajador de México en EE UU",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 13.9,
+   "base": 5.3,
+   "ratio": null
+  },
+  "345cdd05e80a": {
+   "id_hecho": "345cdd05e80a",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTmwxYnZpT2tWSF9ITk9mYWJLbC1iMl9fS1pyY3ZYekJDanFqekNteFZNeUhNZV9LSzl2TW1vUDJkbXFyaHAyVnFtU09semVjbm1zdWl5UmlNS1NxQkJncDFoZWtNMEtyLU9rV3d2My10RlVyWGw3X3Zfa05JdHNuNkJiQU9NUE5oRjlTZ3piN3hWUExISl9lNXBnWXVXX2JtbFg5ckRreWxRakpPWkV2STBueHU1R09jOTRF0gHAAUFVX3lxTE51bHpRQ0dna1F1elhadnF3aDBjR2EwZnRoQVpNVWhhMWRfb3ZycHE0Z3FKdWVUZjUtNExMSy1ub19FVTJfYXNSQVRaVnE3UHl5cWNPY003SkhyaFNLR0ZMT25EYWxPTjBjSEZVRGt0QURIQmQyaXl5V3A5b1ZFMHFwX0lLYUhTZ1pXWWlmdWRuYW5fcy1iOGZVTVJCOVlUdEN2UDFFb3RQOVBiVXdoOVoyYWhjQkpIZ2doX3c3cWU5Xw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Así es la prisión rural de Minnesota que se convertirá en un centro de detención de ICE",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 13.9,
+   "base": 5.3,
+   "ratio": null
+  },
+  "e889371d1e9c": {
+   "id_hecho": "e889371d1e9c",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOYm5tMXVfekRUbUhnTm1OOVNUaEh5WlBOWDdmOUZHcTVaeGFraWlLQmstVXhZaVVVWC1WYThiLURNOFRLYTBabjVmU0t1LV9mNzlPOWpOT1Myd2FXNE9zbnFQOWxYaGRzSzV6U0ZhMUtFUW05Ml95VUJnZEdnT244bm5pQTB0dldsUTNub0FDdDdLbFRpdHAzYjNaaDFZZmNKUkd1cThDejRrazM0VF9ucFMzNVVRUEd2aURtdGE5ckg2UHdUWUhvN2lhbFpXby1VQWFZMHZOZUtqSmZjZ3Rja2xvU1FPbU53RE5sM2dBX0RtcEdZOEVTM3ozNG45LWdPX3FVc3pHTQ?oc=5",
+   "termino": "menores migrantes",
+   "geo": "US",
+   "titulo": "Bufete ligado a Gobierno Trump recibe contrato millonario para defender menores migrantes",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.4,
+   "base": 0.1,
+   "ratio": null
+  },
   "a5a80da02b13": {
    "id_hecho": "a5a80da02b13",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeTc1NU5ScTJmT3c0RjRKd3Itd2NvQjBkaVZjRG9HenVPQWQtSVNVNXFsbVJnUjFmSzNEcU9jSE1kS1o1SVZnNzF0LXBMZFVMcjk4QTBnZUdMYl9SNTJPX2otT0hVUThLZFNnSFhjemZRLU55NHRiZUNUbk1QYXhkcFd0elZYYjkzbVU4RGdoOGlXeXpIdkJrQ2VYSzUtNTJMUzRfSHl0Q3NKZEdFOE5KRW5TV1FhNWRy0gG4AUFVX3lxTE95NzU1TlJxMmZPdzRGNEp3ci13Y29CMGRpVmNEb0d6dU9BZC1JU1U1cWxtUmdSMWZLM0RxT2NITWRLWjVJVmc3MXQtcExkVUxyOThBMGdlR0xiX1I1Mk9fai1PSFVROEtkU2dIWGN6ZlEtTnk0dGJlQ1RuTVBheGRwV3R6VlhiOTNtVThEZ2g4aVd5ekh2QmtDZVhLNS01MkxTNF9IeXRDc0pkR0U4TkpFblNXUWE1ZHI?oc=5",
@@ -12,22 +77,9 @@
    "titulo": "Familias del sur de México huyen de la violencia hasta la frontera norte con EE.UU.",
    "importancia": 8,
    "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 26.6,
-   "base": 5.1,
-   "ratio": 5.17
-  },
-  "27ddd12c2ee3": {
-   "id_hecho": "27ddd12c2ee3",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQc0JaRHdycnR3S0Roa0RzdFdDNnZmQnlrYkNLZ1RHdVEzUDZ2YmxGRk1lYlJMMy1rNmhUWXRwUnQ5TWctN2NFeHVCSXFQMmxEX20tMWRQeGtzYndTb0oyVUZ3VnMyQjNiLXBxaEJzMWNYZlRSVWVvM05LLTFZU0VidHlNZDVSMXFKZDk1OVpZMGNZcXlPM25id1EzNy1QZ1V1VnF3OVZmUjdWVUpLQ1dVX0xqNVc5bVZqdDlsTFdVajZTcHdzQ1R4UkNYZHpXVFRHd2NaSWJfTnNvdmdyUE1zVjE2d0JjSzJJWmJJcdIB7AFBVV95cUxQc0JaRHdycnR3S0Roa0RzdFdDNnZmQnlrYkNLZ1RHdVEzUDZ2YmxGRk1lYlJMMy1rNmhUWXRwUnQ5TWctN2NFeHVCSXFQMmxEX20tMWRQeGtzYndTb0oyVUZ3VnMyQjNiLXBxaEJzMWNYZlRSVWVvM05LLTFZU0VidHlNZDVSMXFKZDk1OVpZMGNZcXlPM25id1EzNy1QZ1V1VnF3OVZmUjdWVUpLQ1dVX0xqNVc5bVZqdDlsTFdVajZTcHdzQ1R4UkNYZHpXVFRHd2NaSWJfTnNvdmdyUE1zVjE2d0JjSzJJWmJJcQ?oc=5",
-   "termino": "refugiados",
-   "geo": "IL",
-   "titulo": "Israel lanza amplia redada en campo de refugiados de Jerusalén y asalta centro de la UNRWA",
-   "importancia": 8,
-   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
+   "reciente": 13.9,
+   "base": 3.8,
    "ratio": null
   }
  },
@@ -35,14 +87,14 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "marruecos",
-     "valor": "746750",
+     "consulta": "ceuta",
+     "valor": "1024000",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 2
     },
     {
-     "consulta": "ceuta migrantes",
-     "valor": "1006500",
+     "consulta": "marruecos",
+     "valor": "755200",
      "tipo": "rising",
      "variantes": 0
     },
@@ -53,7 +105,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-05T19:32:01+00:00"
+   "medido": "2026-08-06T14:10:44+00:00"
   },
   "VE": {
    "consultas": [
@@ -127,25 +179,25 @@
   "US": {
    "consultas": [
     {
+     "consulta": "marruecos",
+     "valor": "205850",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
      "consulta": "ceuta",
-     "valor": "52",
+     "valor": "57",
      "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "marruecos",
-     "valor": "259450",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
      "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
-     "valor": "38950",
+     "valor": "43050",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-04T21:46:10+00:00"
+   "medido": "2026-08-06T14:10:53+00:00"
   },
   "ES": {
    "consultas": [
@@ -171,25 +223,22 @@
    "medido": "2026-08-05T02:31:16+00:00"
   }
  },
- "proximo_pais": 5,
- "paises_sin_datos": [
-  "AR",
-  "UY"
- ],
+ "proximo_pais": 6,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 26.3,
-   "base": 5.3,
-   "ratio": 4.92
+   "puntaje": 8,
+   "reciente": 20.7,
+   "base": 7.7,
+   "ratio": 2.71
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 21.1,
-   "base": 6.4,
-   "ratio": 3.29
+   "puntaje": 7,
+   "reciente": 17.9,
+   "base": 7.5,
+   "ratio": 2.38
   }
  },
  "alertas": [
@@ -208,24 +257,7 @@
    "disparada": "2026-08-06T05:52:10+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "4009d1f1a1b0",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN2I3NmhhZ2pQT2sxMnVBRUNfZzRidHVqWXZjNkRhbTY2R0xHalZjekpYOEY0N3hfcmJ0dElFalZ2YWs5ZUxrZUhhM0VaSVZlRERrWlRybXdzUDV6bElqM3NQMm1mQnZTUkRtRzNhSmFBVVZOQnB0UEM4R3FwdnVPcVF2bTA1ZE5wRGxMQnlBWERENmQ4UE9IVHM4RW5mVHN2OEhmZi1mMXh2LXEwNVREZTNIdWRIQ3VFRnVVcm10ZVplbzh0c0xtN0stQWV5UkNaS1RXVlQ4VmZUU1FINWxCRlp0M2pPalU?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Más de 50 cónyuges y padres de militares detenidos en redada migratoria del gobierno Trump",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 17.0,
-   "base": 5.8,
-   "ratio": 2.93,
-   "disparada": "2026-08-05T19:32:18+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 10.3
+   "horas": 8.3
   }
  ]
 }
