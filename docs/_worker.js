@@ -1,22 +1,22 @@
-Ôªø// docs/_worker.js
+// docs/_worker.js
 // Worker en modo "static assets" (el modelo unificado de Cloudflare 2026).
 //
 // Toma control de TODAS las requests entrantes:
-//   - POST /generar-borrador  -> redacta el borrador y lo env√≠a por correo
-//   - cualquier otra ruta      -> sirve el dashboard est√°tico (env.ASSETS)
+//   - POST /generar-borrador  -> redacta el borrador y lo envÌa por correo
+//   - cualquier otra ruta      -> sirve el dashboard est·tico (env.ASSETS)
 //
-// Importante: si no reenvi√°ramos lo dem√°s a env.ASSETS, el dashboard dejar√≠a
+// Importante: si no reenvi·ramos lo dem·s a env.ASSETS, el dashboard dejarÌa
 // de verse. Por eso el fallback final es obligatorio.
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // --- Endpoint del bot√≥n ---
+    // --- Endpoint del botÛn ---
     if (url.pathname === "/generar-borrador") {
       if (request.method === "OPTIONS") return preflight();
       if (request.method === "POST") return manejarBorrador(request, env);
-      return json({ ok: false, error: "M√©todo no permitido" }, 405);
+      return json({ ok: false, error: "MÈtodo no permitido" }, 405);
     }
 
     // --- DIAGNOSTICO TEMPORAL: probar si Cloudflare puede bajar una fuente ---
@@ -42,7 +42,7 @@ export default {
       }
     }
 
-    // --- Todo lo dem√°s: el dashboard y sus archivos est√°ticos ---
+    // --- Todo lo dem·s: el dashboard y sus archivos est·ticos ---
     return env.ASSETS.fetch(request);
   },
 };
@@ -129,7 +129,7 @@ const DESTINATARIOS = [
   "contacto@refugiolatinoamericano.com",
 ];
 
-// Con Gmail com√∫n, el remitente debe ser la cuenta que autoriz√≥ el token.
+// Con Gmail com˙n, el remitente debe ser la cuenta que autorizÛ el token.
 const REMITENTE = {
   email: "refugiolatinoamericano@gmail.com",
   nombre: "Radar Migratorio",
@@ -143,11 +143,11 @@ async function manejarBorrador(request, env) {
   try {
     hecho = await request.json();
   } catch {
-    return json({ ok: false, error: "Cuerpo inv√°lido" }, 400);
+    return json({ ok: false, error: "Cuerpo inv·lido" }, 400);
   }
 
   if (!hecho || !hecho.titulo) {
-    return json({ ok: false, error: "Falta el t√≠tulo del hecho" }, 400);
+    return json({ ok: false, error: "Falta el tÌtulo del hecho" }, 400);
   }
 
   // El texto pesado de las fuentes no viaja en el payload (inflaria el HTML):
@@ -173,7 +173,7 @@ async function manejarBorrador(request, env) {
       env,
     });
   } catch (e) {
-    return json({ ok: false, error: "Redactado, pero fall√≥ el env√≠o: " + e.message }, 502);
+    return json({ ok: false, error: "Redactado, pero fallÛ el envÌo: " + e.message }, 502);
   }
 
   return json({ ok: true, mensaje: "Borrador enviado por correo." }, 200);
@@ -202,7 +202,7 @@ async function leerFuentesTexto(id, request, env) {
 }
 
 // ---------------------------------------------------------------------------
-// Redacci√≥n con cascada Gemini -> Claude -> Groq (usa las claves que existan)
+// RedacciÛn con cascada Gemini -> Claude -> Groq (usa las claves que existan)
 // ---------------------------------------------------------------------------
 // El texto de las fuentes lo baja la INGESTA (Python, robusto) y llega ya listo
 // en hecho.fuentes_texto. El Worker no resuelve URLs en vivo: solo redacta.
@@ -223,7 +223,7 @@ async function redactar(hecho, env) {
     catch (e) { errores.push("Groq: " + e.message); }
   }
 
-  throw new Error("Ning√∫n modelo respondi√≥. " + errores.join(" | "));
+  throw new Error("Ning˙n modelo respondiÛ. " + errores.join(" | "));
 }
 
 function construirPrompt(h) {
@@ -349,7 +349,7 @@ async function viaGemini(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!txt) throw new Error("respuesta vac√≠a");
+  if (!txt) throw new Error("respuesta vacÌa");
   return txt;
 }
 
@@ -370,7 +370,7 @@ async function viaClaude(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.content?.map((b) => b.text || "").join("").trim();
-  if (!txt) throw new Error("respuesta vac√≠a");
+  if (!txt) throw new Error("respuesta vacÌa");
   return txt;
 }
 
@@ -389,12 +389,12 @@ async function viaGroq(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.choices?.[0]?.message?.content;
-  if (!txt) throw new Error("respuesta vac√≠a");
+  if (!txt) throw new Error("respuesta vacÌa");
   return txt;
 }
 
 // ---------------------------------------------------------------------------
-// Env√≠o v√≠a API de Gmail (cuenta com√∫n + refresh token OAuth)
+// EnvÌo vÌa API de Gmail (cuenta com˙n + refresh token OAuth)
 // Secrets: GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN
 // ---------------------------------------------------------------------------
 async function enviarPorGmail({ asunto, html, texto, env }) {
@@ -516,7 +516,7 @@ function armarHtml(h, borrador) {
     .filter((f) => f && f.ok && f.texto)
     .sort((a, b) => nivel(a) - nivel(b));
   const listaFuentes = usadas.length
-    ? `<p style="font-size:13px;color:#555;margin:0 0 6px"><strong>Fuentes utilizadas</strong> (por jerarqu√≠a):</p>
+    ? `<p style="font-size:13px;color:#555;margin:0 0 6px"><strong>Fuentes utilizadas</strong> (por jerarquÌa):</p>
        <ol style="font-size:13px;color:#555;margin:0 0 12px;padding-left:20px">${
          usadas.map((f) => `<li style="margin:0 0 4px"><a href="${escapar(f.url)}" style="color:#c0392b">${escapar(f.medio)}</a></li>`).join("")
        }</ol>`
@@ -524,13 +524,13 @@ function armarHtml(h, borrador) {
 
   return `<div style="font-family:Georgia,serif;max-width:640px;margin:auto;color:#1a1a1a">
     <div style="border-left:4px solid #c0392b;padding-left:16px;margin-bottom:24px">
-      <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#888;margin:0">Radar Migratorio ¬∑ Borrador autom√°tico</p>
+      <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#888;margin:0">Radar Migratorio ∑ Borrador autom·tico</p>
       <h1 style="font-size:22px;margin:8px 0 0">${escapar(h.titulo)}</h1>
     </div>
     ${cuerpo}
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0">
     ${listaFuentes}
-    <p style="font-size:12px;color:#999">Borrador editable generado autom√°ticamente. Verific√° antes de publicar.</p>
+    <p style="font-size:12px;color:#999">Borrador editable generado autom·ticamente. Verific· antes de publicar.</p>
   </div>`;
 }
 
