@@ -121,6 +121,10 @@ async function bajarUnaFuente(gurl) {
 }
 
 
+// ---------------------------------------------------------------------------
+// Destinatarios de la etapa de prueba
+// ---------------------------------------------------------------------------
+const DESTINATARIOS = [
   "refugiolatinoamericano@gmail.com",
   "contacto@refugiolatinoamericano.com",
 ];
