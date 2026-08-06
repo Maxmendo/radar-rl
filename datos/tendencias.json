@@ -1,86 +1,86 @@
 {
- "generado": "2026-08-06T14:11:01+00:00",
+ "generado": "2026-08-06T22:28:43+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "c32b0ccb2657": {
-   "id_hecho": "c32b0ccb2657",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcHgwWHM5NUJOQk05X0ZQeC1RUi1LRjBGSFFZQ3p1UUloWkVSVzVDRzNTc0dJMXBLd1p0a2pvTUpIVU83U3dOMUtrTWVQNUNzaFBHU01sSW05WnlmYTdmZWJ0UENrUkk1czlYdFBRNVllelpVU05KbjlkUTE4RWZrRGxGNEJSbnlER1hvU3ZWdkJGZ3JRTEkya3oxZWEzS0tXRk45NXZlZk5XUEVBZzY1RUFKU1A4aGZ5X0o3ekhSYVdfRlJSYk1xaW1rbzJBdG5yQVhCRy02YmU3cXEyWUxEdQ?oc=5",
-   "termino": "deportaciones",
+  "e9b30eefe8ed": {
+   "id_hecho": "e9b30eefe8ed",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR0U1cXVxeWxibWN2VU5uZFNaLTMyX25JUkl6NWFnUEU1a29nNnJMa0ZiVlA5R0dvbENPb2h4bEhneW85Y3BMbDVMQ2NCM3piUzF4Zmw0Tldpek5lVmJwUVRtY0o1YTVhdG43ZlFwWm1CQ1RUcDhMVGFURVJBMHhzMzR4cVFSc3ctaGIyNDA3S0tWQVdvVWh2OA?oc=5",
+   "termino": "ciudadania",
    "geo": "US",
-   "titulo": "Redada migratoria de Trump detuvo a más de 50 cónyuges y padres de militares",
-   "importancia": 9,
-   "velocidad": 5,
+   "titulo": "Contra el \"turismo de nacimiento\": Trump firma decreto para negar ciudadanía en EU",
+   "importancia": 10,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 13.9,
-   "base": 5.3,
+   "reciente": 5.4,
+   "base": 5.5,
    "ratio": null
   },
-  "0c944a9c3e94": {
-   "id_hecho": "0c944a9c3e94",
-   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdzA5N1llOGdtSmNWdFljeDI0akFSakozcjlLZGo0c0I5c3g1NUpKSG5laEVNZEpKOGVYUi1VNG1FMFNnblhUZ1FhMGFZMlN5R1RBeFVLYWR6eVE3TkMyS0U1ajJPenFMT3pidmpUMDYxVEJzajlRa1FBdFJXUlFqREQ3WkZUSUtYTElscmRfdW9udlpvZ3ZxdWNyUVVocWo5R3pDR2xiaFJwaExfTW5xNE5NYUlzMEtFaHFqaWZQTjNuUTI2MmoxcElVX3pENXl1WW9rV2c1cjRWUEIweXNPdGNtYWN2WWViamhBN0xjbFpUZ2NYXy12bGJTUllpV1pjeU16Q2NxaE5rQ1lrOHFJejdjTUhtRk4wZ182QUh2T3FGeWhYUDJWUklDcHpLSVN5UEHSAbcCQVVfeXFMT01zNjIyWVJieWV3OUVBU3NTWHBIMzNNR2pYcTMtbGN2NTVmTVI1NjdvS0lralZ5S3ZTN2E5djlqRTJFRkVUS2R1Y3FSOHJmNWh5Ti1ISnlEZXhHazFvY0ZHY3JhRVFpSGJmRXAyalNWaDRkUk5teGJURzlxTFFuVTJxdVlhaTdaUnEtbU12Z3ZueFhFUFlSQjdFaUFUZzA2d2JMejBRVFdQU0hXOS1aOXVWOEkwcFNuRzNnT0djaG5NSXppdms0YlJadEZyWFR5bmhlNFEtTkRORVlrdTExTE00dXg5cEtxc0x6eHE1Q3RQSlhXQTl3RFUtR3ozeTBDSXEyMV9PMnJYeHlzQW5jdDVvNkVVU0Z6djUwOEVjdl96NVVPbldsWllzTFhEaDVBWnUzd2VHV2c?oc=5",
+  "c656de24c20e": {
+   "id_hecho": "c656de24c20e",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOal9wZHFCWFR2OWtrSnM1X0dkNXdrR1hENXpvN256TTRINEk2MmxjaU5CN204NjdhVG02M3VtV0lubDNiUDF5dnBCeEVjbTZWWDRscWlTQlFHXzY3MVRPVGZPZHBtR3E5ZFAzNFZiTEpsaXByYWE2VGVPdm4xRUN4em5ja2VCQnZmTVo0NFd0R0ptNmdJMER0enlydDdDVVBOUmpFSDBnRXpCaS1qNi1DQ3dNS3ZVT2M?oc=5",
+   "termino": "ciudadania",
+   "geo": "US",
+   "titulo": "Trump firma decreto para combatir el \"turismo\" de ciudadanía por nacimiento",
+   "importancia": 10,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 5.4,
+   "base": 5.5,
+   "ratio": null
+  },
+  "ed7f9bf7d847": {
+   "id_hecho": "ed7f9bf7d847",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWUVYRGNhUWxrbDFTV0lvbnotSmR3Mk10ZDlWNkRLdkpVYWJhTG5VYkVYWjVwVEk2YlBBUlVnM1VhamJyYnBndlVaZEgwUWJxTUZQNDdOZXZlbzBiNk5kbDdXbzk4a2ZSSkF0bXFxRlM1ZElQWURMZGNSX0ktaTlqUDBoSGJBSWI4XzFNV1pucFdZVExUODZSV1NPZkZKb2RjN0ZhSm1VUjlOdWRiSnBJNDZIQVZnT0Zld29yamU0TDlwbFJZbWFPOHZVY05CQnpPc2EzWExwMjhIc3BzU0VaYUw2eFh3bVE?oc=5",
    "termino": "deportaciones",
    "geo": "US",
    "titulo": "¿Negligencia del ICE? Qué se sabe de la muerte de un migrante salvadoreño en un centro de detención",
    "importancia": 9,
-   "velocidad": 5,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 13.9,
-   "base": 5.3,
+   "reciente": 0.4,
+   "base": 0.2,
    "ratio": null
+  },
+  "af97bb933872": {
+   "id_hecho": "af97bb933872",
+   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOSlY2aHI4NkQxWVpUVF95T2h5dkJxT0Q4TUxEWU8xSldwRjkxVVJaRXctMGVDbTh2dHhieklsVVJ4SmtrcWg1UUtCMENIU08zRFZkUU5ZWnJNa0ExUHV0WlVCWmQzLVFfa0Znb09vSmdITGg4b3J2UEdLM3EzUWRNRVh1SXhCQUE4bENua21Ea1ptU2VlNkxqSTdFcU9wU3Yyd2MtbnpWTGhVaDg4UzNqLTJINGtHc2pXUnBoYkc2Z1VXMm1RQXg5dzNaVlVpZTh0MV9kNVdyMjJqUnFpTVhocERPcllZTTZhVnUtY0ZRc1N1UzlZcDhDcTBSTnhIbW5RZGNwSUY0WWNYRkdEUUHSAaICQVVfeXFMTkk2ZjgzYlRubUc1OVQzSkRaZ210Zm1TRHFGU0dNWFk0ckFialF4OGw0Qm5xZElRalVwcUE2ZENhWHpyUDAyNTlwRWM3b1I5MDBjeExXeUhEcy1aaDlHVDd4MW9LVHM0aTFrT2NVNWdHdUdJNFYtdm9oWDVTZ2t1OTBDVllVYnA4emhKWHdIcGpuUnhGc1lOaG0zTmhlYW45OXlwcmFsOXF1ZmJGUEo3bU1fZTVSVGpnaHJPbmdmZVJIQkJlQWMyWEdTT1E5R2JkTUpXdTRhdzE4bW40RVdfazRzS2J3OXBVUnM0cU9NcEprSFRYUEVoeFlwYXpqajJVWU1UcGtZb0g3RFVVZFU2X3JTQlRqUDM5aHhXNGdRMFRSREE?oc=5",
+   "termino": "visas",
+   "geo": "US",
+   "titulo": "Consulados mexicanos en riesgo en EE.UU.: por qué más de 400 empleados podrían pasar a ser indocumentados",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 15.9,
+   "base": 23.5,
+   "ratio": 0.68
   },
   "83a658b734e8": {
    "id_hecho": "83a658b734e8",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS09KWUNxYVExb0dnVXNtVjdjcnlfRWpBUUtQcTJyZlpwTnBIcHIwZE16ZlZqR2FRdmxTYjJEOWc2MWs1RUYyY0dQdDd4OEswRnNla29vWUt3bU5WcDZwU01EUVF1a3ZuOHJHMXQ3OWVNWjZBcU5LbEI5WFppMEZoZ2Ruanh3SldRb2tFQkV4NXBxcVJ4TTViaWtCR3d5Z2RRc1Y2b2IzZGtYWTZMcUVTUEVrV2xJajNETnQ4aFgzZTMzcVdaQkhOX1U4LTFsUndGdE55WEFUWnkwZHdtR1V0RdIB-wFBVV95cUxOWkpqTUlrY0c3ZTd0UUk0YU9qQzd6eTVOT0QxLXlmZnVKUDdZNGlVWm8taFhFd0NOcFlscFRQS1k3LXUtM1p2YzdsUUpDbGZDajgxSmljVktUY3FGdG1PczFpU1Z3TXotcUhBSXBEMEIxZEN6eXdySmpmUjdzRmJQNkM3Mi1sQUR5XzF3R1R5dEU4SnVIcUNUVjYyenpmSzl3Wnd1SnZHMHA1NnFaSURNTXRfYVVPbVphbkZ3ZnM3b0djNXVKSENYYXYyVlBKTEU1TE5DakdwaGtBZlBVbWNnYVlRTVh5NjVKVW1IUDFoeXc3Zmgyb0o0V0lGOA?oc=5",
-   "termino": "deportaciones",
+   "termino": "migrantes",
    "geo": "US",
    "titulo": "La familia de Lorenzo Salgado se reunió con el embajador de México en EE UU",
-   "importancia": 8,
-   "velocidad": 4,
+   "importancia": 7,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 13.9,
-   "base": 5.3,
+   "reciente": 3.6,
+   "base": 2.4,
    "ratio": null
   },
-  "345cdd05e80a": {
-   "id_hecho": "345cdd05e80a",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTmwxYnZpT2tWSF9ITk9mYWJLbC1iMl9fS1pyY3ZYekJDanFqekNteFZNeUhNZV9LSzl2TW1vUDJkbXFyaHAyVnFtU09semVjbm1zdWl5UmlNS1NxQkJncDFoZWtNMEtyLU9rV3d2My10RlVyWGw3X3Zfa05JdHNuNkJiQU9NUE5oRjlTZ3piN3hWUExISl9lNXBnWXVXX2JtbFg5ckRreWxRakpPWkV2STBueHU1R09jOTRF0gHAAUFVX3lxTE51bHpRQ0dna1F1elhadnF3aDBjR2EwZnRoQVpNVWhhMWRfb3ZycHE0Z3FKdWVUZjUtNExMSy1ub19FVTJfYXNSQVRaVnE3UHl5cWNPY003SkhyaFNLR0ZMT25EYWxPTjBjSEZVRGt0QURIQmQyaXl5V3A5b1ZFMHFwX0lLYUhTZ1pXWWlmdWRuYW5fcy1iOGZVTVJCOVlUdEN2UDFFb3RQOVBiVXdoOVoyYWhjQkpIZ2doX3c3cWU5Xw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Así es la prisión rural de Minnesota que se convertirá en un centro de detención de ICE",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 13.9,
-   "base": 5.3,
-   "ratio": null
-  },
-  "e889371d1e9c": {
-   "id_hecho": "e889371d1e9c",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOYm5tMXVfekRUbUhnTm1OOVNUaEh5WlBOWDdmOUZHcTVaeGFraWlLQmstVXhZaVVVWC1WYThiLURNOFRLYTBabjVmU0t1LV9mNzlPOWpOT1Myd2FXNE9zbnFQOWxYaGRzSzV6U0ZhMUtFUW05Ml95VUJnZEdnT244bm5pQTB0dldsUTNub0FDdDdLbFRpdHAzYjNaaDFZZmNKUkd1cThDejRrazM0VF9ucFMzNVVRUEd2aURtdGE5ckg2UHdUWUhvN2lhbFpXby1VQWFZMHZOZUtqSmZjZ3Rja2xvU1FPbU53RE5sM2dBX0RtcEdZOEVTM3ozNG45LWdPX3FVc3pHTQ?oc=5",
-   "termino": "menores migrantes",
-   "geo": "US",
-   "titulo": "Bufete ligado a Gobierno Trump recibe contrato millonario para defender menores migrantes",
+  "654e8eb8ff19": {
+   "id_hecho": "654e8eb8ff19",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmhzdzlDbGliVnFETFFBS2lBS3ozY2huX0hHRlpJVnhWMURCX29Nb003SENoay00SzZLd2VkVWQxQUtSMWljT0MwZzBRcmV4TV9PZnRUWXhCRDB3REZLQ1lOczU1LTVkVzJzcF91dTJjZU0yVXM1NFlFTmZiY1dQb3BhRWJOU3VRdFRLbVhkNDN5aHVHR2FnVGx2NkJzcnhxSDZDVFhOT2hFOURkWVVtN2pFeFlJQzJvbkt6dXFCRElPQknSAd4BQVVfeXFMUHNHVVlwalN4NmU3Y3BWZm1UWnpUeGM4N19sMGZGbjdDR1U3eUU1N0xRRmd5a21KdHNqQzFXSldNNzhLemhnaklfM0ItOW1fd21ZWUhFVlNTeGJfRG1KVHFZSjBjNzBCMjgxZzBhcWhZNFc3dnhUTm9JSjlrVEppQjhPNFQ1S0NRTER2bWNHSkhmUjdUTGl5WE1zaEFvY0V4bFVOVTBER1pRQXhLR1NwUmN4WDFvOVlBTDhSRDFEVUZGUWp1QV9waWw5dTlkWm1lMzhWam9WRWdlUTFTd1NB?oc=5",
+   "termino": "migrantes",
+   "geo": "CR",
+   "titulo": "Costa Rica ubica a 56 peruanos trabajando en una mina de oro de forma irregular",
    "importancia": 7,
    "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.4,
-   "base": 0.1,
-   "ratio": null
-  },
-  "a5a80da02b13": {
-   "id_hecho": "a5a80da02b13",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeTc1NU5ScTJmT3c0RjRKd3Itd2NvQjBkaVZjRG9HenVPQWQtSVNVNXFsbVJnUjFmSzNEcU9jSE1kS1o1SVZnNzF0LXBMZFVMcjk4QTBnZUdMYl9SNTJPX2otT0hVUThLZFNnSFhjemZRLU55NHRiZUNUbk1QYXhkcFd0elZYYjkzbVU4RGdoOGlXeXpIdkJrQ2VYSzUtNTJMUzRfSHl0Q3NKZEdFOE5KRW5TV1FhNWRy0gG4AUFVX3lxTE95NzU1TlJxMmZPdzRGNEp3ci13Y29CMGRpVmNEb0d6dU9BZC1JU1U1cWxtUmdSMWZLM0RxT2NITWRLWjVJVmc3MXQtcExkVUxyOThBMGdlR0xiX1I1Mk9fai1PSFVROEtkU2dIWGN6ZlEtTnk0dGJlQ1RuTVBheGRwV3R6VlhiOTNtVThEZ2g4aVd5ekh2QmtDZVhLNS01MkxTNF9IeXRDc0pkR0U4TkpFblNXUWE1ZHI?oc=5",
-   "termino": "desplazamiento interno",
-   "geo": "MX",
-   "titulo": "Familias del sur de México huyen de la violencia hasta la frontera norte con EE.UU.",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 13.9,
-   "base": 3.8,
-   "ratio": null
+   "puntaje": 10,
+   "reciente": 18.9,
+   "base": 3.3,
+   "ratio": 5.71
   }
  },
  "audiencia": {
@@ -88,13 +88,13 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1024000",
+     "valor": "1029000",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
     },
     {
      "consulta": "marruecos",
-     "valor": "755200",
+     "valor": "734250",
      "tipo": "rising",
      "variantes": 0
     },
@@ -105,7 +105,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-06T14:10:44+00:00"
+   "medido": "2026-08-06T22:28:26+00:00"
   },
   "VE": {
    "consultas": [
@@ -203,13 +203,13 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "75",
+     "valor": "84",
      "tipo": "top",
      "variantes": 3
     },
     {
-     "consulta": "marruecos ceuta",
-     "valor": "232600",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "77900",
      "tipo": "rising",
      "variantes": 0
     },
@@ -220,44 +220,44 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-05T02:31:16+00:00"
+   "medido": "2026-08-06T22:28:35+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 8,
-   "reciente": 20.7,
-   "base": 7.7,
-   "ratio": 2.71
+   "reciente": 20.4,
+   "base": 7.6,
+   "ratio": 2.68
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 17.9,
-   "base": 7.5,
-   "ratio": 2.38
+   "puntaje": 6,
+   "reciente": 18.6,
+   "base": 8.0,
+   "ratio": 2.32
   }
  },
  "alertas": [
   {
-   "id_hecho": "a5a80da02b13",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeTc1NU5ScTJmT3c0RjRKd3Itd2NvQjBkaVZjRG9HenVPQWQtSVNVNXFsbVJnUjFmSzNEcU9jSE1kS1o1SVZnNzF0LXBMZFVMcjk4QTBnZUdMYl9SNTJPX2otT0hVUThLZFNnSFhjemZRLU55NHRiZUNUbk1QYXhkcFd0elZYYjkzbVU4RGdoOGlXeXpIdkJrQ2VYSzUtNTJMUzRfSHl0Q3NKZEdFOE5KRW5TV1FhNWRy0gG4AUFVX3lxTE95NzU1TlJxMmZPdzRGNEp3ci13Y29CMGRpVmNEb0d6dU9BZC1JU1U1cWxtUmdSMWZLM0RxT2NITWRLWjVJVmc3MXQtcExkVUxyOThBMGdlR0xiX1I1Mk9fai1PSFVROEtkU2dIWGN6ZlEtTnk0dGJlQ1RuTVBheGRwV3R6VlhiOTNtVThEZ2g4aVd5ekh2QmtDZVhLNS01MkxTNF9IeXRDc0pkR0U4TkpFblNXUWE1ZHI?oc=5",
-   "termino": "desplazamiento interno",
-   "geo": "MX",
-   "titulo": "Familias del sur de México huyen de la violencia hasta la frontera norte con EE.UU.",
-   "importancia": 8,
+   "id_hecho": "654e8eb8ff19",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmhzdzlDbGliVnFETFFBS2lBS3ozY2huX0hHRlpJVnhWMURCX29Nb003SENoay00SzZLd2VkVWQxQUtSMWljT0MwZzBRcmV4TV9PZnRUWXhCRDB3REZLQ1lOczU1LTVkVzJzcF91dTJjZU0yVXM1NFlFTmZiY1dQb3BhRWJOU3VRdFRLbVhkNDN5aHVHR2FnVGx2NkJzcnhxSDZDVFhOT2hFOURkWVVtN2pFeFlJQzJvbkt6dXFCRElPQknSAd4BQVVfeXFMUHNHVVlwalN4NmU3Y3BWZm1UWnpUeGM4N19sMGZGbjdDR1U3eUU1N0xRRmd5a21KdHNqQzFXSldNNzhLemhnaklfM0ItOW1fd21ZWUhFVlNTeGJfRG1KVHFZSjBjNzBCMjgxZzBhcWhZNFc3dnhUTm9JSjlrVEppQjhPNFQ1S0NRTER2bWNHSkhmUjdUTGl5WE1zaEFvY0V4bFVOVTBER1pRQXhLR1NwUmN4WDFvOVlBTDhSRDFEVUZGUWp1QV9waWw5dTlkWm1lMzhWam9WRWdlUTFTd1NB?oc=5",
+   "termino": "migrantes",
+   "geo": "CR",
+   "titulo": "Costa Rica ubica a 56 peruanos trabajando en una mina de oro de forma irregular",
+   "importancia": 7,
    "velocidad": 3,
    "puntaje": 10,
-   "reciente": 26.6,
-   "base": 5.1,
-   "ratio": 5.17,
-   "disparada": "2026-08-06T05:52:10+00:00",
+   "reciente": 18.9,
+   "base": 3.3,
+   "ratio": 5.71,
+   "disparada": "2026-08-06T22:28:43+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 8.3
+   "horas": 0
   }
  ]
 }
