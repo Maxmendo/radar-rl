@@ -2,24 +2,24 @@
 // Worker en modo "static assets" (el modelo unificado de Cloudflare 2026).
 //
 // Toma control de TODAS las requests entrantes:
-//   - POST /generar-borrador  -> redacta el borrador y lo envÃ­a por correo
-//   - cualquier otra ruta      -> sirve el dashboard estÃ¡tico (env.ASSETS)
+//   - POST /generar-borrador  -> redacta el borrador y lo envía por correo
+//   - cualquier otra ruta      -> sirve el dashboard estático (env.ASSETS)
 //
-// Importante: si no reenviÃ¡ramos lo demÃ¡s a env.ASSETS, el dashboard dejarÃ­a
+// Importante: si no reenviáramos lo demás a env.ASSETS, el dashboard dejaría
 // de verse. Por eso el fallback final es obligatorio.
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // --- Endpoint del botÃ³n ---
+    // --- Endpoint del botón ---
     if (url.pathname === "/generar-borrador") {
       if (request.method === "OPTIONS") return preflight();
       if (request.method === "POST") return manejarBorrador(request, env);
-      return json({ ok: false, error: "MÃ©todo no permitido" }, 405);
+      return json({ ok: false, error: "Método no permitido" }, 405);
     }
 
-    // --- Todo lo demÃ¡s: el dashboard y sus archivos estÃ¡ticos ---
+    // --- Todo lo demás: el dashboard y sus archivos estáticos ---
     return env.ASSETS.fetch(request);
   },
 };
@@ -32,7 +32,7 @@ const DESTINATARIOS = [
   "contacto@refugiolatinoamericano.com",
 ];
 
-// Con Gmail comÃºn, el remitente debe ser la cuenta que autorizÃ³ el token.
+// Con Gmail común, el remitente debe ser la cuenta que autorizó el token.
 const REMITENTE = {
   email: "refugiolatinoamericano@gmail.com",
   nombre: "Radar Migratorio",
@@ -46,11 +46,11 @@ async function manejarBorrador(request, env) {
   try {
     hecho = await request.json();
   } catch {
-    return json({ ok: false, error: "Cuerpo invÃ¡lido" }, 400);
+    return json({ ok: false, error: "Cuerpo inválido" }, 400);
   }
 
   if (!hecho || !hecho.titulo) {
-    return json({ ok: false, error: "Falta el tÃ­tulo del hecho" }, 400);
+    return json({ ok: false, error: "Falta el título del hecho" }, 400);
   }
 
   // El texto pesado de las fuentes no viaja en el payload (inflaria el HTML):
@@ -70,13 +70,13 @@ async function manejarBorrador(request, env) {
 
   try {
     await enviarPorGmail({
-      asunto: `ðŸ“ Borrador: ${hecho.titulo}`,
+      asunto: `Borrador: ${hecho.titulo}`,
       html: armarHtml(hecho, borrador),
       texto: `${hecho.titulo}\n\n${borrador}`,
       env,
     });
   } catch (e) {
-    return json({ ok: false, error: "Redactado, pero fallÃ³ el envÃ­o: " + e.message }, 502);
+    return json({ ok: false, error: "Redactado, pero falló el envío: " + e.message }, 502);
   }
 
   return json({ ok: true, mensaje: "Borrador enviado por correo." }, 200);
@@ -105,7 +105,7 @@ async function leerFuentesTexto(id, request, env) {
 }
 
 // ---------------------------------------------------------------------------
-// RedacciÃ³n con cascada Gemini -> Claude -> Groq (usa las claves que existan)
+// Redacción con cascada Gemini -> Claude -> Groq (usa las claves que existan)
 // ---------------------------------------------------------------------------
 // El texto de las fuentes lo baja la INGESTA (Python, robusto) y llega ya listo
 // en hecho.fuentes_texto. El Worker no resuelve URLs en vivo: solo redacta.
@@ -126,7 +126,7 @@ async function redactar(hecho, env) {
     catch (e) { errores.push("Groq: " + e.message); }
   }
 
-  throw new Error("NingÃºn modelo respondiÃ³. " + errores.join(" | "));
+  throw new Error("Ningún modelo respondió. " + errores.join(" | "));
 }
 
 function construirPrompt(h) {
@@ -138,22 +138,41 @@ function construirPrompt(h) {
   const conTexto = fuentes.filter((f) => f && f.ok && f.texto);
   const sinTexto = fuentes.filter((f) => !f || !f.ok || !f.texto);
 
-  const AGENCIAS = ["reuters", "apnews", "afp", "efe", "dpa"];
-  const catDe = (dom) => {
-    dom = (dom || "").toLowerCase();
-    if (AGENCIAS.some((a) => dom.includes(a))) return "A (agencia)";
-    return "B (medio de referencia)";
+  const AGENCIAS = ["reuters", "apnews", "afp", "efe", "dpa", "europapress", "ansa"];
+  const LEGACY = ["infobae", "clarin", "lanacion", "pagina12", "eltiempo", "elpais",
+    "elmundo", "abc.es", "lavanguardia", "milenio", "eluniversal", "proceso",
+    "latercera", "semana", "elespectador", "bbc", "cnn", "univision", "telemundo",
+    "france24", "dw.com", "aljazeera", "nytimes", "washingtonpost", "theguardian",
+    "abc7", "elcomercio", "oglobo", "folha", "elnuevoherald"];
+  const nivelDe = (f) => {
+    const d = ((f.dominio || "") + " " + (f.medio || "")).toLowerCase().replace(/\s/g, "");
+    if (AGENCIAS.some((a) => d.includes(a))) return 0;   // agencia
+    if (LEGACY.some((a) => d.includes(a))) return 1;     // legacy / referencia
+    return 2;                                            // otro
   };
+  const catDe = (f) => (nivelDe(f) === 0 ? "A (agencia)"
+    : nivelDe(f) === 1 ? "B (medio de referencia)" : "C (otro medio)");
 
   const material = conTexto
-    .map((f, i) => `--- FUENTE ${i + 1}: ${f.medio} [${catDe(f.dominio)}] (${f.dominio || "dominio s/d"})
+    .map((f, i) => `--- FUENTE ${i + 1}: ${f.medio} [${catDe(f)}] (${f.dominio || "dominio s/d"})
 URL: ${f.url}
 TEXTO:
 ${f.texto}`)
     .join("\n\n");
 
-  if (conTexto.length < 3) {
-    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero NO se pudo acceder al texto de al menos 3 fuentes (se accedio a ${conTexto.length}). NO inventes una nota.
+  // Fallo seguro de dos niveles (criterio editorial):
+  //  - 3 o mas fuentes con texto: siempre alcanza (hay contraste).
+  //  - exactamente 2: alcanza SOLO si al menos una es confiable (agencia o
+  //    legacy). Dos medios menores no dan garantia suficiente.
+  //  - menos de 2: nunca.
+  const confiables = conTexto.filter((f) => nivelDe(f) <= 1).length;
+  const suficiente = conTexto.length >= 3 || (conTexto.length === 2 && confiables >= 1);
+
+  if (!suficiente) {
+    const motivo = conTexto.length < 2
+      ? `solo se accedio a ${conTexto.length} fuente(s) con texto`
+      : `las 2 fuentes con texto no son de referencia (ninguna es agencia ni medio legacy)`;
+    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero el material no alcanza para una nota completa: ${motivo}. NO inventes una nota.
 
 HECHO: ${h.titulo}
 Paises: ${paises} | Region: ${h.region || "s/d"} | Ejes: ${ejes}
@@ -239,7 +258,7 @@ async function viaGemini(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!txt) throw new Error("respuesta vacÃ­a");
+  if (!txt) throw new Error("respuesta vacía");
   return txt;
 }
 
@@ -260,7 +279,7 @@ async function viaClaude(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.content?.map((b) => b.text || "").join("").trim();
-  if (!txt) throw new Error("respuesta vacÃ­a");
+  if (!txt) throw new Error("respuesta vacía");
   return txt;
 }
 
@@ -279,12 +298,12 @@ async function viaGroq(prompt, key) {
   if (!r.ok) throw new Error("HTTP " + r.status);
   const d = await r.json();
   const txt = d?.choices?.[0]?.message?.content;
-  if (!txt) throw new Error("respuesta vacÃ­a");
+  if (!txt) throw new Error("respuesta vacía");
   return txt;
 }
 
 // ---------------------------------------------------------------------------
-// EnvÃ­o vÃ­a API de Gmail (cuenta comÃºn + refresh token OAuth)
+// Envío vía API de Gmail (cuenta común + refresh token OAuth)
 // Secrets: GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN
 // ---------------------------------------------------------------------------
 async function enviarPorGmail({ asunto, html, texto, env }) {
@@ -363,20 +382,40 @@ function construirMime(asunto, html, texto) {
 // ---------------------------------------------------------------------------
 function armarHtml(h, borrador) {
   const medios = Array.isArray(h.medios) ? h.medios.join(", ") : (h.medios || "s/d");
+
+  // Rotulos de bloque que devuelve el prompt: se muestran como encabezados.
+  const ROTULOS = [
+    "TITULO PROPUESTO", "BAJADA", "LEAD", "CUERPO",
+    "FACT CHECKING - A VERIFICAR POR EL EQUIPO", "FACT CHECKING",
+    "PENDIENTES Y FUENTES A CONSULTAR", "PENDIENTES",
+    "NOTA INCOMPLETA - INFORMACION INSUFICIENTE", "NOTA INCOMPLETA",
+  ];
+  const esRotulo = (l) => {
+    const t = l.trim().replace(/[:.]+$/, "").toUpperCase();
+    return ROTULOS.includes(t);
+  };
+
   const cuerpo = borrador
     .split("\n")
-    .map((l) => (l.trim() ? `<p style="margin:0 0 12px">${escapar(l)}</p>` : ""))
+    .map((l) => {
+      const t = l.trim();
+      if (!t) return "";
+      if (esRotulo(t)) {
+        return `<h2 style="font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#c0392b;margin:22px 0 6px;font-family:Arial,sans-serif">${escapar(t.replace(/[:.]+$/, ""))}</h2>`;
+      }
+      return `<p style="margin:0 0 12px;line-height:1.55">${escapar(t)}</p>`;
+    })
     .join("");
 
   return `<div style="font-family:Georgia,serif;max-width:640px;margin:auto;color:#1a1a1a">
     <div style="border-left:4px solid #c0392b;padding-left:16px;margin-bottom:24px">
-      <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#888;margin:0">Radar Migratorio Â· Borrador automÃ¡tico</p>
+      <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#888;margin:0">Radar Migratorio · Borrador automático</p>
       <h1 style="font-size:22px;margin:8px 0 0">${escapar(h.titulo)}</h1>
     </div>
     ${cuerpo}
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0">
-    <p style="font-size:12px;color:#999">Medios: ${escapar(medios)}${h.url ? ` Â· <a href="${escapar(h.url)}">enlace de referencia</a>` : ""}</p>
-    <p style="font-size:12px;color:#999">Borrador editable generado automÃ¡ticamente. VerificÃ¡ antes de publicar.</p>
+    <p style="font-size:12px;color:#999">Medios: ${escapar(medios)}${h.url ? ` · <a href="${escapar(h.url)}">enlace de referencia</a>` : ""}</p>
+    <p style="font-size:12px;color:#999">Borrador editable generado automáticamente. Verificá antes de publicar.</p>
   </div>`;
 }
 
