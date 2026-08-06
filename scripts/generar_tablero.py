@@ -801,12 +801,18 @@ function armarAlertas(){
             :'')+
           `</ul></div>`;
       }
+      // Boton de borrador solo si el hecho tiene >=2 fuentes con texto bajado
+      // (misma regla que el listado): sin material no vale ofrecerlo.
+      const conTexto=(h&&h.n_fuentes_texto)||0;
+      const botonBorrador = conTexto>=2
+        ? `<div class="acciones"><button class="borrador chico" data-id="${esc(a.id_hecho)}" onclick="pedirBorrador(this)">Generar borrador</button></div>`
+        : '';
       return `<li><span class="dsc ${d.c}">${d.t}</span> `+
         `${a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener"><b>${esc(limpiarTitular(a.titulo))}</b></a>`
                 :`<b>${esc(limpiarTitular(a.titulo))}</b>`}<br>`+
         `<span class="det">${chipTrend?chipTrend+' · ':''}importancia ${a.importancia} · ${a.velocidad} medios · ${cuando(a.horas)}</span>`+
         bloqueFuentes+
-        `<div class="acciones"><button class="borrador chico" data-id="${esc(a.id_hecho)}" onclick="pedirBorrador(this)">Generar borrador</button></div></li>`;
+        botonBorrador+`</li>`;
     }).join('')+
     '</ul></div>';
 }
@@ -893,11 +899,16 @@ def main() -> int:
     ctx["borrador"] = {"medios": vel_min, "importancia": imp_min,
                        "repo": cfg.get("repositorio", "Maxmendo/radar-rl")}
     for i in items:
+        # Cuantas fuentes tienen texto bajado (las que sirven para redactar).
+        con_texto = sum(1 for f in i.get("fuentes_texto", []) if f.get("ok"))
         i["puede_borrador"] = bool(
             i.get("clasificado") and i.get("es_migratorio") is not False
             and not i.get("fuera_de_alcance")
             and (i.get("velocidad") or 0) >= vel_min
-            and (i.get("importancia") or 0) >= imp_min)
+            and (i.get("importancia") or 0) >= imp_min
+            # Sin al menos 2 fuentes con texto, el borrador saldria inutil
+            # (nota incompleta): mejor no ofrecer el boton.
+            and con_texto >= 2)
 
     # Va despues de marcar `puede_borrador`: el panel de alertas lo necesita.
     ctx["tendencias"] = cruzar_tendencias(items)
@@ -925,6 +936,16 @@ def main() -> int:
                  'temáticos analizados. La aceleración necesita al menos dos corridas de '
                  'historial.</p>')
 
+    # Para el HTML embebido: el texto completo de las fuentes NO va (inflaria el
+    # HTML). Se reemplaza por un contador liviano que el frontend usa para
+    # decidir si mostrar el boton de borrador. El texto completo viaja aparte, en
+    # docs/items.json, que lee el Worker.
+    items_slim = []
+    for i in items:
+        j = {k: v for k, v in i.items() if k != "fuentes_texto"}
+        j["n_fuentes_texto"] = sum(1 for f in i.get("fuentes_texto", []) if f.get("ok"))
+        items_slim.append(j)
+
     html = (PLANTILLA
             .replace("__GENERADO__", generado)
             .replace("__RESUMEN__", resumen)
@@ -933,7 +954,7 @@ def main() -> int:
             .replace("{MEDIOS}", str(ctx["borrador"]["medios"]))
             .replace("{IMP}", str(ctx["borrador"]["importancia"]))
             .replace("__CTX__", json.dumps(ctx, ensure_ascii=False))
-            .replace("__ITEMS__", json.dumps(items, ensure_ascii=False)))
+            .replace("__ITEMS__", json.dumps(items_slim, ensure_ascii=False)))
 
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text(html, encoding="utf-8")
