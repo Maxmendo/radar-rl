@@ -19,15 +19,108 @@ export default {
       return json({ ok: false, error: "Método no permitido" }, 405);
     }
 
+    // --- DIAGNOSTICO TEMPORAL: probar si Cloudflare puede bajar una fuente ---
+    // Uso: /probar-fuente?url=<url de Google News>
+    // Devuelve la URL real resuelta, el dominio y cuantos caracteres bajo.
+    // Sacar este bloque una vez confirmado.
+    if (url.pathname === "/probar-fuente") {
+      const objetivo = url.searchParams.get("url");
+      if (!objetivo) return json({ ok: false, error: "falta ?url=" }, 400);
+      try {
+        const { urlReal, dominio, texto } = await bajarUnaFuente(objetivo);
+        return json({
+          ok: true,
+          url_original: objetivo,
+          url_real: urlReal,
+          dominio: dominio,
+          caracteres: texto ? texto.length : 0,
+          muestra: texto ? texto.slice(0, 300) : "",
+        }, 200);
+      } catch (e) {
+        return json({ ok: false, error: (e && e.message) || "fallo",
+                      tipo: (e && e.name) || "" }, 200);
+      }
+    }
+
     // --- Todo lo demás: el dashboard y sus archivos estáticos ---
     return env.ASSETS.fetch(request);
   },
 };
 
 // ---------------------------------------------------------------------------
-// Destinatarios de la etapa de prueba
+// Descarga de fuentes desde el Worker (IP de Cloudflare)
 // ---------------------------------------------------------------------------
-const DESTINATARIOS = [
+// Portado de nucleo/textos.py. Resuelve la URL de Google News y baja el texto.
+// La resolucion de las URLs CBMi requiere pedir dos tokens y llamar a
+// batchexecute; si falla, se intenta extraer la URL directa del HTML.
+const UA_NAV = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +
+  "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
+const HDRS = {
+  "User-Agent": UA_NAV,
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+};
+
+async function resolverGoogleNews(gurl) {
+  if (!/news\.google\.com/.test(gurl)) return gurl;
+  const r = await fetch(gurl, { headers: HDRS, redirect: "follow" });
+  const finalUrl = r.url || gurl;
+  if (!/news\.google\.com/.test(finalUrl)) return finalUrl;  // ya redirigio
+  const html = await r.text();
+
+  // Tokens para batchexecute.
+  const sig = html.match(/data-n-a-sg="([^"]+)"/);
+  const ts = html.match(/data-n-a-ts="([^"]+)"/);
+  const id = html.match(/data-n-a-id="([^"]+)"/);
+  if (!sig || !ts) {
+    const m = html.match(/https?:\/\/(?!news\.google\.com|www\.google\.com)[^"'\s<>\\]+/);
+    return m ? m[0] : gurl;
+  }
+  const artId = id ? id[1] : gurl.split("/").pop().split("?")[0];
+  const inner = JSON.stringify(["garturlreq",
+    [["X", "X", ["X", "X"], null, null, 1, 1, "US:en", null, 1, null, null, null,
+      null, null, 0, 1], "X", "X", 1, [1, 1, 1], 1, 1, null, 0, 0, null, 0],
+    artId, ts[1], sig[1]]);
+  const body = "f.req=" + encodeURIComponent(JSON.stringify([[["Fbv4je", inner]]]));
+  const r2 = await fetch("https://news.google.com/_/DotsSplashUi/data/batchexecute", {
+    method: "POST", body,
+    headers: { ...HDRS, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+  });
+  const txt = await r2.text();
+  const m = txt.match(/https?:\/\/(?!news\.google\.com)[^"'\s\\]+/);
+  return m ? m[0] : gurl;
+}
+
+function dominioDe(u) {
+  try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; }
+}
+
+function extraerTextoJS(html) {
+  if (!html) return "";
+  let h = html.replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<!--[\s\S]*?-->/g, " ");
+  const art = h.match(/<article[\s\S]*?<\/article>/i);
+  if (art) h = art[0];
+  const parrafos = [...h.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
+    .map((m) => m[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim())
+    .filter((p) => p.length > 40);
+  let texto = parrafos.join("\n\n");
+  if (!texto) texto = h.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return texto.slice(0, 4000);
+}
+
+async function bajarUnaFuente(gurl) {
+  const real = await resolverGoogleNews(gurl);
+  if (/news\.google\.com/.test(real)) {
+    return { urlReal: real, dominio: "", texto: "" };  // no se resolvio
+  }
+  const r = await fetch(real, { headers: HDRS, redirect: "follow" });
+  const html = await r.text();
+  return { urlReal: real, dominio: dominioDe(real), texto: extraerTextoJS(html) };
+}
+
+
   "refugiolatinoamericano@gmail.com",
   "contacto@refugiolatinoamericano.com",
 ];
