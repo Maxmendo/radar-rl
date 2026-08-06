@@ -204,7 +204,7 @@ def _resolver_lote(urls: list[str]) -> dict:
 
 
 def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
-                       espera: float = 1.0, max_intentos: int = 6) -> list[dict]:
+                       espera: float = 1.0, max_intentos: int = 8) -> list[dict]:
     """Baja el texto de las coberturas hasta juntar `tope` con texto util.
 
     Las coberturas vienen ordenadas por jerarquia (agencias y legacy primero).
@@ -221,15 +221,23 @@ def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
     reales = _resolver_lote([c["url"] for c in candidatas])
 
     # Paso 2: bajar el texto de cada medio por HTTP (esto no lo bloquea Google).
+    # Se deduplica por dominio: dos URLs del mismo medio (p.ej. infobae.com/america
+    # e infobae.com/peru) NO son fuentes independientes; cuentan como una y se
+    # sigue buscando otra distinta, para que el borrador tenga contraste real.
     sesion = requests.Session()
     salida = []
     con_texto = 0
+    dominios_usados = set()
     try:
         for c in candidatas:
             real = reales.get(c["url"], c["url"])
             texto, dom = "", ""
             if "news.google.com" not in real:      # se resolvio
                 dom = _dominio(real)
+                # Normalizar el dominio para comparar (sacar subdominios comunes).
+                base = ".".join(dom.split(".")[-2:]) if dom else ""
+                if base and base in dominios_usados:
+                    continue                       # mismo medio ya usado: saltear
                 try:
                     r = sesion.get(real, timeout=TIMEOUT, headers=HEADERS)
                     r.raise_for_status()
@@ -246,6 +254,9 @@ def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
             })
             if ok:
                 con_texto += 1
+                base = ".".join(dom.split(".")[-2:]) if dom else ""
+                if base:
+                    dominios_usados.add(base)
             if con_texto >= tope:
                 break
     finally:
