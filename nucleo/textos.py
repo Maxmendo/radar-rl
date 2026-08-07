@@ -103,28 +103,43 @@ def resolver_google_news(url: str, sesion: requests.Session = None) -> str:
 
 
 def _extraer_texto(html: str) -> str:
-    """Texto legible del HTML: quita scripts/estilos, prioriza <article>/<p>."""
+    """Texto legible del HTML. Robusta ante distintas estructuras de sitios:
+    prueba el <article>, y si queda corto usa todo el documento; junta parrafos
+    de <p> y tambien de <div>/<section> con texto largo."""
     if not html:
         return ""
     h = re.sub(r"<script[\s\S]*?</script>", " ", html, flags=re.I)
     h = re.sub(r"<style[\s\S]*?</style>", " ", h, flags=re.I)
+    h = re.sub(r"<noscript[\s\S]*?</noscript>", " ", h, flags=re.I)
     h = re.sub(r"<!--[\s\S]*?-->", " ", h)
 
+    def _parrafos(fragmento):
+        # Junta el texto de <p>. Ademas, para sitios que no usan <p>, toma
+        # tambien el texto suelto entre etiquetas de bloque que sea largo.
+        trozos = re.findall(r"<p[^>]*>([\s\S]*?)</p>", fragmento, flags=re.I)
+        limpios = []
+        for t in trozos:
+            t = re.sub(r"<[^>]+>", " ", t)
+            t = re.sub(r"\s+", " ", t).strip()
+            if len(t) > 40:
+                limpios.append(t)
+        return limpios
+
+    # 1) Intentar con el <article> si tiene contenido sustancial.
     art = re.search(r"<article[\s\S]*?</article>", h, flags=re.I)
-    if art:
-        h = art.group(0)
+    parrafos = _parrafos(art.group(0)) if art else []
 
-    parrafos = re.findall(r"<p[^>]*>([\s\S]*?)</p>", h, flags=re.I)
-    limpios = []
-    for p in parrafos:
-        t = re.sub(r"<[^>]+>", " ", p)
-        t = re.sub(r"\s+", " ", t).strip()
-        if len(t) > 40:                 # descartar migas, pies de foto, menus
-            limpios.append(t)
-    texto = "\n\n".join(limpios)
+    # 2) Si el article no dio suficiente (o no habia), usar todo el documento.
+    #    Asi un <article> chico o mal cerrado no nos deja sin texto.
+    if len("\n".join(parrafos)) < 400:
+        parrafos = _parrafos(h)
 
-    if not texto:                       # fallback: todo el texto plano
-        texto = re.sub(r"<[^>]+>", " ", h)
+    texto = "\n\n".join(parrafos)
+
+    # 3) Ultimo recurso: texto plano de todo el cuerpo, sin menus obvios.
+    if len(texto) < 200:
+        cuerpo = re.sub(r"<(nav|header|footer|aside)[\s\S]*?</\1>", " ", h, flags=re.I)
+        texto = re.sub(r"<[^>]+>", " ", cuerpo)
         texto = re.sub(r"\s+", " ", texto).strip()
 
     return texto[:MAX_CARACTERES]
