@@ -1,86 +1,60 @@
 {
- "generado": "2026-08-06T22:28:43+00:00",
+ "generado": "2026-08-07T07:17:34+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "e9b30eefe8ed": {
-   "id_hecho": "e9b30eefe8ed",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR0U1cXVxeWxibWN2VU5uZFNaLTMyX25JUkl6NWFnUEU1a29nNnJMa0ZiVlA5R0dvbENPb2h4bEhneW85Y3BMbDVMQ2NCM3piUzF4Zmw0Tldpek5lVmJwUVRtY0o1YTVhdG43ZlFwWm1CQ1RUcDhMVGFURVJBMHhzMzR4cVFSc3ctaGIyNDA3S0tWQVdvVWh2OA?oc=5",
-   "termino": "ciudadania",
-   "geo": "US",
-   "titulo": "Contra el \"turismo de nacimiento\": Trump firma decreto para negar ciudadanía en EU",
-   "importancia": 10,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 5.4,
-   "base": 5.5,
-   "ratio": null
-  },
-  "c656de24c20e": {
-   "id_hecho": "c656de24c20e",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOal9wZHFCWFR2OWtrSnM1X0dkNXdrR1hENXpvN256TTRINEk2MmxjaU5CN204NjdhVG02M3VtV0lubDNiUDF5dnBCeEVjbTZWWDRscWlTQlFHXzY3MVRPVGZPZHBtR3E5ZFAzNFZiTEpsaXByYWE2VGVPdm4xRUN4em5ja2VCQnZmTVo0NFd0R0ptNmdJMER0enlydDdDVVBOUmpFSDBnRXpCaS1qNi1DQ3dNS3ZVT2M?oc=5",
-   "termino": "ciudadania",
-   "geo": "US",
-   "titulo": "Trump firma decreto para combatir el \"turismo\" de ciudadanía por nacimiento",
-   "importancia": 10,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 5.4,
-   "base": 5.5,
-   "ratio": null
-  },
   "ed7f9bf7d847": {
    "id_hecho": "ed7f9bf7d847",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWUVYRGNhUWxrbDFTV0lvbnotSmR3Mk10ZDlWNkRLdkpVYWJhTG5VYkVYWjVwVEk2YlBBUlVnM1VhamJyYnBndlVaZEgwUWJxTUZQNDdOZXZlbzBiNk5kbDdXbzk4a2ZSSkF0bXFxRlM1ZElQWURMZGNSX0ktaTlqUDBoSGJBSWI4XzFNV1pucFdZVExUODZSV1NPZkZKb2RjN0ZhSm1VUjlOdWRiSnBJNDZIQVZnT0Zld29yamU0TDlwbFJZbWFPOHZVY05CQnpPc2EzWExwMjhIc3BzU0VaYUw2eFh3bVE?oc=5",
-   "termino": "deportaciones",
+   "termino": "centros de detencion",
    "geo": "US",
-   "titulo": "¿Negligencia del ICE? Qué se sabe de la muerte de un migrante salvadoreño en un centro de detención",
+   "titulo": "Activistas reportan la muerte de una tercera persona en el centro de detención Delaney Hall de Nueva York",
    "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "f51a58cbe306": {
+   "id_hecho": "f51a58cbe306",
+   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNV2p3aXJ3WkZtTjBDbi12eklyV0tKNUhfWm0wLXhhRnhaSDhFM3BPQ3A1a01jWU01ekVvenh4cTBncXZFbXZ2eGpRUHhtZlVBQTVxZ2FHU2FEY0d5RVE2bmFtWkszdDJOUzVIX29DQmppX1RpZ3VOYzBCQUVlV2M4YzMxcFcxMlZKckZyd04wdXFxRmV6QUJSR1VXQTZtUkVZVTF0ZFlFQmFLRlFhODUtS1dLdXUzU3ItUXo3elpKN0lJeW9EY3dOVGdjbVlVZ0ZrR1RDMEFrU2p4Q1RSUlN6WHNNdVlWclhkSkNUdEp2RW1uUXpUVFlFNjhLcTkwSXVsQXVuaDVucUxXeTcwUjZxck1ZTm93Zw?oc=5",
+   "termino": "visas",
+   "geo": "US",
+   "titulo": "Trump firma decreto contra el llamado “turismo de nacimiento”",
+   "importancia": 8,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 0.4,
+   "reciente": 16.1,
+   "base": 23.8,
+   "ratio": 0.68
+  },
+  "08d4a70b5f33": {
+   "id_hecho": "08d4a70b5f33",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTnlpWk9Ebmw5MHZXWjQ0WDk1RnZmeFZLazRVdGVhNmdYdXJuTTJxY21UZEhtQTZEbF83RW9rakdUT2l3aHpLdnNaaFpWaUVQelFjQkZVaElMVWhRbVJiRFRsQVZLQkJUTDQ4ZjVHMHJSeTN0Y3N6aXd2bHE0ZkppUVJvaWxPQTRWY1dqTzgzeTlyRldHeUtXclk4R19KR0N6YWJEaWl0ZXg3bDZDMFc1dVAyS3RwbWtuM1FRRmd5VV9KX3BTNnJoejJzdDhaSHkySFRodHlsZlktdkZZMWV6YkthMWk?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Migrante hondureño vuelve a Estados Unidos luego de una deportación «injusta»",
+   "importancia": 7,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 0.6,
    "base": 0.2,
    "ratio": null
   },
-  "af97bb933872": {
-   "id_hecho": "af97bb933872",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOSlY2aHI4NkQxWVpUVF95T2h5dkJxT0Q4TUxEWU8xSldwRjkxVVJaRXctMGVDbTh2dHhieklsVVJ4SmtrcWg1UUtCMENIU08zRFZkUU5ZWnJNa0ExUHV0WlVCWmQzLVFfa0Znb09vSmdITGg4b3J2UEdLM3EzUWRNRVh1SXhCQUE4bENua21Ea1ptU2VlNkxqSTdFcU9wU3Yyd2MtbnpWTGhVaDg4UzNqLTJINGtHc2pXUnBoYkc2Z1VXMm1RQXg5dzNaVlVpZTh0MV9kNVdyMjJqUnFpTVhocERPcllZTTZhVnUtY0ZRc1N1UzlZcDhDcTBSTnhIbW5RZGNwSUY0WWNYRkdEUUHSAaICQVVfeXFMTkk2ZjgzYlRubUc1OVQzSkRaZ210Zm1TRHFGU0dNWFk0ckFialF4OGw0Qm5xZElRalVwcUE2ZENhWHpyUDAyNTlwRWM3b1I5MDBjeExXeUhEcy1aaDlHVDd4MW9LVHM0aTFrT2NVNWdHdUdJNFYtdm9oWDVTZ2t1OTBDVllVYnA4emhKWHdIcGpuUnhGc1lOaG0zTmhlYW45OXlwcmFsOXF1ZmJGUEo3bU1fZTVSVGpnaHJPbmdmZVJIQkJlQWMyWEdTT1E5R2JkTUpXdTRhdzE4bW40RVdfazRzS2J3OXBVUnM0cU9NcEprSFRYUEVoeFlwYXpqajJVWU1UcGtZb0g3RFVVZFU2X3JTQlRqUDM5aHhXNGdRMFRSREE?oc=5",
-   "termino": "visas",
+  "387fbd0b8036": {
+   "id_hecho": "387fbd0b8036",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPa1M3MGtJMFZ1SElSN21MNHRYaEsxa1ZsVE9CNjEtVGx0Z2xXa3Qwcl9zdm56ZENZcHpZQjFnMVVwWkpIV1VIQjQ0UDdQV1oySUExTTdXWVBaWGxjLVQtNlVzNF9lQUFwU09BT1VMTjBWTGdtTnBVUVl3M2htRVdPejFtS0JTUThqSFkyVU1qREpIRDZLMHdVNjZwSUF1RGNyVGF5LXZoQjZJeGE2MFVBMVdNdFBib1dRbDhiTWdiajlaQ2VNZ3FrS2VLSHpoN0dFNmZmWklSNjAwN3RBWl85NU5lWDZ6V0g4?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Consulados mexicanos en riesgo en EE.UU.: por qué más de 400 empleados podrían pasar a ser indocumentados",
-   "importancia": 8,
+   "titulo": "Trump usa a Spider-Man para promover redadas del ICE contra migrantes",
+   "importancia": 6,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 15.9,
-   "base": 23.5,
-   "ratio": 0.68
-  },
-  "83a658b734e8": {
-   "id_hecho": "83a658b734e8",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS09KWUNxYVExb0dnVXNtVjdjcnlfRWpBUUtQcTJyZlpwTnBIcHIwZE16ZlZqR2FRdmxTYjJEOWc2MWs1RUYyY0dQdDd4OEswRnNla29vWUt3bU5WcDZwU01EUVF1a3ZuOHJHMXQ3OWVNWjZBcU5LbEI5WFppMEZoZ2Ruanh3SldRb2tFQkV4NXBxcVJ4TTViaWtCR3d5Z2RRc1Y2b2IzZGtYWTZMcUVTUEVrV2xJajNETnQ4aFgzZTMzcVdaQkhOX1U4LTFsUndGdE55WEFUWnkwZHdtR1V0RdIB-wFBVV95cUxOWkpqTUlrY0c3ZTd0UUk0YU9qQzd6eTVOT0QxLXlmZnVKUDdZNGlVWm8taFhFd0NOcFlscFRQS1k3LXUtM1p2YzdsUUpDbGZDajgxSmljVktUY3FGdG1PczFpU1Z3TXotcUhBSXBEMEIxZEN6eXdySmpmUjdzRmJQNkM3Mi1sQUR5XzF3R1R5dEU4SnVIcUNUVjYyenpmSzl3Wnd1SnZHMHA1NnFaSURNTXRfYVVPbVphbkZ3ZnM3b0djNXVKSENYYXYyVlBKTEU1TE5DakdwaGtBZlBVbWNnYVlRTVh5NjVKVW1IUDFoeXc3Zmgyb0o0V0lGOA?oc=5",
-   "termino": "migrantes",
-   "geo": "US",
-   "titulo": "La familia de Lorenzo Salgado se reunió con el embajador de México en EE UU",
-   "importancia": 7,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 3.6,
-   "base": 2.4,
+   "reciente": 0.6,
+   "base": 0.2,
    "ratio": null
-  },
-  "654e8eb8ff19": {
-   "id_hecho": "654e8eb8ff19",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmhzdzlDbGliVnFETFFBS2lBS3ozY2huX0hHRlpJVnhWMURCX29Nb003SENoay00SzZLd2VkVWQxQUtSMWljT0MwZzBRcmV4TV9PZnRUWXhCRDB3REZLQ1lOczU1LTVkVzJzcF91dTJjZU0yVXM1NFlFTmZiY1dQb3BhRWJOU3VRdFRLbVhkNDN5aHVHR2FnVGx2NkJzcnhxSDZDVFhOT2hFOURkWVVtN2pFeFlJQzJvbkt6dXFCRElPQknSAd4BQVVfeXFMUHNHVVlwalN4NmU3Y3BWZm1UWnpUeGM4N19sMGZGbjdDR1U3eUU1N0xRRmd5a21KdHNqQzFXSldNNzhLemhnaklfM0ItOW1fd21ZWUhFVlNTeGJfRG1KVHFZSjBjNzBCMjgxZzBhcWhZNFc3dnhUTm9JSjlrVEppQjhPNFQ1S0NRTER2bWNHSkhmUjdUTGl5WE1zaEFvY0V4bFVOVTBER1pRQXhLR1NwUmN4WDFvOVlBTDhSRDFEVUZGUWp1QV9waWw5dTlkWm1lMzhWam9WRWdlUTFTd1NB?oc=5",
-   "termino": "migrantes",
-   "geo": "CR",
-   "titulo": "Costa Rica ubica a 56 peruanos trabajando en una mina de oro de forma irregular",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 18.9,
-   "base": 3.3,
-   "ratio": 5.71
   }
  },
  "audiencia": {
@@ -88,47 +62,47 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1029000",
+     "valor": "1026350",
      "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "marruecos",
-     "valor": "734250",
-     "tipo": "rising",
-     "variantes": 0
+     "variantes": 2
     },
     {
      "consulta": "los migrantes",
      "valor": "100",
      "tipo": "top",
      "variantes": 0
+    },
+    {
+     "consulta": "migrantes españa",
+     "valor": "47",
+     "tipo": "top",
+     "variantes": 0
     }
    ],
-   "medido": "2026-08-06T22:28:26+00:00"
+   "medido": "2026-08-07T07:17:17+00:00"
   },
   "VE": {
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "402600",
+     "valor": "436150",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos",
-     "valor": "31",
+     "consulta": "españa migrantes",
+     "valor": "74",
      "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 1
+     "consulta": "marruecos",
+     "valor": "496800",
+     "tipo": "rising",
+     "variantes": 0
     }
    ],
-   "medido": "2026-08-05T05:47:54+00:00"
+   "medido": "2026-08-07T07:17:26+00:00"
   },
   "CL": {
    "consultas": [
@@ -223,22 +197,22 @@
    "medido": "2026-08-06T22:28:35+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 20.4,
-   "base": 7.6,
-   "ratio": 2.68
+   "puntaje": 6,
+   "reciente": 17.9,
+   "base": 7.9,
+   "ratio": 2.25
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 6,
-   "reciente": 18.6,
-   "base": 8.0,
-   "ratio": 2.32
+   "puntaje": 9,
+   "reciente": 18.1,
+   "base": 6.5,
+   "ratio": 2.8
   }
  },
  "alertas": [
@@ -257,7 +231,7 @@
    "disparada": "2026-08-06T22:28:43+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 8.8
   }
  ]
 }
