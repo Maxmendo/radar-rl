@@ -216,7 +216,18 @@ def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
     Devuelve TODAS las intentadas (con y sin texto), para que el borrador vea
     tanto el material como que fuentes quedaron sin acceso. Nunca lanza.
     """
-    candidatas = [c for c in coberturas[:max_intentos] if c.get("url")]
+    # Excluir redes sociales y agregadores: no son fuentes periodisticas y no
+    # dan texto util (facebook, x/twitter, youtube, etc.). Se filtran por el
+    # nombre del medio (antes de resolver) y por el dominio real (despues).
+    REDES = ("facebook", "twitter", "x.com", "instagram", "tiktok", "youtube",
+             "youtu.be", "t.me", "telegram", "whatsapp", "reddit", "linkedin",
+             "threads")
+    def _es_red(texto):
+        t = (texto or "").lower().replace(" ", "")
+        return any(r in t for r in REDES)
+
+    candidatas = [c for c in coberturas[:max_intentos]
+                  if c.get("url") and not _es_red(c.get("medio", ""))]
     # Paso 1: resolver todas las URLs de una, con un solo navegador.
     reales = _resolver_lote([c["url"] for c in candidatas])
 
@@ -234,6 +245,8 @@ def enriquecer_fuentes(coberturas: list[dict], tope: int = 3,
             texto, dom = "", ""
             if "news.google.com" not in real:      # se resolvio
                 dom = _dominio(real)
+                if _es_red(dom):
+                    continue                       # dominio real es red social
                 # Normalizar el dominio para comparar (sacar subdominios comunes).
                 base = ".".join(dom.split(".")[-2:]) if dom else ""
                 if base and base in dominios_usados:

@@ -906,32 +906,17 @@ def main() -> int:
     vel_min, imp_min = b.get("medios_minimos", 3), b.get("importancia_minima", 7)
     ctx["borrador"] = {"medios": vel_min, "importancia": imp_min,
                        "repo": cfg.get("repositorio", "Maxmendo/radar-rl")}
-    # Jerarquia de medio para saber si una fuente es "real" (agencia o legacy).
-    agencias_dom = ("reuters", "apnews", "afp", "efe", "dpa", "europapress", "ansa")
-    legacy_dom = ("infobae", "clarin", "lanacion", "pagina12", "eltiempo", "elpais",
-                  "elmundo", "abc.es", "lavanguardia", "milenio", "eluniversal",
-                  "proceso", "latercera", "semana", "elespectador", "bbc", "cnn",
-                  "univision", "telemundo", "france24", "dw.com", "aljazeera",
-                  "nytimes", "washingtonpost", "theguardian", "elcomercio", "oglobo",
-                  "folha", "elnuevoherald")
-
-    def _es_real(f):
-        d = ((f.get("dominio", "") or "") + " " + (f.get("medio", "") or "")).lower()
-        d = d.replace(" ", "")
-        return any(a in d for a in agencias_dom) or any(a in d for a in legacy_dom)
-
     for i in items:
         fuentes_ok = [f for f in i.get("fuentes_texto", []) if f.get("ok")]
         con_texto = len(fuentes_ok)
-        con_real = sum(1 for f in fuentes_ok if _es_real(f))
         i["puede_borrador"] = bool(
             i.get("clasificado") and i.get("es_migratorio") is not False
             and not i.get("fuera_de_alcance")
             and (i.get("velocidad") or 0) >= vel_min
             and (i.get("importancia") or 0) >= imp_min
-            # 3 fuentes con texto y al menos una de medio real: mismo umbral que
-            # usa el Worker para redactar. Sin esto el borrador saldria incompleto.
-            and con_texto >= 3 and con_real >= 1)
+            # 3 fuentes con texto: mismo umbral que el Worker. Las redes sociales
+            # ya se filtraron en la ingesta, asi que son 3 medios de verdad.
+            and con_texto >= 3)
 
     # Va despues de marcar `puede_borrador`: el panel de alertas lo necesita.
     ctx["tendencias"] = cruzar_tendencias(items)

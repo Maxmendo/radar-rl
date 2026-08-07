@@ -294,18 +294,13 @@ TEXTO:
 ${(f.texto || "").slice(0, TOPE_TEXTO)}`)
     .join("\n\n");
 
-  // Umbral: 3 fuentes con texto Y al menos una de medio real (agencia o medio
-  // de referencia). Ahora que Playwright resuelve las fuentes, se puede exigir
-  // contraste real -3 medios distintos- con al menos uno confiable. El
-  // fact-check final lo hace el equipo.
-  const confiables = conTexto.filter((f) => nivelDe(f) <= 1).length;
-  const suficiente = conTexto.length >= 3 && confiables >= 1;
+  // Umbral: 3 fuentes con texto (ya sin redes sociales, que se filtran en la
+  // ingesta). No se exige que sean medios de referencia: la curaduria humana
+  // evalua la calidad. Menos de 3 no da contraste, asi que va nota incompleta.
+  const suficiente = conTexto.length >= 3;
 
   if (!suficiente) {
-    const motivo = conTexto.length < 3
-      ? `solo se accedio al texto de ${conTexto.length} fuente(s), menos de las 3 necesarias`
-      : `ninguna de las ${conTexto.length} fuentes con texto es un medio de referencia (agencia o legacy)`;
-    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero ${motivo} para redactar con respaldo. NO inventes una nota.
+    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero solo se accedio al texto de ${conTexto.length} fuente(s), menos de las 3 necesarias para contrastar. NO inventes una nota.
 
 HECHO: ${h.titulo}
 Paises: ${paises} | Region: ${h.region || "s/d"} | Ejes: ${ejes}
