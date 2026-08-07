@@ -547,8 +547,10 @@ async function pedirBorrador(boton){
   const id=boton.dataset.id;
   const h=(typeof ITEMS!=='undefined')?ITEMS.find(x=>String(x.id)===String(id)):null;
   if(!h){ boton.textContent='No se encontró el hecho'; return; }
-  // Pedir el correo al que enviar el borrador. Asi el equipo no necesita
-  // loguearse: cada quien recibe el borrador en su casilla.
+  // Pedir quién genera y a qué correo, para enviar el borrador y avisar al
+  // equipo de Refugio (control editorial: quién tomó qué tema).
+  const nombre=(prompt('¿Quién genera este borrador? (tu nombre)','')||'').trim();
+  if(!nombre) return;                       // canceló
   const correo=(prompt('¿A qué correo enviamos el borrador?','')||'').trim();
   if(!correo) return;                       // canceló o dejó vacío
   if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(correo)){
@@ -556,7 +558,7 @@ async function pedirBorrador(boton){
   }
   const medios=(h.coberturas||[]).map(c=>c.medio).filter(Boolean);
   const payload={
-    id:h.id, destinatario:correo,
+    id:h.id, destinatario:correo, solicitante:nombre,
     titulo:h.titulo_original||'', angulo:h.angulo_sugerido||'', url:h.url||'',
     paises:h.paises||[], region:h.region||'', ejes:h.ejes||[], medios:medios,
     poblaciones:h.poblaciones||[], colectividades:h.colectividades||[],

@@ -184,6 +184,32 @@ async function manejarBorrador(request, env) {
     return json({ ok: false, error: "Redactado, pero falló el envío: " + e.message }, 502);
   }
 
+  // Aviso de control a Refugio: quién generó, qué tema y cuándo, + copia del
+  // borrador. No corta el flujo si falla (el borrador ya se envió).
+  try {
+    const solicitante = (hecho.solicitante || "s/d").trim();
+    const cuando = new Date().toLocaleString("es-AR", { timeZone: "America/Argentina/Buenos_Aires" });
+    const reporte = `<div style="font-family:Arial,sans-serif;color:#1a1a1a;max-width:640px;margin:auto">
+      <p style="font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#c0392b;margin:0 0 8px">Radar Migratorio · Control de borradores</p>
+      <p style="margin:0 0 4px"><strong>Quién:</strong> ${escapar(solicitante)} (${escapar(destinatario)})</p>
+      <p style="margin:0 0 4px"><strong>Tema:</strong> ${escapar(hecho.titulo)}</p>
+      <p style="margin:0 0 16px"><strong>Cuándo:</strong> ${escapar(cuando)}</p>
+      <hr style="border:none;border-top:1px solid #eee;margin:16px 0">
+      <p style="font-size:12px;color:#888;margin:0 0 12px">Copia del borrador enviado:</p>
+      ${armarHtml(hecho, borrador)}
+    </div>`;
+    await enviarPorGmail({
+      asunto: `[Control] ${solicitante} generó un borrador: ${hecho.titulo}`,
+      html: reporte,
+      texto: `${solicitante} (${destinatario}) generó un borrador el ${cuando}.\nTema: ${hecho.titulo}\n\n${borrador}`,
+      destinatario: DESTINATARIOS.join(", "),
+      env,
+    });
+  } catch (e) {
+    // El borrador ya llegó; el aviso de control es secundario. Solo se registra.
+    console.log("Aviso de control no enviado: " + (e && e.message));
+  }
+
   return json({ ok: true, mensaje: "Borrador enviado por correo." }, 200);
 }
 
