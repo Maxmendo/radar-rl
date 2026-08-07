@@ -1,47 +1,34 @@
 {
- "generado": "2026-08-07T07:17:34+00:00",
+ "generado": "2026-08-07T15:58:18+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "ed7f9bf7d847": {
-   "id_hecho": "ed7f9bf7d847",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWUVYRGNhUWxrbDFTV0lvbnotSmR3Mk10ZDlWNkRLdkpVYWJhTG5VYkVYWjVwVEk2YlBBUlVnM1VhamJyYnBndlVaZEgwUWJxTUZQNDdOZXZlbzBiNk5kbDdXbzk4a2ZSSkF0bXFxRlM1ZElQWURMZGNSX0ktaTlqUDBoSGJBSWI4XzFNV1pucFdZVExUODZSV1NPZkZKb2RjN0ZhSm1VUjlOdWRiSnBJNDZIQVZnT0Zld29yamU0TDlwbFJZbWFPOHZVY05CQnpPc2EzWExwMjhIc3BzU0VaYUw2eFh3bVE?oc=5",
-   "termino": "centros de detencion",
-   "geo": "US",
-   "titulo": "Activistas reportan la muerte de una tercera persona en el centro de detención Delaney Hall de Nueva York",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "f51a58cbe306": {
-   "id_hecho": "f51a58cbe306",
-   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNV2p3aXJ3WkZtTjBDbi12eklyV0tKNUhfWm0wLXhhRnhaSDhFM3BPQ3A1a01jWU01ekVvenh4cTBncXZFbXZ2eGpRUHhtZlVBQTVxZ2FHU2FEY0d5RVE2bmFtWkszdDJOUzVIX29DQmppX1RpZ3VOYzBCQUVlV2M4YzMxcFcxMlZKckZyd04wdXFxRmV6QUJSR1VXQTZtUkVZVTF0ZFlFQmFLRlFhODUtS1dLdXUzU3ItUXo3elpKN0lJeW9EY3dOVGdjbVlVZ0ZrR1RDMEFrU2p4Q1RSUlN6WHNNdVlWclhkSkNUdEp2RW1uUXpUVFlFNjhLcTkwSXVsQXVuaDVucUxXeTcwUjZxck1ZTm93Zw?oc=5",
-   "termino": "visas",
-   "geo": "US",
-   "titulo": "Trump firma decreto contra el llamado “turismo de nacimiento”",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 16.1,
-   "base": 23.8,
-   "ratio": 0.68
-  },
   "08d4a70b5f33": {
    "id_hecho": "08d4a70b5f33",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTnlpWk9Ebmw5MHZXWjQ0WDk1RnZmeFZLazRVdGVhNmdYdXJuTTJxY21UZEhtQTZEbF83RW9rakdUT2l3aHpLdnNaaFpWaUVQelFjQkZVaElMVWhRbVJiRFRsQVZLQkJUTDQ4ZjVHMHJSeTN0Y3N6aXd2bHE0ZkppUVJvaWxPQTRWY1dqTzgzeTlyRldHeUtXclk4R19KR0N6YWJEaWl0ZXg3bDZDMFc1dVAyS3RwbWtuM1FRRmd5VV9KX3BTNnJoejJzdDhaSHkySFRodHlsZlktdkZZMWV6YkthMWk?oc=5",
    "termino": "deportaciones",
    "geo": "US",
+   "titulo": "Migrantes de Honduras, Cuba y Ecuador acusan a EEUU de deportarlos a África por sorpresa",
+   "importancia": 9,
+   "velocidad": 7,
+   "puntaje": 8,
+   "reciente": 16.7,
+   "base": 6.1,
+   "ratio": 2.72
+  },
+  "5d9e7326075e": {
+   "id_hecho": "5d9e7326075e",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYUZpdjJvX1pld0t6OER6UGxMdS1BcnktNWlIZ1Y3c1ZwemRHMmdFSDlJTFFocUZ3Mmg0QXlaV0tKYVR5dXhwWWhlYnA0ZFVEdVQ5YTVXakV6U1dSd3FyMVlUZ2RLMndxUWVMQjNaajFjZUxJU3pkVjRIWVN5RkxrSGNsblFTYnF0aVByTUZMa0xDS1ZGSWMzUW8zUTRjVFRNcllPRFNEcWY2dHhFVUJ2M0h1V1dEQ05Sa09iZ0E2UjBsQmpyb0lWNER6Z090cXRQQi16bkd3SkNOdw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
    "titulo": "Migrante hondureño vuelve a Estados Unidos luego de una deportación «injusta»",
    "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.6,
-   "base": 0.2,
-   "ratio": null
+   "velocidad": 6,
+   "puntaje": 8,
+   "reciente": 16.7,
+   "base": 6.1,
+   "ratio": 2.72
   },
   "387fbd0b8036": {
    "id_hecho": "387fbd0b8036",
@@ -50,11 +37,11 @@
    "geo": "US",
    "titulo": "Trump usa a Spider-Man para promover redadas del ICE contra migrantes",
    "importancia": 6,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.6,
-   "base": 0.2,
-   "ratio": null
+   "velocidad": 4,
+   "puntaje": 8,
+   "reciente": 16.7,
+   "base": 6.1,
+   "ratio": 2.72
   }
  },
  "audiencia": {
@@ -62,24 +49,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1026350",
+     "valor": "1044050",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes marruecos",
+     "valor": "771900",
+     "tipo": "rising",
+     "variantes": 0
     },
     {
      "consulta": "los migrantes",
      "valor": "100",
      "tipo": "top",
      "variantes": 0
-    },
-    {
-     "consulta": "migrantes españa",
-     "valor": "47",
-     "tipo": "top",
-     "variantes": 0
     }
    ],
-   "medido": "2026-08-07T07:17:17+00:00"
+   "medido": "2026-08-07T15:58:01+00:00"
   },
   "VE": {
    "consultas": [
@@ -108,24 +95,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "213300",
+     "valor": "229850",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 2
     },
     {
-     "consulta": "migrantes chile",
+     "consulta": "migrantes en chile",
      "valor": "100",
      "tipo": "top",
-     "variantes": 1
+     "variantes": 0
     },
     {
-     "consulta": "marruecos",
-     "valor": "129550",
-     "tipo": "rising",
+     "consulta": "españa migrantes",
+     "valor": "25",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-05T08:37:11+00:00"
+   "medido": "2026-08-07T15:58:10+00:00"
   },
   "CO": {
    "consultas": [
@@ -197,7 +184,7 @@
    "medido": "2026-08-06T22:28:35+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -217,21 +204,38 @@
  },
  "alertas": [
   {
-   "id_hecho": "654e8eb8ff19",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmhzdzlDbGliVnFETFFBS2lBS3ozY2huX0hHRlpJVnhWMURCX29Nb003SENoay00SzZLd2VkVWQxQUtSMWljT0MwZzBRcmV4TV9PZnRUWXhCRDB3REZLQ1lOczU1LTVkVzJzcF91dTJjZU0yVXM1NFlFTmZiY1dQb3BhRWJOU3VRdFRLbVhkNDN5aHVHR2FnVGx2NkJzcnhxSDZDVFhOT2hFOURkWVVtN2pFeFlJQzJvbkt6dXFCRElPQknSAd4BQVVfeXFMUHNHVVlwalN4NmU3Y3BWZm1UWnpUeGM4N19sMGZGbjdDR1U3eUU1N0xRRmd5a21KdHNqQzFXSldNNzhLemhnaklfM0ItOW1fd21ZWUhFVlNTeGJfRG1KVHFZSjBjNzBCMjgxZzBhcWhZNFc3dnhUTm9JSjlrVEppQjhPNFQ1S0NRTER2bWNHSkhmUjdUTGl5WE1zaEFvY0V4bFVOVTBER1pRQXhLR1NwUmN4WDFvOVlBTDhSRDFEVUZGUWp1QV9waWw5dTlkWm1lMzhWam9WRWdlUTFTd1NB?oc=5",
-   "termino": "migrantes",
-   "geo": "CR",
-   "titulo": "Costa Rica ubica a 56 peruanos trabajando en una mina de oro de forma irregular",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 18.9,
-   "base": 3.3,
-   "ratio": 5.71,
-   "disparada": "2026-08-06T22:28:43+00:00",
-   "velocidad_inicial": 3,
+   "id_hecho": "08d4a70b5f33",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTnlpWk9Ebmw5MHZXWjQ0WDk1RnZmeFZLazRVdGVhNmdYdXJuTTJxY21UZEhtQTZEbF83RW9rakdUT2l3aHpLdnNaaFpWaUVQelFjQkZVaElMVWhRbVJiRFRsQVZLQkJUTDQ4ZjVHMHJSeTN0Y3N6aXd2bHE0ZkppUVJvaWxPQTRWY1dqTzgzeTlyRldHeUtXclk4R19KR0N6YWJEaWl0ZXg3bDZDMFc1dVAyS3RwbWtuM1FRRmd5VV9KX3BTNnJoejJzdDhaSHkySFRodHlsZlktdkZZMWV6YkthMWk?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Migrantes de Honduras, Cuba y Ecuador acusan a EEUU de deportarlos a África por sorpresa",
+   "importancia": 9,
+   "velocidad": 7,
+   "puntaje": 8,
+   "reciente": 16.7,
+   "base": 6.1,
+   "ratio": 2.72,
+   "disparada": "2026-08-07T15:58:18+00:00",
+   "velocidad_inicial": 7,
    "desenlace": "vigente",
-   "horas": 8.8
+   "horas": 0
+  },
+  {
+   "id_hecho": "5d9e7326075e",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYUZpdjJvX1pld0t6OER6UGxMdS1BcnktNWlIZ1Y3c1ZwemRHMmdFSDlJTFFocUZ3Mmg0QXlaV0tKYVR5dXhwWWhlYnA0ZFVEdVQ5YTVXakV6U1dSd3FyMVlUZ2RLMndxUWVMQjNaajFjZUxJU3pkVjRIWVN5RkxrSGNsblFTYnF0aVByTUZMa0xDS1ZGSWMzUW8zUTRjVFRNcllPRFNEcWY2dHhFVUJ2M0h1V1dEQ05Sa09iZ0E2UjBsQmpyb0lWNER6Z090cXRQQi16bkd3SkNOdw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Migrante hondureño vuelve a Estados Unidos luego de una deportación «injusta»",
+   "importancia": 7,
+   "velocidad": 6,
+   "puntaje": 8,
+   "reciente": 16.7,
+   "base": 6.1,
+   "ratio": 2.72,
+   "disparada": "2026-08-07T15:58:18+00:00",
+   "velocidad_inicial": 6,
+   "desenlace": "vigente",
+   "horas": 0
   }
  ]
 }
