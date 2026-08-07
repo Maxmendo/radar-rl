@@ -260,13 +260,18 @@ TEXTO:
 ${(f.texto || "").slice(0, TOPE_TEXTO)}`)
     .join("\n\n");
 
-  // Umbral: basta con 3 fuentes con texto para redactar (criterio editorial:
-  // el fact-check y la evaluacion de confiabilidad los hace el equipo). Menos de
-  // 3 no da material para contrastar, asi que ahi si va nota incompleta.
-  const suficiente = conTexto.length >= 3;
+  // Umbral: 3 fuentes con texto Y al menos una de medio real (agencia o medio
+  // de referencia). Ahora que Playwright resuelve las fuentes, se puede exigir
+  // contraste real -3 medios distintos- con al menos uno confiable. El
+  // fact-check final lo hace el equipo.
+  const confiables = conTexto.filter((f) => nivelDe(f) <= 1).length;
+  const suficiente = conTexto.length >= 3 && confiables >= 1;
 
   if (!suficiente) {
-    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero solo se accedio al texto de ${conTexto.length} fuente(s), menos de las 3 necesarias para contrastar. NO inventes una nota.
+    const motivo = conTexto.length < 3
+      ? `solo se accedio al texto de ${conTexto.length} fuente(s), menos de las 3 necesarias`
+      : `ninguna de las ${conTexto.length} fuentes con texto es un medio de referencia (agencia o legacy)`;
+    return `Sos redactor/a de Refugio Latinoamericano. El Radar detecto este hecho, pero ${motivo} para redactar con respaldo. NO inventes una nota.
 
 HECHO: ${h.titulo}
 Paises: ${paises} | Region: ${h.region || "s/d"} | Ejes: ${ejes}
@@ -297,12 +302,15 @@ FUENTES SIN ACCESO (no uses su contenido, solo mencionalas como pendientes): ${s
 
 TAREA
 1. Extrae de cada fuente los hechos centrales: que paso, datos duros (cifras, fechas, nombres, cargos), declaraciones textuales, contexto.
-2. Contrasta entre las fuentes: coincidencias (dato en 2+ fuentes = establecido), divergencias (si discrepan, prevalece la mayoritaria y se menciona la discrepancia con atribucion), vacios (dato en una sola fuente, se incorpora con su atribucion).
-3. Sintetiza UNA pieza original. No copies frases ni la estructura de las fuentes.
+2. IMPORTANTE - identifica la fuente ORIGINAL de cada dato: dentro de cada nota, el medio cita a alguien (un organismo, un vocero, un documento oficial, un fallo, una agencia). ESA es la fuente primaria del dato, no el medio. Ej: si Infobae dice "el Tribunal Supremo resolvio X", la fuente es el Tribunal Supremo, no Infobae.
+3. Contrasta entre las fuentes: coincidencias (dato en 2+ medios = mas solido), divergencias (si discrepan, prevalece la mayoritaria y se menciona la discrepancia), vacios (dato en un solo medio, se incorpora igual).
+4. Sintetiza UNA pieza original centrada en LOS HECHOS. No copies frases ni la estructura de las notas.
 
 REGLAS DE REDACCION
 - El LEAD (primer parrafo) debe responder las 7W: quien, que, cuando, donde, por que, como y con que consecuencias. Puede extenderse a dos parrafos si hace falta.
-- Atribui cada dato a su fuente en el texto: "segun EFE", "de acuerdo con Infobae", "declaro ante Reuters". Toda declaracion con nombre y cargo completos.
+- ATRIBUCION: atribui cada dato a su fuente ORIGINAL, no al medio que lo reporto. Escribi "el Tribunal Supremo resolvio", "la Casa Blanca informo", "segun el fallo", "de acuerdo con la ACLU" -no "segun Infobae", "detallo El Pais"-. El medio se centra en los HECHOS y sus protagonistas, no en quien los publico.
+- Menciona un medio SOLO cuando el dato no tiene fuente original identificable, o cuando hay una discrepancia entre medios que hay que señalar. En esos casos: "segun reporto [medio]".
+- Reproduci las CITAS TEXTUALES que traen las notas (declaraciones entre comillas de voceros, funcionarios, organismos) con su atribucion original: nombre y cargo completos. Son lo mas valioso del material.
 - No inventes datos, cifras, cargos ni declaraciones que no esten en el MATERIAL. Si un dato clave falta, marcalo "[a verificar por el equipo]".
 - No opines. Solo informas hechos constatados en el material.
 - Subtitulos internos declarativos y autocontenidos (oraciones completas con informacion), no metaforicos ni interrogativos.
