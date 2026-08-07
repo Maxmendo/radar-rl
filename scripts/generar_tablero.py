@@ -547,9 +547,16 @@ async function pedirBorrador(boton){
   const id=boton.dataset.id;
   const h=(typeof ITEMS!=='undefined')?ITEMS.find(x=>String(x.id)===String(id)):null;
   if(!h){ boton.textContent='No se encontró el hecho'; return; }
+  // Pedir el correo al que enviar el borrador. Asi el equipo no necesita
+  // loguearse: cada quien recibe el borrador en su casilla.
+  const correo=(prompt('¿A qué correo enviamos el borrador?','')||'').trim();
+  if(!correo) return;                       // canceló o dejó vacío
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(correo)){
+    alert('Ese correo no parece válido. Probá de nuevo.'); return;
+  }
   const medios=(h.coberturas||[]).map(c=>c.medio).filter(Boolean);
   const payload={
-    id:h.id,
+    id:h.id, destinatario:correo,
     titulo:h.titulo_original||'', angulo:h.angulo_sugerido||'', url:h.url||'',
     paises:h.paises||[], region:h.region||'', ejes:h.ejes||[], medios:medios,
     poblaciones:h.poblaciones||[], colectividades:h.colectividades||[],

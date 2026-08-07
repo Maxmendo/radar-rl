@@ -150,6 +150,13 @@ async function manejarBorrador(request, env) {
     return json({ ok: false, error: "Falta el título del hecho" }, 400);
   }
 
+  // Correo destinatario: viene del tablero (quien pidio el borrador). Se valida
+  // aca tambien, no solo en el frontend.
+  const destinatario = (hecho.destinatario || "").trim();
+  if (!destinatario || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(destinatario)) {
+    return json({ ok: false, error: "Correo destinatario inválido" }, 400);
+  }
+
   // El texto pesado de las fuentes no viaja en el payload (inflaria el HTML):
   // se lee aca de items.json, que la ingesta ya enriquecio con fuentes_texto.
   try {
@@ -170,6 +177,7 @@ async function manejarBorrador(request, env) {
       asunto: `Borrador: ${hecho.titulo}`,
       html: armarHtml(hecho, borrador),
       texto: `${hecho.titulo}\n\n${borrador}`,
+      destinatario,
       env,
     });
   } catch (e) {
@@ -333,7 +341,7 @@ LEAD
 Primer parrafo con las 7W. Presenta el hecho central, no el contexto.
 
 CUERPO
-Prosa periodistica continua con subtitulos declarativos. Causas, impacto, contexto, perspectivas. Toda afirmacion atribuida.
+Prosa periodistica continua y DESARROLLADA: al menos 4 o 5 subtitulos declarativos, cada uno con 2 o 3 parrafos. Aprovecha TODO el material de las fuentes: no dejes datos, cifras, declaraciones ni contexto sin incorporar. Cubri causas, antecedentes, impacto humanitario, marco legal, actores involucrados y perspectivas. Es un informe, no una nota breve: extendete tanto como el material lo permita. Toda afirmacion atribuida a su fuente original.
 
 FACT CHECKING - A VERIFICAR POR EL EQUIPO
 Una linea por dato central: [dato] - [fuente] - a verificar por el equipo. Sin vinetas ni tablas.
@@ -379,13 +387,13 @@ async function viaGemini(prompt, key, modelo) {
 // Envío vía API de Gmail (cuenta común + refresh token OAuth)
 // Secrets: GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN
 // ---------------------------------------------------------------------------
-async function enviarPorGmail({ asunto, html, texto, env }) {
+async function enviarPorGmail({ asunto, html, texto, destinatario, env }) {
   if (!env.GMAIL_CLIENT_ID || !env.GMAIL_CLIENT_SECRET || !env.GMAIL_REFRESH_TOKEN) {
     throw new Error("Faltan credenciales de Gmail en las variables de Cloudflare");
   }
 
   const accessToken = await obtenerAccessToken(env);
-  const raw = construirMime(asunto, html, texto);
+  const raw = construirMime(asunto, html, texto, destinatario);
 
   const r = await fetch(
     "https://gmail.googleapis.com/gmail/v1/users/me/messages/send",
@@ -424,13 +432,14 @@ async function obtenerAccessToken(env) {
   return d.access_token;
 }
 
-function construirMime(asunto, html, texto) {
+function construirMime(asunto, html, texto, destinatario) {
   const limite = "limite_refugio_" + Date.now();
   const asuntoEnc = "=?UTF-8?B?" + base64(utf8(asunto)) + "?=";
+  const para = destinatario || DESTINATARIOS.join(", ");
 
   const mensaje =
     `From: ${REMITENTE.nombre} <${REMITENTE.email}>\r\n` +
-    `To: ${DESTINATARIOS.join(", ")}\r\n` +
+    `To: ${para}\r\n` +
     `Subject: ${asuntoEnc}\r\n` +
     `MIME-Version: 1.0\r\n` +
     `Content-Type: multipart/alternative; boundary="${limite}"\r\n\r\n` +
