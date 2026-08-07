@@ -812,7 +812,10 @@ function armarAlertas(){
       }
       // Boton de borrador solo si el hecho cumple el umbral (3 fuentes con
       // texto, una real): se reusa puede_borrador, ya calculado en el hecho.
-      const botonBorrador = (h && h.puede_borrador)
+      // Usa a.puede_borrador, ya resuelto en Python al armar las alertas. No
+      // depende de que el id del hecho coincida en porId (que puede fallar si el
+      // id cambio entre corridas).
+      const botonBorrador = a.puede_borrador
         ? `<div class="acciones"><button class="borrador chico" data-id="${esc(a.id_hecho)}" onclick="pedirBorrador(this)">Generar borrador</button></div>`
         : '';
       return `<li><span class="dsc ${d.c}">${d.t}</span> `+
