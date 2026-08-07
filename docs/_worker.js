@@ -208,22 +208,21 @@ async function leerFuentesTexto(id, request, env) {
 // en hecho.fuentes_texto. El Worker no resuelve URLs en vivo: solo redacta.
 async function redactar(hecho, env) {
   const prompt = construirPrompt(hecho);
+
+  if (!env.GEMINI_API_KEY) {
+    throw new Error("Falta GEMINI_API_KEY en las variables de Cloudflare");
+  }
+
+  // Cascada entre modelos Gemini (misma API key): si uno devuelve vacio -por
+  // longitud, por un tema que lo traba, etc.- se reintenta con el siguiente.
+  // Ambos son GA a agosto 2026.
+  const MODELOS = ["gemini-3.6-flash", "gemini-3.5-flash-lite"];
   const errores = [];
-
-  if (env.GEMINI_API_KEY) {
-    try { return await viaGemini(prompt, env.GEMINI_API_KEY); }
-    catch (e) { errores.push("Gemini: " + e.message); }
+  for (const modelo of MODELOS) {
+    try { return await viaGemini(prompt, env.GEMINI_API_KEY, modelo); }
+    catch (e) { errores.push(modelo + ": " + e.message); }
   }
-  if (env.ANTHROPIC_API_KEY) {
-    try { return await viaClaude(prompt, env.ANTHROPIC_API_KEY); }
-    catch (e) { errores.push("Claude: " + e.message); }
-  }
-  if (env.GROQ_API_KEY) {
-    try { return await viaGroq(prompt, env.GROQ_API_KEY); }
-    catch (e) { errores.push("Groq: " + e.message); }
-  }
-
-  throw new Error("Ningún modelo respondió. " + errores.join(" | "));
+  throw new Error("Gemini no respondió. " + errores.join(" | "));
 }
 
 function construirPrompt(h) {
@@ -250,11 +249,15 @@ function construirPrompt(h) {
   const catDe = (f) => (nivelDe(f) === 0 ? "A (agencia)"
     : nivelDe(f) === 1 ? "B (medio de referencia)" : "C (otro medio)");
 
+  // Cada fuente se recorta a ~2800 caracteres en el prompt: con 3 fuentes son
+  // ~8400, que deja margen para que Gemini genere la nota sin exceder limites.
+  // (El texto completo se guarda igual; esto es solo lo que entra al prompt.)
+  const TOPE_TEXTO = 2800;
   const material = conTexto
     .map((f, i) => `--- FUENTE ${i + 1}: ${f.medio} [${catDe(f)}] (${f.dominio || "dominio s/d"})
 URL: ${f.url}
 TEXTO:
-${f.texto}`)
+${(f.texto || "").slice(0, TOPE_TEXTO)}`)
     .join("\n\n");
 
   // Umbral: basta con 3 fuentes con texto para redactar (criterio editorial:
@@ -334,62 +337,33 @@ Espanol rioplatense, tono sobrio, riguroso y humanizador, sin sensacionalismo.`;
 }
 
 
-async function viaGemini(prompt, key) {
+async function viaGemini(prompt, key, modelo) {
+  modelo = modelo || "gemini-3.6-flash";
   const r = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${key}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${key}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { maxOutputTokens: 4000, temperature: 0.4 },
+        // Sin temperature: esta deprecado en Gemini 3.x y puede dar error.
+        generationConfig: { maxOutputTokens: 8000 },
       }),
     }
   );
-  if (!r.ok) throw new Error("HTTP " + r.status);
+  if (!r.ok) {
+    const detalle = await r.text().catch(() => "");
+    throw new Error("HTTP " + r.status + " " + detalle.slice(0, 200));
+  }
   const d = await r.json();
   const txt = d?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!txt) throw new Error("respuesta vacía");
-  return txt;
-}
-
-async function viaClaude(prompt, key) {
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": key,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: "claude-opus-4-8",
-      max_tokens: 4000,
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-  if (!r.ok) throw new Error("HTTP " + r.status);
-  const d = await r.json();
-  const txt = d?.content?.map((b) => b.text || "").join("").trim();
-  if (!txt) throw new Error("respuesta vacía");
-  return txt;
-}
-
-async function viaGroq(prompt, key) {
-  const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: "Bearer " + key,
-    },
-    body: JSON.stringify({
-      model: "llama-3.3-70b-versatile",
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-  if (!r.ok) throw new Error("HTTP " + r.status);
-  const d = await r.json();
-  const txt = d?.choices?.[0]?.message?.content;
-  if (!txt) throw new Error("respuesta vacía");
+  if (!txt) {
+    const razon = d?.candidates?.[0]?.finishReason || "";
+    const bloqueo = d?.promptFeedback?.blockReason || "";
+    throw new Error("respuesta vacía"
+      + (razon ? " [finishReason: " + razon + "]" : "")
+      + (bloqueo ? " [blockReason: " + bloqueo + "]" : ""));
+  }
   return txt;
 }
 
