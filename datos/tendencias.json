@@ -1,72 +1,72 @@
 {
- "generado": "2026-08-08T01:40:13+00:00",
+ "generado": "2026-08-08T12:49:36+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "6c8dcf981ebd": {
-   "id_hecho": "6c8dcf981ebd",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPQ01USUlIdFVtT3NMTGVMbmE4WXktcGkyMmdQT2EwczROeFJxb3laR29Vcm55OGd4a19ybHg0QmJjM1Z4T3JwZmNBYURmczAxZG54cXVDMkFhZ09RQWtsU2d6MW1xajJKc3EtYzRKenlDMG9GSzhzUVRXaWhwQlZqQXd5TGdvMEtwQWdBNHNwQkxEc1J3LTZZcS04TjI5VlYwM21neDlKS2dfcVdaeWZTMFhoRmxRelpQVi1TSnNVUXl3Mk9ISU1yMEpZdEV0SkZyaHNGOXRtUGtnb1Y4eGUxNHhDNHpJRW5HVzVfMVlrU1I2dw?oc=5",
+  "376547455dd0": {
+   "id_hecho": "376547455dd0",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNLVg0c3dVeTB5TnRCY1NzaHRtT3NSREg5SzZzNDNKMEFJV1ZEZXdNbnU0UFFDaWNiWVJmNlJHVVBTakFyV3lUOWFzbEVEODZJMUZUdUp2WU52SzljZ1hhcXlHNkRKcFpUa2dyQWNnWEVCVk5vTzd3TFdvcDRqZ2lEMUt6SWc2d2RyM3JPQzgzNUFRbFQ0RU1pRVJKRWhoSktnTE9mWkE1TTlMR2dGYzB4c2ZqUDNoeHBGd2VOR0pzY01oaGs1NW5IbVd5N0lVaVJXRlJrRzFBYmloeXlEVm9nUW9MWEFZUQ?oc=5",
    "termino": "ciudadania",
    "geo": "US",
    "titulo": "Trump firma órdenes ejecutivas contra la ciudadanía por derecho de nacimiento",
    "importancia": 10,
-   "velocidad": 7,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 41.3,
-   "base": 39.7,
-   "ratio": 1.04
+   "reciente": 41.1,
+   "base": 40.4,
+   "ratio": 1.02
+  },
+  "008d9a784b80": {
+   "id_hecho": "008d9a784b80",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOV0EzcXplZGxEUFpXR1Zqc0Z2ZWlPX0lGTUk5LVNMM2cxRDNGeE5UbzFEQm9wZWxacHo3Z3BMNU9lSUZVeEZBVE1fNmdMZndaSTNDVFQ4WVZaaXFKUkk5WEs5UTAxb3BGcEhtcHVNUDZsb2JZUUJhU3FDbE9qV3F0bjlDeEotMG9kLXZMT3JIY2pMMGM2bThITEVSZ2ZUNV81SUpmSnBSM09GV08ydTdhdElVV0VjSmFVazFjZg?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "\"Nos enviaron a África sin avisarnos\": migrantes denuncian deportación forzada desde EE. UU.",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 3.4,
+   "base": 1.4,
+   "ratio": null
   },
   "dd23e546ff1d": {
    "id_hecho": "dd23e546ff1d",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQY00tbW5ZR0d0N0pZalI2MnZZWXBiNkJxcHF6TXBoWEtieWdWMXpkTkhBdUw5c0J6YURDdDhIX1lvM2JhY2Z4cTRIdG9JT1IyY01GQ0ZzOEhrZW9rSmVFZ2hoblpwSnpXd0JHRERPOFFFbVdVSmJ6bTlZU3B3d3B3UHpWWkJpekhTN2w3Z0lTY2o3ZUNxWmZyR0NHUWFFMWh1ejBSUjhXYlZuUlR6WGxZNjhUOVZpNWQzcjJaS2x0YXVrNUVnd2fSAcYBQVVfeXFMUGNNLW1uWUdHdDdKWWpSNjJ2WVlwYjZCcXBxek1waFhLYnlnVjF6ZE5IQXVMOXNCemFEQ3Q4SF9ZbzNiYWNmeHE0SHRvSU9SMmNNRkNGczhIa2Vva0plRWdoaG5acEp6V3dCR0RETzhRRW1XVUpiem05WVNwd3dwd1B6VlpCaXpIUzdsN2dJU2NqN2VDcVpmckdDR1FhRTFodXowUlI4V2JWblJUelhsWTY4VDlWaTVkM3IyWktsdGF1azVFZ3dn?oc=5",
-   "termino": "detenciones migrantes",
+   "termino": "deportaciones",
    "geo": "US",
    "titulo": "Estados Unidos registra la detención de migrantes más alta durante el Gobierno de Trump",
    "importancia": 8,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
+   "reciente": 3.4,
+   "base": 1.4,
    "ratio": null
   },
-  "3704bc7c48f1": {
-   "id_hecho": "3704bc7c48f1",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQMUJVQnJVYVVhRXRjY25qckpyTzM2OXNQWFVUZVpkMUVHTGNsSzE1WGlPMEZDTlQ3UUp2cWJCT19FUHVQY3VPZlg5WWVHTE9VTzBPSTJ3UjN5MzJxaVV2akt5NXhsY0dZU3IydUlpVU9ueVgyTmRydXFCSVBoc2k5MnQ3bm92Q1lpWF9yU0xYdzJHWGtTWFdtbHBOb2VhLVhld2ZycFJIanR4U1BHZ21vNXhhbGhoUGlyY3Q0bTlJY05EdGJKOWI3Tk5hcVpiVnhBWlpCWFRUNTd3WWNzUFV0cXBNbE44b3plUUtYX2NHZw?oc=5",
-   "termino": "estatus migratorio",
-   "geo": "US",
-   "titulo": "Cubana con I-220A teme nueva detención por ICE",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 5.7,
-   "base": 2.1,
-   "ratio": null
-  },
-  "ce054a6a464e": {
-   "id_hecho": "ce054a6a464e",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOYS1KTHBiU3FtMlhIX21CdkE4Vk1xMGdMY0R6Ulk3RjhxSm5rWGNQRG4wa1U0T05wMnJVeVdiZUxvNnZtUEJVdFBqWmRLNDZkMFZIWG1jRXdZcm1fUzU3NEZISzNIeFRoUTRDVUpzS3BhLTZkbjR2T2hMQUpFSXprNkFZVHh3WWw5amJHUjRUZ1FISjRQSlQwYXppNklCU29idGYxV3hrWDJzR0hXOWVNUXZSSDFmZXd1OGE1NXZmbWxKT3ByZ0NuVjhYcEpyNWw1VXZ0Uk1HamNTSEt5VHN0dkIwMWZzVnZ3SlZKNnlaWEdtYWpHS3lfOHh2eTRkUXNhNTBvYVIya1N2Vy03TnfSAZMCQVVfeXFMT1JwaVpRRVNrNEtvQjFTVURHdWtNZXB4N0duS3pSUk9XZjVLblc4MjNoSUVObENjZnBSbFdVZVlYbGtwZmQyVnR0d1RsUjVDaXlTVFcxQ25QSVdRTHQyMUljcWhhMWRPc3RUem9LMEZTd2RSQmYwVDBIVW9FZXhZR0dMSGF0LTdZOGtMTVRaVmFqSE1UMlgxOVlVdG9wRTl2bGZRZWZ5WkNVOTZadU9iOUNYVURKWnJUSER2XzNFQ3VfcjZ0emJiTll0WVd6N2FFb1pSa09wREJZaHk5UWZqbVlvN0lQNlZRSWd4SGVhNVdRd3lxX3BMc3NyZVF0Zkp2cUNlbGhvU1VTU0htVHVWYjAxZUk?oc=5",
+  "3116e789dbe9": {
+   "id_hecho": "3116e789dbe9",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTlRBbmh6VkZwbzYzOUM1d3lERDl3ekhSak9xbmNaVU9pN1dnVGZydS1BVGpsWlFObEx0d1huMEowUU9SZGI5X2t5Y21vN2xMcmdVTlNRLTFHTHdFcDFQMzdKLU5vMVcyS2FSYldpZHQ0SkUzWXVxR243LWpJM2JPQnNiR0swNjdUcHVoSzhxamR6Tk5iX3NZZ20xT0Z4bzh6TkhRTTh1NGdITy1iNzZEaXMwUnNlOEhZbUFZQXRONDJ6WnZTbmpPaUhB0gHeAUFVX3lxTE1GUWxqY1RjNnpXVEZoLUZ6YzdCUC0zZmYwLUVqcWp1X1NWWG14d182bFpWRW0zMFlOVzlpeTFSbldMRVNfV0VCZ19Ec09GMkgyN2N0VTZ2di1wRENUU2FlRjkycDRrazdNTTVwWU5saWxfTWM4djhWVDVSMjVISVR6MGJMSXpUWW1SZTlQd3FPTkI2SmNzRHpDNVlLbkdHczBTVzhSQmRkeDg4UGRyWXMyOFpkbVZmU0RDYWk2ajJ6TGxidHdlOXJVN0Z4Z3FDT002UHhVY0JHYzByS2plQQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "ICE confirma más de 1,000 arrestos de inmigrantes en operativo en Georgia",
+   "titulo": "Una argentina detenida por el ICE cuando iba a ver el Mundial lleva casi un mes presa",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 3.1,
-   "base": 1.7,
+   "reciente": 3.4,
+   "base": 1.4,
    "ratio": null
   },
-  "387fbd0b8036": {
-   "id_hecho": "387fbd0b8036",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPa1M3MGtJMFZ1SElSN21MNHRYaEsxa1ZsVE9CNjEtVGx0Z2xXa3Qwcl9zdm56ZENZcHpZQjFnMVVwWkpIV1VIQjQ0UDdQV1oySUExTTdXWVBaWGxjLVQtNlVzNF9lQUFwU09BT1VMTjBWTGdtTnBVUVl3M2htRVdPejFtS0JTUThqSFkyVU1qREpIRDZLMHdVNjZwSUF1RGNyVGF5LXZoQjZJeGE2MFVBMVdNdFBib1dRbDhiTWdiajlaQ2VNZ3FrS2VLSHpoN0dFNmZmWklSNjAwN3RBWl85NU5lWDZ6V0g4?oc=5",
+  "f8da5b4a26a5": {
+   "id_hecho": "f8da5b4a26a5",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQY0N2WEdrRFRZOWZXNDVoSDN5bWRiYlFCdnBTTlo3NDJMOXYxNE1jVy1BdU42Q1R3SC1IMVhRSVFLTk02M3piZmFQNlFiZEdEZUxhZFhFN1p2VXUxZkJUbFR4MEtjTzRLWk9GX0ptNHlBbTFrUzRfZWQzUE9EZHc1bWFtbHJZMF9CUGZtdUpGZWhsaEZFRlIwdHJZZDQ1Y242cmIyWEFBaWRhT2lCTk92SmxySU8wS0RTNWJIU0duLXdXUVhwNjZ5ZDJwNmVBZDZ5V0UtZDFwMDhWaEc5VHVsa3Y4dGRyX0FNZDMwWE5aMEtoYTkxMjluMjBHR1oyTGJlUU5yQzdDcjBjalZaUzJvZGRpUS0xRVgyMElCYngtdTFDQdIBpwJBVV95cUxQYy1tMzhuN3NBTm5zX2tkM3JiMVhNYWpCNDRrdEVXVnNudlZMMzU5d1MtcElkX3pJOFBFUHdSNTExc1NtbU5hZ2Z3bldscndKZUdJcUp1c09EQjZ4aVpGNlBlUTFteWYyU1ZRN1YyRmVNOF9zQnhxUEdSQVNEVUtLLVI0Z1pPQzJ4dTVMOXlWOXpnUzJGWm5hei1pNGtLcFhEWmVkcUo1V0k3dUdsSmpEd0ZNOFFzdzZmd1ZqZ05xbXhabTRmb2hlQ3JXajFTVkNqbmpsZjZVaHl2VUNFdFZHTHBCX205azg0OEZaODVWTTljcDFScjdjMzk4Uy1sWW1GVHhaZ21sOTVSX2g0X3pnaVo3RE92SkJLcVVLcTdQZVNWbFRHWEhr?oc=5",
    "termino": "deportaciones",
    "geo": "US",
    "titulo": "Casa Blanca usa a Spider-Man en campaña de ICE sobre deportaciones",
-   "importancia": 7,
-   "velocidad": 6,
+   "importancia": 6,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 3.1,
-   "base": 1.7,
+   "reciente": 3.4,
+   "base": 1.4,
    "ratio": null
   },
   "2a08e98fa253": {
@@ -74,12 +74,12 @@
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNT01ZLTJtWEh5X0xYMFhsUDRWamVwUTMyOUtfV0ItRTVtSEticEYyMGZNV0ZYQ2JOenZDUmE0cU5sYVRlVjZJVjRtVmVPZWliZW9uc1BLQzJkMVRiWXpEYk1SMThUUnczZkVraldrT3NHVV9rOU1FMkpZVTZydEkwMWpHN2MwTzZld3VvQ2R5ZW45eml6QjlnR1JKYU5JQUNERnZINWhHWVFKSkFMd0U3a21YTEtMd1I0UkFvM3lfNHo5UHptaXJ0ampsMUdKX0VH?oc=5",
    "termino": "relaciones consulares",
    "geo": "CL",
-   "titulo": "Chile y Venezuela formalizaron el reinicio de sus relaciones consulares: “El inicio de una nueva etapa”",
+   "titulo": "Chile y Venezuela formalizan reinicio de relaciones consulares",
    "importancia": 8,
-   "velocidad": 6,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 11.0,
-   "base": 2.7,
+   "reciente": 12.9,
+   "base": 3.0,
    "ratio": null
   }
  },
@@ -88,13 +88,13 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1044050",
+     "valor": "1020050",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 2
     },
     {
-     "consulta": "migrantes marruecos",
-     "valor": "771900",
+     "consulta": "marruecos",
+     "valor": "695500",
      "tipo": "rising",
      "variantes": 0
     },
@@ -105,7 +105,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-07T15:58:01+00:00"
+   "medido": "2026-08-08T12:49:19+00:00"
   },
   "VE": {
    "consultas": [
@@ -156,25 +156,25 @@
   "CO": {
    "consultas": [
     {
-     "consulta": "marruecos",
-     "valor": "39",
+     "consulta": "migrantes españa",
+     "valor": "100",
      "tipo": "top",
      "variantes": 2
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "ceuta",
+     "valor": "354600",
+     "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes ceuta",
-     "valor": "362850",
+     "consulta": "migrantes de marruecos",
+     "valor": "393450",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-05T19:32:10+00:00"
+   "medido": "2026-08-08T12:49:28+00:00"
   },
   "US": {
    "consultas": [
@@ -246,60 +246,23 @@
    "medido": "2026-08-08T01:40:05+00:00"
   }
  },
- "proximo_pais": 3,
- "paises_sin_datos": [
-  "AR"
- ],
+ "proximo_pais": 4,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 21.0,
-   "base": 7.3,
-   "ratio": 2.88
+   "puntaje": 10,
+   "reciente": 16.6,
+   "base": 4.5,
+   "ratio": 3.69
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 22.7,
-   "base": 6.9,
-   "ratio": 3.28
+   "reciente": 17.0,
+   "base": 5.2,
+   "ratio": 3.27
   }
  },
- "alertas": [
-  {
-   "id_hecho": "08d4a70b5f33",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTnlpWk9Ebmw5MHZXWjQ0WDk1RnZmeFZLazRVdGVhNmdYdXJuTTJxY21UZEhtQTZEbF83RW9rakdUT2l3aHpLdnNaaFpWaUVQelFjQkZVaElMVWhRbVJiRFRsQVZLQkJUTDQ4ZjVHMHJSeTN0Y3N6aXd2bHE0ZkppUVJvaWxPQTRWY1dqTzgzeTlyRldHeUtXclk4R19KR0N6YWJEaWl0ZXg3bDZDMFc1dVAyS3RwbWtuM1FRRmd5VV9KX3BTNnJoejJzdDhaSHkySFRodHlsZlktdkZZMWV6YkthMWk?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Migrantes de Honduras, Cuba y Ecuador acusan a EEUU de deportarlos a África por sorpresa",
-   "importancia": 9,
-   "velocidad": 7,
-   "puntaje": 8,
-   "reciente": 16.7,
-   "base": 6.1,
-   "ratio": 2.72,
-   "disparada": "2026-08-07T15:58:18+00:00",
-   "velocidad_inicial": 7,
-   "desenlace": "vigente",
-   "horas": 9.7
-  },
-  {
-   "id_hecho": "5d9e7326075e",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYUZpdjJvX1pld0t6OER6UGxMdS1BcnktNWlIZ1Y3c1ZwemRHMmdFSDlJTFFocUZ3Mmg0QXlaV0tKYVR5dXhwWWhlYnA0ZFVEdVQ5YTVXakV6U1dSd3FyMVlUZ2RLMndxUWVMQjNaajFjZUxJU3pkVjRIWVN5RkxrSGNsblFTYnF0aVByTUZMa0xDS1ZGSWMzUW8zUTRjVFRNcllPRFNEcWY2dHhFVUJ2M0h1V1dEQ05Sa09iZ0E2UjBsQmpyb0lWNER6Z090cXRQQi16bkd3SkNOdw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Migrante hondureño vuelve a Estados Unidos luego de una deportación «injusta»",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 8,
-   "reciente": 16.7,
-   "base": 6.1,
-   "ratio": 2.72,
-   "disparada": "2026-08-07T15:58:18+00:00",
-   "velocidad_inicial": 6,
-   "desenlace": "se_enfrio",
-   "horas": 9.7
-  }
- ]
+ "alertas": []
 }
