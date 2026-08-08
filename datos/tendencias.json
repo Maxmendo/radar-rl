@@ -1,86 +1,73 @@
 {
- "generado": "2026-08-08T12:49:36+00:00",
+ "generado": "2026-08-08T21:32:40+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "376547455dd0": {
-   "id_hecho": "376547455dd0",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNLVg0c3dVeTB5TnRCY1NzaHRtT3NSREg5SzZzNDNKMEFJV1ZEZXdNbnU0UFFDaWNiWVJmNlJHVVBTakFyV3lUOWFzbEVEODZJMUZUdUp2WU52SzljZ1hhcXlHNkRKcFpUa2dyQWNnWEVCVk5vTzd3TFdvcDRqZ2lEMUt6SWc2d2RyM3JPQzgzNUFRbFQ0RU1pRVJKRWhoSktnTE9mWkE1TTlMR2dGYzB4c2ZqUDNoeHBGd2VOR0pzY01oaGs1NW5IbVd5N0lVaVJXRlJrRzFBYmloeXlEVm9nUW9MWEFZUQ?oc=5",
-   "termino": "ciudadania",
-   "geo": "US",
-   "titulo": "Trump firma órdenes ejecutivas contra la ciudadanía por derecho de nacimiento",
-   "importancia": 10,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 41.1,
-   "base": 40.4,
-   "ratio": 1.02
-  },
-  "008d9a784b80": {
-   "id_hecho": "008d9a784b80",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOV0EzcXplZGxEUFpXR1Zqc0Z2ZWlPX0lGTUk5LVNMM2cxRDNGeE5UbzFEQm9wZWxacHo3Z3BMNU9lSUZVeEZBVE1fNmdMZndaSTNDVFQ4WVZaaXFKUkk5WEs5UTAxb3BGcEhtcHVNUDZsb2JZUUJhU3FDbE9qV3F0bjlDeEotMG9kLXZMT3JIY2pMMGM2bThITEVSZ2ZUNV81SUpmSnBSM09GV08ydTdhdElVV0VjSmFVazFjZg?oc=5",
+  "5649fa572be3": {
+   "id_hecho": "5649fa572be3",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRjh5aGE3b09lMUJVREs3WHpBby1mOEtMY1puZndHWTdnVkY4cjBlWG5ZTkI1N016ZWhuTkdrNkpkdl9wMmxGYmYzQmx1U195YnBBem9DdjQ5RGVyTHdfaWVDUGFHS2VPbm1aWGoyU1NacFU0YUZ1OTlwYjBQVmVzYVVyR004NVFCZzVaLVlLMVRmMjJpcFBSaTJIX0lPamVrUUY0bEdlMVFfSXFwWm9Vbklma3ZtMFU?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "\"Nos enviaron a África sin avisarnos\": migrantes denuncian deportación forzada desde EE. UU.",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 3.4,
-   "base": 1.4,
-   "ratio": null
-  },
-  "dd23e546ff1d": {
-   "id_hecho": "dd23e546ff1d",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQY00tbW5ZR0d0N0pZalI2MnZZWXBiNkJxcHF6TXBoWEtieWdWMXpkTkhBdUw5c0J6YURDdDhIX1lvM2JhY2Z4cTRIdG9JT1IyY01GQ0ZzOEhrZW9rSmVFZ2hoblpwSnpXd0JHRERPOFFFbVdVSmJ6bTlZU3B3d3B3UHpWWkJpekhTN2w3Z0lTY2o3ZUNxWmZyR0NHUWFFMWh1ejBSUjhXYlZuUlR6WGxZNjhUOVZpNWQzcjJaS2x0YXVrNUVnd2fSAcYBQVVfeXFMUGNNLW1uWUdHdDdKWWpSNjJ2WVlwYjZCcXBxek1waFhLYnlnVjF6ZE5IQXVMOXNCemFEQ3Q4SF9ZbzNiYWNmeHE0SHRvSU9SMmNNRkNGczhIa2Vva0plRWdoaG5acEp6V3dCR0RETzhRRW1XVUpiem05WVNwd3dwd1B6VlpCaXpIUzdsN2dJU2NqN2VDcVpmckdDR1FhRTFodXowUlI4V2JWblJUelhsWTY4VDlWaTVkM3IyWktsdGF1azVFZ3dn?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Estados Unidos registra la detención de migrantes más alta durante el Gobierno de Trump",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.4,
-   "base": 1.4,
-   "ratio": null
-  },
-  "3116e789dbe9": {
-   "id_hecho": "3116e789dbe9",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTlRBbmh6VkZwbzYzOUM1d3lERDl3ekhSak9xbmNaVU9pN1dnVGZydS1BVGpsWlFObEx0d1huMEowUU9SZGI5X2t5Y21vN2xMcmdVTlNRLTFHTHdFcDFQMzdKLU5vMVcyS2FSYldpZHQ0SkUzWXVxR243LWpJM2JPQnNiR0swNjdUcHVoSzhxamR6Tk5iX3NZZ20xT0Z4bzh6TkhRTTh1NGdITy1iNzZEaXMwUnNlOEhZbUFZQXRONDJ6WnZTbmpPaUhB0gHeAUFVX3lxTE1GUWxqY1RjNnpXVEZoLUZ6YzdCUC0zZmYwLUVqcWp1X1NWWG14d182bFpWRW0zMFlOVzlpeTFSbldMRVNfV0VCZ19Ec09GMkgyN2N0VTZ2di1wRENUU2FlRjkycDRrazdNTTVwWU5saWxfTWM4djhWVDVSMjVISVR6MGJMSXpUWW1SZTlQd3FPTkI2SmNzRHpDNVlLbkdHczBTVzhSQmRkeDg4UGRyWXMyOFpkbVZmU0RDYWk2ajJ6TGxidHdlOXJVN0Z4Z3FDT002UHhVY0JHYzByS2plQQ?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Una argentina detenida por el ICE cuando iba a ver el Mundial lleva casi un mes presa",
+   "titulo": "Detención de migrantes alcanza pico con Trump",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 3.4,
-   "base": 1.4,
+   "reciente": 5.6,
+   "base": 2.0,
+   "ratio": null
+  },
+  "0c944a9c3e94": {
+   "id_hecho": "0c944a9c3e94",
+   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdzA5N1llOGdtSmNWdFljeDI0akFSakozcjlLZGo0c0I5c3g1NUpKSG5laEVNZEpKOGVYUi1VNG1FMFNnblhUZ1FhMGFZMlN5R1RBeFVLYWR6eVE3TkMyS0U1ajJPenFMT3pidmpUMDYxVEJzajlRa1FBdFJXUlFqREQ3WkZUSUtYTElscmRfdW9udlpvZ3ZxdWNyUVVocWo5R3pDR2xiaFJwaExfTW5xNE5NYUlzMEtFaHFqaWZQTjNuUTI2MmoxcElVX3pENXl1WW9rV2c1cjRWUEIweXNPdGNtYWN2WWViamhBN0xjbFpUZ2NYXy12bGJTUllpV1pjeU16Q2NxaE5rQ1lrOHFJejdjTUhtRk4wZ182QUh2T3FGeWhYUDJWUklDcHpLSVN5UEHSAbcCQVVfeXFMT01zNjIyWVJieWV3OUVBU3NTWHBIMzNNR2pYcTMtbGN2NTVmTVI1NjdvS0lralZ5S3ZTN2E5djlqRTJFRkVUS2R1Y3FSOHJmNWh5Ti1ISnlEZXhHazFvY0ZHY3JhRVFpSGJmRXAyalNWaDRkUk5teGJURzlxTFFuVTJxdVlhaTdaUnEtbU12Z3ZueFhFUFlSQjdFaUFUZzA2d2JMejBRVFdQU0hXOS1aOXVWOEkwcFNuRzNnT0djaG5NSXppdms0YlJadEZyWFR5bmhlNFEtTkRORVlrdTExTE00dXg5cEtxc0x6eHE1Q3RQSlhXQTl3RFUtR3ozeTBDSXEyMV9PMnJYeHlzQW5jdDVvNkVVU0Z6djUwOEVjdl96NVVPbldsWllzTFhEaDVBWnUzd2VHV2c?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Un futbolista argentino fue detenido por el ICE en el aeropuerto de Miami",
+   "importancia": 7,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 5.6,
+   "base": 2.0,
    "ratio": null
   },
   "f8da5b4a26a5": {
    "id_hecho": "f8da5b4a26a5",
    "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQY0N2WEdrRFRZOWZXNDVoSDN5bWRiYlFCdnBTTlo3NDJMOXYxNE1jVy1BdU42Q1R3SC1IMVhRSVFLTk02M3piZmFQNlFiZEdEZUxhZFhFN1p2VXUxZkJUbFR4MEtjTzRLWk9GX0ptNHlBbTFrUzRfZWQzUE9EZHc1bWFtbHJZMF9CUGZtdUpGZWhsaEZFRlIwdHJZZDQ1Y242cmIyWEFBaWRhT2lCTk92SmxySU8wS0RTNWJIU0duLXdXUVhwNjZ5ZDJwNmVBZDZ5V0UtZDFwMDhWaEc5VHVsa3Y4dGRyX0FNZDMwWE5aMEtoYTkxMjluMjBHR1oyTGJlUU5yQzdDcjBjalZaUzJvZGRpUS0xRVgyMElCYngtdTFDQdIBpwJBVV95cUxQYy1tMzhuN3NBTm5zX2tkM3JiMVhNYWpCNDRrdEVXVnNudlZMMzU5d1MtcElkX3pJOFBFUHdSNTExc1NtbU5hZ2Z3bldscndKZUdJcUp1c09EQjZ4aVpGNlBlUTFteWYyU1ZRN1YyRmVNOF9zQnhxUEdSQVNEVUtLLVI0Z1pPQzJ4dTVMOXlWOXpnUzJGWm5hei1pNGtLcFhEWmVkcUo1V0k3dUdsSmpEd0ZNOFFzdzZmd1ZqZ05xbXhabTRmb2hlQ3JXajFTVkNqbmpsZjZVaHl2VUNFdFZHTHBCX205azg0OEZaODVWTTljcDFScjdjMzk4Uy1sWW1GVHhaZ21sOTVSX2g0X3pnaVo3RE92SkJLcVVLcTdQZVNWbFRHWEhr?oc=5",
-   "termino": "deportaciones",
+   "termino": "migraciones",
    "geo": "US",
-   "titulo": "Casa Blanca usa a Spider-Man en campaña de ICE sobre deportaciones",
-   "importancia": 6,
+   "titulo": "Con referencia a Spider-Man, La Casa Blanca lanza mensaje contra migrantes",
+   "importancia": 7,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 3.4,
-   "base": 1.4,
+   "reciente": 7.4,
+   "base": 21.4,
    "ratio": null
   },
-  "2a08e98fa253": {
-   "id_hecho": "2a08e98fa253",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNT01ZLTJtWEh5X0xYMFhsUDRWamVwUTMyOUtfV0ItRTVtSEticEYyMGZNV0ZYQ2JOenZDUmE0cU5sYVRlVjZJVjRtVmVPZWliZW9uc1BLQzJkMVRiWXpEYk1SMThUUnczZkVraldrT3NHVV9rOU1FMkpZVTZydEkwMWpHN2MwTzZld3VvQ2R5ZW45eml6QjlnR1JKYU5JQUNERnZINWhHWVFKSkFMd0U3a21YTEtMd1I0UkFvM3lfNHo5UHptaXJ0ampsMUdKX0VH?oc=5",
-   "termino": "relaciones consulares",
-   "geo": "CL",
-   "titulo": "Chile y Venezuela formalizan reinicio de relaciones consulares",
-   "importancia": 8,
-   "velocidad": 5,
+  "6cc68412e575": {
+   "id_hecho": "6cc68412e575",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZ1VuU21KS1FIeHZRd0pvUnRKangzdUJSUVdRNk1JRTRBOWpQTDZlVDJqQlhFbEhHRTY1ZGJnQnYwS0p0U25XSWxjcjVGZlQtN1REdHRNUi1ZZFlwSXVDQnIzTExLZm54SWczSXhkQzMxaEVENFJkNmM4T3U3SjBpTy1lYUZTNmtIdG5VVm9OcWhsUndHdnB4bXZhQTZNRkN6V3R1VjhQdmd6dURwaXZNdVNjaFJhZERoX1pOMUw3aEJLOGItdFE1NTM1VURrQUFiWnBSVU5mdHB2X2czdTFPd0R0V2dwbmJLT3hSc1RCRV9zbEwxcGVkSTBGYkY4MjVFTFRCc9IBhAJBVV95cUxQZ1VuU21KS1FIeHZRd0pvUnRKangzdUJSUVdRNk1JRTRBOWpQTDZlVDJqQlhFbEhHRTY1ZGJnQnYwS0p0U25XSWxjcjVGZlQtN1REdHRNUi1ZZFlwSXVDQnIzTExLZm54SWczSXhkQzMxaEVENFJkNmM4T3U3SjBpTy1lYUZTNmtIdG5VVm9OcWhsUndHdnB4bXZhQTZNRkN6V3R1VjhQdmd6dURwaXZNdVNjaFJhZERoX1pOMUw3aEJLOGItdFE1NTM1VURrQUFiWnBSVU5mdHB2X2czdTFPd0R0V2dwbmJLT3hSc1RCRV9zbEwxcGVkSTBGYkY4MjVFTFRCcw?oc=5",
+   "termino": "migrantes",
+   "geo": "US",
+   "titulo": "Le conceden la libertad bajo fianza a la niñera argentina",
+   "importancia": 5,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 12.9,
-   "base": 3.0,
-   "ratio": null
+   "reciente": 26.3,
+   "base": 29.0,
+   "ratio": 0.91
+  },
+  "a2c86ebdf2a8": {
+   "id_hecho": "a2c86ebdf2a8",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBkUC1JQUs2ZjlfcTNHVFdld0lCd0syY2VZeDJBRktfZmRSc0RFUl9tellCTm5Kdl9OajAwanJpam9GQXlaRzYxbC1LTWctdWJIbl9CVS1zbXRUb19maVh4MkxFbHJTQkdDRklyeWotalVjc3lr?oc=5",
+   "termino": "comunidad mexicana",
+   "geo": "MX",
+   "titulo": "Comunidad mexicana rinde homenaje a Lorenzo Salgado",
+   "importancia": 4,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 57.7,
+   "base": 10.0,
+   "ratio": 5.78
   }
  },
  "audiencia": {
@@ -88,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1020050",
+     "valor": "994850",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
     },
     {
-     "consulta": "marruecos",
-     "valor": "695500",
+     "consulta": "marruecos migrantes",
+     "valor": "714600",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "los migrantes",
+     "consulta": "migrantes españa",
      "valor": "100",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-08T12:49:19+00:00"
+   "medido": "2026-08-08T21:32:23+00:00"
   },
   "VE": {
    "consultas": [
@@ -244,24 +231,41 @@
     }
    ],
    "medido": "2026-08-08T01:40:05+00:00"
+  },
+  "UY": {
+   "consultas": [
+    {
+     "consulta": "ceuta",
+     "valor": "536550",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "españa migrantes",
+     "valor": "699900",
+     "tipo": "rising",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-08-08T21:32:32+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.5,
-   "ratio": 3.69
+   "reciente": 19.9,
+   "base": 5.0,
+   "ratio": 4.01
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 17.0,
-   "base": 5.2,
-   "ratio": 3.27
+   "reciente": 19.7,
+   "base": 6.6,
+   "ratio": 2.97
   }
  },
  "alertas": []
