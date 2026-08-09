@@ -1,20 +1,20 @@
 {
- "generado": "2026-08-08T21:32:40+00:00",
+ "generado": "2026-08-09T06:58:32+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "5649fa572be3": {
-   "id_hecho": "5649fa572be3",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRjh5aGE3b09lMUJVREs3WHpBby1mOEtMY1puZndHWTdnVkY4cjBlWG5ZTkI1N016ZWhuTkdrNkpkdl9wMmxGYmYzQmx1U195YnBBem9DdjQ5RGVyTHdfaWVDUGFHS2VPbm1aWGoyU1NacFU0YUZ1OTlwYjBQVmVzYVVyR004NVFCZzVaLVlLMVRmMjJpcFBSaTJIX0lPamVrUUY0bEdlMVFfSXFwWm9Vbklma3ZtMFU?oc=5",
+  "20fffe33ea42": {
+   "id_hecho": "20fffe33ea42",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUVdzaG1pYkJsZWcwQXcwcm9HMmk1dldpY3A5alZ3Smd3MjdwZUVtTXc3dHkwZVBiQk5oYUNVeUoxTEdFRmF6RklLNDg5dktYZW5YeFB4SWZQT3pJZlh2cDFPYnl6djJJX2IyaC1Cb0JoaTk1RVFXeGt2WklYZEY4QlRRVkl1YW1qTEt2bE9wbkxWZUZMM180TEN2c1FjREFhUWdmRGZNLVBRUWdoNW1rV2JHSHo5dTJ3UGxCeTR1eFVpcXpnamfSAcYBQVVfeXFMT1FXc2htaWJCbGVnMEF3MHJvRzJpNXZXaWNwOWpWd0pndzI3cGVFbU13N3R5MGVQYkJOaGFDVXlKMUxHRUZhekZJSzQ4OXZLWGVuWHhQeElmUE96SWZYdnAxT2J5enYySV9iMmgtQm9CaGk5NUVRV3hrdlpJWGRGOEJUUVZJdWFtakxLdmxPcG5MVmVGTDNfNExDdnNRY0RBYVFnZkRmTS1QUVFnaDVta1diR0h6OXUyd1BsQnk0dXhVaXF6Z2pn?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Detención de migrantes alcanza pico con Trump",
+   "titulo": "ICE arrestó a más de mil 200 migrantes en Georgia",
    "importancia": 8,
-   "velocidad": 3,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 5.6,
-   "base": 2.0,
+   "reciente": 13.1,
+   "base": 6.9,
    "ratio": null
   },
   "0c944a9c3e94": {
@@ -22,77 +22,77 @@
    "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOdzA5N1llOGdtSmNWdFljeDI0akFSakozcjlLZGo0c0I5c3g1NUpKSG5laEVNZEpKOGVYUi1VNG1FMFNnblhUZ1FhMGFZMlN5R1RBeFVLYWR6eVE3TkMyS0U1ajJPenFMT3pidmpUMDYxVEJzajlRa1FBdFJXUlFqREQ3WkZUSUtYTElscmRfdW9udlpvZ3ZxdWNyUVVocWo5R3pDR2xiaFJwaExfTW5xNE5NYUlzMEtFaHFqaWZQTjNuUTI2MmoxcElVX3pENXl1WW9rV2c1cjRWUEIweXNPdGNtYWN2WWViamhBN0xjbFpUZ2NYXy12bGJTUllpV1pjeU16Q2NxaE5rQ1lrOHFJejdjTUhtRk4wZ182QUh2T3FGeWhYUDJWUklDcHpLSVN5UEHSAbcCQVVfeXFMT01zNjIyWVJieWV3OUVBU3NTWHBIMzNNR2pYcTMtbGN2NTVmTVI1NjdvS0lralZ5S3ZTN2E5djlqRTJFRkVUS2R1Y3FSOHJmNWh5Ti1ISnlEZXhHazFvY0ZHY3JhRVFpSGJmRXAyalNWaDRkUk5teGJURzlxTFFuVTJxdVlhaTdaUnEtbU12Z3ZueFhFUFlSQjdFaUFUZzA2d2JMejBRVFdQU0hXOS1aOXVWOEkwcFNuRzNnT0djaG5NSXppdms0YlJadEZyWFR5bmhlNFEtTkRORVlrdTExTE00dXg5cEtxc0x6eHE1Q3RQSlhXQTl3RFUtR3ozeTBDSXEyMV9PMnJYeHlzQW5jdDVvNkVVU0Z6djUwOEVjdl96NVVPbldsWllzTFhEaDVBWnUzd2VHV2c?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Un futbolista argentino fue detenido por el ICE en el aeropuerto de Miami",
+   "titulo": "ALERTA MÁXIMA INMIGRANTES LEGALES E INDOCUMENTADOS | EE.UU. ordena DESPIDOS MASIVOS y DEPORTACIONES a estos extranjeros",
    "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 5.6,
-   "base": 2.0,
-   "ratio": null
-  },
-  "f8da5b4a26a5": {
-   "id_hecho": "f8da5b4a26a5",
-   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQY0N2WEdrRFRZOWZXNDVoSDN5bWRiYlFCdnBTTlo3NDJMOXYxNE1jVy1BdU42Q1R3SC1IMVhRSVFLTk02M3piZmFQNlFiZEdEZUxhZFhFN1p2VXUxZkJUbFR4MEtjTzRLWk9GX0ptNHlBbTFrUzRfZWQzUE9EZHc1bWFtbHJZMF9CUGZtdUpGZWhsaEZFRlIwdHJZZDQ1Y242cmIyWEFBaWRhT2lCTk92SmxySU8wS0RTNWJIU0duLXdXUVhwNjZ5ZDJwNmVBZDZ5V0UtZDFwMDhWaEc5VHVsa3Y4dGRyX0FNZDMwWE5aMEtoYTkxMjluMjBHR1oyTGJlUU5yQzdDcjBjalZaUzJvZGRpUS0xRVgyMElCYngtdTFDQdIBpwJBVV95cUxQYy1tMzhuN3NBTm5zX2tkM3JiMVhNYWpCNDRrdEVXVnNudlZMMzU5d1MtcElkX3pJOFBFUHdSNTExc1NtbU5hZ2Z3bldscndKZUdJcUp1c09EQjZ4aVpGNlBlUTFteWYyU1ZRN1YyRmVNOF9zQnhxUEdSQVNEVUtLLVI0Z1pPQzJ4dTVMOXlWOXpnUzJGWm5hei1pNGtLcFhEWmVkcUo1V0k3dUdsSmpEd0ZNOFFzdzZmd1ZqZ05xbXhabTRmb2hlQ3JXajFTVkNqbmpsZjZVaHl2VUNFdFZHTHBCX205azg0OEZaODVWTTljcDFScjdjMzk4Uy1sWW1GVHhaZ21sOTVSX2g0X3pnaVo3RE92SkJLcVVLcTdQZVNWbFRHWEhr?oc=5",
-   "termino": "migraciones",
-   "geo": "US",
-   "titulo": "Con referencia a Spider-Man, La Casa Blanca lanza mensaje contra migrantes",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 7.4,
-   "base": 21.4,
-   "ratio": null
-  },
-  "6cc68412e575": {
-   "id_hecho": "6cc68412e575",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZ1VuU21KS1FIeHZRd0pvUnRKangzdUJSUVdRNk1JRTRBOWpQTDZlVDJqQlhFbEhHRTY1ZGJnQnYwS0p0U25XSWxjcjVGZlQtN1REdHRNUi1ZZFlwSXVDQnIzTExLZm54SWczSXhkQzMxaEVENFJkNmM4T3U3SjBpTy1lYUZTNmtIdG5VVm9OcWhsUndHdnB4bXZhQTZNRkN6V3R1VjhQdmd6dURwaXZNdVNjaFJhZERoX1pOMUw3aEJLOGItdFE1NTM1VURrQUFiWnBSVU5mdHB2X2czdTFPd0R0V2dwbmJLT3hSc1RCRV9zbEwxcGVkSTBGYkY4MjVFTFRCc9IBhAJBVV95cUxQZ1VuU21KS1FIeHZRd0pvUnRKangzdUJSUVdRNk1JRTRBOWpQTDZlVDJqQlhFbEhHRTY1ZGJnQnYwS0p0U25XSWxjcjVGZlQtN1REdHRNUi1ZZFlwSXVDQnIzTExLZm54SWczSXhkQzMxaEVENFJkNmM4T3U3SjBpTy1lYUZTNmtIdG5VVm9OcWhsUndHdnB4bXZhQTZNRkN6V3R1VjhQdmd6dURwaXZNdVNjaFJhZERoX1pOMUw3aEJLOGItdFE1NTM1VURrQUFiWnBSVU5mdHB2X2czdTFPd0R0V2dwbmJLT3hSc1RCRV9zbEwxcGVkSTBGYkY4MjVFTFRCcw?oc=5",
-   "termino": "migrantes",
-   "geo": "US",
-   "titulo": "Le conceden la libertad bajo fianza a la niñera argentina",
-   "importancia": 5,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 26.3,
-   "base": 29.0,
-   "ratio": 0.91
+   "reciente": 13.1,
+   "base": 6.9,
+   "ratio": null
   },
-  "a2c86ebdf2a8": {
-   "id_hecho": "a2c86ebdf2a8",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBkUC1JQUs2ZjlfcTNHVFdld0lCd0syY2VZeDJBRktfZmRSc0RFUl9tellCTm5Kdl9OajAwanJpam9GQXlaRzYxbC1LTWctdWJIbl9CVS1zbXRUb19maVh4MkxFbHJTQkdDRklyeWotalVjc3lr?oc=5",
-   "termino": "comunidad mexicana",
-   "geo": "MX",
-   "titulo": "Comunidad mexicana rinde homenaje a Lorenzo Salgado",
+  "1e9e4893f430": {
+   "id_hecho": "1e9e4893f430",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOd18xVWxMcjJ4d01wNllHMFN2RFhXVnNUN2RoY2tVYzJlQ1JaZkdpa1V5UG1rcDlsUDliWEtESVB4ellTcmd4dURRVGYzbU9hSnlHU3ZORlVXcmZiVVg1RWZMSldnbGFMTDRUWVN2QWd6M3prTWptVlpQRzMwZkJLNDNZM0Iwc3pWbEZiellmLTdKQjdCZGZtSHBLclg1QXNrOWh4ZWUycFkzWUNHMzRqMVBTV3hoZzV2OWF6ZnBsd1R6cFZqcWctV2tLZ2ZiaDVqcHZuNlNzQk5ia2Fkd19tNmlaVHJhNjctUWVsSEdWOG00WjNVRkE?oc=5",
+   "termino": "tramites migratorios",
+   "geo": "US",
+   "titulo": "Operativos del ICE en aeropuertos: qué documentos debe tener un inmigrante a mano y cuáles puede pedir un agente",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.1,
+   "ratio": null
+  },
+  "d59facd5992e": {
+   "id_hecho": "d59facd5992e",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONTAtbzZVTUJxNXc2Nm4xM19yQ0pIT3dhVzRLVEh4eFE4eXBxY3NoYjlFMTdiN1hZaktucU5sN25Wc0FPeEJGbGlRbWhuNEpsWnY0TWFKMFB6WEVFUFpXWlEyOU9JZ2QzWnpTbFVVVWpnZlN5MWFfMW1BaDVXUktObTdhX0g1UlB6LW1ybmRpeVl3U0VpWklFWENyMTlqZG1VcnlfS3lSbzE5WHRqc0hnR21aQ0M4SWt5ZGJzd2w3d3E5bVJwVjh0RVpvZnd5cjB6Y0pqam1MS0lOdw?oc=5",
+   "termino": "migrantes",
+   "geo": "CL",
+   "titulo": "Chillán: fiscalización detectó migrantes irregulares y deficiencias sanitarias.",
+   "importancia": 6,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 27.6,
+   "base": 24.1,
+   "ratio": 1.15
+  },
+  "4d3159104c55": {
+   "id_hecho": "4d3159104c55",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPamozZU9TVHljeFoweGtlR2pZTG56WVVTVWJmLUFFSjFhM0twYUJwZkZ0Uk9HY1d0eFZEaTQzMGgwWXZVSmE1azJwSDFhczJWZ1I0MFdtUUN1ai1tb0FNZWlnUENCdFVXT1k3ejhESUlpaHBwMUd5V1R0M2UzVFFHamlyNjVRaEVuYkc5SkYwRWh2SXlEcGwwRmZyakpiLXZNZ2dVM19hbDVQQ01GVDQwdnN5TkdLSmtIQkNxR1RtdGtIS2tCV3Zz0gHHAUFVX3lxTE9qajNlT1NUeWN4WjB4a2VHallMbnpZVVNVYmYtQUVKMWEzS3BhQnBmRnRST0djV3R4VkRpNDMwaDBZdlVKYTVrMnBIMWFzMlZnUjQwV21RQ3VqLW1vQU1laWdQQ0J0VVdPWTd6OERJSWlocHAxR3lXVHQzZTNUUUdqaXI2NVFoRW5iRzlKRjBFaHZJeURwbDBGZnJqSmItdk1nZ1UzX2FsNVBDTUZUNDB2c3lOR0tKa0hCQ3FHVG10a0hLa0JXdnM?oc=5",
+   "termino": "migrantes",
+   "geo": "AR",
+   "titulo": "Le conceden la libertad bajo fianza a la niñera argentina",
    "importancia": 4,
    "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 57.7,
-   "base": 10.0,
-   "ratio": 5.78
+   "puntaje": 0,
+   "reciente": 9.3,
+   "base": 4.6,
+   "ratio": null
   }
  },
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "994850",
+     "consulta": "marruecos",
+     "valor": "753650",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos migrantes",
-     "valor": "714600",
+     "consulta": "ceuta",
+     "valor": "1061900",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes españa",
+     "consulta": "los migrantes",
      "valor": "100",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-08T21:32:23+00:00"
+   "medido": "2026-08-09T06:58:14+00:00"
   },
   "VE": {
    "consultas": [
@@ -166,25 +166,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "marruecos",
-     "valor": "205850",
-     "tipo": "rising",
-     "variantes": 1
-    },
-    {
      "consulta": "ceuta",
-     "valor": "57",
-     "tipo": "top",
+     "valor": "475850",
+     "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
-     "valor": "43050",
+     "valor": "58450",
      "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "españa migrantes",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-06T14:10:53+00:00"
+   "medido": "2026-08-09T06:58:24+00:00"
   },
   "ES": {
    "consultas": [
@@ -250,22 +250,22 @@
    "medido": "2026-08-08T21:32:32+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 19.9,
-   "base": 5.0,
-   "ratio": 4.01
+   "reciente": 24.6,
+   "base": 7.8,
+   "ratio": 3.17
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 19.7,
-   "base": 6.6,
-   "ratio": 2.97
+   "reciente": 24.7,
+   "base": 7.4,
+   "ratio": 3.33
   }
  },
  "alertas": []
