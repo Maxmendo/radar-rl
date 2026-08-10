@@ -1,33 +1,46 @@
 {
- "generado": "2026-08-10T01:48:16+00:00",
+ "generado": "2026-08-10T10:18:33+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "9171109c44ca": {
-   "id_hecho": "9171109c44ca",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOUklYaE5HTHJUeEMyaHlNVWJTb3VQcjBNWkVVM3JKdVlvVXhoRktVZm9USGVPZUxPcFJvLTI2Z1FxY2MyZW1TcVBwSkFTMHFoZU5NSU5YcFBMYXlFdno2OHYzQmk2N3lYMHd5akZFTnc3Y1RGaVJRRUNlc05sbkliWG5uSEFjRFB2bkY0R2RhTkdaaVBZajlNdF9HeGZYcDQtUUZZTjBMcXlfRkxPMHBOUnlJczhrUG9Pd2NFWmRRVDRkdnVYTnJMUkEwd3FLa3I1YkNNUlRLX0tNd1FCSmRfdi1FajA0dDNfZldhWDV3ODhNX1BaaVByTE40NXZnZHV3X1YxUmZB?oc=5",
+  "b2cdfab246aa": {
+   "id_hecho": "b2cdfab246aa",
+   "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxObDlRT0kzc3Y4S3g4TWVsQkplWk5KQXlYOWVwUTBXeXJNazh1WTdZd2NVbElxN2hDX0VFWWthaWkwelVZd0J1MVZpcjJSVGNpaHZwZlF6TGIwdEk1a0NWNXUzSmoxaEl4QmZQUHBQaW1rcVVQMFpkczBjci1BaHEwbmpLbXpucUk1aDNDb0plQl9Ca0FhTWI0cGZXSXExUzVMN3JHVko2TXFBNFFwZFZDckVHeWVEWjRJYjhMZWlybUg3M1k5X0VlM1lxckFyc2IyWkVVc18xc0w2UmI0aGNSNDduVUpmdjdGMkl6OFFMR2VxY0QxVDVkLXA3TXZPc29GcWZZT0s2Q3BwcEQ2UUxHZFRXcG4ydVhRZ2ROUXcwWTBWZWRB0gGkAkFVX3lxTE5sOVFPSTNzdjhLeDhNZWxCSmVaTkpBeVg5ZXBRMFd5ck1rOHVZN1l3Y1VsSXE3aENfRUVZa2FpaTB6VVl3QnUxVmlyMlJUY2lodnBmUXpMYjB0STVrQ1Y1dTNKajFoSXhCZlBQcFBpbWtxVVAwWmRzMGNyLUFocTBuakttem5xSTVoM0NvSmVCX0JrQWFNYjRwZldJcTFTNUw3ckdWSjZNcUE0UXBkVkNyRUd5ZURaNEliOExlaXJtSDczWTlfRWUzWXFyQXJzYjJaRVVzXzFzTDZSYjRoY1I0N25VSmZ2N0YySXo4UUxHZXFjRDFUNWQtcDdNdk9zb0ZxZllPSzZDcHBwRDZRTEdkVFdwbjJ1WFFnZE5RdzBZMFZlZEE?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "La ofensiva del ICE se intensifica: récord de arrestos y una nueva estrategia para detener migrantes en EUA",
+   "titulo": "Así cambió ICE su estrategia para detener migrantes en Estados Unidos tras aumento de operativos en aeropuertos: estas son sus nuevas tácticas",
    "importancia": 8,
-   "velocidad": 3,
+   "velocidad": 6,
    "puntaje": 0,
-   "reciente": 13.4,
-   "base": 5.3,
+   "reciente": 4.9,
+   "base": 2.0,
    "ratio": null
   },
-  "bfc8d392837a": {
-   "id_hecho": "bfc8d392837a",
-   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNNkVWd3VtVEY5TWF1Xy1xMTRRV0g0aEcxOHZWNnh4Vk9DNTNPTWkwb2dGcjZBZ1NNZHQ2U2tTdld6dVFmY1RnYTc2R2JTNGNHaEkzcFJJdWo4WnF0MjNMZ1hYc0NXWWxvQ1FudWZKdjR1LW83OFBHanNCS0NiR0F1Qy02MVZ3bk9IbFo3MVJzNE9nUmdPTWtndURoSXhLYW1GNnlVNDNGOUxfYnc4LXVwd3RiVm5WQTZsaXpNcnkwb3dRT1B4Q3pabVhrWnBVYXRyVmFyTVB5TG1xa0o0SGpmR18yYkFRaFRpWW50My1aUS1xZzB6TFBudkxXUG80MV9ub0YyZkhjb0Y2QXBqSW9zdWZPdUFmaWxiN01Td2p5cmM3Z9IBogJBVV95cUxNNkVWd3VtVEY5TWF1Xy1xMTRRV0g0aEcxOHZWNnh4Vk9DNTNPTWkwb2dGcjZBZ1NNZHQ2U2tTdld6dVFmY1RnYTc2R2JTNGNHaEkzcFJJdWo4WnF0MjNMZ1hYc0NXWWxvQ1FudWZKdjR1LW83OFBHanNCS0NiR0F1Qy02MVZ3bk9IbFo3MVJzNE9nUmdPTWtndURoSXhLYW1GNnlVNDNGOUxfYnc4LXVwd3RiVm5WQTZsaXpNcnkwb3dRT1B4Q3pabVhrWnBVYXRyVmFyTVB5TG1xa0o0SGpmR18yYkFRaFRpWW50My1aUS1xZzB6TFBudkxXUG80MV9ub0YyZkhjb0Y2QXBqSW9zdWZPdUFmaWxiN01Td2p5cmM3Zw?oc=5",
+  "1f18c555f353": {
+   "id_hecho": "1f18c555f353",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQX3E2X2V1SGNzeWRMb3U5ZVNHWjhrb1Q3NGFaNFlmckhqNVlJV3FuWkVvYnlFYk1NRDZ1ZW0zczczT0k5NDVUNjY3VkJsdXBMSmFsNXFKUjh4VTJ4M1dodG1oa2taZ2xzN0lZdzY1VEkxbGdQbEFBLTYySnQwcVBqM3pJcEpubnNhWnZQMll4NFZ6c3g1cnp6Zm1FaTNHaElzRHd6TDdBQkJKd2hHdWxmc1NtdjdZRW5YTGJLWGtIeDhVUEt2SjZHQUUyWkl4RThxVk10QjFId1dQYlpGVHprZVh5ZTVUTUpaczlNaDBnYw?oc=5",
+   "termino": "inmigrantes",
+   "geo": "US",
+   "titulo": "Abogados voluntarios asisten a inmigrantes en tribunales de EEUU para garantizar sus derechos",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 41.0,
+   "base": 42.6,
+   "ratio": 0.96
+  },
+  "521369e55584": {
+   "id_hecho": "521369e55584",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPX0dIQ201djFKcThpM0JqUmpvMzEzVXJwNm56ZTExNWE2WUs4R1BUUkQ1S19NZ3BnbWhCSUoxV1JKdkR3SWFsYUhyUDF2OGtyYXFQcjVKZkpDelozMVE3WC1nV0xmSWZvRk5qdXZycnZSdW5rTENhR0x3MUhseXcwVU01dXNCYlFzeGpsV1FZTE50QjlkMmlsUXVXNjE1cU9Od25BMGNmMHFXWlBsWDRwWkZyYVBmN1Y0YW5ub1NCWTlzVHg1dWpoVUloMENoMUVadzlFMy1QbjdHVWZkdWlJUTV1YVJfUFBhZV8zSTBSdHhLRTJSbnRjWGlmNE90UnJOZG5URE9PZ9IBogJBVV95cUxNNkVWd3VtVEY5TWF1Xy1xMTRRV0g0aEcxOHZWNnh4Vk9DNTNPTWkwb2dGcjZBZ1NNZHQ2U2tTdld6dVFmY1RnYTc2R2JTNGNHaEkzcFJJdWo4WnF0MjNMZ1hYc0NXWWxvQ1FudWZKdjR1LW83OFBHanNCS0NiR0F1Qy02MVZ3bk9IbFo3MVJzNE9nUmdPTWtndURoSXhLYW1GNnlVNDNGOUxfYnc4LXVwd3RiVm5WQTZsaXpNcnkwb3dRT1B4Q3pabVhrWnBVYXRyVmFyTVB5TG1xa0o0SGpmR18yYkFRaFRpWW50My1aUS1xZzB6TFBudkxXUG80MV9ub0YyZkhjb0Y2QXBqSW9zdWZPdUFmaWxiN01Td2p5cmM3Zw?oc=5",
    "termino": "deportaciones",
    "geo": "US",
    "titulo": "El futbolista argentino detenido por el ICE de EEUU será trasladado a un centro de seguridad para migrantes: el pedido de la familia",
    "importancia": 7,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 13.4,
-   "base": 5.3,
+   "reciente": 4.9,
+   "base": 2.0,
    "ratio": null
   }
  },
@@ -36,13 +49,13 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1022950",
+     "valor": "1086950",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos migrantes",
-     "valor": "724000",
+     "consulta": "marruecos españa",
+     "valor": "449600",
      "tipo": "rising",
      "variantes": 0
     },
@@ -53,7 +66,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-10T01:47:59+00:00"
+   "medido": "2026-08-10T10:18:16+00:00"
   },
   "VE": {
    "consultas": [
@@ -82,24 +95,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "229850",
+     "valor": "246750",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
     },
     {
-     "consulta": "migrantes en chile",
+     "consulta": "migrantes chile",
      "valor": "100",
      "tipo": "top",
-     "variantes": 0
+     "variantes": 1
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "25",
-     "tipo": "top",
+     "consulta": "marruecos",
+     "valor": "147450",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-07T15:58:10+00:00"
+   "medido": "2026-08-10T10:18:25+00:00"
   },
   "CO": {
    "consultas": [
@@ -205,22 +218,22 @@
    "medido": "2026-08-08T21:32:32+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 21.3,
-   "base": 6.7,
-   "ratio": 3.18
+   "reciente": 28.6,
+   "base": 8.7,
+   "ratio": 3.28
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 19.9,
-   "base": 7.0,
-   "ratio": 2.83
+   "puntaje": 10,
+   "reciente": 28.0,
+   "base": 6.2,
+   "ratio": 4.55
   }
  },
  "alertas": []
