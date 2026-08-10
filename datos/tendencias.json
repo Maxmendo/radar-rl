@@ -1,46 +1,33 @@
 {
- "generado": "2026-08-09T15:33:19+00:00",
+ "generado": "2026-08-10T01:48:16+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "222ff6149c02": {
-   "id_hecho": "222ff6149c02",
-   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNcXNZYm1KbEJDajBubTdyQkxnLWlUM3NQMEN1RE1pX2xfTmNCZ3JLQ09MSk9tOE43WDIxZF9PZ1VYT0NDcHA3ek0zM2VXeU9xSkFkblprQW45a3A4LVl5QXZCWGNwTDBmeXptTThaQ0t4MUVYY2lLR0tlQ3pxbWxfR3FLdm9YNzJQdi03elhRUlRiSXZxelAwSmlUNm1acElsZWZnYWdZYUl3MmY1cFNrQzNxeUpvQmZTajBsbEg0enotaXZuUzlEdGpyWENyeXc2b0pubU1DMTZQbnlQeFJmRjV6WUVqS3UxMXg2VElTVVpyYVZfVUM4cjVYV3VzRjMzMWZfRmNFT0xXZXBCZmF5YnAtZXQ3SW52NlVRVmRyQUl3WVNRVFJkemJnQk1mZkFKWXfSAbcCQVVfeXFMT0FpVkNnZHdBYzhhM0xPbFpjX2s4QzlkaTNpbzdjTXRJTHhKaXphMWs1cnMwbUJISkxCNlJfbG1LR25KNk9UdEVXeEZoUllhQVhWSm53WU1INU10emdVei1jakNaM2t2UVplZkRZd3lmNzJzN1IwcnYtRXo0MGFKZHBQbWlZY0ZXb2NWdTJINmpPMnU3eUFPT2tjZkhVWl9ZVHQydEREMnJZMHBpcmktVVVhQnVzMGdqV044d05VakR6bV9wVlNCYVVXbi1tUjNMVmhZbnozWFBKZ3JrWlFFc3FuZ01jVWFGS0p4TmV2ZGp6cW11c21pZnZIQVNxakhTekRMNzBVNEZWOWl5bXp1UEVONmdkbmVteWVUTzNWNmJkaTNyTmhMMDNydWVHblY0d0w3cUFBeUk?oc=5",
+  "9171109c44ca": {
+   "id_hecho": "9171109c44ca",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOUklYaE5HTHJUeEMyaHlNVWJTb3VQcjBNWkVVM3JKdVlvVXhoRktVZm9USGVPZUxPcFJvLTI2Z1FxY2MyZW1TcVBwSkFTMHFoZU5NSU5YcFBMYXlFdno2OHYzQmk2N3lYMHd5akZFTnc3Y1RGaVJRRUNlc05sbkliWG5uSEFjRFB2bkY0R2RhTkdaaVBZajlNdF9HeGZYcDQtUUZZTjBMcXlfRkxPMHBOUnlJczhrUG9Pd2NFWmRRVDRkdnVYTnJMUkEwd3FLa3I1YkNNUlRLX0tNd1FCSmRfdi1FajA0dDNfZldhWDV3ODhNX1BaaVByTE40NXZnZHV3X1YxUmZB?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "ALERTA MÁXIMA INMIGRANTES LEGALES E INDOCUMENTADOS | EE.UU. ordena DESPIDOS MASIVOS y DEPORTACIONES a estos extranjeros",
-   "importancia": 9,
+   "titulo": "La ofensiva del ICE se intensifica: récord de arrestos y una nueva estrategia para detener migrantes en EUA",
+   "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 14.7,
-   "base": 7.2,
+   "reciente": 13.4,
+   "base": 5.3,
    "ratio": null
   },
-  "6d132f397bf9": {
-   "id_hecho": "6d132f397bf9",
-   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPVUpxSDdxMjZ3aEJYVi0tOUxEck1VcjVxRVhxNk1ZVkNzRXBPS1NzanFPajd3a2VEZWlfN3hEcnFpTktKMUQ4ZVFTc2xMcC1QLWR2WGI0M2hQVXM5dnd2RS00U3ZoeENSTTVvOXlxX0VwRzd1ZUp0enYwbXJzRk5fakl2bDlWSXR6RmtuUHZncGZETXdKdG9JRldCRWJXVjlaNFk4NTVpUlNTclpKYXQ1NXZsNGZNXzRoX1ktZjRLUFQ1OW9ESDBNR0VFUDMzQ2xkbGFnNElKbjJiY1VVQWFOTkRsaklKS3FTeEgxYW83RHdfYUJLUFNFdUZnUTg4eWFFQmlUNy1qbkM5LVBlRzIyLUtkbVZTRF9CWDRB0gGgAkFVX3lxTE5rQnFKYV9KS2xoYkxrZmdYS1ZJaEU1ZlNCX0NVc0JjcUhUM0NzclMzT0cydVM0SHR5X2piZVdMNThnTEUtZ0dDZTZ5YUhWQjYyRkctNDdDQ0FCbnJQeDhLdmg4ZURSdUswYm9YYWo2T09LS3Qya0VyMDRKNlhqc2pmMWt5aHZPRUFldTBNbFNlaXhHcWRId1VmYWxMU0JyOEtqbUxmd0JLOGlzeHpqTnJZNEpJTTl0czYzeU83UVF3SFY1V0dKZTZvaDNRMTZFMDRaMVVMX1E5SjhVWlV0dHBzVDRtTjRiUHRFeGc2dFpLNlhzQjBoc1RCVU9zVWZrUGdBRVVVbHlxWFVIUTRNY1REQjktbVlmTVd2djdBYzZyNw?oc=5",
+  "bfc8d392837a": {
+   "id_hecho": "bfc8d392837a",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNNkVWd3VtVEY5TWF1Xy1xMTRRV0g0aEcxOHZWNnh4Vk9DNTNPTWkwb2dGcjZBZ1NNZHQ2U2tTdld6dVFmY1RnYTc2R2JTNGNHaEkzcFJJdWo4WnF0MjNMZ1hYc0NXWWxvQ1FudWZKdjR1LW83OFBHanNCS0NiR0F1Qy02MVZ3bk9IbFo3MVJzNE9nUmdPTWtndURoSXhLYW1GNnlVNDNGOUxfYnc4LXVwd3RiVm5WQTZsaXpNcnkwb3dRT1B4Q3pabVhrWnBVYXRyVmFyTVB5TG1xa0o0SGpmR18yYkFRaFRpWW50My1aUS1xZzB6TFBudkxXUG80MV9ub0YyZkhjb0Y2QXBqSW9zdWZPdUFmaWxiN01Td2p5cmM3Z9IBogJBVV95cUxNNkVWd3VtVEY5TWF1Xy1xMTRRV0g0aEcxOHZWNnh4Vk9DNTNPTWkwb2dGcjZBZ1NNZHQ2U2tTdld6dVFmY1RnYTc2R2JTNGNHaEkzcFJJdWo4WnF0MjNMZ1hYc0NXWWxvQ1FudWZKdjR1LW83OFBHanNCS0NiR0F1Qy02MVZ3bk9IbFo3MVJzNE9nUmdPTWtndURoSXhLYW1GNnlVNDNGOUxfYnc4LXVwd3RiVm5WQTZsaXpNcnkwb3dRT1B4Q3pabVhrWnBVYXRyVmFyTVB5TG1xa0o0SGpmR18yYkFRaFRpWW50My1aUS1xZzB6TFBudkxXUG80MV9ub0YyZkhjb0Y2QXBqSW9zdWZPdUFmaWxiN01Td2p5cmM3Zw?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "ICE arrestó a más de mil 200 migrantes en Georgia",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 14.7,
-   "base": 7.2,
-   "ratio": null
-  },
-  "ebecd2883bf8": {
-   "id_hecho": "ebecd2883bf8",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPdWxuVnZldWNKQWplM0tVZTFnT3E2VjlRbDZDSzZ6Y29oTWNvOGtiNjJtdFE5bmdoR2lOYVpuMFpOMm41cEpIcEwzNHlGanRtbWJUQzcyUEZLY3o0ZW5ZV0FqUVVENHd0MGFfUTREZDFma3hxMUZVTzFTZDVjTFJNMG5oN251cDJRUTJxQzlrcVpvUUptUmZUVHBBcm9lVE45MG52VTVmTHJkRkFvd21nbm5UM0szc0EtSG5la09wRWE5V3lxNmlkak1hOFljUWpCOU11ODg2SHNkTEYxR2N0RHNMcXc1RzMxU3BGcnFtWkprSHZiTWdBTEgxdGJObDFyNENXaGRaclVqMEk?oc=5",
-   "termino": "detencion migratoria",
-   "geo": "US",
-   "titulo": "Liberan bajo fianza a latina que trabajaba como niñera en EUA y que había sido detenida por ICE durante el Mundial",
+   "titulo": "El futbolista argentino detenido por el ICE de EEUU será trasladado a un centro de seguridad para migrantes: el pedido de la familia",
    "importancia": 7,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.5,
+   "reciente": 13.4,
+   "base": 5.3,
    "ratio": null
   }
  },
@@ -48,14 +35,14 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "marruecos",
-     "valor": "701600",
+     "consulta": "ceuta",
+     "valor": "1022950",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes ceuta",
-     "valor": "1034950",
+     "consulta": "marruecos migrantes",
+     "valor": "724000",
      "tipo": "rising",
      "variantes": 0
     },
@@ -66,30 +53,30 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-09T15:33:01+00:00"
+   "medido": "2026-08-10T01:47:59+00:00"
   },
   "VE": {
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "436150",
+     "valor": "474750",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "españa migrantes",
-     "valor": "74",
+     "valor": "89",
      "tipo": "top",
      "variantes": 1
     },
     {
      "consulta": "marruecos",
-     "valor": "496800",
+     "valor": "497450",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-07T07:17:26+00:00"
+   "medido": "2026-08-10T01:48:08+00:00"
   },
   "CL": {
    "consultas": [
@@ -218,22 +205,22 @@
    "medido": "2026-08-08T21:32:32+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 24.6,
-   "base": 7.8,
-   "ratio": 3.17
+   "reciente": 21.3,
+   "base": 6.7,
+   "ratio": 3.18
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 24.7,
-   "base": 7.4,
-   "ratio": 3.33
+   "puntaje": 9,
+   "reciente": 19.9,
+   "base": 7.0,
+   "ratio": 2.83
   }
  },
  "alertas": []
