@@ -1,36 +1,9 @@
 {
- "generado": "2026-08-10T18:59:23+00:00",
+ "generado": "2026-08-11T04:22:29+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "b2cdfab246aa": {
-   "id_hecho": "b2cdfab246aa",
-   "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxObDlRT0kzc3Y4S3g4TWVsQkplWk5KQXlYOWVwUTBXeXJNazh1WTdZd2NVbElxN2hDX0VFWWthaWkwelVZd0J1MVZpcjJSVGNpaHZwZlF6TGIwdEk1a0NWNXUzSmoxaEl4QmZQUHBQaW1rcVVQMFpkczBjci1BaHEwbmpLbXpucUk1aDNDb0plQl9Ca0FhTWI0cGZXSXExUzVMN3JHVko2TXFBNFFwZFZDckVHeWVEWjRJYjhMZWlybUg3M1k5X0VlM1lxckFyc2IyWkVVc18xc0w2UmI0aGNSNDduVUpmdjdGMkl6OFFMR2VxY0QxVDVkLXA3TXZPc29GcWZZT0s2Q3BwcEQ2UUxHZFRXcG4ydVhRZ2ROUXcwWTBWZWRB0gGkAkFVX3lxTE5sOVFPSTNzdjhLeDhNZWxCSmVaTkpBeVg5ZXBRMFd5ck1rOHVZN1l3Y1VsSXE3aENfRUVZa2FpaTB6VVl3QnUxVmlyMlJUY2lodnBmUXpMYjB0STVrQ1Y1dTNKajFoSXhCZlBQcFBpbWtxVVAwWmRzMGNyLUFocTBuakttem5xSTVoM0NvSmVCX0JrQWFNYjRwZldJcTFTNUw3ckdWSjZNcUE0UXBkVkNyRUd5ZURaNEliOExlaXJtSDczWTlfRWUzWXFyQXJzYjJaRVVzXzFzTDZSYjRoY1I0N25VSmZ2N0YySXo4UUxHZXFjRDFUNWQtcDdNdk9zb0ZxZllPSzZDcHBwRDZRTEdkVFdwbjJ1WFFnZE5RdzBZMFZlZEE?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Así cambió ICE su estrategia para detener migrantes en Estados Unidos tras aumento de operativos en aeropuertos: estas son sus nuevas tácticas",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 13.3,
-   "base": 5.2,
-   "ratio": null
-  },
-  "b4fd198c2e02": {
-   "id_hecho": "b4fd198c2e02",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNLW5JYVlmeVNteDhxNFcwT0x1RlpMM2FlXzMxZGVHa2RMSW95bDRibnBCM1RRcThoWTdnTEdPWlA4RkJ5ZnA1YWxoV05ZSDQ4bm9UeW5rQXN2aWRtZndFUlhtWjk3cDNpeFpJMUg2TjVOVmNybjFmQksyb2pWNGpDczEwczhKcHd3akJkRUZpNEZWZ2tiSnVJajd3TjlZWW9ka3hiRGU2S2xRQVdmTFVuRDdSNHBZMjlzakxMWEdHVXoxVVgtd1RjdERRaWZKT2hZR05TdFcxRTh4QmRJOEprVk44dUs2dnYxeUZaRFlMQWdsb19XTDNlQ0F3ZnDSAfwBQVVfeXFMTS1uSWFZZnlTbXg4cTRXME9MdUZaTDNhZV8zMWRlR2tkTElveWw0Ym5wQjNUUXE4aFk3Z0xHT1pQOEZCeWZwNWFsaFdOWUg0OG5vVHlua0FzdmlkbWZ3RVJYbVo5N3AzaXhaSTFINk41TlZjcm4xZkJLMm9qVjRqQ3MxMHM4SnB3d2pCZEVGaTRGVmdrYkp1SWo3d045WVlvZGt4YkRlNktsUUFXZkxVbkQ3UjRwWTI5c2pMTFhHR1V6MVVYLXdUY3REUWlmSk9oWUdOU3RXMUU4eEJkSThKa1ZOOHVLNnZ2MXlGWkRZTEFnbG9fV0wzZUNBd2Zw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "El drama del futbolista argentino arrestado por el ICE en EE.UU.",
-   "importancia": 7,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 13.3,
-   "base": 5.2,
-   "ratio": null
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -205,7 +178,7 @@
    "medido": "2026-08-08T21:32:32+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
