@@ -1,21 +1,74 @@
 {
- "generado": "2026-08-11T04:22:29+00:00",
+ "generado": "2026-08-11T13:06:41+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "e28234173005": {
+   "id_hecho": "e28234173005",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUXAyTTVxRTMwNFNYS3BoRzZhN0hYOURBQXZ1OFBjdzBrT05yM2NTWFRWNnFVVXBvMFFqTUs2cV85d18wTEJsMEFIVVVIOWkwOUJHYW0ydWZTRTNuTVJLTGYwOE8tdG5ReUJzcnBKSFROS1luRjdxSmJaMWhBQVZRczZtMEpwazhsOVJqNjZucVJNNTlSNWFGeVNDY28tUQ?oc=5",
+   "termino": "migrantes indocumentados",
+   "geo": "US",
+   "titulo": "Estados Unidos demanda a Nueva York, Connecticut y Vermont por ayudas a migrantes indocumentados",
+   "importancia": 8,
+   "velocidad": 6,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "a027e32d9437": {
+   "id_hecho": "a027e32d9437",
+   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPNjJYbDJ3OXA1dU5vSC1MWTdFaVFQZW9vZnUwQ0pETGY5c0pWb2lFLXdiN01DSVJQYlZFdnQycFBZLWVPQTI1UnNBVGVyeEs1RjdyQmVEMUJUUEFyMlpvWmMyN21CMUJkTjlEQ3ZwNHRZeW5FbTFoRmRsS2p4VURNbDJHVXNUZmh1UlR0WF9oYmJyQk4tSm8tS0RZVG4tTHU1aFNvVHV6MGsxU2wxYU1rQkhTSHpObHEzVVZDdjhSOGtXLTlhT01YNWNBekl6UVZ3Ul9qR01mWVVHeWU0Zng4UExtUlFWLTlZTThpaTJRcktleXlYR3ZrYnVXSnIyak5OUmxHMm1uVlFxYW53N0NORjBRNWNSZktqU2ZGdVpxUmlCQU5vRkJlNkFneGRsenPSAa8CQVVfeXFMTzYyWGwydzlwNXVOb0gtTFk3RWlRUGVvb2Z1MENKRExmOXNKVm9pRS13YjdNQ0lSUGJWRXZ0MnBQWS1lT0EyNVJzQVRlcnhLNUY3ckJlRDFCVFBBcjJab1pjMjdtQjFCZE45REN2cDR0WXluRW0xaEZkbEtqeFVETWwyR1VzVGZodVJUdFhfaGJickJOLUpvLUtEWVRuLUx1NWhTb1R1ejBrMVNsMWFNa0JIU0h6TmxxM1VWQ3Y4UjhrVy05YU9NWDVjQXpJelFWd1JfakdNZllVR3llNGZ4OFBMbVJRVi05WU04aWkyUXJLZXl5WEd2a2J1V0pyMmpOTlJsRzJtblZRcWFudzdDTkYwUTVjUmZLalNmRnVacVJpQkFOb0ZCZTZBZ3hkbHpz?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "ICE arrestó a miles de inmigrantes con antecedentes penales en Atlanta",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 11.1,
+   "base": 5.8,
+   "ratio": null
+  },
+  "002ad2ad38fc": {
+   "id_hecho": "002ad2ad38fc",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOd2sxQVZoYXJ6NmdDS01uQ2pEN1hBVjNlOWxheDRvVzd3Z1lHdHhRZ0NOM1IzWDBOZE9Cel9OOG9jM0phOTZaRlg4ZjM2LVBTQUxHczctd0RWS0E2UXFoVnEtMUNpbnFzaUhDcnRMWnF4MXJ1UndxZkJVOUNKOVhqZ0NwZnprX1Fmdi1FNmhMOW1LT0ZyWnNrUjJlajM1VDU3UW96aFgzaVpIUnRnMkgxNE1mOS1mYXdGemN4elBZZ0ZrRUhNSTg1RXdUa1I5bW56a3A5cVFTc1VvYXFvSk1lR1I1ajB4LWFJV2lmWdIB7AFBVV95cUxOd2sxQVZoYXJ6NmdDS01uQ2pEN1hBVjNlOWxheDRvVzd3Z1lHdHhRZ0NOM1IzWDBOZE9Cel9OOG9jM0phOTZaRlg4ZjM2LVBTQUxHczctd0RWS0E2UXFoVnEtMUNpbnFzaUhDcnRMWnF4MXJ1UndxZkJVOUNKOVhqZ0NwZnprX1Fmdi1FNmhMOW1LT0ZyWnNrUjJlajM1VDU3UW96aFgzaVpIUnRnMkgxNE1mOS1mYXdGemN4elBZZ0ZrRUhNSTg1RXdUa1I5bW56a3A5cVFTc1VvYXFvSk1lR1I1ajB4LWFJV2lmWQ?oc=5",
+   "termino": "deportaciones",
+   "geo": "DO",
+   "titulo": "Ejército dominicano intercepta más de 334 mil migrantes indocumentados en la frontera",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
+  },
+  "1c5543864215": {
+   "id_hecho": "1c5543864215",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWURZR3ptZFJrUFJoU2FIWmZuTXFWR2kxQnVTWDlnRHpxdXljQnNrRmlsQkRkUVBwV24xNkpLM09TMzJCOG5Td2hCZVB3ckdqVkd2RUFCa1h0aDNHLUhsTUY1VDNlRTB1TVVEUjNmN0Q4UDV5NGRwT2xyRGR2RDRJdzdQeTIxR0lXbldnd1QxVzRmSXRsU0FZY1NBMFN5c2hGQmdkeGIyNHRXTWhVQUhtc1ZoRkxqMXdZT0dGeUlUd3VYeGZkemkyS25uQ051UdIB6AFBVV95cUxOekhQNFN0Vkx0Mkk0SDZvMGlOMlZ0X0lrQ09ISlZhZmxxUktaR0hhUkhEQUVXeDlFMjdPTTFKSmlBcXhGWHN4VDlMQ1RiWVB4cFZNd0dFaUFUVjVyS3lyX3JEd0txRlhURnJzYVZIUUFXSnlHd3dhZEh3eDEyWlA3eV9oc2RkNGo0ZEtGTFoydEh3YnZrLVl0QURVU0J1M041dHNnM2tJWHdTX2pxWFRlaEtRdUkxSjV6S2ZNd0VVWjFyVzh5dVNyYXRLblFpOXFQNkRlVDRMRG4zRHZObU5JOE5KQTdJOXRS?oc=5",
+   "termino": "deportaciones",
+   "geo": "MX",
+   "titulo": "Esposo de funcionaria propuesta como representante de la SSPC en Washington deporta migrantes",
+   "importancia": 6,
+   "velocidad": 6,
+   "puntaje": 10,
+   "reciente": 43.4,
+   "base": 9.0,
+   "ratio": 4.83
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1018950",
+     "valor": "1170300",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "1349550",
+     "consulta": "marruecos",
+     "valor": "796400",
      "tipo": "rising",
      "variantes": 0
     },
@@ -26,7 +79,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-10T18:59:05+00:00"
+   "medido": "2026-08-11T13:06:25+00:00"
   },
   "VE": {
    "consultas": [
@@ -164,36 +217,30 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "536550",
+     "valor": "776200",
      "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "españa migrantes",
-     "valor": "699900",
-     "tipo": "rising",
-     "variantes": 0
+     "variantes": 2
     }
    ],
-   "medido": "2026-08-08T21:32:32+00:00"
+   "medido": "2026-08-11T13:06:33+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 25.1,
-   "base": 6.4,
-   "ratio": 3.92
+   "puntaje": 9,
+   "reciente": 21.3,
+   "base": 7.3,
+   "ratio": 2.9
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 25.9,
-   "base": 8.3,
-   "ratio": 3.12
+   "reciente": 19.9,
+   "base": 4.5,
+   "ratio": 4.44
   }
  },
  "alertas": []
