@@ -1,36 +1,9 @@
 {
- "generado": "2026-08-11T21:49:32+00:00",
+ "generado": "2026-08-12T07:27:51+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "e28234173005": {
-   "id_hecho": "e28234173005",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUXAyTTVxRTMwNFNYS3BoRzZhN0hYOURBQXZ1OFBjdzBrT05yM2NTWFRWNnFVVXBvMFFqTUs2cV85d18wTEJsMEFIVVVIOWkwOUJHYW0ydWZTRTNuTVJLTGYwOE8tdG5ReUJzcnBKSFROS1luRjdxSmJaMWhBQVZRczZtMEpwazhsOVJqNjZucVJNNTlSNWFGeVNDY28tUQ?oc=5",
-   "termino": "migrantes indocumentados",
-   "geo": "US",
-   "titulo": "Estados Unidos demanda a Nueva York, Connecticut y Vermont por ayudas a migrantes indocumentados - EFE",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "c35927862ddd": {
-   "id_hecho": "c35927862ddd",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbTdXRE15QTk2SFNMUVM2MlB2OXNFc3hMdVdnSmZpcnNTLUEwVXg0NF9sT3FmRDBSNDNIcnE3eTdrS0pQdkNHN3VmWm9kaGFiRC1ldEpPUFI3c0ZGeUF0N0x2SnRnNk5ZUi1KU0tkS2M1aEVqVWpveGFacHlSZmZGYlRIeDl4eEJxallDX19QcUkwZw?oc=5",
-   "termino": "migrantes",
-   "geo": "US",
-   "titulo": "El Departamento de Justicia demanda a tres estados por ofrecer beneficios universitarios a inmigrantes indocumentados",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 22.4,
-   "base": 29.8,
-   "ratio": 0.75
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -199,10 +172,8 @@
    "medido": "2026-08-11T13:06:33+00:00"
   }
  },
- "proximo_pais": 6,
- "paises_sin_datos": [
-  "US"
- ],
+ "proximo_pais": 0,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
