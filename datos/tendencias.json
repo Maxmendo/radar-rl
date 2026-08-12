@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-12T07:27:51+00:00",
+ "generado": "2026-08-12T16:01:42+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -172,7 +172,7 @@
    "medido": "2026-08-11T13:06:33+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
