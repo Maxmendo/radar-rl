@@ -1,23 +1,89 @@
 {
- "generado": "2026-08-12T16:01:42+00:00",
+ "generado": "2026-08-13T01:59:48+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "fe926df9b24e": {
+   "id_hecho": "fe926df9b24e",
+   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPYW1Ydlh2MGJxWU1DNEt2dG14elJZZ3FlWmJNNlFGWF9scmpGN1NEQV9ub1pablRqQlNUNHMxT09LSUpieFhjSEh3SHc0VG5VMVNhdXRHSWp2eWdsc2tYdmZ1XzlOM0NrcTc5T0I5ckRneFVOdGVSOFZITnpTUUZRWFB3bHBvcU56Y1B3WUV1V2RYVE9GNncyQVVoempJbFduWmN4RVZQLTl3RVR0YldDY1IzM0hNWTBSTk15bzJjWmtkMDhOczVpSEhkaXE1S09rRHJDYmtyV3ZiRU9obTk4OVBmX0tKcnRhV2V0Q09pX0V5RHB4TUJDNXRMRklLTUhkYmQxYXlhZGlkZTdrbFIwV9IBkAJBVV95cUxPYW1Ydlh2MGJxWU1DNEt2dG14elJZZ3FlWmJNNlFGWF9scmpGN1NEQV9ub1pablRqQlNUNHMxT09LSUpieFhjSEh3SHc0VG5VMVNhdXRHSWp2eWdsc2tYdmZ1XzlOM0NrcTc5T0I5ckRneFVOdGVSOFZITnpTUUZRWFB3bHBvcU56Y1B3WUV1V2RYVE9GNncyQVVoempJbFduWmN4RVZQLTl3RVR0YldDY1IzM0hNWTBSTk15bzJjWmtkMDhOczVpSEhkaXE1S09rRHJDYmtyV3ZiRU9obTk4OVBmX0tKcnRhV2V0Q09pX0V5RHB4TUJDNXRMRklLTUhkYmQxYXlhZGlkZTdrbFIwVw?oc=5",
+   "termino": "migrantes",
+   "geo": "US",
+   "titulo": "Hallan 73 cadáveres de migrantes en el desierto de Arizona en lo que va de 2026",
+   "importancia": 9,
+   "velocidad": 7,
+   "puntaje": 0,
+   "reciente": 22.4,
+   "base": 29.6,
+   "ratio": 0.76
+  },
+  "65b2a1684685": {
+   "id_hecho": "65b2a1684685",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPdUY5V3AzUEVzSW1hNUtwQW13d0haMHE5cU5wc2dJbllNVHkwWjdNckRQYkVRZzJZcGhkNzZXWUV4ek5hWldFU0JtZEU3MzlJWFAzUHJZNzlIc2R3aEJ3Zmd4OGx3QzRqSlpIUTE0LXlkbjBNZW44N3lDd0hzcUNEMXBTbndRZEZXSFE1NjAwVjFiT3hqbzFhLVBSY2ptRnFNS3p5V3pyY0ZrZEJPMjJFdTB5SUpQekFHN05SMjdYUEt2Y0pJUDJWamR4TUN3UnlTOHdTU3YzZVUxQUZxdlhYQjZibXhCdw?oc=5",
+   "termino": "menores migrantes",
+   "geo": "US",
+   "titulo": "Defensa de niños migrantes en EU, en riesgo tras rechazo de despacho jurídico a representarlos",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 0.4,
+   "base": 0.2,
+   "ratio": null
+  },
+  "29db17abec74": {
+   "id_hecho": "29db17abec74",
+   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOaXNYZm53UWZNT0FBbzVNUEF1bTVPWmFjQnN6OHFjSGlhcUloejV0eUJuWjYycG9URGJWd3E4TVVVM1d3aHU2OG9WWllWOC0yVlU4MVNNN3FYeHFLNEpBb21PbkdXZk1HTEEyeDg2NWJJYl9LVnVITzZLcm1sUXVxMXZicm5rcVE2NFFKRm92YmMxTDZyVzNYenc3ZUs5dWI4T3dmSXpXcG5kWTd6WHItbnhGcjRRQkh1aThNczhOSFV2Y2k2dnd2YjRRSkNXbXJzdlpicVA4ZmdGaV83OEw0aGRRQmE3dW93MVZEMUxnaXVEZFJtMDJfS1l1QllTaGY5TENBc2otUmx2RGduVUJzNmE0a0JEc3ZZZlBvVWdDOWxSdk5ZbmpQbXYxdGV6UdIBswJBVV95cUxQRzZVcVdOODUydGkzUUhQLWd2VlNzLWZJbFJCc3ZibW9yTW1qWEpJTW5ENVVzQ2o3MjRVR2RLMWZiczVWSnJXWnVQT3drS0wxS09YajdyMjFCQzZVMnhkQ0k5MmZfT1RENlhUNTIyamVvdzFMbXRWNWJkaG5BcWdPSDVCVmg4ME1Fa1diWDltbS1kT0MwazVSTDg2Y2VaX2V1a29nUkFaVlk3cDRoRUR0dDdHcHZlZmdHSXNLXzFSMGxPZ3ZKSEh2V0dMX0pQdXhRYklhdkxVQXJyaGU0MjJVcDM4MlFmZU1TZUx2aU42SWU0dlMtUkhsV1RyRTFHLTJHZzJuTl8yRFdBTjVfUmtGZkxtZWV2d0Z6bEpaNHFEaFBtSHlocDhyWlRpUUNnNEpaU0Fz?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "El gobierno de Trump invertirá millones en la compra de guantes que dan descargas eléctricas para ICE",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 3.9,
+   "base": 2.3,
+   "ratio": null
+  },
+  "abcf03f49f1e": {
+   "id_hecho": "abcf03f49f1e",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQcS1la084eVZpcjlpWTN4b3d2RUNpOGltUjBTNFpCVEptNzI3Ry1jUlBEUThYcE5KX2NBNTBIY050emVBNXBpU0lyMko1TUpoVkdnaTlZVGxPQ0x1M2tsVmIyRGpFa2VGNDE5WW5xVnZHMEpLM25vc2dydTdqQUpEdmJqcFc5dTVUVGdoRGEtR05ERDV2MkhTZGc3eGZHVlJ6VlkyVWtZMHA1UmRYNXNWZEtRRUlyQXFZSVlWY1ViSGhfWDNmNExsYmpKN09iRVFhVkpnVE5DQW1ENE1iTmVDcExKcTZDRDZ6V3ZSNzZISml5OThmQ2ZlY051NUowdkXSAZoCQVVfeXFMTU55STB3TWNEM25BeFU0VHFXTTFETXdLVUh5TEJxZ1Y4NlN5SEcwRlUtS3lqYVF3TTRTTlV5QVRqTldxVlo1bEdiYkNYOFVxUHRXWllwM2VSZi1nNUFnTVlPRDFwUzVUNjRFYkxaUTVIMmFLZHBnTXV3dXVJODJkdW1xQnlnTHVYWjNLM2ZVUTJOY0xsRW14UUp5bFZFakxiMjBVMzVlcGEzS21WQTl4WEJLbllHcDl4OW5BUW9LMDA3UjE5cl9XNzYxcGJRX3NfRENNMXI5azl0RHFucFFZMjhMRXk1NjdYM2pRa283VFptNTFIOXVJT09WWDVycXJycEFKemZXNWhOWDA2Y0xaMWVjVFdmbUFtRXlB?oc=5",
+   "termino": "desplazamiento forzado",
+   "geo": "MX",
+   "titulo": "Crimen organizado y explotación de recursos naturales: las principales causas del desplazamiento forzado en la Sierra Tarahumara",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 7.3,
+   "base": 1.9,
+   "ratio": null
+  },
+  "a872cddffa11": {
+   "id_hecho": "a872cddffa11",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNVjZkSHU1d08zY2RtVmY2Ymw0WFZzZFJPUkZiMHlKX0pPcEVLM0pxdkdtQUM2UG04eWt6RXI0Tzk3X0pFRXprYnJybm0xc01LWHMyRnNIVDYwcW1kY05OZVVIeGhRY0NlcFNsZnROZV83ZWtxWTlmdDRWd2drMXRLdmJMZnk5b0ZQSFVITHNBb1FiLUdFOHBTdGppN1Ffb3gydnZmQ2dlZFBLVjczZHZiMXlJZGdxQ1AwWTl0LXhYSkplM2s3eXhsb25HaUZQYXBQRW5oaGFhREJFelJWbU91b3NCX1QzMFFDX1hLXzM3bDR5UHpHZ1JyVmkwR0JoNDNuOG9JQ0dR?oc=5",
+   "termino": "migrantes venezolanos",
+   "geo": "CO",
+   "titulo": "El 35,89% de los migrantes venezolanos están en Colombia",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 49.7,
+   "base": 6.0,
+   "ratio": 8.29
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1037600",
+     "valor": "1038950",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
     },
     {
-     "consulta": "marruecos migrantes",
-     "valor": "703650",
+     "consulta": "marruecos",
+     "valor": "724150",
      "tipo": "rising",
-     "variantes": 0
+     "variantes": 1
     },
     {
      "consulta": "los migrantes",
@@ -26,7 +92,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-11T21:49:08+00:00"
+   "medido": "2026-08-13T01:59:31+00:00"
   },
   "VE": {
    "consultas": [
@@ -55,24 +121,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "246750",
+     "valor": "260800",
      "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "migrantes chile",
-     "valor": "100",
-     "tipo": "top",
      "variantes": 1
     },
     {
      "consulta": "marruecos",
-     "valor": "147450",
+     "valor": "207550",
      "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes en chile",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-10T10:18:25+00:00"
+   "medido": "2026-08-13T01:59:40+00:00"
   },
   "CO": {
    "consultas": [
@@ -172,7 +238,7 @@
    "medido": "2026-08-11T13:06:33+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -190,5 +256,23 @@
    "ratio": 4.12
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "a872cddffa11",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNVjZkSHU1d08zY2RtVmY2Ymw0WFZzZFJPUkZiMHlKX0pPcEVLM0pxdkdtQUM2UG04eWt6RXI0Tzk3X0pFRXprYnJybm0xc01LWHMyRnNIVDYwcW1kY05OZVVIeGhRY0NlcFNsZnROZV83ZWtxWTlmdDRWd2drMXRLdmJMZnk5b0ZQSFVITHNBb1FiLUdFOHBTdGppN1Ffb3gydnZmQ2dlZFBLVjczZHZiMXlJZGdxQ1AwWTl0LXhYSkplM2s3eXhsb25HaUZQYXBQRW5oaGFhREJFelJWbU91b3NCX1QzMFFDX1hLXzM3bDR5UHpHZ1JyVmkwR0JoNDNuOG9JQ0dR?oc=5",
+   "termino": "migrantes venezolanos",
+   "geo": "CO",
+   "titulo": "El 35,89% de los migrantes venezolanos están en Colombia",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 49.7,
+   "base": 6.0,
+   "ratio": 8.29,
+   "disparada": "2026-08-13T01:59:48+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
