@@ -1,102 +1,23 @@
 {
- "generado": "2026-08-13T19:05:40+00:00",
+ "generado": "2026-08-14T04:57:01+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "b9b05abeb06e": {
-   "id_hecho": "b9b05abeb06e",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPYjJITV9iVUtHMzhCRkVKeVpEMzFDY3NaeXYtZUpNQVg0RnRUUGR3VU9mQk1uZmZjbkRZNjVMb1pHcG9Qek8zRHVFSkF2RWdUWjhBeVhocW5URVBScVphbk9mT2RuVnBWNHdkTnp5R3k5V3FZUWYzVnE5NnFmS0VTV2ZzUkdCdXQ5aV9BTzI4VDVxanVfN0E4RDlub0tQcVZ1MHpmdDdWbnNQN0VzNkZTZHZQY3FnQmpGOWVsLThUNkh0bjREM1E?oc=5",
-   "termino": "migrantes",
-   "geo": "US",
-   "titulo": "Hallan 73 cuerpos de migrantes en el Desierto de Arizona",
-   "importancia": 10,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 21.7,
-   "base": 28.7,
-   "ratio": 0.76
-  },
-  "f027a0c0c38d": {
-   "id_hecho": "f027a0c0c38d",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMEFGMTRNVFRsQzRvaFZKS2trVURuQnJPZHVpVzhSU0NsOHYyYThnLTVaUHpEdURoMGhMZWt2aXVTV0xuQzZwV1owcmVqYzRWWEpxbktyamkwaHdyWHg5VndBVDNKQXVRX0taREdsanhyenhRY19YYlNIOFFoYU93Y1VQd1RtblhjZkRVSmZXYkVKcGY3aDhRRnozTERuRkNuZW9tZjduWUU0UWFCNWg0bkFCR3FsVk5LOHFKcElpZEcxZ09haHlMTHVfUWtUZFVkUTBEdw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Corte avala deportaciones expeditas de inmigrantes con parole humanitario",
-   "importancia": 10,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 4.6,
-   "base": 2.3,
-   "ratio": null
-  },
-  "a9a3fe470bcb": {
-   "id_hecho": "a9a3fe470bcb",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVGFGT1lRWDJGQTFodjM2MG4yd2pvYTRLQzV2RUNyZ1g2bmMwdkpjaXgycHc1dkhSNTBsbzRzWk5Ea2VvZ0ctNTFfSmRqWjNUOGFEdkxOc0x2OURqZGhjYWFna0hPSlRNYnc5Rk5MME9fOElTdG1aamUzYVp4VUE0R0lvZnlieUJ4U29aTjlScUxrR3hiY1JHRFRPd1BkTkFsaDdGYVJnTl9kdUdfYmxheklkVTN0cUdBeGJR?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "SOS desde centros de detención del ICE en Georgia, EU",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 4.6,
-   "base": 2.3,
-   "ratio": null
-  },
-  "2e00b9f4d67f": {
-   "id_hecho": "2e00b9f4d67f",
-   "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPRF93MkRiN1otd1hkcEluZlpjaHNoWDVDQllURW1GTU8xM0xUMUJIWGdfTGpjdEVVUTUyQXY4dGdueXVJSHJPM3Z5RTVIWmZvb3FfODZzRTZRbXRNMkxkQkFFZjBzdG9paXVjeTd4TFNVa2RUaHJCZmRnT2dQNllpbEJfelVPMzFlUDJaR3pzRFBVXzBfdVVDWHlidVg0ZjNvdmdzUUFwcGp6M3RvcldEOUZFVWxGN3h1T2xBc25QajFyWnl4VEpFMlNtYmwwUkxCM1d1NnNnbFB3SHdNSnR0U1ZaanBNWXJfS0d1YnRMd3F5TzdFM28tM1F4c1lYZ3BIVm9nOGVZNm1wWUw0bkJ0ekRZZnhsQ21ZTzlRNmxiR2VwZnhKc1Nuc2Rrekl6Y0MwNEI5NllVS1hXLUpfZENFS9IBugJBVV95cUxPRG53bnc3bjg3ekNUbTY3SG91NHZZWXZwTklSSG1uMzE3S0RnTG9IeDUtMXNwTzFUczE1VVhNcjJlOU9iQ2dod09ObS1SVkloN1NTb0VxVHNUWFg3cXpVVHdFNWNDRV9UZHN5aUpranNRUGFfRmYtREV0MUxET21yckRCTGlPTTRqRHYxSV9KWENqbjVwTEt3TllfakQ5OTNVN3plS2pTMnUxV3JrenV3bVctUGVNVUJFV0JZdDhVX05Ud3NTeG1yX0xBRkJ4WU8yV0lHbXdLMnA2cDZOcjlMZFplZ2FCT2hhcFREakVhQVI2SzZnV0t4NHFWQ0xzS1BDTmxMYUVLb2NIRVJSQnBkZm5UMUVOdVRxZzAtd0UwSmp6YjlzbDB5c2lCRnV6S1ZuNnNCRlJfT0NMUQ?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "El gobierno de Trump invertirá millones en la compra de guantes que dan descargas eléctricas para ICE",
-   "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 0,
-   "reciente": 4.6,
-   "base": 2.3,
-   "ratio": null
-  },
-  "4d3b5a353c1c": {
-   "id_hecho": "4d3b5a353c1c",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORW42Zm1wU3N5cmxSOWF4ZkxoN3RoYjRlUmtxMnpXME5iODc3VDF3bVhHYmZsLWxZcmJCUDlUVkt6RW1oSjVBcW9XTm0xQVZ3Y2h5UnBCZDkwdGdsZklNR01hVXhNTGtKMHA2X2tUTEN3d01wMXMzREtjMGsxNkhOQ2ZOdDU4MENWUzVWUXl5U1k3QmVKd0M3N2hETDVMVzBKS1J0T3BuNTZITXZVMWtVMWFJSTRSNlFnam5uTng5OUhlcTlUQXhWc2RaTWo?oc=5",
-   "termino": "niños migrantes",
-   "geo": "US",
-   "titulo": "Un bufete asociado a Trump rechaza contrato para representar a niños migrantes en EE.UU.",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.2,
-   "ratio": null
-  },
-  "31945f30eb81": {
-   "id_hecho": "31945f30eb81",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQakxsQXpxUTFsNEwzYWo3UmR1NjZuVFJLdy0xbm0yY2NLVHJBcmVvN3A0ZGFCakRjdVVieEQzTXVTVkRVeF92bmEtNWpjUG5FMmRJYVhpbmlpN19LSHNkQ28wY014U2dncUsyQlhJVVN4NjRvVjQwTk1jRlB1LTVmenJUUlZxOElWRk9JV283SFI0NlhyaGhVOG4xRVpDTlNHVHJHb2VYX1IxTHpBcEJLdk1FbkxxeVRVY1F3S2FPZXRvTDZwRk5CNnV3dzVRRUMxVTBwY2JSTnJSbEs3d29fSEdLZTBsd9IB5gFBVV95cUxQakxsQXpxUTFsNEwzYWo3UmR1NjZuVFJLdy0xbm0yY2NLVHJBcmVvN3A0ZGFCakRjdVVieEQzTXVTVkRVeF92bmEtNWpjUG5FMmRJYVhpbmlpN19LSHNkQ28wY014U2dncUsyQlhJVVN4NjRvVjQwTk1jRlB1LTVmenJUUlZxOElWRk9JV283SFI0NlhyaGhVOG4xRVpDTlNHVHJHb2VYX1IxTHpBcEJLdk1FbkxxeVRVY1F3S2FPZXRvTDZwRk5CNnV3dzVRRUMxVTBwY2JSTnJSbEs3d29fSEdLZTBsdw?oc=5",
-   "termino": "migraciones",
-   "geo": "AR",
-   "titulo": "Operativo inédito de Migraciones en Rosario a extranjeros - Diario El Norte",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 70.4,
-   "base": 60.7,
-   "ratio": 1.16
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "1032300",
+     "consulta": "migrantes ceuta",
+     "valor": "1098700",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos",
-     "valor": "794000",
-     "tipo": "rising",
-     "variantes": 0
+     "consulta": "españa migrantes",
+     "valor": "47",
+     "tipo": "top",
+     "variantes": 1
     },
     {
      "consulta": "los migrantes",
@@ -105,7 +26,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-13T19:05:16+00:00"
+   "medido": "2026-08-14T04:56:45+00:00"
   },
   "VE": {
    "consultas": [
@@ -243,18 +164,28 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "776200",
+     "valor": "743500",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes marroquíes en españa",
+     "valor": "437950",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "centro de migrantes",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 0
     }
    ],
-   "medido": "2026-08-11T13:06:33+00:00"
+   "medido": "2026-08-14T04:56:53+00:00"
   }
  },
- "proximo_pais": 4,
- "paises_sin_datos": [
-  "CO"
- ],
+ "proximo_pais": 5,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
