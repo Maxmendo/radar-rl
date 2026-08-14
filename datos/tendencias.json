@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-14T04:57:01+00:00",
+ "generado": "2026-08-14T13:13:44+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -8,16 +8,16 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "migrantes ceuta",
-     "valor": "1098700",
+     "consulta": "ceuta migrantes",
+     "valor": "1120400",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "47",
-     "tipo": "top",
-     "variantes": 1
+     "consulta": "marruecos",
+     "valor": "701650",
+     "tipo": "rising",
+     "variantes": 0
     },
     {
      "consulta": "los migrantes",
@@ -26,7 +26,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-08-14T04:56:45+00:00"
+   "medido": "2026-08-14T13:13:27+00:00"
   },
   "VE": {
    "consultas": [
@@ -100,25 +100,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "475850",
+     "consulta": "marruecos",
+     "valor": "223000",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
-     "valor": "58450",
-     "tipo": "rising",
-     "variantes": 0
+     "consulta": "ceuta",
+     "valor": "73",
+     "tipo": "top",
+     "variantes": 1
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "traductor español ingles",
+     "valor": "51850",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-09T06:58:24+00:00"
+   "medido": "2026-08-14T13:13:36+00:00"
   },
   "ES": {
    "consultas": [
@@ -184,22 +184,22 @@
    "medido": "2026-08-14T04:56:53+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 24.7,
-   "base": 6.1,
-   "ratio": 4.05
+   "reciente": 22.1,
+   "base": 7.4,
+   "ratio": 3.0
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 22.7,
-   "base": 5.7,
-   "ratio": 3.96
+   "reciente": 22.3,
+   "base": 6.6,
+   "ratio": 3.37
   }
  },
  "alertas": []
