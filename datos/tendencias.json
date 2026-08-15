@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-15T06:47:53+00:00",
+ "generado": "2026-08-15T15:29:56+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,18 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1129750",
+     "valor": "1061450",
      "tipo": "rising",
      "variantes": 1
+    },
+    {
+     "consulta": "sele vera",
+     "valor": "307400",
+     "tipo": "rising",
+     "variantes": 0
     },
     {
      "consulta": "migrantes españa",
      "valor": "100",
      "tipo": "top",
-     "variantes": 1
+     "variantes": 0
     }
    ],
-   "medido": "2026-08-14T21:33:09+00:00"
+   "medido": "2026-08-15T15:29:39+00:00"
   },
   "VE": {
    "consultas": [
@@ -49,24 +55,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "260800",
+     "valor": "380450",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "marruecos",
-     "valor": "207550",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes en chile",
+     "consulta": "migrantes chile",
      "valor": "100",
      "tipo": "top",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes de marruecos",
+     "valor": "166300",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-13T01:59:40+00:00"
+   "medido": "2026-08-15T15:29:48+00:00"
   },
   "CO": {
    "consultas": [
@@ -178,25 +184,22 @@
    "medido": "2026-08-14T04:56:53+00:00"
   }
  },
- "proximo_pais": 1,
- "paises_sin_datos": [
-  "AR",
-  "VE"
- ],
+ "proximo_pais": 2,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 32.3,
+   "reciente": 29.6,
    "base": 7.1,
-   "ratio": 4.58
+   "ratio": 4.16
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 25.6,
-   "base": 5.4,
-   "ratio": 4.73
+   "reciente": 24.1,
+   "base": 8.2,
+   "ratio": 2.96
   }
  },
  "alertas": []
