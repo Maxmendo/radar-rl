@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-16T18:35:53+00:00",
+ "generado": "2026-08-17T03:57:14+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -100,25 +100,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "marruecos",
-     "valor": "223000",
+     "consulta": "migrantes marruecos",
+     "valor": "350650",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 0
     },
     {
-     "consulta": "ceuta",
-     "valor": "73",
-     "tipo": "top",
-     "variantes": 1
+     "consulta": "new york times",
+     "valor": "35150",
+     "tipo": "rising",
+     "variantes": 0
     },
     {
-     "consulta": "traductor español ingles",
-     "valor": "51850",
+     "consulta": "migrantes ceuta",
+     "valor": "3800",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-14T13:13:36+00:00"
+   "medido": "2026-08-17T03:57:06+00:00"
   },
   "ES": {
    "consultas": [
@@ -178,22 +178,24 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 5,
- "paises_sin_datos": [],
+ "proximo_pais": 6,
+ "paises_sin_datos": [
+  "AR"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 34.4,
-   "base": 8.5,
-   "ratio": 4.03
+   "reciente": 28.4,
+   "base": 8.3,
+   "ratio": 3.42
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 30.6,
-   "base": 9.0,
-   "ratio": 3.4
+   "puntaje": 5,
+   "reciente": 21.6,
+   "base": 10.4,
+   "ratio": 2.07
   }
  },
  "alertas": []
