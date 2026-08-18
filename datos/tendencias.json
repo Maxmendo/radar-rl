@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-18T06:51:01+00:00",
+ "generado": "2026-08-18T15:40:11+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,18 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1109900",
+     "valor": "1141050",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "95",
+     "consulta": "sele vera",
+     "valor": "333850",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes españa",
+     "valor": "100",
      "tipo": "top",
-     "variantes": 1
+     "variantes": 0
     }
    ],
-   "medido": "2026-08-18T06:50:45+00:00"
+   "medido": "2026-08-18T15:39:54+00:00"
   },
   "VE": {
    "consultas": [
@@ -140,25 +146,25 @@
   "MX": {
    "consultas": [
     {
-     "consulta": "migrantes de marruecos",
-     "valor": "142400",
+     "consulta": "ceuta",
+     "valor": "216600",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "derechos de los migrantes",
-     "valor": "24",
+     "valor": "25",
      "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "migrantes ceuta",
-     "valor": "193300",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "63950",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-16T01:23:28+00:00"
+   "medido": "2026-08-18T15:40:03+00:00"
   },
   "UY": {
    "consultas": [
@@ -178,22 +184,22 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 25.9,
-   "base": 7.6,
-   "ratio": 3.39
+   "reciente": 25.1,
+   "base": 7.3,
+   "ratio": 3.44
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 22.3,
-   "base": 8.3,
-   "ratio": 2.68
+   "puntaje": 10,
+   "reciente": 22.1,
+   "base": 6.5,
+   "ratio": 3.39
   }
  },
  "alertas": []
