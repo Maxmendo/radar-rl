@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-17T21:36:03+00:00",
+ "generado": "2026-08-18T06:51:01+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,24 +9,18 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1127900",
+     "valor": "1109900",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes marruecos",
-     "valor": "636300",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes españa",
-     "valor": "100",
+     "consulta": "españa migrantes",
+     "valor": "95",
      "tipo": "top",
-     "variantes": 0
+     "variantes": 1
     }
    ],
-   "medido": "2026-08-17T21:35:46+00:00"
+   "medido": "2026-08-18T06:50:45+00:00"
   },
   "VE": {
    "consultas": [
@@ -54,25 +48,25 @@
   "CL": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "380450",
-     "tipo": "rising",
-     "variantes": 1
-    },
-    {
      "consulta": "migrantes chile",
      "valor": "100",
      "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "migrantes de marruecos",
-     "valor": "166300",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "104000",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes marroquíes en españa",
+     "valor": "98200",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-15T15:29:48+00:00"
+   "medido": "2026-08-18T06:50:53+00:00"
   },
   "CO": {
    "consultas": [
@@ -184,22 +178,22 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 29.3,
-   "base": 9.8,
-   "ratio": 2.99
+   "reciente": 25.9,
+   "base": 7.6,
+   "ratio": 3.39
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 25.4,
-   "base": 6.1,
-   "ratio": 4.15
+   "puntaje": 8,
+   "reciente": 22.3,
+   "base": 8.3,
+   "ratio": 2.68
   }
  },
  "alertas": []
