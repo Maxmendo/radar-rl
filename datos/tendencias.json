@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-19T21:39:40+00:00",
+ "generado": "2026-08-20T06:53:44+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -8,25 +8,25 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 1
-    },
-    {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "179550",
+     "valor": "205350",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes grupo",
-     "valor": "146650",
+     "consulta": "migrantes anti amor",
+     "valor": "75750",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "oim",
+     "valor": "51350",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-19T21:39:16+00:00"
+   "medido": "2026-08-20T06:53:27+00:00"
   },
   "VE": {
    "consultas": [
@@ -126,22 +126,16 @@
      "consulta": "ceuta",
      "valor": "99",
      "tipo": "top",
-     "variantes": 3
-    },
-    {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "111900",
-     "tipo": "rising",
-     "variantes": 0
+     "variantes": 4
     },
     {
      "consulta": "migrantes españa",
-     "valor": "86",
+     "valor": "79",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-17T12:49:37+00:00"
+   "medido": "2026-08-20T06:53:36+00:00"
   },
   "MX": {
    "consultas": [
@@ -184,17 +178,15 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 6,
- "paises_sin_datos": [
-  "US"
- ],
+ "proximo_pais": 0,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 27.9,
-   "base": 6.5,
-   "ratio": 4.32
+   "reciente": 20.4,
+   "base": 5.5,
+   "ratio": 3.73
   },
   "certificado de residencia": {
    "geo": "AR",
