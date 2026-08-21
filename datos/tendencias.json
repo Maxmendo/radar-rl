@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-21T09:44:59+00:00",
+ "generado": "2026-08-21T18:44:56+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,24 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1146200",
-     "tipo": "rising",
+     "valor": "97",
+     "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "migrantes significado",
-     "valor": "86600",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "121900",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "58",
-     "tipo": "top",
+     "consulta": "significado de migrantes",
+     "valor": "115300",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-21T09:44:42+00:00"
+   "medido": "2026-08-21T18:44:39+00:00"
   },
   "VE": {
    "consultas": [
@@ -78,24 +78,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "492850",
+     "valor": "457750",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 0
     },
     {
-     "consulta": "migrantes de marruecos",
-     "valor": "465500",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "239000",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 0
     },
     {
-     "consulta": "españa migrantes",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 1
+     "consulta": "estatuto temporal de protección para migrantes venezolanos",
+     "valor": "10550",
+     "tipo": "rising",
+     "variantes": 0
     }
    ],
-   "medido": "2026-08-19T01:21:59+00:00"
+   "medido": "2026-08-21T18:44:48+00:00"
   },
   "US": {
    "consultas": [
@@ -178,22 +178,22 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 24.1,
-   "base": 6.6,
-   "ratio": 3.64
+   "reciente": 25.1,
+   "base": 5.5,
+   "ratio": 4.61
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 4,
-   "reciente": 17.1,
-   "base": 8.5,
-   "ratio": 2.01
+   "puntaje": 10,
+   "reciente": 21.4,
+   "base": 5.6,
+   "ratio": 3.85
   }
  },
  "alertas": []
