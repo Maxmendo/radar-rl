@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-21T01:26:18+00:00",
+ "generado": "2026-08-21T09:44:59+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -8,25 +8,25 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "205350",
+     "consulta": "ceuta",
+     "valor": "1146200",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes significado",
+     "valor": "86600",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes anti amor",
-     "valor": "75750",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "oim",
-     "valor": "51350",
-     "tipo": "rising",
+     "consulta": "inmigrantes",
+     "valor": "58",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-20T06:53:27+00:00"
+   "medido": "2026-08-21T09:44:42+00:00"
   },
   "VE": {
    "consultas": [
@@ -141,24 +141,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "216600",
+     "valor": "239950",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "derechos de los migrantes",
-     "valor": "25",
+     "consulta": "derechos de migrantes",
+     "valor": "27",
      "tipo": "top",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "63950",
+     "valor": "66550",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-18T15:40:03+00:00"
+   "medido": "2026-08-21T09:44:51+00:00"
   },
   "UY": {
    "consultas": [
@@ -178,24 +178,22 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 2,
- "paises_sin_datos": [
-  "AR"
- ],
+ "proximo_pais": 3,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 27.9,
-   "base": 11.1,
-   "ratio": 2.51
+   "puntaje": 10,
+   "reciente": 24.1,
+   "base": 6.6,
+   "ratio": 3.64
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 22.9,
-   "base": 7.8,
-   "ratio": 2.94
+   "puntaje": 4,
+   "reciente": 17.1,
+   "base": 8.5,
+   "ratio": 2.01
   }
  },
  "alertas": []
