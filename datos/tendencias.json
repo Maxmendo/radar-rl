@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-22T03:51:52+00:00",
+ "generado": "2026-08-22T12:46:30+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,24 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "97",
+     "valor": "98",
      "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "121900",
+     "consulta": "migrantes anti amor",
+     "valor": "112250",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "significado de migrantes",
-     "valor": "115300",
+     "consulta": "migrantes estoy a un vaso remix",
+     "valor": "73500",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-21T18:44:39+00:00"
+   "medido": "2026-08-22T12:46:13+00:00"
   },
   "VE": {
    "consultas": [
@@ -100,25 +100,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "migrantes marruecos",
-     "valor": "350650",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "new york times",
-     "valor": "35150",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
      "consulta": "migrantes ceuta",
-     "valor": "3800",
+     "valor": "849300",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "tráiler con 39 migrantes se incendió en texas durante una persecución policial",
+     "valor": "16400",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
+     "valor": "13800",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-17T03:57:06+00:00"
+   "medido": "2026-08-22T12:46:22+00:00"
   },
   "ES": {
    "consultas": [
@@ -178,25 +178,22 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 5,
- "paises_sin_datos": [
-  "AR",
-  "UY"
- ],
+ "proximo_pais": 6,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 23.9,
-   "base": 6.0,
-   "ratio": 3.99
+   "reciente": 24.6,
+   "base": 5.7,
+   "ratio": 4.31
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 20.4,
-   "base": 8.1,
-   "ratio": 2.52
+   "puntaje": 9,
+   "reciente": 18.4,
+   "base": 6.6,
+   "ratio": 2.79
   }
  },
  "alertas": []
