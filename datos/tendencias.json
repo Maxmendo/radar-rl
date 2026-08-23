@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-22T21:29:01+00:00",
+ "generado": "2026-08-23T06:45:30+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,47 +9,47 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "98",
-     "tipo": "top",
+     "valor": "1174350",
+     "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes anti amor",
-     "valor": "112250",
+     "consulta": "migrantes me duele que me duelas",
+     "valor": "580500",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes estoy a un vaso remix",
-     "valor": "73500",
-     "tipo": "rising",
+     "consulta": "inmigrantes",
+     "valor": "59",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-22T12:46:13+00:00"
+   "medido": "2026-08-23T06:45:14+00:00"
   },
   "VE": {
    "consultas": [
     {
-     "consulta": "migrantes en ceuta",
-     "valor": "366050",
+     "consulta": "ceuta",
+     "valor": "412150",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "343400",
-     "tipo": "rising",
+     "consulta": "inmigrantes",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     },
     {
      "consulta": "migrantes o inmigrantes",
-     "valor": "29250",
-     "tipo": "rising",
+     "valor": "5",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-20T15:43:46+00:00"
+   "medido": "2026-08-23T06:45:22+00:00"
   },
   "CL": {
    "consultas": [
@@ -178,25 +178,22 @@
    "medido": "2026-08-16T18:35:45+00:00"
   }
  },
- "proximo_pais": 0,
- "paises_sin_datos": [
-  "AR",
-  "ES"
- ],
+ "proximo_pais": 1,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 29.0,
-   "base": 6.8,
-   "ratio": 4.27
+   "reciente": 26.4,
+   "base": 6.5,
+   "ratio": 4.08
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 23.1,
-   "base": 6.7,
-   "ratio": 3.44
+   "reciente": 19.7,
+   "base": 5.8,
+   "ratio": 3.4
   }
  },
  "alertas": []
