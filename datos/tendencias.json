@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-24T09:54:32+00:00",
+ "generado": "2026-08-24T18:48:11+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -163,30 +163,26 @@
   "UY": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "180",
-     "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "españa migrantes",
-     "valor": "90",
+     "consulta": "migrantes banda",
+     "valor": "293550",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-16T18:35:45+00:00"
+   "medido": "2026-08-24T18:48:03+00:00"
   }
  },
- "proximo_pais": 4,
- "paises_sin_datos": [],
+ "proximo_pais": 5,
+ "paises_sin_datos": [
+  "AR"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 26.1,
-   "base": 7.0,
-   "ratio": 3.73
+   "reciente": 19.1,
+   "base": 5.3,
+   "ratio": 3.6
   },
   "certificado de residencia": {
    "geo": "AR",
