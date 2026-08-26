@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-25T21:38:48+00:00",
+ "generado": "2026-08-26T06:59:00+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -172,25 +172,25 @@
    "medido": "2026-08-24T18:48:03+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [
   "AR",
-  "VE"
+  "CL"
  ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 28.6,
-   "base": 9.6,
-   "ratio": 2.98
+   "puntaje": 8,
+   "reciente": 23.0,
+   "base": 8.8,
+   "ratio": 2.61
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 23.7,
-   "base": 8.1,
-   "ratio": 2.91
+   "reciente": 20.4,
+   "base": 5.0,
+   "ratio": 4.09
   }
  },
  "alertas": []
