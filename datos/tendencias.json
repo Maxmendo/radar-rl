@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-27T14:00:54+00:00",
+ "generado": "2026-08-28T00:25:55+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,24 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1238600",
-     "tipo": "rising",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 1
     },
     {
      "consulta": "migrantes me duele que me duelas",
-     "valor": "583100",
+     "valor": "644500",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "50",
-     "tipo": "top",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "125050",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-27T14:00:37+00:00"
+   "medido": "2026-08-28T00:25:38+00:00"
   },
   "VE": {
    "consultas": [
@@ -100,25 +100,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "new york times",
-     "valor": "57250",
+     "consulta": "ceuta migrantes",
+     "valor": "850100",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
-     "valor": "28600",
+     "consulta": "deportación",
+     "valor": "66350",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "tráiler con 39 migrantes se incendió en texas durante una persecución policial",
-     "valor": "25350",
+     "valor": "35150",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-25T03:56:53+00:00"
+   "medido": "2026-08-28T00:25:47+00:00"
   },
   "ES": {
    "consultas": [
@@ -178,22 +178,22 @@
    "medido": "2026-08-27T14:00:46+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 28.7,
-   "base": 7.9,
-   "ratio": 3.65
+   "reciente": 22.3,
+   "base": 7.5,
+   "ratio": 2.97
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 27.3,
-   "base": 6.7,
-   "ratio": 4.06
+   "puntaje": 9,
+   "reciente": 20.6,
+   "base": 7.5,
+   "ratio": 2.73
   }
  },
  "alertas": []
