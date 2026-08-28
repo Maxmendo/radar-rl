@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-28T00:25:55+00:00",
+ "generado": "2026-08-28T15:05:22+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -14,19 +14,19 @@
      "variantes": 1
     },
     {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "644500",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "195150",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "125050",
+     "consulta": "migrantes banda",
+     "valor": "51850",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-28T00:25:38+00:00"
+   "medido": "2026-08-28T15:05:05+00:00"
   },
   "VE": {
    "consultas": [
@@ -126,16 +126,22 @@
      "consulta": "ceuta",
      "valor": "100",
      "tipo": "top",
-     "variantes": 4
+     "variantes": 2
     },
     {
-     "consulta": "migrantes españa",
-     "valor": "67",
-     "tipo": "top",
+     "consulta": "diferencia entre migrantes e inmigrantes",
+     "valor": "63550",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "noticias ceuta",
+     "valor": "54050",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-25T12:55:47+00:00"
+   "medido": "2026-08-28T15:05:14+00:00"
   },
   "MX": {
    "consultas": [
@@ -178,7 +184,7 @@
    "medido": "2026-08-27T14:00:46+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
