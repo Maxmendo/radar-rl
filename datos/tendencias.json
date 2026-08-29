@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-29T12:33:39+00:00",
+ "generado": "2026-08-29T23:08:40+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,18 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1147800",
-     "tipo": "rising",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 1
     },
     {
      "consulta": "migrantes me duele que me duelas",
-     "valor": "625550",
+     "valor": "613900",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "191400",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-29T12:33:22+00:00"
+   "medido": "2026-08-29T23:08:23+00:00"
   },
   "VE": {
    "consultas": [
@@ -140,25 +146,25 @@
   "MX": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "239950",
-     "tipo": "rising",
-     "variantes": 1
-    },
-    {
      "consulta": "derechos de migrantes",
-     "valor": "27",
+     "valor": "25",
      "tipo": "top",
      "variantes": 1
     },
     {
+     "consulta": "migrantes ceuta",
+     "valor": "304100",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "66550",
+     "valor": "80150",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-21T09:44:51+00:00"
+   "medido": "2026-08-29T23:08:32+00:00"
   },
   "UY": {
    "consultas": [
@@ -178,22 +184,22 @@
    "medido": "2026-08-27T14:00:46+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 31.1,
-   "base": 6.7,
-   "ratio": 4.65
+   "puntaje": 9,
+   "reciente": 21.1,
+   "base": 7.6,
+   "ratio": 2.78
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 28.6,
-   "base": 7.9,
-   "ratio": 3.63
+   "reciente": 22.1,
+   "base": 6.7,
+   "ratio": 3.31
   }
  },
  "alertas": []
