@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-29T23:08:40+00:00",
+ "generado": "2026-08-30T11:30:35+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,24 +9,18 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "100",
-     "tipo": "top",
+     "valor": "1136750",
+     "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes me duele que me duelas",
-     "valor": "613900",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "191400",
+     "valor": "653400",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-29T23:08:23+00:00"
+   "medido": "2026-08-30T11:30:18+00:00"
   },
   "VE": {
    "consultas": [
@@ -78,24 +72,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "450650",
+     "valor": "453350",
      "tipo": "rising",
-     "variantes": 0
+     "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "243000",
+     "valor": "202200",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes ilegales",
-     "valor": "149650",
-     "tipo": "rising",
+     "consulta": "migrantes españa",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-27T00:39:31+00:00"
+   "medido": "2026-08-30T11:30:27+00:00"
   },
   "US": {
    "consultas": [
@@ -184,22 +178,22 @@
    "medido": "2026-08-27T14:00:46+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 21.1,
-   "base": 7.6,
-   "ratio": 2.78
+   "puntaje": 10,
+   "reciente": 18.4,
+   "base": 5.9,
+   "ratio": 3.13
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 22.1,
-   "base": 6.7,
-   "ratio": 3.31
+   "reciente": 19.4,
+   "base": 6.5,
+   "ratio": 2.98
   }
  },
  "alertas": []
