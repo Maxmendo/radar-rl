@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-30T20:47:06+00:00",
+ "generado": "2026-08-31T12:58:08+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,18 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1250450",
+     "valor": "1183450",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes me duele que me duelas",
-     "valor": "610150",
+     "valor": "558750",
      "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "inmigrantes",
+     "valor": "50",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-30T20:46:50+00:00"
+   "medido": "2026-08-31T12:57:52+00:00"
   },
   "VE": {
    "consultas": [
@@ -94,25 +100,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "ceuta migrantes",
-     "valor": "850100",
+     "consulta": "migrantes ceuta",
+     "valor": "970050",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "deportación",
-     "valor": "66350",
+     "consulta": "historias de migrantes",
+     "valor": "20700",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "tráiler con 39 migrantes se incendió en texas durante una persecución policial",
-     "valor": "35150",
+     "valor": "14400",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-28T00:25:47+00:00"
+   "medido": "2026-08-31T12:58:00+00:00"
   },
   "ES": {
    "consultas": [
@@ -178,22 +184,22 @@
    "medido": "2026-08-30T20:46:58+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 30.0,
-   "base": 7.0,
-   "ratio": 4.29
+   "reciente": 23.6,
+   "base": 6.9,
+   "ratio": 3.43
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 31.9,
-   "base": 8.6,
-   "ratio": 3.69
+   "reciente": 27.4,
+   "base": 5.4,
+   "ratio": 5.05
   }
  },
  "alertas": []
