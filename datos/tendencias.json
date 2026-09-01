@@ -1,55 +1,69 @@
 {
- "generado": "2026-09-01T00:34:35+00:00",
+ "generado": "2026-09-01T14:00:31+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "ef5325878b2e": {
+   "id_hecho": "ef5325878b2e",
+   "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPRzl1Y1ZrYkVJdmo4X3V6R19ZTklucFN1Ri1Zc0sxZ0ZOVV9WcHMyY2RxVDNsT2hFRm1YZU9vTXlYQWVqcDV3ck9iZWNwWlluZllKMlM0VmotOEgxdVVXeUZtTW1tMTExaHVsei1uZjFIcWhIVVVjWHNUekVJcmY5MEZXTlRNekliU1NaVkJHQTZuN2NQZXowMEJZTXUwRVJCU3p1Mkx5M2RMaVdrTjItaTVDZHVINjdTdDdOVFRvY1l2ZnVULXdZQ0JfQ0xNOThPb2NtWXRRR21PVUpnd2l6ZV9DZy1ENWVrYXBfbkdsRnZmYVBoNUUxQUgxT2swUlE5aWdKWGx6dEtmN0huYVZWVTk3ODR1NVRfOW04NXlkS20zTWtsVHREa1N1ME02c2dybDF2cXBsWnRXdnlv0gHCAkFVX3lxTE01clpKelhBbXRSamdYdkF5NXFtOURLRklIX0FvLTl2eEppZzNyU2doSnV3NVlyN1JseGt3NGNGSW1aOXBtOE1abUMtcmRmRTRrdUlYdWJ1MmgzVkd6S2ZvelJnVHRXM3lkWEJDNHc3Vnd5SzNxSEVpak9LWEJwTjNpVWdWbEY2eklGVGxrZHdUV0lDY2FxdzR6WURRc19lNVVwVWQ2VUNwM2lIeFo0SFNEN2dkaXY5OXpRejNSUnhDSWUwM20tY004a3k5NEJ0Q2JmMzlxN3ZYRnVsSjIwOEZTbnZFUXJFMzlDVG5nUUVJbTgwMXpLWkJlTWNkYVZSZks5T2FFY213cmpKRnEyajFDQUdEZTM4NlNBcHJCY2l2ak9MVTVmWEREcy1kSVVlcHhPcmdZQ0s4NFBVVVlnd1MyUFE?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Una redada de ICE en Memphis deja al menos 120 detenidos",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 5,
+   "reciente": 15.3,
+   "base": 7.1,
+   "ratio": 2.15
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1223050",
-     "tipo": "rising",
-     "variantes": 1
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 2
     },
     {
      "consulta": "migrantes me duele que me duelas",
-     "valor": "588950",
+     "valor": "608600",
      "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "135650",
-     "tipo": "rising",
-     "variantes": 0
-    }
-   ],
-   "medido": "2026-09-01T00:34:17+00:00"
-  },
-  "VE": {
-   "consultas": [
-    {
-     "consulta": "migrantes venezolanos",
-     "valor": "100",
-     "tipo": "top",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "25",
-     "tipo": "top",
-     "variantes": 0
-    },
-    {
-     "consulta": "inmigrantes o migrantes",
-     "valor": "8",
+     "valor": "52",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-29T00:02:19+00:00"
+   "medido": "2026-09-01T14:00:15+00:00"
+  },
+  "VE": {
+   "consultas": [
+    {
+     "consulta": "inmigrantes o migrantes",
+     "valor": "152900",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "estatuto temporal de protección para migrantes venezolanos",
+     "valor": "14800",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "inmigrantes",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 0
+    }
+   ],
+   "medido": "2026-09-01T14:00:23+00:00"
   },
   "CL": {
    "consultas": [
@@ -178,7 +192,7 @@
    "medido": "2026-08-30T20:46:58+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -196,5 +210,23 @@
    "ratio": 2.97
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "ef5325878b2e",
+   "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPRzl1Y1ZrYkVJdmo4X3V6R19ZTklucFN1Ri1Zc0sxZ0ZOVV9WcHMyY2RxVDNsT2hFRm1YZU9vTXlYQWVqcDV3ck9iZWNwWlluZllKMlM0VmotOEgxdVVXeUZtTW1tMTExaHVsei1uZjFIcWhIVVVjWHNUekVJcmY5MEZXTlRNekliU1NaVkJHQTZuN2NQZXowMEJZTXUwRVJCU3p1Mkx5M2RMaVdrTjItaTVDZHVINjdTdDdOVFRvY1l2ZnVULXdZQ0JfQ0xNOThPb2NtWXRRR21PVUpnd2l6ZV9DZy1ENWVrYXBfbkdsRnZmYVBoNUUxQUgxT2swUlE5aWdKWGx6dEtmN0huYVZWVTk3ODR1NVRfOW04NXlkS20zTWtsVHREa1N1ME02c2dybDF2cXBsWnRXdnlv0gHCAkFVX3lxTE01clpKelhBbXRSamdYdkF5NXFtOURLRklIX0FvLTl2eEppZzNyU2doSnV3NVlyN1JseGt3NGNGSW1aOXBtOE1abUMtcmRmRTRrdUlYdWJ1MmgzVkd6S2ZvelJnVHRXM3lkWEJDNHc3Vnd5SzNxSEVpak9LWEJwTjNpVWdWbEY2eklGVGxrZHdUV0lDY2FxdzR6WURRc19lNVVwVWQ2VUNwM2lIeFo0SFNEN2dkaXY5OXpRejNSUnhDSWUwM20tY004a3k5NEJ0Q2JmMzlxN3ZYRnVsSjIwOEZTbnZFUXJFMzlDVG5nUUVJbTgwMXpLWkJlTWNkYVZSZks5T2FFY213cmpKRnEyajFDQUdEZTM4NlNBcHJCY2l2ak9MVTVmWEREcy1kSVVlcHhPcmdZQ0s4NFBVVVlnd1MyUFE?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Una redada de ICE en Memphis deja al menos 120 detenidos",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 5,
+   "reciente": 15.3,
+   "base": 7.1,
+   "ratio": 2.15,
+   "disparada": "2026-09-01T14:00:31+00:00",
+   "velocidad_inicial": 5,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
