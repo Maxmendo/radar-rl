@@ -1,5 +1,5 @@
 {
- "generado": "2026-08-31T12:58:08+00:00",
+ "generado": "2026-09-01T00:34:35+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -9,24 +9,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1183450",
+     "valor": "1223050",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes me duele que me duelas",
-     "valor": "558750",
+     "valor": "588950",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "50",
-     "tipo": "top",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "135650",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-31T12:57:52+00:00"
+   "medido": "2026-09-01T00:34:17+00:00"
   },
   "VE": {
    "consultas": [
@@ -124,24 +124,18 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "100",
+     "valor": "2624250",
+     "tipo": "rising",
+     "variantes": 3
+    },
+    {
+     "consulta": "migrantes españa",
+     "valor": "60",
      "tipo": "top",
-     "variantes": 2
-    },
-    {
-     "consulta": "diferencia entre migrantes e inmigrantes",
-     "valor": "63550",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "noticias ceuta",
-     "valor": "54050",
-     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-28T15:05:14+00:00"
+   "medido": "2026-09-01T00:34:27+00:00"
   },
   "MX": {
    "consultas": [
@@ -184,22 +178,22 @@
    "medido": "2026-08-30T20:46:58+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 23.6,
-   "base": 6.9,
-   "ratio": 3.43
+   "reciente": 18.4,
+   "base": 6.0,
+   "ratio": 3.08
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 27.4,
-   "base": 5.4,
-   "ratio": 5.05
+   "reciente": 19.0,
+   "base": 6.4,
+   "ratio": 2.97
   }
  },
  "alertas": []
