@@ -1,60 +1,34 @@
 {
- "generado": "2026-09-02T10:47:30+00:00",
+ "generado": "2026-09-02T20:37:11+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "2a0d348fc2d9": {
-   "id_hecho": "2a0d348fc2d9",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTEV3MzNZamhfM0FZTDg2ZlJXSV81QVZPeDRYOThIWEpSR1Y0V1ZONkkzM21fcEdXNW9SeGcxQUkwNVVfLWh6aExiaTdMVlR4d1pDZHY1cXVWaWg0Y2MtZEpZYVNLelIwUXJiQVFpZkRKdFRzQ0VWNS1NRWY0bF9nMmxuZkdUN1E1WnpETnF4UzFMLWZHaEc5djhJVFl6c2FuZzlvZGhTR2RiQTRicVF4VjdxZ1pYSlFpeVNicGcwdU5CenZyUmdLT0JTbzE2RkcxTVpvRDlqNVoySWJGMWRKRU1JVdIB6AFBVV95cUxQRVpmS1E2QlN1OXFiampvYzZFWjNOX3dRaDFuZ3doMm1GZjBIOVFwVmgyemNYS1lxX1hJU3pCN19zVFhDVnVpU0w2OFRaUzBpX284c3RyYlNpS1Izb3YwT2V2b2FwRUNjbzBGZTdNeFpNZHdFTHY4QmxCa2s3a1prblhGV3NScEhnZ09JLUdmeTFjd3ZBdVdoNkdHalY1YndMRmhxQ21RTWE4X1FKNkVmUldDTWV6SFpHM0xQWEpDd3ppRWdFTWhYc3JscVJrbU1zRjJDMDR4RkpObkFLT3lSbnFSa24wVVNk?oc=5",
-   "termino": "regularizacion",
-   "geo": "ES",
-   "titulo": "El empleo registra en agosto su menor caída desde 2021 (-162.840 afiliados) gracias a la regularización",
+  "7064a7598d5b": {
+   "id_hecho": "7064a7598d5b",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWWZkSGtjQjNMWkFsWDUyQUtHUGY1c0h5a2xEN3VFcURFcUZ1Qm5Bb1ZzVlQ2VjRqcUhyRTRQMjkwOENOaEFla1J5NUlYUkxzVUthRkZhRTFPc0FrWmY4UnhPT1VaVzFsbThERTNMNkRGUjNSRkJjZGRJSjdBOVl1RjNVcXZYOWdETy1kWVFxUDZqQnVMMHpuQ3FrN2p2bGVqS1E?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "DHS anuncia resultados de operativo migratorio en Nueva York",
    "importancia": 8,
-   "velocidad": 6,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 25.4,
-   "base": 37.7,
-   "ratio": 0.67
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
   },
-  "5af959bdf2b6": {
-   "id_hecho": "5af959bdf2b6",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTnFyUlR1UnVqc3pIVEF6RTdacnVFWUYxc0lRdDFzUDBIaUprclljbW1MUlZIdWdiOTI4aXE5WFpMbFBVSE1YUDc1enFHYUw2RnFvNVhRQ1BCdDA0RGlQNVpodTNPYlMxR2tyYTdGQVlvazdrdnMtT3Bma0JJdlJfdXVWNUFfQWRpUXlNWFJyTy00NmtSeVFSeUk0WEVrQ0Ruay1vMzlSVU01ZDFJQ3B6Y0t0aU56LXdJTEpQTUhFWkVRSkZVZlBPUlpkR1BJeWpTQkN2LTFrbHNBOUdP0gHwAUFVX3lxTE5BdHlraE4zdEdRWkNjVV9IcUVyUnZsN1FjSW5mb2dwWnQ4YjdnV1BCX3I1czZlUk03SDNmVHJoUzBkRDdZUFdZTHdQak1OWHFra1N3UFpvOEZIcGxqc2pIUXN3UkVsTlEtV0ljcTUwOHB2Mlc2ZlpTU19vTzE3YzVNWXE4ODVHeTdpUTQ2a01TSzlMYzF4MGJDaEZadXVrdlRybWRPQVNXeFVvdDBxbDc0OHRsamJ3di1HSlpVOWhHSjVfenN2NTBNSm5OaVdhX0c1dWVRRXNzY2hubnBLaUZLZzlON2hkUVBpb1B5OGZ2Vw?oc=5",
-   "termino": "deportaciones",
+  "e21563f7aeb8": {
+   "id_hecho": "e21563f7aeb8",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTDVUYVFCU0FxOFRhUDJIZHZYTlpROERtanMzT2F5RW4yQjB0ZXpzeUJRSVhZeUVxOW5NZ1Q2OTlRZFp4SUdDRnFSMUdoU2Q5UG9ORGpjNG1NQmk4SHJIcFVxdGdkRnRxZ3VHd25SdWU3a2JQaENrVDZSYVVWWUEwclYydTFkbTJWdlVreWcwaTN3dW1lSUd2cW9lVUpxamtlTzUzeUNZOTRqZW95NUhKLVZPRkpqbE5pRHE0TjlTamJJOXhMQ2lrT2JmYWtwVEdKalJCQnlGZWVtdFM5MnI0UVNldDYyQQ?oc=5",
+   "termino": "migrantes cubanos",
    "geo": "US",
-   "titulo": "Administración Trump anuncia más de 2.100 arrestos de migrantes en Nueva York durante un mes",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 10,
-   "reciente": 15.7,
-   "base": 4.5,
-   "ratio": 3.48
-  },
-  "ddad64a6f4af": {
-   "id_hecho": "ddad64a6f4af",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPMG5Zb0JyY1RleHlOWnp6VER3QjJXNXBOeVlMSjFaak84OW5CZkVmVFdXVERmWHJYSFZ4c1pTUlZvX1NoZDFNUjcyZ0xXSjlGbjIwM0EwWG1nRUxoUTJtWE1ZV3pyLXB0azJXMV9vd0RTbEQ4S2lQLUdFb2xpQjNRUjkyUzNUaDM4M1NteFZtWFlBSWpuNDBqZWNIejZEd2xnMW16TWNjVU12Z2VuZFdsR2tweGRYUFdnXzBkNWZXTkV5U1NHcTRCSjVYV0NiMXVjNzFwdVdDbHRmTWdSbERnQzRxczE3Mlk1WTZXMw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "50% de los detenidos por ICE no cuentan con antecedentes penales, revela estudio",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 10,
-   "reciente": 15.7,
-   "base": 4.5,
-   "ratio": 3.48
-  },
-  "1e3e36802b34": {
-   "id_hecho": "1e3e36802b34",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOX0ZOc3ZYUXBpWjlEd2QybWV2QUZHRjJsNFp3eGl0NDdfNnR3Vl9xVlFuMEdRQ2dWRU9MUE1VVVRmdFF4bVlSc3JSMlpMYllTYXl6TlNySUJkTzJRQnA5XzE4RWt3V1pFQjBLRnpST2ttWU9ia3czU29MNmx3M0lFM3U0V2NnTFlDMlZDbXNoWTR5LVJYa2E5VkU4VTUyU3phUl9nTV93T3QtNVJHUW13VFFGTFVXNjR5UDBsM1VYVUlPYmUzdU9IYXduTGVZeXM?oc=5",
-   "termino": "remesas",
-   "geo": "MX",
-   "titulo": "Aumentan remesas enviadas a México un 3.1% en los primeros 7 meses del año",
+   "titulo": "Once cubanos llegan a los Cayos de Florida en una embarcación robada",
    "importancia": 6,
    "velocidad": 3,
-   "puntaje": 1,
-   "reciente": 55.4,
-   "base": 38.8,
-   "ratio": 1.43
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -62,18 +36,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1314250",
+     "valor": "1201900",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
     },
     {
-     "consulta": "los migrantes",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "migrantes me duele que me duelas",
+     "valor": "608050",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "161200",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-02T10:47:13+00:00"
+   "medido": "2026-09-02T20:36:54+00:00"
   },
   "VE": {
    "consultas": [
@@ -125,24 +105,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "453350",
+     "valor": "432000",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "202200",
+     "valor": "216700",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes españa",
+     "consulta": "migrantes en colombia",
      "valor": "100",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-30T11:30:27+00:00"
+   "medido": "2026-09-02T20:37:03+00:00"
   },
   "US": {
    "consultas": [
@@ -225,22 +205,22 @@
    "medido": "2026-08-30T20:46:58+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 24.9,
-   "base": 8.8,
-   "ratio": 2.81
+   "puntaje": 3,
+   "reciente": 26.6,
+   "base": 15.3,
+   "ratio": 1.73
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 24.3,
-   "base": 7.5,
-   "ratio": 3.24
+   "puntaje": 9,
+   "reciente": 27.0,
+   "base": 9.3,
+   "ratio": 2.89
   }
  },
  "alertas": [
@@ -259,7 +239,7 @@
    "disparada": "2026-09-02T10:47:30+00:00",
    "velocidad_inicial": 5,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 9.8
   },
   {
    "id_hecho": "ddad64a6f4af",
@@ -276,41 +256,7 @@
    "disparada": "2026-09-02T10:47:30+00:00",
    "velocidad_inicial": 4,
    "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "ebbe43af2725",
-   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQQ3RwWUJjeWlhZUoxWl9RdnlvemtkcXdTX3dqc2dQXzJWTnR4X0ZRVXBIeUxfMHdySHp5eVo1NVpGQ1NaeDlPbHhmaTV5NUc4XzFxN3dBWGNFZFF5Q2hDUzNkczFXX3MtaThqQ3ZNdlVja0V5Ti0xNFZrTFlqc1BGWVhiTXNoNzQtYjQyQ3o5YkY3QURVLVU3TGFiTEtwajNic2NiS2RSdjJ3VTlmYURNTmU4YlpTcVl4eWx1ekRXS1FoMm9iQ0d0eDNpTFlsX2N2M2c1bENwOWIxanNBTy1BX3NJYmdsZjE1RTJ4V2V4dDRIRzJpMTJLZWFfR3EtdkRsQ0w5WEZhczlQZG1BT1BETTN5TkdOVWZEWG1RRzdiOEpKd9IBtgJBVV95cUxNY0s2dzlYalJNQ2NRQVVJQ21XandKZUk1Tm1FN0l5SExPdXhhTFZUNE5uc1NSR2ZBOFlPYmlabzRVdng3Mkt6ZzkwVHMtOXVMU2ZRTVlMTWVVb3I3T3ZPUjc3eWNaV1hvRzZxbkk2Z0JYODFaMU9fRjhNMk00RmpJdzdFazBUN1lYRFBZclBqZFpCOGdWeFhVQ2tyZ2F3TlJNSjFfZ09CZUUzR1FUQmp0d0kxcFBMVFdoUEpnNUNzZlVXMTBJXzl0dTZHOXltOHJsMlJTS1daemxPRHZlVG1nSHNKa0c0VGxUaXNYSG9mSG0zdm5sc0hSaUFRQWhRakNfbzU1VnBiS3ZJdHMzWl9NV01qT05RRFg3aHpzYmtDUkZCTDE1dU5mcmxMbTF6UnE2ZFBNSnRR?oc=5",
-   "termino": "estatus migratorio",
-   "geo": "US",
-   "titulo": "La Administración Trump pelea en los tribunales para que los indocumentados paguen hasta tres veces su tarifa actual para estudiar en la universidad",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 19.6,
-   "base": 6.5,
-   "ratio": 3.03,
-   "disparada": "2026-09-01T23:06:21+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 11.7
-  },
-  {
-   "id_hecho": "02470b1489ab",
-   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPdFFZMDZmUjVUcEhQbk1RMmRwNWc1cVg3dnE1SmprNzZUUFlPMVFzb2dOaXdjczMzdFkzUG52QzRxQ0lFbEJpOW9vbTI2WlVDUzlYLUhWZW5hdUk2dkt5QlZseFhra3BpZ3dybDNXMElUNWhjbldqQ3poZlNHYjhFRGxKRmVhSTIySUxlalNVRkxkVUpXcWxRWXI0b0pGVUZoa3MwclJMelpsQ2hLM3d0cFNxbG1IWERmVFA5ZklnN21Ta2VTMi02NmQ5UUJkZC0teWpMQnl5cjhOdlhLMUJ2X21zcDczVTNrclJCVWZheWRhc0dHdE15OFBZQW5pNDQ2Rm0tRFVTYllVdGItcVVFaVpHbXpaTTJjRmRsWDRqNlVzRERGaUU2a2gwalluQUHSAbQCQVVfeXFMT0dnOW1Nc281VjVubXoxb2VCS2hxcXdDQm5WeHg3TXN2UGZWZUlXUDBiOG5fYjBLLWhmSTdJNUIxZ0NXcjc2ZXRVekNuenFnQXl3djh2UGI4MmpQYUladFpzUmpGQldOUHpVaUM3dzhucTRXUUFaZ3JITXhBdzdJQ2ZzdjRBbk5QbUlKMzlMY0hWWlN1NmpUM3UwdkFnU25xZm1OUVYteThRa0V5ajhhd1VtR05yVFQyMjdGNzFyTDA5b0lxN3pOZWJucndwSzRMX0tpVVZSamxSS3RIZzExWmJqdHdxcjF4UlBHalRvQW14R05RS1c1RFVSaGppUlJBZ2NTNEVuREdLeWhFVHI1aG1OcjBqX1RpU05vRWV2WTNySldxdktUeWFMTU44S1NONTUwcEs?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Arresta ICE a más de 120 indocumentados en club de Memphis",
-   "importancia": 8,
-   "velocidad": 11,
-   "puntaje": 6,
-   "reciente": 15.6,
-   "base": 6.6,
-   "ratio": 2.35,
-   "disparada": "2026-09-01T23:06:21+00:00",
-   "velocidad_inicial": 7,
-   "desenlace": "escalo",
-   "horas": 11.7
+   "horas": 9.8
   }
  ]
 }
