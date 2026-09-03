@@ -1,33 +1,20 @@
 {
- "generado": "2026-09-02T20:37:11+00:00",
+ "generado": "2026-09-03T10:47:50+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "7064a7598d5b": {
-   "id_hecho": "7064a7598d5b",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWWZkSGtjQjNMWkFsWDUyQUtHUGY1c0h5a2xEN3VFcURFcUZ1Qm5Bb1ZzVlQ2VjRqcUhyRTRQMjkwOENOaEFla1J5NUlYUkxzVUthRkZhRTFPc0FrWmY4UnhPT1VaVzFsbThERTNMNkRGUjNSRkJjZGRJSjdBOVl1RjNVcXZYOWdETy1kWVFxUDZqQnVMMHpuQ3FrN2p2bGVqS1E?oc=5",
+  "e533d0be5707": {
+   "id_hecho": "e533d0be5707",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORHZ4bTdRQ2ozZlV2SHBTUURVRTFUSWVGaUlXWnF1VF9ITjg0eHZabXlMZjhQSmFzdnpyQ3oyNFRLQnExX2RGMHFnWVNMQmxtTzI5NjRPSnIwVVE0N3FIb3lZWWMtWGxxdldteDNuSnVqclFqdVFPNEF0VGdKUDV0STJ2V2kxV0doM2hMVDk5eXVVQXhmVl9qNHRiUEFfT3FmazVRWTdrRlBLQXM?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "DHS anuncia resultados de operativo migratorio en Nueva York",
+   "titulo": "EU detiene a más de 2 mil migrantes durante operativo",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
-   "ratio": null
-  },
-  "e21563f7aeb8": {
-   "id_hecho": "e21563f7aeb8",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTDVUYVFCU0FxOFRhUDJIZHZYTlpROERtanMzT2F5RW4yQjB0ZXpzeUJRSVhZeUVxOW5NZ1Q2OTlRZFp4SUdDRnFSMUdoU2Q5UG9ORGpjNG1NQmk4SHJIcFVxdGdkRnRxZ3VHd25SdWU3a2JQaENrVDZSYVVWWUEwclYydTFkbTJWdlVreWcwaTN3dW1lSUd2cW9lVUpxamtlTzUzeUNZOTRqZW95NUhKLVZPRkpqbE5pRHE0TjlTamJJOXhMQ2lrT2JmYWtwVEdKalJCQnlGZWVtdFM5MnI0UVNldDYyQQ?oc=5",
-   "termino": "migrantes cubanos",
-   "geo": "US",
-   "titulo": "Once cubanos llegan a los Cayos de Florida en una embarcación robada",
-   "importancia": 6,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
+   "reciente": 14.6,
+   "base": 7.7,
    "ratio": null
   }
  },
@@ -36,24 +23,18 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1201900",
+     "valor": "1220500",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 2
     },
     {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "608050",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "161200",
-     "tipo": "rising",
+     "consulta": "los migrantes",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-02T20:36:54+00:00"
+   "medido": "2026-09-03T10:47:34+00:00"
   },
   "VE": {
    "consultas": [
@@ -190,73 +171,32 @@
   "UY": {
    "consultas": [
     {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "231350",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes ceuta",
-     "valor": "200",
+     "consulta": "ceuta migrantes",
+     "valor": "40",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-08-30T20:46:58+00:00"
+   "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 3,
-   "reciente": 26.6,
-   "base": 15.3,
-   "ratio": 1.73
+   "puntaje": 10,
+   "reciente": 22.3,
+   "base": 7.6,
+   "ratio": 2.94
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 27.0,
-   "base": 9.3,
-   "ratio": 2.89
+   "puntaje": 8,
+   "reciente": 22.0,
+   "base": 8.6,
+   "ratio": 2.55
   }
  },
- "alertas": [
-  {
-   "id_hecho": "5af959bdf2b6",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTnFyUlR1UnVqc3pIVEF6RTdacnVFWUYxc0lRdDFzUDBIaUprclljbW1MUlZIdWdiOTI4aXE5WFpMbFBVSE1YUDc1enFHYUw2RnFvNVhRQ1BCdDA0RGlQNVpodTNPYlMxR2tyYTdGQVlvazdrdnMtT3Bma0JJdlJfdXVWNUFfQWRpUXlNWFJyTy00NmtSeVFSeUk0WEVrQ0Ruay1vMzlSVU01ZDFJQ3B6Y0t0aU56LXdJTEpQTUhFWkVRSkZVZlBPUlpkR1BJeWpTQkN2LTFrbHNBOUdP0gHwAUFVX3lxTE5BdHlraE4zdEdRWkNjVV9IcUVyUnZsN1FjSW5mb2dwWnQ4YjdnV1BCX3I1czZlUk03SDNmVHJoUzBkRDdZUFdZTHdQak1OWHFra1N3UFpvOEZIcGxqc2pIUXN3UkVsTlEtV0ljcTUwOHB2Mlc2ZlpTU19vTzE3YzVNWXE4ODVHeTdpUTQ2a01TSzlMYzF4MGJDaEZadXVrdlRybWRPQVNXeFVvdDBxbDc0OHRsamJ3di1HSlpVOWhHSjVfenN2NTBNSm5OaVdhX0c1dWVRRXNzY2hubnBLaUZLZzlON2hkUVBpb1B5OGZ2Vw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Administración Trump anuncia más de 2.100 arrestos de migrantes en Nueva York durante un mes",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 10,
-   "reciente": 15.7,
-   "base": 4.5,
-   "ratio": 3.48,
-   "disparada": "2026-09-02T10:47:30+00:00",
-   "velocidad_inicial": 5,
-   "desenlace": "vigente",
-   "horas": 9.8
-  },
-  {
-   "id_hecho": "ddad64a6f4af",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPMG5Zb0JyY1RleHlOWnp6VER3QjJXNXBOeVlMSjFaak84OW5CZkVmVFdXVERmWHJYSFZ4c1pTUlZvX1NoZDFNUjcyZ0xXSjlGbjIwM0EwWG1nRUxoUTJtWE1ZV3pyLXB0azJXMV9vd0RTbEQ4S2lQLUdFb2xpQjNRUjkyUzNUaDM4M1NteFZtWFlBSWpuNDBqZWNIejZEd2xnMW16TWNjVU12Z2VuZFdsR2tweGRYUFdnXzBkNWZXTkV5U1NHcTRCSjVYV0NiMXVjNzFwdVdDbHRmTWdSbERnQzRxczE3Mlk1WTZXMw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "50% de los detenidos por ICE no cuentan con antecedentes penales, revela estudio",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 10,
-   "reciente": 15.7,
-   "base": 4.5,
-   "ratio": 3.48,
-   "disparada": "2026-09-02T10:47:30+00:00",
-   "velocidad_inicial": 4,
-   "desenlace": "vigente",
-   "horas": 9.8
-  }
- ]
+ "alertas": []
 }
