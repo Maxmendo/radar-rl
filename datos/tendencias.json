@@ -1,15 +1,28 @@
 {
- "generado": "2026-09-04T10:49:57+00:00",
+ "generado": "2026-09-04T20:24:13+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
+  "a6a25af4b577": {
+   "id_hecho": "a6a25af4b577",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPNktoZzl2V0R0Q2FQRVBHTE5KUGZxT0IyeURlZXJJZVh2Y0lrRGV4N3NFLVNuSXpkcWYtTFpaVXZ5V2FmYmlYcWMxVTRkRlZMQnN5MzJjVV85dUIyMmlRd3ZGbFU1QVVDcGRCckI1WURybGdIWk43YXpGTUU4WTVIQjVJeG1WUWJsTHFfTzBuTTdwdmtYOUlFT2dkdlhhM2ZYdm56bW9BdnN0enFSR1RsbTBId2VUWTJiSmlYM2s4SU5zMlZ1dUVEdWpCcU9TNXJucDhZWjFoa0hjNTFKYk5XcE10d1o5MjdtU3J1b0h0cVRxV256aVg3M2xWS09tOW9ZTzM1ZDRoWXBXRHBZYlVjN2x1RnZFYjh5RGVOa29n?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Acusan a un agente de ICE de mentir al FBI sobre el tiroteo contra un inmigrante venezolano en Minneapolis",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 6,
+   "reciente": 15.4,
+   "base": 6.6,
+   "ratio": 2.34
+  },
   "49e885db7f4a": {
    "id_hecho": "49e885db7f4a",
    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdkktcmtUSW5XMHFxMXpBdGJod3M2TUZaNG1XOTVoMjVZZzZ0YXByLU9jYTdFYi1xWEM4QjBvLVRkNGZWRE5HQWVUUWUxRkVWV2c0T3R1bkZIdzVMckQ0ci1HZ191MzM1dmZhbTgzT2t0ZmdKcUVXcVl4UmEtY2w3YkxHQUFWWmNvNFRveldVR3lJbmEyRl9lQnBoUFJRbXBlWVlTUTc3TUtIYi1GSldRLWRvZGZfTVllU212ODdrTENMdlBwSXB1bWlZT1dWeFFqZ3B4UHdBcjFzZ0xiR0RJQmp4MDNjMTk3MUdDdGV3VV9rUkwybHZNOFp5X0IwWVZRdkE?oc=5",
    "termino": "migrantes indocumentados",
    "geo": "US",
-   "titulo": "El Departamento de Justicia obliga a los estados a informar sobre inmigrantes sin estatus legal",
+   "titulo": "Departamento de Justicia exige a estados información sobre migrantes indocumentados en su territorio",
    "importancia": 8,
    "velocidad": 4,
    "puntaje": 0,
@@ -17,30 +30,30 @@
    "base": 0.0,
    "ratio": null
   },
-  "dddbbe5b8f06": {
-   "id_hecho": "dddbbe5b8f06",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMmMzSzlydDZ0QjF0NG9XR2VIaDRrZDJaeElMbFN6eUozemRXSHBmM2ZrVFNza0txaHZncjMyVnVPbkZ5ZTdOMEs0MlIyVlc1MnhObEttdDY2b1RnSzduVF8xVzNVMk9JYUdZZ3BsYng2ZzNzaVhnR1VNeVZsUmxYLUsyNnFNRkwtVXh6T2ptbURYRXlxQlZfOGRhS3JYdnFENmJwZ19qRWtZYXpOdjVYbXQwa0piZkp3RFdpZlJLb0lHSV9NcWduVjlSWEdLY0haTmFjUkZabE1JNDR6MmIxdUxNcEtBYnR2Q2c?oc=5",
-   "termino": "migrantes",
+  "1917801a7cfe": {
+   "id_hecho": "1917801a7cfe",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcVZWZzNNdi1yVzkwRkhCbU5tODAwRElESGJOTkVfM0pwRzdHQVFpZlNRREVYMnBkN0tQbWlDXzhGODFwUUFVUzBDVG5vU1lfUlVqZHlSeWFrRFNhclZIMU90dzc1cWFkUFpRZlFUTm81aWY4WDdKTl9Vbk5qcmdZcnJwVWpSTEk4OE5IUlVwaEZuM0o0S2s4N2g2VTJ0R1VkWG9qZXd2bmxhXzVSdklEam83aFFQbUVGTW1FdEYxVFdxUHZSOE5qMVhicGxxTFhub1hWbU1haV81alpheEZrZkdnQnFPQWtTYnFHQTJ6a2g1VFFFUmJId0RB0gGUAkFVX3lxTE1IQ2dHNWFlbWtEakdQVnBPWnpjVWR3Znd2LTZqMzlKTktPelVMdnJja1dLMWhtdjVLcUFhRXl0eTUyV2hQdjVKb2NCYmdoVm9vNzFESkw0cVR3T2d2dndHMC1Ya3ltdWstbWdUbVZzR0RPNFZUV3NheXQwNWxVZXZTeGYybDFmclZSZVcyc0ljSkR5SHM4bHR6eFN3NW1OWmd5cnZIZlZYcWY1cEpWV3JqNnFQZVkyeVJBT3N5T2dySlFoSVlXejc2MVhtUkk4TWdrTkl6VXZXcGY2RHcyd3RINDV6MktHTEJEbzlJU2NHY2ZwbmJlQl82dTNwSnRlT2JpVXdvVGRTREdjbzc4UDh4TjE3bA?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "El gobierno de Trump amenaza con retirar fondos a los estados que no compartan datos de inmigrantes indocumentados",
+   "titulo": "¡Como Tetris! Casa Blanca lanza juegos en línea para construir muro fronterizo y deportar migrantes",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 6,
+   "reciente": 15.4,
+   "base": 6.6,
+   "ratio": 2.34
+  },
+  "8f19f7f532ab": {
+   "id_hecho": "8f19f7f532ab",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxObEJSMnpDS0VOd3NjaG5sOUNfd3ZMak1ncV8wWDNwN3EtZXE0aU9nam9Da3dJQVZEdlVvTU5zY1ZjTlM0RTlKNkNBZ0E4M3c5SDYtWU0zaWpiYlFGdng1bHRiUGhHbDJCSEdjM3NhT2ZUcC1nRk1jNE5WVk1ibzZMclMwTjFUUGJIWTYxX29jSm1xVlAyRVhFVFNXY21UcUd4NVVzQm8zV0ZaQVNfbVRuMzdvMlRfU1hPZjZBOHRiYlpaWFB3UlY4WlpTR081aHlrbTA0RmFfWFRYa1VReVdfSDE5ZmVtN3I1cEFoMG9YY0ktTlFXU3RWMWZUNNIBlgJBVV95cUxNZXJmYUpBcDdtclp6azIyVXZKSGVKU0ZpQmk3Z095V1BYX3V4OEFUVnVNcmdkbnF2VktyUktCenNQbHFrREJPcEdaY0ZoRXlzWGZPQ2pOVVpIQ2h2a2xoQndYay1WWDdmb3pXdVhvV1ZJTkxCNjYyRzZxX2xwQ1d4YmhGcnZYY3ZSdnA4N2pkb2NsQnN4VEZBZnJOa1dCOGE5eDQ4SVlrSXdhczN0Nmd6cXlKSzV2elhzbkhwLWRYZk9yQjNTbFNrc1oyMVlpTkU4eXZjcnBSSUEyNlNrMTZVcldpWVNXcjc5RnYyQ205REN3OVJhaHdsQ0xtY3k1WnRBYnZCQjBYaGtPS2VRRVFhTXJTcUo2UQ?oc=5",
+   "termino": "expulsión de migrantes",
+   "geo": "PE",
+   "titulo": "Keiko Fujimori pide al Congreso facultades para acelerar expulsión de migrantes indocumentados",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
    "reciente": 0.0,
-   "base": 1.5,
-   "ratio": null
-  },
-  "6a608d9ece1b": {
-   "id_hecho": "6a608d9ece1b",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOX0xhbnVYM2hJN2JoNm80WTlQd1VLMVh3TGpvSDV2NFhQMDVjRUdKY0V0bFJxVko0c1dBTVphMkszVUxaVW9ZNE9vSkNFTzdwanZjcjM4TmJnUmlkcHJOd1ZkenV6RER4Vllvby13bW5ETHdlb3dLUk9VZm10ZllnZUxDYVV5cnluZGoyYkwxXzloblROZjhSLTlaajBvQkhiRC0wbUxGVDFqRmM2VzV5MUxSeHZzNEthczg0X0hjbVhBNUdxcXN2WGl3?oc=5",
-   "termino": "migrantes",
-   "geo": "AR",
-   "titulo": "La Policía Federal realiza un control migratorio en Retiro: hay cuatro detenidos",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 5.1,
-   "base": 4.7,
+   "base": 1.1,
    "ratio": null
   }
  },
@@ -212,23 +225,61 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 0,
- "paises_sin_datos": [],
+ "proximo_pais": 1,
+ "paises_sin_datos": [
+  "AR",
+  "VE"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 24.9,
-   "base": 7.1,
-   "ratio": 3.5
+   "puntaje": 9,
+   "reciente": 25.1,
+   "base": 9.0,
+   "ratio": 2.8
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 25.0,
-   "base": 6.8,
-   "ratio": 3.67
+   "reciente": 25.6,
+   "base": 7.4,
+   "ratio": 3.45
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "a6a25af4b577",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPNktoZzl2V0R0Q2FQRVBHTE5KUGZxT0IyeURlZXJJZVh2Y0lrRGV4N3NFLVNuSXpkcWYtTFpaVXZ5V2FmYmlYcWMxVTRkRlZMQnN5MzJjVV85dUIyMmlRd3ZGbFU1QVVDcGRCckI1WURybGdIWk43YXpGTUU4WTVIQjVJeG1WUWJsTHFfTzBuTTdwdmtYOUlFT2dkdlhhM2ZYdm56bW9BdnN0enFSR1RsbTBId2VUWTJiSmlYM2s4SU5zMlZ1dUVEdWpCcU9TNXJucDhZWjFoa0hjNTFKYk5XcE10d1o5MjdtU3J1b0h0cVRxV256aVg3M2xWS09tOW9ZTzM1ZDRoWXBXRHBZYlVjN2x1RnZFYjh5RGVOa29n?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Acusan a un agente de ICE de mentir al FBI sobre el tiroteo contra un inmigrante venezolano en Minneapolis",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 6,
+   "reciente": 15.4,
+   "base": 6.6,
+   "ratio": 2.34,
+   "disparada": "2026-09-04T20:24:13+00:00",
+   "velocidad_inicial": 4,
+   "desenlace": "vigente",
+   "horas": 0
+  },
+  {
+   "id_hecho": "1917801a7cfe",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcVZWZzNNdi1yVzkwRkhCbU5tODAwRElESGJOTkVfM0pwRzdHQVFpZlNRREVYMnBkN0tQbWlDXzhGODFwUUFVUzBDVG5vU1lfUlVqZHlSeWFrRFNhclZIMU90dzc1cWFkUFpRZlFUTm81aWY4WDdKTl9Vbk5qcmdZcnJwVWpSTEk4OE5IUlVwaEZuM0o0S2s4N2g2VTJ0R1VkWG9qZXd2bmxhXzVSdklEam83aFFQbUVGTW1FdEYxVFdxUHZSOE5qMVhicGxxTFhub1hWbU1haV81alpheEZrZkdnQnFPQWtTYnFHQTJ6a2g1VFFFUmJId0RB0gGUAkFVX3lxTE1IQ2dHNWFlbWtEakdQVnBPWnpjVWR3Znd2LTZqMzlKTktPelVMdnJja1dLMWhtdjVLcUFhRXl0eTUyV2hQdjVKb2NCYmdoVm9vNzFESkw0cVR3T2d2dndHMC1Ya3ltdWstbWdUbVZzR0RPNFZUV3NheXQwNWxVZXZTeGYybDFmclZSZVcyc0ljSkR5SHM4bHR6eFN3NW1OWmd5cnZIZlZYcWY1cEpWV3JqNnFQZVkyeVJBT3N5T2dySlFoSVlXejc2MVhtUkk4TWdrTkl6VXZXcGY2RHcyd3RINDV6MktHTEJEbzlJU2NHY2ZwbmJlQl82dTNwSnRlT2JpVXdvVGRTREdjbzc4UDh4TjE3bA?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "¡Como Tetris! Casa Blanca lanza juegos en línea para construir muro fronterizo y deportar migrantes",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 6,
+   "reciente": 15.4,
+   "base": 6.6,
+   "ratio": 2.34,
+   "disparada": "2026-09-04T20:24:13+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
