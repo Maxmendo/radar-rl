@@ -1,73 +1,47 @@
 {
- "generado": "2026-09-03T20:37:09+00:00",
+ "generado": "2026-09-04T10:49:57+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "0c2bbd8913cc": {
-   "id_hecho": "0c2bbd8913cc",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPNHZXbDZTYno2TVB2ZE5ZWWZHMVRBR09iTzBPS1BwWnRURHVPcWZ6SHRLZmtJSjF6OC1PeDEyUHBHM0JNZUw0TVpnV0FlZUVoVkNFZzRDWmpaOWtnRzhLbmQtRFVtdmY3ekxJSU9UMkl2eWQ4cng0STlKNW1CRzUyN1BKOEtNR3I1ZUpYZE15QnoyTVR1UmdMbjBUX2ZGRy11R295S185Y1Bfc1FZZHFJLXI4RW5ELTNWNkhUZjZiZ0lHdktQbkEwY19RNlVEdVNrN19yUFlnVWhMSG1kZTZwZHBrVEVWYk1uTWRISVN1N2tQSWc5TWY4U0ZDUEtfUdIBgwJBVV95cUxPVU56a3ZjVkRIcWpSR25IdFFRTmtjVFJmaDJKalZ3N3NjOENSOEQzNXpscm02OFg1Z3d6YXFZVVdPU2xOTDJSMkdwVy0yQjVldk5JVXFDcVBiOWZnczJneFEwdEh5NTdlVnVrSDFIM2h4bWJYelMzUjZrMEpLVERiMUFmV053QVVFZmlOckhoZlpzRjZEMmNleklraHVJakJWd1NpSjhMWUNHMkQzTWVCcmV5TkE5cDR2akQ0ejFGUTNnYUxuU1h3eUthZThvRDN5TEstcjVhdzJTaGpDb1dPZDYxelhMQ2p0TzhCaXFaaEJFSHI3ZmlzbjVRM3lITEZQRDMw?oc=5",
-   "termino": "deportaciones",
+  "49e885db7f4a": {
+   "id_hecho": "49e885db7f4a",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdkktcmtUSW5XMHFxMXpBdGJod3M2TUZaNG1XOTVoMjVZZzZ0YXByLU9jYTdFYi1xWEM4QjBvLVRkNGZWRE5HQWVUUWUxRkVWV2c0T3R1bkZIdzVMckQ0ci1HZ191MzM1dmZhbTgzT2t0ZmdKcUVXcVl4UmEtY2w3YkxHQUFWWmNvNFRveldVR3lJbmEyRl9lQnBoUFJRbXBlWVlTUTc3TUtIYi1GSldRLWRvZGZfTVllU212ODdrTENMdlBwSXB1bWlZT1dWeFFqZ3B4UHdBcjFzZ0xiR0RJQmp4MDNjMTk3MUdDdGV3VV9rUkwybHZNOFp5X0IwWVZRdkE?oc=5",
+   "termino": "migrantes indocumentados",
    "geo": "US",
-   "titulo": "Trump intensifica la persecución contra migrantes",
+   "titulo": "El Departamento de Justicia obliga a los estados a informar sobre inmigrantes sin estatus legal",
    "importancia": 8,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 14.1,
-   "base": 5.5,
+   "reciente": 0.0,
+   "base": 0.0,
    "ratio": null
   },
-  "e88ca5ceecb4": {
-   "id_hecho": "e88ca5ceecb4",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQQ01qQXJJWDhMVUw3QVR1VTFoUU1wb0lLV3FTYjh4cXc5dFR1ZTFuaWhubUlUTTQ0WG5Dck51NjV3RkgxYjRJdldXcEh1MkNZZk9xTWM0NmtJMU9aNjdZd0ZjbTZkUExhVjhOZGVoZnlSdVVfcEd6cHRUaGlVU0dQVzZFeGxKMTJFWTBhYmt2SG4zTEVncWJjNkV0dDZCZ0lPQVUzT2JfRG1pYzFrMlc4ZGRFVUZBT2dHUUFHUjA1OUhOMVBKZ1lUYTVueWY0UDVjdmRhZmdlMkZ3TldnTEZ3NzFJSzE2UXfSAYICQVVfeXFMT1hOOFlTMlRrYVhsQkpYeFdzUUxralNVTFJ2UjRBZ2xVSmF0WGpaNG1ReGFGWHRlRmJUYThlWHh1Q2lsbVZnblNPb3BUbzNteU9jckRGVUROQmVGMDNSbmF3eWdpTkUtQWlYQVJGbHF1b1pvMGJOdkI0bm9XT1htVFRveG9rbWpjcW9jZzQ4aEVzbDVUTWtCamc0d0F2bTVmUlU5bFBJTnp2RzNHcllBeHhaeUgyWGZfaVdaUU51ZFp5VVdyQlpTQzFZMDFfYVdrLW5mRGFxN1RiWGJpckRuVVl1VXczdUxkR0V1Mmg4dThLY2hRYndLUDQ3TFJBVHZrYjJ3?oc=5",
-   "termino": "deportaciones",
-   "geo": "MX",
-   "titulo": "México pide a EEUU frenar deportación de mexicanos a Centroamérica: han sido repatriadas más de 2 mil personas",
+  "dddbbe5b8f06": {
+   "id_hecho": "dddbbe5b8f06",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMmMzSzlydDZ0QjF0NG9XR2VIaDRrZDJaeElMbFN6eUozemRXSHBmM2ZrVFNza0txaHZncjMyVnVPbkZ5ZTdOMEs0MlIyVlc1MnhObEttdDY2b1RnSzduVF8xVzNVMk9JYUdZZ3BsYng2ZzNzaVhnR1VNeVZsUmxYLUsyNnFNRkwtVXh6T2ptbURYRXlxQlZfOGRhS3JYdnFENmJwZ19qRWtZYXpOdjVYbXQwa0piZkp3RFdpZlJLb0lHSV9NcWduVjlSWEdLY0haTmFjUkZabE1JNDR6MmIxdUxNcEtBYnR2Q2c?oc=5",
+   "termino": "migrantes",
+   "geo": "US",
+   "titulo": "El gobierno de Trump amenaza con retirar fondos a los estados que no compartan datos de inmigrantes indocumentados",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 8.4,
+   "reciente": 0.0,
    "base": 1.5,
    "ratio": null
   },
-  "a492cee4fc01": {
-   "id_hecho": "a492cee4fc01",
-   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNMzNZWFJIZ3llbWVYV1hrazk5c3JuaGhFNHhOR1FuUlZZTE5ISE12blpwci10eE9lNzNneE5hWlZLVXZvV214dW81YzZyMmtCOWhvM0YzVUFseWJjc2FXbDNDT1lIWGRFUlBLYjRNTzJfWDNkQVBfZ3JFNDYxVzRiWWV3YXVzMGRYazZTc2pfNXlzbk02LVhJbVRoX2tnTnhIcFlKRmpDYWQ4V2hhOXZhZzJvTGhSelZZa0RyVWJPN3ZZcDB3NU13VWtVRnpVdms3eXFUZ0xCWE55OGFETTJnaWNMdXVycE5Yck9iUmllSFpydERlZThDYk9VM2NfSG1mbjBVOUFtamxvcS03WE9FeVd4Y09YM25IbTZIMEF4dld4d9IBpwJBVV95cUxPTG11NXpTQnNNNVVNODNwWkZ3V0d6Mkw5UXZrLVZrZGxKRjl4cW5mT3ZmV0UxTnVjemNqQUM0OERMYmFsdUVIS2k5MDBudW95dnBGQ1pXenFhVEExal9MQks0MVZ5WW8yYkNlRC16cXdSVnFPSTU4X2N1YmxseTR1RTdXRmxRWm0zLU53M2ZrVmJ3Rml0cmtqRm00M0x4WDZnSENvYzludmNlUVlOZ2xyS29xY3FDQnNKZFJqVEhCSDFNY3FzTkNjQjQ0Nk5vTHBwQm1zdlNqZEZEOFdTWTl5NDgxMFhCT0hqWmk5dEtGLVpSMHZhcXB0bkc5Nmg1Y1FJWUpLb3JSUDF5eTBycFdfanVUZFBNOG1mSkNzTnV6bl84YzVMeHNn?oc=5",
-   "termino": "deportaciones",
-   "geo": "MX",
-   "titulo": "Migrantes tamaulipecos permanecen en alerta por operativos del ICE",
+  "6a608d9ece1b": {
+   "id_hecho": "6a608d9ece1b",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOX0xhbnVYM2hJN2JoNm80WTlQd1VLMVh3TGpvSDV2NFhQMDVjRUdKY0V0bFJxVko0c1dBTVphMkszVUxaVW9ZNE9vSkNFTzdwanZjcjM4TmJnUmlkcHJOd1ZkenV6RER4Vllvby13bW5ETHdlb3dLUk9VZm10ZllnZUxDYVV5cnluZGoyYkwxXzloblROZjhSLTlaajBvQkhiRC0wbUxGVDFqRmM2VzV5MUxSeHZzNEthczg0X0hjbVhBNUdxcXN2WGl3?oc=5",
+   "termino": "migrantes",
+   "geo": "AR",
+   "titulo": "La Policía Federal realiza un control migratorio en Retiro: hay cuatro detenidos",
    "importancia": 7,
-   "velocidad": 3,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 8.4,
-   "base": 1.5,
+   "reciente": 5.1,
+   "base": 4.7,
    "ratio": null
-  },
-  "f9f195c7a99f": {
-   "id_hecho": "f9f195c7a99f",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdU9XQzQ5dDVuMWpKeTBhdjJlRWs2cjZtaWFUdnJwbGdtbG9qZU1BXzFkSDVBYWlxVnVta041SFItdjltQm5hVHJEOHVzUDlFMmtuX2VlckQzZkRzNEYwZGZWWGxsV283dVBBR3JmM2FON3VKRjlXNjJXdjFJbVpkRUdPeXNUQTdBeGhjamNPRmpKcV84NXZrWm1MSmJISnY1TV9yQkJybksyaDBJS1ZVSy1aYUxHTzlyamhPNmxDcGRHMzlrNWVYdjNDbjhrTHc1WUFqdVVzS0RhbWd2cHFvVQ?oc=5",
-   "termino": "migraciones",
-   "geo": "MX",
-   "titulo": "Rosa Icela Rodríguez destaca gobernabilidad, atención a migrantes y búsqueda de desaparecidos",
-   "importancia": 5,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 22.1,
-   "base": 4.9,
-   "ratio": 4.51
-  },
-  "f8c3d58bfd65": {
-   "id_hecho": "f8c3d58bfd65",
-   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOVENqVFE4S04zVW03RVczWEFqM2RsLVp4bWUtbDl2YnZuX3lYSkQ2SmhtX051ZnROZlFfVlhjX0Y3T0FoRUtScllMWS1KX1V4Y0IyTlhfck5YSTl6cFBndW9UZnMxVDlwMURjeThTQlByLW1TMVg5RjVjZWp3Y0FyQnIwQ3BVVVFwZ19RX0FENm1mYUhVQi1fdW5RZVVMYlNwMmRQSnZDYlBMTmI2blNuckF0LWlMdVQzVjc3UWVzbXRmeEoyN1dKdUs1ZTVPaG5UYnNTRTdjOE15cnhFdzlvYngtaG5HR0FwbE11SHA5WmhGN1EwUDNGSXpidGZjc2stZllvSUQ4ZFYySS1ZdHo00gGPAkFVX3lxTE5UQ2pUUThLTjNVbTdFVzNYQWozZGwtWnhtZS1sOXZidm5feVhKRDZKaG1fTnVmdE5mUV9WWGNfRjdPQWhFS1JyWUxZLUpfVXhjQjJOWF9yTlhJOXpwUGd1b1RmczFUOXAxRGN5OFNCUHItbVMxWDlGNWNlandjQXJCcjBDcFVVUXBnX1FfQUQ2bWZhSFVCLV91blFlVUxiU3AyZFBKdkNiUExOYjZuU25yQXQtaUx1VDNWNzdRZXNtdGZ4SjI3V0p1SzVlNU9oblRic1NFN2M4TXlyeEV3OW9ieC1obkdHQXBsTXVIcDlaaEY3UTBQM0ZJemJ0ZmNzay1mWW9JRDhkVjJJLVl0ejQ?oc=5",
-   "termino": "migrantes venezolanos",
-   "geo": "CO",
-   "titulo": "Tres opciones para el migrante venezolano regularizar su estatus en Colombia",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 22.3,
-   "base": 7.5,
-   "ratio": 2.97
   }
  },
  "audiencia": {
@@ -75,15 +49,9 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1182700",
+     "valor": "1236200",
      "tipo": "rising",
      "variantes": 2
-    },
-    {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "146200",
-     "tipo": "rising",
-     "variantes": 0
     },
     {
      "consulta": "los migrantes",
@@ -92,7 +60,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-09-03T20:36:53+00:00"
+   "medido": "2026-09-04T10:49:40+00:00"
   },
   "VE": {
    "consultas": [
@@ -190,18 +158,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "2624250",
-     "tipo": "rising",
+     "valor": "99",
+     "tipo": "top",
      "variantes": 3
     },
     {
+     "consulta": "diferencia entre migrantes y emigrantes",
+     "valor": "69500",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
      "consulta": "migrantes españa",
-     "valor": "60",
+     "valor": "54",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-01T00:34:27+00:00"
+   "medido": "2026-09-04T10:49:49+00:00"
   },
   "MX": {
    "consultas": [
@@ -238,41 +212,23 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 25.9,
-   "base": 10.6,
-   "ratio": 2.44
+   "puntaje": 10,
+   "reciente": 24.9,
+   "base": 7.1,
+   "ratio": 3.5
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 27.9,
-   "base": 5.4,
-   "ratio": 5.17
+   "reciente": 25.0,
+   "base": 6.8,
+   "ratio": 3.67
   }
  },
- "alertas": [
-  {
-   "id_hecho": "f8c3d58bfd65",
-   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOVENqVFE4S04zVW03RVczWEFqM2RsLVp4bWUtbDl2YnZuX3lYSkQ2SmhtX051ZnROZlFfVlhjX0Y3T0FoRUtScllMWS1KX1V4Y0IyTlhfck5YSTl6cFBndW9UZnMxVDlwMURjeThTQlByLW1TMVg5RjVjZWp3Y0FyQnIwQ3BVVVFwZ19RX0FENm1mYUhVQi1fdW5RZVVMYlNwMmRQSnZDYlBMTmI2blNuckF0LWlMdVQzVjc3UWVzbXRmeEoyN1dKdUs1ZTVPaG5UYnNTRTdjOE15cnhFdzlvYngtaG5HR0FwbE11SHA5WmhGN1EwUDNGSXpidGZjc2stZllvSUQ4ZFYySS1ZdHo00gGPAkFVX3lxTE5UQ2pUUThLTjNVbTdFVzNYQWozZGwtWnhtZS1sOXZidm5feVhKRDZKaG1fTnVmdE5mUV9WWGNfRjdPQWhFS1JyWUxZLUpfVXhjQjJOWF9yTlhJOXpwUGd1b1RmczFUOXAxRGN5OFNCUHItbVMxWDlGNWNlandjQXJCcjBDcFVVUXBnX1FfQUQ2bWZhSFVCLV91blFlVUxiU3AyZFBKdkNiUExOYjZuU25yQXQtaUx1VDNWNzdRZXNtdGZ4SjI3V0p1SzVlNU9oblRic1NFN2M4TXlyeEV3OW9ieC1obkdHQXBsTXVIcDlaaEY3UTBQM0ZJemJ0ZmNzay1mWW9JRDhkVjJJLVl0ejQ?oc=5",
-   "termino": "migrantes venezolanos",
-   "geo": "CO",
-   "titulo": "Tres opciones para el migrante venezolano regularizar su estatus en Colombia",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 22.3,
-   "base": 7.5,
-   "ratio": 2.97,
-   "disparada": "2026-09-03T20:37:09+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  }
- ]
+ "alertas": []
 }
