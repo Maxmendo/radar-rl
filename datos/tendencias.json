@@ -1,47 +1,47 @@
 {
- "generado": "2026-09-05T10:05:27+00:00",
+ "generado": "2026-09-05T20:01:53+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "3964d559ca5f": {
-   "id_hecho": "3964d559ca5f",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVEhJOHpRa2R2VGRNVkpsWlZrQjAwR0lINW4xVzV3NGVJNHhwaXR1X2Z6eEtpS1ZXZDlZN2ZuYm83bFA0WGwyNkFMVGxZVTFYSVJOaG0xX29MeU4zT3FubDdMUFRUVVlwekFkMWxhc1VXWHl5NlRvNFJmYnBEc1MwYVZvYUhVQTBUNzhMREx4R1czWE84VzlDSDVoR1BHamdqbzVVVUhXSlNEQjc2ZjhCb252R0NVX3VyVUxwZlZ1VTN5c0tRbnp0ekNKQktibXpWaUNJMWdMOTgtdmo2ZXZ3YWF2SkVYazTSAewBQVVfeXFMUE1qTWJkRmxab1BPc3RDNmlMLXFWREd6VTlHNnY0MlVVcURlQkllRldSdTlIRmlrUXY0NS1ySHZMa0RBWUxsaktaWEFOMlJhNFUyMEt3cUhaUXJpcmFPci1UdFhIRFZYUnVEYkJ0MjROSzMwZmtUQy1oV2RsSVFrUzVGLV9WX3ZISXpuVG0tbjNiRDE0ZTBEdkQ4MEFYUU1FeTBhZ2lpXy1TczRjMnhWWjNQVlU4QXdzZmFmbWZqLTRXaUNKZmF6MzRia0xHNXRMak9DbjkxcDdKZ04zajdkMGY5VHNWNHpTdExFQ04?oc=5",
-   "termino": "control fronterizo",
-   "geo": "MX",
-   "titulo": "México destaca coordinación antidrones con EE.UU. para frenar inmigración irregular",
-   "importancia": 7,
-   "velocidad": 5,
+  "e3994403109d": {
+   "id_hecho": "e3994403109d",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaHNVWDZWV3VJQ2tDRnkxX3VuZTF6X2QyTWw2Wl9aZndTYkpKQzBaY09TY3EwUktCSU1JcVJKam9QV21wNVlBeFVhUlpmMVZTTUVTUEFpM19zY0NRSUR2UTRfX0pWSkZZQklVQm0tVklyTDhFaVNCM0JIOE5oWHp0VmhpWU05UnQ1Qk9la1NTOHduSkRmSHJVZkxkSVRMNk56YVhoaVBNZkkwRFBIUmNYOG1fV1d0R00?oc=5",
+   "termino": "solicitantes de asilo",
+   "geo": "US",
+   "titulo": "Malas noticias para solicitantes de asilo en los Estados Unidos",
+   "importancia": 8,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.1,
-   "ratio": null
-  },
-  "ee97c50b0f2c": {
-   "id_hecho": "ee97c50b0f2c",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQXpGcEpiZWttR0gtOVY1ZU1uNERBYVdteWhCcGRiWVlZeF9Oa0tsSmU5Y1dQd2JJNnJyRXo1TUE4Tzh1cXMtTUV3endlTEdVcWQ4VkJ1OFNORFVDN2NqMk00ZUdJdDFBTlFoblN0NE1zaGRVRTBZRVREZTVoTTBnLU16SnQzTllfeld0VFRSSUZnM3lFZm9uUE5WNDNXNk1Yb2ZEWk5iMC0xNWRZY2lUSFNXMUdRLW9yOUg5R0llZVVkb1YtSTk3UlpvemQzNHBqYmRMUnZyTEo0LUxDSjZXY1ZTODU5b3pLTTZn?oc=5",
-   "termino": "trafico de migrantes",
-   "geo": "MX",
-   "titulo": "Mexicano se declara culpable de traficar migrantes por túnel ligado al CJNG",
-   "importancia": 6,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 0.4,
-   "base": 1.2,
+   "reciente": 14.3,
+   "base": 2.1,
    "ratio": null
   },
   "c39e0fb1dbd3": {
    "id_hecho": "c39e0fb1dbd3",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTGxmMjR1X3RNNkh1MU5JVllRbHQwUkk4Qk9OcmRvZ0swd2lkOHJoMjdOUjVOZjdxTjNFa0xtTDdEa1FIZGZBcS13SWRqQWtOY0RMWmF2UHFNbV9rWjdBZFBIWWYtdDQ5ZDlCY2pRd2JHaVQtWmw1cnJDNHdGNXliOTZubDNPd3Y0X0YwSEVTdndLZk5JNHAySDJzWk1jYlR5b0RJRGl0NVdIbWt4QXVuX09oRUxBTGE4UjB3bnMtYzFKc3ZzYjRVUVJsVUVmTkIzZGxBelNkdGRIbVE2RDNuUGhrTFI?oc=5",
-   "termino": "control migratorio",
+   "termino": "migrantes",
    "geo": "PE",
-   "titulo": "Lima Norte: Migraciones y PNP intervienen a 501 extranjeros en operativo de fiscalización",
+   "titulo": "Lima Norte: Se intervinieron a más de 500 extranjeros en megaoperativo",
    "importancia": 7,
-   "velocidad": 5,
+   "velocidad": 3,
    "puntaje": 10,
-   "reciente": 23.7,
-   "base": 2.6,
-   "ratio": 9.08
+   "reciente": 33.3,
+   "base": 10.2,
+   "ratio": 3.25
+  },
+  "6ed5f74e3772": {
+   "id_hecho": "6ed5f74e3772",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQloyOXQyVDBvalQ0UU5GNGh2TE4teXBVS3pHWEdaNWQ1M0VGME8yR1RiejI5NFk5WmRuMkNkSmhqWjVqNjVuQ255dC03RjU1N1ZESFYtMW1DRWNSVHNhUUR4RkFJVG1KRkduR08yUFc5VHdqYzlVc1NDSi1CbWxabGR4Ui11UGtEbVZ6eVFBMkctZHA2ZU9UZEZ1MTRCZk0xekx5MnhTc0Q1QkxjNEk2elhaUVBFREdlWWNTS2sxX09yV2UwX3RsU0t0Vkw?oc=5",
+   "termino": "migracion irregular",
+   "geo": "MX",
+   "titulo": "Destaca México coordinación antidrones con EEUU contra migración irregular",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -49,7 +49,7 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1188750",
+     "valor": "1244500",
      "tipo": "rising",
      "variantes": 2
     },
@@ -60,7 +60,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-09-05T10:05:10+00:00"
+   "medido": "2026-09-05T20:01:36+00:00"
   },
   "VE": {
    "consultas": [
@@ -180,25 +180,25 @@
   "MX": {
    "consultas": [
     {
+     "consulta": "ceuta",
+     "valor": "347550",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "80400",
+     "valor": "60800",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes si me tomo una cerveza",
-     "valor": "27200",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "oracion por los migrantes",
-     "valor": "20750",
-     "tipo": "rising",
+     "consulta": "los migrantes",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-02T10:47:22+00:00"
+   "medido": "2026-09-05T20:01:45+00:00"
   },
   "UY": {
    "consultas": [
@@ -212,39 +212,39 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 5,
-   "reciente": 18.9,
-   "base": 9.1,
-   "ratio": 2.06
+   "puntaje": 10,
+   "reciente": 28.0,
+   "base": 6.5,
+   "ratio": 4.34
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 21.0,
-   "base": 7.8,
-   "ratio": 2.68
+   "puntaje": 10,
+   "reciente": 27.3,
+   "base": 6.9,
+   "ratio": 3.95
   }
  },
  "alertas": [
   {
    "id_hecho": "c39e0fb1dbd3",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTGxmMjR1X3RNNkh1MU5JVllRbHQwUkk4Qk9OcmRvZ0swd2lkOHJoMjdOUjVOZjdxTjNFa0xtTDdEa1FIZGZBcS13SWRqQWtOY0RMWmF2UHFNbV9rWjdBZFBIWWYtdDQ5ZDlCY2pRd2JHaVQtWmw1cnJDNHdGNXliOTZubDNPd3Y0X0YwSEVTdndLZk5JNHAySDJzWk1jYlR5b0RJRGl0NVdIbWt4QXVuX09oRUxBTGE4UjB3bnMtYzFKc3ZzYjRVUVJsVUVmTkIzZGxBelNkdGRIbVE2RDNuUGhrTFI?oc=5",
-   "termino": "control migratorio",
+   "termino": "migrantes",
    "geo": "PE",
-   "titulo": "Lima Norte: Migraciones y PNP intervienen a 501 extranjeros en operativo de fiscalización",
+   "titulo": "Lima Norte: Se intervinieron a más de 500 extranjeros en megaoperativo",
    "importancia": 7,
-   "velocidad": 5,
+   "velocidad": 3,
    "puntaje": 10,
-   "reciente": 23.7,
-   "base": 2.6,
-   "ratio": 9.08,
-   "disparada": "2026-09-05T10:05:27+00:00",
-   "velocidad_inicial": 5,
+   "reciente": 33.3,
+   "base": 10.2,
+   "ratio": 3.25,
+   "disparada": "2026-09-05T20:01:53+00:00",
+   "velocidad_inicial": 3,
    "desenlace": "vigente",
    "horas": 0
   }
