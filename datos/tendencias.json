@@ -1,60 +1,47 @@
 {
- "generado": "2026-09-04T20:24:13+00:00",
+ "generado": "2026-09-05T10:05:27+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "a6a25af4b577": {
-   "id_hecho": "a6a25af4b577",
-   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPNktoZzl2V0R0Q2FQRVBHTE5KUGZxT0IyeURlZXJJZVh2Y0lrRGV4N3NFLVNuSXpkcWYtTFpaVXZ5V2FmYmlYcWMxVTRkRlZMQnN5MzJjVV85dUIyMmlRd3ZGbFU1QVVDcGRCckI1WURybGdIWk43YXpGTUU4WTVIQjVJeG1WUWJsTHFfTzBuTTdwdmtYOUlFT2dkdlhhM2ZYdm56bW9BdnN0enFSR1RsbTBId2VUWTJiSmlYM2s4SU5zMlZ1dUVEdWpCcU9TNXJucDhZWjFoa0hjNTFKYk5XcE10d1o5MjdtU3J1b0h0cVRxV256aVg3M2xWS09tOW9ZTzM1ZDRoWXBXRHBZYlVjN2x1RnZFYjh5RGVOa29n?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Acusan a un agente de ICE de mentir al FBI sobre el tiroteo contra un inmigrante venezolano en Minneapolis",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 6,
-   "reciente": 15.4,
-   "base": 6.6,
-   "ratio": 2.34
-  },
-  "49e885db7f4a": {
-   "id_hecho": "49e885db7f4a",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdkktcmtUSW5XMHFxMXpBdGJod3M2TUZaNG1XOTVoMjVZZzZ0YXByLU9jYTdFYi1xWEM4QjBvLVRkNGZWRE5HQWVUUWUxRkVWV2c0T3R1bkZIdzVMckQ0ci1HZ191MzM1dmZhbTgzT2t0ZmdKcUVXcVl4UmEtY2w3YkxHQUFWWmNvNFRveldVR3lJbmEyRl9lQnBoUFJRbXBlWVlTUTc3TUtIYi1GSldRLWRvZGZfTVllU212ODdrTENMdlBwSXB1bWlZT1dWeFFqZ3B4UHdBcjFzZ0xiR0RJQmp4MDNjMTk3MUdDdGV3VV9rUkwybHZNOFp5X0IwWVZRdkE?oc=5",
-   "termino": "migrantes indocumentados",
-   "geo": "US",
-   "titulo": "Departamento de Justicia exige a estados información sobre migrantes indocumentados en su territorio",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "1917801a7cfe": {
-   "id_hecho": "1917801a7cfe",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcVZWZzNNdi1yVzkwRkhCbU5tODAwRElESGJOTkVfM0pwRzdHQVFpZlNRREVYMnBkN0tQbWlDXzhGODFwUUFVUzBDVG5vU1lfUlVqZHlSeWFrRFNhclZIMU90dzc1cWFkUFpRZlFUTm81aWY4WDdKTl9Vbk5qcmdZcnJwVWpSTEk4OE5IUlVwaEZuM0o0S2s4N2g2VTJ0R1VkWG9qZXd2bmxhXzVSdklEam83aFFQbUVGTW1FdEYxVFdxUHZSOE5qMVhicGxxTFhub1hWbU1haV81alpheEZrZkdnQnFPQWtTYnFHQTJ6a2g1VFFFUmJId0RB0gGUAkFVX3lxTE1IQ2dHNWFlbWtEakdQVnBPWnpjVWR3Znd2LTZqMzlKTktPelVMdnJja1dLMWhtdjVLcUFhRXl0eTUyV2hQdjVKb2NCYmdoVm9vNzFESkw0cVR3T2d2dndHMC1Ya3ltdWstbWdUbVZzR0RPNFZUV3NheXQwNWxVZXZTeGYybDFmclZSZVcyc0ljSkR5SHM4bHR6eFN3NW1OWmd5cnZIZlZYcWY1cEpWV3JqNnFQZVkyeVJBT3N5T2dySlFoSVlXejc2MVhtUkk4TWdrTkl6VXZXcGY2RHcyd3RINDV6MktHTEJEbzlJU2NHY2ZwbmJlQl82dTNwSnRlT2JpVXdvVGRTREdjbzc4UDh4TjE3bA?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "¡Como Tetris! Casa Blanca lanza juegos en línea para construir muro fronterizo y deportar migrantes",
+  "3964d559ca5f": {
+   "id_hecho": "3964d559ca5f",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVEhJOHpRa2R2VGRNVkpsWlZrQjAwR0lINW4xVzV3NGVJNHhwaXR1X2Z6eEtpS1ZXZDlZN2ZuYm83bFA0WGwyNkFMVGxZVTFYSVJOaG0xX29MeU4zT3FubDdMUFRUVVlwekFkMWxhc1VXWHl5NlRvNFJmYnBEc1MwYVZvYUhVQTBUNzhMREx4R1czWE84VzlDSDVoR1BHamdqbzVVVUhXSlNEQjc2ZjhCb252R0NVX3VyVUxwZlZ1VTN5c0tRbnp0ekNKQktibXpWaUNJMWdMOTgtdmo2ZXZ3YWF2SkVYazTSAewBQVVfeXFMUE1qTWJkRmxab1BPc3RDNmlMLXFWREd6VTlHNnY0MlVVcURlQkllRldSdTlIRmlrUXY0NS1ySHZMa0RBWUxsaktaWEFOMlJhNFUyMEt3cUhaUXJpcmFPci1UdFhIRFZYUnVEYkJ0MjROSzMwZmtUQy1oV2RsSVFrUzVGLV9WX3ZISXpuVG0tbjNiRDE0ZTBEdkQ4MEFYUU1FeTBhZ2lpXy1TczRjMnhWWjNQVlU4QXdzZmFmbWZqLTRXaUNKZmF6MzRia0xHNXRMak9DbjkxcDdKZ04zajdkMGY5VHNWNHpTdExFQ04?oc=5",
+   "termino": "control fronterizo",
+   "geo": "MX",
+   "titulo": "México destaca coordinación antidrones con EE.UU. para frenar inmigración irregular",
    "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 6,
-   "reciente": 15.4,
-   "base": 6.6,
-   "ratio": 2.34
-  },
-  "8f19f7f532ab": {
-   "id_hecho": "8f19f7f532ab",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxObEJSMnpDS0VOd3NjaG5sOUNfd3ZMak1ncV8wWDNwN3EtZXE0aU9nam9Da3dJQVZEdlVvTU5zY1ZjTlM0RTlKNkNBZ0E4M3c5SDYtWU0zaWpiYlFGdng1bHRiUGhHbDJCSEdjM3NhT2ZUcC1nRk1jNE5WVk1ibzZMclMwTjFUUGJIWTYxX29jSm1xVlAyRVhFVFNXY21UcUd4NVVzQm8zV0ZaQVNfbVRuMzdvMlRfU1hPZjZBOHRiYlpaWFB3UlY4WlpTR081aHlrbTA0RmFfWFRYa1VReVdfSDE5ZmVtN3I1cEFoMG9YY0ktTlFXU3RWMWZUNNIBlgJBVV95cUxNZXJmYUpBcDdtclp6azIyVXZKSGVKU0ZpQmk3Z095V1BYX3V4OEFUVnVNcmdkbnF2VktyUktCenNQbHFrREJPcEdaY0ZoRXlzWGZPQ2pOVVpIQ2h2a2xoQndYay1WWDdmb3pXdVhvV1ZJTkxCNjYyRzZxX2xwQ1d4YmhGcnZYY3ZSdnA4N2pkb2NsQnN4VEZBZnJOa1dCOGE5eDQ4SVlrSXdhczN0Nmd6cXlKSzV2elhzbkhwLWRYZk9yQjNTbFNrc1oyMVlpTkU4eXZjcnBSSUEyNlNrMTZVcldpWVNXcjc5RnYyQ205REN3OVJhaHdsQ0xtY3k1WnRBYnZCQjBYaGtPS2VRRVFhTXJTcUo2UQ?oc=5",
-   "termino": "expulsión de migrantes",
-   "geo": "PE",
-   "titulo": "Keiko Fujimori pide al Congreso facultades para acelerar expulsión de migrantes indocumentados",
-   "importancia": 8,
-   "velocidad": 3,
+   "velocidad": 5,
    "puntaje": 0,
    "reciente": 0.0,
-   "base": 1.1,
+   "base": 0.1,
    "ratio": null
+  },
+  "ee97c50b0f2c": {
+   "id_hecho": "ee97c50b0f2c",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQXpGcEpiZWttR0gtOVY1ZU1uNERBYVdteWhCcGRiWVlZeF9Oa0tsSmU5Y1dQd2JJNnJyRXo1TUE4Tzh1cXMtTUV3endlTEdVcWQ4VkJ1OFNORFVDN2NqMk00ZUdJdDFBTlFoblN0NE1zaGRVRTBZRVREZTVoTTBnLU16SnQzTllfeld0VFRSSUZnM3lFZm9uUE5WNDNXNk1Yb2ZEWk5iMC0xNWRZY2lUSFNXMUdRLW9yOUg5R0llZVVkb1YtSTk3UlpvemQzNHBqYmRMUnZyTEo0LUxDSjZXY1ZTODU5b3pLTTZn?oc=5",
+   "termino": "trafico de migrantes",
+   "geo": "MX",
+   "titulo": "Mexicano se declara culpable de traficar migrantes por túnel ligado al CJNG",
+   "importancia": 6,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 0.4,
+   "base": 1.2,
+   "ratio": null
+  },
+  "c39e0fb1dbd3": {
+   "id_hecho": "c39e0fb1dbd3",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTGxmMjR1X3RNNkh1MU5JVllRbHQwUkk4Qk9OcmRvZ0swd2lkOHJoMjdOUjVOZjdxTjNFa0xtTDdEa1FIZGZBcS13SWRqQWtOY0RMWmF2UHFNbV9rWjdBZFBIWWYtdDQ5ZDlCY2pRd2JHaVQtWmw1cnJDNHdGNXliOTZubDNPd3Y0X0YwSEVTdndLZk5JNHAySDJzWk1jYlR5b0RJRGl0NVdIbWt4QXVuX09oRUxBTGE4UjB3bnMtYzFKc3ZzYjRVUVJsVUVmTkIzZGxBelNkdGRIbVE2RDNuUGhrTFI?oc=5",
+   "termino": "control migratorio",
+   "geo": "PE",
+   "titulo": "Lima Norte: Migraciones y PNP intervienen a 501 extranjeros en operativo de fiscalización",
+   "importancia": 7,
+   "velocidad": 5,
+   "puntaje": 10,
+   "reciente": 23.7,
+   "base": 2.6,
+   "ratio": 9.08
   }
  },
  "audiencia": {
@@ -62,7 +49,7 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1236200",
+     "valor": "1188750",
      "tipo": "rising",
      "variantes": 2
     },
@@ -73,7 +60,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-09-04T10:49:40+00:00"
+   "medido": "2026-09-05T10:05:10+00:00"
   },
   "VE": {
    "consultas": [
@@ -108,18 +95,18 @@
     },
     {
      "consulta": "ceuta",
-     "valor": "449800",
+     "valor": "502300",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes marroquíes en españa",
-     "valor": "80",
+     "consulta": "migrantes me duele que me duelas",
+     "valor": "57000",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-01T23:06:13+00:00"
+   "medido": "2026-09-05T10:05:19+00:00"
   },
   "CO": {
    "consultas": [
@@ -225,59 +212,39 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 1,
- "paises_sin_datos": [
-  "AR",
-  "VE"
- ],
+ "proximo_pais": 2,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 25.1,
-   "base": 9.0,
-   "ratio": 2.8
+   "puntaje": 5,
+   "reciente": 18.9,
+   "base": 9.1,
+   "ratio": 2.06
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 25.6,
-   "base": 7.4,
-   "ratio": 3.45
+   "puntaje": 8,
+   "reciente": 21.0,
+   "base": 7.8,
+   "ratio": 2.68
   }
  },
  "alertas": [
   {
-   "id_hecho": "a6a25af4b577",
-   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPNktoZzl2V0R0Q2FQRVBHTE5KUGZxT0IyeURlZXJJZVh2Y0lrRGV4N3NFLVNuSXpkcWYtTFpaVXZ5V2FmYmlYcWMxVTRkRlZMQnN5MzJjVV85dUIyMmlRd3ZGbFU1QVVDcGRCckI1WURybGdIWk43YXpGTUU4WTVIQjVJeG1WUWJsTHFfTzBuTTdwdmtYOUlFT2dkdlhhM2ZYdm56bW9BdnN0enFSR1RsbTBId2VUWTJiSmlYM2s4SU5zMlZ1dUVEdWpCcU9TNXJucDhZWjFoa0hjNTFKYk5XcE10d1o5MjdtU3J1b0h0cVRxV256aVg3M2xWS09tOW9ZTzM1ZDRoWXBXRHBZYlVjN2x1RnZFYjh5RGVOa29n?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Acusan a un agente de ICE de mentir al FBI sobre el tiroteo contra un inmigrante venezolano en Minneapolis",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 6,
-   "reciente": 15.4,
-   "base": 6.6,
-   "ratio": 2.34,
-   "disparada": "2026-09-04T20:24:13+00:00",
-   "velocidad_inicial": 4,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "1917801a7cfe",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcVZWZzNNdi1yVzkwRkhCbU5tODAwRElESGJOTkVfM0pwRzdHQVFpZlNRREVYMnBkN0tQbWlDXzhGODFwUUFVUzBDVG5vU1lfUlVqZHlSeWFrRFNhclZIMU90dzc1cWFkUFpRZlFUTm81aWY4WDdKTl9Vbk5qcmdZcnJwVWpSTEk4OE5IUlVwaEZuM0o0S2s4N2g2VTJ0R1VkWG9qZXd2bmxhXzVSdklEam83aFFQbUVGTW1FdEYxVFdxUHZSOE5qMVhicGxxTFhub1hWbU1haV81alpheEZrZkdnQnFPQWtTYnFHQTJ6a2g1VFFFUmJId0RB0gGUAkFVX3lxTE1IQ2dHNWFlbWtEakdQVnBPWnpjVWR3Znd2LTZqMzlKTktPelVMdnJja1dLMWhtdjVLcUFhRXl0eTUyV2hQdjVKb2NCYmdoVm9vNzFESkw0cVR3T2d2dndHMC1Ya3ltdWstbWdUbVZzR0RPNFZUV3NheXQwNWxVZXZTeGYybDFmclZSZVcyc0ljSkR5SHM4bHR6eFN3NW1OWmd5cnZIZlZYcWY1cEpWV3JqNnFQZVkyeVJBT3N5T2dySlFoSVlXejc2MVhtUkk4TWdrTkl6VXZXcGY2RHcyd3RINDV6MktHTEJEbzlJU2NHY2ZwbmJlQl82dTNwSnRlT2JpVXdvVGRTREdjbzc4UDh4TjE3bA?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "¡Como Tetris! Casa Blanca lanza juegos en línea para construir muro fronterizo y deportar migrantes",
+   "id_hecho": "c39e0fb1dbd3",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTGxmMjR1X3RNNkh1MU5JVllRbHQwUkk4Qk9OcmRvZ0swd2lkOHJoMjdOUjVOZjdxTjNFa0xtTDdEa1FIZGZBcS13SWRqQWtOY0RMWmF2UHFNbV9rWjdBZFBIWWYtdDQ5ZDlCY2pRd2JHaVQtWmw1cnJDNHdGNXliOTZubDNPd3Y0X0YwSEVTdndLZk5JNHAySDJzWk1jYlR5b0RJRGl0NVdIbWt4QXVuX09oRUxBTGE4UjB3bnMtYzFKc3ZzYjRVUVJsVUVmTkIzZGxBelNkdGRIbVE2RDNuUGhrTFI?oc=5",
+   "termino": "control migratorio",
+   "geo": "PE",
+   "titulo": "Lima Norte: Migraciones y PNP intervienen a 501 extranjeros en operativo de fiscalización",
    "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 6,
-   "reciente": 15.4,
-   "base": 6.6,
-   "ratio": 2.34,
-   "disparada": "2026-09-04T20:24:13+00:00",
-   "velocidad_inicial": 3,
+   "velocidad": 5,
+   "puntaje": 10,
+   "reciente": 23.7,
+   "base": 2.6,
+   "ratio": 9.08,
+   "disparada": "2026-09-05T10:05:27+00:00",
+   "velocidad_inicial": 5,
    "desenlace": "vigente",
    "horas": 0
   }
