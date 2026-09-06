@@ -1,46 +1,33 @@
 {
- "generado": "2026-09-05T20:01:53+00:00",
+ "generado": "2026-09-06T10:24:12+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "e3994403109d": {
-   "id_hecho": "e3994403109d",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaHNVWDZWV3VJQ2tDRnkxX3VuZTF6X2QyTWw2Wl9aZndTYkpKQzBaY09TY3EwUktCSU1JcVJKam9QV21wNVlBeFVhUlpmMVZTTUVTUEFpM19zY0NRSUR2UTRfX0pWSkZZQklVQm0tVklyTDhFaVNCM0JIOE5oWHp0VmhpWU05UnQ1Qk9la1NTOHduSkRmSHJVZkxkSVRMNk56YVhoaVBNZkkwRFBIUmNYOG1fV1d0R00?oc=5",
-   "termino": "solicitantes de asilo",
+  "e1f3aabe96ba": {
+   "id_hecho": "e1f3aabe96ba",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYkhUbGNOWTl5d2YtMTYwY0tWRW90U3BLenJZWjVIYjZMdE1hb0pCbXo1NDFwSzR1NzAzSExRb0VHb1FTc3dzdWdRRUdqSVQ2clpLSEw1M0NIOV9IN2JXQ3puTlNmcjFqUmZIb0owWkc0a3hWXy1UeXd6bWZ2TXN3d0Rxa0d0TC1DeHdyU2gwemxhWlVONGFDaGJMNjFJQU16c1lDdjBJMDBLakpPMEZETTgySno5cU5FWk8td3RZWlRzaV9MS1V6SG1idGFpUWt4VTFEbzBVZWdFUnViZnVMSWhLTlRfT0pS?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Malas noticias para solicitantes de asilo en los Estados Unidos",
+   "titulo": "Dos guardias de un centro de detención para migrantes en Florida son acusados de agresión",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 12.4,
+   "base": 4.8,
+   "ratio": null
+  },
+  "0aca5be91611": {
+   "id_hecho": "0aca5be91611",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNNVJkM2swdVNabE81SUt0WVdEbjNfM0Zqd1BUM3hZQm03TGxqMEdwVUlGNEhpam5UNTNWQWpvWUhweWx3S01sM3h5NVotX1NBRjh5QTBkOTBtNi1rd2NHTmRRUXhkeThpU2FsWVpGYm9BRlN1aFFzYmRxMkpzLWVKVjJuRW10ZU9CUmc2RGZ4S2tWU09EVWx5ZmpyTVdlZjBFNUxDQmxHdzl0SnZtYU1lbjVzZnRwdzlsd19lSmVRYnNpOVlpaWZpNnY2Z2ZQZ1BFQVM5V9IB1AFBVV95cUxNNVJkM2swdVNabE81SUt0WVdEbjNfM0Zqd1BUM3hZQm03TGxqMEdwVUlGNEhpam5UNTNWQWpvWUhweWx3S01sM3h5NVotX1NBRjh5QTBkOTBtNi1rd2NHTmRRUXhkeThpU2FsWVpGYm9BRlN1aFFzYmRxMkpzLWVKVjJuRW10ZU9CUmc2RGZ4S2tWU09EVWx5ZmpyTVdlZjBFNUxDQmxHdzl0SnZtYU1lbjVzZnRwdzlsd19lSmVRYnNpOVlpaWZpNnY2Z2ZQZ1BFQVM5Vw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Cubanos y afganos deportados de Estados Unidos llegan a Guyana",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 14.3,
-   "base": 2.1,
-   "ratio": null
-  },
-  "c39e0fb1dbd3": {
-   "id_hecho": "c39e0fb1dbd3",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTGxmMjR1X3RNNkh1MU5JVllRbHQwUkk4Qk9OcmRvZ0swd2lkOHJoMjdOUjVOZjdxTjNFa0xtTDdEa1FIZGZBcS13SWRqQWtOY0RMWmF2UHFNbV9rWjdBZFBIWWYtdDQ5ZDlCY2pRd2JHaVQtWmw1cnJDNHdGNXliOTZubDNPd3Y0X0YwSEVTdndLZk5JNHAySDJzWk1jYlR5b0RJRGl0NVdIbWt4QXVuX09oRUxBTGE4UjB3bnMtYzFKc3ZzYjRVUVJsVUVmTkIzZGxBelNkdGRIbVE2RDNuUGhrTFI?oc=5",
-   "termino": "migrantes",
-   "geo": "PE",
-   "titulo": "Lima Norte: Se intervinieron a más de 500 extranjeros en megaoperativo",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 33.3,
-   "base": 10.2,
-   "ratio": 3.25
-  },
-  "6ed5f74e3772": {
-   "id_hecho": "6ed5f74e3772",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQloyOXQyVDBvalQ0UU5GNGh2TE4teXBVS3pHWEdaNWQ1M0VGME8yR1RiejI5NFk5WmRuMkNkSmhqWjVqNjVuQ255dC03RjU1N1ZESFYtMW1DRWNSVHNhUUR4RkFJVG1KRkduR08yUFc5VHdqYzlVc1NDSi1CbWxabGR4Ui11UGtEbVZ6eVFBMkctZHA2ZU9UZEZ1MTRCZk0xekx5MnhTc0Q1QkxjNEk2elhaUVBFREdlWWNTS2sxX09yV2UwX3RsU0t0Vkw?oc=5",
-   "termino": "migracion irregular",
-   "geo": "MX",
-   "titulo": "Destaca México coordinación antidrones con EEUU contra migración irregular",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
+   "reciente": 12.4,
+   "base": 4.8,
    "ratio": null
   }
  },
@@ -49,9 +36,15 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1244500",
+     "valor": "1198450",
      "tipo": "rising",
      "variantes": 2
+    },
+    {
+     "consulta": "migrantes vikingos",
+     "valor": "141100",
+     "tipo": "rising",
+     "variantes": 0
     },
     {
      "consulta": "los migrantes",
@@ -60,7 +53,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-09-05T20:01:36+00:00"
+   "medido": "2026-09-06T10:23:55+00:00"
   },
   "VE": {
    "consultas": [
@@ -111,25 +104,25 @@
   "CO": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "432000",
-     "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "216700",
+     "consulta": "ceuta migrantes",
+     "valor": "456600",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes en colombia",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "migrantes mercho",
+     "valor": "4050",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "registro unico para migrantes venezolanos",
+     "valor": "1850",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-02T20:37:03+00:00"
+   "medido": "2026-09-06T10:24:04+00:00"
   },
   "US": {
    "consultas": [
@@ -212,7 +205,7 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -230,23 +223,5 @@
    "ratio": 3.95
   }
  },
- "alertas": [
-  {
-   "id_hecho": "c39e0fb1dbd3",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTGxmMjR1X3RNNkh1MU5JVllRbHQwUkk4Qk9OcmRvZ0swd2lkOHJoMjdOUjVOZjdxTjNFa0xtTDdEa1FIZGZBcS13SWRqQWtOY0RMWmF2UHFNbV9rWjdBZFBIWWYtdDQ5ZDlCY2pRd2JHaVQtWmw1cnJDNHdGNXliOTZubDNPd3Y0X0YwSEVTdndLZk5JNHAySDJzWk1jYlR5b0RJRGl0NVdIbWt4QXVuX09oRUxBTGE4UjB3bnMtYzFKc3ZzYjRVUVJsVUVmTkIzZGxBelNkdGRIbVE2RDNuUGhrTFI?oc=5",
-   "termino": "migrantes",
-   "geo": "PE",
-   "titulo": "Lima Norte: Se intervinieron a más de 500 extranjeros en megaoperativo",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 33.3,
-   "base": 10.2,
-   "ratio": 3.25,
-   "disparada": "2026-09-05T20:01:53+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  }
- ]
+ "alertas": []
 }
