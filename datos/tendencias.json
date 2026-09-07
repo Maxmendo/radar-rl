@@ -1,49 +1,9 @@
 {
- "generado": "2026-09-06T20:05:50+00:00",
+ "generado": "2026-09-07T11:44:40+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "e97a5071d849": {
-   "id_hecho": "e97a5071d849",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQWXlsNThvYWxTMnVKRjYydmRKV2JSQlJ0NWdTYmtjekRMNnphM2dydElOQ1M2eEVPd1diWU14VERYMUc3Nm1OTnNVWWs0eXJmVkVXNlNzdVpaMGluNE8zSEhzWUhKUTB1NjNCY0FPMGFyRE5hV1l1Zlh2NWJ1bUNaYjN4X19lSjRZTlM5YnZEWGVuOThiTGdHMW1ZaHVlQUlkaWJRWWlQVHloTENLR2NGUWNFUVROSklrU2dTem1ONW5yVTJEWm1pS3ZwYkp6S0s0U1ZXYjJPWkI2bERMVVJaZjFIN2FKWGZIVEVyc1pZdVU1RW1jcDlFaElPYkZ1NVhJdWFuQ0l3aFJ3ZjByWWfSAY4CQVVfeXFMUFl5bDU4b2FsUzJ1SkY2MnZkSldiUkJSdDVnU2JrY3pETDZ6YTNncnRJTkNTNnhFT3dXYllNeFREWDFHNzZtTk5zVVlrNHlyZlZFVzZTc3VaWjBpbjRPM0hIc1lISlEwdTYzQmNBTzBhckROYVdZdWZYdjVidW1DWmIzeF9fZUo0WU5TOWJ2RFhlbjk4YkxnRzFtWWh1ZUFJZGliUVlpUFR5aExDS0djRlFjRVFUTkpJa1NnU3ptTjVuclUyRFptaUt2cGJKektLNFNWV2IyT1pCNmxETFVSWmYxSDdhSlhmSFRFcnNaWXVVNUVtY3A5RWhJT2JGdTVYSXVhbkNJd2hSd2Ywclln?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Cubanos y afganos deportados de Estados Unidos llegan a Guyana",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 13.3,
-   "base": 5.0,
-   "ratio": null
-  },
-  "e1f3aabe96ba": {
-   "id_hecho": "e1f3aabe96ba",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYkhUbGNOWTl5d2YtMTYwY0tWRW90U3BLenJZWjVIYjZMdE1hb0pCbXo1NDFwSzR1NzAzSExRb0VHb1FTc3dzdWdRRUdqSVQ2clpLSEw1M0NIOV9IN2JXQ3puTlNmcjFqUmZIb0owWkc0a3hWXy1UeXd6bWZ2TXN3d0Rxa0d0TC1DeHdyU2gwemxhWlVONGFDaGJMNjFJQU16c1lDdjBJMDBLakpPMEZETTgySno5cU5FWk8td3RZWlRzaV9MS1V6SG1idGFpUWt4VTFEbzBVZWdFUnViZnVMSWhLTlRfT0pS?oc=5",
-   "termino": "detencion migratoria",
-   "geo": "US",
-   "titulo": "Dos guardias de un centro de detención para migrantes en Florida son acusados de agresión",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "4857e51b29ab": {
-   "id_hecho": "4857e51b29ab",
-   "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQZlJHOXJyb3RHdW9fR1IzZzAxRGF4ekt1VWFLN1FPMHFaNEIxWTBOWDdlTm9YaUduN3NRX1p1Nlo0VzlPbUYtWmR6Q0dfalAwWjF3Y0JSNmZUVGVYVWdhbkZfcFo3SXBHclBMMGhONXJQejlRVDJxNDdGOXJuNE9aYTE2a25zakd1aDktMER5amZVTkZneFlPWjRMMnVXc2gwRDNXVW5BUHduY0hjZEI2dUs5X2N2VTJGY1E3Y213Qms3d0k5YnRUVG9vM01ydVliWE5mdXRRYlp6UzN6YjlYUkdPdXlERmMwazFjUURXcjRTNlU4b01jZm5qQkZZRWRMbEw4b203Tk41Z3YxY3hNU0s5YWdfQkZ0WGdYQklkU0RNRVc1ZWhDUjV4RkJzX1BVa0NuV1ZLZUt0Z0NESGfSAcMCQVVfeXFMUFB4dEJIamxSamNSOVhJaVdTNWZ2dnFzeUc5RHo4aHBkSFlKMm9IOVhQMWtYQ3V3dEIwcFBiTmtBbXFtZkc3N1ZWSFNoRWVNMGJNMTFNT2lfSmk4dzluQmVZWFQydWtXT25XUnZsLUFtQnhMekdDX3lnOTBkVkxqU3hXUG9zME53YjFWbG9fdDZ5UTF6eV9XZlNkQlRvc1pBMVRuY1ZPZ2QweEN4U3dNbWlxQVBjU2NBLWpvdm1EdUVKOHZMX3VKS2dtTHVMbXVLVEJrWkx6eERGX3pUSDhBS3RkQjBsdWdYUlNVVnZXUjZJWTRka1o2V2tGcUwwYTVieDlpUF9HU2pKcE9VdEJPVGc0UVowZWNSWVVGNzkyek9Nb1dmeERsNWRWeGRORUVyODJyNUdrM3JZb0Eyei1nc05WVHM?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Nuevos videojuegos de La Casa Blanca incluyen la deportación de inmigrantes",
-   "importancia": 6,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 13.3,
-   "base": 5.0,
-   "ratio": null
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -212,10 +172,8 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 5,
- "paises_sin_datos": [
-  "UY"
- ],
+ "proximo_pais": 6,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
