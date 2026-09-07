@@ -1,9 +1,88 @@
 {
- "generado": "2026-09-07T11:44:40+00:00",
+ "generado": "2026-09-07T21:13:08+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "6b5f9aa322c3": {
+   "id_hecho": "6b5f9aa322c3",
+   "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPU01EalMzcEpuRDdkam05blBTUDg2V2wxcGJFcFBQSmxRX09DbHYwUF9xVlY4RjEtSE5RU3lZUkhIVThZbEZOMFA2Mmg5dFRBN2pJOGRJNXhOdFZLZFhxSjdPMWpJM1ZxNTJLR0NscUs5NUpBOVVzQ0dEcWxsUU80MjRDQ3M5ZWtpcGdhcmpBTGZ5T3ZwSDNtNW1fTFgzMnl4V0FjUGc1U0NwMFo4elBCM294VGxjbTdLVmxkZmJiQXV4VTB3NmxEbVpka0tRcG1vN0lVUFprVHVCdWxLaHl6a3lnN0xsTnlXeEdvbTlsUkdya3hFWkxLOWlHQUcwcE82TWh0SlZwQ3VyUnkwSXI5cXV3VEJrcXhOZXZsWDNoQ1FJVy1yYXJGdEhR0gGvAkFVX3lxTE9rdGpvM2ZxVWxXTGVTNWlPa3NlN0tPYjZiZGQ3QkdmRXBuQXNvWVFWaVhkUllfSV9rRmZPNXF0SUZqWjhWNlgtRFFGeU9KVjUzNnQ0UnNPYS11UGZmaGFzdkJid0Q3bmQ3S0FZcGwzUnhIR1J6MXlRcVE0NE53SlFsdm1RQzRLdGRCZHJORVh3QlZpbUtrQ1BWcDNBSnVVYmczLU1ZNDh2RzBMRVpHcmROVXRXT1pqaDlnc201WTdwVnhkUkdnTnNXQ05rMkNLZTVCSnp4WHFmQ0cxZXBTSjJmdGZVcmlBTUVpTF9OLXRQM3UzMkQ5ek00c25vLVBYTTh1dVZQUndIRFIzLXYycno3TDVqV2htcS1KUUYyejZ3c3p2bjZLYlVWN1VBMFMwaw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "La ONU pide a EE.UU. detener expulsión de inmigrantes a países donde pueden correr peligro",
+   "importancia": 9,
+   "velocidad": 7,
+   "puntaje": 0,
+   "reciente": 12.3,
+   "base": 4.8,
+   "ratio": null
+  },
+  "9328532d3da6": {
+   "id_hecho": "9328532d3da6",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNUxGQ2hxX0FRTGZ5c0dCRVhiZjJ4MkpFLVhDR19lWnA5N09GVGVlbmo3ZS1jbjFZU2NXYUVwaFRLRFpBWldHekxPTk5tc3psSlBaeHVtdUlza3pLUE14THNCQk12NFBjMXloaTRwLXp1ZE1CRzBEQXVDYkR6ajJVZlZQdC1vdGhFMzY5ZUUzaC0?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "La ONU exige depurar responsabilidades por las muertes de inmigrantes bajo custodia en EE.UU.",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 12.3,
+   "base": 4.8,
+   "ratio": null
+  },
+  "f4fc747ccb4b": {
+   "id_hecho": "f4fc747ccb4b",
+   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQWU1lc0RNRGpkV0xjcjNOV1FqclZKSDhfOUZEd0tQR2ZPRXZBckI1OFVMeWgwSzN4M3U1cHlKUDAzeHdZZU1USzdjbjNJUW56RVNQRldMSVdPeVRvU2s2SWdZanNNMWs5QjdTekk2YTNYSmpLT3F3cXVRUTg4X3cxS1hLcS1TWDJEWVFNc3BCRGtfMEhyY0JtMGhNbWFuOWwyQVg2VWw0eXVfTUdtTkp4VG01dlp0bmFKdkNEa0VoRC1oeElILWI3YlNKb2pkeHBtbW1JajVoWkd2bHRrUjY5enlLNGlLTElJRTFQczF5YlNyT1ZmTU5POGtDVEgtMGJlay0tb3c3WXVnUldJUmgxadIBlgJBVV95cUxQWmZnbFEwdnh1dEtWQ256SHc4aTRhY3JNSkQta1lYMkRraDNaY19VbUI1dTAwUW5BdDg5MENLN192cVNqelF6ZWlONkh0Tlh1ZXI4TjhoaUFUdklZTGFJVjBlR3o0YWRIRlVXanNfaVNjUHEwdmdCX2FQQnQyaHNac0ZUbHR1ZTZMak9uSTBPd0ZMaWwtRVJMSkxsMTAxNTlVZ2NjaXlkMWhKc0VIYjNUWC00bkxTb3dhQ0wtM0xORTQyZjJTWm51eldnY0owLWh1VXZBZlVfZFJmM2RwTkVVdE51anNxVjF0TU1nMEtkam5KcEVWcV9hMGdkUm5jWkJFYWUweEdIcnRXN0tDSVlmazNkdEdDZw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Alerta máxima inmigrantes legales e indocumentados en EE.UU.: Esta es la nueva modalidad del ICE para ubicar a más extranjeros",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 12.3,
+   "base": 4.8,
+   "ratio": null
+  },
+  "d12c6d4d65b6": {
+   "id_hecho": "d12c6d4d65b6",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdlpJQkhVNlQwM2JXYWlWTXY0UXZ2R0l0ZWNtMUdWRWZMQVlBTVJqMWdQb1hKQy0wSWtJd1d6Q0gyOGNqV0tVX2hWY04yc1ZIQ0VzRC14ZG56WjJDeDN4Z3haQW15NHQ1YU1TaVZWTkhNczJNM0RjUTlMc0F0VHdRbzdabnpyTkw5WUQxR2ZtRVlHRm5hU2k5cXl1UXNoQWZkMVU4TjRGd2p5dkZPU3BRMFJTcW1iNXlHLUpqNy1PcldWbndFNjJUakFRYkxuekFOQW1CeFdVVEtyMEdOM3c2ZDAyUkg1WFU?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Guyana recibe a los primeros cuatro cubanos deportados de EEUU",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 12.3,
+   "base": 4.8,
+   "ratio": null
+  },
+  "8b882c288c8a": {
+   "id_hecho": "8b882c288c8a",
+   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNenR6UVY3N2dGa19KWkNONEhGOHZCZkxvSmxWWHhaOFZ4SGJicGJRa0oxWFlRMWxKbUtQYzkyX0JCRWZhWEUxQUF4SzRJaEFUMzlyWlA5MUJUaE1vS0VfOGd3NXdxZVdYWkU5X21RYlZlTG5nNS01c0dHdERWYlRBYkRKclNoakhUVVNFdUIyaGN6emw0c3FxVHJlNENHLTlDYkM5VDRQSzEzc2ROTkJZZlpQYlJFU3ROSm9WNFNtY09rTDlhc3hIVHdGSkpHY2FubGNIRG02SDJWaXQwN3YwNmhYcDE1anBxczczVWdfbkFnS3U2WkdpUzFwN2R2NC1kdW43c2NlXzBQQjhEeHBPcnVoUFhobXRseDNHY3FzaWJYRlXSAaMCQVVfeXFMTXp0elFWNzdnRmtfSlpDTjRIRjh2QmZMb0psVlh4WjhWeEhiYnBiUWtKMVhZUTFsSm1LUGM5Ml9CQkVmYVhFMUFBeEs0SWhBVDM5clpQOTFCVGhNb0tFXzhndzV3cWVXWFpFOV9tUWJWZUxuZzUtNXNHR3REVmJUQWJESnJTaGpIVFVTRXVCMmhjenpsNHNxcVRyZTRDRy05Q2JDOVQ0UEsxM3NkTk5CWWZaUGJSRVN0TkpvVjRTbWNPa0w5YXN4SFR3RkpKR2NhbmxjSERtNkgyVml0MDd2MDZoWHAxNWpwcXM3M1VnX25BZ0t1NlpHaVMxcDdkdjQtZHVuN3NjZV8wUEI4RHhwT3J1aFBYaG10bHgzR2Nxc2liWEZV?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "5 gráficos que muestran el drástico aumento de las detenciones de migrantes en EE.UU. y su país de origen",
+   "importancia": 7,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 12.3,
+   "base": 4.8,
+   "ratio": null
+  },
+  "1a67c4bcf483": {
+   "id_hecho": "1a67c4bcf483",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbTZhVDJqUWF3NWlpSXVaQU9VWVJKcjJ5aWtlNE5mNVBISGVMY1VBM2VnMkVrcU1GWXF4Rnk4ajdnTk4xalJBRTVXUXZCbXlvZzJXNmNXSWJXM3llY0Y1cGo0UVFxX0stNUxzeWQzdWU0TC1rbEp2Zm9yZExZNVd1eW5IWEY?oc=5",
+   "termino": "migrantes",
+   "geo": "AR",
+   "titulo": "Obispos alertan por miedo y vulnerabilidad de migrantes",
+   "importancia": 6,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 8.9,
+   "base": 5.7,
+   "ratio": null
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
@@ -172,22 +251,25 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 6,
- "paises_sin_datos": [],
+ "proximo_pais": 0,
+ "paises_sin_datos": [
+  "AR",
+  "ES"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 25.0,
-   "base": 9.8,
-   "ratio": 2.56
+   "puntaje": 9,
+   "reciente": 21.0,
+   "base": 7.2,
+   "ratio": 2.91
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 24.1,
-   "base": 8.2,
-   "ratio": 2.95
+   "reciente": 20.3,
+   "base": 4.9,
+   "ratio": 4.17
   }
  },
  "alertas": []
