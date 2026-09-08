@@ -1,68 +1,55 @@
 {
- "generado": "2026-09-08T10:44:30+00:00",
+ "generado": "2026-09-08T20:50:17+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "6b5f9aa322c3": {
-   "id_hecho": "6b5f9aa322c3",
-   "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPU01EalMzcEpuRDdkam05blBTUDg2V2wxcGJFcFBQSmxRX09DbHYwUF9xVlY4RjEtSE5RU3lZUkhIVThZbEZOMFA2Mmg5dFRBN2pJOGRJNXhOdFZLZFhxSjdPMWpJM1ZxNTJLR0NscUs5NUpBOVVzQ0dEcWxsUU80MjRDQ3M5ZWtpcGdhcmpBTGZ5T3ZwSDNtNW1fTFgzMnl4V0FjUGc1U0NwMFo4elBCM294VGxjbTdLVmxkZmJiQXV4VTB3NmxEbVpka0tRcG1vN0lVUFprVHVCdWxLaHl6a3lnN0xsTnlXeEdvbTlsUkdya3hFWkxLOWlHQUcwcE82TWh0SlZwQ3VyUnkwSXI5cXV3VEJrcXhOZXZsWDNoQ1FJVy1yYXJGdEhR0gGvAkFVX3lxTE9rdGpvM2ZxVWxXTGVTNWlPa3NlN0tPYjZiZGQ3QkdmRXBuQXNvWVFWaVhkUllfSV9rRmZPNXF0SUZqWjhWNlgtRFFGeU9KVjUzNnQ0UnNPYS11UGZmaGFzdkJid0Q3bmQ3S0FZcGwzUnhIR1J6MXlRcVE0NE53SlFsdm1RQzRLdGRCZHJORVh3QlZpbUtrQ1BWcDNBSnVVYmczLU1ZNDh2RzBMRVpHcmROVXRXT1pqaDlnc201WTdwVnhkUkdnTnNXQ05rMkNLZTVCSnp4WHFmQ0cxZXBTSjJmdGZVcmlBTUVpTF9OLXRQM3UzMkQ5ek00c25vLVBYTTh1dVZQUndIRFIzLXYycno3TDVqV2htcS1KUUYyejZ3c3p2bjZLYlVWN1VBMFMwaw?oc=5",
+  "ed1fb5126735": {
+   "id_hecho": "ed1fb5126735",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWm9pM0dTQUpYQlFRYlhIREs3VFpxZnc1UGNGT0tuMGt1UmU4dURyb3NpR3RpRzhIUHpVMTlpb082eXpDTmw3dUNQME80ckU5ZjRJLWcyZDFJd0JHT2E3Wlk4Y04wWWNsOXBOeGxXMS16Y2dkV1ZSSDhaSnNqMDNxN2t6dU54NWNrNF9JT1V0d0YwMDMwTXhnTEViRlJoMzUta2tlNXBvV29mNDU1LW5ING1kMUJSaGZkRy1WVkN0NlNFVnJIUldzcmw1VHVJSTFLaC1nSW5NYVFvQQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "La ONU pide a EE.UU. detener expulsión de inmigrantes a países donde pueden correr peligro",
-   "importancia": 9,
-   "velocidad": 7,
-   "puntaje": 7,
-   "reciente": 15.4,
-   "base": 6.3,
-   "ratio": 2.44
-  },
-  "8e592ddd7f2a": {
-   "id_hecho": "8e592ddd7f2a",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUElJYkRCak9reExBc0h6TUtCSDRGRTF6TV9TZFNfcHFzSm9PWlpQNlFlY3JDS1g3QjFMZzlOUEU2bjNVRkZyTTRIZUFsb0ZDTkE1VU52VGJwSk5ZREcwWllUTUpRMHU0Mmw5SzNaMFB3WXNtdVFWOVB1aThSNXpoZUJiV1NmM0JRd3I2Wi12X2VCMURCSW9iRU53WTRQeUNkMzBRNVFEcmJ5U2xPdkFONHhnOGlXRDg?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "La ONU exige investigar las muertes bajo custodia migratoria en EE.UU.",
+   "titulo": "La ONU pide a EU frenar las expulsiones de migrantes ilegales hacia países inseguros",
    "importancia": 9,
    "velocidad": 3,
-   "puntaje": 7,
-   "reciente": 15.4,
-   "base": 6.3,
-   "ratio": 2.44
-  },
-  "8b882c288c8a": {
-   "id_hecho": "8b882c288c8a",
-   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNenR6UVY3N2dGa19KWkNONEhGOHZCZkxvSmxWWHhaOFZ4SGJicGJRa0oxWFlRMWxKbUtQYzkyX0JCRWZhWEUxQUF4SzRJaEFUMzlyWlA5MUJUaE1vS0VfOGd3NXdxZVdYWkU5X21RYlZlTG5nNS01c0dHdERWYlRBYkRKclNoakhUVVNFdUIyaGN6emw0c3FxVHJlNENHLTlDYkM5VDRQSzEzc2ROTkJZZlpQYlJFU3ROSm9WNFNtY09rTDlhc3hIVHdGSkpHY2FubGNIRG02SDJWaXQwN3YwNmhYcDE1anBxczczVWdfbkFnS3U2WkdpUzFwN2R2NC1kdW43c2NlXzBQQjhEeHBPcnVoUFhobXRseDNHY3FzaWJYRlXSAaMCQVVfeXFMTXp0elFWNzdnRmtfSlpDTjRIRjh2QmZMb0psVlh4WjhWeEhiYnBiUWtKMVhZUTFsSm1LUGM5Ml9CQkVmYVhFMUFBeEs0SWhBVDM5clpQOTFCVGhNb0tFXzhndzV3cWVXWFpFOV9tUWJWZUxuZzUtNXNHR3REVmJUQWJESnJTaGpIVFVTRXVCMmhjenpsNHNxcVRyZTRDRy05Q2JDOVQ0UEsxM3NkTk5CWWZaUGJSRVN0TkpvVjRTbWNPa0w5YXN4SFR3RkpKR2NhbmxjSERtNkgyVml0MDd2MDZoWHAxNWpwcXM3M1VnX25BZ0t1NlpHaVMxcDdkdjQtZHVuN3NjZV8wUEI4RHhwT3J1aFBYaG10bHgzR2Nxc2liWEZV?oc=5",
-   "termino": "detenciones migrantes",
-   "geo": "US",
-   "titulo": "5 gráficos que muestran el drástico aumento de las detenciones de migrantes en EE.UU. y su país de origen",
-   "importancia": 8,
-   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
+   "reciente": 12.4,
+   "base": 4.3,
    "ratio": null
   },
-  "f4fc747ccb4b": {
-   "id_hecho": "f4fc747ccb4b",
-   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQWU1lc0RNRGpkV0xjcjNOV1FqclZKSDhfOUZEd0tQR2ZPRXZBckI1OFVMeWgwSzN4M3U1cHlKUDAzeHdZZU1USzdjbjNJUW56RVNQRldMSVdPeVRvU2s2SWdZanNNMWs5QjdTekk2YTNYSmpLT3F3cXVRUTg4X3cxS1hLcS1TWDJEWVFNc3BCRGtfMEhyY0JtMGhNbWFuOWwyQVg2VWw0eXVfTUdtTkp4VG01dlp0bmFKdkNEa0VoRC1oeElILWI3YlNKb2pkeHBtbW1JajVoWkd2bHRrUjY5enlLNGlLTElJRTFQczF5YlNyT1ZmTU5POGtDVEgtMGJlay0tb3c3WXVnUldJUmgxadIBlgJBVV95cUxQWmZnbFEwdnh1dEtWQ256SHc4aTRhY3JNSkQta1lYMkRraDNaY19VbUI1dTAwUW5BdDg5MENLN192cVNqelF6ZWlONkh0Tlh1ZXI4TjhoaUFUdklZTGFJVjBlR3o0YWRIRlVXanNfaVNjUHEwdmdCX2FQQnQyaHNac0ZUbHR1ZTZMak9uSTBPd0ZMaWwtRVJMSkxsMTAxNTlVZ2NjaXlkMWhKc0VIYjNUWC00bkxTb3dhQ0wtM0xORTQyZjJTWm51eldnY0owLWh1VXZBZlVfZFJmM2RwTkVVdE51anNxVjF0TU1nMEtkam5KcEVWcV9hMGdkUm5jWkJFYWUweEdIcnRXN0tDSVlmazNkdEdDZw?oc=5",
+  "e4f7bce93884": {
+   "id_hecho": "e4f7bce93884",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVXV5VkJfX1VpR2ZFWjgwdjFRNWpUSDg2SGg4cnh6XzBnOXg4MVpERFRoQUp3OWYwdXpuQlFUTEJrd0JrZDdTMDRLeGUwcnVWTHUya0QwZktsellCNndJU19yQmcyZEs2Vk80QkQ0NmhsY0dYNGZmTGpmaUN1bHJfVWg5U1NMRXAyWkpDbnJWdGM5VkNWNEFNbFdRdFBocGhzWjg1eTc5R1M0X1lIMU5USFI2UWgtTG1K?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Alerta máxima inmigrantes legales e indocumentados en EE.UU.: Esta es la nueva modalidad del ICE para ubicar a más extranjeros",
+   "titulo": "ICE abre un nuevo centro de detención para migrantes en Colorado con 1.200 camas",
    "importancia": 8,
    "velocidad": 3,
-   "puntaje": 7,
-   "reciente": 15.4,
-   "base": 6.3,
-   "ratio": 2.44
+   "puntaje": 0,
+   "reciente": 12.4,
+   "base": 4.3,
+   "ratio": null
   },
-  "d12c6d4d65b6": {
-   "id_hecho": "d12c6d4d65b6",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdlpJQkhVNlQwM2JXYWlWTXY0UXZ2R0l0ZWNtMUdWRWZMQVlBTVJqMWdQb1hKQy0wSWtJd1d6Q0gyOGNqV0tVX2hWY04yc1ZIQ0VzRC14ZG56WjJDeDN4Z3haQW15NHQ1YU1TaVZWTkhNczJNM0RjUTlMc0F0VHdRbzdabnpyTkw5WUQxR2ZtRVlHRm5hU2k5cXl1UXNoQWZkMVU4TjRGd2p5dkZPU3BRMFJTcW1iNXlHLUpqNy1PcldWbndFNjJUakFRYkxuekFOQW1CeFdVVEtyMEdOM3c2ZDAyUkg1WFU?oc=5",
+  "ebafed3a7d98": {
+   "id_hecho": "ebafed3a7d98",
+   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPLTBpQWcwcU9Idkl3aV9UMFdWU3ZUbERlaEZERFNpWm9ERlVhM1ptU0xYYkpzSWJYQ3dfUVZ5V0s3WGRrTGFKUXZraDVnUWJXQUU4elNTV0pQWEN4V2xRSDBhc3BrVktoaHM0Rk1IOWtTamRWbTdYSVUwRExNaTdOOHJSeS1LdDJLWVhrRGtReVB2bmFiY1dLa3J2VGMwb2hMMGZjdjE0S2tNc2diUVBlb19kc2ZoVnRVM0xiLWxRd1Bfb0daNVdSbzhWbXBPMnZVM0hEMmVUc1lKUGlkbFhFaXdaODNrbXdVMHRRSXBiVklnR2tqZTlNU1hhdlhmZmJEQTdybS1JR0tQc2s5bDJHSzF3b2UwMF9fUllLazBVT1pWNmPSAagCQVVfeXFMTTRScHY5RFcwdzQtUFlib1lBZFFRNjRUREUzbHcxbkQwUWNZNWxmMDdoazdiN1JUYml6V2c2MnZaMFFOR3FsVkp0dF9pYWpldmUzbExEVHlPQk00YVdHLWZoWk84N29KMG1NTmZNT05TVkxXWE5oX3FBLTczSTliYzlCa09IQlR6bl9KWGw1ODRLZFFIMzk3Uld5Q3h1X09nQk1pU2k5Q1hGSTNjRFRiTnFhUlJNdEptRGtNd2tBM0RYUU50RXpQLU55YXQ1eTNIRW90MW9rZGFVVnBLdjZVeGROTlQ3Wkc3c3k5UDFUZjVsY25MYjJmY25Fcmxsa3BBdGRKOTZhc2tkeWtKakRPck5pMWg5Z3FPUldBUGJKdEpOdEFvRFR6c0Y?oc=5",
    "termino": "deportaciones",
-   "geo": "GY",
-   "titulo": "Guyana recibe a los primeros cuatro cubanos deportados de EEUU",
-   "importancia": 7,
+   "geo": "US",
+   "titulo": "Alerta máxima inmigrantes | ICE está incrementando las redadas migratorias en estas ciudades santuario de EE.UU.",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 12.4,
+   "base": 4.3,
+   "ratio": null
+  },
+  "36a5cc7e07c2": {
+   "id_hecho": "36a5cc7e07c2",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWktQMXFBUHZ6b0h4bnJqVm9BdURUMXZISEtQeGFRTWJoQnh2anM3RkdxdE1RZkJ1QzFNVjJURDRqbXNub0Itd3JHYW02c2E3elNjMnZWckhqVDZmQkpFT09aTEZZVWNnSGhsZ25iQ01ZX29TTnB6VjhGT0V0b2M5NDVBNmdyQVBnVG1BdlNmLVo3UWpNOWJJWG9NY1hCbi05SWJLRTdVQjBEV1pCdjVqMUxVLW1XbDdyT1BVbHJHYjI3aXUyc0VkcjlGeXU0NXBHMGM5VDAyV3ctUmYyQWl0eVJrbVFzX2ZxMlEzd2FzWWNhWGRRWk1Uei1JVdIB-wFBVV95cUxNRjZPVmhPU1JWcWlJSlZpajRNX21vLWpVVmdxYjJ4N1RFWXdDc3REN2o0YXNlbzNVWTRZNENuQjdLc2M1eDc2Vzl4WEhySTkwZGNPaXZGN19PaHdlVUZGM3BoVkJheTdEN0wtYUg5aEhyRmlsZmtRYTlwODZtSEhGREp1OWxmWWdJTFd0a1ZnbHB4WW1LV1d1RFFPR1U2Q1NWUnFZNk42dDZGcWFwS2twR3VsQ3NwbmJWSll2cGphblgwRExCazRlcmRmU2pDWFpXb0h1VFYxS1NSWU9JUlJKeVlfTEhaZE1OSHpkSXJmTmRmUTl1SEpncFBFUQ?oc=5",
+   "termino": "deportaciones",
+   "geo": "PE",
+   "titulo": "Perú prepara acuerdos con Venezuela para deportar migrantes irregulares por vía marítima",
+   "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
    "reciente": 0.0,
@@ -75,18 +62,18 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1344550",
+     "valor": "1258100",
      "tipo": "rising",
      "variantes": 2
     },
     {
-     "consulta": "los migrantes",
-     "valor": "100",
+     "consulta": "inmigrantes",
+     "valor": "47",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-08T10:44:14+00:00"
+   "medido": "2026-09-08T20:49:53+00:00"
   },
   "VE": {
    "consultas": [
@@ -238,22 +225,24 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 1,
- "paises_sin_datos": [],
+ "proximo_pais": 2,
+ "paises_sin_datos": [
+  "CL"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 20.3,
-   "base": 6.3,
-   "ratio": 3.2
+   "puntaje": 7,
+   "reciente": 17.9,
+   "base": 7.1,
+   "ratio": 2.53
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 21.1,
-   "base": 6.8,
-   "ratio": 3.13
+   "reciente": 16.9,
+   "base": 5.5,
+   "ratio": 3.06
   }
  },
  "alertas": [
@@ -272,7 +261,7 @@
    "disparada": "2026-09-08T10:44:30+00:00",
    "velocidad_inicial": 7,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 10.1
   },
   {
    "id_hecho": "8e592ddd7f2a",
@@ -289,7 +278,7 @@
    "disparada": "2026-09-08T10:44:30+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 10.1
   },
   {
    "id_hecho": "f4fc747ccb4b",
@@ -306,7 +295,7 @@
    "disparada": "2026-09-08T10:44:30+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 10.1
   }
  ]
 }
