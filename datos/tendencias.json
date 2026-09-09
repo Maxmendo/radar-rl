@@ -1,21 +1,73 @@
 {
- "generado": "2026-09-09T10:54:05+00:00",
+ "generado": "2026-09-09T20:34:03+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "3c07dfd34470": {
-   "id_hecho": "3c07dfd34470",
-   "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPN1h5Tk1ueGdUbERUU0lzN0dYVUlXX19lWG1ZbHBxeFNHUG90Z0VsSFd5NENPX2hwanJNTFQ0RUJqaG04b1hXZDFDUHJQUFhBVFZKY3MwM3ZNVzN5dEZ3d09kN2NRSTBzVFRDeDhrbkhiZ1JEY19DSGNoVjBRQWMyUEcwMm1sZWNObDNLb2ZlQ2JBVGFibGk5SWxNLXZycFN3VUliSFBDVGphaVBHLUUwT3NoRHd0cTEwZWNHSW9rV1Y2VW83UUZKRDd0dFNVR2xsN1RteGtsaHAzQzdhN2FDdjlMcGVoczR4RG1IRFZBeWM5NHJWZjJyQlhwNEVkYjBZOTRZWld0SGNUYnRtXzE4X1k3WWx1RUZTNHZfeTBmRTlLS0NsazZFclJEN1V3RG1FWnNYS1VWVHVSbUVlSUxyM05yTGtTX1FyV3BGVk4ycG9SbkJwX2Mtcm5B0gHaAkFVX3lxTE83WHlOTW54Z1RsRFRTSXM3R1hVSVdfX2VYbVlscHF4U0dQb3RnRWxIV3k0Q09faHBqck1MVDRFQmpobThvWFdkMUNQclBQWEFUVkpjczAzdk1XM3l0Rnd3T2Q3Y1FJMHNUVEN4OGtuSGJnUkRjX0NIY2hWMFFBYzJQRzAybWxlY05sM0tvZmVDYkFUYWJsaTlJbE0tdnJwU3dVSWJIUENUamFpUEctRTBPc2hEd3RxMTBlY0dJb2tXVjZVbzdRRkpEN3R0U1VHbGw3VG14a2xocDNDN2E3YUN2OUxwZWhzNHhEbUhEVkF5Yzk0clZmMnJCWHA0RWRiMFk5NFlaV3RIY1RidG1fMThfWTdZbHVFRlM0dl95MGZFOUtLQ2xrNkVyUkQ3VXdEbUVac1hLVVZUdVJtRWVJTHIzTnJMa1NfUXJXcEZWTjJwb1JuQnBfYy1ybkE?oc=5",
-   "termino": "visas",
-   "geo": "IE",
-   "titulo": "Oficial | Irlanda prohíbe el ingreso al país de argentinos, uruguayos y chilenos si postergaron el trámite de renovación de su pasaporte aunque tengan ciudadanía europea",
+  "a1411efb5fba": {
+   "id_hecho": "a1411efb5fba",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNd0xHa2xUYmh4R0g5RU1NempzNFgtcmF0WE43c2l1Qm9zeGFwby1aUU1IOFZocHpLY1ZMUU5IdmhMM0JjUTZWLTFxMTctcTZtR1lNVlRlSm0tazhDSlNTZ1QxWVE4cmZudmFmQ2h1dkx6SFlCbEhXbnJZWTd3eV94T0hvWHJIWjU0RDBRMHNIelJoQWhkMUp3SjJYeHMxUGRTeUthY1Bqc1VmY1pLYTdoMWk4bVF0dVFLY185OTVnd0FmUklybkJCVTlqT0xCalY0aUdmdVh0emIzeU1udW1zNGxrU3dlR2VObjdycTNR0gGIAkFVX3lxTE5TNlQzN0JsaVdmWkh5TjBINHJPWWdLeVluNjNHbFhEbjI3anQza3VmNWs2elJzSlY4TEc2UWJEa08xMEREb3dXc3JfVTNCNmthWVIwQk00akl0WVVyTVVoMDYzY1R2UjF3eTJlOFNjVmFhT29yTFo4OEJvRERjaktDcUdJNE1RVXRSVC02R0hROHZIbm9zZ2Z3Z0ZUY1dRYzR3WkFEdlhpMVpqd1F2bC1PVDNvZXVBcEJJT2hJZXJ2QmlnbmVCNlU5RjNwMFhfREpMTVlKUjdHNXZGa3U4WE5sMHFZcWEzU3ZfRTdNUjNULVFvYUFGOHI4NTRzS2Y1ODRIeVhxYklGQg?oc=5",
+   "termino": "estatus de protección",
+   "geo": "US",
+   "titulo": "Trump derogó el TPS de 200.000 salvadoreños que deberán abandonar Estados Unidos para evitar ser deportados",
+   "importancia": 10,
+   "velocidad": 3,
+   "puntaje": 9,
+   "reciente": 33.9,
+   "base": 12.2,
+   "ratio": 2.77
+  },
+  "a93693acbda1": {
+   "id_hecho": "a93693acbda1",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQM0hOaEhTWkJuazlsLUp6d3c1MFlTZFBqNFVzZ2JZNjB2NUxtbTlMQ24zdlkzWTJEMVZkR29HSkpPNWduOTFJUUdiU2ZKMjNfTFpSV1FCWVNuN0ZWRDloN0Q2eVVJY3RjT3pCNDNFNDlFd1Rxa2k1aGpOSEdyVjhlZ2RKUDNBV2RQRDhfdG9vR3RCSjFBOFB6aDNUZTdQWHZlZThQUW5YT2RUeVVwLVpSWHVjTGdfT080VUNiaXRlN0JySGp4Z3EwUzZmU0xpcnFYQVFyVW14Ql9VZzAxVjNqUWx4ai0ySVBySVlZQTJ5SHpYQXFUSlc0cEpR?oc=5",
+   "termino": "migrantes",
+   "geo": "US",
+   "titulo": "Un tribunal de EEUU prohíbe compartir información fiscal con las autoridades migratorias",
+   "importancia": 8,
+   "velocidad": 7,
+   "puntaje": 0,
+   "reciente": 3.7,
+   "base": 4.7,
+   "ratio": null
+  },
+  "6a24993c6a80": {
+   "id_hecho": "6a24993c6a80",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOZXVieEhhdE9KMll0T2ZKQy1wZDVfZzktSXpwdWtoazVpUGZQeWNVZC1KelFsVGluN3RveXJPZlBwdjczS19WME5YT2s2ZzBEb2FFVlJRY3gwN3BneVF2alNWWXZ6XzdkaDEtLWhMZjZnZkVlLV9DdUlOd2RiMmdqTDZjTmlqc3I5dk5yU1lfT1BJTkZmeWVrc0pJdnY0cjh2RkVidU90UVd0clM5Ry1NNkpDWEhXNWRxeWd3bzhwejZ1VGh4Z1VWX0RMUEM3eEViUWp5Y0RVYnRkUTNPZXBWckR2VEQ4a1pxa1HSAYQCQVVfeXFMT3FUMjBiTGF1VGVhekRJSkhWbW1HLTllNmg3S3VCWGFTdGVhYUd2cGk0akh1WlZWZGlGa0U2MXIxMkpvSjRYZ3F4SU1IRGZPakRmZXdkYWpjSHZaNHNLX0xhdmlXUnRYX3daaW5fZ1NDa3dZNHdYTW1reWR0T215UExUenFOOWVkX0FZQzloMGM0MVNWcVE2RXlWRExuOFdRZXl1V3dWaFk5ME9LWXU0YzVkaUVnTnExcHUyQ2MtYkdEMFdQWDkzVFkxUGNheWRwVFVUSFJ4Ym54eHNiMWtEQThPeHQyNWg4MmlTdjNIUFpOeFlwa0xjY2xmLXdUY3ZZMy1DSTg?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Exparamilitar nicaragüense detenido por ICE podría ser deportado de Estados Unidos y quedar sin nacionalidad",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 1.0,
+   "base": 0.3,
+   "ratio": null
+  },
+  "fa607e9a359f": {
+   "id_hecho": "fa607e9a359f",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE52WURwc3VsdS1oak4ya0VVdlhDbkNLQVVnWU9KdmJXTm9feF85eWNuZ2lNWkVjZEFDZ0x0RER1OW5QV0MzSWRMT2tocEdFX3pWc3c?oc=5",
+   "termino": "deportaciones",
+   "geo": "PE",
+   "titulo": "Perú busca acuerdo con Venezuela para expulsar a migrantes por vía marítima",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
+  },
+  "e5e30ac99d1f": {
+   "id_hecho": "e5e30ac99d1f",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRU84UXFHUWVDc2Fadkg4ZmNsSk5NdGhORzFJRU1SNi1ESU9Sd3Y1a3M2OURkMnUtWDJtVXN6QnpOWldKb0JEUjVSNHZCSjdGY044OHl3MEx5RjBIbUI5ZlNaZGVBOGZ1RmV4Mm9RTktfOUd1WXpQV05Mck9lVm5SeldBSHYzYS0tbWJIMHVtYlVZaDdScmpZYU9ndlBiQm5CWmRaaEtUUEpWSjZxOW1WWXZBSzNDRnfSAbwBQVVfeXFMTlBKOUZsQlBtQnNZMFhSN0RHQmtVeEFfOERiZEtKV0VxV25PSXAtb0I0MnZKNEtUbzJweW0xZnBVVkppUm9LZGhaMkNDSVpWbDJGQ1hxSjdxX0VtWEtNaHJSejhmYlpZY1dBczJ2dkdnaVdGUWMyREVlRlczcE1peTUxUkFMRTZwRkFSaUxsUVJKMGhfZFNQT0pXb1ZLVGxyUjFjWEF6UnJmcFBMWWdVUldJQnNhcHBrb2gyZUw?oc=5",
+   "termino": "deportaciones",
+   "geo": "MX",
+   "titulo": "Embajador Johnson reconoce intercambio de información en detención de \"Pepa\"",
    "importancia": 7,
    "velocidad": 3,
    "puntaje": 10,
-   "reciente": 29.7,
-   "base": 7.0,
-   "ratio": 4.24
+   "reciente": 60.3,
+   "base": 10.7,
+   "ratio": 5.62
   }
  },
  "audiencia": {
@@ -85,25 +137,25 @@
   "CO": {
    "consultas": [
     {
-     "consulta": "ceuta migrantes",
-     "valor": "456600",
+     "consulta": "ceuta",
+     "valor": "493000",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "171850",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes mercho",
-     "valor": "4050",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "registro unico para migrantes venezolanos",
-     "valor": "1850",
-     "tipo": "rising",
+     "consulta": "los migrantes",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-06T10:24:04+00:00"
+   "medido": "2026-09-09T20:33:55+00:00"
   },
   "US": {
    "consultas": [
@@ -186,26 +238,60 @@
    "medido": "2026-09-03T10:47:42+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [
-  "AR",
-  "MX"
+  "AR"
  ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 22.4,
-   "base": 7.1,
-   "ratio": 3.18
+   "puntaje": 7,
+   "reciente": 22.0,
+   "base": 8.9,
+   "ratio": 2.47
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 23.1,
-   "base": 6.8,
-   "ratio": 3.4
+   "reciente": 21.6,
+   "base": 5.8,
+   "ratio": 3.69
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "e5e30ac99d1f",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRU84UXFHUWVDc2Fadkg4ZmNsSk5NdGhORzFJRU1SNi1ESU9Sd3Y1a3M2OURkMnUtWDJtVXN6QnpOWldKb0JEUjVSNHZCSjdGY044OHl3MEx5RjBIbUI5ZlNaZGVBOGZ1RmV4Mm9RTktfOUd1WXpQV05Mck9lVm5SeldBSHYzYS0tbWJIMHVtYlVZaDdScmpZYU9ndlBiQm5CWmRaaEtUUEpWSjZxOW1WWXZBSzNDRnfSAbwBQVVfeXFMTlBKOUZsQlBtQnNZMFhSN0RHQmtVeEFfOERiZEtKV0VxV25PSXAtb0I0MnZKNEtUbzJweW0xZnBVVkppUm9LZGhaMkNDSVpWbDJGQ1hxSjdxX0VtWEtNaHJSejhmYlpZY1dBczJ2dkdnaVdGUWMyREVlRlczcE1peTUxUkFMRTZwRkFSaUxsUVJKMGhfZFNQT0pXb1ZLVGxyUjFjWEF6UnJmcFBMWWdVUldJQnNhcHBrb2gyZUw?oc=5",
+   "termino": "deportaciones",
+   "geo": "MX",
+   "titulo": "Embajador Johnson reconoce intercambio de información en detención de \"Pepa\"",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 60.3,
+   "base": 10.7,
+   "ratio": 5.62,
+   "disparada": "2026-09-09T20:34:03+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  },
+  {
+   "id_hecho": "a1411efb5fba",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNd0xHa2xUYmh4R0g5RU1NempzNFgtcmF0WE43c2l1Qm9zeGFwby1aUU1IOFZocHpLY1ZMUU5IdmhMM0JjUTZWLTFxMTctcTZtR1lNVlRlSm0tazhDSlNTZ1QxWVE4cmZudmFmQ2h1dkx6SFlCbEhXbnJZWTd3eV94T0hvWHJIWjU0RDBRMHNIelJoQWhkMUp3SjJYeHMxUGRTeUthY1Bqc1VmY1pLYTdoMWk4bVF0dVFLY185OTVnd0FmUklybkJCVTlqT0xCalY0aUdmdVh0emIzeU1udW1zNGxrU3dlR2VObjdycTNR0gGIAkFVX3lxTE5TNlQzN0JsaVdmWkh5TjBINHJPWWdLeVluNjNHbFhEbjI3anQza3VmNWs2elJzSlY4TEc2UWJEa08xMEREb3dXc3JfVTNCNmthWVIwQk00akl0WVVyTVVoMDYzY1R2UjF3eTJlOFNjVmFhT29yTFo4OEJvRERjaktDcUdJNE1RVXRSVC02R0hROHZIbm9zZ2Z3Z0ZUY1dRYzR3WkFEdlhpMVpqd1F2bC1PVDNvZXVBcEJJT2hJZXJ2QmlnbmVCNlU5RjNwMFhfREpMTVlKUjdHNXZGa3U4WE5sMHFZcWEzU3ZfRTdNUjNULVFvYUFGOHI4NTRzS2Y1ODRIeVhxYklGQg?oc=5",
+   "termino": "estatus de protección",
+   "geo": "US",
+   "titulo": "Trump derogó el TPS de 200.000 salvadoreños que deberán abandonar Estados Unidos para evitar ser deportados",
+   "importancia": 10,
+   "velocidad": 3,
+   "puntaje": 9,
+   "reciente": 33.9,
+   "base": 12.2,
+   "ratio": 2.77,
+   "disparada": "2026-09-09T20:34:03+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
