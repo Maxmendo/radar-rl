@@ -1,60 +1,73 @@
 {
- "generado": "2026-09-10T10:47:29+00:00",
+ "generado": "2026-09-10T20:31:19+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "c87d65643a06": {
-   "id_hecho": "c87d65643a06",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQQ1J0TjdHVURIS01HOFBrcUp1Q1ZIc2tmRUVxS2NxZ0xMVTFrV2NrcUVMUGVYSjRQaWNoY1FVa1ZhMklRWVYzNXFuS1pEazA3QThtMHVKM3hLak1kVDg5d2NndHdTLWlBMm5BLVdhZzRBeDcwOXhEQ3BIRW53TkxVZmozQldnV3JOakpsbWlld1dkd05uT1VaeWR4b0lFaDhrZU1ILTc4R1laMUk0UlJ1WmdvTzA0UVFkclVTRzZRb0F2dWVINm5pT2twWmJqT3Y3bklpczRURG12VnFGV09PdEx4Y2JUWmZocVpCVw?oc=5",
-   "termino": "inmigrantes",
-   "geo": "US",
-   "titulo": "El Gobierno de Trump propone excluir a un gran número de inmigrantes del Censo 2030",
-   "importancia": 9,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 30.3,
-   "base": 34.7,
-   "ratio": 0.87
-  },
-  "bd137c7b66ac": {
-   "id_hecho": "bd137c7b66ac",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdVhUS3BSVGdUVm5aMEtlTFNkbDJ6dHVYN2dWWF9XaXFicW50Smx5UkstcXRpU1liYWlCb2F6OVRCaFRaY3JGNzJ2YmRpYTMxWEN6WlpOVGxDX1dHVjNGMXJ0c0tRMjBWcEdQekp2Y3ppdUdYNmpqS3VmZlhyMFBCQlA5UWhZMUhyejVXY2RzRW40dmVCUWdTN3J6Rk1RbGc5cHBRUVE5MA?oc=5",
+  "3976c4ddff8a": {
+   "id_hecho": "3976c4ddff8a",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMHN5ZjVLTlZkVnNCb0JTSUpxbldpcGpvdmtCZnlzdFRBaU5aekQwbVdqRk9Tek1LNk9SYjhIcy03SG9vaUpVTUJVWFdXSGlKaEFSdkRMZm9kdmFjalQ3dWlnNnNfVzdvbUZKVm9rWW5YdWFucUZtTlJLUW1sdlQxMjh0dUJMS1VLaWdsSGxPZWZ3T2lRSTVxTk1oek01SXdKd1dfQlI0dU82WmhPTXBDU01ZelpMTnplbXF0amV1eDVSVlZZc3FHRHVJSQ?oc=5",
    "termino": "migrantes",
    "geo": "US",
-   "titulo": "Un tribunal de EEUU prohíbe compartir información fiscal con las autoridades migratorias",
+   "titulo": "Trump busca excluir a inmigrantes del conteo del Censo 2030",
    "importancia": 9,
-   "velocidad": 3,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 15.0,
-   "base": 21.8,
+   "reciente": 15.7,
+   "base": 22.9,
    "ratio": 0.69
   },
-  "9d036ef30bb9": {
-   "id_hecho": "9d036ef30bb9",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNdlRkTjdOM1J5bUpNdDN4dElIbHBWVm5qVEtLOGJoZ2NPeGM1OW45ZFFGYm55VTVQM3dGN1VQeU5xRnZISzFmNGpXVm5Yb01lN1RzR3JUaVpRZnZkRjV0bmZVQWV4LWJSV1pWbVk5a0l0YjJDT0ZSY1RKVmgzcWR6d25hXzdvM1p5eGFiR28wNlBOVmw2U21sRWxiMGlPX1F2UjZxM3dfOWZySWdHcnRvOVVBNWttdkJ4bUplQ094Z245U0NUZkZZVU9vU2pvSFl2azVCUE11ZDJMNjZGRkFaOGc1TEg0YVJnX2g4?oc=5",
+  "145193964418": {
+   "id_hecho": "145193964418",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tQ3o0ai1SWDlSSnYzMnkxaGw4ZEhmbDVHOFRPUlg5a2hXODNycjZ1M0xYVDBVcU5OZFZDSmN5N29tVndOVVh5ejM4Rk1OX00zYXE2QUFIaFRORVhFOGQtc2I3RDg1a0Rfd090TXBR?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "La Casa Blanca habilita línea de ICE para denunciar a inmigrantes indocumentados que sean camioneros",
+   "titulo": "Inmigrantes detenidos en Nueva Jersey sufren grave desatención, denuncian congresistas",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 4.6,
+   "base": 1.7,
+   "ratio": null
+  },
+  "d317b481ec48": {
+   "id_hecho": "d317b481ec48",
+   "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNZkhOcmIyRV9SOVBESmxsNDdTRmgzR28zTVdxeWpub0hOVnZBbm5xMWRPSExDQ2pSTVVtYU9LN0gzeFh4QlUxNGFrUkh2V3VuMmloWFlPeDFNaHc3bFF1TEdHMTY2WlBPNlgtaUE2Zk1oMFJoZmI1TGkxMFRxOVlSMmRuTHB5S3RJV1ZtMzZ3TFkydnJOQUIwVjNxbGRQN21ycDZBYzdvLVFBSjV4RzViR1JONTZsT2M1V0NvZG82aWxRbkM4RGw4N1JsSmVBNFR3Q1FILXZncW1DOUNHYjQ0U0dlYlFvVDlNSU9sbFZKV0R1SFBuOXZfZWdpMEtwQlJsVHVqckEzS2wyaTVpdjJsRVA4aHVlT1ZPN0JyX2ZoTdIBpAJBVV95cUxORE5Xb1F1aVpBa3ZZMk81cXpLa04zdUx6SnBFR19LXzVjbnZuTzhNU3VZcnl3MEZYODZ4UXFIWldUamJuLUZXVmFzVE8xWE5TeGY5WkMzWXlGMDM5emxPNmlmYXRXV2hJZG16Q3l0YVVtYXhJTlBrcGR3UTRZTUk1ZkFtdkZLLVF0cmZzbFQxUmhGV1o3ZzI3LWZzWlQ5dVZrcnVwSHFqdXh6c2tJcEZMb3cxZkVYa05LOEhqd2s2TTF6QndzZlNYU1lpTmE3Z1FSd2N1M2pHcGRWTHFabmk0cTk4endNTEVJMlZTWlo3R0g3T1hXeHdhSmZIaFlSQmhpdllJVEF0OVVKRV9kTUwxb05McDBKOXNWUC1OQ3ZNQ1RmSGRm?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Estas son las nacionalidades de los migrantes más arrestados en Estados Unidos por el ICE entre 2023 y 2026, según el Deportation Data Project",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 4.6,
+   "base": 1.7,
+   "ratio": null
+  },
+  "d56bcfe77ee5": {
+   "id_hecho": "d56bcfe77ee5",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYkZVNmlLTlVLUC1xSG9Cc0c2SGN1enA4WDI1bWpDNlg5SVhwQVZpekxCYkgtbE5YTUNSdk5xczJxeG5hMnNRMGw5VWRQSVdOTzFHMjREb0t6b0NOUEh0a0pFWXZlck1EdmtRdXFHQS1mM2ZfclNSc2NGRW1RcHoxVGFVVlhZZURJWVQxVWc1U1FNYU05RXBYRGNvdGlYWlhNZ2NSTjBTQ0o0ZFNwd2dOOUVzSF9Hc2xVcEJqZlBUdjJ0eXd3Vk5hVg?oc=5",
+   "termino": "migrantes venezolanos",
+   "geo": "CO",
+   "titulo": "El riesgo de deportación azuza la carrera de los venezolanos por regularizarse en Colombia",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 4.4,
-   "base": 1.5,
+   "reciente": 11.9,
+   "base": 5.1,
    "ratio": null
   },
-  "df2462ac33f2": {
-   "id_hecho": "df2462ac33f2",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQ3JKZW5oTzg1T3prdUhTQ1FuMEFuRVJ2QUZlZ0NYakZnM2ZxRmQ5RF85ZGUtYktROVBOQ3ZjYlF1QU91a1IzU1VLNnVLNUE4R05ibVI0UUNBR3FYbXJtV25LMWFFUXBNbjhaRjgzWWtTVkhPTnZ5TXhaOGRETjU0bjJubUVKUkRxdml1aU9jZDZVZVpDVDA2ZS1TQ2laRV9tY0FYak5TZERzaWh3Y2xZNTZPNW5BeDYycElSa0xUREZFaDJSYTdHNjA4b3Y1bWw5bGx5WWk4OWhHX3c?oc=5",
-   "termino": "caravana migrante",
-   "geo": "MX",
-   "titulo": "INM Desintegra la Caravana Migrante “Sueños sin Fronteras” en Arriaga",
-   "importancia": 9,
-   "velocidad": 3,
+  "95b8cea6590d": {
+   "id_hecho": "95b8cea6590d",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeTFYZWZISjVISGNKSk5aVGwxWEMyd1FJakhlRm84V2M2WG9GTzNMbGo5cW1zZ0xzMXlCU1dmWkFEM084LUg0dWJheVZVYnJ6Njd3SVp4WlhUVzFDOHppTktUNHNTdnNybUNLZTFpWFFXbk0tR2g3b0t5bWc0aVVkeTlEcHlWWC04YlA1NnZwS05SNnlRZHRRZnNpY0ZSMGptQmd3cTJiYnc1N2YzamV6R0pTWnp4OUhHYXQ1MENJbHBPQnlpNGdxU2FTV0VEWnhCSXBCUWl3aXF1bzFxX3ZSZg?oc=5",
+   "termino": "inmigrantes",
+   "geo": "AR",
+   "titulo": "La Plata reconoció a 75 inmigrantes por su aporte al crecimiento de la ciudad",
+   "importancia": 5,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 12.4,
-   "base": 2.0,
-   "ratio": null
+   "reciente": 18.3,
+   "base": 15.0,
+   "ratio": 1.22
   }
  },
  "audiencia": {
@@ -62,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1233550",
-     "tipo": "rising",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 2
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "154150",
+     "valor": "167900",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "49",
+     "valor": "43",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-10T10:47:12+00:00"
+   "medido": "2026-09-10T20:31:02+00:00"
   },
   "VE": {
    "consultas": [
@@ -153,25 +166,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "tráiler con 39 migrantes se incendió en texas durante una persecución policial",
-     "valor": "36700",
+     "consulta": "oracion por los migrantes",
+     "valor": "27850",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "oracion para los migrantes",
+     "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
      "valor": "21200",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "liberia",
-     "valor": "15500",
+     "consulta": "migrantes unidos en caravana",
+     "valor": "20850",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-03T20:37:01+00:00"
+   "medido": "2026-09-10T20:31:11+00:00"
   },
   "ES": {
    "consultas": [
@@ -231,22 +244,22 @@
    "medido": "2026-09-10T10:47:21+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 5,
-   "reciente": 19.3,
-   "base": 9.5,
-   "ratio": 2.02
+   "puntaje": 10,
+   "reciente": 24.1,
+   "base": 8.3,
+   "ratio": 2.92
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 6,
-   "reciente": 16.7,
+   "puntaje": 10,
+   "reciente": 22.0,
    "base": 7.4,
-   "ratio": 2.25
+   "ratio": 2.97
   }
  },
  "alertas": []
