@@ -1,19 +1,32 @@
 {
- "generado": "2026-09-11T10:44:59+00:00",
+ "generado": "2026-09-11T20:35:08+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "db5fd9df3745": {
-   "id_hecho": "db5fd9df3745",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQS1ZaZENwQWZhSnQ0OXRRWFh0dDhVdzF3TG5PczhmOUMtbWVwT09MWVgtUDJqYWNPMTM4YlA3c3Y0cnVHNzF2NzZYcnAxM0FTVHlnZUpFcGNacnVRcHlhci1QdkFsM3NUOW9MUlZQMTJjSGpueFFQXzF2S2lUWVZ5Vm9hOHAwSUk2N0tzUUFTNzVtQUc3SVRVNXZTQzNvYkFmc3lCb0JwOXJBZnBEYjFlaWhtdmZPcFRLSHRnblVMcw?oc=5",
-   "termino": "estudiantes indocumentados",
+  "8e300391d6e8": {
+   "id_hecho": "8e300391d6e8",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQY3B6ZEVjR2VBVXAzWE51QWlHYjBtdHQ5RFZNdDIzVzhNeTM0cGlrbFVjbHdWR183XzRQc2VFSHY3aU9vTWNvOGJWc0VUT1ZFbEYydW9ZQ2QybzF5QkFYSmlPVGhlSjk1ekRhWl9xNXUzVUpybFR2WGhEM1A2ZHhiSkJhM3lHTG9sMVo4YldBa0RBUXdpa054WVBaVzlFbzZuMEdVSUJ4Nk9hckd2TXNMbnJDeVdsb1ltWHRvYkZYbjczdzZ4ODI2d0JR?oc=5",
+   "termino": "desplazados internos",
+   "geo": "EC",
+   "titulo": "Ecuador: 300.000 desplazados por violencia criminal",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
+  },
+  "df41c92fc2c3": {
+   "id_hecho": "df41c92fc2c3",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNamlWaE15dm1zZUZ1SWFENkFJc1AtekgxT3ZXVEJBZVNwNWlwdXg2NGhyT3pVdWw1Xy1aTzc4N2szWHhEMDRENTljQVJQdXVqYmhuLVJFcHd1UDZLLTE5ekZpNFRGcFpUQi1ScGYtbVhuTFpPaFdob0JWdC1XUEtYR1hKX2hqTjNmNW0waTlzdUpsbURiaHdKS0k5T1JfUnp6VXcxNHVIZFJ0dHVkMHgyU2kwSlV0MHhwSjg1OU9ORUJrMS10S2duZkpGdnc1OVZyMG11TEpkWG43cHRXSzdLSlI5NFpaMU0?oc=5",
+   "termino": "migrantes indocumentados",
    "geo": "US",
    "titulo": "EE.UU. demanda a cuatro territorios por matrícula universitaria a indocumentados",
    "importancia": 8,
-   "velocidad": 3,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 0.1,
+   "reciente": 0.0,
    "base": 0.2,
    "ratio": null
   },
@@ -22,65 +35,52 @@
    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83b3JSZ3ZTYjFEazRhcWRSRXpxYnRrUDJKdm1HaUxzZ2dhWTU5LUNQNXBEek1kNmIyQ0ExbDI4NWFNbmtXVl9sM0IxanFiTzZOdGJ2c2pqSQ?oc=5",
    "termino": "inmigrantes",
    "geo": "US",
-   "titulo": "Censo de EEUU evalúa plan para omitir datos de inmigrantes y raza",
-   "importancia": 7,
+   "titulo": "Censo de EE.UU. evalúa plan para omitir datos de inmigrantes",
+   "importancia": 8,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 35.1,
-   "base": 39.0,
-   "ratio": 0.9
+   "reciente": 34.9,
+   "base": 39.5,
+   "ratio": 0.88
   },
-  "81beb51c872c": {
-   "id_hecho": "81beb51c872c",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRE9yWUlKdm5jVkRwRlRwclgxb1U5VTN3RkQ5NnF2d0pMMUg3SFRhaF9qQ09xb2pkY2ZxLWNnSzJCUXZKRHlpOGcwUjNsc1liYW10VGxpYXFOeDFpVjlYRFhDUHE1a3haOHBXaFdQVjNEU2Zyc3hMbFd3dXRtX3k3aC1tZjBjTnZyZmZvQU5xNlZ2SG5ybzdsYWdYQW56TzVH?oc=5",
-   "termino": "deportaciones",
+  "8ac35f13c2cb": {
+   "id_hecho": "8ac35f13c2cb",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQ3ZwbmlYSmEtdEhEV2xCQXpvMzRqUHNsVUh6UVN2TWVPeFMzMGZVNXZvNGdpcGhhYl9tUktYVkN2ZXVIMG5UU3cwVGxyUzU0VmpBbEljY0ktLUxMUjU2WjFTTEhtNDNIUVFxbzJwWWRnNXlaRXRMQVk1cjFhNEJEaEZEYUpkSWZfU1EtVWFidmNuVVZBQW83TTRKSktpV2RNdFBBaHltbTh3eWxOc0xtQzh0ZzRmYS03cEpN?oc=5",
+   "termino": "inmigrantes indocumentados",
    "geo": "US",
-   "titulo": "Videos de cámaras corporales ofrecen inusual visión de redada migratoria en fábrica de NY",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 4.7,
-   "base": 1.7,
-   "ratio": null
-  },
-  "d317b481ec48": {
-   "id_hecho": "d317b481ec48",
-   "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNZkhOcmIyRV9SOVBESmxsNDdTRmgzR28zTVdxeWpub0hOVnZBbm5xMWRPSExDQ2pSTVVtYU9LN0gzeFh4QlUxNGFrUkh2V3VuMmloWFlPeDFNaHc3bFF1TEdHMTY2WlBPNlgtaUE2Zk1oMFJoZmI1TGkxMFRxOVlSMmRuTHB5S3RJV1ZtMzZ3TFkydnJOQUIwVjNxbGRQN21ycDZBYzdvLVFBSjV4RzViR1JONTZsT2M1V0NvZG82aWxRbkM4RGw4N1JsSmVBNFR3Q1FILXZncW1DOUNHYjQ0U0dlYlFvVDlNSU9sbFZKV0R1SFBuOXZfZWdpMEtwQlJsVHVqckEzS2wyaTVpdjJsRVA4aHVlT1ZPN0JyX2ZoTdIBpAJBVV95cUxORE5Xb1F1aVpBa3ZZMk81cXpLa04zdUx6SnBFR19LXzVjbnZuTzhNU3VZcnl3MEZYODZ4UXFIWldUamJuLUZXVmFzVE8xWE5TeGY5WkMzWXlGMDM5emxPNmlmYXRXV2hJZG16Q3l0YVVtYXhJTlBrcGR3UTRZTUk1ZkFtdkZLLVF0cmZzbFQxUmhGV1o3ZzI3LWZzWlQ5dVZrcnVwSHFqdXh6c2tJcEZMb3cxZkVYa05LOEhqd2s2TTF6QndzZlNYU1lpTmE3Z1FSd2N1M2pHcGRWTHFabmk0cTk4endNTEVJMlZTWlo3R0g3T1hXeHdhSmZIaFlSQmhpdllJVEF0OVVKRV9kTUwxb05McDBKOXNWUC1OQ3ZNQ1RmSGRm?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Estas son las nacionalidades de los migrantes más arrestados en Estados Unidos por el ICE entre 2023 y 2026, según el Deportation Data Project",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 4.7,
-   "base": 1.7,
-   "ratio": null
-  },
-  "87ebf7aa6cec": {
-   "id_hecho": "87ebf7aa6cec",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQc0tQYVBibE90cGN4aWZKRnJ6SG1INFlENi1RNUk1U1l0RzJBbDk1STVPQ2RkdURkY1BuLTAyZDBPNFp3c0pfeVNwdlJxWkRvQmRUNjRwX3JrNEtZSnlqZ1JYRmdURmZFWTNDTjhQR09jNWFxWDNkSk9sV2N2YVFEMzJIX2VwbndvNC1ZUG1uUnB3bElETGZmd2dzU2dDZ1ZwUzhXSXllbUJQQ1pnazFHM3k5Smh4dUhzSWwyTDZILTRjaDJuY2dQTGE5RGJxTmd1NEVjN29oc24yTmZXcjZ6czFJVFVSU01ZZUlPddIB7AFBVV95cUxQc0tQYVBibE90cGN4aWZKRnJ6SG1INFlENi1RNUk1U1l0RzJBbDk1STVPQ2RkdURkY1BuLTAyZDBPNFp3c0pfeVNwdlJxWkRvQmRUNjRwX3JrNEtZSnlqZ1JYRmdURmZFWTNDTjhQR09jNWFxWDNkSk9sV2N2YVFEMzJIX2VwbndvNC1ZUG1uUnB3bElETGZmd2dzU2dDZ1ZwUzhXSXllbUJQQ1pnazFHM3k5Smh4dUhzSWwyTDZILTRjaDJuY2dQTGE5RGJxTmd1NEVjN29oc24yTmZXcjZ6czFJVFVSU01ZZUlPdQ?oc=5",
-   "termino": "regularizacion",
-   "geo": "CO",
-   "titulo": "El riesgo de deportación azuza la carrera de los venezolanos por regularizarse en Colombia",
+   "titulo": "Gobierno de Trump busca excluir del censo a inmigrantes indocumentados",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 8.9,
-   "base": 2.6,
+   "reciente": 0.1,
+   "base": 1.1,
    "ratio": null
   },
-  "1c48f76feaab": {
-   "id_hecho": "1c48f76feaab",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOEliaDRFdTJ2VWk0QTZGUkxZcHZ3cWt3cVU1VE1qRzRGcVFDM2ZDVF9NTy1yZVhxYVd2SHgtRGVkMk81RTBLR2VFOUwtcTJlOE1YTzNLWXlraWlNeEVPLXVDS01wWHFpbUdCS2t3WklreS1aa2ppTzdXbnMtYXJOblMtOXFIdG5lZ3hnODN5dDBFYlpMQWktZHZDWU9QeGNrX0E0dkJSVjIzcFh0UWd2c29ld2FNQ29kVHNDU2Qwc0phQdIB3AFBVV95cUxNblhoRmFTbGhLUy1KdUJXUXZDVlo4NU16SmVIYjhhZm5XcHFBWE1jd0F0akdXVU12QjlzbmhxTjVaNUxXV2NPbXdpNFIyWVpRTjJoZTN4UzBHRHNhTm9yU05kU0MtYXdLRFhFYlFSZHpOeFpOcUdGQTJWbXJSRk9GNnoxSUNudm9QTlEzLUFjNEFiczdIQnNESGNhOGdhNFRYRGFjTTR2b3lJcWM2NU1XMi1IenQ4bl8tV3pWX2MzaFhtWG5wNXNxQ1R1aUktSFp0WmxaQzNxenZMR2Nq?oc=5",
-   "termino": "migrantes",
-   "geo": "PA",
-   "titulo": "Unos 6,293 migrantes contabiliza Panamá en el flujo inverso norte-sur durante 2026",
-   "importancia": 7,
+  "e34cc024a8c7": {
+   "id_hecho": "e34cc024a8c7",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN0R3bTdqNVdicF9LWEZ6dFRDcVpvdWtWbTRSS0I1cHFJbWpoS0FZSC1qTkp3SEdid05EZlF5bFlpeUp1bV9JOVItWXpIWFlsaUhqRFFwSl9IeHZVUDNMX2h0RFVFTnBaSGVpRUN4T2ItLVp1RC1yaHdkTkZ4SEJhVXFUX0tvMzA0Nnh3dzRDdnF4cmhJc2tCelREcExnYnpKTmN0etIBqgFBVV95cUxQeXhJNTRIZ1JzWm9IcHF3YjRYNVNuVDZXc2NCYm5BT0t0Z0NVbWJqclYyX2kxLWNlTmNyOUg3VExOQXNMeGxZMW1Dc3BwMnhENGE2U3hDS3ZWeG1ZOEI2S21zcDlOY3hLTkE0LTRFNWN3UFNLTmdPOW5WeDgyQmpoVXBvdTlQYkZEbGlOX3lhNUlSNjBMTnp3V0cxal9OYTV4V2tmel9RMVc5QQ?oc=5",
+   "termino": "redadas",
+   "geo": "US",
+   "titulo": "Video de cámara corporal ofrece inusual visión de una redada migratoria en fábrica de NY",
+   "importancia": 8,
    "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 33.9,
-   "base": 7.0,
-   "ratio": 4.81
+   "puntaje": 0,
+   "reciente": 7.4,
+   "base": 2.8,
+   "ratio": null
+  },
+  "265affb00f48": {
+   "id_hecho": "265affb00f48",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQa1NyT3JXZnQ3dTdsaXBaZHNlMXltbHlONVN3ZjNlVTNJQTlGU2JZTWZCZHhXVkN4M0lScWh3eWh5SWFpb2RVY2dtUi1ORTktOTBxVElvdHJYdVBVLVhGdmZhUmJmdHpoTWVaejFYblJGSm5GNk1aNS11SkpsbHBpN05ZYzFKZXlNckczREpTSExobWlJVHBnekVRU1lpak5qelNJZU9nSy1qZEgtNERLdHFtWVppX3FQVnQ1dG1qUERSX0pKLUJaelNmZHkzRldKTHRIR2lCSUpISTNHQVZN0gHfAUFVX3lxTFBrU3JPcldmdDd1N2xpcFpkc2UxeW1seU41U3dmM2VVM0lBOUZTYllNZkJkeFdWQ3gzSVJxaHd5aHlJYWlvZFVjZ21SLU5FOS05MHFUSW90clh1UFUtWEZ2ZmFSYmZ0emhNZVp6MVhuUkZKbkY2TVo1LXVKSmxscGk3TlljMUpleU1yRzNESlNITGhtaUlUcGd6RVFTWWlqTmp6U0llT2dLLWpkSC00REt0cW1ZWmlfcVBWdDV0bWpQRFJfSkotQlp6U2ZkeTNGV0pMdEhHaUJJSkhJM0dBVk0?oc=5",
+   "termino": "control fronterizo",
+   "geo": "MX",
+   "titulo": "México despliega 800 militares y equipos antidrones en la frontera con EU",
+   "importancia": 7,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -88,47 +88,41 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "100",
-     "tipo": "top",
+     "valor": "1239200",
+     "tipo": "rising",
      "variantes": 2
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "167900",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
      "consulta": "inmigrantes",
-     "valor": "43",
+     "valor": "50",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-10T20:31:02+00:00"
+   "medido": "2026-09-11T20:34:44+00:00"
   },
   "VE": {
    "consultas": [
     {
-     "consulta": "migrantes o inmigrantes",
-     "valor": "218750",
+     "consulta": "migrantes significado",
+     "valor": "229500",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes venezolanos",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "estatuto temporal de protección para migrantes venezolanos",
+     "valor": "7500",
+     "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "15",
-     "tipo": "top",
+     "consulta": "migrantes o inmigrantes",
+     "valor": "190",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-08T10:44:22+00:00"
+   "medido": "2026-09-11T20:35:00+00:00"
   },
   "CL": {
    "consultas": [
@@ -257,25 +251,22 @@
    "medido": "2026-09-10T10:47:21+00:00"
   }
  },
- "proximo_pais": 0,
- "paises_sin_datos": [
-  "AR",
-  "ES"
- ],
+ "proximo_pais": 1,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 26.3,
-   "base": 6.6,
-   "ratio": 4.0
+   "puntaje": 7,
+   "reciente": 23.7,
+   "base": 9.6,
+   "ratio": 2.48
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 21.4,
-   "base": 6.6,
-   "ratio": 3.24
+   "reciente": 23.0,
+   "base": 6.3,
+   "ratio": 3.63
   }
  },
  "alertas": [
@@ -294,7 +285,7 @@
    "disparada": "2026-09-11T10:44:59+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 9.8
   }
  ]
 }
