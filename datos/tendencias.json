@@ -1,32 +1,45 @@
 {
- "generado": "2026-09-10T20:31:19+00:00",
+ "generado": "2026-09-11T10:44:59+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "3976c4ddff8a": {
-   "id_hecho": "3976c4ddff8a",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMHN5ZjVLTlZkVnNCb0JTSUpxbldpcGpvdmtCZnlzdFRBaU5aekQwbVdqRk9Tek1LNk9SYjhIcy03SG9vaUpVTUJVWFdXSGlKaEFSdkRMZm9kdmFjalQ3dWlnNnNfVzdvbUZKVm9rWW5YdWFucUZtTlJLUW1sdlQxMjh0dUJMS1VLaWdsSGxPZWZ3T2lRSTVxTk1oek01SXdKd1dfQlI0dU82WmhPTXBDU01ZelpMTnplbXF0amV1eDVSVlZZc3FHRHVJSQ?oc=5",
-   "termino": "migrantes",
+  "db5fd9df3745": {
+   "id_hecho": "db5fd9df3745",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQS1ZaZENwQWZhSnQ0OXRRWFh0dDhVdzF3TG5PczhmOUMtbWVwT09MWVgtUDJqYWNPMTM4YlA3c3Y0cnVHNzF2NzZYcnAxM0FTVHlnZUpFcGNacnVRcHlhci1QdkFsM3NUOW9MUlZQMTJjSGpueFFQXzF2S2lUWVZ5Vm9hOHAwSUk2N0tzUUFTNzVtQUc3SVRVNXZTQzNvYkFmc3lCb0JwOXJBZnBEYjFlaWhtdmZPcFRLSHRnblVMcw?oc=5",
+   "termino": "estudiantes indocumentados",
    "geo": "US",
-   "titulo": "Trump busca excluir a inmigrantes del conteo del Censo 2030",
-   "importancia": 9,
+   "titulo": "EE.UU. demanda a cuatro territorios por matrícula universitaria a indocumentados",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.1,
+   "base": 0.2,
+   "ratio": null
+  },
+  "36eead2f7163": {
+   "id_hecho": "36eead2f7163",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83b3JSZ3ZTYjFEazRhcWRSRXpxYnRrUDJKdm1HaUxzZ2dhWTU5LUNQNXBEek1kNmIyQ0ExbDI4NWFNbmtXVl9sM0IxanFiTzZOdGJ2c2pqSQ?oc=5",
+   "termino": "inmigrantes",
+   "geo": "US",
+   "titulo": "Censo de EEUU evalúa plan para omitir datos de inmigrantes y raza",
+   "importancia": 7,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 15.7,
-   "base": 22.9,
-   "ratio": 0.69
+   "reciente": 35.1,
+   "base": 39.0,
+   "ratio": 0.9
   },
-  "145193964418": {
-   "id_hecho": "145193964418",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tQ3o0ai1SWDlSSnYzMnkxaGw4ZEhmbDVHOFRPUlg5a2hXODNycjZ1M0xYVDBVcU5OZFZDSmN5N29tVndOVVh5ejM4Rk1OX00zYXE2QUFIaFRORVhFOGQtc2I3RDg1a0Rfd090TXBR?oc=5",
+  "81beb51c872c": {
+   "id_hecho": "81beb51c872c",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRE9yWUlKdm5jVkRwRlRwclgxb1U5VTN3RkQ5NnF2d0pMMUg3SFRhaF9qQ09xb2pkY2ZxLWNnSzJCUXZKRHlpOGcwUjNsc1liYW10VGxpYXFOeDFpVjlYRFhDUHE1a3haOHBXaFdQVjNEU2Zyc3hMbFd3dXRtX3k3aC1tZjBjTnZyZmZvQU5xNlZ2SG5ybzdsYWdYQW56TzVH?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Inmigrantes detenidos en Nueva Jersey sufren grave desatención, denuncian congresistas",
-   "importancia": 8,
-   "velocidad": 4,
+   "titulo": "Videos de cámaras corporales ofrecen inusual visión de redada migratoria en fábrica de NY",
+   "importancia": 7,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 4.6,
+   "reciente": 4.7,
    "base": 1.7,
    "ratio": null
   },
@@ -39,35 +52,35 @@
    "importancia": 7,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 4.6,
+   "reciente": 4.7,
    "base": 1.7,
    "ratio": null
   },
-  "d56bcfe77ee5": {
-   "id_hecho": "d56bcfe77ee5",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYkZVNmlLTlVLUC1xSG9Cc0c2SGN1enA4WDI1bWpDNlg5SVhwQVZpekxCYkgtbE5YTUNSdk5xczJxeG5hMnNRMGw5VWRQSVdOTzFHMjREb0t6b0NOUEh0a0pFWXZlck1EdmtRdXFHQS1mM2ZfclNSc2NGRW1RcHoxVGFVVlhZZURJWVQxVWc1U1FNYU05RXBYRGNvdGlYWlhNZ2NSTjBTQ0o0ZFNwd2dOOUVzSF9Hc2xVcEJqZlBUdjJ0eXd3Vk5hVg?oc=5",
-   "termino": "migrantes venezolanos",
+  "87ebf7aa6cec": {
+   "id_hecho": "87ebf7aa6cec",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQc0tQYVBibE90cGN4aWZKRnJ6SG1INFlENi1RNUk1U1l0RzJBbDk1STVPQ2RkdURkY1BuLTAyZDBPNFp3c0pfeVNwdlJxWkRvQmRUNjRwX3JrNEtZSnlqZ1JYRmdURmZFWTNDTjhQR09jNWFxWDNkSk9sV2N2YVFEMzJIX2VwbndvNC1ZUG1uUnB3bElETGZmd2dzU2dDZ1ZwUzhXSXllbUJQQ1pnazFHM3k5Smh4dUhzSWwyTDZILTRjaDJuY2dQTGE5RGJxTmd1NEVjN29oc24yTmZXcjZ6czFJVFVSU01ZZUlPddIB7AFBVV95cUxQc0tQYVBibE90cGN4aWZKRnJ6SG1INFlENi1RNUk1U1l0RzJBbDk1STVPQ2RkdURkY1BuLTAyZDBPNFp3c0pfeVNwdlJxWkRvQmRUNjRwX3JrNEtZSnlqZ1JYRmdURmZFWTNDTjhQR09jNWFxWDNkSk9sV2N2YVFEMzJIX2VwbndvNC1ZUG1uUnB3bElETGZmd2dzU2dDZ1ZwUzhXSXllbUJQQ1pnazFHM3k5Smh4dUhzSWwyTDZILTRjaDJuY2dQTGE5RGJxTmd1NEVjN29oc24yTmZXcjZ6czFJVFVSU01ZZUlPdQ?oc=5",
+   "termino": "regularizacion",
    "geo": "CO",
    "titulo": "El riesgo de deportación azuza la carrera de los venezolanos por regularizarse en Colombia",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 11.9,
-   "base": 5.1,
+   "reciente": 8.9,
+   "base": 2.6,
    "ratio": null
   },
-  "95b8cea6590d": {
-   "id_hecho": "95b8cea6590d",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeTFYZWZISjVISGNKSk5aVGwxWEMyd1FJakhlRm84V2M2WG9GTzNMbGo5cW1zZ0xzMXlCU1dmWkFEM084LUg0dWJheVZVYnJ6Njd3SVp4WlhUVzFDOHppTktUNHNTdnNybUNLZTFpWFFXbk0tR2g3b0t5bWc0aVVkeTlEcHlWWC04YlA1NnZwS05SNnlRZHRRZnNpY0ZSMGptQmd3cTJiYnc1N2YzamV6R0pTWnp4OUhHYXQ1MENJbHBPQnlpNGdxU2FTV0VEWnhCSXBCUWl3aXF1bzFxX3ZSZg?oc=5",
-   "termino": "inmigrantes",
-   "geo": "AR",
-   "titulo": "La Plata reconoció a 75 inmigrantes por su aporte al crecimiento de la ciudad",
-   "importancia": 5,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 18.3,
-   "base": 15.0,
-   "ratio": 1.22
+  "1c48f76feaab": {
+   "id_hecho": "1c48f76feaab",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOEliaDRFdTJ2VWk0QTZGUkxZcHZ3cWt3cVU1VE1qRzRGcVFDM2ZDVF9NTy1yZVhxYVd2SHgtRGVkMk81RTBLR2VFOUwtcTJlOE1YTzNLWXlraWlNeEVPLXVDS01wWHFpbUdCS2t3WklreS1aa2ppTzdXbnMtYXJOblMtOXFIdG5lZ3hnODN5dDBFYlpMQWktZHZDWU9QeGNrX0E0dkJSVjIzcFh0UWd2c29ld2FNQ29kVHNDU2Qwc0phQdIB3AFBVV95cUxNblhoRmFTbGhLUy1KdUJXUXZDVlo4NU16SmVIYjhhZm5XcHFBWE1jd0F0akdXVU12QjlzbmhxTjVaNUxXV2NPbXdpNFIyWVpRTjJoZTN4UzBHRHNhTm9yU05kU0MtYXdLRFhFYlFSZHpOeFpOcUdGQTJWbXJSRk9GNnoxSUNudm9QTlEzLUFjNEFiczdIQnNESGNhOGdhNFRYRGFjTTR2b3lJcWM2NU1XMi1IenQ4bl8tV3pWX2MzaFhtWG5wNXNxQ1R1aUktSFp0WmxaQzNxenZMR2Nq?oc=5",
+   "termino": "migrantes",
+   "geo": "PA",
+   "titulo": "Unos 6,293 migrantes contabiliza Panamá en el flujo inverso norte-sur durante 2026",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 33.9,
+   "base": 7.0,
+   "ratio": 4.81
   }
  },
  "audiencia": {
@@ -244,23 +257,44 @@
    "medido": "2026-09-10T10:47:21+00:00"
   }
  },
- "proximo_pais": 6,
- "paises_sin_datos": [],
+ "proximo_pais": 0,
+ "paises_sin_datos": [
+  "AR",
+  "ES"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 24.1,
-   "base": 8.3,
-   "ratio": 2.92
+   "reciente": 26.3,
+   "base": 6.6,
+   "ratio": 4.0
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 22.0,
-   "base": 7.4,
-   "ratio": 2.97
+   "reciente": 21.4,
+   "base": 6.6,
+   "ratio": 3.24
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "1c48f76feaab",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOEliaDRFdTJ2VWk0QTZGUkxZcHZ3cWt3cVU1VE1qRzRGcVFDM2ZDVF9NTy1yZVhxYVd2SHgtRGVkMk81RTBLR2VFOUwtcTJlOE1YTzNLWXlraWlNeEVPLXVDS01wWHFpbUdCS2t3WklreS1aa2ppTzdXbnMtYXJOblMtOXFIdG5lZ3hnODN5dDBFYlpMQWktZHZDWU9QeGNrX0E0dkJSVjIzcFh0UWd2c29ld2FNQ29kVHNDU2Qwc0phQdIB3AFBVV95cUxNblhoRmFTbGhLUy1KdUJXUXZDVlo4NU16SmVIYjhhZm5XcHFBWE1jd0F0akdXVU12QjlzbmhxTjVaNUxXV2NPbXdpNFIyWVpRTjJoZTN4UzBHRHNhTm9yU05kU0MtYXdLRFhFYlFSZHpOeFpOcUdGQTJWbXJSRk9GNnoxSUNudm9QTlEzLUFjNEFiczdIQnNESGNhOGdhNFRYRGFjTTR2b3lJcWM2NU1XMi1IenQ4bl8tV3pWX2MzaFhtWG5wNXNxQ1R1aUktSFp0WmxaQzNxenZMR2Nq?oc=5",
+   "termino": "migrantes",
+   "geo": "PA",
+   "titulo": "Unos 6,293 migrantes contabiliza Panamá en el flujo inverso norte-sur durante 2026",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 33.9,
+   "base": 7.0,
+   "ratio": 4.81,
+   "disparada": "2026-09-11T10:44:59+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
