@@ -1,84 +1,32 @@
 {
- "generado": "2026-09-12T10:14:25+00:00",
+ "generado": "2026-09-12T20:19:11+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "2313f3793868": {
-   "id_hecho": "2313f3793868",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ0NpWWY2OUtCcTB6LWVTbmNNSFI0Q0ViY25VNXlCOWNodEgyZEUzUWk4a2V4bVUwWWpBRVJheHZEZzFIU0ROaTJkelFqZU5oT0U5czgyaUVpNDNLSnlOWEVVdHZoSjRJbTlvZmVtUVdVeTRzd1J2TEdMRVpnM2xIbk9xLTc3dw?oc=5",
-   "termino": "deportaciones",
-   "geo": "PE",
-   "titulo": "Keiko Fujimori busca extender el tiempo de detención de los migrantes irregulares para lograr su expulsión de Perú - EFE",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 14.3,
-   "base": 1.1,
-   "ratio": null
-  },
-  "3b34d83c3b32": {
-   "id_hecho": "3b34d83c3b32",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOZTJ0dkFIc2JKb1VCMkNlU0wtWmlWSTRLaUNmSkhuT3Z5UEMtVnA5R2NWa0g1ZW1DT051YnltbVB0Tk1yeVgyVlN2cy1FdGw3bkltSHZDVGRqdEhfOFhFaG9GZW9YY0x0Y3BjOFFJS2F6ZllWRFVkcS1yZl9yeG9LRG4tYWliSVZrakxQclcxejNTY3QyZmxlTDB6RXJ6U0hxVHBqVVV5QXIydmp3eDBiczFuUVV6MVlPTnVqRVppZTI4X29GX1Z6NFlrbU1aTjc1c3dNQ2VHdFJGTHFtallOeWNRQ2dJN3BUODlPbFVwWHd3UWZEbmhNZmJrUdIBlgJBVV95cUxOOXl1X1gtc3BNeFkwMlVRZnRnLWE5Zm5iVVUzek1DTG9mdWp6UmEyUzB3UlpLQWtxemJBc0FlQW5NZXdET3FVN0M4OVBNOWdDTkdvY0V6cVBaYVREMzF3Q2d3VDZhS2pXWkQxZnl4VW95enVmWDRrNXlteUtLRlE1cTlZMWs1U1BWbGp1dzVlMThrTjJOMG5BZkJ3X201cklHYkF6S0trU1dLcmpFSkc0TUowU08tVEFpVGVoaUF4MVZyX2lnOENGTE9MQnIzc0JSTlRwQkR3amxFalZZOEVMSGtmczd6cnlHT2V3eEs1UHloRkdHbDdxcDZiZGxFaENucnNZSTNzUUJpZVRjb3I0TUZNdGlydw?oc=5",
-   "termino": "deportaciones",
-   "geo": "CO",
-   "titulo": "Defensora del Pueblo Iris Marín criticó orden de Abelardo de la Espriella de deportar inmigrantes irregulares: “No es delito”",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 3.4,
-   "base": 3.8,
-   "ratio": null
-  },
-  "4d0bd2bd3822": {
-   "id_hecho": "4d0bd2bd3822",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNLXJ0SngydElMY3hfcHd3T2ZnR0NaTUpEU0w2b3hHSmdJVV9keUc0d1NRd1pzM2hnOUZQYzNzc0xVMzJSWTYyYS1wNmlYR2wxc2IwNk1yYXZnZXNBS3FoSmx4YUo3SDUtcGx1Sm1MYTU1V1o3UFNabkNHZ3JaT2htZjVubWN4ZWw5VV9GWlZYZ0VsZTkwUXk1RnhDdnBMcDA5eHNLTlF5bEZDZzU5dmdhN2d6TUFNd1JkOWVuUXNoRjRGU1BBX1lJN3N4Nmhka1UtTTJCTV91MFdTQkZJTVJOVEMyMlZqalAyeGlEaDFFMU5fRFIwMU1XRXFicDJieUlmMGU5UtIBnwJBVV95cUxPZ1RpdWNxb1pDUDZmYUFVQmNvaC05VHF4YzhtalRxNWxzby1lbHZnemhUd1JfdTBZaGFSOE9kcGdDV0tIQ1dmTVJva2pyREh0MWNVUHZUYmktZ2JKZERPdmN3R0w2blJyX3JRMW5QNks2RURXMklxNVdTYWJnR1NOSmJCNjNMMWhoUDYzenBvUlQ3Q0c5Qk9NaFJ5MGdfa1g3UWxBamZZTWc1MzFYNjBzSElzdzBfRWFlb1ZMNkFLRm9JVm90WF9CY0dfQVlMRFFqWHJrczBVZ2VvcEo5SEdNbjJ3NVlORjJtSUJGZ3k4aXZKRTdHV3NWMm1iNjZxQ3E3dXNTMm1MLWR5b3BWVXJ5NTduLWI1UUlwTUV3RjhSdw?oc=5",
-   "termino": "desplazamiento interno",
-   "geo": "MX",
-   "titulo": "El 95% de los desplazados regresa a Chiapas tras operativos contra el Cártel del Pacífico, el Cártel de Chiapas y Guatemala, y el CJNG",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 37.0,
-   "base": 6.7,
-   "ratio": 5.5
-  },
   "a49bc3df01f8": {
    "id_hecho": "a49bc3df01f8",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOEpUajduRUo2ZjY5dEIxUlZUbFpsenJWRGppRms2bDk2Q0YwRm5td0ttemZvNGh2UXhLcDBQZFVkWU1DRk5tdUYyU0VZcEtTdGo2N3dLZm14M2ljQjRzLXk4UUdIZWxaa2xoTi1zWU1VWG8yWDlvT0NzSWM3bnpvRk9OOHE2cUM1WUFPcUZzUUVRa1JBQmhoRnB6amdmZ1BlTEx5MTctUzNObWx0NXJveWFmZG1HSDlfNGdhNzRBWDJtaU1rekRMRXJUYmVHRFZRWWEtUEtn?oc=5",
    "termino": "deportaciones",
    "geo": "US",
    "titulo": "Dos ecuatorianos entre 118 detenidos por ICE en Connecticut",
-   "importancia": 7,
+   "importancia": 8,
    "velocidad": 4,
-   "puntaje": 9,
-   "reciente": 15.3,
-   "base": 5.3,
-   "ratio": 2.87
+   "puntaje": 7,
+   "reciente": 17.0,
+   "base": 6.7,
+   "ratio": 2.54
   },
-  "ff4e382b5096": {
-   "id_hecho": "ff4e382b5096",
-   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPWk9EVEF6NmtCNmpmVzJVVGFERlZpbHpoREFZWmg1bHBuQnhybGZGT0VXeWZGdmloN3lCU2NvR2RXOWdqTllDd3N4eVZsa2lKb05jMUUzbXQ1bXVTUm1falFPQ0d2VThsZVp4TWdGS2RocnhRcEtTRUVrTExXNUJ3SjBGd1RUSE53TURidGl1VEwwR0FFQXNEazJsQVByYXVOUHZ3NXQ0MEp4aC14LUlqXzZrZHFrY0thYmF6ZzNjT3BxdFktX09BWmRRNERfU3J2WXpSa2VYZTNGWlk5NnBrdFZpbTYxamJEZy16Zmp1VUhhSEFpNlhiMHdjektDREl6bklRRXgwX05YSmR3RTFxeUY0WEFGZ1llWmpQa2Y2Wng2cHFaWktFd2VUYkpOdmfSAbQCQVVfeXFMTzhnUlhUa09kNHNNNjNPZndXaFBCWkVhcGVGbGtwMlJLRUZVLXBtbkN3OXNPVDIzODNjcDZNdk51R1kzYUo4bXBDT2tWVEN4cW9lZURGYjVXOXp1Mm9TSWprNldIeVlsR2tyb3kxZ3FNUDZudUFkTVNYSW5memF1V1AzUjllLWVoUzhMVDFZYXQ2VktRaFhqMklsNExBUWVNMEkyRFZjVW5tb25IdW1fZVhNT0hia2ZZd0hYSXBYWkRkSm9FaTd5TEFpWWdEMkFUYXI5aDVqUUpuRzVudHM4ekIySTJRei16TzhvYWZOWDZXWlhiMjZiaWRzNm1rSmpJRlRjMUVNRmJkRUR5X0M3WGxDek5xMlRSbmQ3RlR5UWRuTmNISEtFeGtUdnNLU3BVYlJBbUg?oc=5",
-   "termino": "deportaciones",
+  "a3ee44efeaa0": {
+   "id_hecho": "a3ee44efeaa0",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeXVQd25QUldtVEZQMk1UQ3pLX3Fkc3RIcWppQXdReGR1SWxzX0ViTnJuaTgzeVdEZ21FN0thS2dlWF81UjFTS1FPcEdQRkpPSDlPVHE2bk44WEJBSWduaXBFSVA0d3NPRHhFeC1mcWRrd3QwVFBlTW40TGVPOXFIMVU0RV9LLXVLMnBXX3pEcFZkT3c0M2RUZHVuTVpHUUtQZTcxMnJYUFNtdEJaN0JCZHFhLUF3eTNhWlExVTNJVzFsLUNWS0dWTVp6eWNsVkMtV3Q1UW9XbWVNekE?oc=5",
+   "termino": "migrantes venezolanos",
    "geo": "US",
-   "titulo": "Atención máxima inmigrantes legales e indocumentados | Estos son los perfiles latinos que el ICE los tiene en la mira",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 9,
-   "reciente": 15.3,
-   "base": 5.3,
-   "ratio": 2.87
-  },
-  "aab462d6d105": {
-   "id_hecho": "aab462d6d105",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONFExdXFFUkFpdnhuSk55SllFTWhmOW9vc2pYMjIxMXNhQmM3eFR1WklpTkhqV1d5dnZYd0w4Z2NNaV9tM3lJcmotV3hjcnFTTTBuRWN6UkhOdnE0Zy1WQTRxMXVHWW5tbnh5Z2FFMS1hNGhQTk9MODFCQkFyZHBsNkc3V1RzdEtGdGphVkROZ0Z0cWF2MzEtdUJadzBMZXZOcEI5UEVuU0FQYnV3MThsaHBYc2ZGNy11ZnBzX1ZERGM4WG5lZzN6ZzZB?oc=5",
-   "termino": "redadas migratorias",
-   "geo": "US",
-   "titulo": "Videos de cámaras corporales ofrecen inusual visión de una redada migratoria en una fábrica de NY",
-   "importancia": 7,
-   "velocidad": 3,
+   "titulo": "Opositor Capriles ve \"inaceptable\" la política migratoria de EE.UU. contra los venezolanos",
+   "importancia": 6,
+   "velocidad": 6,
    "puntaje": 0,
-   "reciente": 0.0,
+   "reciente": 0.6,
    "base": 0.0,
    "ratio": null
   }
@@ -88,18 +36,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1239200",
+     "valor": "1230000",
      "tipo": "rising",
-     "variantes": 2
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "189150",
+     "tipo": "rising",
+     "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "50",
+     "valor": "48",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-11T20:34:44+00:00"
+   "medido": "2026-09-12T20:18:55+00:00"
   },
   "VE": {
    "consultas": [
@@ -220,24 +174,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "347550",
+     "valor": "351050",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 0
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "60800",
+     "valor": "93250",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "los migrantes",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "migrantes si me tomo una cerveza",
+     "valor": "13800",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-05T20:01:45+00:00"
+   "medido": "2026-09-12T20:19:03+00:00"
   },
   "UY": {
    "consultas": [
@@ -251,28 +205,42 @@
    "medido": "2026-09-10T10:47:21+00:00"
   }
  },
- "proximo_pais": 2,
- "paises_sin_datos": [
-  "AR",
-  "CL"
- ],
+ "proximo_pais": 3,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 24.6,
-   "base": 8.6,
-   "ratio": 2.87
+   "puntaje": 10,
+   "reciente": 24.1,
+   "base": 7.2,
+   "ratio": 3.35
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 20.4,
-   "base": 6.4,
-   "ratio": 3.18
+   "puntaje": 7,
+   "reciente": 23.4,
+   "base": 9.4,
+   "ratio": 2.49
   }
  },
  "alertas": [
+  {
+   "id_hecho": "a49bc3df01f8",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOEpUajduRUo2ZjY5dEIxUlZUbFpsenJWRGppRms2bDk2Q0YwRm5td0ttemZvNGh2UXhLcDBQZFVkWU1DRk5tdUYyU0VZcEtTdGo2N3dLZm14M2ljQjRzLXk4UUdIZWxaa2xoTi1zWU1VWG8yWDlvT0NzSWM3bnpvRk9OOHE2cUM1WUFPcUZzUUVRa1JBQmhoRnB6amdmZ1BlTEx5MTctUzNObWx0NXJveWFmZG1HSDlfNGdhNzRBWDJtaU1rekRMRXJUYmVHRFZRWWEtUEtn?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Dos ecuatorianos entre 118 detenidos por ICE en Connecticut",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 7,
+   "reciente": 17.0,
+   "base": 6.7,
+   "ratio": 2.54,
+   "disparada": "2026-09-12T20:19:11+00:00",
+   "velocidad_inicial": 4,
+   "desenlace": "vigente",
+   "horas": 0
+  },
   {
    "id_hecho": "4d0bd2bd3822",
    "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNLXJ0SngydElMY3hfcHd3T2ZnR0NaTUpEU0w2b3hHSmdJVV9keUc0d1NRd1pzM2hnOUZQYzNzc0xVMzJSWTYyYS1wNmlYR2wxc2IwNk1yYXZnZXNBS3FoSmx4YUo3SDUtcGx1Sm1MYTU1V1o3UFNabkNHZ3JaT2htZjVubWN4ZWw5VV9GWlZYZ0VsZTkwUXk1RnhDdnBMcDA5eHNLTlF5bEZDZzU5dmdhN2d6TUFNd1JkOWVuUXNoRjRGU1BBX1lJN3N4Nmhka1UtTTJCTV91MFdTQkZJTVJOVEMyMlZqalAyeGlEaDFFMU5fRFIwMU1XRXFicDJieUlmMGU5UtIBnwJBVV95cUxPZ1RpdWNxb1pDUDZmYUFVQmNvaC05VHF4YzhtalRxNWxzby1lbHZnemhUd1JfdTBZaGFSOE9kcGdDV0tIQ1dmTVJva2pyREh0MWNVUHZUYmktZ2JKZERPdmN3R0w2blJyX3JRMW5QNks2RURXMklxNVdTYWJnR1NOSmJCNjNMMWhoUDYzenBvUlQ3Q0c5Qk9NaFJ5MGdfa1g3UWxBamZZTWc1MzFYNjBzSElzdzBfRWFlb1ZMNkFLRm9JVm90WF9CY0dfQVlMRFFqWHJrczBVZ2VvcEo5SEdNbjJ3NVlORjJtSUJGZ3k4aXZKRTdHV3NWMm1iNjZxQ3E3dXNTMm1MLWR5b3BWVXJ5NTduLWI1UUlwTUV3RjhSdw?oc=5",
@@ -288,24 +256,7 @@
    "disparada": "2026-09-12T10:14:25+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "a49bc3df01f8",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOEpUajduRUo2ZjY5dEIxUlZUbFpsenJWRGppRms2bDk2Q0YwRm5td0ttemZvNGh2UXhLcDBQZFVkWU1DRk5tdUYyU0VZcEtTdGo2N3dLZm14M2ljQjRzLXk4UUdIZWxaa2xoTi1zWU1VWG8yWDlvT0NzSWM3bnpvRk9OOHE2cUM1WUFPcUZzUUVRa1JBQmhoRnB6amdmZ1BlTEx5MTctUzNObWx0NXJveWFmZG1HSDlfNGdhNzRBWDJtaU1rekRMRXJUYmVHRFZRWWEtUEtn?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Dos ecuatorianos entre 118 detenidos por ICE en Connecticut",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 9,
-   "reciente": 15.3,
-   "base": 5.3,
-   "ratio": 2.87,
-   "disparada": "2026-09-12T10:14:25+00:00",
-   "velocidad_inicial": 4,
-   "desenlace": "vigente",
-   "horas": 0
+   "horas": 10.1
   },
   {
    "id_hecho": "ff4e382b5096",
@@ -322,7 +273,7 @@
    "disparada": "2026-09-12T10:14:25+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 10.1
   }
  ]
 }
