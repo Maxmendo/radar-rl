@@ -1,59 +1,53 @@
 {
- "generado": "2026-09-13T11:13:10+00:00",
+ "generado": "2026-09-13T20:26:17+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "d12f1dc961e9": {
-   "id_hecho": "d12f1dc961e9",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUVFwXzMwcEZSNk82SDJpa19ZeFVBM1dldmdwMFZ3ai05STlCSWhhNVRmcXR1UXZLcFJnZFdOdEd5SmxKbVRrQTd5bGo0Zlc3RzlDWmtmaGgxVXVjZTV2QWhHR3RpWXI5TndXUjQxc3F0Rk0tbzRfSElmQTg0cU1GQzdJTTQ2c0otalNKdDkwaGctLTRHYlU3ODY5ZWcwVzVpTDRJcUFjXzI1V2lSTGNoSGJNRzVNUHRlMDFjVXhmVUpnUWRjRklKMkFiSDk1OXRVbUtWNUd2WWs3dkNnWW840gHfAUFVX3lxTE1RUXBfMzBwRlI2TzZIMmlrX1l4VUEzV2V2Z3AwVndqLTlJOUJJaGE1VGZxdHVRdktwUmdkV050R3lKbEptVGtBN3lsajRmVzdHOUNaa2ZoaDFVdWNlNXZBaEdHdGlZcjlOd1dSNDFzcXRGTS1vNF9ISWZBODRxTUZDN0lNNDZzSi1qU0p0OTBoZy0tNEdiVTc4NjllZzBXNWlMNElxQWNfMjVXaVJMY2hIYk1HNU1QdGUwMWNVeGZVSmdRZGNGSUoyQWJIOTU5dFVtS1Y1R3ZZazd2Q2dZbzg?oc=5",
+  "febec543a65b": {
+   "id_hecho": "febec543a65b",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSUUwcEExSjh1QjVBZzh0WGpuZXJaTVhhTkg5SW1lTmZ6ZTdRVUdqRWZqQTR4UWV5VndvYU9IbG5vaUZDaW8xVFZTenU1My1hOEppbzVZd2ZPa09SZDk0TnhweDlsYUtYLWFGOW1jUUJEcGNScUstNmhaTVpSZ29adUVxWTJ2RzFvSU5yRHJybHdWWGpPb1htbFIzMVQ3Z3NsaVN3VzF5SzFScUo3d05rZDloS2QzTktETU9sZDZqbzRuT1ZWbGRqNldCNF8?oc=5",
    "termino": "deportaciones",
-   "geo": "CO",
-   "titulo": "Colombia expulsa a otros once extranjeros tras endurecimiento de los controles migratorios",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 2.3,
-   "base": 3.4,
-   "ratio": null
-  },
-  "224fca198843": {
-   "id_hecho": "224fca198843",
-   "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNUHR6eG91dk4wWDFhT2tzWEpqWE1BMFZ6OGdvUG5HaWJiWDRCQU8tbjJ6eGM0LTJ4MDJkdXp5cDllZ0YydFhYX2FxUG1Ob28tMzNmOUFoSDJ2a0JLeGNuay1QazhNdndHTlQyem9jOWpCaDRMaDZhdllaWGdsM3B3a3ZHTVBLczdYanBMS3c0dHloR3NlcWFjcnVRV1BGOXFuMGs1c25RR2JkTzFQQmdYRElldzJUMDctTU9oOGhHVndMb2NwYlpiSWxDMlVmZmtHV1RQN21WUVNneTJYbzF6LXN1NzV1clUxS1g5ZF9zRVBXVER6U2V5a1NrOFRUc1NzUzVLdW5USGtVMlZvQUMyMzZnYmxHZ0pJR1NpcUpnaGMxUnFZVUdkNNIBwwJBVV95cUxQVWl5T1o5aXF1S3I5Q0taazQyWDJqUEdKN2hSY0tCZlFYeDNHRmRDOEh1TVQzM19xUjM3Q095eGlQT0FtWUE3cEJKNjI1TEJaSEdzdVNCUnlWTS1BV0xwWW9XX1RQOHlTeURtVkhTV1lxb29aOW5iT2JsNFdlZ0d5eEpjYnpaNWdTalVqVnJFdl8yb2VuR2ZnVVhPZmlETVpRU1l6RklEblBIcU5vam1oNTJDcTUzQ2Vlb3FIMnU1U190cnl3QmRXX0RGZWRFRjBTWktVZG1acVE1bjVpNXNyLTc4a0ExODl0allTV2swZGZVTTZhTjV2M3Ffc3NTUFVTM3RnallqdmFZVTlyemFEel9ZRVFKdkFPTVcySUZmdHJSX1I4LXJpSXpOSzI1M3FUSG1YWTNpNVM0czlZUWpPcUh3WQ?oc=5",
-   "termino": "desplazamiento interno",
-   "geo": "CO",
-   "titulo": "Desplazamiento forzado y discursos guerreristas",
-   "importancia": 7,
+   "geo": "US",
+   "titulo": "ICE rompe récords con sus detenciones y Miami está entre las ciudades con más afectados",
+   "importancia": 8,
    "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.5,
-   "ratio": null
+   "puntaje": 7,
+   "reciente": 17.4,
+   "base": 7.0,
+   "ratio": 2.48
+  },
+  "849403ac966e": {
+   "id_hecho": "849403ac966e",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcGJBeEdzVk40Q1ZCOGNWTHY1WWM4SDRuMWN4U2Y5RUMtdFAzWnlGZlI4VXFjUHhKY1pySWo4allmRWFaUW1VR2hCdWV2LUM0UHd1MGpTYkpjU2gxWlJKLWZ2cFcwbGp0Yi13U0hab2RMaGd1RzlNNkRsLWFXQmFZVHJrSk85ekpMRmFNckhoS0NJOHp0eTZCaXk0bnZ4aURTalF1d2Z6SEVZcFpMUXZkeUI2VHZzTlgweWVaVWRfbDNRWW9iNGliTllXVGF2MERxZUw4anRVZ04?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Lidera McAllen en detención de migrantes",
+   "importancia": 7,
+   "velocidad": 5,
+   "puntaje": 7,
+   "reciente": 17.4,
+   "base": 7.0,
+   "ratio": 2.48
   }
  },
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta migrantes",
-     "valor": "1198250",
+     "consulta": "ceuta",
+     "valor": "1310650",
      "tipo": "rising",
-     "variantes": 0
+     "variantes": 2
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "216050",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes las 5",
-     "valor": "127300",
-     "tipo": "rising",
+     "consulta": "inmigrantes",
+     "valor": "45",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-13T11:12:53+00:00"
+   "medido": "2026-09-13T20:26:00+00:00"
   },
   "VE": {
    "consultas": [
@@ -197,31 +191,66 @@
    "consultas": [
     {
      "consulta": "ceuta migrantes",
-     "valor": "592500",
+     "valor": "815700",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-10T10:47:21+00:00"
+   "medido": "2026-09-13T20:26:09+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 15.6,
-   "base": 4.8,
-   "ratio": 3.22
+   "reciente": 24.0,
+   "base": 6.5,
+   "ratio": 3.7
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 23.4,
-   "base": 9.4,
-   "ratio": 2.49
+   "puntaje": 10,
+   "reciente": 22.3,
+   "base": 6.2,
+   "ratio": 3.62
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "febec543a65b",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSUUwcEExSjh1QjVBZzh0WGpuZXJaTVhhTkg5SW1lTmZ6ZTdRVUdqRWZqQTR4UWV5VndvYU9IbG5vaUZDaW8xVFZTenU1My1hOEppbzVZd2ZPa09SZDk0TnhweDlsYUtYLWFGOW1jUUJEcGNScUstNmhaTVpSZ29adUVxWTJ2RzFvSU5yRHJybHdWWGpPb1htbFIzMVQ3Z3NsaVN3VzF5SzFScUo3d05rZDloS2QzTktETU9sZDZqbzRuT1ZWbGRqNldCNF8?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "ICE rompe récords con sus detenciones y Miami está entre las ciudades con más afectados",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 7,
+   "reciente": 17.4,
+   "base": 7.0,
+   "ratio": 2.48,
+   "disparada": "2026-09-13T20:26:17+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  },
+  {
+   "id_hecho": "849403ac966e",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcGJBeEdzVk40Q1ZCOGNWTHY1WWM4SDRuMWN4U2Y5RUMtdFAzWnlGZlI4VXFjUHhKY1pySWo4allmRWFaUW1VR2hCdWV2LUM0UHd1MGpTYkpjU2gxWlJKLWZ2cFcwbGp0Yi13U0hab2RMaGd1RzlNNkRsLWFXQmFZVHJrSk85ekpMRmFNckhoS0NJOHp0eTZCaXk0bnZ4aURTalF1d2Z6SEVZcFpMUXZkeUI2VHZzTlgweWVaVWRfbDNRWW9iNGliTllXVGF2MERxZUw4anRVZ04?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Lidera McAllen en detención de migrantes",
+   "importancia": 7,
+   "velocidad": 5,
+   "puntaje": 7,
+   "reciente": 17.4,
+   "base": 7.0,
+   "ratio": 2.48,
+   "disparada": "2026-09-13T20:26:17+00:00",
+   "velocidad_inicial": 5,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
