@@ -1,33 +1,33 @@
 {
- "generado": "2026-09-12T20:19:11+00:00",
+ "generado": "2026-09-13T11:13:10+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "a49bc3df01f8": {
-   "id_hecho": "a49bc3df01f8",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOEpUajduRUo2ZjY5dEIxUlZUbFpsenJWRGppRms2bDk2Q0YwRm5td0ttemZvNGh2UXhLcDBQZFVkWU1DRk5tdUYyU0VZcEtTdGo2N3dLZm14M2ljQjRzLXk4UUdIZWxaa2xoTi1zWU1VWG8yWDlvT0NzSWM3bnpvRk9OOHE2cUM1WUFPcUZzUUVRa1JBQmhoRnB6amdmZ1BlTEx5MTctUzNObWx0NXJveWFmZG1HSDlfNGdhNzRBWDJtaU1rekRMRXJUYmVHRFZRWWEtUEtn?oc=5",
+  "d12f1dc961e9": {
+   "id_hecho": "d12f1dc961e9",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUVFwXzMwcEZSNk82SDJpa19ZeFVBM1dldmdwMFZ3ai05STlCSWhhNVRmcXR1UXZLcFJnZFdOdEd5SmxKbVRrQTd5bGo0Zlc3RzlDWmtmaGgxVXVjZTV2QWhHR3RpWXI5TndXUjQxc3F0Rk0tbzRfSElmQTg0cU1GQzdJTTQ2c0otalNKdDkwaGctLTRHYlU3ODY5ZWcwVzVpTDRJcUFjXzI1V2lSTGNoSGJNRzVNUHRlMDFjVXhmVUpnUWRjRklKMkFiSDk1OXRVbUtWNUd2WWs3dkNnWW840gHfAUFVX3lxTE1RUXBfMzBwRlI2TzZIMmlrX1l4VUEzV2V2Z3AwVndqLTlJOUJJaGE1VGZxdHVRdktwUmdkV050R3lKbEptVGtBN3lsajRmVzdHOUNaa2ZoaDFVdWNlNXZBaEdHdGlZcjlOd1dSNDFzcXRGTS1vNF9ISWZBODRxTUZDN0lNNDZzSi1qU0p0OTBoZy0tNEdiVTc4NjllZzBXNWlMNElxQWNfMjVXaVJMY2hIYk1HNU1QdGUwMWNVeGZVSmdRZGNGSUoyQWJIOTU5dFVtS1Y1R3ZZazd2Q2dZbzg?oc=5",
    "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Dos ecuatorianos entre 118 detenidos por ICE en Connecticut",
-   "importancia": 8,
+   "geo": "CO",
+   "titulo": "Colombia expulsa a otros once extranjeros tras endurecimiento de los controles migratorios",
+   "importancia": 7,
    "velocidad": 4,
-   "puntaje": 7,
-   "reciente": 17.0,
-   "base": 6.7,
-   "ratio": 2.54
-  },
-  "a3ee44efeaa0": {
-   "id_hecho": "a3ee44efeaa0",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeXVQd25QUldtVEZQMk1UQ3pLX3Fkc3RIcWppQXdReGR1SWxzX0ViTnJuaTgzeVdEZ21FN0thS2dlWF81UjFTS1FPcEdQRkpPSDlPVHE2bk44WEJBSWduaXBFSVA0d3NPRHhFeC1mcWRrd3QwVFBlTW40TGVPOXFIMVU0RV9LLXVLMnBXX3pEcFZkT3c0M2RUZHVuTVpHUUtQZTcxMnJYUFNtdEJaN0JCZHFhLUF3eTNhWlExVTNJVzFsLUNWS0dWTVp6eWNsVkMtV3Q1UW9XbWVNekE?oc=5",
-   "termino": "migrantes venezolanos",
-   "geo": "US",
-   "titulo": "Opositor Capriles ve \"inaceptable\" la política migratoria de EE.UU. contra los venezolanos",
-   "importancia": 6,
-   "velocidad": 6,
    "puntaje": 0,
-   "reciente": 0.6,
-   "base": 0.0,
+   "reciente": 2.3,
+   "base": 3.4,
+   "ratio": null
+  },
+  "224fca198843": {
+   "id_hecho": "224fca198843",
+   "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNUHR6eG91dk4wWDFhT2tzWEpqWE1BMFZ6OGdvUG5HaWJiWDRCQU8tbjJ6eGM0LTJ4MDJkdXp5cDllZ0YydFhYX2FxUG1Ob28tMzNmOUFoSDJ2a0JLeGNuay1QazhNdndHTlQyem9jOWpCaDRMaDZhdllaWGdsM3B3a3ZHTVBLczdYanBMS3c0dHloR3NlcWFjcnVRV1BGOXFuMGs1c25RR2JkTzFQQmdYRElldzJUMDctTU9oOGhHVndMb2NwYlpiSWxDMlVmZmtHV1RQN21WUVNneTJYbzF6LXN1NzV1clUxS1g5ZF9zRVBXVER6U2V5a1NrOFRUc1NzUzVLdW5USGtVMlZvQUMyMzZnYmxHZ0pJR1NpcUpnaGMxUnFZVUdkNNIBwwJBVV95cUxQVWl5T1o5aXF1S3I5Q0taazQyWDJqUEdKN2hSY0tCZlFYeDNHRmRDOEh1TVQzM19xUjM3Q095eGlQT0FtWUE3cEJKNjI1TEJaSEdzdVNCUnlWTS1BV0xwWW9XX1RQOHlTeURtVkhTV1lxb29aOW5iT2JsNFdlZ0d5eEpjYnpaNWdTalVqVnJFdl8yb2VuR2ZnVVhPZmlETVpRU1l6RklEblBIcU5vam1oNTJDcTUzQ2Vlb3FIMnU1U190cnl3QmRXX0RGZWRFRjBTWktVZG1acVE1bjVpNXNyLTc4a0ExODl0allTV2swZGZVTTZhTjV2M3Ffc3NTUFVTM3RnallqdmFZVTlyemFEel9ZRVFKdkFPTVcySUZmdHJSX1I4LXJpSXpOSzI1M3FUSG1YWTNpNVM0czlZUWpPcUh3WQ?oc=5",
+   "termino": "desplazamiento interno",
+   "geo": "CO",
+   "titulo": "Desplazamiento forzado y discursos guerreristas",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.5,
    "ratio": null
   }
  },
@@ -35,25 +35,25 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "1230000",
+     "consulta": "ceuta migrantes",
+     "valor": "1198250",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 0
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "189150",
+     "valor": "216050",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "48",
-     "tipo": "top",
+     "consulta": "migrantes las 5",
+     "valor": "127300",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-12T20:18:55+00:00"
+   "medido": "2026-09-13T11:12:53+00:00"
   },
   "VE": {
    "consultas": [
@@ -105,24 +105,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "493000",
+     "valor": "437050",
      "tipo": "rising",
-     "variantes": 1
+     "variantes": 0
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "171850",
+     "valor": "187350",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "los migrantes",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "migrantes estoy a un vaso remix",
+     "valor": "4800",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-09T20:33:55+00:00"
+   "medido": "2026-09-13T11:13:02+00:00"
   },
   "US": {
    "consultas": [
@@ -205,15 +205,15 @@
    "medido": "2026-09-10T10:47:21+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 24.1,
-   "base": 7.2,
-   "ratio": 3.35
+   "reciente": 15.6,
+   "base": 4.8,
+   "ratio": 3.22
   },
   "certificado de residencia": {
    "geo": "AR",
@@ -223,57 +223,5 @@
    "ratio": 2.49
   }
  },
- "alertas": [
-  {
-   "id_hecho": "a49bc3df01f8",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOEpUajduRUo2ZjY5dEIxUlZUbFpsenJWRGppRms2bDk2Q0YwRm5td0ttemZvNGh2UXhLcDBQZFVkWU1DRk5tdUYyU0VZcEtTdGo2N3dLZm14M2ljQjRzLXk4UUdIZWxaa2xoTi1zWU1VWG8yWDlvT0NzSWM3bnpvRk9OOHE2cUM1WUFPcUZzUUVRa1JBQmhoRnB6amdmZ1BlTEx5MTctUzNObWx0NXJveWFmZG1HSDlfNGdhNzRBWDJtaU1rekRMRXJUYmVHRFZRWWEtUEtn?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Dos ecuatorianos entre 118 detenidos por ICE en Connecticut",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 7,
-   "reciente": 17.0,
-   "base": 6.7,
-   "ratio": 2.54,
-   "disparada": "2026-09-12T20:19:11+00:00",
-   "velocidad_inicial": 4,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "4d0bd2bd3822",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNLXJ0SngydElMY3hfcHd3T2ZnR0NaTUpEU0w2b3hHSmdJVV9keUc0d1NRd1pzM2hnOUZQYzNzc0xVMzJSWTYyYS1wNmlYR2wxc2IwNk1yYXZnZXNBS3FoSmx4YUo3SDUtcGx1Sm1MYTU1V1o3UFNabkNHZ3JaT2htZjVubWN4ZWw5VV9GWlZYZ0VsZTkwUXk1RnhDdnBMcDA5eHNLTlF5bEZDZzU5dmdhN2d6TUFNd1JkOWVuUXNoRjRGU1BBX1lJN3N4Nmhka1UtTTJCTV91MFdTQkZJTVJOVEMyMlZqalAyeGlEaDFFMU5fRFIwMU1XRXFicDJieUlmMGU5UtIBnwJBVV95cUxPZ1RpdWNxb1pDUDZmYUFVQmNvaC05VHF4YzhtalRxNWxzby1lbHZnemhUd1JfdTBZaGFSOE9kcGdDV0tIQ1dmTVJva2pyREh0MWNVUHZUYmktZ2JKZERPdmN3R0w2blJyX3JRMW5QNks2RURXMklxNVdTYWJnR1NOSmJCNjNMMWhoUDYzenBvUlQ3Q0c5Qk9NaFJ5MGdfa1g3UWxBamZZTWc1MzFYNjBzSElzdzBfRWFlb1ZMNkFLRm9JVm90WF9CY0dfQVlMRFFqWHJrczBVZ2VvcEo5SEdNbjJ3NVlORjJtSUJGZ3k4aXZKRTdHV3NWMm1iNjZxQ3E3dXNTMm1MLWR5b3BWVXJ5NTduLWI1UUlwTUV3RjhSdw?oc=5",
-   "termino": "desplazamiento interno",
-   "geo": "MX",
-   "titulo": "El 95% de los desplazados regresa a Chiapas tras operativos contra el Cártel del Pacífico, el Cártel de Chiapas y Guatemala, y el CJNG",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 37.0,
-   "base": 6.7,
-   "ratio": 5.5,
-   "disparada": "2026-09-12T10:14:25+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 10.1
-  },
-  {
-   "id_hecho": "ff4e382b5096",
-   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPWk9EVEF6NmtCNmpmVzJVVGFERlZpbHpoREFZWmg1bHBuQnhybGZGT0VXeWZGdmloN3lCU2NvR2RXOWdqTllDd3N4eVZsa2lKb05jMUUzbXQ1bXVTUm1falFPQ0d2VThsZVp4TWdGS2RocnhRcEtTRUVrTExXNUJ3SjBGd1RUSE53TURidGl1VEwwR0FFQXNEazJsQVByYXVOUHZ3NXQ0MEp4aC14LUlqXzZrZHFrY0thYmF6ZzNjT3BxdFktX09BWmRRNERfU3J2WXpSa2VYZTNGWlk5NnBrdFZpbTYxamJEZy16Zmp1VUhhSEFpNlhiMHdjektDREl6bklRRXgwX05YSmR3RTFxeUY0WEFGZ1llWmpQa2Y2Wng2cHFaWktFd2VUYkpOdmfSAbQCQVVfeXFMTzhnUlhUa09kNHNNNjNPZndXaFBCWkVhcGVGbGtwMlJLRUZVLXBtbkN3OXNPVDIzODNjcDZNdk51R1kzYUo4bXBDT2tWVEN4cW9lZURGYjVXOXp1Mm9TSWprNldIeVlsR2tyb3kxZ3FNUDZudUFkTVNYSW5memF1V1AzUjllLWVoUzhMVDFZYXQ2VktRaFhqMklsNExBUWVNMEkyRFZjVW5tb25IdW1fZVhNT0hia2ZZd0hYSXBYWkRkSm9FaTd5TEFpWWdEMkFUYXI5aDVqUUpuRzVudHM4ekIySTJRei16TzhvYWZOWDZXWlhiMjZiaWRzNm1rSmpJRlRjMUVNRmJkRUR5X0M3WGxDek5xMlRSbmQ3RlR5UWRuTmNISEtFeGtUdnNLU3BVYlJBbUg?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Atención máxima inmigrantes legales e indocumentados | Estos son los perfiles latinos que el ICE los tiene en la mira",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 9,
-   "reciente": 15.3,
-   "base": 5.3,
-   "ratio": 2.87,
-   "disparada": "2026-09-12T10:14:25+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 10.1
-  }
- ]
+ "alertas": []
 }
