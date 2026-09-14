@@ -1,12 +1,11 @@
 
-28 vivas / 33 probadas
+29 vivas / 33 probadas
 
 Revisar en fuentes.yaml:
   - mpi_reports: HTTP 404
   - mpi_datos: HTTP 404
   - mpi_politica: HTTP 404
   - mpi_mexico: HTTP 404
-  - gnews_cono_sur_normativa: ReadTimeout: HTTPSConnectionPool(host='news.google.com', port=443): Read timed out. (read timeout=15)
 
 Corregir la URL o dar de baja la fuente. No implementar módulos
 de ingesta para fuentes que no validan.
