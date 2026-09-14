@@ -1,36 +1,9 @@
 {
- "generado": "2026-09-13T20:26:17+00:00",
+ "generado": "2026-09-14T11:59:08+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "febec543a65b": {
-   "id_hecho": "febec543a65b",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSUUwcEExSjh1QjVBZzh0WGpuZXJaTVhhTkg5SW1lTmZ6ZTdRVUdqRWZqQTR4UWV5VndvYU9IbG5vaUZDaW8xVFZTenU1My1hOEppbzVZd2ZPa09SZDk0TnhweDlsYUtYLWFGOW1jUUJEcGNScUstNmhaTVpSZ29adUVxWTJ2RzFvSU5yRHJybHdWWGpPb1htbFIzMVQ3Z3NsaVN3VzF5SzFScUo3d05rZDloS2QzTktETU9sZDZqbzRuT1ZWbGRqNldCNF8?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "ICE rompe récords con sus detenciones y Miami está entre las ciudades con más afectados",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 7,
-   "reciente": 17.4,
-   "base": 7.0,
-   "ratio": 2.48
-  },
-  "849403ac966e": {
-   "id_hecho": "849403ac966e",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcGJBeEdzVk40Q1ZCOGNWTHY1WWM4SDRuMWN4U2Y5RUMtdFAzWnlGZlI4VXFjUHhKY1pySWo4allmRWFaUW1VR2hCdWV2LUM0UHd1MGpTYkpjU2gxWlJKLWZ2cFcwbGp0Yi13U0hab2RMaGd1RzlNNkRsLWFXQmFZVHJrSk85ekpMRmFNckhoS0NJOHp0eTZCaXk0bnZ4aURTalF1d2Z6SEVZcFpMUXZkeUI2VHZzTlgweWVaVWRfbDNRWW9iNGliTllXVGF2MERxZUw4anRVZ04?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Lidera McAllen en detención de migrantes",
-   "importancia": 7,
-   "velocidad": 5,
-   "puntaje": 7,
-   "reciente": 17.4,
-   "base": 7.0,
-   "ratio": 2.48
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -199,7 +172,7 @@
    "medido": "2026-09-13T20:26:09+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -217,40 +190,5 @@
    "ratio": 3.62
   }
  },
- "alertas": [
-  {
-   "id_hecho": "febec543a65b",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSUUwcEExSjh1QjVBZzh0WGpuZXJaTVhhTkg5SW1lTmZ6ZTdRVUdqRWZqQTR4UWV5VndvYU9IbG5vaUZDaW8xVFZTenU1My1hOEppbzVZd2ZPa09SZDk0TnhweDlsYUtYLWFGOW1jUUJEcGNScUstNmhaTVpSZ29adUVxWTJ2RzFvSU5yRHJybHdWWGpPb1htbFIzMVQ3Z3NsaVN3VzF5SzFScUo3d05rZDloS2QzTktETU9sZDZqbzRuT1ZWbGRqNldCNF8?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "ICE rompe récords con sus detenciones y Miami está entre las ciudades con más afectados",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 7,
-   "reciente": 17.4,
-   "base": 7.0,
-   "ratio": 2.48,
-   "disparada": "2026-09-13T20:26:17+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "849403ac966e",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcGJBeEdzVk40Q1ZCOGNWTHY1WWM4SDRuMWN4U2Y5RUMtdFAzWnlGZlI4VXFjUHhKY1pySWo4allmRWFaUW1VR2hCdWV2LUM0UHd1MGpTYkpjU2gxWlJKLWZ2cFcwbGp0Yi13U0hab2RMaGd1RzlNNkRsLWFXQmFZVHJrSk85ekpMRmFNckhoS0NJOHp0eTZCaXk0bnZ4aURTalF1d2Z6SEVZcFpMUXZkeUI2VHZzTlgweWVaVWRfbDNRWW9iNGliTllXVGF2MERxZUw4anRVZ04?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Lidera McAllen en detención de migrantes",
-   "importancia": 7,
-   "velocidad": 5,
-   "puntaje": 7,
-   "reciente": 17.4,
-   "base": 7.0,
-   "ratio": 2.48,
-   "disparada": "2026-09-13T20:26:17+00:00",
-   "velocidad_inicial": 5,
-   "desenlace": "vigente",
-   "horas": 0
-  }
- ]
+ "alertas": []
 }
