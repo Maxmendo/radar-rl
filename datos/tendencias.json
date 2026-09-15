@@ -1,47 +1,34 @@
 {
- "generado": "2026-09-15T11:15:13+00:00",
+ "generado": "2026-09-15T20:58:01+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "575f5ddadfa8": {
-   "id_hecho": "575f5ddadfa8",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNcGhRb3BfNGpyZHBvaWF6ay1HTjBkdG5yeVpVRVZBSlMwcEh5SG00ZWdfUlNqODc3WjJZTS1WeFZOYUZqNkhoZ2NyUDlwMjk1d2dpR1ZOUlZ6VXZTYnN5ZlEweV9QSkUtZzItbVU2X2tBREdUZmRPVkVkNThoTWV5eXJGMjVQQW5Od1dxYnJSNVZ1aXA3SzItbnc3VXJNd0EyWHY0aWNGMUtQYUpTWTJ3Vk9wY21NcVQwdkJGZmdFQzFJbTF1VktOWWZiTHRJVHF0NzhmTk5rTjZlSGVDcC15VlJqY2dvQTAtZGlN?oc=5",
-   "termino": "detencion migratoria",
-   "geo": "US",
-   "titulo": "Denuncian detención de un periodista nicaragüense en el exilio por parte del ICE",
-   "importancia": 9,
-   "velocidad": 3,
+  "c5f43a1dc2a9": {
+   "id_hecho": "c5f43a1dc2a9",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQaTRXd1NvcUJrX2doeFVZbExOWDRmSnRXX1Z2bUVoUUJQdHpXeUd6YTlyNE5kYXM3NkxDS21LSEJoTXF0dGFQRVNrMUFxbUFfYU9mWXRnMzVobVpiVXFPVHJ5b0ZkeGxYQkZvRVpSUzNfV01VUDU0ZnpVYkU2UG1UQmtRZGRGQkZ1X04tWUFac1ZzYmFtdktfUjQzR0tKcWJuREhhTGNReVkyTGJLaTEyQkJXU2gxOUpBYzBXUE5Nc0FBNUJUZHZiRkdIX3lUN0NOT1lN?oc=5",
+   "termino": "deportaciones",
+   "geo": "PE",
+   "titulo": "Más de 2.800 migrantes expulsados de Perú desde inicio de 2026",
+   "importancia": 8,
+   "velocidad": 7,
    "puntaje": 0,
    "reciente": 0.0,
    "base": 1.1,
-   "ratio": null
-  },
-  "2ef2d94d2bc6": {
-   "id_hecho": "2ef2d94d2bc6",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWXlIQjNab0NhTW1uRmp4YVhEQldLaERRTko2eVRYSFlUNU85Y3ozZXQtbWR3XzU2a1F4djVSSTB6ekR6a241N0JTc0EzcVVRYjNhZVBvcTlieDZLbTJpbU9VNV9tNnBFN1FoR283ckdHV19rak55NmtaajNVbmtwQk1R?oc=5",
-   "termino": "detencion de migrantes",
-   "geo": "US",
-   "titulo": "¡Rompe récord! McAllen lidera la detención de migrantes en USA",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
    "ratio": null
   },
   "c6d7ed264c04": {
    "id_hecho": "c6d7ed264c04",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVDJaQTdndjdpcktDUnl6Qy10QkExVnEtWmRhQV80ZWt0dEZyeGoyT096SE90cC1fV0RoODBSdlhpNW8zVnIwQzNxQzdfRDBaaHIxSTFuQnRsMHNlVnNYdHNJOHM5X1pSeXFoVDVyV3F0Y190eVNPRi1CczA4MUtncS1iNDc4ZDRzU1pmalNGX3VYNEJQSFE?oc=5",
    "termino": "migrantes",
-   "geo": "AR",
+   "geo": "MX",
    "titulo": "Migrantes, la cara inhumana de la globalización",
    "importancia": 5,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 7.9,
-   "base": 5.3,
-   "ratio": null
+   "reciente": 30.0,
+   "base": 30.9,
+   "ratio": 0.97
   }
  },
  "audiencia": {
@@ -49,24 +36,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "91",
-     "tipo": "top",
-     "variantes": 2
+     "valor": "1242650",
+     "tipo": "rising",
+     "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "206550",
+     "valor": "180500",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "49",
+     "valor": "50",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-15T11:14:57+00:00"
+   "medido": "2026-09-15T20:57:45+00:00"
   },
   "VE": {
    "consultas": [
@@ -94,25 +81,25 @@
   "CL": {
    "consultas": [
     {
-     "consulta": "migrantes chile",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 1
-    },
-    {
      "consulta": "ceuta",
-     "valor": "502300",
+     "valor": "573750",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "57000",
+     "consulta": "registro civil denuncia una red fraudulenta que estafa dinero a migrantes en chile",
+     "valor": "36200",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "google scholar",
+     "valor": "2200",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-05T10:05:19+00:00"
+   "medido": "2026-09-15T20:57:53+00:00"
   },
   "CO": {
    "consultas": [
@@ -218,22 +205,22 @@
    "medido": "2026-09-13T20:26:09+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 26.1,
-   "base": 7.3,
-   "ratio": 3.57
+   "reciente": 24.3,
+   "base": 6.3,
+   "ratio": 3.86
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 17.9,
-   "base": 6.1,
-   "ratio": 2.95
+   "puntaje": 8,
+   "reciente": 20.7,
+   "base": 7.7,
+   "ratio": 2.69
   }
  },
  "alertas": []
