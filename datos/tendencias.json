@@ -1,60 +1,47 @@
 {
- "generado": "2026-09-14T21:36:50+00:00",
+ "generado": "2026-09-15T11:15:13+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "bf4b616d1d4b": {
-   "id_hecho": "bf4b616d1d4b",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUU9xUFFhVnNaNnhuTkxjb1Nyd3V5Q013Z2pnRW9ObzlHb3pLRXA2d2tVTVRNTDVXN3RnY3NGdlN4UlZhRV9ZZnVCQm90RUlQaVFFQVpQNzVrYVYxNzRkNmN5Z2NtTGQ4azJHSmQzRlJGLTVGa2N2SktNdG43SDgxeXBIb00zMHhib28zOFktXzBMa3IzWUlR?oc=5",
-   "termino": "residencia permanente",
+  "575f5ddadfa8": {
+   "id_hecho": "575f5ddadfa8",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNcGhRb3BfNGpyZHBvaWF6ay1HTjBkdG5yeVpVRVZBSlMwcEh5SG00ZWdfUlNqODc3WjJZTS1WeFZOYUZqNkhoZ2NyUDlwMjk1d2dpR1ZOUlZ6VXZTYnN5ZlEweV9QSkUtZzItbVU2X2tBREdUZmRPVkVkNThoTWV5eXJGMjVQQW5Od1dxYnJSNVZ1aXA3SzItbnc3VXJNd0EyWHY0aWNGMUtQYUpTWTJ3Vk9wY21NcVQwdkJGZmdFQzFJbTF1VktOWWZiTHRJVHF0NzhmTk5rTjZlSGVDcC15VlJqY2dvQTAtZGlN?oc=5",
+   "termino": "detencion migratoria",
    "geo": "US",
-   "titulo": "Estados demandan para frenar una norma de Trump que dificultaría a algunos inmigrantes obtener green cards",
+   "titulo": "Denuncian detención de un periodista nicaragüense en el exilio por parte del ICE",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 14.4,
-   "base": 12.1,
-   "ratio": null
-  },
-  "55b8c4f886bc": {
-   "id_hecho": "55b8c4f886bc",
-   "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNSmJBUmhUX1VZQ2JGNjdoSUJEbHNKNGM1a05SVC1TWU9BYnV5dTQ4TTFBMW1BQzUyR3dEOG93RXhycTNEdVROazl3TURsU29UOXJvVS1zTUhyZUlFc1FCNFdJaXRhcm5mVG1EdXphUVl4ZE5QanVET1dQRVBaWTNZVXpieDJqRENVMGRxNzBzN1Q5dFRpSzRDTy1qbUc4NXVGUlQ0MC1wZHJlSzZJa1JFa1k2U2wxaFFLLVBiQS1NakpaeS1iUVR6dlZQWTZzZnJISkVVLWFBMXFIdzhEWE1zS2gwT3p6aW9GeTJpYjN0SC12VGNWd3NhN1g2bkVkc0FjT1Zrc2luOTBTbHlqZl9EZ3EwZWJzbUV6STk2QUxicEx6UmlxLWdleVZ5U2dleWE1WWVwckhkTmdHaVE4XzZRcmlPd9IByAJBVV95cUxQd01maGhvUGxIci1CTDAyRnVLTFRGRUNGM3lpbzlnUTNoQUZFT0ZIZDFUM1BCSlRGUjRSSHJuQVRUQk1FV3ZYWmNycGFUNjJFWHp1Qi11WU5Qa2pmS19SbzNJMWZjTkhsOXhDLWp3NGJKTnF1dUNNVW5ZX2tid25iNUZNbHMyRElwekVYYWpTYWd4M0hCeHFHX0FzcTAxWXpzZ0l1QjFxMlZlZXNpcnFScU5LeFQwdzdtbGpma3FGalNqbi1ja042azVvSE9IaEZ4WFN0QUVkZGJSR1JPMFZxcnQyR1laR3ZtRnh2dG5MakhoeEt6YzJ3OF82bTREZEFFWjV2a0JpNnpRUVptTjJvU1I2LWZ0aGZoM1pWYmNvWjk2RzNpdUlaYU1aYnVtLUNIcEZPSXdSNWlQREtSaE83cTJsSjc1R1BP?oc=5",
-   "termino": "detencion migrantes",
-   "geo": "US",
-   "titulo": "Inmigrantes habrían sido encerrados en jaulas metálicas",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
    "reciente": 0.0,
-   "base": 0.1,
+   "base": 1.1,
    "ratio": null
   },
-  "b9c268388244": {
-   "id_hecho": "b9c268388244",
-   "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNN3pBalpJUm5za1J1YTVDQ3p4dEtvT2RkZUJSYl9URG5RVjFBMU5YcXpQWEFJMjRxWUx4cDQwS19FZVZocDN4b0lnVHlDV1BqZndLUzQ0WWhTTlk4LU5mT2c4bUwxTHc3WFkwSy15Z2VGZzBDMnpEMVo1M2xPQnRWcDByWEZLZS1tcUxieFZ2U2dTbjNtM0VFZ2xQcGpLU1Z0ckxtNnNadmRUZnFVYzdRRk1ZdHRSdWJseXEyQzFJVHBlOS16RUxrclR5VWRXQTRGdk9yOENfNmxvNjhFVVI3d3duc0JYQmt1UlNCM0szbTlXa19qN19uRFY4aDZoQ3o2dm5fWDNycjBBWU0ySE5RYWwtM3d0QkVSajJDaTRKUnFUVkZVaU9kYjdqNEVscVpCRWNHbXRNa24tXzdjcTNNOWJZZUFSRGPSAcwCQVVfeXFMUGxXREk2Qzd0SDN0MllhektUYTVlNVNSZFdjYUptbU9tME9fNXZDcWZicEh1T2RaT2J3ZDR6dzlkYS1LLVU3U3Q2Vk04Wl9PZVhvWEVPNE05ZHNCWXZIV3VpbTB4TzZxMzVrZ3RQclhkOTRVaXAyX1h2NkgzZFpmMEpFalVjVGdGd3lKeGx5VndQVzNsRk94dE1wOEVuZEtCSmdYM29mRGhKdGJ4bjg2NzZhRERqNi1ibTdZdkRsRDg5cmVoQkxPWGtPcmtNOFRRUnhGcnBKSkdxYUpBejRzV0ttckdKZi1YY1JIMmd6cmlPeG9rNTlIN09nMXM0T19Hc0NzRkRtZXFQVXpFOGVvemNtZk1kWFZ6V1k3TXF4UUZOd190NXVkMzBkajVwTEYtVUdWTkptbk9kM0xaQVZDY00tNk1HMFNBNDRpdEI?oc=5",
-   "termino": "detencion migrantes",
+  "2ef2d94d2bc6": {
+   "id_hecho": "2ef2d94d2bc6",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWXlIQjNab0NhTW1uRmp4YVhEQldLaERRTko2eVRYSFlUNU85Y3ozZXQtbWR3XzU2a1F4djVSSTB6ekR6a241N0JTc0EzcVVRYjNhZVBvcTlieDZLbTJpbU9VNV9tNnBFN1FoR283ckdHV19rak55NmtaajNVbmtwQk1R?oc=5",
+   "termino": "detencion de migrantes",
    "geo": "US",
-   "titulo": "Alerta máxima inmigrantes | Mujer con ciudadanía estadounidense revela que el ICE la arrestó por un insólito motivo",
-   "importancia": 7,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.1,
-   "ratio": null
-  },
-  "386319c54942": {
-   "id_hecho": "386319c54942",
-   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOWTJIejJOQjg0MEVRQzdOTUtZVDlkNlJMTGY4NGtTX3lITEhMOXRYTUdWZ0NhM1JWT1JfWkxVelVneGNMdWZoeFhIYWRxbWtUek8xVGk0bWtvZ1JrMHM5LWpWTERzbzVXY0tfNW1PdUszVnU2ZUpUemY0dkZST0F1WlFXVW1Ed1dvYXpyUHFxV1hfMzJaUTgtWGpwaWFjUTBQQkZOcVgwTzc4bmR1RFRZVlMtWV9pdnROYWVzS2RieDFwMzVhVUo3OVZEVFJ3YmJFMjVzdkRXRlo4Y09yZkp5bXBsVmctVDliMmxwbFJhTUc2cUQtNnB5M203QnBPeFo2SjRNRG1rN2ZicklrZ3JXUnZnblIyRzAxdHpuNHJaMjBBTl9kbjE2dWwwaGMxUdIBrgJBVV95cUxOWTJIejJOQjg0MEVRQzdOTUtZVDlkNlJMTGY4NGtTX3lITEhMOXRYTUdWZ0NhM1JWT1JfWkxVelVneGNMdWZoeFhIYWRxbWtUek8xVGk0bWtvZ1JrMHM5LWpWTERzbzVXY0tfNW1PdUszVnU2ZUpUemY0dkZST0F1WlFXVW1Ed1dvYXpyUHFxV1hfMzJaUTgtWGpwaWFjUTBQQkZOcVgwTzc4bmR1RFRZVlMtWV9pdnROYWVzS2RieDFwMzVhVUo3OVZEVFJ3YmJFMjVzdkRXRlo4Y09yZkp5bXBsVmctVDliMmxwbFJhTUc2cUQtNnB5M203QnBPeFo2SjRNRG1rN2ZicklrZ3JXUnZnblIyRzAxdHpuNHJaMjBBTl9kbjE2dWwwaGMxUQ?oc=5",
-   "termino": "regularizacion",
-   "geo": "ES",
-   "titulo": "La afiliación extranjera bate récord histórico en España impulsada por el proceso de regularización",
+   "titulo": "¡Rompe récord! McAllen lidera la detención de migrantes en USA",
    "importancia": 7,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 23.4,
-   "base": 34.0,
-   "ratio": 0.69
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "c6d7ed264c04": {
+   "id_hecho": "c6d7ed264c04",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVDJaQTdndjdpcktDUnl6Qy10QkExVnEtWmRhQV80ZWt0dEZyeGoyT096SE90cC1fV0RoODBSdlhpNW8zVnIwQzNxQzdfRDBaaHIxSTFuQnRsMHNlVnNYdHNJOHM5X1pSeXFoVDVyV3F0Y190eVNPRi1CczA4MUtncS1iNDc4ZDRzU1pmalNGX3VYNEJQSFE?oc=5",
+   "termino": "migrantes",
+   "geo": "AR",
+   "titulo": "Migrantes, la cara inhumana de la globalización",
+   "importancia": 5,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 7.9,
+   "base": 5.3,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -62,47 +49,47 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1242200",
-     "tipo": "rising",
+     "valor": "91",
+     "tipo": "top",
      "variantes": 2
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "132950",
+     "valor": "206550",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "46",
+     "valor": "49",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-14T21:36:33+00:00"
+   "medido": "2026-09-15T11:14:57+00:00"
   },
   "VE": {
    "consultas": [
     {
-     "consulta": "migrantes significado",
-     "valor": "229500",
+     "consulta": "diferencia entre migrantes e inmigrantes",
+     "valor": "141450",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "estatuto temporal de protección para migrantes venezolanos",
-     "valor": "7500",
+     "consulta": "migrantes significado",
+     "valor": "19300",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "migrantes o inmigrantes",
-     "valor": "190",
+     "valor": "80",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-11T20:35:00+00:00"
+   "medido": "2026-09-15T11:15:05+00:00"
   },
   "CL": {
    "consultas": [
@@ -231,22 +218,22 @@
    "medido": "2026-09-13T20:26:09+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 16.9,
-   "base": 6.8,
-   "ratio": 2.49
+   "puntaje": 10,
+   "reciente": 26.1,
+   "base": 7.3,
+   "ratio": 3.57
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 15.3,
-   "base": 4.4,
-   "ratio": 3.51
+   "reciente": 17.9,
+   "base": 6.1,
+   "ratio": 2.95
   }
  },
  "alertas": []
