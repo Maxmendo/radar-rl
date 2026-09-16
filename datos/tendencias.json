@@ -1,34 +1,60 @@
 {
- "generado": "2026-09-15T20:58:01+00:00",
+ "generado": "2026-09-16T10:58:17+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "c5f43a1dc2a9": {
-   "id_hecho": "c5f43a1dc2a9",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQaTRXd1NvcUJrX2doeFVZbExOWDRmSnRXX1Z2bUVoUUJQdHpXeUd6YTlyNE5kYXM3NkxDS21LSEJoTXF0dGFQRVNrMUFxbUFfYU9mWXRnMzVobVpiVXFPVHJ5b0ZkeGxYQkZvRVpSUzNfV01VUDU0ZnpVYkU2UG1UQmtRZGRGQkZ1X04tWUFac1ZzYmFtdktfUjQzR0tKcWJuREhhTGNReVkyTGJLaTEyQkJXU2gxOUpBYzBXUE5Nc0FBNUJUZHZiRkdIX3lUN0NOT1lN?oc=5",
-   "termino": "deportaciones",
-   "geo": "PE",
-   "titulo": "Más de 2.800 migrantes expulsados de Perú desde inicio de 2026",
+  "7ddd016d5586": {
+   "id_hecho": "7ddd016d5586",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNd3lscXppM3hZRm1PRVV3UFVkMHcyZTRzS1E2TURJWHVxSTRsUEZLR0IwTGdCcjU0dldMZkIxRm5lYkdsbDNTdlZZZks3ejl0bW11aE90bk9XdDI4LVhHR3dnQWgwZ0owc1RZLW5pOHQ0ZnltMEdsejFlcEJIaHdGUEE2a1UyWkNqVFk1dTZhRkE0ckdoRFNLaU5udWVuVUFtbHZTVXVjMzRZdnA0dEJTV1Bwa0xDMmh5NUpzN0M1ZGxLbl9sQmNXS1RZYUVwSUFDSE5IWkZQSXpDeno4Y0NZMGhOYWN5LUdENkdYTHpTZU1XVDlFSkNYcDdkV0Jlb1E?oc=5",
+   "termino": "redadas",
+   "geo": "US",
+   "titulo": "Demanda colectiva contra ICE: más de 300 trabajadores surcoreanos emprenden acciones legales por la redada masiva en Georgia",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 11.4,
+   "base": 7.7,
+   "ratio": null
+  },
+  "1a225c528d15": {
+   "id_hecho": "1a225c528d15",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOck13amFXazl1cUl1Q2ZFNzRLcml6U1dWZjR5ZzRtWVVZR096UUFrZFJkTUpKV0JmLXVuTUdxcEw3VUFwcmZZS0k5elpBU1A0M2YzSXFMVHhzWm41RUUxbG11SEZ4VW9nSkoweTNMUDBIbXhiSnpoQW12Q01NOXBLaV9PV3Bia3RYQWw2bG9OZng5MjZaOG1XNVEwV0pOY1hQYnBOY2NiYUZGVG45anZfLUpuSVhpcERPNm1oMmJVWjF0X3l3aHlLZ0dYX0lwYTNXQmowbjZ1dVhwelR3YVNOTVJyM2xoUzVRbkNrc0JMLU5jRHA0UUxvc0hTNWIxc2JpM1ZyaVhB0gGgAkFVX3lxTE1sX3ZBUHNZSV9Ua1JSRmFTN291ZUpzSWVNelI5S1BWUlZEeHFyMDZUX0lHQnRseThSRExHZTVucC12bktfMkl5cWprTXh6d0pIVEVRMHViR25fSVM1dV82SlhTVzlTVkFMbTdiekRmbHA0ZnlpcURLTlVsZmstTkthSl8xbmMxMEJTcGYyTm5tZ0pVZjc0SU13T3RGMDRjb19wR1BWN3BfSXY4YnFzb1JwbDdnVWZFd1VUcUhzMkJnbHphejhyUUlCWkN6Sl9PczVMZl9jWjlWU3FaaFVDY0w0Q054UFV4TFlqU3V6UjV3NXRDcDR5eU9qZWFfa29USWk4Ymw2Tm1LWElybzJzY24tNzhkbDFOcXVWaHdxQzd4dA?oc=5",
+   "termino": "detencion migratoria",
+   "geo": "US",
+   "titulo": "Fotos: las jaulas de 1,6 m² donde el Gobierno Trump encerró a migrantes en Alligator Alcatraz",
    "importancia": 8,
    "velocidad": 7,
    "puntaje": 0,
    "reciente": 0.0,
-   "base": 1.1,
+   "base": 0.0,
    "ratio": null
   },
-  "c6d7ed264c04": {
-   "id_hecho": "c6d7ed264c04",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVDJaQTdndjdpcktDUnl6Qy10QkExVnEtWmRhQV80ZWt0dEZyeGoyT096SE90cC1fV0RoODBSdlhpNW8zVnIwQzNxQzdfRDBaaHIxSTFuQnRsMHNlVnNYdHNJOHM5X1pSeXFoVDVyV3F0Y190eVNPRi1CczA4MUtncS1iNDc4ZDRzU1pmalNGX3VYNEJQSFE?oc=5",
-   "termino": "migrantes",
-   "geo": "MX",
-   "titulo": "Migrantes, la cara inhumana de la globalización",
-   "importancia": 5,
+  "8cb3a6fd2703": {
+   "id_hecho": "8cb3a6fd2703",
+   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOa29ZOWZldnZFZXEybXdGQ3JIaUhGam9JaVJqYWlZNmNHRVdFbHp3cDBOOWNKX1J3MHU3SWdCajhuUHI1dzhXY1lFUThuZ1g0Y3hXWC1JVHZpRzR0LTNxSTl5TXEyMjVIenRZMmxZc1FleHdFcE1lS2JqQmpZaDFtQ2YxTENhQlVXS21GVHMyRjFaUV81bFdiQk1DV1NmdG1vNW84VW9QQ05ZOUlsTnlYQUpYRm5mU2VHUy1mbkdWN0ZocVV1MGhSamNmUDJqa3ZmdG8wQkJjUURSMTBRUk5DSmYyYW9RUU9Nbnl6bmFJZkh5WTdZTWNDVmE0emU0RDNUbUpjUXRlNUFfc3lIczdDNVNZQdIBkwJBVV95cUxOa29ZOWZldnZFZXEybXdGQ3JIaUhGam9JaVJqYWlZNmNHRVdFbHp3cDBOOWNKX1J3MHU3SWdCajhuUHI1dzhXY1lFUThuZ1g0Y3hXWC1JVHZpRzR0LTNxSTl5TXEyMjVIenRZMmxZc1FleHdFcE1lS2JqQmpZaDFtQ2YxTENhQlVXS21GVHMyRjFaUV81bFdiQk1DV1NmdG1vNW84VW9QQ05ZOUlsTnlYQUpYRm5mU2VHUy1mbkdWN0ZocVV1MGhSamNmUDJqa3ZmdG8wQkJjUURSMTBRUk5DSmYyYW9RUU9Nbnl6bmFJZkh5WTdZTWNDVmE0emU0RDNUbUpjUXRlNUFfc3lIczdDNVNZQQ?oc=5",
+   "termino": "trafico de migrantes",
+   "geo": "US",
+   "titulo": "Colombiano se declara culpable en Estados Unidos por red de tráfico de migrantes vinculada a desaparición de 42 personas",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "e073b19aec69": {
+   "id_hecho": "e073b19aec69",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNU0VJUklyUGJsaFBUejNXLUo3ZGVWdjhMRzdWVGZzWnVoQ0JjNTY2N1VyaHc0enZrSUhXQm5LYWpKTjNsZEx4YkF0YXItMlhhLWI5Q21SbDBQQlE2LUNtWjBlazNDTzR0MUZMdmlLWjVwVXJtVDEzLVNqMjZwQWVINEswMEJFUkw1azVkM1JxazhQejZ5dzQ4REFUY3diRUNSNnRZQlJaOTE5c0JDeXZ2NktoOGtPdFVldnUwTGF1SjdDelhGWnVKRlhUS1NhVlk3?oc=5",
+   "termino": "control fronterizo",
+   "geo": "US",
+   "titulo": "Guardia Costera intercepta panga con 16 migrantes frente a San Diego",
+   "importancia": 6,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 30.0,
-   "base": 30.9,
-   "ratio": 0.97
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -36,24 +62,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1242650",
+     "valor": "1351500",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "180500",
+     "consulta": "migrantes las 5",
+     "valor": "81900",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "50",
+     "valor": "43",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-15T20:57:45+00:00"
+   "medido": "2026-09-16T10:58:01+00:00"
   },
   "VE": {
    "consultas": [
@@ -174,24 +200,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "351050",
+     "valor": "362350",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes estoy a un vaso remix",
+     "valor": "3850",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "93250",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes si me tomo una cerveza",
-     "valor": "13800",
-     "tipo": "rising",
+     "consulta": "personas migrantes",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-12T20:19:03+00:00"
+   "medido": "2026-09-16T10:58:09+00:00"
   },
   "UY": {
    "consultas": [
@@ -205,7 +231,7 @@
    "medido": "2026-09-13T20:26:09+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
