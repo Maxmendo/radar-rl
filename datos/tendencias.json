@@ -1,33 +1,20 @@
 {
- "generado": "2026-09-16T10:58:17+00:00",
+ "generado": "2026-09-16T20:58:28+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "7ddd016d5586": {
-   "id_hecho": "7ddd016d5586",
-   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNd3lscXppM3hZRm1PRVV3UFVkMHcyZTRzS1E2TURJWHVxSTRsUEZLR0IwTGdCcjU0dldMZkIxRm5lYkdsbDNTdlZZZks3ejl0bW11aE90bk9XdDI4LVhHR3dnQWgwZ0owc1RZLW5pOHQ0ZnltMEdsejFlcEJIaHdGUEE2a1UyWkNqVFk1dTZhRkE0ckdoRFNLaU5udWVuVUFtbHZTVXVjMzRZdnA0dEJTV1Bwa0xDMmh5NUpzN0M1ZGxLbl9sQmNXS1RZYUVwSUFDSE5IWkZQSXpDeno4Y0NZMGhOYWN5LUdENkdYTHpTZU1XVDlFSkNYcDdkV0Jlb1E?oc=5",
-   "termino": "redadas",
+  "035198c36cc4": {
+   "id_hecho": "035198c36cc4",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNQzRUYkx6MGFlMWttWDRNZEVDeDczTGh6RURUZkY1eFhBV1FGU0R1RXp2WFFJTUZyeHNadUR1b1FhZWtOZ0JkTjVEMFRRNEhRRU1VOTlyRzk0a2ZDRDcxOUJXcXd4Qy12a3BQSElCVWgwVm5jc3lBcHhheGZ0TDhSbDZGbGNoQzJvV0ZMUjFyVHlPUkxudjdGQUl5c1hZa0R0c0NLaW9jMkJ0cU1DdVFpU3ZScVhqX3pUSlJxZWQ5R1AxajBFWjdVb1RUdF9zd0pXZ3VTNVFXdlczVkl3ZTQxZlJPOERrcXV5OXY4MGNPS0h2MnVVLU1ZREZOckJUZ0lD0gGbAkFVX3lxTE5GWk9jTG1aQnJZN3NKb0RiSTZWaktFZTBlMnMwU1BlQ2dGX1JvVExzenZwSVBpVnN5VzJBOFhwS3ZJLWRoTXM1U0dNUkNGUzRudWVueTdHVE10OFFGWk5PRkp1WVhOYkNQa0ZDLVhQeXZ6bmdkaE1NcWlPMlQ3NWstUlo5bjFxZ0ZDMXNMQ01XaDJnZ24xMkxubFRNR2JsUkwxdEpuUG1qYnF1bGxXNnhKUjFYdWtQSDV5Vm5QcFRpakVhMEFjYVlBWE8yWmd1RVVrVThFa1ZfVmRWamZCbmVkTTVMSkhzZVlIaWVkc0JYNlcwcDhmYV9uMGliUHp3ZHpFNEhCT0tqSlNHS3JudEtQaE1HZDF3MGRYYXc?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Demanda colectiva contra ICE: más de 300 trabajadores surcoreanos emprenden acciones legales por la redada masiva en Georgia",
+   "titulo": "La ley es clara: piden devolver a Estados Unidos a una migrante deportada a Nicaragua por el ICE en Texas",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 11.4,
-   "base": 7.7,
-   "ratio": null
-  },
-  "1a225c528d15": {
-   "id_hecho": "1a225c528d15",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOck13amFXazl1cUl1Q2ZFNzRLcml6U1dWZjR5ZzRtWVVZR096UUFrZFJkTUpKV0JmLXVuTUdxcEw3VUFwcmZZS0k5elpBU1A0M2YzSXFMVHhzWm41RUUxbG11SEZ4VW9nSkoweTNMUDBIbXhiSnpoQW12Q01NOXBLaV9PV3Bia3RYQWw2bG9OZng5MjZaOG1XNVEwV0pOY1hQYnBOY2NiYUZGVG45anZfLUpuSVhpcERPNm1oMmJVWjF0X3l3aHlLZ0dYX0lwYTNXQmowbjZ1dVhwelR3YVNOTVJyM2xoUzVRbkNrc0JMLU5jRHA0UUxvc0hTNWIxc2JpM1ZyaVhB0gGgAkFVX3lxTE1sX3ZBUHNZSV9Ua1JSRmFTN291ZUpzSWVNelI5S1BWUlZEeHFyMDZUX0lHQnRseThSRExHZTVucC12bktfMkl5cWprTXh6d0pIVEVRMHViR25fSVM1dV82SlhTVzlTVkFMbTdiekRmbHA0ZnlpcURLTlVsZmstTkthSl8xbmMxMEJTcGYyTm5tZ0pVZjc0SU13T3RGMDRjb19wR1BWN3BfSXY4YnFzb1JwbDdnVWZFd1VUcUhzMkJnbHphejhyUUlCWkN6Sl9PczVMZl9jWjlWU3FaaFVDY0w0Q054UFV4TFlqU3V6UjV3NXRDcDR5eU9qZWFfa29USWk4Ymw2Tm1LWElybzJzY24tNzhkbDFOcXVWaHdxQzd4dA?oc=5",
-   "termino": "detencion migratoria",
-   "geo": "US",
-   "titulo": "Fotos: las jaulas de 1,6 m² donde el Gobierno Trump encerró a migrantes en Alligator Alcatraz",
-   "importancia": 8,
-   "velocidad": 7,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
+   "reciente": 1.0,
+   "base": 0.3,
    "ratio": null
   },
   "8cb3a6fd2703": {
@@ -36,24 +23,63 @@
    "termino": "trafico de migrantes",
    "geo": "US",
    "titulo": "Colombiano se declara culpable en Estados Unidos por red de tráfico de migrantes vinculada a desaparición de 42 personas",
-   "importancia": 8,
-   "velocidad": 4,
+   "importancia": 9,
+   "velocidad": 3,
    "puntaje": 0,
    "reciente": 0.0,
    "base": 0.0,
    "ratio": null
   },
-  "e073b19aec69": {
-   "id_hecho": "e073b19aec69",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNU0VJUklyUGJsaFBUejNXLUo3ZGVWdjhMRzdWVGZzWnVoQ0JjNTY2N1VyaHc0enZrSUhXQm5LYWpKTjNsZEx4YkF0YXItMlhhLWI5Q21SbDBQQlE2LUNtWjBlazNDTzR0MUZMdmlLWjVwVXJtVDEzLVNqMjZwQWVINEswMEJFUkw1azVkM1JxazhQejZ5dzQ4REFUY3diRUNSNnRZQlJaOTE5c0JDeXZ2NktoOGtPdFVldnUwTGF1SjdDelhGWnVKRlhUS1NhVlk3?oc=5",
-   "termino": "control fronterizo",
+  "8a6f885cbd1c": {
+   "id_hecho": "8a6f885cbd1c",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNU0VyeFY3VFJ5Mk1FUEJmUkxIRTJidmRsMF9Gakxsc2J0NWVuZzVuVk9LWXFWV0d0cGFHaXlGN0xCbjBEWGR3VG9MRlpwQXdxMzMyeWpQSldyMTFYUkFSMTYwVVlMTDVWQ1FTR19rUi1TNXd0WklZdzF0ZnNxQngtZ1ZHTzdTTFV4RTYzaUlfQkJrbHJQY1k5TEhBNkQxM185aDJYM1FmNVRjWkxNT2lwWG5vN0RKdkhSbE5OQnRya2k3SkZ3TkVCeEFYVXZ4SGNDMmZBNWhka3NlU1hMT3V5ck91Rm9BYU94Z2pHQVo3aS0yblhFNmE1Yk9zeTNsdlpPcW9TRUpJbnZVYWNnQkhWVkZn?oc=5",
+   "termino": "migrantes",
    "geo": "US",
-   "titulo": "Guardia Costera intercepta panga con 16 migrantes frente a San Diego",
-   "importancia": 6,
+   "titulo": "Un tribunal anuló la condena de un inmigrante mexicano: los agentes que testificaron en su contra integraban un grupo racista de Facebook",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 2.1,
+   "base": 3.0,
+   "ratio": null
+  },
+  "ea6a5f06f077": {
+   "id_hecho": "ea6a5f06f077",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVG9wQ3B1RjNMVEFKSExNYkE0QnFLdWtiLXNMeURmZEFSWWZIdkZlVmJocS0xT3p5elRsTW5tN0FtQ0FWdzg0cEtVaUZVMUlILUhVN1BlV3VvelRFUnphQnlvVjZmMEk3NXE0ZDl4ODF6M3E1SXhKU1R6VUp1bnBmbkltRi1TUk8tWVpwcV9FbllDRVRSdm9ZWmpwY3NsRU8yV0toZVhuVXRfbjlPMURHWFI1RjZ0ZndlZmFYYU4tSXBKb2ZHNElyRWl5U1hRUDRlWWszaW0wY0ljTUxLTDR4eDIxSUg0a1d6cThickwybGlQNTJSRmNtdGJLNA?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Los 300 surcoreanos detenidos por el ICE en una fábrica de Hyundai denuncian a la Administración Trump",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 1.0,
+   "base": 0.3,
+   "ratio": null
+  },
+  "b21bcc238ad2": {
+   "id_hecho": "b21bcc238ad2",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWkxOVkpSbDJPaFhWOHg5TUEySWcyT1NZVm9KVmkxUzZIZEFLNk50S00wQzJkclRhYVpuT19uMzZseEM0cVhlbXpfQW9DeUVVZlhUM1lqU203a3o4RHNGMmdqT2t0bkozYmQzWGRwakhRaEhoWklvX3FqVlM0VnY1Xzh0NlhZdkxvOU9GSFRSMVMtOXJIRjhwUVFpOURIRXNwOGUtTzJrZlFhZlZ0Qlc1YnhxZGsxdWZZRFhQcjZ6cndLeE0xYVJ5R3VRT1RvMXdkVkdtRFh4bXhydGdwWDREQlhTc2FKSms?oc=5",
+   "termino": "visas",
+   "geo": "US",
+   "titulo": "Peter Lamelas ratificó que impulsará el ingreso de argentinos a EEUU sin visa",
+   "importancia": 7,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 22.6,
+   "base": 29.4,
+   "ratio": 0.77
+  },
+  "aa8cab48a13a": {
+   "id_hecho": "aa8cab48a13a",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV3Z3N0Z0dk5oREZ4a2Z5YXdwbzNIT19vblIyVVNTTnNlNVlGbGwtNlBEaTVRY2JxRXJjN0NoTmVPZUFMa0daUTlfVkdzVFlfTUIwbk5TRzV1b1J5bnpzcGFxMVBHZ3BYTDNESXNvMVhiMl9BRVVsajhERmxGbXRpNHRMSXVaSEtvU3dmV1l4RzIzSWIzcXlWRXFyTkgyWHN5dkxtcjJSN0llWDdl?oc=5",
+   "termino": "migrantes venezolanos",
+   "geo": "CL",
+   "titulo": "Venezolanos en Chile podrán regresar con pasaporte vencido",
+   "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
    "reciente": 0.0,
-   "base": 0.0,
+   "base": 1.1,
    "ratio": null
   }
  },
@@ -62,24 +88,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1351500",
+     "valor": "1297550",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes las 5",
-     "valor": "81900",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "170900",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "43",
+     "valor": "45",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-16T10:58:01+00:00"
+   "medido": "2026-09-16T20:58:11+00:00"
   },
   "VE": {
    "consultas": [
@@ -131,24 +157,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "437050",
+     "valor": "505100",
      "tipo": "rising",
-     "variantes": 0
+     "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "187350",
+     "valor": "202850",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes estoy a un vaso remix",
-     "valor": "4800",
-     "tipo": "rising",
+     "consulta": "migrantes venezolanos",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-13T11:13:02+00:00"
+   "medido": "2026-09-16T20:58:20+00:00"
   },
   "US": {
    "consultas": [
@@ -231,15 +257,15 @@
    "medido": "2026-09-13T20:26:09+00:00"
   }
  },
- "proximo_pais": 3,
+ "proximo_pais": 4,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 24.3,
-   "base": 6.3,
-   "ratio": 3.86
+   "puntaje": 7,
+   "reciente": 20.9,
+   "base": 8.2,
+   "ratio": 2.55
   },
   "certificado de residencia": {
    "geo": "AR",
