@@ -1,33 +1,20 @@
 {
- "generado": "2026-09-16T20:58:28+00:00",
+ "generado": "2026-09-17T11:07:13+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "035198c36cc4": {
-   "id_hecho": "035198c36cc4",
-   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNQzRUYkx6MGFlMWttWDRNZEVDeDczTGh6RURUZkY1eFhBV1FGU0R1RXp2WFFJTUZyeHNadUR1b1FhZWtOZ0JkTjVEMFRRNEhRRU1VOTlyRzk0a2ZDRDcxOUJXcXd4Qy12a3BQSElCVWgwVm5jc3lBcHhheGZ0TDhSbDZGbGNoQzJvV0ZMUjFyVHlPUkxudjdGQUl5c1hZa0R0c0NLaW9jMkJ0cU1DdVFpU3ZScVhqX3pUSlJxZWQ5R1AxajBFWjdVb1RUdF9zd0pXZ3VTNVFXdlczVkl3ZTQxZlJPOERrcXV5OXY4MGNPS0h2MnVVLU1ZREZOckJUZ0lD0gGbAkFVX3lxTE5GWk9jTG1aQnJZN3NKb0RiSTZWaktFZTBlMnMwU1BlQ2dGX1JvVExzenZwSVBpVnN5VzJBOFhwS3ZJLWRoTXM1U0dNUkNGUzRudWVueTdHVE10OFFGWk5PRkp1WVhOYkNQa0ZDLVhQeXZ6bmdkaE1NcWlPMlQ3NWstUlo5bjFxZ0ZDMXNMQ01XaDJnZ24xMkxubFRNR2JsUkwxdEpuUG1qYnF1bGxXNnhKUjFYdWtQSDV5Vm5QcFRpakVhMEFjYVlBWE8yWmd1RVVrVThFa1ZfVmRWamZCbmVkTTVMSkhzZVlIaWVkc0JYNlcwcDhmYV9uMGliUHp3ZHpFNEhCT0tqSlNHS3JudEtQaE1HZDF3MGRYYXc?oc=5",
+  "ea6a5f06f077": {
+   "id_hecho": "ea6a5f06f077",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVG9wQ3B1RjNMVEFKSExNYkE0QnFLdWtiLXNMeURmZEFSWWZIdkZlVmJocS0xT3p5elRsTW5tN0FtQ0FWdzg0cEtVaUZVMUlILUhVN1BlV3VvelRFUnphQnlvVjZmMEk3NXE0ZDl4ODF6M3E1SXhKU1R6VUp1bnBmbkltRi1TUk8tWVpwcV9FbllDRVRSdm9ZWmpwY3NsRU8yV0toZVhuVXRfbjlPMURHWFI1RjZ0ZndlZmFYYU4tSXBKb2ZHNElyRWl5U1hRUDRlWWszaW0wY0ljTUxLTDR4eDIxSUg0a1d6cThickwybGlQNTJSRmNtdGJLNA?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "La ley es clara: piden devolver a Estados Unidos a una migrante deportada a Nicaragua por el ICE en Texas",
+   "titulo": "Los 300 surcoreanos detenidos por el ICE en una fábrica de Hyundai denuncian a la Administración Trump",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 1.0,
-   "base": 0.3,
-   "ratio": null
-  },
-  "8cb3a6fd2703": {
-   "id_hecho": "8cb3a6fd2703",
-   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOa29ZOWZldnZFZXEybXdGQ3JIaUhGam9JaVJqYWlZNmNHRVdFbHp3cDBOOWNKX1J3MHU3SWdCajhuUHI1dzhXY1lFUThuZ1g0Y3hXWC1JVHZpRzR0LTNxSTl5TXEyMjVIenRZMmxZc1FleHdFcE1lS2JqQmpZaDFtQ2YxTENhQlVXS21GVHMyRjFaUV81bFdiQk1DV1NmdG1vNW84VW9QQ05ZOUlsTnlYQUpYRm5mU2VHUy1mbkdWN0ZocVV1MGhSamNmUDJqa3ZmdG8wQkJjUURSMTBRUk5DSmYyYW9RUU9Nbnl6bmFJZkh5WTdZTWNDVmE0emU0RDNUbUpjUXRlNUFfc3lIczdDNVNZQdIBkwJBVV95cUxOa29ZOWZldnZFZXEybXdGQ3JIaUhGam9JaVJqYWlZNmNHRVdFbHp3cDBOOWNKX1J3MHU3SWdCajhuUHI1dzhXY1lFUThuZ1g0Y3hXWC1JVHZpRzR0LTNxSTl5TXEyMjVIenRZMmxZc1FleHdFcE1lS2JqQmpZaDFtQ2YxTENhQlVXS21GVHMyRjFaUV81bFdiQk1DV1NmdG1vNW84VW9QQ05ZOUlsTnlYQUpYRm5mU2VHUy1mbkdWN0ZocVV1MGhSamNmUDJqa3ZmdG8wQkJjUURSMTBRUk5DSmYyYW9RUU9Nbnl6bmFJZkh5WTdZTWNDVmE0emU0RDNUbUpjUXRlNUFfc3lIczdDNVNZQQ?oc=5",
-   "termino": "trafico de migrantes",
-   "geo": "US",
-   "titulo": "Colombiano se declara culpable en Estados Unidos por red de tráfico de migrantes vinculada a desaparición de 42 personas",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
+   "reciente": 4.4,
+   "base": 1.4,
    "ratio": null
   },
   "8a6f885cbd1c": {
@@ -39,47 +26,34 @@
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 2.1,
-   "base": 3.0,
-   "ratio": null
+   "reciente": 15.4,
+   "base": 19.4,
+   "ratio": 0.79
   },
-  "ea6a5f06f077": {
-   "id_hecho": "ea6a5f06f077",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVG9wQ3B1RjNMVEFKSExNYkE0QnFLdWtiLXNMeURmZEFSWWZIdkZlVmJocS0xT3p5elRsTW5tN0FtQ0FWdzg0cEtVaUZVMUlILUhVN1BlV3VvelRFUnphQnlvVjZmMEk3NXE0ZDl4ODF6M3E1SXhKU1R6VUp1bnBmbkltRi1TUk8tWVpwcV9FbllDRVRSdm9ZWmpwY3NsRU8yV0toZVhuVXRfbjlPMURHWFI1RjZ0ZndlZmFYYU4tSXBKb2ZHNElyRWl5U1hRUDRlWWszaW0wY0ljTUxLTDR4eDIxSUg0a1d6cThickwybGlQNTJSRmNtdGJLNA?oc=5",
+  "b06ba746380d": {
+   "id_hecho": "b06ba746380d",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORFFDZWw5emtyTldoUW1EWEI5REtDcnhhN0FJeEM0azZOdWZnR3ZqMFJiOVVhaExZME5pTk12VFd3aTdpRnEtUjdYN3hTMkdFVG1NUGlNU3c2RTlfSC1WdlRZdGpxMDQwRGpLUzV2QVNSM1J1aExWSXExanZVdTZVcnY3NWI2clVzSHJLOFlvMUJycngtSXc4SkVwVnVZckc5a2RYS2szaFlYdENXQXEzX0hLSi1pTnVQM1gxQmtBSWdIb1I0XzMtYm9pT0lvMGtuRk1XMGhIRjB4UGl6aG1PSlN5NHVDT0diSVNDNDdOTUlTZw?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Los 300 surcoreanos detenidos por el ICE en una fábrica de Hyundai denuncian a la Administración Trump",
-   "importancia": 8,
+   "titulo": "De Texas a Florida: los estados con más detenciones del ICE en 2026",
+   "importancia": 7,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 1.0,
-   "base": 0.3,
+   "reciente": 4.4,
+   "base": 1.4,
    "ratio": null
   },
-  "b21bcc238ad2": {
-   "id_hecho": "b21bcc238ad2",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWkxOVkpSbDJPaFhWOHg5TUEySWcyT1NZVm9KVmkxUzZIZEFLNk50S00wQzJkclRhYVpuT19uMzZseEM0cVhlbXpfQW9DeUVVZlhUM1lqU203a3o4RHNGMmdqT2t0bkozYmQzWGRwakhRaEhoWklvX3FqVlM0VnY1Xzh0NlhZdkxvOU9GSFRSMVMtOXJIRjhwUVFpOURIRXNwOGUtTzJrZlFhZlZ0Qlc1YnhxZGsxdWZZRFhQcjZ6cndLeE0xYVJ5R3VRT1RvMXdkVkdtRFh4bXhydGdwWDREQlhTc2FKSms?oc=5",
+  "188a9fabb156": {
+   "id_hecho": "188a9fabb156",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOVXBsM0lBcE9RSWFmb0ZPUjFwZkVUb2x5YjFmT2hPSThnLVE4eXhiSFNNUDVTaTVGcUlqNXd0N0xGbGFGVktGTXAyNl9pYWNPRGZDaGQ0OWZxdzk3cHlHRERWR3JXVFhWckYxZU9adDJkT3E5RG44ZjVlN2tTblRmQnI0WUR4aUI0SE56enVHRi1mRmllZmo0OUdWejBYQm04NUtiSDlFUEZ0WVJmUEFMeU9SbVB1SV9obnJTallBeUJGT3U5eFZCNTlaWnZmUVJwdERMcDB1cFE5UWJHRGFKcGM2aDJaZWF5LUhYMTBta2gwT0xmOTNnZ2NKbko?oc=5",
    "termino": "visas",
-   "geo": "US",
-   "titulo": "Peter Lamelas ratificó que impulsará el ingreso de argentinos a EEUU sin visa",
-   "importancia": 7,
+   "geo": "AR",
+   "titulo": "¿Será cierto?: Estados Unidos abre la puerta a eliminar la visa para los argentinos",
+   "importancia": 5,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 22.6,
-   "base": 29.4,
-   "ratio": 0.77
-  },
-  "aa8cab48a13a": {
-   "id_hecho": "aa8cab48a13a",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV3Z3N0Z0dk5oREZ4a2Z5YXdwbzNIT19vblIyVVNTTnNlNVlGbGwtNlBEaTVRY2JxRXJjN0NoTmVPZUFMa0daUTlfVkdzVFlfTUIwbk5TRzV1b1J5bnpzcGFxMVBHZ3BYTDNESXNvMVhiMl9BRVVsajhERmxGbXRpNHRMSXVaSEtvU3dmV1l4RzIzSWIzcXlWRXFyTkgyWHN5dkxtcjJSN0llWDdl?oc=5",
-   "termino": "migrantes venezolanos",
-   "geo": "CL",
-   "titulo": "Venezolanos en Chile podrán regresar con pasaporte vencido",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
+   "reciente": 3.7,
+   "base": 2.7,
    "ratio": null
   }
  },
@@ -88,24 +62,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1297550",
-     "tipo": "rising",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 1
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "170900",
+     "consulta": "virgen de los migrantes",
+     "valor": "5650",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "45",
-     "tipo": "top",
+     "consulta": "migrantes la más amada del país",
+     "valor": "4650",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-16T20:58:11+00:00"
+   "medido": "2026-09-17T11:06:57+00:00"
   },
   "VE": {
    "consultas": [
@@ -248,24 +222,24 @@
   "UY": {
    "consultas": [
     {
-     "consulta": "ceuta migrantes",
-     "valor": "815700",
+     "consulta": "migrantes grupo",
+     "valor": "162400",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-13T20:26:09+00:00"
+   "medido": "2026-09-17T11:07:05+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 20.9,
-   "base": 8.2,
-   "ratio": 2.55
+   "puntaje": 8,
+   "reciente": 23.3,
+   "base": 9.0,
+   "ratio": 2.59
   },
   "certificado de residencia": {
    "geo": "AR",
