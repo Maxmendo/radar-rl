@@ -1,59 +1,59 @@
 {
- "generado": "2026-09-17T11:07:13+00:00",
+ "generado": "2026-09-17T21:03:19+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "ea6a5f06f077": {
-   "id_hecho": "ea6a5f06f077",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVG9wQ3B1RjNMVEFKSExNYkE0QnFLdWtiLXNMeURmZEFSWWZIdkZlVmJocS0xT3p5elRsTW5tN0FtQ0FWdzg0cEtVaUZVMUlILUhVN1BlV3VvelRFUnphQnlvVjZmMEk3NXE0ZDl4ODF6M3E1SXhKU1R6VUp1bnBmbkltRi1TUk8tWVpwcV9FbllDRVRSdm9ZWmpwY3NsRU8yV0toZVhuVXRfbjlPMURHWFI1RjZ0ZndlZmFYYU4tSXBKb2ZHNElyRWl5U1hRUDRlWWszaW0wY0ljTUxLTDR4eDIxSUg0a1d6cThickwybGlQNTJSRmNtdGJLNA?oc=5",
-   "termino": "deportaciones",
+  "94ea01243f24": {
+   "id_hecho": "94ea01243f24",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNWw2OW01NFJ6UHZNZV9tU2MxZjBKV2pBWnZybHZOVGRnVjhIOHVxbnVMd21XMUZSdEI4bEJsamVSWmVYaklQWWp4ZE1nR0xXQWNtUkt3Z1Y2ZGpUVkxIOHl1MTdERVM5dmhtbjU0eS1SNUtLLVZneUpiUmhSZnFPWlNmSnBQSHNDLTFydWZMUURkZWxJVWVwZEJuNWFKUHlsbmJuUUZ2Q0dkcURHa3JNNlFtTDdNemxuaVpqOFQ4Rjg1NDdCbFQ2Nnc3a3pHNnAtY1BsOXkxd3lFTHdnaWI4V0Z4TVJBSUxDUm9LNi02ZG1lV1pmbWYxMlBobGnSAZACQVVfeXFMTTNsTEVRRkxzZEk0dXVLYWNuUkxJMUNpaHpNdzhOaHR4WmhRdHExTzkwMDJIaFVYVHRlcFdkdHFrSXBmeFhXaEdleC03Q1VCN3c5UVdoTW4xTE9icTg2QkYxbWwtaWF0ZTAyUmNaLTFqa3RKa0pibzZiNWZTYkFCN3JzREhZdXAtX0tsX0d6enc4UVNZTXZkaTJtUDJjdHhPLWhwenhUbi1TcTF5ZnBmeWx1Z3dPSlNLSFNMV1VYSFpjN2d3UUN4SVc1VlljLVFqcl95SUVfQTBXX3h2ejNXY0xFc2tueUhLTEZLQnREanBnNWIydDh0UmU4RU9hNlM2RVFnZmFNRVY0eURxLW5LVVU?oc=5",
+   "termino": "centros de detencion",
    "geo": "US",
-   "titulo": "Los 300 surcoreanos detenidos por el ICE en una fábrica de Hyundai denuncian a la Administración Trump",
+   "titulo": "Informe destapa hacinamiento y abusos en otro centro de detención de migrantes en Florida",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 4.4,
-   "base": 1.4,
+   "reciente": 2.9,
+   "base": 0.3,
    "ratio": null
   },
-  "8a6f885cbd1c": {
-   "id_hecho": "8a6f885cbd1c",
-   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNU0VyeFY3VFJ5Mk1FUEJmUkxIRTJidmRsMF9Gakxsc2J0NWVuZzVuVk9LWXFWV0d0cGFHaXlGN0xCbjBEWGR3VG9MRlpwQXdxMzMyeWpQSldyMTFYUkFSMTYwVVlMTDVWQ1FTR19rUi1TNXd0WklZdzF0ZnNxQngtZ1ZHTzdTTFV4RTYzaUlfQkJrbHJQY1k5TEhBNkQxM185aDJYM1FmNVRjWkxNT2lwWG5vN0RKdkhSbE5OQnRya2k3SkZ3TkVCeEFYVXZ4SGNDMmZBNWhka3NlU1hMT3V5ck91Rm9BYU94Z2pHQVo3aS0yblhFNmE1Yk9zeTNsdlpPcW9TRUpJbnZVYWNnQkhWVkZn?oc=5",
-   "termino": "migrantes",
+  "2d20d14aa562": {
+   "id_hecho": "2d20d14aa562",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94SF9Ra3E4LTJPeEdUdzZJR0RLU1hURlBxcXI1Y3FtTEJoUmFTem1QRzZKTmc0V1NCVUdTeFp1VHBTRXFjTVNWOHZNQUI1NWppdFliVUtJWk81cms2bXN4WGFzYkg1T2ZJZ0hCWFFVcUtRdE5Pb1JURA?oc=5",
+   "termino": "politica migratoria",
    "geo": "US",
-   "titulo": "Un tribunal anuló la condena de un inmigrante mexicano: los agentes que testificaron en su contra integraban un grupo racista de Facebook",
+   "titulo": "Congresista Salazar crítica política migratoria de Trump en aviso de campaña",
+   "importancia": 5,
+   "velocidad": 6,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
+   "ratio": null
+  },
+  "975a9a4bfc6c": {
+   "id_hecho": "975a9a4bfc6c",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYXdlcWIwNUtCeHRmekRoVjNWeXlrbUdKWE0zeE5NYzBhU2QxbHVWanFwaEkya2hYc0xWTG5ySm80SXQxaTkxdHFMdEpnaGF3aVlTSEhubDVrbks1Rmw0bnhJUUN4OWRmTWliZWc4Z3NIOVJfNkE2QkFyaE5XQzFLOGFPdWN5Qk5yc1gyaHRxNWtMdUpHUWhUMVR1TGozRHdiSlpldUJhU2dzV1k?oc=5",
+   "termino": "deportaciones",
+   "geo": "CO",
+   "titulo": "Colombia intensifica operativos de deportación de migrantes irregulares",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 1.3,
+   "base": 3.5,
+   "ratio": null
+  },
+  "352a227b0a40": {
+   "id_hecho": "352a227b0a40",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOUE9sak5TVUZOR2lUUEFxUllocGtCaHg2Q2ZTS3V3T2JIczFWSEtwY3B3Yjh4b1ZwUGEzWURodlhxWjRMbDRHcU50OEphQTRoY3BVYUx4UV9iZ0c1aWpDRFZ4cmlRUjRtTFFvUTIxdGRVbGY1dE9NREtJUWRHRzJueFRBWGtPMHpPLTNGaDEzaEctVlF3dFRBUl9HV2ZpZXl1b2RNeGZtaTF3TnhObVRxOEpVV0VsRzJDZVlpb19WdXNPbTJDNlBrLWsyN1dOU3FBVjZRcC1qOTVQc29DWWhPeFh1OGtBQdIB5gFBVV95cUxOUE9sak5TVUZOR2lUUEFxUllocGtCaHg2Q2ZTS3V3T2JIczFWSEtwY3B3Yjh4b1ZwUGEzWURodlhxWjRMbDRHcU50OEphQTRoY3BVYUx4UV9iZ0c1aWpDRFZ4cmlRUjRtTFFvUTIxdGRVbGY1dE9NREtJUWRHRzJueFRBWGtPMHpPLTNGaDEzaEctVlF3dFRBUl9HV2ZpZXl1b2RNeGZtaTF3TnhObVRxOEpVV0VsRzJDZVlpb19WdXNPbTJDNlBrLWsyN1dOU3FBVjZRcC1qOTVQc29DWWhPeFh1OGtBQQ?oc=5",
+   "termino": "migrantes",
+   "geo": "AR",
+   "titulo": "La llegada de migrantes por mar a Europa baja un 39 % en 2026, pero las víctimas aumentan",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 15.4,
-   "base": 19.4,
-   "ratio": 0.79
-  },
-  "b06ba746380d": {
-   "id_hecho": "b06ba746380d",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORFFDZWw5emtyTldoUW1EWEI5REtDcnhhN0FJeEM0azZOdWZnR3ZqMFJiOVVhaExZME5pTk12VFd3aTdpRnEtUjdYN3hTMkdFVG1NUGlNU3c2RTlfSC1WdlRZdGpxMDQwRGpLUzV2QVNSM1J1aExWSXExanZVdTZVcnY3NWI2clVzSHJLOFlvMUJycngtSXc4SkVwVnVZckc5a2RYS2szaFlYdENXQXEzX0hLSi1pTnVQM1gxQmtBSWdIb1I0XzMtYm9pT0lvMGtuRk1XMGhIRjB4UGl6aG1PSlN5NHVDT0diSVNDNDdOTUlTZw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "De Texas a Florida: los estados con más detenciones del ICE en 2026",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 4.4,
-   "base": 1.4,
-   "ratio": null
-  },
-  "188a9fabb156": {
-   "id_hecho": "188a9fabb156",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOVXBsM0lBcE9RSWFmb0ZPUjFwZkVUb2x5YjFmT2hPSThnLVE4eXhiSFNNUDVTaTVGcUlqNXd0N0xGbGFGVktGTXAyNl9pYWNPRGZDaGQ0OWZxdzk3cHlHRERWR3JXVFhWckYxZU9adDJkT3E5RG44ZjVlN2tTblRmQnI0WUR4aUI0SE56enVHRi1mRmllZmo0OUdWejBYQm04NUtiSDlFUEZ0WVJmUEFMeU9SbVB1SV9obnJTallBeUJGT3U5eFZCNTlaWnZmUVJwdERMcDB1cFE5UWJHRGFKcGM2aDJaZWF5LUhYMTBta2gwT0xmOTNnZ2NKbko?oc=5",
-   "termino": "visas",
-   "geo": "AR",
-   "titulo": "¿Será cierto?: Estados Unidos abre la puerta a eliminar la visa para los argentinos",
-   "importancia": 5,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.7,
-   "base": 2.7,
+   "reciente": 8.0,
+   "base": 6.6,
    "ratio": null
   }
  },
@@ -231,8 +231,11 @@
    "medido": "2026-09-17T11:07:05+00:00"
   }
  },
- "proximo_pais": 5,
- "paises_sin_datos": [],
+ "proximo_pais": 6,
+ "paises_sin_datos": [
+  "AR",
+  "US"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
