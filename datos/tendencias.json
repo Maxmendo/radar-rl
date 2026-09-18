@@ -1,46 +1,59 @@
 {
- "generado": "2026-09-17T21:03:19+00:00",
+ "generado": "2026-09-18T10:43:00+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "94ea01243f24": {
-   "id_hecho": "94ea01243f24",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNWw2OW01NFJ6UHZNZV9tU2MxZjBKV2pBWnZybHZOVGRnVjhIOHVxbnVMd21XMUZSdEI4bEJsamVSWmVYaklQWWp4ZE1nR0xXQWNtUkt3Z1Y2ZGpUVkxIOHl1MTdERVM5dmhtbjU0eS1SNUtLLVZneUpiUmhSZnFPWlNmSnBQSHNDLTFydWZMUURkZWxJVWVwZEJuNWFKUHlsbmJuUUZ2Q0dkcURHa3JNNlFtTDdNemxuaVpqOFQ4Rjg1NDdCbFQ2Nnc3a3pHNnAtY1BsOXkxd3lFTHdnaWI4V0Z4TVJBSUxDUm9LNi02ZG1lV1pmbWYxMlBobGnSAZACQVVfeXFMTTNsTEVRRkxzZEk0dXVLYWNuUkxJMUNpaHpNdzhOaHR4WmhRdHExTzkwMDJIaFVYVHRlcFdkdHFrSXBmeFhXaEdleC03Q1VCN3c5UVdoTW4xTE9icTg2QkYxbWwtaWF0ZTAyUmNaLTFqa3RKa0pibzZiNWZTYkFCN3JzREhZdXAtX0tsX0d6enc4UVNZTXZkaTJtUDJjdHhPLWhwenhUbi1TcTF5ZnBmeWx1Z3dPSlNLSFNMV1VYSFpjN2d3UUN4SVc1VlljLVFqcl95SUVfQTBXX3h2ejNXY0xFc2tueUhLTEZLQnREanBnNWIydDh0UmU4RU9hNlM2RVFnZmFNRVY0eURxLW5LVVU?oc=5",
-   "termino": "centros de detencion",
+  "ceba86b70a6c": {
+   "id_hecho": "ceba86b70a6c",
+   "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOYUN3TTY0VGd4NEdIankxODUyWS05TVJQTV9IRXBmZGw2NlFJVWc0RHYzeWszbjF6Ukp1SjVtT3ZibC1lcHN0bDdfT0kzUndZTW9zOXFqNjdVZGVfQUJmcE1wWUp2a1c1a01SNlc2OE5JYWU3dGx2RnlueHA2NnktLVN1MzdLcmRJQlVhbzRpOHV2UVRkWHB3RFQ4VnliUDlxT095Y0I3dXRRMDhZc21CbmtmR2xRUXJIbW5Bc2FFYXhuZW85WEJuRTd0MTFybHF6ODdsRmx4Y0pKeDMxbC05V0JqMF9xVUtBU1ZSWnJwTHFxT3JaM2J1b3ZZUG5XOHd5eURLMlpqdExxaVVscUlKbWFUNEdmWmhxSmlpWC1WRExpZjJwSUNoUW9UaXRoTS1qVS0wRTVoV0TSAb4CQVVfeXFMUEpPTWpZVFlwM0lFY2IxZEtQSHFiaUYyQTFoYnVxc1Y4a2p5elpSdE5QYm9xb2hzTHl5MGtSWmRRRml2T29jblo5NXBHQWR4b2hLamtKOTkwYUlkcUQyZ0ZZMEZWZzFETFNzTXhfQWh6WG5zRnBaQmpiMTJ2TVFRd0FuYzJ6bGMzaEE5VHlRdFJibWRzOWNvUWpkQTF3U2ZmZTFnbHBQN21DanVUcEFsMU16Uzl3eC15OHZFMnhYR2diZWlhWW90Tk5rekxGUGFYdkFSU2d6blBxeVBBWm5nSkxJTnJ5enhwQjNCbnp0SzhhdDBrSXV1ZTktb1JIcjNHclRnVEtFLTNVNDdGVkFscnNpWldjbnZxd3dqQmYwQmwyUTZmSUczZGNlb3VTcnFyel9sRnhQcl9hczJCS3Rn?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Informe destapa hacinamiento y abusos en otro centro de detención de migrantes en Florida",
+   "titulo": "Juez limita arrestos de migrantes sin orden judicial al sur de California",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 2.9,
-   "base": 0.3,
+   "reciente": 14.6,
+   "base": 6.6,
    "ratio": null
   },
-  "2d20d14aa562": {
-   "id_hecho": "2d20d14aa562",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94SF9Ra3E4LTJPeEdUdzZJR0RLU1hURlBxcXI1Y3FtTEJoUmFTem1QRzZKTmc0V1NCVUdTeFp1VHBTRXFjTVNWOHZNQUI1NWppdFliVUtJWk81cms2bXN4WGFzYkg1T2ZJZ0hCWFFVcUtRdE5Pb1JURA?oc=5",
-   "termino": "politica migratoria",
-   "geo": "US",
-   "titulo": "Congresista Salazar crítica política migratoria de Trump en aviso de campaña",
-   "importancia": 5,
-   "velocidad": 6,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
-   "ratio": null
-  },
-  "975a9a4bfc6c": {
-   "id_hecho": "975a9a4bfc6c",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYXdlcWIwNUtCeHRmekRoVjNWeXlrbUdKWE0zeE5NYzBhU2QxbHVWanFwaEkya2hYc0xWTG5ySm80SXQxaTkxdHFMdEpnaGF3aVlTSEhubDVrbks1Rmw0bnhJUUN4OWRmTWliZWc4Z3NIOVJfNkE2QkFyaE5XQzFLOGFPdWN5Qk5yc1gyaHRxNWtMdUpHUWhUMVR1TGozRHdiSlpldUJhU2dzV1k?oc=5",
+  "94ea01243f24": {
+   "id_hecho": "94ea01243f24",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNWw2OW01NFJ6UHZNZV9tU2MxZjBKV2pBWnZybHZOVGRnVjhIOHVxbnVMd21XMUZSdEI4bEJsamVSWmVYaklQWWp4ZE1nR0xXQWNtUkt3Z1Y2ZGpUVkxIOHl1MTdERVM5dmhtbjU0eS1SNUtLLVZneUpiUmhSZnFPWlNmSnBQSHNDLTFydWZMUURkZWxJVWVwZEJuNWFKUHlsbmJuUUZ2Q0dkcURHa3JNNlFtTDdNemxuaVpqOFQ4Rjg1NDdCbFQ2Nnc3a3pHNnAtY1BsOXkxd3lFTHdnaWI4V0Z4TVJBSUxDUm9LNi02ZG1lV1pmbWYxMlBobGnSAZACQVVfeXFMTTNsTEVRRkxzZEk0dXVLYWNuUkxJMUNpaHpNdzhOaHR4WmhRdHExTzkwMDJIaFVYVHRlcFdkdHFrSXBmeFhXaEdleC03Q1VCN3c5UVdoTW4xTE9icTg2QkYxbWwtaWF0ZTAyUmNaLTFqa3RKa0pibzZiNWZTYkFCN3JzREhZdXAtX0tsX0d6enc4UVNZTXZkaTJtUDJjdHhPLWhwenhUbi1TcTF5ZnBmeWx1Z3dPSlNLSFNMV1VYSFpjN2d3UUN4SVc1VlljLVFqcl95SUVfQTBXX3h2ejNXY0xFc2tueUhLTEZLQnREanBnNWIydDh0UmU4RU9hNlM2RVFnZmFNRVY0eURxLW5LVVU?oc=5",
    "termino": "deportaciones",
-   "geo": "CO",
-   "titulo": "Colombia intensifica operativos de deportación de migrantes irregulares",
+   "geo": "US",
+   "titulo": "Informe destapa hacinamiento y abusos en otro centro de detención de migrantes en Florida",
    "importancia": 8,
    "velocidad": 5,
    "puntaje": 0,
-   "reciente": 1.3,
-   "base": 3.5,
+   "reciente": 14.6,
+   "base": 6.6,
+   "ratio": null
+  },
+  "704ce9406f39": {
+   "id_hecho": "704ce9406f39",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTmpOVFRZdzB6aFpSeVZQanVZTk8tNkRJZ3Yzc2tUSlhrZnhOMUpGLVB5akxzdDFNT2Vnb0lOcjV6b2VxYkJMV0dJZlR4T19XUDJzUnhzSUZpaFgyV0xNWlRud0Z2c09wbHE2eFRBTGhNbEhKaHVURDFvT0gtMy0tLUVUWHNfdFZaRDJTLVM0dFBYeFRaaWxCUnIxMG1ENVdsczBzcDhMbzcxMG5HN3pJUHh1ZlpITXhISE1HWXNjT2EwRVptVEtvQjNxTE04emd3WDZfUzdlRno5ZXItTWNHNGM2S1FCR2ZxT2M5YmZwXy3SAYQCQVVfeXFMTks3SVU0Z2hkcGlTTDRRRm1ZRGVVcDlkdVFDRkViOENnUE9LdG9HTDFLSEw4aFpBUDZqbDgwN3I5X04tcEVPWGNiSE1JTGgzWDJHZGVoQjdXVEs5RmpNLTY4cXA5UWVPU2tkVDQ0VWFvT2RUM196a3gyajQ2MzdKOXdxTWdsdWhJUHJMQzhrdFJWczFkUkpUZE41bmJCRjZtcHVKeURHdEtySk9HeUQtOU1PeWhEd3gtS0E4bS1iLW5Ec0c1ZmdMQ2hGaHBVdnltd1JHbDdxd0p2Z1ZvWWxWTzZpeGpFZzhOWllOSExDY1hjd2xDRzE3UHhBeGltYnZURXE1a2g?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Agente del ICE a la cárcel por disparar contra migrante venezolano",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 14.6,
+   "base": 6.6,
+   "ratio": null
+  },
+  "797cd34eb018": {
+   "id_hecho": "797cd34eb018",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPLTJfa21KdURNdGpQVllSaTVHeTBHNmIxZnZUaXlUVmpheWl3VmU0aklsRE5ULWZub1pILVgzdDNUQ2Q4TGtvMGJSaldaUnBwUjB4TkFGOEt6cldTalB4UmxDTXZDSElLV1E4R0xlbXNuaU1UMzdmNGY1YnVkTDNkd2F5Vk81SjVCSE1MZUhVTTUtdV83Umg4aVIyNUl6QmFWeGI0R29HYjNaU1NVVTVUZnlCOXJHOC1JdXc0TTRiT1ZBQjdxRHhHWXAyQzFYZTFXMVJvbHByUldRYjRhX3JpSnhNcXRSUU5sZVlDRmxlM3VLT3dTUExxZmJTTEVRa0M5WDVnS1pjSdIBhwJBVV95cUxPLTJfa21KdURNdGpQVllSaTVHeTBHNmIxZnZUaXlUVmpheWl3VmU0aklsRE5ULWZub1pILVgzdDNUQ2Q4TGtvMGJSaldaUnBwUjB4TkFGOEt6cldTalB4UmxDTXZDSElLV1E4R0xlbXNuaU1UMzdmNGY1YnVkTDNkd2F5Vk81SjVCSE1MZUhVTTUtdV83Umg4aVIyNUl6QmFWeGI0R29HYjNaU1NVVTVUZnlCOXJHOC1JdXc0TTRiT1ZBQjdxRHhHWXAyQzFYZTFXMVJvbHByUldRYjRhX3JpSnhNcXRSUU5sZVlDRmxlM3VLT3dTUExxZmJTTEVRa0M5WDVnS1pjSQ?oc=5",
+   "termino": "migrantes venezolanos",
+   "geo": "CL",
+   "titulo": "Chile permitirá que venezolanos con pasaporte vencido salgan del país con un simple salvoconducto",
+   "importancia": 8,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 2.1,
    "ratio": null
   },
   "352a227b0a40": {
@@ -52,8 +65,8 @@
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 8.0,
-   "base": 6.6,
+   "reciente": 7.7,
+   "base": 5.9,
    "ratio": null
   }
  },
@@ -62,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "100",
-     "tipo": "top",
+     "valor": "1244550",
+     "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "virgen de los migrantes",
-     "valor": "5650",
+     "consulta": "migrantes o inmigrantes",
+     "valor": "164650",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes la más amada del país",
-     "valor": "4650",
-     "tipo": "rising",
+     "consulta": "migrantes me duele que me duelas",
+     "valor": "42",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-17T11:06:57+00:00"
+   "medido": "2026-09-18T10:42:44+00:00"
   },
   "VE": {
    "consultas": [
@@ -176,25 +189,25 @@
   "ES": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "99",
+     "consulta": "ceuta migrantes",
+     "valor": "100",
      "tipo": "top",
      "variantes": 2
     },
     {
-     "consulta": "crisis ceuta",
-     "valor": "88350",
+     "consulta": "violaciones ceuta",
+     "valor": "81700",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "cuantos migrantes quedan en ceuta",
-     "valor": "71900",
+     "consulta": "marc vidal, el problema que nadie quiere nombrar es que los migrantes regularizados cotizan a la seguridad social, y eso está bien, pero lo hacen sobre una base bajísima",
+     "valor": "67650",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-14T21:36:42+00:00"
+   "medido": "2026-09-18T10:42:52+00:00"
   },
   "MX": {
    "consultas": [
@@ -231,25 +244,22 @@
    "medido": "2026-09-17T11:07:05+00:00"
   }
  },
- "proximo_pais": 6,
- "paises_sin_datos": [
-  "AR",
-  "US"
- ],
+ "proximo_pais": 0,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 23.3,
-   "base": 9.0,
-   "ratio": 2.59
+   "puntaje": 10,
+   "reciente": 26.1,
+   "base": 6.8,
+   "ratio": 3.87
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 20.7,
-   "base": 7.7,
-   "ratio": 2.69
+   "puntaje": 10,
+   "reciente": 21.1,
+   "base": 6.8,
+   "ratio": 3.09
   }
  },
  "alertas": []
