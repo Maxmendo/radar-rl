@@ -1,73 +1,47 @@
 {
- "generado": "2026-09-18T10:43:00+00:00",
+ "generado": "2026-09-18T20:31:50+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "ceba86b70a6c": {
-   "id_hecho": "ceba86b70a6c",
-   "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOYUN3TTY0VGd4NEdIankxODUyWS05TVJQTV9IRXBmZGw2NlFJVWc0RHYzeWszbjF6Ukp1SjVtT3ZibC1lcHN0bDdfT0kzUndZTW9zOXFqNjdVZGVfQUJmcE1wWUp2a1c1a01SNlc2OE5JYWU3dGx2RnlueHA2NnktLVN1MzdLcmRJQlVhbzRpOHV2UVRkWHB3RFQ4VnliUDlxT095Y0I3dXRRMDhZc21CbmtmR2xRUXJIbW5Bc2FFYXhuZW85WEJuRTd0MTFybHF6ODdsRmx4Y0pKeDMxbC05V0JqMF9xVUtBU1ZSWnJwTHFxT3JaM2J1b3ZZUG5XOHd5eURLMlpqdExxaVVscUlKbWFUNEdmWmhxSmlpWC1WRExpZjJwSUNoUW9UaXRoTS1qVS0wRTVoV0TSAb4CQVVfeXFMUEpPTWpZVFlwM0lFY2IxZEtQSHFiaUYyQTFoYnVxc1Y4a2p5elpSdE5QYm9xb2hzTHl5MGtSWmRRRml2T29jblo5NXBHQWR4b2hLamtKOTkwYUlkcUQyZ0ZZMEZWZzFETFNzTXhfQWh6WG5zRnBaQmpiMTJ2TVFRd0FuYzJ6bGMzaEE5VHlRdFJibWRzOWNvUWpkQTF3U2ZmZTFnbHBQN21DanVUcEFsMU16Uzl3eC15OHZFMnhYR2diZWlhWW90Tk5rekxGUGFYdkFSU2d6blBxeVBBWm5nSkxJTnJ5enhwQjNCbnp0SzhhdDBrSXV1ZTktb1JIcjNHclRnVEtFLTNVNDdGVkFscnNpWldjbnZxd3dqQmYwQmwyUTZmSUczZGNlb3VTcnFyel9sRnhQcl9hczJCS3Rn?oc=5",
-   "termino": "deportaciones",
+  "441357cdd41c": {
+   "id_hecho": "441357cdd41c",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOa0lqbE8zWlNkcnQtZl8zOWJpcy1WWlNrb2dUQ1RESXBvSk5ScjVFNF9Tams2UXNtYUhaNWlMbjZ0djVZbnljRnF1S25HUTl3VFVBUmtTdzRxc3pyRDdQcGZBTEZDN3NYdVdUN3FtQWtDRVd3R2NGX0ZSZ0k5MWxlbDIyZk1YSktuaVduYTJIaXJVajVLQnVNVlUyN3FtckoxdElOaGphVUhXcXoxdmxXX3FjNC1oTG0yNlR5NXBrQjV6eWgycVdkeDlUSVphZUR6eThFdlZibUNVb0syYXNuVkpra1JvcjVQeDNQMkdIYWU2MVHSAfgBQVVfeXFMTV9Pdk1kRGtvVG4zQTNNSlVaSkNjMFhZeENDdDVpVl9UYldycUM5WUlVbmZQc3RjNTlFcHFjQmpveE1FMlpJQk94MFlRX1YyZm1HeUwtZXFOVkRjYThfNW9SVmFNdnE2NEVybEVYZGcxMjl1OEhwWmtMeHdJVGFpcFpYdnJoUEhrM0hwRHlzLXpzaDBMcFNZaFh0MzQzajlwLV8td1lsWU9qSFNFZFBRaHI0TF9jZEN2TE5iNTh2VGE2bl9PVDMtMnpqcmtmLU5ZU0JCZnhwb2ZQWENqaFNEWmZiYXhiNEgzWWdRSzVOTFZvMkhPNXdJc0E?oc=5",
+   "termino": "centros de detencion",
    "geo": "US",
-   "titulo": "Juez limita arrestos de migrantes sin orden judicial al sur de California",
+   "titulo": "Informe destapa hacinamiento y abusos en otro centro de detención de migrantes en Florida - La Prensa",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 14.6,
-   "base": 6.6,
-   "ratio": null
-  },
-  "94ea01243f24": {
-   "id_hecho": "94ea01243f24",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNWw2OW01NFJ6UHZNZV9tU2MxZjBKV2pBWnZybHZOVGRnVjhIOHVxbnVMd21XMUZSdEI4bEJsamVSWmVYaklQWWp4ZE1nR0xXQWNtUkt3Z1Y2ZGpUVkxIOHl1MTdERVM5dmhtbjU0eS1SNUtLLVZneUpiUmhSZnFPWlNmSnBQSHNDLTFydWZMUURkZWxJVWVwZEJuNWFKUHlsbmJuUUZ2Q0dkcURHa3JNNlFtTDdNemxuaVpqOFQ4Rjg1NDdCbFQ2Nnc3a3pHNnAtY1BsOXkxd3lFTHdnaWI4V0Z4TVJBSUxDUm9LNi02ZG1lV1pmbWYxMlBobGnSAZACQVVfeXFMTTNsTEVRRkxzZEk0dXVLYWNuUkxJMUNpaHpNdzhOaHR4WmhRdHExTzkwMDJIaFVYVHRlcFdkdHFrSXBmeFhXaEdleC03Q1VCN3c5UVdoTW4xTE9icTg2QkYxbWwtaWF0ZTAyUmNaLTFqa3RKa0pibzZiNWZTYkFCN3JzREhZdXAtX0tsX0d6enc4UVNZTXZkaTJtUDJjdHhPLWhwenhUbi1TcTF5ZnBmeWx1Z3dPSlNLSFNMV1VYSFpjN2d3UUN4SVc1VlljLVFqcl95SUVfQTBXX3h2ejNXY0xFc2tueUhLTEZLQnREanBnNWIydDh0UmU4RU9hNlM2RVFnZmFNRVY0eURxLW5LVVU?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Informe destapa hacinamiento y abusos en otro centro de detención de migrantes en Florida",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 14.6,
-   "base": 6.6,
-   "ratio": null
-  },
-  "704ce9406f39": {
-   "id_hecho": "704ce9406f39",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTmpOVFRZdzB6aFpSeVZQanVZTk8tNkRJZ3Yzc2tUSlhrZnhOMUpGLVB5akxzdDFNT2Vnb0lOcjV6b2VxYkJMV0dJZlR4T19XUDJzUnhzSUZpaFgyV0xNWlRud0Z2c09wbHE2eFRBTGhNbEhKaHVURDFvT0gtMy0tLUVUWHNfdFZaRDJTLVM0dFBYeFRaaWxCUnIxMG1ENVdsczBzcDhMbzcxMG5HN3pJUHh1ZlpITXhISE1HWXNjT2EwRVptVEtvQjNxTE04emd3WDZfUzdlRno5ZXItTWNHNGM2S1FCR2ZxT2M5YmZwXy3SAYQCQVVfeXFMTks3SVU0Z2hkcGlTTDRRRm1ZRGVVcDlkdVFDRkViOENnUE9LdG9HTDFLSEw4aFpBUDZqbDgwN3I5X04tcEVPWGNiSE1JTGgzWDJHZGVoQjdXVEs5RmpNLTY4cXA5UWVPU2tkVDQ0VWFvT2RUM196a3gyajQ2MzdKOXdxTWdsdWhJUHJMQzhrdFJWczFkUkpUZE41bmJCRjZtcHVKeURHdEtySk9HeUQtOU1PeWhEd3gtS0E4bS1iLW5Ec0c1ZmdMQ2hGaHBVdnltd1JHbDdxd0p2Z1ZvWWxWTzZpeGpFZzhOWllOSExDY1hjd2xDRzE3UHhBeGltYnZURXE1a2g?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Agente del ICE a la cárcel por disparar contra migrante venezolano",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 14.6,
-   "base": 6.6,
-   "ratio": null
-  },
-  "797cd34eb018": {
-   "id_hecho": "797cd34eb018",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPLTJfa21KdURNdGpQVllSaTVHeTBHNmIxZnZUaXlUVmpheWl3VmU0aklsRE5ULWZub1pILVgzdDNUQ2Q4TGtvMGJSaldaUnBwUjB4TkFGOEt6cldTalB4UmxDTXZDSElLV1E4R0xlbXNuaU1UMzdmNGY1YnVkTDNkd2F5Vk81SjVCSE1MZUhVTTUtdV83Umg4aVIyNUl6QmFWeGI0R29HYjNaU1NVVTVUZnlCOXJHOC1JdXc0TTRiT1ZBQjdxRHhHWXAyQzFYZTFXMVJvbHByUldRYjRhX3JpSnhNcXRSUU5sZVlDRmxlM3VLT3dTUExxZmJTTEVRa0M5WDVnS1pjSdIBhwJBVV95cUxPLTJfa21KdURNdGpQVllSaTVHeTBHNmIxZnZUaXlUVmpheWl3VmU0aklsRE5ULWZub1pILVgzdDNUQ2Q4TGtvMGJSaldaUnBwUjB4TkFGOEt6cldTalB4UmxDTXZDSElLV1E4R0xlbXNuaU1UMzdmNGY1YnVkTDNkd2F5Vk81SjVCSE1MZUhVTTUtdV83Umg4aVIyNUl6QmFWeGI0R29HYjNaU1NVVTVUZnlCOXJHOC1JdXc0TTRiT1ZBQjdxRHhHWXAyQzFYZTFXMVJvbHByUldRYjRhX3JpSnhNcXRSUU5sZVlDRmxlM3VLT3dTUExxZmJTTEVRa0M5WDVnS1pjSQ?oc=5",
-   "termino": "migrantes venezolanos",
-   "geo": "CL",
-   "titulo": "Chile permitirá que venezolanos con pasaporte vencido salgan del país con un simple salvoconducto",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 0.0,
+   "reciente": 1.4,
    "base": 2.1,
    "ratio": null
   },
-  "352a227b0a40": {
-   "id_hecho": "352a227b0a40",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOUE9sak5TVUZOR2lUUEFxUllocGtCaHg2Q2ZTS3V3T2JIczFWSEtwY3B3Yjh4b1ZwUGEzWURodlhxWjRMbDRHcU50OEphQTRoY3BVYUx4UV9iZ0c1aWpDRFZ4cmlRUjRtTFFvUTIxdGRVbGY1dE9NREtJUWRHRzJueFRBWGtPMHpPLTNGaDEzaEctVlF3dFRBUl9HV2ZpZXl1b2RNeGZtaTF3TnhObVRxOEpVV0VsRzJDZVlpb19WdXNPbTJDNlBrLWsyN1dOU3FBVjZRcC1qOTVQc29DWWhPeFh1OGtBQdIB5gFBVV95cUxOUE9sak5TVUZOR2lUUEFxUllocGtCaHg2Q2ZTS3V3T2JIczFWSEtwY3B3Yjh4b1ZwUGEzWURodlhxWjRMbDRHcU50OEphQTRoY3BVYUx4UV9iZ0c1aWpDRFZ4cmlRUjRtTFFvUTIxdGRVbGY1dE9NREtJUWRHRzJueFRBWGtPMHpPLTNGaDEzaEctVlF3dFRBUl9HV2ZpZXl1b2RNeGZtaTF3TnhObVRxOEpVV0VsRzJDZVlpb19WdXNPbTJDNlBrLWsyN1dOU3FBVjZRcC1qOTVQc29DWWhPeFh1OGtBQQ?oc=5",
-   "termino": "migrantes",
-   "geo": "AR",
-   "titulo": "La llegada de migrantes por mar a Europa baja un 39 % en 2026, pero las víctimas aumentan",
+  "4a854bb1ea0c": {
+   "id_hecho": "4a854bb1ea0c",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVlM4Qjg4SVhKeHdLY0tXSnZ2a0pZZWppZTBLMThTbUpZSlFSMnl0c2t6UGVxeWp1RVJYNUtUcG0zenZZejdpY21FdkRnVFBZbGZieVFyTnJLbHJCdDJpV1Rab1NMcTZha1VqMF8wazBOSldEZGNOQS1FY25BMm96dEdFNGdzejFMSXJvR0s3cEMxV2lod3BYQXZkR0FqaWV6eTV5LW5GcDdqbkViR3FwUXozXzJEcjdKYTFLM2NOczVxdTJLamlGXw?oc=5",
+   "termino": "deportaciones",
+   "geo": "MX",
+   "titulo": "“Me iban a mandar a Cuba”: el amparo que frenó la deportación de un cubano en México",
    "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 67.3,
+   "base": 11.1,
+   "ratio": 6.09
+  },
+  "fea1eccf7e67": {
+   "id_hecho": "fea1eccf7e67",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUFE5UjZrQUF5MlZmdFhvdjZNNmJySXV6M0RfbDk1a0pBYjV3WEpiam5tNXdJb1drTzZPNGloXzRVbUU4R3QwUXd1bWZya09oSFczMkczQVZQT0xIcG9rNmNvUnBGXzdqRzVWS2FGQWlXZkxLY0VMY25tTTZqazJycXp3cVpPSHhjb1ZhMkVaMW11cG80REtNQzhIdUdIZmd0R3BhSmdWc0dza2VxQndrQmZsMjN3cTVsSHFjbGF5cFExWjJXZTRhMFF4QjJ3SXc1?oc=5",
+   "termino": "control migratorio",
+   "geo": "PE",
+   "titulo": "Nacional: Gobierno refuerza control migratorio en cinco ejes",
+   "importancia": 7,
    "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 7.7,
-   "base": 5.9,
-   "ratio": null
+   "puntaje": 10,
+   "reciente": 38.3,
+   "base": 7.1,
+   "ratio": 5.42
   }
  },
  "audiencia": {
@@ -75,47 +49,41 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1244550",
+     "valor": "1195250",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes o inmigrantes",
-     "valor": "164650",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "174800",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "42",
-     "tipo": "top",
+     "consulta": "migrantes las 5",
+     "valor": "53400",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-18T10:42:44+00:00"
+   "medido": "2026-09-18T20:31:34+00:00"
   },
   "VE": {
    "consultas": [
     {
-     "consulta": "diferencia entre migrantes e inmigrantes",
-     "valor": "141450",
+     "consulta": "migrantes o inmigrantes",
+     "valor": "187300",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "migrantes significado",
-     "valor": "19300",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes o inmigrantes",
-     "valor": "80",
-     "tipo": "rising",
+     "valor": "7",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-15T11:15:05+00:00"
+   "medido": "2026-09-18T20:31:42+00:00"
   },
   "CL": {
    "consultas": [
@@ -244,23 +212,58 @@
    "medido": "2026-09-17T11:07:05+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
    "reciente": 26.1,
-   "base": 6.8,
-   "ratio": 3.87
+   "base": 6.9,
+   "ratio": 3.77
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 21.1,
-   "base": 6.8,
-   "ratio": 3.09
+   "reciente": 22.7,
+   "base": 3.8,
+   "ratio": 5.95
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "4a854bb1ea0c",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVlM4Qjg4SVhKeHdLY0tXSnZ2a0pZZWppZTBLMThTbUpZSlFSMnl0c2t6UGVxeWp1RVJYNUtUcG0zenZZejdpY21FdkRnVFBZbGZieVFyTnJLbHJCdDJpV1Rab1NMcTZha1VqMF8wazBOSldEZGNOQS1FY25BMm96dEdFNGdzejFMSXJvR0s3cEMxV2lod3BYQXZkR0FqaWV6eTV5LW5GcDdqbkViR3FwUXozXzJEcjdKYTFLM2NOczVxdTJLamlGXw?oc=5",
+   "termino": "deportaciones",
+   "geo": "MX",
+   "titulo": "“Me iban a mandar a Cuba”: el amparo que frenó la deportación de un cubano en México",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 67.3,
+   "base": 11.1,
+   "ratio": 6.09,
+   "disparada": "2026-09-18T20:31:50+00:00",
+   "velocidad_inicial": 4,
+   "desenlace": "vigente",
+   "horas": 0
+  },
+  {
+   "id_hecho": "fea1eccf7e67",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUFE5UjZrQUF5MlZmdFhvdjZNNmJySXV6M0RfbDk1a0pBYjV3WEpiam5tNXdJb1drTzZPNGloXzRVbUU4R3QwUXd1bWZya09oSFczMkczQVZQT0xIcG9rNmNvUnBGXzdqRzVWS2FGQWlXZkxLY0VMY25tTTZqazJycXp3cVpPSHhjb1ZhMkVaMW11cG80REtNQzhIdUdIZmd0R3BhSmdWc0dza2VxQndrQmZsMjN3cTVsSHFjbGF5cFExWjJXZTRhMFF4QjJ3SXc1?oc=5",
+   "termino": "control migratorio",
+   "geo": "PE",
+   "titulo": "Nacional: Gobierno refuerza control migratorio en cinco ejes",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 38.3,
+   "base": 7.1,
+   "ratio": 5.42,
+   "disparada": "2026-09-18T20:31:50+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
