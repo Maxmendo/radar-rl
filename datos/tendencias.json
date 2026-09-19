@@ -1,47 +1,21 @@
 {
- "generado": "2026-09-18T20:31:50+00:00",
+ "generado": "2026-09-19T10:26:36+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "441357cdd41c": {
-   "id_hecho": "441357cdd41c",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOa0lqbE8zWlNkcnQtZl8zOWJpcy1WWlNrb2dUQ1RESXBvSk5ScjVFNF9Tams2UXNtYUhaNWlMbjZ0djVZbnljRnF1S25HUTl3VFVBUmtTdzRxc3pyRDdQcGZBTEZDN3NYdVdUN3FtQWtDRVd3R2NGX0ZSZ0k5MWxlbDIyZk1YSktuaVduYTJIaXJVajVLQnVNVlUyN3FtckoxdElOaGphVUhXcXoxdmxXX3FjNC1oTG0yNlR5NXBrQjV6eWgycVdkeDlUSVphZUR6eThFdlZibUNVb0syYXNuVkpra1JvcjVQeDNQMkdIYWU2MVHSAfgBQVVfeXFMTV9Pdk1kRGtvVG4zQTNNSlVaSkNjMFhZeENDdDVpVl9UYldycUM5WUlVbmZQc3RjNTlFcHFjQmpveE1FMlpJQk94MFlRX1YyZm1HeUwtZXFOVkRjYThfNW9SVmFNdnE2NEVybEVYZGcxMjl1OEhwWmtMeHdJVGFpcFpYdnJoUEhrM0hwRHlzLXpzaDBMcFNZaFh0MzQzajlwLV8td1lsWU9qSFNFZFBRaHI0TF9jZEN2TE5iNTh2VGE2bl9PVDMtMnpqcmtmLU5ZU0JCZnhwb2ZQWENqaFNEWmZiYXhiNEgzWWdRSzVOTFZvMkhPNXdJc0E?oc=5",
-   "termino": "centros de detencion",
-   "geo": "US",
-   "titulo": "Informe destapa hacinamiento y abusos en otro centro de detención de migrantes en Florida - La Prensa",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 1.4,
-   "base": 2.1,
-   "ratio": null
-  },
-  "4a854bb1ea0c": {
-   "id_hecho": "4a854bb1ea0c",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVlM4Qjg4SVhKeHdLY0tXSnZ2a0pZZWppZTBLMThTbUpZSlFSMnl0c2t6UGVxeWp1RVJYNUtUcG0zenZZejdpY21FdkRnVFBZbGZieVFyTnJLbHJCdDJpV1Rab1NMcTZha1VqMF8wazBOSldEZGNOQS1FY25BMm96dEdFNGdzejFMSXJvR0s3cEMxV2lod3BYQXZkR0FqaWV6eTV5LW5GcDdqbkViR3FwUXozXzJEcjdKYTFLM2NOczVxdTJLamlGXw?oc=5",
+  "336a024d824e": {
+   "id_hecho": "336a024d824e",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNczA3bk9iZmtibF8tN0RnUUV0VGNCNGpQODVfSFZtbDJkSjBDcUNRWTJzLUR1X3hxanBQYkoxWUd3NUVzZW12Z3l0Zy1zUDFoMGx3WENvRk5zcm0zQUlrOVJhOVRhZ1ZlT0JoUm1yNEJqaEk3b3BSZl9SWHRMbWJGZjB0bi15SzFIQTlKTXhTQjlMTjVCQjQyWXI4bUVXaDBjcXBMZVBvbENfdHdaSE1KRmNTaXYyT1owOW9BXzd3a3gzZ9IBwgFBVV95cUxNczA3bk9iZmtibF8tN0RnUUV0VGNCNGpQODVfSFZtbDJkSjBDcUNRWTJzLUR1X3hxanBQYkoxWUd3NUVzZW12Z3l0Zy1zUDFoMGx3WENvRk5zcm0zQUlrOVJhOVRhZ1ZlT0JoUm1yNEJqaEk3b3BSZl9SWHRMbWJGZjB0bi15SzFIQTlKTXhTQjlMTjVCQjQyWXI4bUVXaDBjcXBMZVBvbENfdHdaSE1KRmNTaXYyT1owOW9BXzd3a3gzZw?oc=5",
    "termino": "deportaciones",
-   "geo": "MX",
-   "titulo": "“Me iban a mandar a Cuba”: el amparo que frenó la deportación de un cubano en México",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 10,
-   "reciente": 67.3,
-   "base": 11.1,
-   "ratio": 6.09
-  },
-  "fea1eccf7e67": {
-   "id_hecho": "fea1eccf7e67",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUFE5UjZrQUF5MlZmdFhvdjZNNmJySXV6M0RfbDk1a0pBYjV3WEpiam5tNXdJb1drTzZPNGloXzRVbUU4R3QwUXd1bWZya09oSFczMkczQVZQT0xIcG9rNmNvUnBGXzdqRzVWS2FGQWlXZkxLY0VMY25tTTZqazJycXp3cVpPSHhjb1ZhMkVaMW11cG80REtNQzhIdUdIZmd0R3BhSmdWc0dza2VxQndrQmZsMjN3cTVsSHFjbGF5cFExWjJXZTRhMFF4QjJ3SXc1?oc=5",
-   "termino": "control migratorio",
-   "geo": "PE",
-   "titulo": "Nacional: Gobierno refuerza control migratorio en cinco ejes",
-   "importancia": 7,
+   "geo": "US",
+   "titulo": "La Casa Blanca retira a su candidato para dirigir ICE",
+   "importancia": 6,
    "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 38.3,
-   "base": 7.1,
-   "ratio": 5.42
+   "puntaje": 5,
+   "reciente": 17.0,
+   "base": 8.4,
+   "ratio": 2.03
   }
  },
  "audiencia": {
@@ -49,24 +23,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1195250",
+     "valor": "1223900",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "174800",
+     "valor": "201050",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes las 5",
-     "valor": "53400",
-     "tipo": "rising",
+     "consulta": "inmigrantes",
+     "valor": "48",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-18T20:31:34+00:00"
+   "medido": "2026-09-19T10:26:19+00:00"
   },
   "VE": {
    "consultas": [
@@ -89,24 +63,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "573750",
+     "valor": "541650",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "registro civil denuncia una red fraudulenta que estafa dinero a migrantes en chile",
-     "valor": "36200",
+     "consulta": "migrantes me duele que me duelas",
+     "valor": "108500",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "google scholar",
-     "valor": "2200",
+     "consulta": "migrantes marroquíes en españa",
+     "valor": "99850",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-15T20:57:53+00:00"
+   "medido": "2026-09-19T10:26:28+00:00"
   },
   "CO": {
    "consultas": [
@@ -212,58 +186,23 @@
    "medido": "2026-09-17T11:07:05+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 26.1,
-   "base": 6.9,
-   "ratio": 3.77
+   "puntaje": 3,
+   "reciente": 19.1,
+   "base": 10.5,
+   "ratio": 1.82
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 22.7,
-   "base": 3.8,
-   "ratio": 5.95
+   "puntaje": 5,
+   "reciente": 18.6,
+   "base": 8.7,
+   "ratio": 2.12
   }
  },
- "alertas": [
-  {
-   "id_hecho": "4a854bb1ea0c",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVlM4Qjg4SVhKeHdLY0tXSnZ2a0pZZWppZTBLMThTbUpZSlFSMnl0c2t6UGVxeWp1RVJYNUtUcG0zenZZejdpY21FdkRnVFBZbGZieVFyTnJLbHJCdDJpV1Rab1NMcTZha1VqMF8wazBOSldEZGNOQS1FY25BMm96dEdFNGdzejFMSXJvR0s3cEMxV2lod3BYQXZkR0FqaWV6eTV5LW5GcDdqbkViR3FwUXozXzJEcjdKYTFLM2NOczVxdTJLamlGXw?oc=5",
-   "termino": "deportaciones",
-   "geo": "MX",
-   "titulo": "“Me iban a mandar a Cuba”: el amparo que frenó la deportación de un cubano en México",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 10,
-   "reciente": 67.3,
-   "base": 11.1,
-   "ratio": 6.09,
-   "disparada": "2026-09-18T20:31:50+00:00",
-   "velocidad_inicial": 4,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "fea1eccf7e67",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUFE5UjZrQUF5MlZmdFhvdjZNNmJySXV6M0RfbDk1a0pBYjV3WEpiam5tNXdJb1drTzZPNGloXzRVbUU4R3QwUXd1bWZya09oSFczMkczQVZQT0xIcG9rNmNvUnBGXzdqRzVWS2FGQWlXZkxLY0VMY25tTTZqazJycXp3cVpPSHhjb1ZhMkVaMW11cG80REtNQzhIdUdIZmd0R3BhSmdWc0dza2VxQndrQmZsMjN3cTVsSHFjbGF5cFExWjJXZTRhMFF4QjJ3SXc1?oc=5",
-   "termino": "control migratorio",
-   "geo": "PE",
-   "titulo": "Nacional: Gobierno refuerza control migratorio en cinco ejes",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 38.3,
-   "base": 7.1,
-   "ratio": 5.42,
-   "disparada": "2026-09-18T20:31:50+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  }
- ]
+ "alertas": []
 }
