@@ -1,21 +1,34 @@
 {
- "generado": "2026-09-19T10:26:36+00:00",
+ "generado": "2026-09-19T20:10:05+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "336a024d824e": {
-   "id_hecho": "336a024d824e",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNczA3bk9iZmtibF8tN0RnUUV0VGNCNGpQODVfSFZtbDJkSjBDcUNRWTJzLUR1X3hxanBQYkoxWUd3NUVzZW12Z3l0Zy1zUDFoMGx3WENvRk5zcm0zQUlrOVJhOVRhZ1ZlT0JoUm1yNEJqaEk3b3BSZl9SWHRMbWJGZjB0bi15SzFIQTlKTXhTQjlMTjVCQjQyWXI4bUVXaDBjcXBMZVBvbENfdHdaSE1KRmNTaXYyT1owOW9BXzd3a3gzZ9IBwgFBVV95cUxNczA3bk9iZmtibF8tN0RnUUV0VGNCNGpQODVfSFZtbDJkSjBDcUNRWTJzLUR1X3hxanBQYkoxWUd3NUVzZW12Z3l0Zy1zUDFoMGx3WENvRk5zcm0zQUlrOVJhOVRhZ1ZlT0JoUm1yNEJqaEk3b3BSZl9SWHRMbWJGZjB0bi15SzFIQTlKTXhTQjlMTjVCQjQyWXI4bUVXaDBjcXBMZVBvbENfdHdaSE1KRmNTaXYyT1owOW9BXzd3a3gzZw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "La Casa Blanca retira a su candidato para dirigir ICE",
+  "8f2c67e16593": {
+   "id_hecho": "8f2c67e16593",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQejVTY1JBMnI2SXIxMWhxeWJpLUI0QlBKM21jV28tQ0pEZlNVU3JwTnduMTZLTXdtRDR6cXFTbXZSLTk1QTQ2bmFDQjMyc3oxSmk0SnJUQzZ0cjA5MVpuZEtBUDQyU1NrMlFIRzFuSjEwU29JRVJPNEJTV2N6NHlDZlNaanNlMFRaLWZNdjlJUWFZcWI0c3VKQnFjOC1UblBNSDNzeVJydmg3SGVRcnM4dnNtZ2dWa2tDalJ3dGRJNFRycnpKNWlPNkhBemhGQTN5?oc=5",
+   "termino": "frontera",
+   "geo": "MX",
+   "titulo": "México desactiva drones usados por traficantes de migrantes para vigilar la frontera con EEUU",
    "importancia": 6,
-   "velocidad": 3,
-   "puntaje": 5,
-   "reciente": 17.0,
-   "base": 8.4,
-   "ratio": 2.03
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 72.7,
+   "base": 65.4,
+   "ratio": 1.11
+  },
+  "8265375a6dd7": {
+   "id_hecho": "8265375a6dd7",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWFJVRUl0NElPdllidlh4LVhYR0NIWnJXb19LR3Y4bVRldDJUeHZXOFZCWU9iZFdnZlUtZkFKTEJENWI0QTE4T0U4ZFkySkN5blYtdWRCOWxacGUwdEN0cURhSEUzVnJ6cE5yb1VLS04zWUhmbE5RSGo0WXFzdGVUZGtZQ3c3VzBid1RQdmo5bnZUa1prNldrZzRXYmowV1pTX1h0RkNpb0dxSlNrcF9qS2d1WWo3RUFMLWpyN0wwTzU1bXpCLUs4SS1pdzRHa3lhbUprSkZiV2E4cnJFdlBLdUpOUU7SAeoBQVVfeXFMTWJwZGMtMFlnM3dLZGJfTEpMcDBSQ3RIRWZXeWZBdTF1MmVtNWY4OWVMU1V3X1NoOWVSa1pGX0o5eXVKR0c4UjRRRUIwOFA5Z3NOYUhXYW1rZk1uMmp4MFN4R2xNc2lMVmZVaFFGX290aEw3blBPRVMxN05tajZ3RF9oaE5pQjhZNkFrMDU1X2tWMC1DT0tUTjZyV0Y3NjB6MC15eW4yLWtBYVhyV2YweXBFbnF0eHN2NWdobFVJV2dKWm5oVTVrVzlJbmxFVjBzdmg0eHUtdnZQMmVWWERSLVJnLUNwWS1oVTBR?oc=5",
+   "termino": "migraciones",
+   "geo": "US",
+   "titulo": "Trump responde duramente a María Elvira Salazar tras críticas a su política migratoria: “Yo la hice elegir”",
+   "importancia": 5,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 16.6,
+   "base": 21.4,
+   "ratio": 0.78
   }
  },
  "audiencia": {
@@ -23,24 +36,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1223900",
+     "valor": "1239150",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "201050",
+     "valor": "200150",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "48",
+     "valor": "47",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-19T10:26:19+00:00"
+   "medido": "2026-09-19T20:09:47+00:00"
   },
   "VE": {
    "consultas": [
@@ -155,24 +168,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "362350",
+     "valor": "369950",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes estoy a un vaso remix",
-     "valor": "3850",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "103550",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "personas migrantes",
+     "consulta": "que es migrantes",
      "valor": "100",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-16T10:58:09+00:00"
+   "medido": "2026-09-19T20:09:57+00:00"
   },
   "UY": {
    "consultas": [
@@ -186,22 +199,22 @@
    "medido": "2026-09-17T11:07:05+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 3,
-   "reciente": 19.1,
-   "base": 10.5,
-   "ratio": 1.82
+   "puntaje": 4,
+   "reciente": 19.9,
+   "base": 10.7,
+   "ratio": 1.86
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 5,
-   "reciente": 18.6,
-   "base": 8.7,
-   "ratio": 2.12
+   "reciente": 19.3,
+   "base": 8.9,
+   "ratio": 2.17
   }
  },
  "alertas": []
