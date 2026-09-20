@@ -1,33 +1,46 @@
 {
- "generado": "2026-09-20T10:46:08+00:00",
+ "generado": "2026-09-20T20:26:04+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "3deeeeaf9be8": {
-   "id_hecho": "3deeeeaf9be8",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPRkdUQWdVd2o3dGZzNDdsb25heUhVNGRFV0FONFFha0M2RGlIdEhCSk5nNnMxdkJkcVl5d2lDUUpuY0NENmZTZlZwUkVDUWVseDZXTURjcFg4WGlLR0huOW03TmJoeXU1eXBCQ3VOWkNvMldnbnV3a3FwYU0wS0o1NHRISVVoek91UDFNYk9JYlpjNHZpMW1sWEV2eDVOUDZfVXJBN3Qxb1NOWGxjNGNPel9jZ2duT1REbXdxX05mdmRtTzU0aERMOHQtTzloZjczRlZLVi1VRnF5dTVjZi02TzBRTGt1UnI1VzV0MWRLVGVLQkk?oc=5",
+  "855ad5eb87ff": {
+   "id_hecho": "855ad5eb87ff",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNd0JtanhhRlF4R0VGR0NHUTh2c3phYUUxUWtJOFlQT3JuTUVmb2UyYkh1aVJjUENJeFM3VFV5S1lQQjdlcVNuZDRuYnBtQnZwbUJQVDVoenFPMGpEMTk0eFZMWF9ldk13VzBzMl9ldXQyZjdzYnpINlh4SDVtXzlBUC1BWDhCMC1HWUlId0ROd25hbDYyT2k3MFZleVo1Nkh6SVJ1YXlNTGoydWMxWkQxTG13MlRMbE01UUNEag?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "La policía de Guinea Ecuatorial detiene y golpea a dos deportados de Estados Unidos, según reportes de sus abogados",
+   "titulo": "Tribunal de EE.UU. restringe deportaciones de migrantes a terceros países",
    "importancia": 9,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 12.9,
-   "base": 5.9,
+   "reciente": 14.4,
+   "base": 6.7,
    "ratio": null
   },
-  "ceba86b70a6c": {
-   "id_hecho": "ceba86b70a6c",
-   "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOYUN3TTY0VGd4NEdIankxODUyWS05TVJQTV9IRXBmZGw2NlFJVWc0RHYzeWszbjF6Ukp1SjVtT3ZibC1lcHN0bDdfT0kzUndZTW9zOXFqNjdVZGVfQUJmcE1wWUp2a1c1a01SNlc2OE5JYWU3dGx2RnlueHA2NnktLVN1MzdLcmRJQlVhbzRpOHV2UVRkWHB3RFQ4VnliUDlxT095Y0I3dXRRMDhZc21CbmtmR2xRUXJIbW5Bc2FFYXhuZW85WEJuRTd0MTFybHF6ODdsRmx4Y0pKeDMxbC05V0JqMF9xVUtBU1ZSWnJwTHFxT3JaM2J1b3ZZUG5XOHd5eURLMlpqdExxaVVscUlKbWFUNEdmWmhxSmlpWC1WRExpZjJwSUNoUW9UaXRoTS1qVS0wRTVoV0TSAb4CQVVfeXFMUEpPTWpZVFlwM0lFY2IxZEtQSHFiaUYyQTFoYnVxc1Y4a2p5elpSdE5QYm9xb2hzTHl5MGtSWmRRRml2T29jblo5NXBHQWR4b2hLamtKOTkwYUlkcUQyZ0ZZMEZWZzFETFNzTXhfQWh6WG5zRnBaQmpiMTJ2TVFRd0FuYzJ6bGMzaEE5VHlRdFJibWRzOWNvUWpkQTF3U2ZmZTFnbHBQN21DanVUcEFsMU16Uzl3eC15OHZFMnhYR2diZWlhWW90Tk5rekxGUGFYdkFSU2d6blBxeVBBWm5nSkxJTnJ5enhwQjNCbnp0SzhhdDBrSXV1ZTktb1JIcjNHclRnVEtFLTNVNDdGVkFscnNpWldjbnZxd3dqQmYwQmwyUTZmSUczZGNlb3VTcnFyel9sRnhQcl9hczJCS3Rn?oc=5",
+  "b41ec0a1a687": {
+   "id_hecho": "b41ec0a1a687",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQd1hWel9aTXg4dnRhb1IzdlZJRXROQmw4Zi1JVVJaamlTYUNHSVRoV3pFdlhmXzhUc3hoeW40UFg1RDNIcTBvU0xfUjZqQkVEN2tURWFzc2NiRW0xMzhwNVVaWmFBS3E4RktOajI3TzdfUk1TdDl6bm1tZ2YwRDBTeDVuaEZjS3g1X2xvS29fZGhBS0U0X0kxOGxOUEFDZG9MVW9mRmItV21JbVNzWkZuSHhQb3V5elRHN3VrRXdtMzljYmJTX3VnMXdDLTBPU0hsb29lTGpUVXdTTEhpbVdQX0lFejJLR2V5RHAxSWZIX2cwUdIB8gFBVV95cUxQd1hWel9aTXg4dnRhb1IzdlZJRXROQmw4Zi1JVVJaamlTYUNHSVRoV3pFdlhmXzhUc3hoeW40UFg1RDNIcTBvU0xfUjZqQkVEN2tURWFzc2NiRW0xMzhwNVVaWmFBS3E4RktOajI3TzdfUk1TdDl6bm1tZ2YwRDBTeDVuaEZjS3g1X2xvS29fZGhBS0U0X0kxOGxOUEFDZG9MVW9mRmItV21JbVNzWkZuSHhQb3V5elRHN3VrRXdtMzljYmJTX3VnMXdDLTBPU0hsb29lTGpUVXdTTEhpbVdQX0lFejJLR2V5RHAxSWZIX2cwUQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Buenas noticias para inmigrantes | Limitan arrestos del ICE sin una orden judicial en este estado de EE.UU.",
-   "importancia": 8,
-   "velocidad": 4,
+   "titulo": "Jueza limita arrestos de ICE sin orden judicial en California",
+   "importancia": 9,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 12.9,
-   "base": 5.9,
+   "reciente": 14.4,
+   "base": 6.7,
+   "ratio": null
+  },
+  "4cb749ebe12b": {
+   "id_hecho": "4cb749ebe12b",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQa1VXVDNXRW95Ulo0Uzg1U1BtbXhjN2NyazBnNTNKbGpDR0tKUFJGTUw2WGVLU3NZNXhHd1Z0QW05T1pqVjdEVnhUUkVoazJISU1BOGFuQVF1TlQyZFk4YnFGVU9LY1RiLVZuWERoTlZTeUtHSDdFd1ZTWU1QeXZEcGdzMEo1SUJrMkRxSmNTMmkxMkw4RGZZTjlTUzJLWXF6R2dWYWY4YzNnVWY3Q3NLNFBQVzNqTlJuLVFmTy1GWDdTZFZVRnR2R9IB4wFBVV95cUxPVFR6d2QtdU8wOUhvNFA0QjFzM0wxYzFRRTB3Z2FnM2ZaY2xjamxHNUJHRVBXdlVTbTd6dXg4U3VnS3dzNDV4WGttTUZYWVloS3dleUVHMFgzSDNWeExLNnplb01VOEk5TF90ZWZCM2xrNzc2eXMzSk94RGJldjdlRVVUQmV0dEEtdzBrUkk1MnUwYXZmNUxZWmw0Q3I1OXJtS1p2WUFQMW11T01TZDdwZFYydHk0a3RydFc4aUE0TF8yVEhfWk9RQU1jOUQ1OXJaS09ra0VHMGNGaDFtZ1JwMXJrWQ?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Mexicanos encabezan las órdenes de deportación en Estados Unidos: suman 160 mil en 2026",
+   "importancia": 8,
+   "velocidad": 6,
+   "puntaje": 0,
+   "reciente": 14.4,
+   "base": 6.7,
    "ratio": null
   }
  },
@@ -36,24 +49,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1256050",
+     "valor": "1288750",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes la más amada del país",
-     "valor": "81850",
+     "valor": "81100",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "inmigrantes",
-     "valor": "42",
+     "valor": "41",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-20T10:45:52+00:00"
+   "medido": "2026-09-20T20:25:48+00:00"
   },
   "VE": {
    "consultas": [
@@ -190,31 +203,31 @@
   "UY": {
    "consultas": [
     {
-     "consulta": "migrantes grupo",
-     "valor": "162400",
+     "consulta": "ceuta migrantes",
+     "valor": "800400",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-17T11:07:05+00:00"
+   "medido": "2026-09-20T20:25:56+00:00"
   }
  },
- "proximo_pais": 4,
+ "proximo_pais": 5,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 5,
    "reciente": 16.0,
-   "base": 7.3,
-   "ratio": 2.18
+   "base": 7.5,
+   "ratio": 2.13
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 16.4,
-   "base": 3.4,
-   "ratio": 4.82
+   "reciente": 16.0,
+   "base": 3.5,
+   "ratio": 4.59
   }
  },
  "alertas": []
