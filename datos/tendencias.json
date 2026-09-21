@@ -1,60 +1,73 @@
 {
- "generado": "2026-09-21T12:10:26+00:00",
+ "generado": "2026-09-21T23:53:22+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "d815936cf4fc": {
-   "id_hecho": "d815936cf4fc",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQXRKMWRiTVB3SXRwNW5LZEFNRTlXcnJjU1otN2xfa19hZ2ZzN2daVWwtbG15My1MaXMwWV9jZU53RkRrRjd2NFB0UFEwU05oWG1MSzlRbm01NFNyVFNvM25mU3hLOWRmbzFaRXkzM19GVXpZX2xTYlgyR0E2VmNneFRLMjlza0JhU0tZYmZKU1FJZzVtNktNMEdvX0p3ZUZUelZxd1FHOFhId09kdzJ5SGVHeEYtZ21uZ0F2QTdWVDBhYlgxc2F3bkpmRQ?oc=5",
+  "b549d71e0b39": {
+   "id_hecho": "b549d71e0b39",
+   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNRW4xa0pVdzlTY3ZXMXl0TDJWZ0ptME02R01TZ3hoc3BxOFg5UXZzaTdpczAyaXBaRXZiRFYzbkk2TDdWOGlVb2t3Zi1tZHRuRG9UWllxc0ZfaDhvZHZLWGlLeTltRnN2QzFQOU4xTFJnMl9ib1cwM2pxbEtGOE02SGt4SzF2c1dNbzFwVVc3dnFFcTBwWGp3bHdCeFlsdEhocUJBTmJuYWJvSHVDLVZGMDZIYVRza0dRWjV6REE2NUU5RUFEclU0WnBVZzJ2VFhGeEU5SG12T1ExYXNtY1RxSVhoUVAwZXo1aHJNdFk5Y0hMMWt6RDlFMHlSNVVxTlN2TzNCRmZ5QnV6ZUd5cFpHX3R4NHZ5ZlZkRXZwMmNia3poMFNfMDltU2I5cDRvMmPSAbQCQVVfeXFMT09CWGI4enpvQzQ0U1MxSjUxcG5tN1huQXd0RXEzMy1qaTdkN3JiemJ5NFlSWjB3TGRnYW5TOEt4aUxydzZkamJONGk0Y2VLV0xHT3VNaWxKRHlUNERCT3V4QzRqTjhSRGNXZF9TdTFNUTB2RDRDWV9tRDYxbThhX3RSWmM4NE4tOTZKS2kyMy1YZkMxUkxzYmlJZERkNF9BX200WGFRa0wya0J6N1VHT2lEbEl5ajFUREd4Z2M5RWt2ZS1OUXNzTE9XQjRIWTlmTlVwbTJNUXpfZlBiYWxsNnAtSnNpSmM4czUtT1Fkb19yMlAzX1lRRHJmTko4THNrX2tKbm4ta0hab2VhVTZTb3pST0xtaDB5VWR6NEtlWkN4ckg1b21UVkRPUE82VV9yZnBpaUU?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "EE.UU. se vale de acuerdos secretos para deportar a miles de migrantes",
+   "titulo": "Migrante venezolano denuncia que ICE le disparó tras perseguirlo y chocar su vehículo en Texas",
    "importancia": 9,
    "velocidad": 7,
    "puntaje": 0,
-   "reciente": 3.1,
-   "base": 1.3,
+   "reciente": 11.4,
+   "base": 5.8,
    "ratio": null
   },
-  "ddd7719d0dec": {
-   "id_hecho": "ddd7719d0dec",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOY1pUeGR3WTRiVFdwdUkzTmtQaTM0ODNmZEJoOTdaX2NtVjd2bkNLZW9WT09zMTNtNGlPV05XbS13RkNadmFMNVY3TGtoNWNtTHo3clEwNGt5a0NQVlpxQ3VvWXVLUDBtRWlYcVFPSEVWQ1M1aXFOWUkwVEp4M3lfU3dLYUgyVUpZVHdOcExOSFo4TjBzaTV1M3VYMXA2SlgxWGV6b1R3bFJ4LVQxd2lzbHktSks2cHVJSE12NzJKWVZoSnNoMWFnUjc5N1lxenVvVkdNVnpsVDZWQmxkbEE?oc=5",
+  "a06274c2e015": {
+   "id_hecho": "a06274c2e015",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQnpMUTh6clBEbzVwS1dsaDVOX0h5WjBKYnFRZE1BTXp5OEpNVjdralFndW5YZ3lhY0RMRzNib05BR2xfTzJpdkVSQ054VEtCNWVPaWota0ltUTBFdFJUbWN4VGdCajhfTHFzUi1ZVkMyMHpVSnlKdkE3bnh0RXUwSmVwdzl1aVV4YUU5TmtoR3o5V210enBOdzNWeVdPYWUyRXFGc3V6YkZReWswRVRPS2UyRGZVSjBfOXJlS1Fma2tmelN0MFVwVXlxOHUzZw?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Agente de ICE dispara en Texas contra un migrante venezolano, que está en estado grave",
+   "titulo": "25.000 deportados a 35 países: la red global secreta de Trump contra la inmigración",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 3.1,
-   "base": 1.3,
+   "reciente": 11.4,
+   "base": 5.8,
    "ratio": null
   },
-  "855bc90431dd": {
-   "id_hecho": "855bc90431dd",
-   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOSzk5NDJlM3ExQ2xhU2gyeFJRRlBEQ1lRekVXMEk5OWs5dkhWZW0yNjZ3WFE1LS1hRmNZeENvMjViSlo2VW5LUnRWOHFYOWJRODJqeTkyRUZsRzNBT0c2Rm1HbWJIcGcwLUtEWEhLRnU0R1lqakxJLVoxSi01bDgzYUFsU1ptZl80ZlNJN2dtZ0NyME5GSFdGRTZwWnAycTdCTWZXeUh4RXk4dU1veFJzWjZpNDdUV2dyRHV4Qm5ielNGZW1ueTJNSjFESm44ZFFXUU51aF9FMHhoR1JPMTV6eEZGOG9idE9WLXROQUlpMDZOU3oyLUNrb1JYTXdJMFl6QnlQMmJXcmRiTnYyTlAxd0gwMW9rTnUxaVBjOHdSZ0pOb0luZkFDc3BKYWMzb19hUUHSAbcCQVVfeXFMT1JhYmI0eUE1Z0VEbXgyR1dMcXNYRXg4a0s5TnZhT2NrbFE4QktUbUhJZUExazdKdWpzVnNXNnJoemdqR04tNkNiVl9VNmxfQy1GNEFFbU15R0lnMmtvVHAyeEZwUTRrMzQ3SVVCOXhmRWhxUXlremxoUTFWRXJJSTFWUy0zSnlMenB6aXRUWkVNSlBOU3ZQamhWTUFqUkNJRndMTEhONmx1NE0zTFhHMGNpOTBqaEUxeC04R3duYVNqVE8ydkVhSXRfUkl5b3VvNU8yZW5FMTRTV09CcGNjeVRFSFZWWlFVNXdTSDdpcU9lVWxWQVAwc3hrNlpZcjBQMjJkRlVaYm55aTM5QnF0VEJsVjd2WXBwMjBWLUdvblExOXB0NzZta3BXVzN5U3RHT2x0ZnVBd28?oc=5",
+  "de5c69ae6cd3": {
+   "id_hecho": "de5c69ae6cd3",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNdmJkTTlILUNqcVpONDRIcEZYbU5JMlQ4Tmd4RnZGMEd3dzdfQkxlUjkzb2JXVUNpMzZuajg3c2lWX01RNE42dnJIcnRDZVdMclJnOUcwVTBfdVhLQmRfaHFQeEpDZFFVVkxQYzBCUUhPbGZTNzNNVGdHakF3UHIya3pjX1ZvLUNVeHZuRWVwN0RQblhPTDY3dmNlWlFqNWJFWm5SUW8xamh0NmdkVklhMUtaY25zZEdkbWpaTkdkcnhTa0FWMnptQllZcjNtNlBMZy1CY0hpRWFYY3FjdHpxaS1jOXNNNlM4UXlmTm9ubw?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "ICE arresta a 500 inmigrantes indocumentados en un operativo coordinado con agencias en Florida",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.1,
-   "base": 1.3,
-   "ratio": null
-  },
-  "0f882a6725ff": {
-   "id_hecho": "0f882a6725ff",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQeWc0RUU0eVFMN09JSU9OMzFLWkQ2WXozSC1SclN0WUdyeEhZOUpndG9hSnZLbGI5ZGpzcnp4NXNoOGFwX2V4YnVqaVlvdTJDMEh5UWhiYnozNUp1bElEdlRYd25teFYzNzdYNlQ1TWNwYV9tUHN1TFlzSzB0NXJFcnhDd3hUNzhydkdXR2NELUE2d2hST3pCR1llRlNWYW00azc1dTY3a1I2V1JNV2JxWW1aYzJkZzNEWnYxS0JjOVdXMjlCem51SEJwQnhQb3FkZWRoczI0VnZBbEdiZkdWQ0s4a3MyankydzdWVkVwdkRZZjFIWUE?oc=5",
-   "termino": "migrantes",
-   "geo": "US",
-   "titulo": "Protestan contra ICE tras tiroteo en Austin",
-   "importancia": 7,
+   "titulo": "Trump deporta a 25 mil 427 migrantes a países donde no nacieron: México recibe 8 de cada 10 expulsados",
+   "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 16.4,
-   "base": 20.8,
-   "ratio": 0.79
+   "reciente": 11.4,
+   "base": 5.8,
+   "ratio": null
+  },
+  "e6156a360067": {
+   "id_hecho": "e6156a360067",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPN1B5NFV2N24wZ3owanBQZWJKNWVKam9IdURvcFk4U1JfenYzTm81R3RqcXZQMW90Q0xSd1VhUDFXcFNuX1dhQnkxeUVDcm41c2tHUVZ5TVUxNFdTeU9kV3MtaXlRZ2cxMFNUNGNOQjJ6VHA0UlNFT3MyZUhIbWVxYXlqQ2txeW9VM2RMOWdSTWlvM1JxYmZsSG1yNzZEcXBYVVBCRGZB?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "160 mil mexicanos han recibido órdenes de deportación en USA",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 11.4,
+   "base": 5.8,
+   "ratio": null
+  },
+  "309036c9e198": {
+   "id_hecho": "309036c9e198",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeEF4a3d5cVhkZnFfUzNkOG55MnBDcVVkS01WRFRDTDJWVEdPdlpNcHh5d1NlVmJvNjZ0ZHlYS1hfUHpKaXY4S0VEQWxKRTVCemt4ZnQ0ZWRscTM2ZTVLVlBGc1lNZmtkSkJnQTF1VVRJQy03cVFMZVlfdjQyOTdMZHMwUl80WjBpZlE0ZVlvUVN6S19yazZ0b2pDVnpEeTE3UWt1ZHg2Y1VjOGxsOC1tQlZ3?oc=5",
+   "termino": "caravana migrante",
+   "geo": "US",
+   "titulo": "EEUU advierte a una caravana migrante que \"no se arriesguen\" al intentar cruza a Guatemala",
+   "importancia": 7,
+   "velocidad": 7,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -62,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1269450",
-     "tipo": "rising",
+     "valor": "100",
+     "tipo": "top",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "199500",
+     "valor": "161900",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "41",
-     "tipo": "top",
+     "consulta": "trabajadores migrantes",
+     "valor": "159350",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-21T12:10:02+00:00"
+   "medido": "2026-09-21T23:53:06+00:00"
   },
   "VE": {
    "consultas": [
@@ -170,25 +183,19 @@
   "ES": {
    "consultas": [
     {
-     "consulta": "ceuta migrantes",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 2
-    },
-    {
-     "consulta": "violaciones ceuta",
-     "valor": "81700",
+     "consulta": "migrantes ceuta",
+     "valor": "3368750",
      "tipo": "rising",
-     "variantes": 0
+     "variantes": 3
     },
     {
-     "consulta": "marc vidal, el problema que nadie quiere nombrar es que los migrantes regularizados cotizan a la seguridad social, y eso está bien, pero lo hacen sobre una base bajísima",
-     "valor": "67650",
+     "consulta": "cuantos migrantes quedan en ceuta",
+     "valor": "79450",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-18T10:42:52+00:00"
+   "medido": "2026-09-21T23:53:14+00:00"
   },
   "MX": {
    "consultas": [
@@ -225,22 +232,22 @@
    "medido": "2026-09-20T20:25:56+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 6,
-   "reciente": 16.1,
-   "base": 7.3,
-   "ratio": 2.2
+   "puntaje": 5,
+   "reciente": 16.7,
+   "base": 8.0,
+   "ratio": 2.08
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 5,
-   "reciente": 17.1,
-   "base": 8.1,
-   "ratio": 2.11
+   "reciente": 18.9,
+   "base": 8.8,
+   "ratio": 2.14
   }
  },
  "alertas": []
