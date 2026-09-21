@@ -1,47 +1,60 @@
 {
- "generado": "2026-09-20T20:26:04+00:00",
+ "generado": "2026-09-21T12:10:26+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "855ad5eb87ff": {
-   "id_hecho": "855ad5eb87ff",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNd0JtanhhRlF4R0VGR0NHUTh2c3phYUUxUWtJOFlQT3JuTUVmb2UyYkh1aVJjUENJeFM3VFV5S1lQQjdlcVNuZDRuYnBtQnZwbUJQVDVoenFPMGpEMTk0eFZMWF9ldk13VzBzMl9ldXQyZjdzYnpINlh4SDVtXzlBUC1BWDhCMC1HWUlId0ROd25hbDYyT2k3MFZleVo1Nkh6SVJ1YXlNTGoydWMxWkQxTG13MlRMbE01UUNEag?oc=5",
+  "d815936cf4fc": {
+   "id_hecho": "d815936cf4fc",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQXRKMWRiTVB3SXRwNW5LZEFNRTlXcnJjU1otN2xfa19hZ2ZzN2daVWwtbG15My1MaXMwWV9jZU53RkRrRjd2NFB0UFEwU05oWG1MSzlRbm01NFNyVFNvM25mU3hLOWRmbzFaRXkzM19GVXpZX2xTYlgyR0E2VmNneFRLMjlza0JhU0tZYmZKU1FJZzVtNktNMEdvX0p3ZUZUelZxd1FHOFhId09kdzJ5SGVHeEYtZ21uZ0F2QTdWVDBhYlgxc2F3bkpmRQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Tribunal de EE.UU. restringe deportaciones de migrantes a terceros países",
+   "titulo": "EE.UU. se vale de acuerdos secretos para deportar a miles de migrantes",
    "importancia": 9,
-   "velocidad": 4,
+   "velocidad": 7,
    "puntaje": 0,
-   "reciente": 14.4,
-   "base": 6.7,
+   "reciente": 3.1,
+   "base": 1.3,
    "ratio": null
   },
-  "b41ec0a1a687": {
-   "id_hecho": "b41ec0a1a687",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQd1hWel9aTXg4dnRhb1IzdlZJRXROQmw4Zi1JVVJaamlTYUNHSVRoV3pFdlhmXzhUc3hoeW40UFg1RDNIcTBvU0xfUjZqQkVEN2tURWFzc2NiRW0xMzhwNVVaWmFBS3E4RktOajI3TzdfUk1TdDl6bm1tZ2YwRDBTeDVuaEZjS3g1X2xvS29fZGhBS0U0X0kxOGxOUEFDZG9MVW9mRmItV21JbVNzWkZuSHhQb3V5elRHN3VrRXdtMzljYmJTX3VnMXdDLTBPU0hsb29lTGpUVXdTTEhpbVdQX0lFejJLR2V5RHAxSWZIX2cwUdIB8gFBVV95cUxQd1hWel9aTXg4dnRhb1IzdlZJRXROQmw4Zi1JVVJaamlTYUNHSVRoV3pFdlhmXzhUc3hoeW40UFg1RDNIcTBvU0xfUjZqQkVEN2tURWFzc2NiRW0xMzhwNVVaWmFBS3E4RktOajI3TzdfUk1TdDl6bm1tZ2YwRDBTeDVuaEZjS3g1X2xvS29fZGhBS0U0X0kxOGxOUEFDZG9MVW9mRmItV21JbVNzWkZuSHhQb3V5elRHN3VrRXdtMzljYmJTX3VnMXdDLTBPU0hsb29lTGpUVXdTTEhpbVdQX0lFejJLR2V5RHAxSWZIX2cwUQ?oc=5",
+  "ddd7719d0dec": {
+   "id_hecho": "ddd7719d0dec",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOY1pUeGR3WTRiVFdwdUkzTmtQaTM0ODNmZEJoOTdaX2NtVjd2bkNLZW9WT09zMTNtNGlPV05XbS13RkNadmFMNVY3TGtoNWNtTHo3clEwNGt5a0NQVlpxQ3VvWXVLUDBtRWlYcVFPSEVWQ1M1aXFOWUkwVEp4M3lfU3dLYUgyVUpZVHdOcExOSFo4TjBzaTV1M3VYMXA2SlgxWGV6b1R3bFJ4LVQxd2lzbHktSks2cHVJSE12NzJKWVZoSnNoMWFnUjc5N1lxenVvVkdNVnpsVDZWQmxkbEE?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Jueza limita arrestos de ICE sin orden judicial en California",
+   "titulo": "Agente de ICE dispara en Texas contra un migrante venezolano, que está en estado grave",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 14.4,
-   "base": 6.7,
+   "reciente": 3.1,
+   "base": 1.3,
    "ratio": null
   },
-  "4cb749ebe12b": {
-   "id_hecho": "4cb749ebe12b",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQa1VXVDNXRW95Ulo0Uzg1U1BtbXhjN2NyazBnNTNKbGpDR0tKUFJGTUw2WGVLU3NZNXhHd1Z0QW05T1pqVjdEVnhUUkVoazJISU1BOGFuQVF1TlQyZFk4YnFGVU9LY1RiLVZuWERoTlZTeUtHSDdFd1ZTWU1QeXZEcGdzMEo1SUJrMkRxSmNTMmkxMkw4RGZZTjlTUzJLWXF6R2dWYWY4YzNnVWY3Q3NLNFBQVzNqTlJuLVFmTy1GWDdTZFZVRnR2R9IB4wFBVV95cUxPVFR6d2QtdU8wOUhvNFA0QjFzM0wxYzFRRTB3Z2FnM2ZaY2xjamxHNUJHRVBXdlVTbTd6dXg4U3VnS3dzNDV4WGttTUZYWVloS3dleUVHMFgzSDNWeExLNnplb01VOEk5TF90ZWZCM2xrNzc2eXMzSk94RGJldjdlRVVUQmV0dEEtdzBrUkk1MnUwYXZmNUxZWmw0Q3I1OXJtS1p2WUFQMW11T01TZDdwZFYydHk0a3RydFc4aUE0TF8yVEhfWk9RQU1jOUQ1OXJaS09ra0VHMGNGaDFtZ1JwMXJrWQ?oc=5",
+  "855bc90431dd": {
+   "id_hecho": "855bc90431dd",
+   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOSzk5NDJlM3ExQ2xhU2gyeFJRRlBEQ1lRekVXMEk5OWs5dkhWZW0yNjZ3WFE1LS1hRmNZeENvMjViSlo2VW5LUnRWOHFYOWJRODJqeTkyRUZsRzNBT0c2Rm1HbWJIcGcwLUtEWEhLRnU0R1lqakxJLVoxSi01bDgzYUFsU1ptZl80ZlNJN2dtZ0NyME5GSFdGRTZwWnAycTdCTWZXeUh4RXk4dU1veFJzWjZpNDdUV2dyRHV4Qm5ielNGZW1ueTJNSjFESm44ZFFXUU51aF9FMHhoR1JPMTV6eEZGOG9idE9WLXROQUlpMDZOU3oyLUNrb1JYTXdJMFl6QnlQMmJXcmRiTnYyTlAxd0gwMW9rTnUxaVBjOHdSZ0pOb0luZkFDc3BKYWMzb19hUUHSAbcCQVVfeXFMT1JhYmI0eUE1Z0VEbXgyR1dMcXNYRXg4a0s5TnZhT2NrbFE4QktUbUhJZUExazdKdWpzVnNXNnJoemdqR04tNkNiVl9VNmxfQy1GNEFFbU15R0lnMmtvVHAyeEZwUTRrMzQ3SVVCOXhmRWhxUXlremxoUTFWRXJJSTFWUy0zSnlMenB6aXRUWkVNSlBOU3ZQamhWTUFqUkNJRndMTEhONmx1NE0zTFhHMGNpOTBqaEUxeC04R3duYVNqVE8ydkVhSXRfUkl5b3VvNU8yZW5FMTRTV09CcGNjeVRFSFZWWlFVNXdTSDdpcU9lVWxWQVAwc3hrNlpZcjBQMjJkRlVaYm55aTM5QnF0VEJsVjd2WXBwMjBWLUdvblExOXB0NzZta3BXVzN5U3RHT2x0ZnVBd28?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Mexicanos encabezan las órdenes de deportación en Estados Unidos: suman 160 mil en 2026",
+   "titulo": "ICE arresta a 500 inmigrantes indocumentados en un operativo coordinado con agencias en Florida",
    "importancia": 8,
-   "velocidad": 6,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 14.4,
-   "base": 6.7,
+   "reciente": 3.1,
+   "base": 1.3,
    "ratio": null
+  },
+  "0f882a6725ff": {
+   "id_hecho": "0f882a6725ff",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQeWc0RUU0eVFMN09JSU9OMzFLWkQ2WXozSC1SclN0WUdyeEhZOUpndG9hSnZLbGI5ZGpzcnp4NXNoOGFwX2V4YnVqaVlvdTJDMEh5UWhiYnozNUp1bElEdlRYd25teFYzNzdYNlQ1TWNwYV9tUHN1TFlzSzB0NXJFcnhDd3hUNzhydkdXR2NELUE2d2hST3pCR1llRlNWYW00azc1dTY3a1I2V1JNV2JxWW1aYzJkZzNEWnYxS0JjOVdXMjlCem51SEJwQnhQb3FkZWRoczI0VnZBbEdiZkdWQ0s4a3MyankydzdWVkVwdkRZZjFIWUE?oc=5",
+   "termino": "migrantes",
+   "geo": "US",
+   "titulo": "Protestan contra ICE tras tiroteo en Austin",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 16.4,
+   "base": 20.8,
+   "ratio": 0.79
   }
  },
  "audiencia": {
@@ -49,13 +62,13 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1288750",
+     "valor": "1269450",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes la más amada del país",
-     "valor": "81100",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "199500",
      "tipo": "rising",
      "variantes": 0
     },
@@ -66,7 +79,7 @@
      "variantes": 0
     }
    ],
-   "medido": "2026-09-20T20:25:48+00:00"
+   "medido": "2026-09-21T12:10:02+00:00"
   },
   "VE": {
    "consultas": [
@@ -134,25 +147,25 @@
   "US": {
    "consultas": [
     {
-     "consulta": "oracion por los migrantes",
-     "valor": "27850",
+     "consulta": "ceuta migrantes",
+     "valor": "1195800",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "un magistrado frenó la anulación de permisos de trabajo y asilos para miles de migrantes",
-     "valor": "21200",
+     "consulta": "clinica de migrantes",
+     "valor": "41750",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes unidos en caravana",
-     "valor": "20850",
+     "consulta": "cuantos migrantes mexicanos hay en estados unidos",
+     "valor": "13550",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-10T20:31:11+00:00"
+   "medido": "2026-09-21T12:10:18+00:00"
   },
   "ES": {
    "consultas": [
@@ -212,22 +225,22 @@
    "medido": "2026-09-20T20:25:56+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 5,
-   "reciente": 16.0,
-   "base": 7.5,
-   "ratio": 2.13
+   "puntaje": 6,
+   "reciente": 16.1,
+   "base": 7.3,
+   "ratio": 2.2
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 16.0,
-   "base": 3.5,
-   "ratio": 4.59
+   "puntaje": 5,
+   "reciente": 17.1,
+   "base": 8.1,
+   "ratio": 2.11
   }
  },
  "alertas": []
