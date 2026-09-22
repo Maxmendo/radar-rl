@@ -1,73 +1,47 @@
 {
- "generado": "2026-09-21T23:53:22+00:00",
+ "generado": "2026-09-22T11:05:29+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "b549d71e0b39": {
-   "id_hecho": "b549d71e0b39",
-   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNRW4xa0pVdzlTY3ZXMXl0TDJWZ0ptME02R01TZ3hoc3BxOFg5UXZzaTdpczAyaXBaRXZiRFYzbkk2TDdWOGlVb2t3Zi1tZHRuRG9UWllxc0ZfaDhvZHZLWGlLeTltRnN2QzFQOU4xTFJnMl9ib1cwM2pxbEtGOE02SGt4SzF2c1dNbzFwVVc3dnFFcTBwWGp3bHdCeFlsdEhocUJBTmJuYWJvSHVDLVZGMDZIYVRza0dRWjV6REE2NUU5RUFEclU0WnBVZzJ2VFhGeEU5SG12T1ExYXNtY1RxSVhoUVAwZXo1aHJNdFk5Y0hMMWt6RDlFMHlSNVVxTlN2TzNCRmZ5QnV6ZUd5cFpHX3R4NHZ5ZlZkRXZwMmNia3poMFNfMDltU2I5cDRvMmPSAbQCQVVfeXFMT09CWGI4enpvQzQ0U1MxSjUxcG5tN1huQXd0RXEzMy1qaTdkN3JiemJ5NFlSWjB3TGRnYW5TOEt4aUxydzZkamJONGk0Y2VLV0xHT3VNaWxKRHlUNERCT3V4QzRqTjhSRGNXZF9TdTFNUTB2RDRDWV9tRDYxbThhX3RSWmM4NE4tOTZKS2kyMy1YZkMxUkxzYmlJZERkNF9BX200WGFRa0wya0J6N1VHT2lEbEl5ajFUREd4Z2M5RWt2ZS1OUXNzTE9XQjRIWTlmTlVwbTJNUXpfZlBiYWxsNnAtSnNpSmM4czUtT1Fkb19yMlAzX1lRRHJmTko4THNrX2tKbm4ta0hab2VhVTZTb3pST0xtaDB5VWR6NEtlWkN4ckg1b21UVkRPUE82VV9yZnBpaUU?oc=5",
+  "3095e8ab64ff": {
+   "id_hecho": "3095e8ab64ff",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNUUNXek5yalA5UmI4eVFxYm0yWjVNR2FrSVYyYjhPQjJHRFUyUHAtMG44aDRCa1AtUDdpWFBET0UwYXJRTmFrbS1HSDdjdnlHTHFKVjZUUnhmZDR5NUlYNllSU180aVJLSWd6U3dOUnpJUmdmQXU1X2cxNy1CRkQ4dWNNMHl4bDJxZ1g1WlUteWRuY0NOTEF4QWd2QUd0Zk00TU9UWWxSV2pRZjVZOXljenNvLVQzQlBoclFMRmwwWGt6Y05rRUlnQ0QyUQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Migrante venezolano denuncia que ICE le disparó tras perseguirlo y chocar su vehículo en Texas",
+   "titulo": "\"Tengo la bala allí adentro todavía\", cuenta migrante detenido por ICE en EEUU",
    "importancia": 9,
-   "velocidad": 7,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 11.4,
-   "base": 5.8,
+   "reciente": 8.3,
+   "base": 6.2,
    "ratio": null
   },
-  "a06274c2e015": {
-   "id_hecho": "a06274c2e015",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQnpMUTh6clBEbzVwS1dsaDVOX0h5WjBKYnFRZE1BTXp5OEpNVjdralFndW5YZ3lhY0RMRzNib05BR2xfTzJpdkVSQ054VEtCNWVPaWota0ltUTBFdFJUbWN4VGdCajhfTHFzUi1ZVkMyMHpVSnlKdkE3bnh0RXUwSmVwdzl1aVV4YUU5TmtoR3o5V210enBOdzNWeVdPYWUyRXFGc3V6YkZReWswRVRPS2UyRGZVSjBfOXJlS1Fma2tmelN0MFVwVXlxOHUzZw?oc=5",
+  "1612a6df1c13": {
+   "id_hecho": "1612a6df1c13",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwX29maWFIMnlTS0dodm1Cblg5S2pjM21fUEhHZ3R6RjVNZnpRYWtycnRTbXlpV3JyRms0YlZ2azdCaHg0cEFtYU1Xc2IyZnEtbWFBMDN3X0c?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "25.000 deportados a 35 países: la red global secreta de Trump contra la inmigración",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 11.4,
-   "base": 5.8,
-   "ratio": null
-  },
-  "de5c69ae6cd3": {
-   "id_hecho": "de5c69ae6cd3",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNdmJkTTlILUNqcVpONDRIcEZYbU5JMlQ4Tmd4RnZGMEd3dzdfQkxlUjkzb2JXVUNpMzZuajg3c2lWX01RNE42dnJIcnRDZVdMclJnOUcwVTBfdVhLQmRfaHFQeEpDZFFVVkxQYzBCUUhPbGZTNzNNVGdHakF3UHIya3pjX1ZvLUNVeHZuRWVwN0RQblhPTDY3dmNlWlFqNWJFWm5SUW8xamh0NmdkVklhMUtaY25zZEdkbWpaTkdkcnhTa0FWMnptQllZcjNtNlBMZy1CY0hpRWFYY3FjdHpxaS1jOXNNNlM4UXlmTm9ubw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Trump deporta a 25 mil 427 migrantes a países donde no nacieron: México recibe 8 de cada 10 expulsados",
+   "titulo": "Estados Unidos deporta más de 25 mil migrantes a terceros países",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 11.4,
-   "base": 5.8,
+   "reciente": 8.3,
+   "base": 6.2,
    "ratio": null
   },
-  "e6156a360067": {
-   "id_hecho": "e6156a360067",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPN1B5NFV2N24wZ3owanBQZWJKNWVKam9IdURvcFk4U1JfenYzTm81R3RqcXZQMW90Q0xSd1VhUDFXcFNuX1dhQnkxeUVDcm41c2tHUVZ5TVUxNFdTeU9kV3MtaXlRZ2cxMFNUNGNOQjJ6VHA0UlNFT3MyZUhIbWVxYXlqQ2txeW9VM2RMOWdSTWlvM1JxYmZsSG1yNzZEcXBYVVBCRGZB?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "160 mil mexicanos han recibido órdenes de deportación en USA",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 11.4,
-   "base": 5.8,
-   "ratio": null
-  },
-  "309036c9e198": {
-   "id_hecho": "309036c9e198",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeEF4a3d5cVhkZnFfUzNkOG55MnBDcVVkS01WRFRDTDJWVEdPdlpNcHh5d1NlVmJvNjZ0ZHlYS1hfUHpKaXY4S0VEQWxKRTVCemt4ZnQ0ZWRscTM2ZTVLVlBGc1lNZmtkSkJnQTF1VVRJQy03cVFMZVlfdjQyOTdMZHMwUl80WjBpZlE0ZVlvUVN6S19yazZ0b2pDVnpEeTE3UWt1ZHg2Y1VjOGxsOC1tQlZ3?oc=5",
-   "termino": "caravana migrante",
-   "geo": "US",
-   "titulo": "EEUU advierte a una caravana migrante que \"no se arriesguen\" al intentar cruza a Guatemala",
+  "fb7ac35dfa5b": {
+   "id_hecho": "fb7ac35dfa5b",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1RRzM1SHlBY2JrbHkxM25Ma3FPdjhwMmV4bUtUU1dfOXAzZXBaMThkcER2aGhEM01JMGstbnNnb3RHemNVeEM0ZUl3eEIxT3M?oc=5",
+   "termino": "refugiados",
+   "geo": "MX",
+   "titulo": "Acnur México ve un \"cambio de prioridades\" en las agendas globales ante alza de refugiados",
    "importancia": 7,
-   "velocidad": 7,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 24.0,
+   "base": 5.4,
+   "ratio": 4.41
   }
  },
  "audiencia": {
@@ -75,41 +49,35 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "100",
-     "tipo": "top",
+     "valor": "1308350",
+     "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "161900",
+     "valor": "189900",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "trabajadores migrantes",
-     "valor": "159350",
+     "consulta": "migrantes o inmigrantes",
+     "valor": "126700",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-21T23:53:06+00:00"
+   "medido": "2026-09-22T11:05:13+00:00"
   },
   "VE": {
    "consultas": [
     {
      "consulta": "migrantes o inmigrantes",
-     "valor": "187300",
+     "valor": "242750",
      "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes significado",
-     "valor": "7",
-     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-18T20:31:42+00:00"
+   "medido": "2026-09-22T11:05:21+00:00"
   },
   "CL": {
    "consultas": [
@@ -232,7 +200,7 @@
    "medido": "2026-09-20T20:25:56+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -250,5 +218,23 @@
    "ratio": 2.14
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "fb7ac35dfa5b",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1RRzM1SHlBY2JrbHkxM25Ma3FPdjhwMmV4bUtUU1dfOXAzZXBaMThkcER2aGhEM01JMGstbnNnb3RHemNVeEM0ZUl3eEIxT3M?oc=5",
+   "termino": "refugiados",
+   "geo": "MX",
+   "titulo": "Acnur México ve un \"cambio de prioridades\" en las agendas globales ante alza de refugiados",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 24.0,
+   "base": 5.4,
+   "ratio": 4.41,
+   "disparada": "2026-09-22T11:05:29+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
