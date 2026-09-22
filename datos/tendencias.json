@@ -1,9 +1,22 @@
 {
- "generado": "2026-09-22T11:05:29+00:00",
+ "generado": "2026-09-22T20:59:52+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
+  "110deea62ea4": {
+   "id_hecho": "110deea62ea4",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNaHdHS1J3RFpISC1waUJwYy1QMFhJakstWmluMU45ODZTd0N1WkczdUluenM3RnM0dTVqbE4wQl9fVGpzUnFsYS1UWl9PSDFadzVueENSZVhnTlViQnNwNjdkVDFhUW1tQUVWR3dEZk1rUVVzN2NpbzQtaTNqOXNpb3JlcFJjdnhvU1lCVHp6SjExTVhqa1FyQU5WM1VZUlk5M3ZEeVFoSnJqTXlDZGs4Y2ZIZGJ2Q2cwZHZSd0dSd0EzWHlKOUJiZGZSaEJWVU9PTFNyVVBKOTVDaEw2d0V1Ym5VUWNJTGdiZy12X2dmZU51eGRsZEppeE9JTFBIRjh1cDVGSEtEWC0wQkdQREdVRkNtaGEyMkg3SUHSAZ8CQVVfeXFMT19lUGlSbm1NSnhxV2tITXVmUnNrOUlTNmp5aUVSTUl2Uzk1bHg5dVcySzV5Nm5oS2FFZVlfT3hOazZnV0RKMkU0d0FhTi15SmVuSy1hWEd3M2hLTFhINm5Ic1IzTEtMOHVoXzN0eUlJZS1KQnctMEsxbmxVamR6anNJVGVReTVaWm5xSzBFLV9OREJxQlpfYzFmMl9YaEFjTjNTaENJUnV2ZmhtMEg4TkZHVWswb09RY3hydEJJQ3VUaGtWbTlwMW00X1hJNUNYSGtDaXdDbmdvZmRSUzVOQi01Y0pMTlFZYXJnbFoyVEozNURSXzRrcGhuSV9QWmEwaWM0emZyem5Qa1lNZmx6OC1Vb205UWE5MGNpaVdfN28?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Buenas noticias para inmigrantes | Gobierno de Trump ya no podrá deportar extranjeros a otros países: Así es el fallo aprobado por jueces",
+   "importancia": 10,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 11.0,
+   "base": 5.4,
+   "ratio": null
+  },
   "3095e8ab64ff": {
    "id_hecho": "3095e8ab64ff",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNUUNXek5yalA5UmI4eVFxYm0yWjVNR2FrSVYyYjhPQjJHRFUyUHAtMG44aDRCa1AtUDdpWFBET0UwYXJRTmFrbS1HSDdjdnlHTHFKVjZUUnhmZDR5NUlYNllSU180aVJLSWd6U3dOUnpJUmdmQXU1X2cxNy1CRkQ4dWNNMHl4bDJxZ1g1WlUteWRuY0NOTEF4QWd2QUd0Zk00TU9UWWxSV2pRZjVZOXljenNvLVQzQlBoclFMRmwwWGt6Y05rRUlnQ0QyUQ?oc=5",
@@ -11,37 +24,50 @@
    "geo": "US",
    "titulo": "\"Tengo la bala allí adentro todavía\", cuenta migrante detenido por ICE en EEUU",
    "importancia": 9,
-   "velocidad": 5,
+   "velocidad": 6,
    "puntaje": 0,
-   "reciente": 8.3,
-   "base": 6.2,
+   "reciente": 11.0,
+   "base": 5.4,
    "ratio": null
   },
-  "1612a6df1c13": {
-   "id_hecho": "1612a6df1c13",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwX29maWFIMnlTS0dodm1Cblg5S2pjM21fUEhHZ3R6RjVNZnpRYWtycnRTbXlpV3JyRms0YlZ2azdCaHg0cEFtYU1Xc2IyZnEtbWFBMDN3X0c?oc=5",
+  "9875486e0078": {
+   "id_hecho": "9875486e0078",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRENkbTJJT2lFTDQyczdQNXlKdmVTaG1ZdVpha0lLZWMzU1Y4MU5vQXprUmhMY1k1eHQ0a2JBcjByb1ExczFTSDhDREYwQnBYcDJIVGZwU09QNzVSTUxwM3RZSF9uLWlsUUs1OV90ZTF6ejVFcjdVdjNnTlNYNlFBcU9EVVFzejdHcXhlenpqU0NVUHhTV0pLZ3lWWDlPbXpCcEZxMjIzRkY3Q2pmM2Z2bTRJbEExc3BYaDhUTnBGUTlra1VzX3laNXNsek9iS3ZXSGpjQ1Zfclk?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Estados Unidos deporta más de 25 mil migrantes a terceros países",
+   "titulo": "El migrante venezolano herido por el ICE es trasladado a un hospital, según su abogada - EFE",
+   "importancia": 9,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 11.0,
+   "base": 5.4,
+   "ratio": null
+  },
+  "95efed5199b3": {
+   "id_hecho": "95efed5199b3",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOQWtYeEI4a191MjdRb2l6eDgtdXRfMHYtUUYyU1o2UWZWZ25iT3U1aFpmVWgtUFhEbWdCTmhCVk5KVGluWm5RbWR5RHlHXzBIRFdEZlZrZ2V1cS0zWEtOOXZvRzdnU1A3cXdKRWg4M1B1NHNudlQtdkRsNklJSlpYUDRHRGtYakVhNDd2UzBHVi1vUXR5MnNaTDV3RHRYMnhnblFvZG9Nc3FtbEZBT2pINEw3VENwbHVyOXVDVFVVdnpMNG5sdTN1NWlieHVzNUVCelFxaw?oc=5",
+   "termino": "desplazamiento interno",
+   "geo": "MX",
+   "titulo": "Inegi revela que Zacatecas es el estado con mayor desplazamiento forzado por violencia",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 8.3,
-   "base": 6.2,
+   "reciente": 5.3,
+   "base": 0.6,
    "ratio": null
   },
-  "fb7ac35dfa5b": {
-   "id_hecho": "fb7ac35dfa5b",
-   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1RRzM1SHlBY2JrbHkxM25Ma3FPdjhwMmV4bUtUU1dfOXAzZXBaMThkcER2aGhEM01JMGstbnNnb3RHemNVeEM0ZUl3eEIxT3M?oc=5",
+  "a53ffb20eec2": {
+   "id_hecho": "a53ffb20eec2",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNYVdhQ2VKVWR2dm9oMHVwLXZYQ1l4eDZOYWxyR2dsZENyVk9Fc3NyQ1U1ajJLdHJsemVXaW85ZkxQVUhJZUg5LWN2Y3h6U1BJdmFIbFhJdFY0ZkpTelBMeDVNal9LaU1RQnZUeDc3V3ZSd2FGdEZKUUxUVjcydVhPd2dwOVFrNFkzclNEYjM2b0d4cDJfV1FiTEVMcW12a1RoNW1rdXIwTl9vYkVaVWpQVjBpeU5BNjFrR0QtRXloZzJvNTdiYzB1clRBQm1BS3hybWpac2pGQlE5d9IB9AFBVV95cUxOem1jNE81Nm0tNC1XNHNxaERuNGNZNUd2YTlvd2ZMY1lDMGxCZWtDYmNXbTBvTExYeXlBNWRlclFYbjdVTHVOcEFVeWM1Si1RVEpqcVcxVzE4YjZFQVdjOXRMbDBUT0xEVXEwcm82WG56bzRlLXVwTG5GcS1leTFWTXVhTFducElRT2h3d0pWWVJKbExrbkRUU0RTQld6NThHSDFDUnFNU25KM2lIMUlQS3RZN2daSV85SklyblY5ZlNQdE83ckJUb3hOY0ZwZHJBclJZVWpISmdNenBic2drVjdLUzFWazhOLURyZkFsaTM2ekd6?oc=5",
    "termino": "refugiados",
    "geo": "MX",
-   "titulo": "Acnur México ve un \"cambio de prioridades\" en las agendas globales ante alza de refugiados",
-   "importancia": 7,
-   "velocidad": 3,
+   "titulo": "México mantiene la acogida a refugiados mientras los recursos internacionales caen 50%, destaca Acnur",
+   "importancia": 8,
+   "velocidad": 4,
    "puntaje": 10,
-   "reciente": 24.0,
-   "base": 5.4,
-   "ratio": 4.41
+   "reciente": 23.9,
+   "base": 7.8,
+   "ratio": 3.05
   }
  },
  "audiencia": {
@@ -49,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1308350",
+     "valor": "1296950",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "189900",
+     "valor": "129750",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes o inmigrantes",
-     "valor": "126700",
+     "consulta": "migrantes la más amada del país",
+     "valor": "79450",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-22T11:05:13+00:00"
+   "medido": "2026-09-22T20:59:36+00:00"
   },
   "VE": {
    "consultas": [
@@ -83,24 +109,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "541650",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "108500",
+     "valor": "564800",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "migrantes marroquíes en españa",
-     "valor": "99850",
+     "valor": "104350",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes me duele que me duelas",
+     "valor": "50150",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-19T10:26:28+00:00"
+   "medido": "2026-09-22T20:59:44+00:00"
   },
   "CO": {
    "consultas": [
@@ -200,7 +226,7 @@
    "medido": "2026-09-20T20:25:56+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -212,13 +238,30 @@
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 5,
-   "reciente": 18.9,
-   "base": 8.8,
-   "ratio": 2.14
+   "puntaje": 7,
+   "reciente": 15.1,
+   "base": 6.3,
+   "ratio": 2.41
   }
  },
  "alertas": [
+  {
+   "id_hecho": "a53ffb20eec2",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNYVdhQ2VKVWR2dm9oMHVwLXZYQ1l4eDZOYWxyR2dsZENyVk9Fc3NyQ1U1ajJLdHJsemVXaW85ZkxQVUhJZUg5LWN2Y3h6U1BJdmFIbFhJdFY0ZkpTelBMeDVNal9LaU1RQnZUeDc3V3ZSd2FGdEZKUUxUVjcydVhPd2dwOVFrNFkzclNEYjM2b0d4cDJfV1FiTEVMcW12a1RoNW1rdXIwTl9vYkVaVWpQVjBpeU5BNjFrR0QtRXloZzJvNTdiYzB1clRBQm1BS3hybWpac2pGQlE5d9IB9AFBVV95cUxOem1jNE81Nm0tNC1XNHNxaERuNGNZNUd2YTlvd2ZMY1lDMGxCZWtDYmNXbTBvTExYeXlBNWRlclFYbjdVTHVOcEFVeWM1Si1RVEpqcVcxVzE4YjZFQVdjOXRMbDBUT0xEVXEwcm82WG56bzRlLXVwTG5GcS1leTFWTXVhTFducElRT2h3d0pWWVJKbExrbkRUU0RTQld6NThHSDFDUnFNU25KM2lIMUlQS3RZN2daSV85SklyblY5ZlNQdE83ckJUb3hOY0ZwZHJBclJZVWpISmdNenBic2drVjdLUzFWazhOLURyZkFsaTM2ekd6?oc=5",
+   "termino": "refugiados",
+   "geo": "MX",
+   "titulo": "México mantiene la acogida a refugiados mientras los recursos internacionales caen 50%, destaca Acnur",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 23.9,
+   "base": 7.8,
+   "ratio": 3.05,
+   "disparada": "2026-09-22T20:59:52+00:00",
+   "velocidad_inicial": 4,
+   "desenlace": "vigente",
+   "horas": 0
+  },
   {
    "id_hecho": "fb7ac35dfa5b",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1RRzM1SHlBY2JrbHkxM25Ma3FPdjhwMmV4bUtUU1dfOXAzZXBaMThkcER2aGhEM01JMGstbnNnb3RHemNVeEM0ZUl3eEIxT3M?oc=5",
@@ -226,15 +269,15 @@
    "geo": "MX",
    "titulo": "Acnur México ve un \"cambio de prioridades\" en las agendas globales ante alza de refugiados",
    "importancia": 7,
-   "velocidad": 3,
+   "velocidad": 2,
    "puntaje": 10,
    "reciente": 24.0,
    "base": 5.4,
    "ratio": 4.41,
    "disparada": "2026-09-22T11:05:29+00:00",
    "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
+   "desenlace": "se_enfrio",
+   "horas": 9.9
   }
  ]
 }
