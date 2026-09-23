@@ -5,7 +5,7 @@ No editar a mano: los cambios se pierden en la próxima generación. Para modifi
 el vocabulario, editar `fuentes.yaml` y volver a correr el script.
 
 Versión del vocabulario: 3.1 (2026-08-02)
-Generado: 2026-09-22
+Generado: 2026-09-23
 
 ---
 
