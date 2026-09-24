@@ -1,73 +1,73 @@
 {
- "generado": "2026-09-23T21:12:47+00:00",
+ "generado": "2026-09-24T11:15:16+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "6f1f87161cc4": {
-   "id_hecho": "6f1f87161cc4",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcVM5TzBpWnItMzN2OFNYZzRja1FNSWJia2FlSHBKM1RmXzYwVFg2Uk9nT1RSRGdPazQ1bnNoMUdIZ0Zia05LbDhJN3I0aVJJWXp1aUZwbTlrbmdRVlgtNi12cTMwelZvdTJZWjlqbXZ2bWNLMWRPT2RBNFR4cFZ3MXZzZ1JadmxGX2VnOHhUNzZMTlJy?oc=5",
-   "termino": "refugiados",
-   "geo": "US",
-   "titulo": "EE.UU. limitará el número de refugiados que recibirá en 2027",
-   "importancia": 9,
+  "2f36ff5eaa27": {
+   "id_hecho": "2f36ff5eaa27",
+   "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOb1h4VU5kNHpSakNpRWUybS1SaDlVbDg5VVBscHRDT09HZmZ5Tms5TzU5bFBqVm9GOWNqR3lvVFBZMzI4RU16eFplT1lsbmtYRFpDeHRvU2Y2LU9rOWRTR0d3eFBVa1lRbGVUS193VUtGaEItd0ZfS1ZNNHFxc2xObExNd29SU1RRUlUxSkcyYVFuZW1HN1RyN3pnejhMUmJyOFBEUG5GSEEtN1NhTkVYZjJjSndYV0stcU9GbHRwVDVuLTdzcldsQ19Jcnl5WnYySnk3SXZwakszUF9nejVUMlF1c0dma29Ecl9YZGlMd09Mdjh3YmgzTTlFZUdZNk5ERDRxejRwYTB4elFjMm1wamR6WFVtLWdLVjVDTnpETUpESnNt0gGkAkFVX3lxTE5vWHhVTmQ0elJqQ2lFZTJtLVJoOVVsODlVUGxwdENPT0dmZnlOazlPNTlsUGpWb0Y5Y2pHeW9UUFkzMjhFTXp4WmVPWWxua1hEWkN4dG9TZjYtT2s5ZFNHR3d4UFVrWVFsZVRLX3dVS0ZoQi13Rl9LVk00cXFzbE5sTE13b1JTVFFSVTFKRzJhUW5lbUc3VHI3emd6OExSYnI4UERQbkZIQS03U2FORVhmMmNKd1hXSy1xT0ZsdHBUNW4tN3NyV2xDX0lyeXladjJKeTdJdnBqSzNQX2d6NVQyUXVzR2Zrb0RyX1hkaUx3T0x2OHdiaDNNOUVlR1k2TkRENHF6NHBhMHh6UWMybXBqZHpYVW0tZ0tWNUNOekRNSkRKc20?oc=5",
+   "termino": "deportaciones",
+   "geo": "CL",
+   "titulo": "Gobierno confirma que insistirán en el Senado con proyecto que amplía retención de migrantes para concretar expulsiones",
+   "importancia": 8,
    "velocidad": 5,
    "puntaje": 0,
-   "reciente": 6.0,
-   "base": 2.0,
+   "reciente": 0.0,
+   "base": 0.0,
    "ratio": null
   },
-  "d6266080a4d4": {
-   "id_hecho": "d6266080a4d4",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSVVweVg2dG15QUpVdkZwWlgzRUhWb09IUXlDZlRqR2dFcWdPYmVodHEzbVJIalNxNVNRN1JpRGdlMlFJcDhQdzczOTJ3VXpCUWVkdXVMR2tpRXAzUXgySVRVWGZxYllMS3A2blRmUUlPUUloQUxLVmt1R0dzaUJ1Qks2bXV1WVlsX01zRTNfdGhBVFMwb05BRFBhbFpoWTBiZkF6dkgxVUNaNkNKSk9aQlNBT1o1a2tfQmpzUG95SlhGUDFRN2V3b3UtY1Q1QU3SAdQBQVVfeXFMTUJwdHJLeTFDRjdoT3p1TWZROHFidmxEWTlNeWlBZGN5WGctVmRXdFc2QU5UeDhpb0pySXUtS3ZDYkxXWE1YSFJnOGhpS2hOTU05TU9NRU9hSlV1WEZIVTJEVnhpYk95bi1IYUtHblRQQ1Y1X3ZDbDFrWHQ1LW5HOTFUdFZUM0pYUnVQWlA0ajhQM0t3UWJDM1JyeGlNdlV0V2VMY2pmYWJ2YUV0SjRia2YzM1R6eGVJQUtObnJtdDZLd3pTSC16Qy11Z0VlS3NKb3JwVXI?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Qué saber sobre Wilber Rafael Garcés Pérez, el ciudadano venezolano baleado por un agente del ICE en Texas",
-   "importancia": 9,
-   "velocidad": 4,
+  "138c68f45c7b": {
+   "id_hecho": "138c68f45c7b",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNM3hzMlctSnhQS01ZY2Fva0JnYXBnU0VlMHJFb3lyenBxMEpYWFh1TDZpS0c5MlpRLUVEZDBBRnVOZTI0MEhuUmRRS21HSHZPQXVZaE05TWlxNTVMX0FDcW5mUkdyS3ZJb3dyemJLUVJWSUlOTDllOEhuMzluX2ZxSHNVT05JTFJxSE44MktwTFgxRlNYSWVLREVuTjZkX19RbEN2SmdiNWh2dEVYeW9vaUQzeVJ1bGtyaGozT2dmdkFKenlYMF9pZXdwa3I4YzhPclJOOG15RWdGRjNUSVNuQmk4eXJmNWcwY1pPWNIB8gFBVV95cUxQVXZmM0IwNEFNOXdPbDhDa3VybTVwSzF5bWk5VUszZlcwTjRKdVNialNELTFVcDZLSEtjM21CRXA1Z2dUdG1XeDhMVHptS1N1b1laQVhiQ0lfaWJXdzdyb29VR1JLaE1uS2k4SUtFTlNCZWxFT1Z1UmlJU3hpWDVYVnNoWEpkSjZTRHZSNFhVa2dKeVo4R3ZCSGhydDdJd016ZVYyMV9zVm5vRkstZlJSa0FzcUJWVy0xWVNjXzBsckI2Z3FEQzN0cUxEYUQxTTQxb0tUYnQxWVVwTUdPNzNrcmZuRDVFT2lvU1ZjbG5xS2FyZw?oc=5",
+   "termino": "migraciones",
+   "geo": "CL",
+   "titulo": "Consulados y migración, retos de la recomposición de relaciones entre Chile y Venezuela",
+   "importancia": 7,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 8.9,
-   "base": 4.2,
+   "reciente": 27.6,
+   "base": 39.5,
+   "ratio": 0.7
+  },
+  "467df82ed119": {
+   "id_hecho": "467df82ed119",
+   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPX0V6bGJEUkN1OHVZNzRMVmlDU1FJN2RtX2Y4cG9RazMtbno5UDZBdGhSeWVsdnpFWDNtMmoyNjJOaExfSk9RLTZoemxTTV9zb2I5R09jSWMwRjN1REEwX0ZhY1BoNXd4cW9FUFFta09FVTlqNGNIazVIQndodmtXWHVCT19kazRBazFwTEdGUkpfR0ltS3k3blNNWU1HVjZoaGR1cUNqeTg0WHViYTFoZWFIRmNsZzJOZGwtbkFENnAxTEJwVVMtUm1oUkU5MGx1UmRiam1SUkNSRkxOVjdIT1VJdWozeUs5STdOaGgzODFiYVY1Z3JGUDl4ZHp5WF9fMmhwZVF3SkpCTUUzZWJ0eU1sa0Z6OWtrWW5CT0FYN19PNjZwMVBYOE1TQnF6U0Jzb0JfTmxrMXozdTJVZkRqcWJKUGN1WVRGOVFn0gHLAkFVX3lxTE9fRXpsYkRSQ3U4dVk3NExWaUNTUUk3ZG1fZjhwb1FrMy1uejlQNkF0aFJ5ZWx2ekVYM20yajI2Mk5oTF9KT1EtNmh6bFNNX3NvYjlHT2NJYzBGM3VEQTBfRmFjUGg1d3hxb0VQUW1rT0VVOWo0Y0hrNUhCd2h2a1dYdUJPX2RrNEFrMXBMR0ZSSl9HSW1LeTduU01ZTUdWNmhoZHVxQ2p5ODRYdWJhMWhlYUhGY2xnMk5kbC1uQUQ2cDFMQnBVUy1SbWhSRTkwbHVSZGJqbVJSQ1JGTE5WN0hPVUl1ajN5SzlJN05oaDM4MWJhVjVnckZQOXhkenlYX18yaHBlUXdKSkJNRTNlYnR5TWxrRno5a2tZbkJPQVg3X082NnAxUFg4TVNCcXpTQnNvQl9ObGsxejN1MlVmRGpxYkpQY3VZVEY5UWc?oc=5",
+   "termino": "inmigrantes estados unidos",
+   "geo": "US",
+   "titulo": "Jueza anula restricciones a programas de asistencia para inmigrantes en Estados Unidos",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 23.1,
+   "base": 6.4,
+   "ratio": 3.61
+  },
+  "a158345a4a7c": {
+   "id_hecho": "a158345a4a7c",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNN1BEQWFvMWlyRmJEelpRdUUwdnZaWElvT2djZFBmY1d4N2FtQUtCS01yZkduWklBRHI4YzZfR01mZmVWc2dsZnZqNzF3ZEpWQTJ3dnlDeW04RWpsckt6V1dsLW9aQjhFQlRJam82RjFVZFNVNG9fNTlpcG53b3Zxcmd1MjBucmFNTjROWUxkVThHaDNfS014a21WQjBLanNxTDJwUW1Pc05Za0lkVUlWMUd3eGJZVnQtNENTUk1LS0RxRzVWOEhEWGFTOG1Iei1aUHlmQlRaQTVIZw?oc=5",
+   "termino": "caravana migrante",
+   "geo": "US",
+   "titulo": "Estados Unidos advierte a una caravana migrante que ‘no se arriesguen’ al intentar cruzar a Guatemala",
+   "importancia": 7,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
    "ratio": null
   },
   "855bc90431dd": {
    "id_hecho": "855bc90431dd",
    "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOSzk5NDJlM3ExQ2xhU2gyeFJRRlBEQ1lRekVXMEk5OWs5dkhWZW0yNjZ3WFE1LS1hRmNZeENvMjViSlo2VW5LUnRWOHFYOWJRODJqeTkyRUZsRzNBT0c2Rm1HbWJIcGcwLUtEWEhLRnU0R1lqakxJLVoxSi01bDgzYUFsU1ptZl80ZlNJN2dtZ0NyME5GSFdGRTZwWnAycTdCTWZXeUh4RXk4dU1veFJzWjZpNDdUV2dyRHV4Qm5ielNGZW1ueTJNSjFESm44ZFFXUU51aF9FMHhoR1JPMTV6eEZGOG9idE9WLXROQUlpMDZOU3oyLUNrb1JYTXdJMFl6QnlQMmJXcmRiTnYyTlAxd0gwMW9rTnUxaVBjOHdSZ0pOb0luZkFDc3BKYWMzb19hUUHSAbcCQVVfeXFMT1JhYmI0eUE1Z0VEbXgyR1dMcXNYRXg4a0s5TnZhT2NrbFE4QktUbUhJZUExazdKdWpzVnNXNnJoemdqR04tNkNiVl9VNmxfQy1GNEFFbU15R0lnMmtvVHAyeEZwUTRrMzQ3SVVCOXhmRWhxUXlremxoUTFWRXJJSTFWUy0zSnlMenB6aXRUWkVNSlBOU3ZQamhWTUFqUkNJRndMTEhONmx1NE0zTFhHMGNpOTBqaEUxeC04R3duYVNqVE8ydkVhSXRfUkl5b3VvNU8yZW5FMTRTV09CcGNjeVRFSFZWWlFVNXdTSDdpcU9lVWxWQVAwc3hrNlpZcjBQMjJkRlVaYm55aTM5QnF0VEJsVjd2WXBwMjBWLUdvblExOXB0NzZta3BXVzN5U3RHT2x0ZnVBd28?oc=5",
-   "termino": "deportaciones",
+   "termino": "detencion migrantes",
    "geo": "US",
-   "titulo": "Alerta máxima inmigrantes legales e indocumentados en EE.UU. | Madre denuncia que ICE arrestó a su hijo con ciudadanía y termina siendo deportada",
-   "importancia": 9,
-   "velocidad": 3,
+   "titulo": "Cae 50% detención de migrantes centroamericanos, en EU y México",
+   "importancia": 7,
+   "velocidad": 5,
    "puntaje": 0,
-   "reciente": 8.9,
-   "base": 4.2,
+   "reciente": 0.0,
+   "base": 0.0,
    "ratio": null
-  },
-  "baac1b31d6cf": {
-   "id_hecho": "baac1b31d6cf",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTzFUUElrM2l2ODExdWdwUnFOcFdDb0Nzak9zdk9uTHZ4eGw2UklNZ0p4ZnlieWFSaXpCOHZ3UU9qbEpLdkM3MWFwV05DZ3JFUHhIX0dUWGl2R0hZUTA0U0ZLQ0k4OEhJMmFQenRXMXd2dmY0X2s3Z2FKdV8xUXlYNXdqNVlvaXkwRFlTbm1zTTlMSkpoMjVnOUhqdnlLSlNCQXRpMjBDWFdMZ2NoUVMxYXlJRXhjeU80UTJEZzFBeWNRSFh6ZHJLb3BYd1BlY29hOFlXOFVtbm9UUm5oSldoZF9WM01WMWpQTWlkT3hYS1NyT3fSAfgBQVVfeXFMT2owWm42VDBRelhJWGtCc1RBcTdWcXRUQUFydHlmZG9IQ0ZnYi1aMkt0M1NxOU1HTEQxRC1KdkRpMzdHN0d2MUljTjdtdThMenM5NVVmcUtDNDltdVFCUjV3WUhDNW01c3Y5MXR0V1ppTzBJT0UyeG5VSTBLNjhwNC1EbUsxc2pBaTBmTDJmVFNzWk80TkRLSTBncnRYWUJzWnZTUzhUbzJiM0NfbmdfbENjMER1a1NPSjJFNnFLY0RlV01OSzZoTENBU2lZZFFIWldKaDA0c21KV2FlbWhRaGprMi1ZdkNmV2tFUW43NHBHNUhkNUxkdlQ?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Washington respalda al ICE tras el disparo a un migrante en Austin, Texas",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 8.9,
-   "base": 4.2,
-   "ratio": null
-  },
-  "69bc0d7ae3f6": {
-   "id_hecho": "69bc0d7ae3f6",
-   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaENLX3ZhU0EtM0hqQTZPRGpMUTd6YWtpbXlEajcwVEVKcGRSZ2FzLW45NmFkRF9TaUctSUt0TnVDUkxQRlBrMTcxX0xlaHRFTE1rUWJybHp6bFEzVkowM0VRU0ZlSnZCVEY2QXZmaHp4WmlmYl93QW8yaEZZRGlGZHpxZzdqMmtEa0JFbVQwYzBJbkpGTjZBS2d4UXdvX2lQQWpVZGVELVU0QjZLNUdxWV9aRXZOYVlzWUV5emxnc0U5TDMwMEZyOGVkWHZFRTVfLWdQa3BfOEQ3MVdTN29Gc0IzWHlJczhLWHlWR2VnWDNZeFVENDMyb1RWVHR3REljTjdaQVVNcmFpdkFHcnJJatIBlgJBVV95cUxQSmMwUndaMEsyTF9yWjZKbmxsaEhHUWdCRHIyNTBxM3g1aGlMc1lWZHdEcFRmRVVhTkY5cmRmeWlrZG5Qam5HRFJJcGxxMGpsWlVQUWF6ejVnakNQRGhlNEp1Y1pZSXJxbG1NY1M3SFlma2JOVmR1UkRFRExlTWt6c1ZsUDBPOVdfOWpOQVhJOC1DMlRnN1RxOUVBLWV2amtRaXBGWG8xNHZtVDlnOUJkZWdZVGNGeDNjZ3lweWRyTUUyV01IaWNIVjBvVEFja2dRR3daZW5tcVFFbk1QcHk3ZWJCOElrcEwtRk15YjZaelBxM3ZHSEl4dkY5cWpPNkZIMDFNMlRibGxaeVlVR2p2blNETWdjUQ?oc=5",
-   "termino": "desplazamiento forzado",
-   "geo": "MX",
-   "titulo": "Querétaro, entre los estados con mayor desplazamiento forzado interno",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 41.1,
-   "base": 4.8,
-   "ratio": 8.66
   }
  },
  "audiencia": {
@@ -75,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1284400",
+     "valor": "1264400",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "192300",
+     "valor": "117750",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes estoy a un vaso remix",
-     "valor": "35550",
-     "tipo": "rising",
+     "consulta": "migrantes me duele que me duelas",
+     "valor": "34",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-23T21:12:23+00:00"
+   "medido": "2026-09-24T11:14:59+00:00"
   },
   "VE": {
    "consultas": [
@@ -218,49 +218,47 @@
    "consultas": [
     {
      "consulta": "ceuta migrantes",
-     "valor": "800400",
+     "valor": "888600",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-20T20:25:56+00:00"
+   "medido": "2026-09-24T11:15:08+00:00"
   }
  },
- "proximo_pais": 4,
- "paises_sin_datos": [
-  "CO"
- ],
+ "proximo_pais": 5,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 5,
-   "reciente": 16.7,
-   "base": 8.0,
-   "ratio": 2.08
+   "puntaje": 9,
+   "reciente": 20.1,
+   "base": 7.2,
+   "ratio": 2.8
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 19.4,
-   "base": 7.4,
-   "ratio": 2.62
+   "puntaje": 10,
+   "reciente": 23.7,
+   "base": 5.6,
+   "ratio": 4.22
   }
  },
  "alertas": [
   {
-   "id_hecho": "69bc0d7ae3f6",
-   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaENLX3ZhU0EtM0hqQTZPRGpMUTd6YWtpbXlEajcwVEVKcGRSZ2FzLW45NmFkRF9TaUctSUt0TnVDUkxQRlBrMTcxX0xlaHRFTE1rUWJybHp6bFEzVkowM0VRU0ZlSnZCVEY2QXZmaHp4WmlmYl93QW8yaEZZRGlGZHpxZzdqMmtEa0JFbVQwYzBJbkpGTjZBS2d4UXdvX2lQQWpVZGVELVU0QjZLNUdxWV9aRXZOYVlzWUV5emxnc0U5TDMwMEZyOGVkWHZFRTVfLWdQa3BfOEQ3MVdTN29Gc0IzWHlJczhLWHlWR2VnWDNZeFVENDMyb1RWVHR3REljTjdaQVVNcmFpdkFHcnJJatIBlgJBVV95cUxQSmMwUndaMEsyTF9yWjZKbmxsaEhHUWdCRHIyNTBxM3g1aGlMc1lWZHdEcFRmRVVhTkY5cmRmeWlrZG5Qam5HRFJJcGxxMGpsWlVQUWF6ejVnakNQRGhlNEp1Y1pZSXJxbG1NY1M3SFlma2JOVmR1UkRFRExlTWt6c1ZsUDBPOVdfOWpOQVhJOC1DMlRnN1RxOUVBLWV2amtRaXBGWG8xNHZtVDlnOUJkZWdZVGNGeDNjZ3lweWRyTUUyV01IaWNIVjBvVEFja2dRR3daZW5tcVFFbk1QcHk3ZWJCOElrcEwtRk15YjZaelBxM3ZHSEl4dkY5cWpPNkZIMDFNMlRibGxaeVlVR2p2blNETWdjUQ?oc=5",
-   "termino": "desplazamiento forzado",
-   "geo": "MX",
-   "titulo": "Querétaro, entre los estados con mayor desplazamiento forzado interno",
+   "id_hecho": "467df82ed119",
+   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPX0V6bGJEUkN1OHVZNzRMVmlDU1FJN2RtX2Y4cG9RazMtbno5UDZBdGhSeWVsdnpFWDNtMmoyNjJOaExfSk9RLTZoemxTTV9zb2I5R09jSWMwRjN1REEwX0ZhY1BoNXd4cW9FUFFta09FVTlqNGNIazVIQndodmtXWHVCT19kazRBazFwTEdGUkpfR0ltS3k3blNNWU1HVjZoaGR1cUNqeTg0WHViYTFoZWFIRmNsZzJOZGwtbkFENnAxTEJwVVMtUm1oUkU5MGx1UmRiam1SUkNSRkxOVjdIT1VJdWozeUs5STdOaGgzODFiYVY1Z3JGUDl4ZHp5WF9fMmhwZVF3SkpCTUUzZWJ0eU1sa0Z6OWtrWW5CT0FYN19PNjZwMVBYOE1TQnF6U0Jzb0JfTmxrMXozdTJVZkRqcWJKUGN1WVRGOVFn0gHLAkFVX3lxTE9fRXpsYkRSQ3U4dVk3NExWaUNTUUk3ZG1fZjhwb1FrMy1uejlQNkF0aFJ5ZWx2ekVYM20yajI2Mk5oTF9KT1EtNmh6bFNNX3NvYjlHT2NJYzBGM3VEQTBfRmFjUGg1d3hxb0VQUW1rT0VVOWo0Y0hrNUhCd2h2a1dYdUJPX2RrNEFrMXBMR0ZSSl9HSW1LeTduU01ZTUdWNmhoZHVxQ2p5ODRYdWJhMWhlYUhGY2xnMk5kbC1uQUQ2cDFMQnBVUy1SbWhSRTkwbHVSZGJqbVJSQ1JGTE5WN0hPVUl1ajN5SzlJN05oaDM4MWJhVjVnckZQOXhkenlYX18yaHBlUXdKSkJNRTNlYnR5TWxrRno5a2tZbkJPQVg3X082NnAxUFg4TVNCcXpTQnNvQl9ObGsxejN1MlVmRGpxYkpQY3VZVEY5UWc?oc=5",
+   "termino": "inmigrantes estados unidos",
+   "geo": "US",
+   "titulo": "Jueza anula restricciones a programas de asistencia para inmigrantes en Estados Unidos",
    "importancia": 8,
-   "velocidad": 3,
+   "velocidad": 4,
    "puntaje": 10,
-   "reciente": 41.1,
-   "base": 4.8,
-   "ratio": 8.66,
-   "disparada": "2026-09-23T21:12:47+00:00",
-   "velocidad_inicial": 3,
+   "reciente": 23.1,
+   "base": 6.4,
+   "ratio": 3.61,
+   "disparada": "2026-09-24T11:15:16+00:00",
+   "velocidad_inicial": 4,
    "desenlace": "vigente",
    "horas": 0
   }
