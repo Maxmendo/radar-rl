@@ -1,72 +1,85 @@
 {
- "generado": "2026-09-24T11:15:16+00:00",
+ "generado": "2026-09-24T21:15:06+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "2f36ff5eaa27": {
-   "id_hecho": "2f36ff5eaa27",
-   "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOb1h4VU5kNHpSakNpRWUybS1SaDlVbDg5VVBscHRDT09HZmZ5Tms5TzU5bFBqVm9GOWNqR3lvVFBZMzI4RU16eFplT1lsbmtYRFpDeHRvU2Y2LU9rOWRTR0d3eFBVa1lRbGVUS193VUtGaEItd0ZfS1ZNNHFxc2xObExNd29SU1RRUlUxSkcyYVFuZW1HN1RyN3pnejhMUmJyOFBEUG5GSEEtN1NhTkVYZjJjSndYV0stcU9GbHRwVDVuLTdzcldsQ19Jcnl5WnYySnk3SXZwakszUF9nejVUMlF1c0dma29Ecl9YZGlMd09Mdjh3YmgzTTlFZUdZNk5ERDRxejRwYTB4elFjMm1wamR6WFVtLWdLVjVDTnpETUpESnNt0gGkAkFVX3lxTE5vWHhVTmQ0elJqQ2lFZTJtLVJoOVVsODlVUGxwdENPT0dmZnlOazlPNTlsUGpWb0Y5Y2pHeW9UUFkzMjhFTXp4WmVPWWxua1hEWkN4dG9TZjYtT2s5ZFNHR3d4UFVrWVFsZVRLX3dVS0ZoQi13Rl9LVk00cXFzbE5sTE13b1JTVFFSVTFKRzJhUW5lbUc3VHI3emd6OExSYnI4UERQbkZIQS03U2FORVhmMmNKd1hXSy1xT0ZsdHBUNW4tN3NyV2xDX0lyeXladjJKeTdJdnBqSzNQX2d6NVQyUXVzR2Zrb0RyX1hkaUx3T0x2OHdiaDNNOUVlR1k2TkRENHF6NHBhMHh6UWMybXBqZHpYVW0tZ0tWNUNOekRNSkRKc20?oc=5",
-   "termino": "deportaciones",
-   "geo": "CL",
-   "titulo": "Gobierno confirma que insistirán en el Senado con proyecto que amplía retención de migrantes para concretar expulsiones",
-   "importancia": 8,
-   "velocidad": 5,
+  "29e4ac565263": {
+   "id_hecho": "29e4ac565263",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUFhrWlhKN0hlTGFzbzhDWjlOTVpCTk90RHFKN0YyVTBNRlZhOHh1WlJGQ3Fyc3ZGN0pWS2k1am9HMEVORW0tV25PQ0dRYlpSejdVWExFWmhkQnFEaEVLZjNmTXpwdzhhMFFGeXdUNERyOGlHT2ZrVUZmWmRmQmFZS1ZGUUNyVmdpNGVYY3ZBMUpFZ2hqdVJoUkZ5WFB3RGdaY1dvbThCSkc4Q3ctLXpBZ0FITlQweWJRQnJOcTIxbDFQd3JUdkFoVlZnWXB6UdIB4gFBVV95cUxNNFZnSGJrTGNjVXBYY2d5S2padWp0U3pScWZncEJlM1MwZlZuYmRNVTktbkQ2TXhseE0yNVRQYnlzR25ERHVhT0RfSU9qcnlERUpGalRUUzhTM1RZLUpwV0RvNG1zclBzdWxxai1YY2E2ckdaeUotckxUODF4bmRWbUpNVFJHWVN2SzVYbXFON1RZT1dyUmdKZkVLRWJWaTJsRUsxSXNXMkluUmlZVDYwaVMwR2s2N1lqVTFKSUpEWWp1SE1XMmF5MjNYaDVMd1pDVjR6Szd6UzJBRjZ0RWotLUdB?oc=5",
+   "termino": "tercer pais seguro",
+   "geo": "US",
+   "titulo": "El Gobierno de Trump pide al Supremo mantener el envío de migrantes a terceros países",
+   "importancia": 9,
+   "velocidad": 3,
    "puntaje": 0,
    "reciente": 0.0,
    "base": 0.0,
    "ratio": null
   },
-  "138c68f45c7b": {
-   "id_hecho": "138c68f45c7b",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNM3hzMlctSnhQS01ZY2Fva0JnYXBnU0VlMHJFb3lyenBxMEpYWFh1TDZpS0c5MlpRLUVEZDBBRnVOZTI0MEhuUmRRS21HSHZPQXVZaE05TWlxNTVMX0FDcW5mUkdyS3ZJb3dyemJLUVJWSUlOTDllOEhuMzluX2ZxSHNVT05JTFJxSE44MktwTFgxRlNYSWVLREVuTjZkX19RbEN2SmdiNWh2dEVYeW9vaUQzeVJ1bGtyaGozT2dmdkFKenlYMF9pZXdwa3I4YzhPclJOOG15RWdGRjNUSVNuQmk4eXJmNWcwY1pPWNIB8gFBVV95cUxQVXZmM0IwNEFNOXdPbDhDa3VybTVwSzF5bWk5VUszZlcwTjRKdVNialNELTFVcDZLSEtjM21CRXA1Z2dUdG1XeDhMVHptS1N1b1laQVhiQ0lfaWJXdzdyb29VR1JLaE1uS2k4SUtFTlNCZWxFT1Z1UmlJU3hpWDVYVnNoWEpkSjZTRHZSNFhVa2dKeVo4R3ZCSGhydDdJd016ZVYyMV9zVm5vRkstZlJSa0FzcUJWVy0xWVNjXzBsckI2Z3FEQzN0cUxEYUQxTTQxb0tUYnQxWVVwTUdPNzNrcmZuRDVFT2lvU1ZjbG5xS2FyZw?oc=5",
-   "termino": "migraciones",
-   "geo": "CL",
-   "titulo": "Consulados y migración, retos de la recomposición de relaciones entre Chile y Venezuela",
-   "importancia": 7,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 27.6,
-   "base": 39.5,
-   "ratio": 0.7
-  },
-  "467df82ed119": {
-   "id_hecho": "467df82ed119",
-   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPX0V6bGJEUkN1OHVZNzRMVmlDU1FJN2RtX2Y4cG9RazMtbno5UDZBdGhSeWVsdnpFWDNtMmoyNjJOaExfSk9RLTZoemxTTV9zb2I5R09jSWMwRjN1REEwX0ZhY1BoNXd4cW9FUFFta09FVTlqNGNIazVIQndodmtXWHVCT19kazRBazFwTEdGUkpfR0ltS3k3blNNWU1HVjZoaGR1cUNqeTg0WHViYTFoZWFIRmNsZzJOZGwtbkFENnAxTEJwVVMtUm1oUkU5MGx1UmRiam1SUkNSRkxOVjdIT1VJdWozeUs5STdOaGgzODFiYVY1Z3JGUDl4ZHp5WF9fMmhwZVF3SkpCTUUzZWJ0eU1sa0Z6OWtrWW5CT0FYN19PNjZwMVBYOE1TQnF6U0Jzb0JfTmxrMXozdTJVZkRqcWJKUGN1WVRGOVFn0gHLAkFVX3lxTE9fRXpsYkRSQ3U4dVk3NExWaUNTUUk3ZG1fZjhwb1FrMy1uejlQNkF0aFJ5ZWx2ekVYM20yajI2Mk5oTF9KT1EtNmh6bFNNX3NvYjlHT2NJYzBGM3VEQTBfRmFjUGg1d3hxb0VQUW1rT0VVOWo0Y0hrNUhCd2h2a1dYdUJPX2RrNEFrMXBMR0ZSSl9HSW1LeTduU01ZTUdWNmhoZHVxQ2p5ODRYdWJhMWhlYUhGY2xnMk5kbC1uQUQ2cDFMQnBVUy1SbWhSRTkwbHVSZGJqbVJSQ1JGTE5WN0hPVUl1ajN5SzlJN05oaDM4MWJhVjVnckZQOXhkenlYX18yaHBlUXdKSkJNRTNlYnR5TWxrRno5a2tZbkJPQVg3X082NnAxUFg4TVNCcXpTQnNvQl9ObGsxejN1MlVmRGpxYkpQY3VZVEY5UWc?oc=5",
-   "termino": "inmigrantes estados unidos",
+  "e836e34e1422": {
+   "id_hecho": "e836e34e1422",
+   "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQQ2Fsa3pwbVA5ZEFDNEZBcjFFeUhtQndGZm5IdHBOV1k4MXJXamdVUmVpNVcxZzZwa096SVNDUU5qbnBBdnRZcHhoNjljeVk5TDk3NGNwXzdHX1VkNWJsRzE3cDdNdWhLMTB0MW95NXUzeHh3b0tDTDJvUDE1WXZiMGpFQkRzWlh1dW9OZ0o1NURzVUNUb1Z0VlBDY1ZvLWJFY2dUWkhvX2VjaUFNcTRuVjloY2ZESGVuanVNU0R1cFZiMF9lUUxWRTZWa3Qya3ljVXhYejJtUE1RQk0yb1NPSkxpMzRRSVFnbHo3OEduWjJ6YlpnVm1qVGF3bXZXZmV0LVdzWTVEb3VVdEdzY01pWDYzQ3VhazljQkdlX3kxUVJzMVd6SlU4WFFsZzRXTkpVX2VZOEMzVVpreHZyWXRkbU1TVHNXQdIBywJBVV95cUxPX0V6bGJEUkN1OHVZNzRMVmlDU1FJN2RtX2Y4cG9RazMtbno5UDZBdGhSeWVsdnpFWDNtMmoyNjJOaExfSk9RLTZoemxTTV9zb2I5R09jSWMwRjN1REEwX0ZhY1BoNXd4cW9FUFFta09FVTlqNGNIazVIQndodmtXWHVCT19kazRBazFwTEdGUkpfR0ltS3k3blNNWU1HVjZoaGR1cUNqeTg0WHViYTFoZWFIRmNsZzJOZGwtbkFENnAxTEJwVVMtUm1oUkU5MGx1UmRiam1SUkNSRkxOVjdIT1VJdWozeUs5STdOaGgzODFiYVY1Z3JGUDl4ZHp5WF9fMmhwZVF3SkpCTUUzZWJ0eU1sa0Z6OWtrWW5CT0FYN19PNjZwMVBYOE1TQnF6U0Jzb0JfTmxrMXozdTJVZkRqcWJKUGN1WVRGOVFn?oc=5",
+   "termino": "asistencia para inmigrantes",
    "geo": "US",
    "titulo": "Jueza anula restricciones a programas de asistencia para inmigrantes en Estados Unidos",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 10,
-   "reciente": 23.1,
-   "base": 6.4,
-   "ratio": 3.61
-  },
-  "a158345a4a7c": {
-   "id_hecho": "a158345a4a7c",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNN1BEQWFvMWlyRmJEelpRdUUwdnZaWElvT2djZFBmY1d4N2FtQUtCS01yZkduWklBRHI4YzZfR01mZmVWc2dsZnZqNzF3ZEpWQTJ3dnlDeW04RWpsckt6V1dsLW9aQjhFQlRJam82RjFVZFNVNG9fNTlpcG53b3Zxcmd1MjBucmFNTjROWUxkVThHaDNfS014a21WQjBLanNxTDJwUW1Pc05Za0lkVUlWMUd3eGJZVnQtNENTUk1LS0RxRzVWOEhEWGFTOG1Iei1aUHlmQlRaQTVIZw?oc=5",
-   "termino": "caravana migrante",
-   "geo": "US",
-   "titulo": "Estados Unidos advierte a una caravana migrante que ‘no se arriesguen’ al intentar cruzar a Guatemala",
-   "importancia": 7,
-   "velocidad": 5,
+   "importancia": 9,
+   "velocidad": 3,
    "puntaje": 0,
    "reciente": 0.0,
    "base": 0.0,
    "ratio": null
   },
-  "855bc90431dd": {
-   "id_hecho": "855bc90431dd",
-   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOSzk5NDJlM3ExQ2xhU2gyeFJRRlBEQ1lRekVXMEk5OWs5dkhWZW0yNjZ3WFE1LS1hRmNZeENvMjViSlo2VW5LUnRWOHFYOWJRODJqeTkyRUZsRzNBT0c2Rm1HbWJIcGcwLUtEWEhLRnU0R1lqakxJLVoxSi01bDgzYUFsU1ptZl80ZlNJN2dtZ0NyME5GSFdGRTZwWnAycTdCTWZXeUh4RXk4dU1veFJzWjZpNDdUV2dyRHV4Qm5ielNGZW1ueTJNSjFESm44ZFFXUU51aF9FMHhoR1JPMTV6eEZGOG9idE9WLXROQUlpMDZOU3oyLUNrb1JYTXdJMFl6QnlQMmJXcmRiTnYyTlAxd0gwMW9rTnUxaVBjOHdSZ0pOb0luZkFDc3BKYWMzb19hUUHSAbcCQVVfeXFMT1JhYmI0eUE1Z0VEbXgyR1dMcXNYRXg4a0s5TnZhT2NrbFE4QktUbUhJZUExazdKdWpzVnNXNnJoemdqR04tNkNiVl9VNmxfQy1GNEFFbU15R0lnMmtvVHAyeEZwUTRrMzQ3SVVCOXhmRWhxUXlremxoUTFWRXJJSTFWUy0zSnlMenB6aXRUWkVNSlBOU3ZQamhWTUFqUkNJRndMTEhONmx1NE0zTFhHMGNpOTBqaEUxeC04R3duYVNqVE8ydkVhSXRfUkl5b3VvNU8yZW5FMTRTV09CcGNjeVRFSFZWWlFVNXdTSDdpcU9lVWxWQVAwc3hrNlpZcjBQMjJkRlVaYm55aTM5QnF0VEJsVjd2WXBwMjBWLUdvblExOXB0NzZta3BXVzN5U3RHT2x0ZnVBd28?oc=5",
-   "termino": "detencion migrantes",
+  "6ee053c24ad7": {
+   "id_hecho": "6ee053c24ad7",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pck5vMzl3eDRGclVHd2xRSWhMcWQxSU5PdUIzNURKU1VQN0ppTVNYUF82amV4U2t5UUN5Sm02all5aWVKNWhwVTRoeW82c0FlaGFJMExRQlZUZHZSZlZ0SUFwNVJlaWM?oc=5",
+   "termino": "detenciones ICE",
    "geo": "US",
-   "titulo": "Cae 50% detención de migrantes centroamericanos, en EU y México",
-   "importancia": 7,
+   "titulo": "Amnistía Internacional pide disolver el ICE por violaciones de derechos humanos en EE.UU.",
+   "importancia": 8,
    "velocidad": 5,
    "puntaje": 0,
+   "reciente": 0.3,
+   "base": 2.1,
+   "ratio": null
+  },
+  "e86e129fe6d7": {
+   "id_hecho": "e86e129fe6d7",
+   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQZzM4X3RSdUJydk80TEhfQTJzeVVtd1RiYWdFcUJQNnpaSDVrSGc0Y1JZOUhrQUg3LTNzN3VYc0FOQ2lQSnRtT2p3WnQ5RnNGeFI0ZS1SZkhJZ0JrOHY5Nzh3ZlFwUXRsX2JwaGdtRGx6VUl3UnlBZGw4RjJIUDllVXYzUTBPV29zbGNzckZCZ3pFQWd1NTR1TnBmSGthbVh2RUdfQnlvRHRUR2pzbkg3aWtpWlpOSTd3enFvNFhobWJIM21fUExQYk11UTdqakRfb3gxQ1IyNUZTTXo5elE0S1hIMUFnU0t2alhCRVg4SWhHa3cwaERxNldLelRCY21CTUZpT1JRSGMzY2E3SDd5ck45Y3VsSm1ycWZDTNIBnAJBVV95cUxQZzM4X3RSdUJydk80TEhfQTJzeVVtd1RiYWdFcUJQNnpaSDVrSGc0Y1JZOUhrQUg3LTNzN3VYc0FOQ2lQSnRtT2p3WnQ5RnNGeFI0ZS1SZkhJZ0JrOHY5Nzh3ZlFwUXRsX2JwaGdtRGx6VUl3UnlBZGw4RjJIUDllVXYzUTBPV29zbGNzckZCZ3pFQWd1NTR1TnBmSGthbVh2RUdfQnlvRHRUR2pzbkg3aWtpWlpOSTd3enFvNFhobWJIM21fUExQYk11UTdqakRfb3gxQ1IyNUZTTXo5elE0S1hIMUFnU0t2alhCRVg4SWhHa3cwaERxNldLelRCY21CTUZpT1JRSGMzY2E3SDd5ck45Y3VsSm1ycWZDTA?oc=5",
+   "termino": "politica migratoria",
+   "geo": "US",
+   "titulo": "Amnistía Internacional acusa a la Administración Trump de violar sistemáticamente los derechos humanos con su política migratoria",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
    "reciente": 0.0,
-   "base": 0.0,
+   "base": 0.4,
+   "ratio": null
+  },
+  "761a34120e45": {
+   "id_hecho": "761a34120e45",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZXFfcDNsbmpQT2RTVERUTlZFZDJ0SDJtSWFHajduZDRRZTBOS3RDSmx3Q0hVc3dITHliUFExcVI3LUh6QXBOaGRpWGNhczBhZEhyZkE4ck5rSlhPQ0NMbVRFTHJwWVNsZllkc0lwbENaOW12QXlqUWdkc0padWJTVUlHRTgtR2FHTk9zUnVPcEFmOHZ4T1FNMzB1T0tNR3p1TXpTbkZqdjNxMkVyZVRaRzd3?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Llegan al país dos nuevos vuelos de deportación desde EE. UU. con 406 migrantes",
+   "importancia": 8,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 7.6,
+   "base": 2.7,
+   "ratio": null
+  },
+  "bd3662d3bfaf": {
+   "id_hecho": "bd3662d3bfaf",
+   "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxQVnlWbnAxZ0xib2RfNGRfVjBsNU5OOHhsLTV6amM3b0tzUUsyazVZNTAzV2FnVEE5N1VnWWpNdjdUMzNmb0xhbHBVNEdDYjIyMHktdXdyWkRNUG5lZ2pITkpicWlWWFBCaUZuV1B0U2ZHcWpxelpyWExuR3NObVMyN3ZIbmxFM29aRUhYZ0NjWUxmUElZclAyb3NQbXlua0dVaVBxMHo4b2FYTDFkemp2VkRlM1dVZm9NbVBLWWlzVjdEUVk0Ump5bnlGYTJjR0ZKenY1TjB5MEdmT2FtcXZGYmJGLXFFU09vYk5NWWEydkxINFVXaUg0WW1DZ0w5NHFzLWtIemotdG1vZHZhU1VDaUJ2VkpPV0EyWk5qbFNQbnZSaFpTMkpBekFPNnlUMzBhdWZZTERONEZqUHRNX095NFp3dXdZQ3FBYU5Rd1dIcGgxVXg5d3fSAdYCQVVfeXFMUFZ5Vm5wMWdMYm9kXzRkX1YwbDVOTjh4bC01empjN29Lc1FLMms1WTUwM1dhZ1RBOTdVZ1lqTXY3VDMzZm9MYWxwVTRHQ2IyMjB5LXV3clpETVBuZWdqSE5KYnFpVlhQQmlGbldQdFNmR3FqcXpaclhMbkdzTm1TMjd2SG5sRTNvWkVIWGdDY1lMZlBJWXJQMm9zUG15bmtHVWlQcTB6OG9hWEwxZHpqdlZEZTNXVWZvTW1QS1lpc1Y3RFFZNFJqeW55RmEyY0dGSnp2NU4weTBHZk9hbXF2RmJiRi1xRVNPb2JOTVlhMnZMSDRVV2lINFltQ2dMOTRxcy1rSHpqLXRtb2R2YVNVQ2lCdlZKT1dBMlpOamxTUG52UmhaUzJKQXpBTzZ5VDMwYXVmWUxETjRGalB0TV9PeTRad3V3WUNxQWFOUXdXSHBoMVV4OXd3?oc=5",
+   "termino": "trafico de migrantes",
+   "geo": "MX",
+   "titulo": "Falsos asilos y viajes a México: así delinquía una red de tráfico de migrantes hacia EE. UU.",
+   "importancia": 8,
+   "velocidad": 6,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.1,
    "ratio": null
   }
  },
@@ -75,24 +88,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1264400",
+     "valor": "1302700",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "117750",
+     "valor": "154200",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "34",
+     "consulta": "inmigrantes",
+     "valor": "47",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-24T11:14:59+00:00"
+   "medido": "2026-09-24T21:14:50+00:00"
   },
   "VE": {
    "consultas": [
@@ -154,25 +167,25 @@
   "US": {
    "consultas": [
     {
+     "consulta": "oracion por los migrantes",
+     "valor": "41800",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes estoy a un vaso remix",
+     "valor": "35200",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
      "consulta": "ceuta migrantes",
-     "valor": "1195800",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "clinica de migrantes",
-     "valor": "41750",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "cuantos migrantes mexicanos hay en estados unidos",
-     "valor": "13550",
+     "valor": "8650",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-21T12:10:18+00:00"
+   "medido": "2026-09-24T21:14:58+00:00"
   },
   "ES": {
    "consultas": [
@@ -226,22 +239,22 @@
    "medido": "2026-09-24T11:15:08+00:00"
   }
  },
- "proximo_pais": 5,
+ "proximo_pais": 6,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 20.1,
-   "base": 7.2,
-   "ratio": 2.8
+   "puntaje": 4,
+   "reciente": 16.0,
+   "base": 8.0,
+   "ratio": 1.99
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 23.7,
-   "base": 5.6,
-   "ratio": 4.22
+   "puntaje": 8,
+   "reciente": 19.7,
+   "base": 7.5,
+   "ratio": 2.62
   }
  },
  "alertas": [
@@ -260,7 +273,7 @@
    "disparada": "2026-09-24T11:15:16+00:00",
    "velocidad_inicial": 4,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 10.0
   }
  ]
 }
