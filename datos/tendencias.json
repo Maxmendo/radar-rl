@@ -1,85 +1,72 @@
 {
- "generado": "2026-09-25T11:19:55+00:00",
+ "generado": "2026-09-25T21:12:19+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "b549d71e0b39": {
-   "id_hecho": "b549d71e0b39",
-   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNRW4xa0pVdzlTY3ZXMXl0TDJWZ0ptME02R01TZ3hoc3BxOFg5UXZzaTdpczAyaXBaRXZiRFYzbkk2TDdWOGlVb2t3Zi1tZHRuRG9UWllxc0ZfaDhvZHZLWGlLeTltRnN2QzFQOU4xTFJnMl9ib1cwM2pxbEtGOE02SGt4SzF2c1dNbzFwVVc3dnFFcTBwWGp3bHdCeFlsdEhocUJBTmJuYWJvSHVDLVZGMDZIYVRza0dRWjV6REE2NUU5RUFEclU0WnBVZzJ2VFhGeEU5SG12T1ExYXNtY1RxSVhoUVAwZXo1aHJNdFk5Y0hMMWt6RDlFMHlSNVVxTlN2TzNCRmZ5QnV6ZUd5cFpHX3R4NHZ5ZlZkRXZwMmNia3poMFNfMDltU2I5cDRvMmPSAbQCQVVfeXFMT09CWGI4enpvQzQ0U1MxSjUxcG5tN1huQXd0RXEzMy1qaTdkN3JiemJ5NFlSWjB3TGRnYW5TOEt4aUxydzZkamJONGk0Y2VLV0xHT3VNaWxKRHlUNERCT3V4QzRqTjhSRGNXZF9TdTFNUTB2RDRDWV9tRDYxbThhX3RSWmM4NE4tOTZKS2kyMy1YZkMxUkxzYmlJZERkNF9BX200WGFRa0wya0J6N1VHT2lEbEl5ajFUREd4Z2M5RWt2ZS1OUXNzTE9XQjRIWTlmTlVwbTJNUXpfZlBiYWxsNnAtSnNpSmM4czUtT1Fkb19yMlAzX1lRRHJmTko4THNrX2tKbm4ta0hab2VhVTZTb3pST0xtaDB5VWR6NEtlWkN4ckg1b21UVkRPUE82VV9yZnBpaUU?oc=5",
-   "termino": "deportaciones",
+  "f8a66ea14eab": {
+   "id_hecho": "f8a66ea14eab",
+   "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPU2JMU0ItY1djSUNhTHF3azBvbG9TVjRmMEFuMk52dW1IYWlBS3NKRGIyQXA1cU03Y2dNOExGaWNBTVc1WkttaDJkZm1DUzVCS1R3SE9PVkQ2c1l1a21PV3gzb1A0UldxWE9wVlhJQmQ2dDIzT1BIdEt1ZEN5akd3ZUVST1BrLThzTkd5WldkRUdzaUl5SENLYXVDbGE2SEMya3g5QzVMWGdTWWcyOVdiRE5RWUs0VGNKeGplUHpzT094ZUxxZi1oelM4ZTZfTDRVQ3VJdVotTjNTOXAtOU9TYnFTYVcyUHV0MDFhSWMyUm5DTWJocDNNYVNraklwTk1LYm9zaGxpNDd5UXNYR3U4N1Y1aUMzWWZDNTJNUTVmRWF6S1VUMlRLS01ENTFXNTdIV2ZRNGdnNVpvcGJqbHfSAcMCQVVfeXFMTVhZLW9BZHlzMFpJNGZxZmZ0MG1ja2lxZ09SRURmM0lXT09uR3pDV2xubmtSNlVBSENJcVg2b1FHTVR4czIybmtmZENnMWNxZGpjUWE2U1QzcFdqYUdVdm1zWWVFMUFRNUdDZzBHNERfQ25MTGxmdDlYR2lfODJOWGQ1ODhTbHJsMUlKX2VhZ3hBSEJNcXBYZlZ3UldJRVhtQl9KS0xvQVVud2JVQUlORXhTUVJySUcwSC1sNEtsd2pQZnFueTM4TU9nT0ctNFotSlJrbllEb09GR3d6MUlfU3p0NVJVSW9WX3V4SEstZTBZajRONnAwQXlUNkFwR0Z5dFQxT2xnQW5mUDRPMTNQbUFkVDBjRk5DeEpwY1RMZXI1UUxBS3FFeTUyQklRYUtOZkdNUHdtc0M3blRMVUluc3M1Vk0?oc=5",
+   "termino": "refugiados",
    "geo": "US",
-   "titulo": "Guatemala investiga muerte de migrante tras intento de intervención de patrullas del ICE",
+   "titulo": "La administración Trump planea admitir hasta 17,500 refugiados en EE.UU. en 2027: quiénes tendrían prioridad",
    "importancia": 9,
-   "velocidad": 7,
+   "velocidad": 3,
    "puntaje": 0,
-   "reciente": 10.4,
-   "base": 4.0,
+   "reciente": 5.6,
+   "base": 1.7,
    "ratio": null
   },
-  "34dab9b95fd9": {
-   "id_hecho": "34dab9b95fd9",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQYUE4Z3dvaFg3enNSSjIxSHlKd3FmcGp4endYTDlDMVpnT05fb08zRWtjLXhWSlRsSGZwamhPRFlweUpEdFhDRjJCdTB1LThReVpJSndtdmVsd0RmRXZkMWp0cmxCMUQ0VTBRODRSUUNHSHI2QTE4WVgxM3FtTlMyU2VuTlJYZ1ZqVnVSTlZvc0pFWmpBbFdpYTBibXM2RE1XVmxZQXpJeEJGRnZCUjIwLXZXbGZ3VFJWU2EyakdtVnNsUHJFTjFWNnQ3WUxzMDNUekRQMWpWWHFNSFJzekNKdTdtMTdoWTlMRVlzTXV0eDZkVktzZUE?oc=5",
+  "f8413baa92eb": {
+   "id_hecho": "f8413baa92eb",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNd19feTRvd3dqVUV0NXoyY3VJN2FBdDNfbVBzbFlZbUxZdWY4OURTS05qR1dOc1U2dElDTk5sOUVjZl9NbzJJdS1KQjNnQ2tuZUVVQmZrb1NuZ19WM05HaXZkTjBaenNreEdkRUZ6bHI3ODcwZVpQRTdZNTFkV09uNHREU09ZUnVQMVNqcG1VSjdZUjdJREFSanMtVlU5UjdoSmNQeTRCMkFYLTZBZG5LektiX1doTFFMWjQ0LTAyMWVqcEd5TmsyX0J2ZVVyR2s0dUFiQnBqQ1gxdDF2UnJNc3NEemJzbVFCTzhlWXA4bm1wMi1IeHRpMEhhSG1RR2VBN3FRVDZta0VCVXMxVEJEd3ln0gGSAkFVX3lxTE13X195NG93d2pVRXQ1ejJjdUk3YUF0M19tUHNsWVltTFl1Zjg5RFNLTmpHV05zVTZ0SUNOTmw5RWNmX01vMkl1LUpCM2dDa25lRVVCZmtvU25nX1YzTkdpdmROMFp6c2t4R2RFRnpscjc4NzBlWlBFN1k1MWRXT240dERTT1lSdVAxU2pwbVVKN1lSN0lEQVJqcy1WVTlSN2hKY1B5NEIyQVgtNkFkbkt6S2JfV2hMUUxaNDQtMDIxZWpwR3lOazJfQnZlVXJHazR1QWJCcGpDWDF0MXZSck1zc0R6YnNtUUJPOGVZcDhubXAyLUh4dGkwSGFIbVFHZUE3cVFUNm1rRUJVczFUQkR3eWc?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Amnistía Internacional pide eliminar ICE tras denunciar patrón de abusos contra migrantes en EE UU",
-   "importancia": 8,
+   "titulo": "Terror para inmigrantes legales en EE.UU. | Se reveló que una persona fue detenida por el ICE dentro de un tribunal",
+   "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 10.4,
-   "base": 4.0,
+   "reciente": 9.6,
+   "base": 4.5,
    "ratio": null
   },
-  "e86e129fe6d7": {
-   "id_hecho": "e86e129fe6d7",
-   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQZzM4X3RSdUJydk80TEhfQTJzeVVtd1RiYWdFcUJQNnpaSDVrSGc0Y1JZOUhrQUg3LTNzN3VYc0FOQ2lQSnRtT2p3WnQ5RnNGeFI0ZS1SZkhJZ0JrOHY5Nzh3ZlFwUXRsX2JwaGdtRGx6VUl3UnlBZGw4RjJIUDllVXYzUTBPV29zbGNzckZCZ3pFQWd1NTR1TnBmSGthbVh2RUdfQnlvRHRUR2pzbkg3aWtpWlpOSTd3enFvNFhobWJIM21fUExQYk11UTdqakRfb3gxQ1IyNUZTTXo5elE0S1hIMUFnU0t2alhCRVg4SWhHa3cwaERxNldLelRCY21CTUZpT1JRSGMzY2E3SDd5ck45Y3VsSm1ycWZDTNIBnAJBVV95cUxQZzM4X3RSdUJydk80TEhfQTJzeVVtd1RiYWdFcUJQNnpaSDVrSGc0Y1JZOUhrQUg3LTNzN3VYc0FOQ2lQSnRtT2p3WnQ5RnNGeFI0ZS1SZkhJZ0JrOHY5Nzh3ZlFwUXRsX2JwaGdtRGx6VUl3UnlBZGw4RjJIUDllVXYzUTBPV29zbGNzckZCZ3pFQWd1NTR1TnBmSGthbVh2RUdfQnlvRHRUR2pzbkg3aWtpWlpOSTd3enFvNFhobWJIM21fUExQYk11UTdqakRfb3gxQ1IyNUZTTXo5elE0S1hIMUFnU0t2alhCRVg4SWhHa3cwaERxNldLelRCY21CTUZpT1JRSGMzY2E3SDd5ck45Y3VsSm1ycWZDTA?oc=5",
+  "508ec511715c": {
+   "id_hecho": "508ec511715c",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNaGt6VnhjX2hPSEpDNXF6aGhaUnJhTGoyUFBIUnk3aDJKM3MwbmtJT2NXU0FYWjN6QmlCZU9fU2lSVHc5SnlpM2ZyVk1mVlRqZlFhQXYzTl9BSFd0WTRfZlM5R2Mta1RvTFhkZ0tDNUFQVnRyMGFMUVF5dVpxdFZuVWlXbnNYSGx1c1Y1Z3RGazRIQWV2Yjg2bTBvQmZMczhWdjRKWnl6cTY1YnZsYjVMTmlpYmtVTThublI1dFZBbU1ZRDBFcnlvZDQ2NFpxd0J1b1M5a3ZfNGF6VEMwUHVMTGFFOW8yR1d6akHSAeoBQVVfeXFMTWhrelZ4Y19oT0hKQzVxemhoWlJyYUxqMlBQSFJ5N2gySjNzMG5rSU9jV1NBWFozekJpQmVPX1NpUlR3OUp5aTNmclZNZlZUamZRYUF2M05fQUhXdFk0X2ZTOUdjLWtUb0xYZGdLQzVBUFZ0cjBhTFFReXVacXRWblVpV25zWEhsdXNWNWd0Rms0SEFldmI4Nm0wb0JmTHM4VnY0Slp5enE2NWJ2bGI1TE5paWJrVU04bm5SNXRWQW1NWUQwRXJ5b2Q0NjRacXdCdW9TOWt2XzRhelRDMFB1TExhRTlvMkdXempB?oc=5",
+   "termino": "solicitantes de asilo",
+   "geo": "US",
+   "titulo": "EEUU apuesta en ONU por el fin del desplazamiento forzado y reformar el sistema de asilo",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 1.4,
+   "base": 0.1,
+   "ratio": null
+  },
+  "1e2dad559c89": {
+   "id_hecho": "1e2dad559c89",
+   "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPS2VzSFVmTm04MUR4bWtJWUFCcUxna0tVemYwS0VXOE5fTzFTVTJjNHZ6em1hZW1aNFdrZDhIcDh1UVhQZ1dKaVAxallHNUhzaFhha3h3WlBpYWx2N0FwVWlZQXdMXzdjQjMwV01RNDgydHFrLThrUkJPa3ZFcVJJNGFZYnMyOGdpalJySkE4TkN0QVdOd1lSc0xfZ2JyTzBTLS1kZEkwMGV1Um1TRTZFNmxJNzBjLXpuRHFHWUoyeVJXOFZfM0lpeTNOUHBVQ1E0cmFYTTZtYUhMWVFPcUVSUkdYR2ZLbDN0dFFQblV3ZzRsdGNUdDUtWl95SkI2NkpmMEhZMEpULVhmUkR6ZHV6TUNuR1A3blZyekU5YVN2TnNkOTlsc1ZWTjV5aGRqbFFBai1LbVFn0gG7AkFVX3lxTE9SUE1YSVFLdDVhWWx0RzUzd18tXy1vdldLSjR4bUdraGpncDJJZVR4eWQ2MzZlaXNEczF0M1d2MXZNUmUzeUNkaGhYaVZwOHotMldKZFF1LW1jeWNYbnNQcTdJQkUtLXBqbmVMZVJRWUFNN1dnOE9lek01UTd6TGpRYXJLd3VUNkZlUmtoWG9SLUNwdnZDam5QUThOUWFEazR4dFkzaldRWTEteUVoRUYwaFZra1lVTElzVVdveE8tRlhDUkhFTDdraHp6eU5POTBMVXhNdk82aGRzeVUtSk9MTDFSNzFZYXBwZHo0VXB4UDFuay1zN0ZXNXhDYUE0eTlKd1hBZWMzREdJY3JORlpNVFE0TC01bEc5M0ZHYVhFem1SSW9lT1hlN3hKbkZGdnVDMUkwdFlpeGR6WQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Amnistía Internacional pide disolver ICE tras denunciar abusos a migrantes",
+   "titulo": "Alerta máxima inmigrantes legales e indocumentados | Alcaldesa de esta ciudad en Florida reveló que firmó acuerdo con el ICE bajo amenazas",
    "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 10.4,
-   "base": 4.0,
+   "reciente": 9.6,
+   "base": 4.5,
    "ratio": null
   },
-  "0523b5676f16": {
-   "id_hecho": "0523b5676f16",
-   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOUEVxQzZDanIwdXJ3SDJDVzJQRHRteDRuTk42Z2JWaW1iSWdfV3oyb0h3M0xQcWRiT3JUa21hMEJZTURGTmlVczFuY3VUaEtfWFB2UGxqQW5ydXM1cE9kMjUwUy0zakYySDVIVXJXRXB3OUVwbGp1djZnTHdWVEJTQ2lIZUM5eXJPV1B0UEI3WU5fWlNaekZGZkxmSmJ1cUZFYW5XOGN5b25vcEEzdE1MYy1zSVBGUDd2U01JXzkxLVhobTZvTFJibFd4QWF4MkNMSHBjZ1dmYkhxQmxFOFh1OHd6QUNFaTVYblEtZkNZeFNGLUZkVC1yZXN0RFBXZVFOLXVUVVI1N3dsZDg3MGstd3dGdEMycTZ0ckxNSGZB?oc=5",
+  "f813d84038c1": {
+   "id_hecho": "f813d84038c1",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQ0xlNVdGRFoxMThueHUxQ3NYTDBpMnRPV1dTdjVDbHJVYngxY3FHYzBaczNUdExseTB2OXBnNExhVUUydWZORGZjd1cxa3ZKNjBqWDlXYmtQdEpySjR3UkRWTk91OGV1ZDFYNlpBTWlQZlZ2QzVxNkdWY3ROSUxRaEhqNDlDdnVaT213c2JDNnN0WC1iQlUwZnR1aTlhX25XS29nZlUxdzlQVElhOG5OR2tHNktKcVpCRUxJZmpJVDdONVZIMk55N2ZsUWU5aFo2aVE?oc=5",
    "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "ICE oculta la ubicación de 16 mil migrantes con órdenes de deportación",
+   "geo": "CL",
+   "titulo": "Director de Migraciones asegura que acuerdo con Venezuela para retomar vuelos de expulsión está “muy cerca”",
    "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 10.4,
-   "base": 4.0,
-   "ratio": null
-  },
-  "091c6e69c0ba": {
-   "id_hecho": "091c6e69c0ba",
-   "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPNmZuWU9RcW12REl6MlQxX01iVXVjY0R4Nlp3SjdsT0dEdDluSThrMVFhNlgxakdEOTVrYVp0czZJTXEyamdsWTREQVFlbzlPcDBXVkN3aE9iRFRzcDA5X1hLLWNFeWZOZktXemtIU3Z1b21LaGIxUDFReG14Y0VBdl90RXBQSUhVYzFrdG02a2hBUUljZWU5STRxM0VuWWI5TmlBcWNQX3paamwzVnphbUxhb0pLMGZhSENzVW1KNTlsQ3ZzUDNhNEUwTFMwM2M2cTZaai04VndnN3Q2MGRxeWhEU1NYTHhTbFlXbWhUbkRRYkxkMEZVRjlXdmhrTWo3MVBGa3JBSkZzc2lWcWowcXotU29INkl5clZjY3Vtazg4ak90blU2MVF0V1Q2WTFEcmFQMzlSY2FET03SAdYCQVVfeXFMUFZ5Vm5wMWdMYm9kXzRkX1YwbDVOTjh4bC01empjN29Lc1FLMms1WTUwM1dhZ1RBOTdVZ1lqTXY3VDMzZm9MYWxwVTRHQ2IyMjB5LXV3clpETVBuZWdqSE5KYnFpVlhQQmlGbldQdFNmR3FqcXpaclhMbkdzTm1TMjd2SG5sRTNvWkVIWGdDY1lMZlBJWXJQMm9zUG15bmtHVWlQcTB6OG9hWEwxZHpqdlZEZTNXVWZvTW1QS1lpc1Y3RFFZNFJqeW55RmEyY0dGSnp2NU4weTBHZk9hbXF2RmJiRi1xRVNPb2JOTVlhMnZMSDRVV2lINFltQ2dMOTRxcy1rSHpqLXRtb2R2YVNVQ2lCdlZKT1dBMlpOamxTUG52UmhaUzJKQXpBTzZ5VDMwYXVmWUxETjRGalB0TV9PeTRad3V3WUNxQWFOUXdXSHBoMVV4OXd3?oc=5",
-   "termino": "tráfico de migrantes",
-   "geo": "US",
-   "titulo": "Falsos asilos y viajes a México: así delinquía una red de tráfico de migrantes hacia EE. UU.",
-   "importancia": 8,
-   "velocidad": 3,
+   "velocidad": 4,
    "puntaje": 0,
    "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "761a34120e45": {
-   "id_hecho": "761a34120e45",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZXFfcDNsbmpQT2RTVERUTlZFZDJ0SDJtSWFHajduZDRRZTBOS3RDSmx3Q0hVc3dITHliUFExcVI3LUh6QXBOaGRpWGNhczBhZEhyZkE4ck5rSlhPQ0NMbVRFTHJwWVNsZllkc0lwbENaOW12QXlqUWdkc0padWJTVUlHRTgtR2FHTk9zUnVPcEFmOHZ4T1FNMzB1T0tNR3p1TXpTbkZqdjNxMkVyZVRaRzd3?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Llegan al país dos nuevos vuelos de deportación desde EE. UU. con 406 migrantes",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 10.4,
-   "base": 4.0,
+   "base": 1.1,
    "ratio": null
   }
  },
@@ -87,36 +74,42 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta migrantes",
-     "valor": "1265150",
+     "consulta": "ceuta",
+     "valor": "1306600",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes significado",
+     "valor": "225500",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "172850",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes estoy a un vaso remix",
-     "valor": "58600",
+     "valor": "169350",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-25T11:19:38+00:00"
+   "medido": "2026-09-25T21:12:03+00:00"
   },
   "VE": {
    "consultas": [
     {
      "consulta": "migrantes o inmigrantes",
-     "valor": "242750",
+     "valor": "18350",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "ceuta",
+     "valor": "800",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-22T11:05:21+00:00"
+   "medido": "2026-09-25T21:12:11+00:00"
   },
   "CL": {
    "consultas": [
@@ -245,22 +238,22 @@
    "medido": "2026-09-24T11:15:08+00:00"
   }
  },
- "proximo_pais": 0,
+ "proximo_pais": 1,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 4,
-   "reciente": 16.0,
-   "base": 8.0,
-   "ratio": 1.99
+   "puntaje": 6,
+   "reciente": 16.4,
+   "base": 6.9,
+   "ratio": 2.37
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 15.1,
-   "base": 5.2,
-   "ratio": 2.92
+   "reciente": 24.9,
+   "base": 5.1,
+   "ratio": 4.9
   }
  },
  "alertas": []
