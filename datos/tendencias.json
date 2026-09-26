@@ -1,72 +1,72 @@
 {
- "generado": "2026-09-26T10:57:12+00:00",
+ "generado": "2026-09-26T20:44:54+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "b3b0f39b1cf1": {
-   "id_hecho": "b3b0f39b1cf1",
-   "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNOFptWG9pQ0dNMm9jZ2x3U1Uwd2Npc25fVWNGZ0FLQnJqZEpLNlVsRFJqOHI0cnZ4eS1td1BHcXlvQjdyWm9MVi1uZ1FMVlFfdmgtLVdzdkZFbktjX1dHSGp4MGx5cDdzbDVlbTBwTzZjZFFWYVpJTklhamF6dlpVTF9MdG9henNaRzZYVTB0YWlueERaYWszbldlZ0lBV1BoVGcydENYZER0STgxN0x3ZENiaXBUVG9teWZISEdWTTU4RmRENDlKcjh4bVhUdFNtZjNXY05zbGlVYzJWckxYN0tFNlBMMjBUTk5hVm54WllVWTNuOGpYYXBYaVlTQnYzUEl5OFc5dWFpdnRWbDEyUHNjS3dYOTdiOUM3aFhwNlh3WDU0aGdqQUY0WDR4bVk5OFZv0gGzAkFVX3lxTE04Wm1Yb2lDR00yb2NnbHdTVTB3Y2lzbl9VY0ZnQUtCcmpkSks2VWxEUmo4cjRydnh5LW13UEdxeW9CN3Jab0xWLW5nUUxWUV92aC0tV3N2RkVuS2NfV0dIangwbHlwN3NsNWVtMHBPNmNkUVZhWklOSWFqYXp2WlVMX0x0b2F6c1pHNlhVMHRhaW54RFphazNuV2VnSUFXUGhUZzJ0Q1hkRHRJODE3THdkQ2JpcFRUb215ZkhIR1ZNNThGZEQ0OUpyOHhtWFR0U21mM1djTnNsaVVjMlZyTFg3S0U2UEwyMFROTmFWbnhaWVVZM244alhhcFhpWVNCdjNQSXk4Vzl1YWl2dFZsMTJQc2NLd1g5N2I5QzdoWHA2WHdYNTRoZ2pBRjRYNHhtWTk4Vm8?oc=5",
-   "termino": "desplazamiento interno",
-   "geo": "MX",
-   "titulo": "Desplazamiento forzado en Chihuahua: 36 familias huyen",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 10,
-   "reciente": 44.6,
-   "base": 4.3,
-   "ratio": 10.44
-  },
-  "1e2dad559c89": {
-   "id_hecho": "1e2dad559c89",
-   "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPS2VzSFVmTm04MUR4bWtJWUFCcUxna0tVemYwS0VXOE5fTzFTVTJjNHZ6em1hZW1aNFdrZDhIcDh1UVhQZ1dKaVAxallHNUhzaFhha3h3WlBpYWx2N0FwVWlZQXdMXzdjQjMwV01RNDgydHFrLThrUkJPa3ZFcVJJNGFZYnMyOGdpalJySkE4TkN0QVdOd1lSc0xfZ2JyTzBTLS1kZEkwMGV1Um1TRTZFNmxJNzBjLXpuRHFHWUoyeVJXOFZfM0lpeTNOUHBVQ1E0cmFYTTZtYUhMWVFPcUVSUkdYR2ZLbDN0dFFQblV3ZzRsdGNUdDUtWl95SkI2NkpmMEhZMEpULVhmUkR6ZHV6TUNuR1A3blZyekU5YVN2TnNkOTlsc1ZWTjV5aGRqbFFBai1LbVFn0gG7AkFVX3lxTE9SUE1YSVFLdDVhWWx0RzUzd18tXy1vdldLSjR4bUdraGpncDJJZVR4eWQ2MzZlaXNEczF0M1d2MXZNUmUzeUNkaGhYaVZwOHotMldKZFF1LW1jeWNYbnNQcTdJQkUtLXBqbmVMZVJRWUFNN1dnOE9lek01UTd6TGpRYXJLd3VUNkZlUmtoWG9SLUNwdnZDam5QUThOUWFEazR4dFkzaldRWTEteUVoRUYwaFZra1lVTElzVVdveE8tRlhDUkhFTDdraHp6eU5POTBMVXhNdk82aGRzeVUtSk9MTDFSNzFZYXBwZHo0VXB4UDFuay1zN0ZXNXhDYUE0eTlKd1hBZWMzREdJY3JORlpNVFE0TC01bEc5M0ZHYVhFem1SSW9lT1hlN3hKbkZGdnVDMUkwdFlpeGR6WQ?oc=5",
-   "termino": "deportaciones",
+  "4ffe811a08d6": {
+   "id_hecho": "4ffe811a08d6",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZVdpaW8xZDBiRVRJdFV0REIyazBza21yRk44VWpXeVIyQkZCM1RYaGFiZnhEcWZLWkFnd21wQkpIcm1DUk9NSlZ1Uy1wbXBXN05takRaNllqQ29zclA2dF94T3pMYmF2YmdabTRvcWxDRUZJVWFscnJhT0xKNGR5WXpscTdxVmhnX051ZnhtNzhOdVl5dHNaMVZCeEN0NnF2Tjl5cHNCWFM4dEpmWGxnUjRUWEhEcnZlWW9vMy1zZDJvZzJTMzgxeEFKMVFzcExTRVlPV0pHLTNSdw?oc=5",
+   "termino": "fondos refugiados estados",
    "geo": "US",
-   "titulo": "Alerta máxima inmigrantes legales e indocumentados | Alcaldesa de esta ciudad en Florida reveló que firmó acuerdo con el ICE bajo amenazas",
-   "importancia": 8,
-   "velocidad": 3,
+   "titulo": "Gobierno de Trump cancela millones en financiación para refugiados, inmigrantes detenidos y otros servicios",
+   "importancia": 10,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 1.1,
-   "base": 0.7,
+   "reciente": 0.0,
+   "base": 1.2,
    "ratio": null
   },
-  "7ad79b4ec85c": {
-   "id_hecho": "7ad79b4ec85c",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV25UZmViT19fdDdsdHN1Nll1UjVSTi1SOHdxUEl2WVhHRUNCVUlLT2FVbThxYmNkVHozN2VoQWVjb1k0WnF0dmhJWmVZUlp1dWdXcl9UV3QwaFFEamk4ZlYzcWZwc2xDNk1PZjIyWVhqXzRZWmNCS0thaVN2UVN3NG5vWEtmT2k5eWh0dUVaaFZ5VU1McVowLXViQTRIUEFkeG12a3RFM1FPRVNhOXJtbWM5STdhbHJlRG9xWHN4RFN6NXhIbWJoUVhXSE1pVWZZU09zLW9R?oc=5",
-   "termino": "asilo",
+  "94467823d854": {
+   "id_hecho": "94467823d854",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaV9BdlRlTVpRM1Q0TDdYSm1hUHM4YlY0WFByaW1pcDB1ZDBlNFBxbmRaUmJhcHYyeXdsUTRnQmdCS0kxTEotZVY3SUNKeW9kZTJiUzRNM3Q0bklmbTJVWjd3TXVqN3pjRHdlVV9CWkNidFhjZ25tdjR5NHNJTXZQTzVJTTlfSFVrSHhVb0RuLUJOTlV2UGRJeEo5TUhYX0s2M3FocG1FMGlRQnhjTlBPRnRzaEI0T2RPMnI5cVRMYWw2Z0xGS19aLW5EVXowMmgwN2p6eGlibGhLQ1djbmx0bEd2NEFPOG5qNHNnSTMtQXFIUQ?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "EEUU apuesta en ONU por el fin del desplazamiento forzado y reformar el sistema de asilo",
+   "titulo": "ICE planea usar camionetas como unidades móviles de detención: en qué consiste la estrategia contra migrantes en EE.UU.",
+   "importancia": 8,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 8.4,
+   "base": 5.0,
+   "ratio": null
+  },
+  "5549d56dcad1": {
+   "id_hecho": "5549d56dcad1",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxObkFXVmwtY0Y1cTZGOVdqUnhRZE5lQ19XeG5nLTNhR1FxQkVaSUNXaHhOWWFmRHl4a0hORGpYR3czWVV6Q3lHTkFLdENUVXVKcWhqLVpBMC1fNFJCQjh3ajVhTWh3dzBqdWZCaEVDUWNSbnZHUU5PMXltTWRobDg5VFp4dTkyUkltRXI2Qm5zMHd5S2ZuV2ZFdW5UaW1KODlmamFyeFB5SFBHYW9nX3B5QnhGRi1TdW5mVGh0NE1lQnFabDM0OTZBdFFwWUIzY2RpampFUWR6Z3NtYldfV3FoaVJ6VlBYOVczV3ZxRjVRTGlqRFA1MEZZOWZZNlZXekFZX2poU2VtTm1vOVZl?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Amnistía Internacional demanda la disolución del ICE",
    "importancia": 7,
    "velocidad": 4,
    "puntaje": 0,
-   "reciente": 34.7,
-   "base": 39.8,
-   "ratio": 0.87
+   "reciente": 8.4,
+   "base": 5.0,
+   "ratio": null
   },
-  "887c36ae9e31": {
-   "id_hecho": "887c36ae9e31",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVWRMeGhlc09XOG9PS0lpTThFREhleTJ2XzNyWUdTSHYtSGU4Ti1LeklvNC13MmMxT2Z5dzVtMTd1bEZwcHUzeVpadWRZdzZPMXdVSVJBZkE1TU1vcDlnWXM0cFdGOFNnYnQyQUVoSG91OFBLbzV1QUs4Y2M2WHVsY1FId1VKNS0wVUFIdzREVFVxRkdHbTJ4MGt1d19CNVNrZGdhX2gzMmJSdDA4VDVManVLOTJlY2xWTGl1TA?oc=5",
-   "termino": "caravana migrantes",
-   "geo": "GT",
+  "f48816c92711": {
+   "id_hecho": "f48816c92711",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWjJNRlJMaHZFQTJ0azEyQkdOM1doVTRLdEpjVGtwNWZFUjlMdWFKbVZURk1kX0h3dy1XbHVDYk9BWm5paEp3b2ZoSXh5QVRMZ09IMDZEbkNJTUlJOVdhb1JkeUVBMktoY096UHR6VHEtVVpRSlU3VG5zbHBTSGJNN0JiTWtrLVdQQVByclJmWlIwbElHandxSG90bWZGWGgxN3Br0gGjAUFVX3lxTE5aMk1GUkxodkVBMnRrMTJCR04zV2hVNEt0SmNUa3A1ZkVSOUx1YUptVlRGTWRfSHd3LVdsdUNiT0FabmloSndvZmhJeHlBVExnT0gwNkRuQ0lNSUk5V2FvUmR5RUEyS2hjT3pQdHpUcS1VWlFKVTdUbnNscFNIYk03QmJNa2stV1BBUHJyUmZaUjBsSUdqd3FIb3RtZkZYaDE3cGs?oc=5",
+   "termino": "caravana de migrantes",
+   "geo": "MX",
    "titulo": "Caravana de unos 300 migrantes centroamericanos se desplaza a México desde Guatemala",
-   "importancia": 7,
+   "importancia": 8,
    "velocidad": 7,
-   "puntaje": 10,
-   "reciente": 21.6,
-   "base": 1.6,
-   "ratio": 13.29
+   "puntaje": 0,
+   "reciente": 14.3,
+   "base": 1.1,
+   "ratio": null
   },
-  "5f1e0d67f1aa": {
-   "id_hecho": "5f1e0d67f1aa",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORUFQX25lY1E1TUpBNmJTWXpDSGx1STV6RndXTkhJMVFqQndlQmRGZ1c3bzc2czdTRDZXNjl0MFpfWEY5NzdnOVIwdUdpTnlIVnQydHJqaTFfTmxjQm9tSTI0YzJGZm9fYm9Qc3BrUFBSZko2eXdUcU0wRTRYMUwxWlpfTjcwVlNLcldQemYtc1otSFhkZ1pGTkMxaDdQeGFBaDY5STlrY1U1bWd5MHFpakxrekY3ek9va2xsUUdjNFh1aF81UTRBeFIzQXVBTVk?oc=5",
-   "termino": "derechos migrantes",
-   "geo": "AR",
-   "titulo": "En ILC Consultores – Braulio Jatar & Asociados creemos en la defensa de los derechos de inmigrantes",
-   "importancia": 2,
+  "c6c305f51213": {
+   "id_hecho": "c6c305f51213",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNaUp6NFVaZEZSYjhyYTM3SWdWSm0zTUlwMFhRM0Q5eTBSMVk0ZTlLRmZlcEtXWktnNGFhbzRaSjRRbklHUGpHSEpnQUdFODMtNWZzNEN0T25iSmxfcFVOUUg2SGE2VmRaUlZwLUxzelFZakU2R21UNkc4Y19XRmdoajdPd1lqdWxveHNRRnVOakd5WXNKTVBHXzhNZEU5WVU5aGVIQmtuZndibm5yeWNhdERfSnVwUFY5SzdsQ3lsejZVNlMtSUVIaFJnRTZMZVBaeTROSUk0aXZzR1Jrand1SEVZbjBybXhnQXZIbjk2SdIB7wFBVV95cUxNaUp6NFVaZEZSYjhyYTM3SWdWSm0zTUlwMFhRM0Q5eTBSMVk0ZTlLRmZlcEtXWktnNGFhbzRaSjRRbklHUGpHSEpnQUdFODMtNWZzNEN0T25iSmxfcFVOUUg2SGE2VmRaUlZwLUxzelFZakU2R21UNkc4Y19XRmdoajdPd1lqdWxveHNRRnVOakd5WXNKTVBHXzhNZEU5WVU5aGVIQmtuZndibm5yeWNhdERfSnVwUFY5SzdsQ3lsejZVNlMtSUVIaFJnRTZMZVBaeTROSUk0aXZzR1Jrand1SEVZbjBybXhnQXZIbjk2SQ?oc=5",
+   "termino": "migrantes",
+   "geo": "ES",
+   "titulo": "Condenados a dos años por recoger a inmigrantes de pateras en Almería para su traslado",
+   "importancia": 8,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
+   "reciente": 12.9,
+   "base": 15.7,
    "ratio": null
   }
  },
@@ -75,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "98",
-     "tipo": "top",
+     "valor": "1288350",
+     "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "202900",
+     "valor": "185250",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes e inmigrantes diferencia",
-     "valor": "38250",
-     "tipo": "rising",
+     "consulta": "inmigrantes",
+     "valor": "50",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-26T10:56:55+00:00"
+   "medido": "2026-09-26T20:44:37+00:00"
   },
   "VE": {
    "consultas": [
@@ -207,24 +207,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1750",
+     "valor": "419450",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes mexico",
+     "consulta": "qué abusos sufren las personas migrantes",
+     "valor": "5500",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "que es migrantes",
      "valor": "100",
      "tipo": "top",
-     "variantes": 1
-    },
-    {
-     "consulta": "migrantes estoy a un vaso remix",
-     "valor": "3700",
-     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-23T10:55:56+00:00"
+   "medido": "2026-09-26T20:44:46+00:00"
   },
   "UY": {
    "consultas": [
@@ -238,22 +238,22 @@
    "medido": "2026-09-24T11:15:08+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 6,
-   "reciente": 15.0,
-   "base": 6.5,
-   "ratio": 2.33
+   "puntaje": 10,
+   "reciente": 15.9,
+   "base": 4.5,
+   "ratio": 3.49
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 20.9,
-   "base": 4.7,
-   "ratio": 4.41
+   "puntaje": 7,
+   "reciente": 20.7,
+   "base": 8.3,
+   "ratio": 2.49
   }
  },
  "alertas": [
@@ -272,7 +272,7 @@
    "disparada": "2026-09-26T10:57:12+00:00",
    "velocidad_inicial": 5,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 9.8
   },
   {
    "id_hecho": "887c36ae9e31",
@@ -281,15 +281,15 @@
    "geo": "GT",
    "titulo": "Caravana de unos 300 migrantes centroamericanos se desplaza a México desde Guatemala",
    "importancia": 7,
-   "velocidad": 7,
+   "velocidad": 1,
    "puntaje": 10,
    "reciente": 21.6,
    "base": 1.6,
    "ratio": 13.29,
    "disparada": "2026-09-26T10:57:12+00:00",
    "velocidad_inicial": 7,
-   "desenlace": "vigente",
-   "horas": 0
+   "desenlace": "se_enfrio",
+   "horas": 9.8
   }
  ]
 }
