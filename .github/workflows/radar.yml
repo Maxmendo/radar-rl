@@ -1,4 +1,4 @@
-name: Radar migratorio
+﻿name: Radar migratorio
 
 # CADENCIA
 #
@@ -14,7 +14,7 @@ name: Radar migratorio
 # Consumo: 8 x 30 x ~2-3 min = 480-720 de los 2.000 minutos gratuitos mensuales.
 on:
   schedule:
-    - cron: "0 */3 * * *"
+    - cron: "0 10,16,21 * * *"
   workflow_dispatch:
     inputs:
       forzar_digest:
@@ -40,7 +40,7 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - name: Traer el código
+      - name: Traer el cÃ³digo
         uses: actions/checkout@v4
 
       - name: Preparar Python
@@ -58,7 +58,7 @@ jobs:
       - name: Instalar navegador Playwright
         run: python -m playwright install --with-deps chromium
 
-      # ¿Esta corrida genera el digest diario?
+      # Â¿Esta corrida genera el digest diario?
       - name: Decidir si toca digest
         id: cuando
         run: |
@@ -132,7 +132,7 @@ jobs:
         run: python scripts/muestrear_feeds.py | tee datos/muestra.txt
 
       # ------------------------------------------------------------------
-      # FASE 2 — descomentar a medida que exista cada modulo.
+      # FASE 2 â€” descomentar a medida que exista cada modulo.
       # Orden de construccion: ingesta -> deduplicacion -> memoria y velocidad
       # -> clasificacion -> tablero real -> alertas.
       #
@@ -140,13 +140,13 @@ jobs:
       # Su unica salida son los archivos de datos/ y docs/.
       # ------------------------------------------------------------------
       #
-      # - name: Ingesta y deduplicación
+      # - name: Ingesta y deduplicaciÃ³n
       #   run: python -m nucleo.correr --ingesta
       #
-      # - name: Velocidad y aceleración
+      # - name: Velocidad y aceleraciÃ³n
       #   run: python -m nucleo.velocidad
       #
-      # - name: Clasificación
+      # - name: ClasificaciÃ³n
       #   env:
       #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       #     ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
