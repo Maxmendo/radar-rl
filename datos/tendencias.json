@@ -1,98 +1,85 @@
 {
- "generado": "2026-09-27T11:33:05+00:00",
+ "generado": "2026-09-27T21:00:12+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "4ffe811a08d6": {
-   "id_hecho": "4ffe811a08d6",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZVdpaW8xZDBiRVRJdFV0REIyazBza21yRk44VWpXeVIyQkZCM1RYaGFiZnhEcWZLWkFnd21wQkpIcm1DUk9NSlZ1Uy1wbXBXN05takRaNllqQ29zclA2dF94T3pMYmF2YmdabTRvcWxDRUZJVWFscnJhT0xKNGR5WXpscTdxVmhnX051ZnhtNzhOdVl5dHNaMVZCeEN0NnF2Tjl5cHNCWFM4dEpmWGxnUjRUWEhEcnZlWW9vMy1zZDJvZzJTMzgxeEFKMVFzcExTRVlPV0pHLTNSdw?oc=5",
-   "termino": "financiamiento asilo",
+  "edc5f99c8d94": {
+   "id_hecho": "edc5f99c8d94",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTkh4OWhSbXNTZEFCXzl5MEFWVWZTbC1DZ2tybmk3RWNVV3ZpU2JnVXNhQm9PNDlwak1nd1lWSTJ1OE5XTjVHcU1jdS1XVkxkNWpndzVvWXpEZ0dVUk9pV243Z0wxcmdobnZWbjIyVkx3OE5GYUszY3ZXLUlMWWtBeUpHeF9QMFcwUXlWT0t4ZS1JdmVPVzlYN3dURF9oMU9ZRlpBTUVNYzZlckhMRGIzOVV5WGpNd0F2OWJaWklMR1B6bmdZcGdUTnZzYlI1eDZuNkE?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Gobierno de Trump cancela millones en financiación para refugiados, inmigrantes detenidos y otros servicios",
-   "importancia": 10,
-   "velocidad": 7,
+   "titulo": "ICE mantendrá su política de detenciones a inmigrantes, el DHS niega que existan cambios",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 17.1,
+   "base": 5.7,
+   "ratio": 3.02
+  },
+  "f2e24f7fca26": {
+   "id_hecho": "f2e24f7fca26",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcXRaSklPZC1QSmhuYUlKQWFaX1RiV2Z1R2dhaGNkVkhGUmVxR0JHTGRzN0sxT1owSVBDTkNoOWNVSW9tUk5Vazk0U0xiTkd1MkZ6U2dZVW5JcnhYVGpsS2FsTHRRbFA4SnlpZmJHMEVfdFNkelYwbGRWYjVtaTFZM0hkUUJTYW5xTlVnTFdrM0x3QlZaazlocWtFdDJGb3BYaHNYNW5zekIwQmE3cXMwUw?oc=5",
+   "termino": "redadas migratorias",
+   "geo": "US",
+   "titulo": "Redadas en EU Golpean a Mexicanos: Amnistía Internacional",
+   "importancia": 8,
+   "velocidad": 3,
    "puntaje": 0,
    "reciente": 0.0,
    "base": 0.0,
    "ratio": null
   },
-  "07e097ee6753": {
-   "id_hecho": "07e097ee6753",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOLXVHbkh0aldrUmNTcklUR29vcVFSWHlGOWxqQXpzTjcyS3lyYkd6NzhFTm9uby1PY1J0dGprVlhMZ2tCTzNwR3lkWEx1RkZoUEJxbUVJZTNodXZ3cURkUk84c2dORXBFankxUlhyQXhoWEVBVEZKVTlxZWV5LS1OQ3hSWmNBS3BPUUZRcFh2Y1pnUjliZkZCYWhQZndrU28ta21PWERfNGJsM3paSEhPOXhSanVFZEI5UURiNVNUZm5VcjhjdWdhRmRPSmstY0Z0dGpkakk4U0JVam1nSk1GY3B1Yw?oc=5",
-   "termino": "inmigrantes",
+  "605d842dfe46": {
+   "id_hecho": "605d842dfe46",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcTRWRXl2N1M5bXh4aTRBbWhYQlFqamd0ajJVT0VySVNOWGd1NXVMMU5zdkdkdkhPVTB0TzRGMml6OG53NGtJZ1B5aHZtbXNDc0w4SnNGQTVzOHhKalB6ZFctRGhWLVo5S3ZoYm81Mkt6b0R4UmRyUUNxUXRwWVVHemRpVENHNTVLVUlmWTZfTnByNlBiOGs1TDQ1dC13cXlSVEw0ejJhOEwtaTQ0amt4WXNRTFZOd19jX2REMU5HYmlBMVFIRjQxVnROX1ktcGtocG9fMg?oc=5",
+   "termino": "detencion migratoria",
    "geo": "US",
-   "titulo": "Trump cancela casi $1,000 millones destinados a inmigrantes y programas de diversidad aprobados por el Congreso",
-   "importancia": 10,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 30.7,
-   "base": 37.6,
-   "ratio": 0.82
-  },
-  "f2e24f7fca26": {
-   "id_hecho": "f2e24f7fca26",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcXRaSklPZC1QSmhuYUlKQWFaX1RiV2Z1R2dhaGNkVkhGUmVxR0JHTGRzN0sxT1owSVBDTkNoOWNVSW9tUk5Vazk0U0xiTkd1MkZ6U2dZVW5JcnhYVGpsS2FsTHRRbFA4SnlpZmJHMEVfdFNkelYwbGRWYjVtaTFZM0hkUUJTYW5xTlVnTFdrM0x3QlZaazlocWtFdDJGb3BYaHNYNW5zekIwQmE3cXMwUw?oc=5",
-   "termino": "redadas",
-   "geo": "US",
-   "titulo": "Redadas en EU golpean a mexicanos; Amnistía documenta",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 6.0,
-   "base": 3.7,
-   "ratio": null
-  },
-  "3944a8775f48": {
-   "id_hecho": "3944a8775f48",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOYnhMaWRDMmNQUkVCMnZDOHRVSXo1bExpX0MxRGx0TE81d1EtMUM5aWdTZldPS0szTGdmQk5UNGFja2YwT2VERHZiRkN0WVlVNEp0VWMyczhwUDhSRFlaNmNUNGYzcU1nbnhXWmt1TzBZVVNSSXJUekFIbkM1N0dXMHQ3VkREUkpfWlFybnlUWGJvUEFDUjlDMVlRSDdIakJRN1BNbGstOUNlZ0xZT1hDU2ZwSnVmYUo4cldreVAwZFQzOGVvVWhpNmFqWEFjdGpqZ2NyZTJCdjMxNXRGekU2alVQTXZBNmVMRTdaLUR5ckJGYmt0anBfbFd1VUJRU0VDcUw0bldNZHJZdmdWdmfSAZMCQVVfeXFMTzR5RFdkSU1VZ1V6SGh1WWx0V2RuazdjTTlXdy1vbzhONkNGMnFESVZ4N283SEVhRXJaazhrNnlHTHdiQUN2LS1mRHRFeWkzMnM3Ui1pWVRYcUVaT1l2ZUI5aDlCMFNNQUpRU29ZeFpLWlpvd0NaZ0VhZHU2c2xUQVR0MV9pcDdwWHJsV1Nobnd4Vl8xSjVyYktUS1piYlVCYWozVU56Z0ZTWm9vLXhGWWowdXNXanVlV1l3RkFPbEV0ZVNqOGtBeFFWaDhmVkNIQl9qekhENVQyb3lrWFYySlFqdnVlMkFubjFHLWZ4RnhsOW51cVdFUUd1eFdDV2FDaDlWZWVuOFZ2cUVEUnJ5bkFlSzg?oc=5",
-   "termino": "detenciones",
-   "geo": "US",
-   "titulo": "Alerta inmigrantes en EE.UU. | ICE planea utilizar \"instalaciones móviles\" para realizar más detenciones: Así es la nueva estrategia",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 3.0,
-   "base": 1.7,
-   "ratio": null
-  },
-  "2730756a31e1": {
-   "id_hecho": "2730756a31e1",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbFYxeFh2RE5PTEtiOEp2Qi1URkNmWXJEWUZ4bFU2UkVCTDc4ekRleXlpTnVEdkE5YjQtSmdKV1M3T3hST3ZHUjFGYXl6TDlUVjFiSnBScGZFdmdLN3Iyem10SmUzOFYzRkx3QnRDZXJRRWRqay0zTXd4MkM2eklYNVJNT2ViUVY4eUNHTEg3bUMwY00zOFlfM3JR0gGaAUFVX3lxTE44YUdXaExOb3ZFeXREMlU3Zk1seWwtT205cHBrck9NamdqLWJ0X0VuWXN4akhHbW5QR3VhZEtncUluZy14TExMOUVmM1BZSzQ5ZVZzUXVxa3lCUlNVOUFnVjQyRGZ3NHRSWFBzVTJqVHVfa3IxUVlVandPaWZOWG1BUVBuOEx6cG1uVlRscFlaRmxLVnNQRmdCM0E?oc=5",
-   "termino": "refugiados",
-   "geo": "MX",
-   "titulo": "Barham Salih, Alto Comisionado de ACNUR, visita México por primera vez",
+   "titulo": "La esposa del periodista Luis Galeano confirma su salida de un centro de detención",
    "importancia": 7,
    "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 39.7,
-   "base": 7.4,
-   "ratio": 5.38
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "4ccc2b6841fd": {
+   "id_hecho": "4ccc2b6841fd",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQ3VFSUM2Vl9wa0Rpd1NtdTVjeWhQbXhvN1RncTVVSkhNaVRJd2Q1bzFtanA0LXlQaWJ3N3RJdG9hS05CcmdEXzZEWk9pOFU4WGFlclhRcjdWQkJmZTRrOC14MnhlTjk1aldjenY0UjFJWU9ZSWhzZWVBSGgtUWUtdks5dGdfZGkzNzBMc3hFdkotNGQzYTV1OFhTdm1oMVRHT2ZuVGZ6WjNfWFVCWk9IelVBVS0tUGxGeXVodnA0U2pYVGFycGMtYS00emtJekdtaGdSRQ?oc=5",
+   "termino": "refugio",
+   "geo": "MX",
+   "titulo": "Barham Salih, Alto Comisionado de ACNUR, visita México por primera vez",
+   "importancia": 8,
+   "velocidad": 7,
+   "puntaje": 0,
+   "reciente": 26.9,
+   "base": 30.0,
+   "ratio": 0.89
   }
  },
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 1
-    },
-    {
-     "consulta": "migrantes significado",
-     "valor": "118700",
+     "consulta": "ceuta migrantes",
+     "valor": "1313400",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "diferencia entre migrantes e inmigrantes",
-     "valor": "28700",
+     "consulta": "decime como haces letra",
+     "valor": "18800",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes estoy a un vaso remix",
+     "valor": "3400",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-27T11:32:41+00:00"
+   "medido": "2026-09-27T20:59:56+00:00"
   },
   "VE": {
    "consultas": [
@@ -230,35 +217,50 @@
    "consultas": [
     {
      "consulta": "ceuta migrantes",
-     "valor": "888600",
+     "valor": "735000",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-24T11:15:08+00:00"
+   "medido": "2026-09-27T21:00:04+00:00"
   }
  },
- "proximo_pais": 4,
- "paises_sin_datos": [
-  "CO"
- ],
+ "proximo_pais": 5,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 27.6,
-   "base": 7.0,
-   "ratio": 3.96
+   "reciente": 26.9,
+   "base": 8.2,
+   "ratio": 3.27
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 25.6,
-   "base": 5.2,
-   "ratio": 4.92
+   "reciente": 23.1,
+   "base": 3.9,
+   "ratio": 5.91
   }
  },
  "alertas": [
+  {
+   "id_hecho": "edc5f99c8d94",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTkh4OWhSbXNTZEFCXzl5MEFWVWZTbC1DZ2tybmk3RWNVV3ZpU2JnVXNhQm9PNDlwak1nd1lWSTJ1OE5XTjVHcU1jdS1XVkxkNWpndzVvWXpEZ0dVUk9pV243Z0wxcmdobnZWbjIyVkx3OE5GYUszY3ZXLUlMWWtBeUpHeF9QMFcwUXlWT0t4ZS1JdmVPVzlYN3dURF9oMU9ZRlpBTUVNYzZlckhMRGIzOVV5WGpNd0F2OWJaWklMR1B6bmdZcGdUTnZzYlI1eDZuNkE?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "ICE mantendrá su política de detenciones a inmigrantes, el DHS niega que existan cambios",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 17.1,
+   "base": 5.7,
+   "ratio": 3.02,
+   "disparada": "2026-09-27T21:00:12+00:00",
+   "velocidad_inicial": 4,
+   "desenlace": "vigente",
+   "horas": 0
+  },
   {
    "id_hecho": "2730756a31e1",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbFYxeFh2RE5PTEtiOEp2Qi1URkNmWXJEWUZ4bFU2UkVCTDc4ekRleXlpTnVEdkE5YjQtSmdKV1M3T3hST3ZHUjFGYXl6TDlUVjFiSnBScGZFdmdLN3Iyem10SmUzOFYzRkx3QnRDZXJRRWRqay0zTXd4MkM2eklYNVJNT2ViUVY4eUNHTEg3bUMwY00zOFlfM3JR0gGaAUFVX3lxTE44YUdXaExOb3ZFeXREMlU3Zk1seWwtT205cHBrck9NamdqLWJ0X0VuWXN4akhHbW5QR3VhZEtncUluZy14TExMOUVmM1BZSzQ5ZVZzUXVxa3lCUlNVOUFnVjQyRGZ3NHRSWFBzVTJqVHVfa3IxUVlVandPaWZOWG1BUVBuOEx6cG1uVlRscFlaRmxLVnNQRmdCM0E?oc=5",
@@ -274,7 +276,7 @@
    "disparada": "2026-09-27T11:33:05+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 9.5
   }
  ]
 }
