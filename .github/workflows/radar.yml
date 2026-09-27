@@ -203,10 +203,6 @@ jobs:
           # trabajar. Fue la causa del fallo del 2026-08-02.
           git add datos/ docs/ prompts/
 
-          # Descarta cualquier resto no rastreado antes del pull. Sin esto,
-          # un archivo temporal de una corrida rota bloquea todas las siguientes.
-          git checkout -- . 2>/dev/null || true
-
           git diff --staged --quiet || git commit -m "Radar: corrida $(date -u '+%Y-%m-%d %H:%M') UTC"
 
           # Reintentos: con ocho corridas diarias mas commits manuales, el push
