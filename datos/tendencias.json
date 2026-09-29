@@ -1,73 +1,60 @@
 {
- "generado": "2026-09-28T18:05:56+00:00",
+ "generado": "2026-09-29T16:29:45+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "bd4a203ed3fa": {
-   "id_hecho": "bd4a203ed3fa",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSXFDYmN5YUp6c1RPbGQtcGI0MWNGWE5WYjVUdDdXdW95M1luRnNxdTBySlphTUQwQzdYdTFYamZCakp2WmRXcVBBd09LazBuLXpoeVZ5NWpXaF92b2hRMURVN2pmSTl2dEVKUUhMNlpVa2hNYXR2WktYU1hIVUx3MU9TMWxsaDB1WmU2M0o4eWNIMlpGSHJRRFoyc3BNVU83VmFBTkUxeUlseE9yTWsxSF9ZUnJveHJLUGJ6TjlJbHNwQW1Ud2FWM2tMYU0tQXZwQ0g1d0pEcTdDb0RoeHM3TzNB?oc=5",
-   "termino": "politica migratoria",
+  "daf73ea4e9a7": {
+   "id_hecho": "daf73ea4e9a7",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNWNES1lFR0Z6aW1PYVZVcjN1di1vNmNZREpLbUZWc3E5TmNsZUEtY3pwT1prMDZFOUpxNlBBMm5XRnBxZkNqUGVXSDlkdkI2Q3RVdDZmMTVna0wyUy0wMUJXMHprbjgtUE9xaEY5ekZIclYxRjVHLThQekI4dzNheDFxWi1INDZtdkp2aw?oc=5",
+   "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Oficial: Trump cancela casi US$1000 millones destinados a inmigrantes y aprobados por el Congreso",
+   "titulo": "Identifican a agente de ICE involucrado en muerte de mexicano",
+   "importancia": 9,
+   "velocidad": 6,
+   "puntaje": 0,
+   "reciente": 12.6,
+   "base": 5.4,
+   "ratio": null
+  },
+  "ede6ad867f4c": {
+   "id_hecho": "ede6ad867f4c",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeXBTNFktcWFQdlJmckJEM0VBbHNnYjZTUVNuZF8wdkcxVHdLa200WEctQ2lGcmhOcjNJTUFwMlI5UGt2SHZ2MlRsLXdTTzJhLUNMSUZnUW9lTGdjUVM1c2dXRk5VNS12QXVRemNzaHVMMmFQNEEyLUpXcHpWSTFjMlo0dnBFNENyR0tmWXlUOWFZc2F1ZGpwRlFmZDFEZ3dNNi1FdFlta0p3Qmo3ekpjazRUcmVfc3FJWko4VmM4X1hxZw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "EE.UU. ha expulsados 23 mil migrantes a terceros países",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
+   "reciente": 12.6,
+   "base": 5.4,
    "ratio": null
   },
-  "90d9d0fc909b": {
-   "id_hecho": "90d9d0fc909b",
-   "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNNk5TR1B3d0MtajN0NkZMZF9wU3hLU280ZTh5Q01qWDFBWXh0OXFBOFhyMUlIZGNaY0xFT3RVcVBkT0xQTzBaNnhqc0dObThWYUx3VkQ3WjNHMDlTTFpvSVZxeXlNdUpXdkZrZ3A4bEJpQnJ2LWlDU2NRZGY3OTRlaGtoX0U3NWZMeThiWXJKZjk0NFhCbkt2Vk9CV3FuZWZGZHEtZUNERmtnZ21uOFdWb2VaaGNmQUlnYzllYVJXQzlkdWxyUXl0UFBqNTZOeHdhd0dRUm1YaWxvMC1lalJmcjliWUhxSVluSmlod2RMYTA0cTFxclZYUG1oUEJlXzB4V0ZUajRneHl3eDl0QWZKVWVPRUlaUXRIY281SWF1dkRUNGxYTVAtUldlN3dJUUh0LTVpaWxvZG9JQnYzbVk0WXhuSdIBwwJBVV95cUxNNk5TR1B3d0MtajN0NkZMZF9wU3hLU280ZTh5Q01qWDFBWXh0OXFBOFhyMUlIZGNaY0xFT3RVcVBkT0xQTzBaNnhqc0dObThWYUx3VkQ3WjNHMDlTTFpvSVZxeXlNdUpXdkZrZ3A4bEJpQnJ2LWlDU2NRZGY3OTRlaGtoX0U3NWZMeThiWXJKZjk0NFhCbkt2Vk9CV3FuZWZGZHEtZUNERmtnZ21uOFdWb2VaaGNmQUlnYzllYVJXQzlkdWxyUXl0UFBqNTZOeHdhd0dRUm1YaWxvMC1lalJmcjliWUhxSVluSmlod2RMYTA0cTFxclZYUG1oUEJlXzB4V0ZUajRneHl3eDl0QWZKVWVPRUlaUXRIY281SWF1dkRUNGxYTVAtUldlN3dJUUh0LTVpaWxvZG9JQnYzbVk0WXhuSQ?oc=5",
+  "a95cd7374a69": {
+   "id_hecho": "a95cd7374a69",
+   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQT2NvZl9mT0M2MzBKVEpCamJxeXMtNjlTQnhVVXVEN0NHLWs3MUNYOEVXaGhMM3FBREFVZW5DRmhFY3ZCOVU5VkVZcmxhcFo5empqVkd5TksyRjBvZUtBb0EtdV9OWHNHeE90SFp0TmMyU0Zpc3I2WlgyRVMzSklhZExvWTVoZ1kwY0paRHBfUm8tbkY0RWR4c01abGhkR2k4Qmw0bzZ4bFRTTk9wVkxNUTdaY3NDWmdsS1ROb0k1cG01cG15S2FDY2thbF9DMFNWVGRZOWdzYTk2WnVCV2czLU9JaTlLeDMtZFRGcXhTeUkzYl8zSEllVF9uMDdzSWQ1Vkh6LTZBSWYzRDBrbmVZNHY5ZThqWUJ10gGeAkFVX3lxTFBYbmJUV3RYbWZxVlg4WUpGdVlrdWpMWHNGcDdmSW1WXzFoS1czQk13TElqM1k4eXdNNG1tSlpteVd0aXR3YkFlYWFwZFNlZHdzVktYZTRnMDBNNTNLRW1PZjhlV0ZPMHJabzVhRGc2TlBxTmRjMUVxeGstak5rUGs1MVBrQkl3cXQ3ZGdGRFdtWk01VUN1eEdUcFhkTXdEdlRYaGtReUlmTHBDdnVVVklfYVdRZUtJRnJrYzlZYVdHdG42Y25DZVY3ekJXbVF4ZmozbkxYaWJoLU1sd25XMGxkX2NUd0FVZmxuakRKczQ0cGp1RGtDN3FsNDZaaHhJQW1qVlVPWVR3NDBRSkMxSG44MXp3bGZnMEVHTl93QUE?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "DHS asegura que seguirá arrestando inmigrantes indocumentados sin antecedentes penales",
+   "titulo": "\"Nadie está exento\": Seguridad Nacional niega que solo arresten a inmigrantes con antecedentes",
    "importancia": 8,
-   "velocidad": 7,
+   "velocidad": 4,
    "puntaje": 0,
-   "reciente": 14.3,
-   "base": 6.1,
+   "reciente": 12.6,
+   "base": 5.4,
    "ratio": null
   },
-  "7b4b5b3d1d13": {
-   "id_hecho": "7b4b5b3d1d13",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMlA4bzdmek5WMHhKQ3dhOG5kbHg3SkZBWW9qLUZ2MXVVZ3Nxd2dQTjhxVVNRWE56MmJKNm4xekZ3SkhIZWJZQjdMT2FNY1FfOUNVSEZsbmNOeDBFcDdhbWl5Ml9DMkF0V1dzVG1aR2tkMWdlX0xNLWlRWDNuU2JvbEtHdW9kNUZ0cHE4Z3ZfaEVrNEJVc2lIeUpWd2VEcHdBTGVGLXVSeTlxYlBwMlRGazZMc0Vtc3A0cmUxZ3RqNXJfQkNRaGR4V3NtZTFOM1dteUZWQnQycUVMaDYtOWlqU1RCRFXSAeQBQVVfeXFMTTJQOG83ZnpOVjB4SkN3YThuZGx4N0pGQVlvai1GdjF1VWdzcXdnUE44cVVTUVhOejJiSjZuMXpGd0pISGViWUI3TE9hTWNRXzlDVUhGbG5jTngwRXA3YW1peTJfQzJBdFdXc1RtWkdrZDFnZV9MTS1pUVgzblNib2xLR3VvZDVGdHBxOGd2X2hFazRCVXNpSHlKVndlRHB3QUxlRi11Unk5cWJQcDJURms2THNFbXNwNHJlMWd0ajVyX0JDUWhkeFdzbWUxTjNXbXlGVkJ0MnFFTGg2LTlpalNUQkRV?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Ingeniera venezolana es detenida por ICE durante presentación de rutina en Dallas",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 14.3,
-   "base": 6.1,
-   "ratio": null
-  },
-  "68c3e1531591": {
-   "id_hecho": "68c3e1531591",
-   "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPd3pKNWRQWTN6NjVyNE4yZm1pektmeHludDZET2NUclNfYUxMdmNKT0xhQVpLdExyQVZoaTNWTy1RQ3pXVllyQjhqclozQ3RhTXZ5aC1jaTJ4OGRDQS1YYWVRRGR3Tm9oS0NaRVZxSHJhaVpxeEhGajRzNzctUFpFOEdJdHFUYjUyOU8xSnN3UWloQkNHb2t0NVlrcnNMdnA4bTU2NDBWc01tOE5ac0llRTE2S2JsSXM3RkdiWW5LV1FuRnRuYXMwSVdydW9NSjRibjJtS3Zydmhibi1wbWFsVkFQNGt0NDRXekVYRS1NWTlrZkdweVEwZ1ZDRFRhc0VfS1cxajZleFg4MmZBaGh6ekRTbWtjbEhRZW1uaHBoRGxmTTU0alhlazZnWdIBqwJBVV95cUxPd3pKNWRQWTN6NjVyNE4yZm1pektmeHludDZET2NUclNfYUxMdmNKT0xhQVpLdExyQVZoaTNWTy1RQ3pXVllyQjhqclozQ3RhTXZ5aC1jaTJ4OGRDQS1YYWVRRGR3Tm9oS0NaRVZxSHJhaVpxeEhGajRzNzctUFpFOEdJdHFUYjUyOU8xSnN3UWloQkNHb2t0NVlrcnNMdnA4bTU2NDBWc01tOE5ac0llRTE2S2JsSXM3RkdiWW5LV1FuRnRuYXMwSVdydW9NSjRibjJtS3Zydmhibi1wbWFsVkFQNGt0NDRXekVYRS1NWTlrZkdweVEwZ1ZDRFRhc0VfS1cxajZleFg4MmZBaGh6ekRTbWtjbEhRZW1uaHBoRGxmTTU0alhlazZnWQ?oc=5",
-   "termino": "trafico de migrantes",
-   "geo": "PA",
-   "titulo": "Capturan en Panamá a un colombiano que movilizaba a tres ciudadanas chinas hacia Estados Unidos: habían entrado a ese país sin autorización",
-   "importancia": 7,
+  "8c5a330108f5": {
+   "id_hecho": "8c5a330108f5",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYnhkaGd0ekI3cmRRZkQ3MVpQd2ZXSjBRc3kwRm5LOFRpaDNtaDFOckYxMTFHQ1NMTzluRzYwNTFRUXZNLThaVnhGU1N6dGJXclhtYWtZd3AzVFF5UzJOZXRfVzBPcGl0N3BjZEtpalB6VlBEaTJlWF94c0wybU1mREhha0pOei1nRVpyd1Qtb3FnMHFiejlTMHRSNkNfUjlJeDhXbXlNV0xmY2RnVTlrYXhDUE8wS2tzVU9mbU1WU2ROVzJxekppTlhZU3R3WlJObldVR2w4UmRMOHBUMkZ4Zk0xUmbSAeQBQVVfeXFMUGJ4ZGhndHpCN3JkUWZENzFaUHdmV0owUXN5MEZuSzhUaWgzbWgxTnJGMTExR0NTTE85bkc2MDUxUVF2TS04WlZ4RlNTenRiV3JYbWFrWXdwM1RReVMyTmV0X1cwT3BpdDdwY2RLaWpQelZQRGkyZVhfeHNMMm1NZkRIYWtKTnotZ0VacndULW9xZzBxYno5UzB0UjZDX1I5SXg4V215TVdMZmNkZ1U5a2F4Q1BPMEtrc1VPZm1NVlNkTlcycXpKaU5YWVN0d1pSTm5XVUdsOFJkTDhwVDJGeGZNMVJm?oc=5",
+   "termino": "refugiados",
+   "geo": "AR",
+   "titulo": "ACNUR podría dejar de asistir a 8,3 millones de personas por los recortes financieros",
+   "importancia": 9,
    "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
-   "ratio": null
-  },
-  "ddb01fdbaf5f": {
-   "id_hecho": "ddb01fdbaf5f",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQd0NaR1pKS0tsMGllVV92WE9jOERjVkhodDB0TUExVTBEUV81MXk2dWkxVzhqTjFDRzBtS3Q3anJzbVpMaGdmdnlFUmp0QWtZM01LM1Y2ckZtM0lubDZRSmlIVHZBMUluaGxaby1KUy0xUHAxcEtod19BT0xsZnRYdDBlTzhjbzFSeTM2LXd5MWtZaERod29ULTA4ZWZYZkpZY2JMX2FEdjNtVlZoN0VnNlduczR6cURLR0RwSDlvenpuNlhZLTcxekFTRGQ?oc=5",
-   "termino": "refugio",
-   "geo": "MX",
-   "titulo": "Barham Salih llega a México para conocer el modelo de refugio e integración",
-   "importancia": 6,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 28.0,
-   "base": 29.7,
-   "ratio": 0.94
+   "puntaje": 10,
+   "reciente": 28.9,
+   "base": 5.8,
+   "ratio": 4.98
   }
  },
  "audiencia": {
@@ -75,24 +62,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1280050",
+     "valor": "1250150",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "197050",
+     "valor": "192400",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes me duele que me duelas",
-     "valor": "33",
+     "consulta": "inmigrantes",
+     "valor": "44",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-28T18:05:39+00:00"
+   "medido": "2026-09-29T16:29:28+00:00"
   },
   "VE": {
    "consultas": [
@@ -183,25 +170,19 @@
   "ES": {
    "consultas": [
     {
-     "consulta": "migrantes ceuta",
+     "consulta": "ceuta",
      "valor": "100",
      "tipo": "top",
-     "variantes": 1
-    },
-    {
-     "consulta": "cuantos migrantes quedan en ceuta",
-     "valor": "75950",
-     "tipo": "rising",
-     "variantes": 0
+     "variantes": 3
     },
     {
      "consulta": "marc vidal, el problema que nadie quiere nombrar es que los migrantes regularizados cotizan a la seguridad social, y eso está bien, pero lo hacen sobre una base bajísima",
-     "valor": "75150",
+     "valor": "86800",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-25T11:19:47+00:00"
+   "medido": "2026-09-29T16:29:37+00:00"
   },
   "MX": {
    "consultas": [
@@ -238,23 +219,41 @@
    "medido": "2026-09-27T21:00:04+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 23.4,
-   "base": 6.1,
-   "ratio": 3.87
+   "puntaje": 5,
+   "reciente": 20.3,
+   "base": 9.3,
+   "ratio": 2.18
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 28.1,
-   "base": 6.3,
-   "ratio": 4.47
+   "reciente": 22.4,
+   "base": 6.5,
+   "ratio": 3.43
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "8c5a330108f5",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYnhkaGd0ekI3cmRRZkQ3MVpQd2ZXSjBRc3kwRm5LOFRpaDNtaDFOckYxMTFHQ1NMTzluRzYwNTFRUXZNLThaVnhGU1N6dGJXclhtYWtZd3AzVFF5UzJOZXRfVzBPcGl0N3BjZEtpalB6VlBEaTJlWF94c0wybU1mREhha0pOei1nRVpyd1Qtb3FnMHFiejlTMHRSNkNfUjlJeDhXbXlNV0xmY2RnVTlrYXhDUE8wS2tzVU9mbU1WU2ROVzJxekppTlhZU3R3WlJObldVR2w4UmRMOHBUMkZ4Zk0xUmbSAeQBQVVfeXFMUGJ4ZGhndHpCN3JkUWZENzFaUHdmV0owUXN5MEZuSzhUaWgzbWgxTnJGMTExR0NTTE85bkc2MDUxUVF2TS04WlZ4RlNTenRiV3JYbWFrWXdwM1RReVMyTmV0X1cwT3BpdDdwY2RLaWpQelZQRGkyZVhfeHNMMm1NZkRIYWtKTnotZ0VacndULW9xZzBxYno5UzB0UjZDX1I5SXg4V215TVdMZmNkZ1U5a2F4Q1BPMEtrc1VPZm1NVlNkTlcycXpKaU5YWVN0d1pSTm5XVUdsOFJkTDhwVDJGeGZNMVJm?oc=5",
+   "termino": "refugiados",
+   "geo": "AR",
+   "titulo": "ACNUR podría dejar de asistir a 8,3 millones de personas por los recortes financieros",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 28.9,
+   "base": 5.8,
+   "ratio": 4.98,
+   "disparada": "2026-09-29T16:29:45+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
