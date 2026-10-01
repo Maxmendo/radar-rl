@@ -1,111 +1,32 @@
 {
- "generado": "2026-09-30T16:24:19+00:00",
+ "generado": "2026-10-01T00:36:54+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "6fd232107a40": {
-   "id_hecho": "6fd232107a40",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNM0NPRWRwMEtfcVI5UFdWZlFLNWJTWUdRQ09NOFU0bm53WHVrMy1yRWFyN2o0cjJDMjZRdm82bGgwSHRYdjBjTGE3UjNGTF9ZbzVUZVdONDdLQ0RKbnM2NnpDQ0xtbEFfaFVWazRKUVpRUFJvbUlSQ3lpREppS3NvQkFLQkdtMV9ZN1hHT3cyT2Zrc0RMY1l0UjRlOTV2M2ZhQkF2WG8waEFPNnpwMkRPamNvUzVmbHN4M2gxVVlhRS14ei1nMHBEeGttQm9sTWk0bURZTVlidU1hMzdQaHVJeGYzbmdFN3hCNEVCQ0JCNWNuNm1FUF82TkF1YzV1YWhxRFE40gGDAkFVX3lxTE9qdWtaTzFjSHQ5Y3hESHBHMS1sVV9Iczc5WXk4NWFOQlZ1VUd6WGJITldkQU14anNQN0pVYXoyOGxYcEF2ZXduSnRlRjlqdi0wM2doUkdqMGw5eFZyZDdKZF9uNWtmcVRDQTlkR3JqWkdmejN6RXduM3ZCalFwTTJ4N1BKdVVJSzBrREE0c3VaQmNuRlE4ZzZvZDNSS3JoXzdlbWJoVVhVODg2cHFQcnFuZm5xX2Zrc0E0WlllN2ZfbDlvcUs4Q2hBNURRdlgtZmtzNXBQaFpJRGROemdfOVI4b3N5djA5UVRQSTFuMThENDNrQ05Mc0k4VXdxNTY1WnhydEk?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Gobierno de Trump pide cerrar la investigación de desacato por la expulsión de venezolanos a El Salvador",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 10,
-   "reciente": 21.9,
-   "base": 4.0,
-   "ratio": 5.45
-  },
-  "c3a79a4f19b4": {
-   "id_hecho": "c3a79a4f19b4",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSjdDMVIwN1UxWGxYR2xoRFg3NGtyWkhZQlpJekE1MXBBdUsxUzF4ZjlhNE5iaXhraFlTM2hPZ0plN0I3azdZaGFYWGhmRXlpclprTklZYjVLVG1uWW42T1hISFBONk5IX3FfV1FGM1hMTm1UWW5kVUdvR2hoRm13Y3V3dFpiY3RMU1prTlNsR1dVV2V5YmE5WXVQWlphMU01SmdSWFR1MWJqaVNaMGFOUUZVaDZWNkE1c2xzMExSVWVxVkE?oc=5",
-   "termino": "detencion migratoria",
-   "geo": "US",
-   "titulo": "Denuncian «represión y tortura» en centros de detención de migrantes de ICE en Arizona",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "c6c175b8854e": {
-   "id_hecho": "c6c175b8854e",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUDJXTG1pV2JpMUhoVG5HcTBXRG1DaFo5Yi1wVHRab2FZV1dlZ1VpaDhBUDJaNHVCMWU5VEE1V2pWbGdZY0pPN0NlTWlTMHBZMVpnSkRaMkdvY1Qwdzluc25Mb3o2djJsS01BN2EtQkFGOGpybHk5aVM0RUpMOEFUaTc5bVBvdkMzWWRqNDRhZEFuMmpxM3RmWnhtT04zTTdMMXI4M2tGNExSa0hoWG10eEpn?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "EEUU acusa al migrante venezolano baleado por ICE en Austin de agredir a un agente federal",
-   "importancia": 9,
-   "velocidad": 4,
-   "puntaje": 10,
-   "reciente": 21.9,
-   "base": 4.0,
-   "ratio": 5.45
-  },
-  "25ce4825bb2c": {
-   "id_hecho": "25ce4825bb2c",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPX0VKSGc3NGlLRE1IYmVXSWdSOGZ6NmViR0htOXluSGhsUE1HbllvREkxdVIzeDBMRXBuRkhyUEdaS096enMtUVJsTWM1Vm9LYllzU0JaMTdLTE9kbWQwSDFpS0tSNVpHMEw2M3I3SHJLRDVsRTRJSnVobVVtRElhd0Jjc3hYU21rQjZpcGJDZ1VneDhFSWVTek9VaTUzU1ptTmlIdDhvRllDQXg4TnlfVHdCT3pFNXJ0YllqMDA1RUxZX3IwTEJKSzNBeDc1akFrYnlxREt6SzlTZDVmcjl5YkdEbnp1ZV9nS0ZqRFRuOTRTbFBqSHQxeXF5SjNyQdIBkgJBVV95cUxPS0tSbUc2R0Y0MFVmTUtZd0hVakw1cjBYSVRVUU1yWk5GblFzdlE2b2tLa3laclFwQ2xvaTJicmtPeHkwSHlCMXNxSGszN1NkRFUyWUpjUVQ1MkFWQWdkcDRWTVhSaXhYZVNPS0d4LU1XaUpmNEJIQ0FTbVhGeEUwcVVKcWRIZXdDRS1iOGNqcExtY0FTdzlsNmM4SVk5R1Q0OG9rZU1TTVBoeGxuRVlHSFlWWUVsSkphT0ZBVFlDZmgxcVVfNHJSYklJX1ZHT2QtLVc0T2tDdXVTMEktZnhTTUUzZExPVHN5UzluanhhcjBsTk9zN0dhbzJnLTgydFU2VjB3ZlY4ZzNaR2lYczN4bmh3?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "El Gobierno de Trump presenta cargos por agresión contra Wilber Garcés, el migrante herido por un agente del ICE en Austin",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 21.9,
-   "base": 4.0,
-   "ratio": 5.45
-  },
-  "ad010c616694": {
-   "id_hecho": "ad010c616694",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMk85TE1tbUVxc0RIbjlfYVpDbV91NnVNQlZpSG5sdEUtM25oUl9wcHNrMndsa1ZRQTVnX2laZGVwQWpOS0dCZ09aZ0pxb2paMHhBcXpDSm1wSXZVQWoxdFdVUGRJSDVhSjFEMWhsV2dwa2VjU1JuSG1FZlRJN3Iyc3R4M0Z2NzN1d2IxSkZ6eUQ1NUs2UWRtMkYwaTJ4Y1V0Z2NnSi1MYl9zcjNneHZ5UEpsQU44NUlGcEw0SkJwRWE?oc=5",
-   "termino": "centros de detencion",
-   "geo": "US",
-   "titulo": "Colorado demanda al Gobierno de EEUU para frenar nuevo centro de detención de inmigrantes",
-   "importancia": 8,
-   "velocidad": 4,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.1,
-   "ratio": null
-  },
-  "24447d6925c2": {
-   "id_hecho": "24447d6925c2",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQRFZ0Q2FLQ3BnTDR3WWRUdW5CSG1DTVo2cUotUTBCY2RGNHdVZko4RXljdXdNaEZlZjJ3OExpQ08yRG9wWnBnNjNqcEZ2dExBRlRQNVVBdk5mTzgyaVhrVVJ6dWNzM0JHVjNIVGVfaGh2UERGNllSdjRkN2hwOGljZXBfRVRDOThmbU9JSkkwbEg1bjRtZl9vNUZpNERINzBhaFdtVXhIamZhblBsd2x2d3RhMTlLdUNnUmNlMVhfVGxqb3RUNkQ1VjBVRU1WbDd3bWlScFd6dWVyWGZyaEhNbkxWZzVETVY4ZkV1VDkxUnpRamfSAfMBQVVfeXFMUERWdENhS0NwZ0w0d1lkVHVuQkhtQ01aNnFKLVEwQmNkRjR3VWZKOEV5Y3V3TWhGZWYydzhMaUNPMkRvcFpwZzYzanBGdnRMQUZUUDVVQXZOZk84MmlYa1VSenVjczNCR1YzSFRlX2hodlBERjZZUnY0ZDdocDhpY2VwX0VUQzk4Zm1PSUpJMGxINW40bWZfbzVGaTRESDcwYWhXbVV4SGpmYW5QbHdsdnd0YTE5S3VDZ1JjZTFYX1Rsam90VDZENVYwVUVNVmw3d21pUnBXenVlclhmcmhITW5MVmc1RE1WOGZFdVQ5MVJ6UWpn?oc=5",
-   "termino": "desplazamiento forzado",
-   "geo": "CO",
-   "titulo": "Nariño, cuarto departamento más afectado por el desplazamiento forzado en Colombia",
-   "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 10,
-   "reciente": 54.6,
-   "base": 11.6,
-   "ratio": 4.69
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "1250150",
+     "consulta": "decime como haces",
+     "valor": "55400",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "192400",
-     "tipo": "rising",
-     "variantes": 0
+     "consulta": "ceuta",
+     "valor": "100",
+     "tipo": "top",
+     "variantes": 1
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "44",
-     "tipo": "top",
+     "consulta": "migrantes estoy a un vaso remix",
+     "valor": "43650",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-29T16:29:28+00:00"
+   "medido": "2026-10-01T00:36:37+00:00"
   },
   "VE": {
    "consultas": [
@@ -134,18 +55,18 @@
     },
     {
      "consulta": "ceuta",
-     "valor": "583550",
+     "valor": "640500",
      "tipo": "rising",
      "variantes": 0
     },
     {
      "consulta": "migrantes marroquíes en españa",
-     "valor": "143350",
+     "valor": "158550",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-26T10:57:04+00:00"
+   "medido": "2026-10-01T00:36:46+00:00"
   },
   "CO": {
    "consultas": [
@@ -245,25 +166,22 @@
    "medido": "2026-09-27T21:00:04+00:00"
   }
  },
- "proximo_pais": 1,
- "paises_sin_datos": [
-  "AR",
-  "VE"
- ],
+ "proximo_pais": 2,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 22.7,
-   "base": 7.7,
-   "ratio": 2.94
+   "puntaje": 8,
+   "reciente": 17.9,
+   "base": 6.7,
+   "ratio": 2.67
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 24.3,
-   "base": 8.4,
-   "ratio": 2.88
+   "puntaje": 10,
+   "reciente": 19.4,
+   "base": 5.9,
+   "ratio": 3.27
   }
  },
  "alertas": [
@@ -274,15 +192,15 @@
    "geo": "US",
    "titulo": "Gobierno de Trump pide cerrar la investigación de desacato por la expulsión de venezolanos a El Salvador",
    "importancia": 9,
-   "velocidad": 4,
+   "velocidad": 3,
    "puntaje": 10,
    "reciente": 21.9,
    "base": 4.0,
    "ratio": 5.45,
    "disparada": "2026-09-30T16:24:19+00:00",
    "velocidad_inicial": 4,
-   "desenlace": "vigente",
-   "horas": 0
+   "desenlace": "se_enfrio",
+   "horas": 8.2
   },
   {
    "id_hecho": "c6c175b8854e",
@@ -299,7 +217,7 @@
    "disparada": "2026-09-30T16:24:19+00:00",
    "velocidad_inicial": 4,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 8.2
   },
   {
    "id_hecho": "25ce4825bb2c",
@@ -316,7 +234,7 @@
    "disparada": "2026-09-30T16:24:19+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 8.2
   },
   {
    "id_hecho": "24447d6925c2",
@@ -333,7 +251,7 @@
    "disparada": "2026-09-30T16:24:19+00:00",
    "velocidad_inicial": 6,
    "desenlace": "vigente",
-   "horas": 0
+   "horas": 8.2
   }
  ]
 }
