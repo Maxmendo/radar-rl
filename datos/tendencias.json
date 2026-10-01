@@ -1,32 +1,111 @@
 {
- "generado": "2026-10-01T00:36:54+00:00",
+ "generado": "2026-10-01T17:01:18+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "7a023010a507": {
+   "id_hecho": "7a023010a507",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRmpNR2hNUXp3T2pOS2FVMkU1a1c3TDQ0MWtQRVZkd3ZYbi1tcWVES1p2V1ZuMGQtbmdRcmJiVGdWOC11RXJqRG1Ld0VNZ0I4Tmt6bDhyeFNqdWZQSTZNQl9XeGNocUFFZUpZQUwyN1JmNWtybzZNRGk0bFZSTUE1S1VFb2xhT2VERUJOUjBmTnl4WVhDUzQ0ZkszTnBiWXJy?oc=5",
+   "termino": "detencion migratoria",
+   "geo": "US",
+   "titulo": "La Corte Suprema decidirá si ICE puede detener a indocumentados de forma indefinida",
+   "importancia": 10,
+   "velocidad": 5,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "9fe1d73cfc89": {
+   "id_hecho": "9fe1d73cfc89",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZ092d1FpS3RzLTMwdWo4OWp4enozR0s1dHRhNTZoM0FsanhoZzE3Mnl3eGNoTHl6bko4THM2eGJKOHBGN3FxMjNfZk9BMHZqczNxWlFwdVFLSUluVXlVU3RZeUNMenhPdnUzTEpVUnlrQUVqYXhtU0Q4VTQybUIzTXpJZ2g2c1JpTF9EUm1sZWRUeU1yRXBia3FxMk9mczEyMGN5TlBUcGZRWTF1amp4ODdTQ1dtdjVfMEFZV2RzeVNHdmwxTzRrWW9yaFFTWFNhLXFrN2pXLV9LT3BUTFNjM3gxV2hFYmZKLVlYUtIBgAJBVV95cUxPMzdLSHhIa28wcnEyT2o2d0JlQ21KWnVDc3hWSWNOTkdlTDV4V2dsVnlwVVVZcDUxdVlhNGJqcE9XRWwyRXNpNlBKX3pqVG9hNm5rRDJ6cGozSDJyZVRVNlphZjdoaUQ0ZVAzZ0pRTEtpNXJkR0dQejd5cmphcFB2blE4UGdjNW9URFNMc0VNd2NmNUkzWnRfMVF3ZUFCbTVEeXhNVWxxMXJvUHVqVVppM1NCXzJBZ2t2V083QTFOXzFoNU9PTjdjTG5fRHpoVm12YlJfWWUwM21Ic1lsQVA1WVRQNmRJUnJ0SkNhMXBSNlU2ZXZua2hWUEpJWjhWSnVa?oc=5",
+   "termino": "solicitud de asilo",
+   "geo": "US",
+   "titulo": "Estados Unidos aumenta las tarifas para solicitar asilo, TPS y permisos de trabajo a partir del 16 de octubre",
+   "importancia": 9,
+   "velocidad": 6,
+   "puntaje": 10,
+   "reciente": 21.9,
+   "base": 2.4,
+   "ratio": 8.95
+  },
+  "3126f569dfd8": {
+   "id_hecho": "3126f569dfd8",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYTdxWlViSXRjQU9CUlNBTjliOXlTZDJ0WmlKZzFJNlBNSXJ2WjJ0WGdCMnZaUTR1X29zNTByaVJIRUVhSUZhLU5UdFNqOFlnNExaR2Qtazc3WHo4ZEhfaDl4SXJnTXJ3aDVuazlBcUlOeFNGcDJYaGVGTXQ2aUEyOXA1LXpNSUp6TW01VVJtUEVtQzROb2tMUEpDUTNaSl9QRmF4Qk1sUzRwZXczT2xRQ2xlSThjSzFSN1FiUm9DRDJPVl9rMkMxQ1lqZjQ3U1BwUjJSZkNGbEpaSnBtdWs2enZB?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Familia de mujer abatida por ICE demanda a gobierno de Trump",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 26.7,
+   "base": 5.0,
+   "ratio": 5.3
+  },
+  "72b531a25e05": {
+   "id_hecho": "72b531a25e05",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb2FJSFNMLUJBWmxhNjl5ZG9Lck1VVzJEQlg5eXlZOE92ZEpUQXZYeDJZVGFvYnZKYi1iakh5Ql9LazFSSDBoMnE4YU1DRl8zSlJMenVGVGlpX0MwbUtmSlFGSHExRkRLSTkzOXdCUXE2QWgzZmFDOHRuMHFtN3RHejhDdkdxSnpKcWh1UFhIRTQzbHQ3VEhadkhwdlhqY3VXVkdxd3U3VzJEUXZ1R0hpQVdENU5RUQ?oc=5",
+   "termino": "solicitud de asilo",
+   "geo": "US",
+   "titulo": "Trump revoca visas a 200,000 solicitantes de asilo por fraude",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 21.9,
+   "base": 2.4,
+   "ratio": 8.95
+  },
+  "e8a1eb078915": {
+   "id_hecho": "e8a1eb078915",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPaDRqMzd6eUVlZHFpNW1MNnNKNXJpbnIxUlk5TDBEYTRDcE54eXliQkFzaFU4WTJpbnRtalVkR3lsMEhNdTc3aFNuaXBWbTlNNDZhUTZrTEdreUd3WENSbWh4UHRkRGRtOTR0ZDlaeVl1ZUp3Vm83SkpEak03S1oyOWFURk1oWEF6RDVRcGV5Sm9xdTRQRVJMT1NORElVUGxxaVczUHc5OHhLajN4NXYxRVZTYW94dGo1ZXN0cFcwS2swbVVvU2lPVnNxa0pkRHI4S2xkODY5T0pMZ3BCNlQ4ay1zamdBVk04TVlLcmJ4ZDdoLTR5cXfSAYoCQVVfeXFMTUJYWXZvUkwxNktWaVd0S2Vhd2N3M2VuNjYtS3ZhWnhYajVpMXp0eVJ4cWNPb0ZfWHhSSUk3eDNqSEZxQ25mUkxfZU1mOTJSdFlZV2QxREtSMWw5TTkxaGg2LVZnSkU2MVIwQnV1SFhjeUxOcGp3UnFCUjRKekpJdnNFYXBOdk5xdG1HLVVxNGxPSG4tRy1yYXM3cFkwS2VhdUhrWlZiOU5GZXVFZzdBNkZsb0tybVhITWZWTFlQVm8yN0pXWlVYV3lKb1pHU0kzT0dTYnNvbmFZU19aYkxWZkFrVlR2NmEwc20tUldBbmFEeWJWeFJfT0JjbFlnaHEtNVhxYjhUS1RzelE?oc=5",
+   "termino": "detencion migratoria",
+   "geo": "US",
+   "titulo": "Venezolano herido por agente del ICE pasará a detención penal sin fianza",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
+  },
+  "bd25fc8605b3": {
+   "id_hecho": "bd25fc8605b3",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYWhJUlRFS2ZLbGN3bjN0YW1uaDNLVm9xSEROYllpRzlfc183bUhpeDJuWW5ybFd3VTh0S3F2RFFNRmVPQ1JZSG1FRFcxRDlBNkZLZEJEMTRSREZ6TDJ4U2RaQjNwNFZ0THBrUkRYNDZRdzhBdk1Ld0R6eXI0VmpMT2R5akFvaGlnMjRNUTJ2MXhxLXVBYTVRWndrYWhLWVlGQ3FxQjNvZzhqUng1ZnRacXRYek1yd9IBuwFBVV95cUxPWVFVYlVJbGl0cWpZSGk3V1pOMURVaWxpdF84V3FBNXBkZzJTWFpSV3l3Y1d6T2NQWnlDVklIYi1KSS1KNjVldVpvS2c0NzFFTGtyam9za1NuQi00dVVJY0ZrbEF0YjdMM2VVQm0tZFJUWExhaFNZQ3pwenJXOGd2VURHNjFtNVY3OVN1TFNPMlFYQ0tueUZDaTEyN0N3MEtqalRxRmNoN0FMRG5xeFlxRkN2eXp3ajhCRnY4?oc=5",
+   "termino": "migrantes",
+   "geo": "PR",
+   "titulo": "Buscan a 10 desaparecidos tras naufragio con 3 muertos y 49 rescatados en Puerto Rico",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 1.1,
+   "base": 1.2,
+   "ratio": null
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "decime como haces",
-     "valor": "55400",
+     "consulta": "ceuta",
+     "valor": "1344650",
      "tipo": "rising",
      "variantes": 1
     },
     {
-     "consulta": "ceuta",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 1
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "186450",
+     "tipo": "rising",
+     "variantes": 0
     },
     {
-     "consulta": "migrantes estoy a un vaso remix",
-     "valor": "43650",
+     "consulta": "decime como haces letra",
+     "valor": "38800",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-10-01T00:36:37+00:00"
+   "medido": "2026-10-01T17:01:02+00:00"
   },
   "VE": {
    "consultas": [
@@ -135,24 +214,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "419450",
-     "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "qué abusos sufren las personas migrantes",
-     "valor": "5500",
+     "valor": "413300",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "que es migrantes",
-     "valor": "100",
-     "tipo": "top",
+     "consulta": "migrantes de marruecos a españa",
+     "valor": "105100",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "programa 3x1 para migrantes",
+     "valor": "11400",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-26T20:44:46+00:00"
+   "medido": "2026-10-01T17:01:10+00:00"
   },
   "UY": {
    "consultas": [
@@ -166,7 +245,7 @@
    "medido": "2026-09-27T21:00:04+00:00"
   }
  },
- "proximo_pais": 2,
+ "proximo_pais": 3,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
@@ -186,72 +265,55 @@
  },
  "alertas": [
   {
-   "id_hecho": "6fd232107a40",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNM0NPRWRwMEtfcVI5UFdWZlFLNWJTWUdRQ09NOFU0bm53WHVrMy1yRWFyN2o0cjJDMjZRdm82bGgwSHRYdjBjTGE3UjNGTF9ZbzVUZVdONDdLQ0RKbnM2NnpDQ0xtbEFfaFVWazRKUVpRUFJvbUlSQ3lpREppS3NvQkFLQkdtMV9ZN1hHT3cyT2Zrc0RMY1l0UjRlOTV2M2ZhQkF2WG8waEFPNnpwMkRPamNvUzVmbHN4M2gxVVlhRS14ei1nMHBEeGttQm9sTWk0bURZTVlidU1hMzdQaHVJeGYzbmdFN3hCNEVCQ0JCNWNuNm1FUF82TkF1YzV1YWhxRFE40gGDAkFVX3lxTE9qdWtaTzFjSHQ5Y3hESHBHMS1sVV9Iczc5WXk4NWFOQlZ1VUd6WGJITldkQU14anNQN0pVYXoyOGxYcEF2ZXduSnRlRjlqdi0wM2doUkdqMGw5eFZyZDdKZF9uNWtmcVRDQTlkR3JqWkdmejN6RXduM3ZCalFwTTJ4N1BKdVVJSzBrREE0c3VaQmNuRlE4ZzZvZDNSS3JoXzdlbWJoVVhVODg2cHFQcnFuZm5xX2Zrc0E0WlllN2ZfbDlvcUs4Q2hBNURRdlgtZmtzNXBQaFpJRGROemdfOVI4b3N5djA5UVRQSTFuMThENDNrQ05Mc0k4VXdxNTY1WnhydEk?oc=5",
-   "termino": "deportaciones",
+   "id_hecho": "9fe1d73cfc89",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZ092d1FpS3RzLTMwdWo4OWp4enozR0s1dHRhNTZoM0FsanhoZzE3Mnl3eGNoTHl6bko4THM2eGJKOHBGN3FxMjNfZk9BMHZqczNxWlFwdVFLSUluVXlVU3RZeUNMenhPdnUzTEpVUnlrQUVqYXhtU0Q4VTQybUIzTXpJZ2g2c1JpTF9EUm1sZWRUeU1yRXBia3FxMk9mczEyMGN5TlBUcGZRWTF1amp4ODdTQ1dtdjVfMEFZV2RzeVNHdmwxTzRrWW9yaFFTWFNhLXFrN2pXLV9LT3BUTFNjM3gxV2hFYmZKLVlYUtIBgAJBVV95cUxPMzdLSHhIa28wcnEyT2o2d0JlQ21KWnVDc3hWSWNOTkdlTDV4V2dsVnlwVVVZcDUxdVlhNGJqcE9XRWwyRXNpNlBKX3pqVG9hNm5rRDJ6cGozSDJyZVRVNlphZjdoaUQ0ZVAzZ0pRTEtpNXJkR0dQejd5cmphcFB2blE4UGdjNW9URFNMc0VNd2NmNUkzWnRfMVF3ZUFCbTVEeXhNVWxxMXJvUHVqVVppM1NCXzJBZ2t2V083QTFOXzFoNU9PTjdjTG5fRHpoVm12YlJfWWUwM21Ic1lsQVA1WVRQNmRJUnJ0SkNhMXBSNlU2ZXZua2hWUEpJWjhWSnVa?oc=5",
+   "termino": "solicitud de asilo",
    "geo": "US",
-   "titulo": "Gobierno de Trump pide cerrar la investigación de desacato por la expulsión de venezolanos a El Salvador",
+   "titulo": "Estados Unidos aumenta las tarifas para solicitar asilo, TPS y permisos de trabajo a partir del 16 de octubre",
    "importancia": 9,
-   "velocidad": 3,
+   "velocidad": 6,
    "puntaje": 10,
    "reciente": 21.9,
-   "base": 4.0,
-   "ratio": 5.45,
-   "disparada": "2026-09-30T16:24:19+00:00",
-   "velocidad_inicial": 4,
-   "desenlace": "se_enfrio",
-   "horas": 8.2
+   "base": 2.4,
+   "ratio": 8.95,
+   "disparada": "2026-10-01T17:01:18+00:00",
+   "velocidad_inicial": 6,
+   "desenlace": "vigente",
+   "horas": 0
   },
   {
-   "id_hecho": "c6c175b8854e",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUDJXTG1pV2JpMUhoVG5HcTBXRG1DaFo5Yi1wVHRab2FZV1dlZ1VpaDhBUDJaNHVCMWU5VEE1V2pWbGdZY0pPN0NlTWlTMHBZMVpnSkRaMkdvY1Qwdzluc25Mb3o2djJsS01BN2EtQkFGOGpybHk5aVM0RUpMOEFUaTc5bVBvdkMzWWRqNDRhZEFuMmpxM3RmWnhtT04zTTdMMXI4M2tGNExSa0hoWG10eEpn?oc=5",
+   "id_hecho": "3126f569dfd8",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYTdxWlViSXRjQU9CUlNBTjliOXlTZDJ0WmlKZzFJNlBNSXJ2WjJ0WGdCMnZaUTR1X29zNTByaVJIRUVhSUZhLU5UdFNqOFlnNExaR2Qtazc3WHo4ZEhfaDl4SXJnTXJ3aDVuazlBcUlOeFNGcDJYaGVGTXQ2aUEyOXA1LXpNSUp6TW01VVJtUEVtQzROb2tMUEpDUTNaSl9QRmF4Qk1sUzRwZXczT2xRQ2xlSThjSzFSN1FiUm9DRDJPVl9rMkMxQ1lqZjQ3U1BwUjJSZkNGbEpaSnBtdWs2enZB?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "EEUU acusa al migrante venezolano baleado por ICE en Austin de agredir a un agente federal",
+   "titulo": "Familia de mujer abatida por ICE demanda a gobierno de Trump",
+   "importancia": 9,
+   "velocidad": 4,
+   "puntaje": 10,
+   "reciente": 26.7,
+   "base": 5.0,
+   "ratio": 5.3,
+   "disparada": "2026-10-01T17:01:18+00:00",
+   "velocidad_inicial": 4,
+   "desenlace": "vigente",
+   "horas": 0
+  },
+  {
+   "id_hecho": "72b531a25e05",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb2FJSFNMLUJBWmxhNjl5ZG9Lck1VVzJEQlg5eXlZOE92ZEpUQXZYeDJZVGFvYnZKYi1iakh5Ql9LazFSSDBoMnE4YU1DRl8zSlJMenVGVGlpX0MwbUtmSlFGSHExRkRLSTkzOXdCUXE2QWgzZmFDOHRuMHFtN3RHejhDdkdxSnpKcWh1UFhIRTQzbHQ3VEhadkhwdlhqY3VXVkdxd3U3VzJEUXZ1R0hpQVdENU5RUQ?oc=5",
+   "termino": "solicitud de asilo",
+   "geo": "US",
+   "titulo": "Trump revoca visas a 200,000 solicitantes de asilo por fraude",
    "importancia": 9,
    "velocidad": 4,
    "puntaje": 10,
    "reciente": 21.9,
-   "base": 4.0,
-   "ratio": 5.45,
-   "disparada": "2026-09-30T16:24:19+00:00",
+   "base": 2.4,
+   "ratio": 8.95,
+   "disparada": "2026-10-01T17:01:18+00:00",
    "velocidad_inicial": 4,
    "desenlace": "vigente",
-   "horas": 8.2
-  },
-  {
-   "id_hecho": "25ce4825bb2c",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPX0VKSGc3NGlLRE1IYmVXSWdSOGZ6NmViR0htOXluSGhsUE1HbllvREkxdVIzeDBMRXBuRkhyUEdaS096enMtUVJsTWM1Vm9LYllzU0JaMTdLTE9kbWQwSDFpS0tSNVpHMEw2M3I3SHJLRDVsRTRJSnVobVVtRElhd0Jjc3hYU21rQjZpcGJDZ1VneDhFSWVTek9VaTUzU1ptTmlIdDhvRllDQXg4TnlfVHdCT3pFNXJ0YllqMDA1RUxZX3IwTEJKSzNBeDc1akFrYnlxREt6SzlTZDVmcjl5YkdEbnp1ZV9nS0ZqRFRuOTRTbFBqSHQxeXF5SjNyQdIBkgJBVV95cUxPS0tSbUc2R0Y0MFVmTUtZd0hVakw1cjBYSVRVUU1yWk5GblFzdlE2b2tLa3laclFwQ2xvaTJicmtPeHkwSHlCMXNxSGszN1NkRFUyWUpjUVQ1MkFWQWdkcDRWTVhSaXhYZVNPS0d4LU1XaUpmNEJIQ0FTbVhGeEUwcVVKcWRIZXdDRS1iOGNqcExtY0FTdzlsNmM4SVk5R1Q0OG9rZU1TTVBoeGxuRVlHSFlWWUVsSkphT0ZBVFlDZmgxcVVfNHJSYklJX1ZHT2QtLVc0T2tDdXVTMEktZnhTTUUzZExPVHN5UzluanhhcjBsTk9zN0dhbzJnLTgydFU2VjB3ZlY4ZzNaR2lYczN4bmh3?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "El Gobierno de Trump presenta cargos por agresión contra Wilber Garcés, el migrante herido por un agente del ICE en Austin",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 21.9,
-   "base": 4.0,
-   "ratio": 5.45,
-   "disparada": "2026-09-30T16:24:19+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 8.2
-  },
-  {
-   "id_hecho": "24447d6925c2",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQRFZ0Q2FLQ3BnTDR3WWRUdW5CSG1DTVo2cUotUTBCY2RGNHdVZko4RXljdXdNaEZlZjJ3OExpQ08yRG9wWnBnNjNqcEZ2dExBRlRQNVVBdk5mTzgyaVhrVVJ6dWNzM0JHVjNIVGVfaGh2UERGNllSdjRkN2hwOGljZXBfRVRDOThmbU9JSkkwbEg1bjRtZl9vNUZpNERINzBhaFdtVXhIamZhblBsd2x2d3RhMTlLdUNnUmNlMVhfVGxqb3RUNkQ1VjBVRU1WbDd3bWlScFd6dWVyWGZyaEhNbkxWZzVETVY4ZkV1VDkxUnpRamfSAfMBQVVfeXFMUERWdENhS0NwZ0w0d1lkVHVuQkhtQ01aNnFKLVEwQmNkRjR3VWZKOEV5Y3V3TWhGZWYydzhMaUNPMkRvcFpwZzYzanBGdnRMQUZUUDVVQXZOZk84MmlYa1VSenVjczNCR1YzSFRlX2hodlBERjZZUnY0ZDdocDhpY2VwX0VUQzk4Zm1PSUpJMGxINW40bWZfbzVGaTRESDcwYWhXbVV4SGpmYW5QbHdsdnd0YTE5S3VDZ1JjZTFYX1Rsam90VDZENVYwVUVNVmw3d21pUnBXenVlclhmcmhITW5MVmc1RE1WOGZFdVQ5MVJ6UWpn?oc=5",
-   "termino": "desplazamiento forzado",
-   "geo": "CO",
-   "titulo": "Nariño, cuarto departamento más afectado por el desplazamiento forzado en Colombia",
-   "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 10,
-   "reciente": 54.6,
-   "base": 11.6,
-   "ratio": 4.69,
-   "disparada": "2026-09-30T16:24:19+00:00",
-   "velocidad_inicial": 6,
-   "desenlace": "vigente",
-   "horas": 8.2
+   "horas": 0
   }
  ]
 }
