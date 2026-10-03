@@ -1,85 +1,32 @@
 {
- "generado": "2026-10-03T14:40:28+00:00",
+ "generado": "2026-10-03T23:43:55+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "3c6da9e9da18": {
-   "id_hecho": "3c6da9e9da18",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOQmFjckhZX2JpYWpQTFFRUjNNZl92UER0aXNPdUM2UWNLb2ZpaFAzX1dWaWlCOVR5NGVkQ244MFVlY0Yxam9vNzI4a3h6a0lyMlFqdnhYcmxrSGFMNkJyX1FiV3dNMTc2bFZ6YWFMWDF2OUkxZS0xN0Fvd3hqcE93WUNUMTViZW1ycXN0d2d6RU5oX3VrQ1dwa3QzR05ObWxYV1M0enlOYUpqS2o2S1BERFZ6Zkp3TkFXRFFyWnY2MGxTSWNqRVBTaktjWGtjUDBTYkwtQXpVVGNTS3hMNFR4cy1memRpMFpMRTFJdnFyRFZwVG4tcUxKUzJFSDl0M2xlODRCU2F30gGGAkFVX3lxTE5CYWNySFlfYmlhalBMUVFSM01mX3ZQRHRpc091QzZRY0tvZmloUDNfV1ZpaUI5VHk0ZWRDbjgwVWVjRjFqb283MjhreHprSXIyUWp2eFhybGtIYUw2QnJfUWJXd00xNzZsVnphYUxYMXY5STFlLTE3QW93eGpwT3dZQ1QxNWJlbXJxc3R3Z3pFTmhfdWtDV3BrdDNHTk5tbFhXUzR6eU5hSmpLajZLUEREVnpmSndOQVdEUXJadjYwbFNJY2pFUFNqS2NYa2NQMFNiTC1BelVUY1NLeEw0VHhzLWZ6ZGkwWkxFMUl2cXJEVnBUbi1xTEpTMkVIOXQzbGU4NEJTYXc?oc=5",
-   "termino": "migrantes salud",
-   "geo": "US",
-   "titulo": "Miles de inmigrantes podrían perder Medicaid por nuevas reglas federales",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 0.0,
-   "ratio": null
-  },
-  "14e1d547f3c7": {
-   "id_hecho": "14e1d547f3c7",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNLW8waVJwN1V2UDdOMG1fdmZCOXc5YkoxOGVDSktIMmU1R3IwalpqOHB5UDZoUG9jbU5ZRTNaaHZNbjJUd08xa0ZWeEdESmZmRUJyemRqa2twOVQzTE11RExQQ2trWXBSWjdCb1F5bE1vQ1ptaFF6bXZUYXU4ZXVxb3pRZFdnaWV6RDZMNzVpaEZlU2E2R2dtZjY0VHM3Zkh4UW1EcEQ1SE5SUDNja2FBVnpMZmpOSGRVbl9MZTltY3J3dFNUUERZLWVXMHB3a251YXVZNEVwcWFDeHMzRTZxeHd0UzlqajhzS1REbkNn?oc=5",
-   "termino": "politica migratoria",
-   "geo": "US",
-   "titulo": "Trump defiende su política migratoria - Cuarto Poder",
-   "importancia": 6,
-   "velocidad": 6,
-   "puntaje": 0,
-   "reciente": 0.0,
-   "base": 1.1,
-   "ratio": null
-  },
-  "86ed1f0be9f4": {
-   "id_hecho": "86ed1f0be9f4",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQM2Y3R3FtSFNUWGtWM0RQQXVxelcwcV96TDlSUjVFQVBoaEpmOHRxQ3NNQzR1Unc3LW8yQy1SOHgtQzd0b2s5VGpnWjdnaHlJWU5Ealp3Slp1dkYydlhMamJva3hfX25Ud3VpdnhZLXRoejJzelZfZDhTSmdDd2lFOHhCSG4wNDJoa3hDZFVQV2lWR00?oc=5",
-   "termino": "empleo migrantes",
-   "geo": "MX",
-   "titulo": "ONU busca que México encabece programa de empleo para migrantes",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 0.6,
-   "base": 1.1,
-   "ratio": null
-  },
-  "7000b618abca": {
-   "id_hecho": "7000b618abca",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUXFOQTJ1WUJwemdOalNiQUNyX0RrTFRJbHlYdXRtMDhHbnIxVE9QMWVNUEh0WTY0NlprWWxRVEU4WE5QeGZEd0cwekR2cFYtMmo1aFRLTkJWQ21DeDE2Q3FRSmhzek90SEFEcmE5cE5rVm0yVjZEUHNmVnhYTGFGTF96UzZqOHZUMzdTeG10LXRxdG5zVEZBTXg5XzUxNHFsUnltT3BMV0I1LS1qdG1FYWRKd01SRmZKWVlwdlJoQ0pFYlg5RFln?oc=5",
-   "termino": "regularizacion migrantes",
-   "geo": "ES",
-   "titulo": "Venezuela, entre los países con más trabajadores incorporados por la regularización de inmigrantes en España",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 14.3,
-   "base": 1.1,
-   "ratio": null
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
     {
-     "consulta": "ceuta",
-     "valor": "1265550",
-     "tipo": "rising",
-     "variantes": 1
-    },
-    {
-     "consulta": "migrantes de marruecos a españa",
-     "valor": "170350",
+     "consulta": "decime como haces",
+     "valor": "67050",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "inmigrantes",
-     "valor": "45",
-     "tipo": "top",
+     "consulta": "migrantes las 5",
+     "valor": "66350",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes si me tomo una cerveza",
+     "valor": "48900",
+     "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-10-03T14:40:11+00:00"
+   "medido": "2026-10-03T23:43:38+00:00"
   },
   "VE": {
    "consultas": [
@@ -170,19 +117,25 @@
   "ES": {
    "consultas": [
     {
-     "consulta": "ceuta",
+     "consulta": "migrantes ceuta",
      "valor": "100",
      "tipo": "top",
-     "variantes": 3
+     "variantes": 2
     },
     {
-     "consulta": "marc vidal, el problema que nadie quiere nombrar es que los migrantes regularizados cotizan a la seguridad social, y eso está bien, pero lo hacen sobre una base bajísima",
-     "valor": "86800",
+     "consulta": "migrantes o emigrantes",
+     "valor": "84550",
+     "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "cuantos migrantes quedan en ceuta",
+     "valor": "76600",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-29T16:29:37+00:00"
+   "medido": "2026-10-03T23:43:47+00:00"
   },
   "MX": {
    "consultas": [
@@ -219,22 +172,22 @@
    "medido": "2026-10-03T00:22:29+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 9,
-   "reciente": 20.0,
-   "base": 7.3,
-   "ratio": 2.74
+   "reciente": 18.9,
+   "base": 6.7,
+   "ratio": 2.82
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 7,
-   "reciente": 21.3,
-   "base": 8.7,
-   "ratio": 2.44
+   "puntaje": 10,
+   "reciente": 20.0,
+   "base": 5.9,
+   "ratio": 3.41
   }
  },
  "alertas": []
