@@ -1,72 +1,72 @@
 {
- "generado": "2026-10-02T16:13:53+00:00",
+ "generado": "2026-10-03T00:22:37+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "14e1d547f3c7": {
-   "id_hecho": "14e1d547f3c7",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNLW8waVJwN1V2UDdOMG1fdmZCOXc5YkoxOGVDSktIMmU1R3IwalpqOHB5UDZoUG9jbU5ZRTNaaHZNbjJUd08xa0ZWeEdESmZmRUJyemRqa2twOVQzTE11RExQQ2trWXBSWjdCb1F5bE1vQ1ptaFF6bXZUYXU4ZXVxb3pRZFdnaWV6RDZMNzVpaEZlU2E2R2dtZjY0VHM3Zkh4UW1EcEQ1SE5SUDNja2FBVnpMZmpOSGRVbl9MZTltY3J3dFNUUERZLWVXMHB3a251YXVZNEVwcWFDeHMzRTZxeHd0UzlqajhzS1REbkNn?oc=5",
-   "termino": "deportaciones",
+  "4aed1bb0cb9a": {
+   "id_hecho": "4aed1bb0cb9a",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZGVjMVB5ajBUb1hENFlLLXBjb1B3X284cWUzR3VJRjFUcjhSY2hsa3RWbjlwTUhFc2x0YWZad3J6OElQMXF4TVE4Wl85MVA2Mm44d3FuaU1jaW5JVDBLQ09WZXR2RmlmX3lyWXl4N2JLRUNISXFFUHY1OTQyU0V1NlJpOUk4LUdzSy0xN2h4NWJpWUJjRmk0Wnd6VGprQUZXWUhr?oc=5",
+   "termino": "detencion migratoria",
    "geo": "US",
-   "titulo": "Corte Suprema de EUA revisará política de Trump sobre detención obligatoria de inmigrantes",
+   "titulo": "Noticias de la Corte Suprema: EE.UU. decide si continúa la estrategia migratoria de detención obligatoria",
    "importancia": 9,
-   "velocidad": 7,
-   "puntaje": 10,
-   "reciente": 19.7,
-   "base": 5.8,
-   "ratio": 3.41
-  },
-  "078ef3f35346": {
-   "id_hecho": "078ef3f35346",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQU1EtSjB6MWdIMmhZdmd1QzU1azJfcXpXTDZZM0g0UUhWX3pYWGFPbktvTXRMdXh6dU81eG1UcGFKMWdCeFo0M1U5R0ZEMGs4UWtkZElvNUFGREZ3am0tTUJobHBvN1EwVGZyaW9ZYmZkTzQtTFpVOF83ckhSNzFTMjlBMmdWcVBOQ0RGOEJ2dHNjTHBVekRhM3FVUlNFRzJHOG5YNXp0UFRXQndZVDZHOWxYZ3RvX3ZrTW5JS1R5ZkZUS0NKS2ZWMnc1c3NjajJyZU1Fb9IB1AFBVV95cUxQU1EtSjB6MWdIMmhZdmd1QzU1azJfcXpXTDZZM0g0UUhWX3pYWGFPbktvTXRMdXh6dU81eG1UcGFKMWdCeFo0M1U5R0ZEMGs4UWtkZElvNUFGREZ3am0tTUJobHBvN1EwVGZyaW9ZYmZkTzQtTFpVOF83ckhSNzFTMjlBMmdWcVBOQ0RGOEJ2dHNjTHBVekRhM3FVUlNFRzJHOG5YNXp0UFRXQndZVDZHOWxYZ3RvX3ZrTW5JS1R5ZkZUS0NKS2ZWMnc1c3NjajJyZU1Fbw?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Extraen bala a venezolano herido por ICE, varios días después del disparo en Texas",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 19.7,
-   "base": 5.8,
-   "ratio": 3.41
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
   },
   "ebd0d59428a5": {
    "id_hecho": "ebd0d59428a5",
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMGdiRkhTNU9EaXVNTXBDNHpreFVZSmZBc2plQ3lQQkdxS0p1QXBoUmVyMXduWk5TTHpTREUtZUlNRkUyeTV4UElFdDlDY2UydlRGbHBjSWlZV3pxdi1JSFNwUnZJenJJYXhXQkpIaXAzc1JZdzNKdHhuNy1hMXBsMTRKLWhzb0NJbGs5cXptbU5aU0hLYWFQYTU4NWVQQW45bzIwcnA2Uy1Rb2dTd0k1RDBTVVM0bDNjcnRma2tUUjhkMkJseWFzbHFxb1RvaG9jamdR?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Familia de mujer abatida por ICE demanda a gobierno de Trump",
+   "titulo": "Familia de Renee Good demanda al Gobierno Trump por su muerte en redada de ICE",
    "importancia": 9,
    "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 19.7,
-   "base": 5.8,
-   "ratio": 3.41
+   "puntaje": 9,
+   "reciente": 18.1,
+   "base": 6.3,
+   "ratio": 2.86
+  },
+  "078ef3f35346": {
+   "id_hecho": "078ef3f35346",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQU1EtSjB6MWdIMmhZdmd1QzU1azJfcXpXTDZZM0g0UUhWX3pYWGFPbktvTXRMdXh6dU81eG1UcGFKMWdCeFo0M1U5R0ZEMGs4UWtkZElvNUFGREZ3am0tTUJobHBvN1EwVGZyaW9ZYmZkTzQtTFpVOF83ckhSNzFTMjlBMmdWcVBOQ0RGOEJ2dHNjTHBVekRhM3FVUlNFRzJHOG5YNXp0UFRXQndZVDZHOWxYZ3RvX3ZrTW5JS1R5ZkZUS0NKS2ZWMnc1c3NjajJyZU1Fb9IB1AFBVV95cUxQU1EtSjB6MWdIMmhZdmd1QzU1azJfcXpXTDZZM0g0UUhWX3pYWGFPbktvTXRMdXh6dU81eG1UcGFKMWdCeFo0M1U5R0ZEMGs4UWtkZElvNUFGREZ3am0tTUJobHBvN1EwVGZyaW9ZYmZkTzQtTFpVOF83ckhSNzFTMjlBMmdWcVBOQ0RGOEJ2dHNjTHBVekRhM3FVUlNFRzJHOG5YNXp0UFRXQndZVDZHOWxYZ3RvX3ZrTW5JS1R5ZkZUS0NKS2ZWMnc1c3NjajJyZU1Fbw?oc=5",
+   "termino": "detencion migratoria",
+   "geo": "US",
+   "titulo": "Extraen la bala al venezolano herido por agentes de ICE durante operativo",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
   },
   "8c5ffca02e62": {
    "id_hecho": "8c5ffca02e62",
    "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPXzNzM2k0VjgxNkJvS0VaTjFVMWotQWRFQ1F1NHZ4UkJqd2lkQmh6LWhEa3RMQlVEcFVnWUdpNVktVDdXcXdoU3VocXlIOFNNeW5MVi1KWkFHZ25zMWs0Vm5jM2poY1BFRXQ0YXFVVUIwSWxVSkpLUzZmOGdmNV9mcXZWOUdmSV9lSUxGTWRRV2lNVnR4RExvYWlpaU93WkloTnBUeWo5M2lGRXU0WjRaMjE0RFdpSXp1UmR3b2d4WXdTVGM3MEdVQnBaOC1XRTFjM0ZPdnBtUkJpaVpvcDZJOXoyb0REMFowUl9rWUdtaVpBZkstZjZqSnh0dmVubTRaUFc1ZWtkakZCck9wRGZfblRFNXFpS0xzTjhHWTZkM0ZDOEY4U3VLYktabGlYd9IBswJBVV95cUxQbk01LU1pVU90VkQ1bV9oYlQ0TEpLdEpfVU44M2phZlA0RHpRLUFEbXQ5R1lodzByUlAtaHAyck0yS1pnWmdUMWJWZ1ZDYUN2eHF4SkJJazkyNFV4V2JPcS1vd3FScWRiTnZOeHdXRURHbnEzZUNQNE9RN25kei1Xdkx4X3FCQnNkNzJ2S2VlWUlGUEpCdFgyY0ZQc2ZVZm1ESHVIcU5PTlNGUm0xRFJSdk5ZZkI4eFhHbUxkZ0dhNGZBaHFXSS1Wbm5kNGpiVFI4WWFnYmp5d0FScVBBaTA5UG1MRlEzV1BOM2JMYUlwbkp3SXZjMkVUbU5DbnpscENFQTJGRVdhcVpxVENxdUh6Mm9BeVlMVEtwV0RuTHd4RzdPRGZtME03NlZXd1FzR2t0WkRj?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Nuevas directrices de ICE impondrían reglas a sus agentes para realizar persecuciones y detenciones vehiculares",
-   "importancia": 8,
+   "titulo": "Gran noticia para inmigrantes en EE.UU. | Proponen eliminar al ICE para proteger a indocumentados",
+   "importancia": 7,
    "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 19.7,
-   "base": 5.8,
-   "ratio": 3.41
+   "puntaje": 9,
+   "reciente": 18.1,
+   "base": 6.3,
+   "ratio": 2.86
   },
-  "27ae78951b08": {
-   "id_hecho": "27ae78951b08",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM2RWUWZaaGY0NXNCRGdQaGtMemQ3OUxSaV9LaTY3elBkLVB0R2s2RXVzYVp3RktVU3BfUldGOHc4bVNhUlN0Q3hXUGtZdGhXRWdNdkJTZ3BjN2hhbmUwbDNMbWpMbldNUGJzUm95ZkRLanBjMjlBV2p1Y1dZdV9ZVmpUT2NCZTNRVW5aNGFUMzI2SGxMbUhLMW9Ga0pCUFdfUWNwdmlhaHhCdDZFc2ZTd2RLa3N0dw?oc=5",
-   "termino": "migraciones",
-   "geo": "US",
-   "titulo": "Trump defiende su política migratoria y dice que latinos lo apoyan: \"Tenemos que hacer lo que tenemos que hacer\"",
+  "daee2a9d766e": {
+   "id_hecho": "daee2a9d766e",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNVElhOWN3NXFySGZ5OFhPWGYtMzRsYUduU05NRHRNLTN0a1RRRXpUNk05Umw1Vk1oSVU0dU1hSHhFRWdJUERWYVJPRHQxQzFxakRsVUdVbWdjRllRempReTVURmlTRkZUNmllQmVnY2ZGN2VmTVhDa2hoQ2xCbm9lVGgzdi1Ec0dOR0h3RU9tZXVlcUVPOUtqdXNNZkRXMkR3Q2lWYUUxV0VGdjhieHMtRXJ4bW90dTBIVnM4YUZaMVpxcm1PMXJkU0c3YmxSMF9fQmhsQ0hR0gHWAUFVX3lxTE1USWE5Y3c1cXJIZnk4WE9YZi0zNGxhR25TTk1EdE0tM3RrVFFFelQ2TTlSbDVWTWhJVTR1TWFIeEVFZ0lQRFZhUk9EdDFDMXFqRGxVR1VtZ2NGWVF6alF5NVRGaVNGRlQ2aWVCZWdjZkY3ZWZNWENraGhDbEJub2VUaDN2LURzR05HSHdFT21ldWVxRU85S2p1c01mRFcyRHdDaVZhRTFXRUZ2OGJ4cy1Fcnhtb3R1MEhWczhhRloxWnFybU8xcmRTRzdibFIwX19CaGxDSFE?oc=5",
+   "termino": "deportaciones",
+   "geo": "CL",
+   "titulo": "Expulsan a colombiano que ingresó irregular al país y que vivía en Punta Arenas",
    "importancia": 6,
    "velocidad": 3,
    "puntaje": 0,
-   "reciente": 14.3,
-   "base": 16.5,
+   "reciente": 0.6,
+   "base": 2.0,
    "ratio": null
   }
  },
@@ -75,24 +75,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1344650",
+     "valor": "1310750",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "186450",
+     "valor": "203450",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "decime como haces letra",
-     "valor": "38800",
+     "consulta": "decime como haces",
+     "valor": "118300",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-10-01T17:01:02+00:00"
+   "medido": "2026-10-03T00:22:20+00:00"
   },
   "VE": {
    "consultas": [
@@ -224,36 +224,67 @@
    "consultas": [
     {
      "consulta": "ceuta migrantes",
-     "valor": "735000",
+     "valor": "140",
      "tipo": "rising",
      "variantes": 0
     }
    ],
-   "medido": "2026-09-27T21:00:04+00:00"
+   "medido": "2026-10-03T00:22:29+00:00"
   }
  },
- "proximo_pais": 4,
- "paises_sin_datos": [
-  "AR",
-  "CO"
- ],
+ "proximo_pais": 5,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 19.6,
-   "base": 3.9,
-   "ratio": 5.07
+   "puntaje": 5,
+   "reciente": 19.4,
+   "base": 9.3,
+   "ratio": 2.09
   },
   "certificado de residencia": {
    "geo": "AR",
-   "puntaje": 8,
-   "reciente": 19.7,
-   "base": 7.2,
-   "ratio": 2.72
+   "puntaje": 10,
+   "reciente": 20.4,
+   "base": 5.6,
+   "ratio": 3.67
   }
  },
  "alertas": [
+  {
+   "id_hecho": "ebd0d59428a5",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMGdiRkhTNU9EaXVNTXBDNHpreFVZSmZBc2plQ3lQQkdxS0p1QXBoUmVyMXduWk5TTHpTREUtZUlNRkUyeTV4UElFdDlDY2UydlRGbHBjSWlZV3pxdi1JSFNwUnZJenJJYXhXQkpIaXAzc1JZdzNKdHhuNy1hMXBsMTRKLWhzb0NJbGs5cXptbU5aU0hLYWFQYTU4NWVQQW45bzIwcnA2Uy1Rb2dTd0k1RDBTVVM0bDNjcnRma2tUUjhkMkJseWFzbHFxb1RvaG9jamdR?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Familia de Renee Good demanda al Gobierno Trump por su muerte en redada de ICE",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 9,
+   "reciente": 18.1,
+   "base": 6.3,
+   "ratio": 2.86,
+   "disparada": "2026-10-03T00:22:37+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  },
+  {
+   "id_hecho": "8c5ffca02e62",
+   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPXzNzM2k0VjgxNkJvS0VaTjFVMWotQWRFQ1F1NHZ4UkJqd2lkQmh6LWhEa3RMQlVEcFVnWUdpNVktVDdXcXdoU3VocXlIOFNNeW5MVi1KWkFHZ25zMWs0Vm5jM2poY1BFRXQ0YXFVVUIwSWxVSkpLUzZmOGdmNV9mcXZWOUdmSV9lSUxGTWRRV2lNVnR4RExvYWlpaU93WkloTnBUeWo5M2lGRXU0WjRaMjE0RFdpSXp1UmR3b2d4WXdTVGM3MEdVQnBaOC1XRTFjM0ZPdnBtUkJpaVpvcDZJOXoyb0REMFowUl9rWUdtaVpBZkstZjZqSnh0dmVubTRaUFc1ZWtkakZCck9wRGZfblRFNXFpS0xzTjhHWTZkM0ZDOEY4U3VLYktabGlYd9IBswJBVV95cUxQbk01LU1pVU90VkQ1bV9oYlQ0TEpLdEpfVU44M2phZlA0RHpRLUFEbXQ5R1lodzByUlAtaHAyck0yS1pnWmdUMWJWZ1ZDYUN2eHF4SkJJazkyNFV4V2JPcS1vd3FScWRiTnZOeHdXRURHbnEzZUNQNE9RN25kei1Xdkx4X3FCQnNkNzJ2S2VlWUlGUEpCdFgyY0ZQc2ZVZm1ESHVIcU5PTlNGUm0xRFJSdk5ZZkI4eFhHbUxkZ0dhNGZBaHFXSS1Wbm5kNGpiVFI4WWFnYmp5d0FScVBBaTA5UG1MRlEzV1BOM2JMYUlwbkp3SXZjMkVUbU5DbnpscENFQTJGRVdhcVpxVENxdUh6Mm9BeVlMVEtwV0RuTHd4RzdPRGZtME03NlZXd1FzR2t0WkRj?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Gran noticia para inmigrantes en EE.UU. | Proponen eliminar al ICE para proteger a indocumentados",
+   "importancia": 7,
+   "velocidad": 3,
+   "puntaje": 9,
+   "reciente": 18.1,
+   "base": 6.3,
+   "ratio": 2.86,
+   "disparada": "2026-10-03T00:22:37+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  },
   {
    "id_hecho": "14e1d547f3c7",
    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNLW8waVJwN1V2UDdOMG1fdmZCOXc5YkoxOGVDSktIMmU1R3IwalpqOHB5UDZoUG9jbU5ZRTNaaHZNbjJUd08xa0ZWeEdESmZmRUJyemRqa2twOVQzTE11RExQQ2trWXBSWjdCb1F5bE1vQ1ptaFF6bXZUYXU4ZXVxb3pRZFdnaWV6RDZMNzVpaEZlU2E2R2dtZjY0VHM3Zkh4UW1EcEQ1SE5SUDNja2FBVnpMZmpOSGRVbl9MZTltY3J3dFNUUERZLWVXMHB3a251YXVZNEVwcWFDeHMzRTZxeHd0UzlqajhzS1REbkNn?oc=5",
@@ -261,15 +292,15 @@
    "geo": "US",
    "titulo": "Corte Suprema de EUA revisará política de Trump sobre detención obligatoria de inmigrantes",
    "importancia": 9,
-   "velocidad": 7,
+   "velocidad": 8,
    "puntaje": 10,
    "reciente": 19.7,
    "base": 5.8,
    "ratio": 3.41,
    "disparada": "2026-10-02T16:13:53+00:00",
    "velocidad_inicial": 7,
-   "desenlace": "vigente",
-   "horas": 0
+   "desenlace": "escalo",
+   "horas": 8.1
   },
   {
    "id_hecho": "078ef3f35346",
@@ -286,41 +317,7 @@
    "disparada": "2026-10-02T16:13:53+00:00",
    "velocidad_inicial": 3,
    "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "ebd0d59428a5",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMGdiRkhTNU9EaXVNTXBDNHpreFVZSmZBc2plQ3lQQkdxS0p1QXBoUmVyMXduWk5TTHpTREUtZUlNRkUyeTV4UElFdDlDY2UydlRGbHBjSWlZV3pxdi1JSFNwUnZJenJJYXhXQkpIaXAzc1JZdzNKdHhuNy1hMXBsMTRKLWhzb0NJbGs5cXptbU5aU0hLYWFQYTU4NWVQQW45bzIwcnA2Uy1Rb2dTd0k1RDBTVVM0bDNjcnRma2tUUjhkMkJseWFzbHFxb1RvaG9jamdR?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Familia de mujer abatida por ICE demanda a gobierno de Trump",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 19.7,
-   "base": 5.8,
-   "ratio": 3.41,
-   "disparada": "2026-10-02T16:13:53+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "8c5ffca02e62",
-   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPXzNzM2k0VjgxNkJvS0VaTjFVMWotQWRFQ1F1NHZ4UkJqd2lkQmh6LWhEa3RMQlVEcFVnWUdpNVktVDdXcXdoU3VocXlIOFNNeW5MVi1KWkFHZ25zMWs0Vm5jM2poY1BFRXQ0YXFVVUIwSWxVSkpLUzZmOGdmNV9mcXZWOUdmSV9lSUxGTWRRV2lNVnR4RExvYWlpaU93WkloTnBUeWo5M2lGRXU0WjRaMjE0RFdpSXp1UmR3b2d4WXdTVGM3MEdVQnBaOC1XRTFjM0ZPdnBtUkJpaVpvcDZJOXoyb0REMFowUl9rWUdtaVpBZkstZjZqSnh0dmVubTRaUFc1ZWtkakZCck9wRGZfblRFNXFpS0xzTjhHWTZkM0ZDOEY4U3VLYktabGlYd9IBswJBVV95cUxQbk01LU1pVU90VkQ1bV9oYlQ0TEpLdEpfVU44M2phZlA0RHpRLUFEbXQ5R1lodzByUlAtaHAyck0yS1pnWmdUMWJWZ1ZDYUN2eHF4SkJJazkyNFV4V2JPcS1vd3FScWRiTnZOeHdXRURHbnEzZUNQNE9RN25kei1Xdkx4X3FCQnNkNzJ2S2VlWUlGUEpCdFgyY0ZQc2ZVZm1ESHVIcU5PTlNGUm0xRFJSdk5ZZkI4eFhHbUxkZ0dhNGZBaHFXSS1Wbm5kNGpiVFI4WWFnYmp5d0FScVBBaTA5UG1MRlEzV1BOM2JMYUlwbkp3SXZjMkVUbU5DbnpscENFQTJGRVdhcVpxVENxdUh6Mm9BeVlMVEtwV0RuTHd4RzdPRGZtME03NlZXd1FzR2t0WkRj?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "Nuevas directrices de ICE impondrían reglas a sus agentes para realizar persecuciones y detenciones vehiculares",
-   "importancia": 8,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 19.7,
-   "base": 5.8,
-   "ratio": 3.41,
-   "disparada": "2026-10-02T16:13:53+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
+   "horas": 8.1
   }
  ]
 }
