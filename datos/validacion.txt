@@ -1,11 +1,39 @@
 
-29 vivas / 33 probadas
+1 vivas / 33 probadas
 
 Revisar en fuentes.yaml:
   - mpi_reports: HTTP 404
   - mpi_datos: HTTP 404
   - mpi_politica: HTTP 404
   - mpi_mexico: HTTP 404
+  - gnews_cono_sur_normativa: HTTP 503
+  - gnews_cono_sur_estatus: HTTP 503
+  - gnews_cono_sur_derechos: HTTP 503
+  - gnews_cono_sur_asilo: HTTP 503
+  - gnews_cono_sur_odio: HTTP 503
+  - gnews_andina_normativa: HTTP 503
+  - gnews_andina_estatus: HTTP 503
+  - gnews_andina_derechos: HTTP 503
+  - gnews_andina_asilo: HTTP 503
+  - gnews_andina_rutas: HTTP 503
+  - gnews_andina_odio: HTTP 503
+  - gnews_mexico_ca_normativa: HTTP 503
+  - gnews_mexico_ca_estatus: HTTP 503
+  - gnews_mexico_ca_derechos: HTTP 503
+  - gnews_mexico_ca_asilo: HTTP 503
+  - gnews_mexico_ca_rutas: HTTP 503
+  - gnews_mexico_ca_odio: HTTP 503
+  - gnews_eeuu_es_normativa: HTTP 503
+  - gnews_eeuu_es_estatus: HTTP 503
+  - gnews_eeuu_es_derechos: HTTP 503
+  - gnews_eeuu_es_asilo: HTTP 503
+  - gnews_eeuu_es_rutas: HTTP 503
+  - gnews_eeuu_es_odio: HTTP 503
+  - gnews_cono_sur_control: HTTP 503
+  - gnews_cono_sur_fiscalizacion: HTTP 503
+  - gnews_cono_sur_terceros: HTTP 503
+  - gnews_andina_desplazamiento: HTTP 503
+  - gnews_mexico_ca_desplazamiento: HTTP 503
 
 Corregir la URL o dar de baja la fuente. No implementar módulos
 de ingesta para fuentes que no validan.

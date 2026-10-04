@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-03T23:43:55+00:00",
+ "generado": "2026-10-04T15:21:30+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
@@ -8,25 +8,25 @@
   "AR": {
    "consultas": [
     {
-     "consulta": "decime como haces",
-     "valor": "67050",
+     "consulta": "ceuta",
+     "valor": "1260500",
+     "tipo": "rising",
+     "variantes": 1
+    },
+    {
+     "consulta": "migrantes o inmigrantes",
+     "valor": "197650",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "migrantes las 5",
-     "valor": "66350",
-     "tipo": "rising",
-     "variantes": 0
-    },
-    {
-     "consulta": "migrantes si me tomo una cerveza",
-     "valor": "48900",
-     "tipo": "rising",
+     "consulta": "inmigrantes",
+     "valor": "46",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-10-03T23:43:38+00:00"
+   "medido": "2026-10-04T15:21:06+00:00"
   },
   "VE": {
    "consultas": [
@@ -172,22 +172,24 @@
    "medido": "2026-10-03T00:22:29+00:00"
   }
  },
- "proximo_pais": 0,
- "paises_sin_datos": [],
+ "proximo_pais": 1,
+ "paises_sin_datos": [
+  "VE"
+ ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 9,
-   "reciente": 18.9,
-   "base": 6.7,
-   "ratio": 2.82
+   "puntaje": 10,
+   "reciente": 20.4,
+   "base": 5.6,
+   "ratio": 3.67
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 20.0,
-   "base": 5.9,
-   "ratio": 3.41
+   "reciente": 20.6,
+   "base": 4.6,
+   "ratio": 4.45
   }
  },
  "alertas": []
