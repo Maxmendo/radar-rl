@@ -1,9 +1,62 @@
 {
- "generado": "2026-10-04T15:21:30+00:00",
+ "generado": "2026-10-04T23:56:39+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {},
+ "hechos": {
+  "ad0bab1d15e4": {
+   "id_hecho": "ad0bab1d15e4",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbTJ4NENFLVhHS2ZGVThrQ1pBUDhsSjY3dXk0WmNPNkIzY2xsdGRET3JfR3RMZTJVYkpZR0lfMm5GM2RSSGFPTU5xQmo5YnNDcDJxSFB6clJjZGY3NFNiVVY1aVBfRzdEZEQyaS1tNVVmdDB4V0xyUUFaSUkzbzl4blNJN0RSb1E5ZTRmU1Q2Q3JKWGlSMEloSE1FUTc3SnpPaU9zX3pQQUhZMGE5RlVWN1hTYw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Sin abogado ante un juez, niños migrantes quedan expuestos a la deportación en EEUU",
+   "importancia": 10,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 26.4,
+   "base": 4.9,
+   "ratio": 5.38
+  },
+  "4f7479361b56": {
+   "id_hecho": "4f7479361b56",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNRzdkUk1JSzZCdnFuSTlpTEdZRXUwSnFjTDlHeEdsZ0dHWEZMUjZzYThjV2JqSXltbUMtZ3ZRZGxmempHRGxPVkJYR05XUjlGREVMQW1vMWp5MUNNY24zcVhxTUJzZkcybGxmdU5ualdUZ3d2Q3BzOXcza2p1d3R6WklNZG43MXBWMmt6Y253VFIwMlV3TDBlSnJoM1FESmt3dHVxeWhhNDdZUUUtVzliWnIxNkszREh6U2hWRUpDYWV2MFltdERzYmNQZEhJRFNqTGpFQWVwZFRKTEdwMU1Jb1ZhMVhjME9jT2pqVDRKd21UYmNEb3JNUVpWeEhNU1N5UWdQa0tyNVlZNUZk0gGMAkFVX3lxTE1HN2RSTUlLNkJ2cW5JOWlMR1lFdTBKcWNMOUd4R2xnR0dYRkxSNnNhOGNXYmpJeW1tQy1ndlFkbGZ6akdEbE9WQlhHTldSOUZERUxBbW8xankxQ01jbjNxWHFNQnNmRzJsbGZ1Tm5qV1Rnd3ZDcHM5dzNranV3dHpaSU1kbjcxcFYya3pjbndUUjAyVXdMMGVKcmgzUURKa3d0dXF5aGE0N1lRRS1XOWJacjE2SzNESHpTaFZFSkNhZXYwWW10RHNiY1BkSElEU2pMakVBZXBkVEpMR3AxTUlvVmExWGMwT2NPampUNEp3bVRiY0Rvck1RWlZ4SE1TU3lRZ1BrS3I1WVk1RmQ?oc=5",
+   "termino": "desplazamiento interno",
+   "geo": "CO",
+   "titulo": "Ordenan la captura de dueño de la hacienda Bellacruz por el desplazamiento de 70 familias",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 14.3,
+   "base": 1.1,
+   "ratio": null
+  },
+  "bc1e8fa318db": {
+   "id_hecho": "bc1e8fa318db",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOXBuWVU3OGptSjgzMk5rNXpJc0VBUjFZdEpQQVZrbWlZTHItbVZYR3lmejU0eXQ5QVN3aVBzSlJlLXJZUTlSVjNfaS1hUW5lTGpLLUFtLXZUVmZycWZlTVN5Z2ZyUExyZzRjYkF1bjRvT3FNSllFNGl2bEFGZF9mNGVhT3VGOWtsWEwtYmVxbExDR05fYk5GWFh6UjhGNHNBYVNjdEQxZXNCbFhQMnNMd1ZtX20zblJsSFdMd25BUDZMeUFNUFY0aG1sOA?oc=5",
+   "termino": "caravana migrante",
+   "geo": "MX",
+   "titulo": "Detienen a presunto líder de caravana migrante ‘Fe y Esperanza con Dios’ en Chiapas",
+   "importancia": 7,
+   "velocidad": 4,
+   "puntaje": 0,
+   "reciente": 2.7,
+   "base": 0.2,
+   "ratio": null
+  },
+  "d9c72741e676": {
+   "id_hecho": "d9c72741e676",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxORnVJcXJiR0x6cENXTUdXcVZYcUR5TzFiVjAxOU5ua0RJcVZ4Z2hqVnpxZGdPbUtmM3lWcFBHX28tZ09DMWVGd29rWWpyb0JRVjJzbkE5bFNWd1V3Mk5Rd0lQeW1UMjJLVFhhMjNka3RqNGI3Vjh5bEk0d2xqaUZQWlRiQnJrcm51MmtqQ0FXSGxyd2dGVW9ZQ252VWtmNlJXYU5mQ0NJdU1ZQ1JmcE5IWlR0WWVzQmdhVlVnSVZPMkNXd3MwQ2N6Y3AyNFdTb01RRTFxYmdrN0JIQl9oaGlXektwX3BiSkRfYUpfZ9IB7AFBVV95cUxORnVJcXJiR0x6cENXTUdXcVZYcUR5TzFiVjAxOU5ua0RJcVZ4Z2hqVnpxZGdPbUtmM3lWcFBHX28tZ09DMWVGd29rWWpyb0JRVjJzbkE5bFNWd1V3Mk5Rd0lQeW1UMjJLVFhhMjNka3RqNGI3Vjh5bEk0d2xqaUZQWlRiQnJrcm51MmtqQ0FXSGxyd2dGVW9ZQ252VWtmNlJXYU5mQ0NJdU1ZQ1JmcE5IWlR0WWVzQmdhVlVnSVZPMkNXd3MwQ2N6Y3AyNFdTb01RRTFxYmdrN0JIQl9oaGlXektwX3BiSkRfYUpfZw?oc=5",
+   "termino": "refugiados",
+   "geo": "MX",
+   "titulo": "‘Un reino para todos nosotros’, la cinta animada mexicana sobre refugiados y migrantes",
+   "importancia": 5,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 36.1,
+   "base": 10.8,
+   "ratio": 3.36
+  }
+ },
  "audiencia": {
   "AR": {
    "consultas": [
@@ -172,25 +225,44 @@
    "medido": "2026-10-03T00:22:29+00:00"
   }
  },
- "proximo_pais": 1,
+ "proximo_pais": 2,
  "paises_sin_datos": [
-  "VE"
+  "AR",
+  "CL"
  ],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 20.4,
-   "base": 5.6,
-   "ratio": 3.67
+   "reciente": 16.6,
+   "base": 5.5,
+   "ratio": 3.01
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 20.6,
-   "base": 4.6,
-   "ratio": 4.45
+   "reciente": 17.1,
+   "base": 4.9,
+   "ratio": 3.53
   }
  },
- "alertas": []
+ "alertas": [
+  {
+   "id_hecho": "ad0bab1d15e4",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbTJ4NENFLVhHS2ZGVThrQ1pBUDhsSjY3dXk0WmNPNkIzY2xsdGRET3JfR3RMZTJVYkpZR0lfMm5GM2RSSGFPTU5xQmo5YnNDcDJxSFB6clJjZGY3NFNiVVY1aVBfRzdEZEQyaS1tNVVmdDB4V0xyUUFaSUkzbzl4blNJN0RSb1E5ZTRmU1Q2Q3JKWGlSMEloSE1FUTc3SnpPaU9zX3pQQUhZMGE5RlVWN1hTYw?oc=5",
+   "termino": "deportaciones",
+   "geo": "US",
+   "titulo": "Sin abogado ante un juez, niños migrantes quedan expuestos a la deportación en EEUU",
+   "importancia": 10,
+   "velocidad": 3,
+   "puntaje": 10,
+   "reciente": 26.4,
+   "base": 4.9,
+   "ratio": 5.38,
+   "disparada": "2026-10-04T23:56:39+00:00",
+   "velocidad_inicial": 3,
+   "desenlace": "vigente",
+   "horas": 0
+  }
+ ]
 }
