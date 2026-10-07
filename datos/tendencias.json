@@ -1,62 +1,9 @@
 {
- "generado": "2026-10-06T16:40:15+00:00",
+ "generado": "2026-10-07T17:24:28+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
- "hechos": {
-  "4f3b45def7e6": {
-   "id_hecho": "4f3b45def7e6",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeXc1MHpONkRWNk5PNlNsdmVGTmhlZC1hdjdHcF9uU0FtUGkwdFVFTURGVmdNZlNOdGhweDd4eVlYVHRQRFRXNjUwaHVJOHBTZmxVWXM1Z2FwQzB3ZlVMRTEyNEdfRS0ya2pGN2pmcnlkUlgtNml1SFE0VEJBcXFUUHQtUUw5VWw3NnJoX3ZJWTJBRkFsMjYtRUt2eC04R2F2NTBmNVRtcDIyb1BCWDJPOEVxZjkzazBBY2I2QXh4a1lPS1JBUk5yeV9rSEROZlpKNk9nY0JpSnZvbjA?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "El Gobierno de Trump compra tres centros de detención para migrantes en California",
-   "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 7,
-   "reciente": 17.0,
-   "base": 6.8,
-   "ratio": 2.51
-  },
-  "3a725552d3da": {
-   "id_hecho": "3a725552d3da",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbjBpN29fN2o4SUJ3R1pxMmdQSlBuYXZnbXQySDJTS3JrUmVodXlMT2JsS2xoTVRUSkNDOG9sOXJOaVNLcWxDRkV2WEJNNTBSU1VJX19ldkVBZ2dBajN5a2Z4Ul83Q3pIdlVnckZVQVZRZkh6NW9hNmtibXcxNFA1RExXQmVJQlVYY3U2YjBZQWxMOEZyeDlFMjgyUVpISlpoRU9ZWFpiV0ZKSzVLSDRQemNjT3pTR0JETmRnV3hSN0pXdTU3RjgxMtIBzgFBVV95cUxPMFRFV3poX0tsTFlaaURPRXM3TnhuRU1QRmRpWW1PNjdkbUJXbVNOWEJBRExxTl9rcVp6TmE3ZmZnVGlsR3FmakUtdksyMWVYT3lGUW5FS25sWlJySTNsbXFpb1d4MW9HbTd6aXhqNTdYay1zTXJuWGRLN2lSX1pYQWc1Qm95OExldC1JUEF1ZFVfVzRSUzJfUzBvV1NDV3c0ZzNWSGVUZ1JyZVc2RTl5VWg1UDVEUmU4c21JX2p3Um9QNWFnRnFQX2RFdDN6dw?oc=5",
-   "termino": "migrantes",
-   "geo": "DO",
-   "titulo": "Rescatan a 61 migrantes de una embarcación que se hundía frente a República Dominicana",
-   "importancia": 8,
-   "velocidad": 5,
-   "puntaje": 0,
-   "reciente": 11.1,
-   "base": 4.7,
-   "ratio": null
-  },
-  "b538f1f7757a": {
-   "id_hecho": "b538f1f7757a",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxON24tWFN6RkMwTlJWNTJzVzhjYmk1QU5PMXR6SXE1YmlZSFpLaFhXYURWQkxyell5a0pFU0ZnQzZxeWMzQXZ1UFVTaElJTFI0eE5kek5zNDJHeWRUM2NEMU5YT0V0bVpGMlh3Q05sOFZpTzk0Q2RZRmlPNUlLM3JEVHVjLUdSdFVjcWc?oc=5",
-   "termino": "deportaciones",
-   "geo": "AR",
-   "titulo": "Detienen a 14 migrantes ilegales en una embarcación",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 15.7,
-   "base": 3.1,
-   "ratio": 5.11
-  },
-  "ed46f1042b2b": {
-   "id_hecho": "ed46f1042b2b",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWF9MTmRnR19hZlIxVGZZYUd5Z3d3ZC1VZ2JhOVB4RGYyWXU4WFh4amRTZ3M2ZlgySmRSV3BTYnNvRm5wY0VXblFsSV9GX3RMaHFLMy00RmZfRktfRFN0d0ppSnhWS19GOWRLc0hoemtKNk5ZcG5RQmJWeEFKVmxDd3c2TDZuUDRQd29SaWt2UXh5N0kwUXIyN0QxMFBQYWlGaUNoSk1rRFh5alFJTjlpTXlmQjVXNVhyTDJ5Z2NzdmNZSktPWm9tT3BSa0c4Y3BEME1iaE9aSTZHY0drTjFRdw?oc=5",
-   "termino": "migraciones",
-   "geo": "CL",
-   "titulo": "Fiscalización en Copiapó deja 12 personas denunciadas",
-   "importancia": 6,
-   "velocidad": 3,
-   "puntaje": 0,
-   "reciente": 42.9,
-   "base": 44.9,
-   "ratio": 0.95
-  }
- },
+ "hechos": {},
  "audiencia": {
   "AR": {
    "consultas": [
@@ -225,10 +172,8 @@
    "medido": "2026-10-03T00:22:29+00:00"
   }
  },
- "proximo_pais": 4,
- "paises_sin_datos": [
-  "AR"
- ],
+ "proximo_pais": 5,
+ "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
@@ -245,40 +190,5 @@
    "ratio": 3.04
   }
  },
- "alertas": [
-  {
-   "id_hecho": "b538f1f7757a",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxON24tWFN6RkMwTlJWNTJzVzhjYmk1QU5PMXR6SXE1YmlZSFpLaFhXYURWQkxyell5a0pFU0ZnQzZxeWMzQXZ1UFVTaElJTFI0eE5kek5zNDJHeWRUM2NEMU5YT0V0bVpGMlh3Q05sOFZpTzk0Q2RZRmlPNUlLM3JEVHVjLUdSdFVjcWc?oc=5",
-   "termino": "deportaciones",
-   "geo": "AR",
-   "titulo": "Detienen a 14 migrantes ilegales en una embarcación",
-   "importancia": 7,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 15.7,
-   "base": 3.1,
-   "ratio": 5.11,
-   "disparada": "2026-10-06T16:40:15+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "4f3b45def7e6",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeXc1MHpONkRWNk5PNlNsdmVGTmhlZC1hdjdHcF9uU0FtUGkwdFVFTURGVmdNZlNOdGhweDd4eVlYVHRQRFRXNjUwaHVJOHBTZmxVWXM1Z2FwQzB3ZlVMRTEyNEdfRS0ya2pGN2pmcnlkUlgtNml1SFE0VEJBcXFUUHQtUUw5VWw3NnJoX3ZJWTJBRkFsMjYtRUt2eC04R2F2NTBmNVRtcDIyb1BCWDJPOEVxZjkzazBBY2I2QXh4a1lPS1JBUk5yeV9rSEROZlpKNk9nY0JpSnZvbjA?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "El Gobierno de Trump compra tres centros de detención para migrantes en California",
-   "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 7,
-   "reciente": 17.0,
-   "base": 6.8,
-   "ratio": 2.51,
-   "disparada": "2026-10-06T16:40:15+00:00",
-   "velocidad_inicial": 6,
-   "desenlace": "vigente",
-   "horas": 0
-  }
- ]
+ "alertas": []
 }
