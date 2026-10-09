@@ -1,60 +1,60 @@
 {
- "generado": "2026-10-08T17:21:27+00:00",
+ "generado": "2026-10-09T16:56:59+00:00",
  "disponible": true,
  "motivo": "",
  "ventana": "today 3-m",
  "hechos": {
-  "15e0835103ac": {
-   "id_hecho": "15e0835103ac",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOMWJwS1F6alMyUy1aSW1uUTJEbWRKbW4zcDY0Qm5TNldvNkFsTXotWGUzRHFoWnR0bE8tb041bWNMektwcml3amZSUDF4NUZKbXJCSHlkejJRUWx2cUp5cGIzWW4yNkpyMG15cklnREpkTjF6b3J3Q3RhR2FkQk5wTHNpR2RuVnE0SG9MM3VKTldobGt4YnVKczFkMG5uazdLNnlLYU44SmczQnlwNktwU2JmX182MkdRUjFMVGp0Zk1ZNVpHRFdoTXZsRXVsejhjcXlnUzJKajVLa2lNcWhTOVJRcmFQQnZ3Nks0b2RqcXVpUlVxSEJUVmRSVdIBjwJBVV95cUxOT2FieUx2VEd5QmxLTFhYSkNvUm16Ym8tTTNxX0FTXzI4bURUdnhQRVJJaFJ3c1Y2Q29acnJuMDVlUGNBTzZ2d0VXU2tTZnI1WmhoMWF2Y2l2TXlYd3NuSkpqRjdkc1hmd2JfZFRVSlJEcUh0eE5wSjNJcHBYb0x2VlM1YmVSRXpWVGtYRzV1MExrdXNiZDNSV2xHalQ3dXdYQzdsUnZCSkNpdWRQR2VwZXE0MG1BUkdyeW5RaG1rclJWcVkxekRrRkU4OF8xNi1zVnlnMkxwbnJhSDZyaWwwX0ZqcVV1OUZOZHBsZXRNS3FpeFc2NXhHLTQ5UGxLR01sVl9iVHVRNVI4bVhjSWE0?oc=5",
+  "21df03317b0e": {
+   "id_hecho": "21df03317b0e",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNeFBjaEt4ZDNSaDFiYmpiT3ByU21FbHhmU3BqVk9ELWZOVmhsdkNOZGc2Y2ttbUVEVWF6cGo0U0hPVVpiVmVzV2t2ckZ6dlk3Yl9WTmRDYVo4ZjcxcHRQSkE5Y3VhOU5uekNSUy1TOV9LaGs5RkdIRU1sNGdUNV9fVkhkT2w4aEh5ZjVrTWtRQ2d5alZreHRHc1NPQmNDcTM2OVlQeFJkS2tzdmwtVVQ4MHZIUG9wTUc5YktNaVh4UnRyd2ptNkdIUG14bTdyY05PRVBycTAxeXJDanNSQ2ItdGl4Q1Z6ZXQ2UFJLZFNqbms2bmRxODRwS1JCMVdiUdIBgwJBVV95cUxOUmtMMGF5Q2FuRWhScjBLWXJaNWlVQjF2R3lLbkJiT1hvajZKbUpIOE51eW1zeWNpMFZfUDZfVjJQQ3Y2SGlSSnQ5OW8yanczZm95MGpJTE16WWRwT1VQbHlDcWo1SDB1cWl2UXExemNqWkxtZFRRQUJqZjN6TVlFTXRfNGg1VmZXXzFpbko5WmVQaFp1ZlJnZ2hRX2lfZmRfZTYtWllyYS13OG5LQ21kaVlWTHc3bFV2S0hsLUltenhiZFdrRzhMVVFFclkyQjFORk5TN19hdjNwY2t4d191b3Z6MGt3bXRrem42dkV2MUtRcVpWaHg2N19Ec0hMcUN0VG9V?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Expulsión de migrantes de EEUU a África busca \"instrumentalizar el sufrimiento humano\" (HRW)",
+   "titulo": "Mullin justifica los disparos de ICE a un migrante en Nueva York por sus antecedentes",
    "importancia": 9,
-   "velocidad": 5,
+   "velocidad": 4,
    "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63
+   "reciente": 19.9,
+   "base": 5.0,
+   "ratio": 3.95
   },
-  "42be22b2fa4c": {
-   "id_hecho": "42be22b2fa4c",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOakF6RVhZY0xkcmxvTVJ6UVN1QjVtTjMyN0IxenVQRndCVGdiWGZGMmQ5bHlfeDFjWTJYWlFZTEZWNFBmMlVnaW9XcFp0a3FNVG1faFRJR19jZWVjMEJTWGE4cUVYOVJVWmhaLVZ0V2JDZWVYeHd2WXZNMnZpeVdYbWZFblFpZmJMbWZNVw?oc=5",
+  "26ccb5c67bf8": {
+   "id_hecho": "26ccb5c67bf8",
+   "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPZlpwM0E5NzYwZkYzUmVEREczSWYxMWpmM2VHckRIVVY5SHRvZzNoTHNoWU1GYVVVemdsdEw3MzViQWZoWnJWVTZIc25na0lGblRGOVdZU3JrdXZTV1dlWHl5M3FHZnJMR2Njb1RlazRhSy1iWk9iemFmV3RsbHdkMDdITVVWUDRQOUZkcDVLTTJRMlV1czExZnh0NE41UVRqSlRTYXpnc3NiY1JHdS12WENkMUMtTDVQX3NkZnhhaUtkNEN6SVBndzdvRmlCTDVGaXB4MExLT0hQTTVDTDNYZXl1VUFaQWFwSFJFLTZEekh1SVJrZ0JiMF9MQkZVZEMzNTcyREhzWXg3a19BZWxXOEEyUWFkTG9rZW16SW02OGJRTzRLX2dVWTVzS0dlVWtzdWppb9IBugJBVV95cUxNaHJIaG9OanVvYWI1SFlHNEVvb1c3T0x2R3BNcEFrNWZrZFdod3FEdnRhRUVvb2xQb2xMb2twYmxwUlVzaE5HeWkxd2NYbXVDUGtnbExOQ1FlbDRTUmJFdXRJRjZpN3p2ekVFVHlmRkh3b1ZLd2VMc0NaNURDQWh3R0JyQWNkcHozZldvTTQxUTZyMzZRSUN5SkRRWW5Cd043MkhvenZ0cDFObkRXS2I1YU9NOVVNUmFEYnZSOHgxeWdLdUl6YUZLSEpxYWYyWUdYYURLRi1rejFsM0FpLV9VTWFEdUVGWGdxOHhEYkd1TXJBdTk4bHVORHh4ZXlhSTlIS251aXZONzRhU2ZoZHFjaUZ4THZvRGJEckphYnVvOFF0dzVHUkZleTVaYnRaSlpRbk9zOTZMWS1oUQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "ICE ordena sumar 1.000 detenciones diarias de migrantes en EE. UU.: CNN",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63
-  },
-  "7d179366b0e6": {
-   "id_hecho": "7d179366b0e6",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaWloTzFZV2pmdS1GeFZWXzFNRUM3T0RUWThIeGZ6aURfSGRrN0hjQlZlcUIyNy1PelBRSEpNbVRYR3hJOVZuWlRCOGVlRWxrd0gxNEhSQ1pJcXNLZTRzYktRNzdOQllaTWJiWk0zYXhHcFc0YzZPM01OZ3BoYWZ2OFVmaV9YYlk3X0VsNVBkN3RyVW5mU2ViYksxN0xMOEpWVDN0MjR4S0ozcUpOd3BMWU5QN2E4TjMxWG8wcURZemUtS0o1SmZnZnFCNjlGRUhrVTdNUHAyakRlUdIB2gFBVV95cUxPaWloTzFZV2pmdS1GeFZWXzFNRUM3T0RUWThIeGZ6aURfSGRrN0hjQlZlcUIyNy1PelBRSEpNbVRYR3hJOVZuWlRCOGVlRWxrd0gxNEhSQ1pJcXNLZTRzYktRNzdOQllaTWJiWk0zYXhHcFc0YzZPM01OZ3BoYWZ2OFVmaV9YYlk3X0VsNVBkN3RyVW5mU2ViYksxN0xMOEpWVDN0MjR4S0ozcUpOd3BMWU5QN2E4TjMxWG8wcURZemUtS0o1SmZnZnFCNjlGRUhrVTdNUHAyakRlUQ?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "HRW: EEUU deportó a África a más de 500 migrantes de terceros países sin el debido proceso",
+   "titulo": "ICE triplica detenciones diarias a inmigrantes en los Estados Unidos",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63
+   "reciente": 19.9,
+   "base": 5.0,
+   "ratio": 3.95
   },
-  "4f7ec118a6f4": {
-   "id_hecho": "4f7ec118a6f4",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMVd1aVpNLUh6TFNMOFVLMjM5QnB4SkZoX3hRTzJhNlNjSXpVM2JWbjNCTjRUQWFYNWxQYTlOU2NPRWh0Z0prN1FpaGxtTWNUbDhXWDU1ODRvVmhpQTBvV3piRnVXaDVXUUE1N3l0OF9QQzQ5emFLYWNtTi1feTI0MWY4Vm54SENyVlVJLVJwMmo5cjlfRXdkekhsd0Z4TjBMZFpJYm9WQWFYM2JfcjNQZTcwandLcHc3VUlRMjFaY1XSAcABQVVfeXFMUDFXdWlaTS1IekxTTDhVSzIzOUJweEpGaF94UU8yYTZTY0l6VTNiVm4zQk40VEFhWDVsUGE5TlNjT0VodGdKazdRaWhsbU1jVGw4V1g1NTg0b1ZoaUEwb1d6YkZ1V2g1V1FBNTd5dDhfUEM0OXphS2FjbU4tX3kyNDFmOFZueEhDclZVSS1ScDJqOXI5X0V3ZHpIbHdGeE4wTGRaSWJvVkFhWDNiX3IzUGU3MGp3S3B3N1VJUTIxWmNV?oc=5",
-   "termino": "deportaciones",
+  "f40b9cfd7433": {
+   "id_hecho": "f40b9cfd7433",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNdmhWbWtIajhWa0tDX2xJVmlXUnN3eTNmUktTT3Y4S3FkNk5KTUM3YVlrRURubnBXTzA4LXhMMkJNb3Q3TUNWZzFDLUUySXBWcTdacXhmaS1KeHhwWUlZZzRYWW5xOV9uUjhrQlhuSXQwTUJxYUlGUzFXZFJNdjZ1eEllVWxGbDVxMXN6SndseVEtR2xlUmJIdUMzam5rcF9MQmxnZ0txV1VtS3NCajVDV091NE5odjZQYnBMdk9adnhVOFdLU3BLZVFJVzQwUFJWVUpnN0w1dGRqRF9yUWdLbldGUWpUWFFyM2Vjb3RuVWdObTUwazN0RDJJQms5b0VQR0HSAZYCQVVfeXFMT2Z5dEd1MVVneHpkTTQzRU5yTENkY3hLYWUxd0FHVlNQUFIzSjVhZDJCNTVsT0FxZFpURHBkRXdhdl9aTlloOV8yQVFCc3JHeGpuNkRxLUxpckYyOEh1ZlVrcTFlNVFBLUhpb01YSV9ZZHM0SFJPMXZzOXRJaEZaTWF2UkRHYlBxRWxwT29XdGlHcFhteHRTTGFLNHgzbHFKWW11X3R6dHl0VXhweXQzY3AtaVNDclNnM0NsMUFfWWZqX1ZTWlRkU1NrNlZnb3FFNFZwby03ZFo2X0MtTXFGV2NYc1lVZGdGLXJpVHFIT3hfRWk2aEliTG1FNVBtMnJqTlNtdm8xLUpRb0taZnBQc01nSzVXYkE?oc=5",
+   "termino": "detencion migratoria",
    "geo": "US",
-   "titulo": "387 venezolanos fueron repatriados desde Estados Unidos",
+   "titulo": "Decenas de migrantes detenidos en un centro del ICE en Georgia denuncian en un video y una carta su encierro ‘ilegal’ por años",
+   "importancia": 9,
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 1.7,
+   "ratio": null
+  },
+  "fa925f06f7a3": {
+   "id_hecho": "fa925f06f7a3",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQ1hib1p3QzBHMGtSREM2dmd5LS1OeFl5NjAtNVg0UGd6Z0hUOURpVEszU2szaXRhcUpmNHhRUkZGLWdwMVlLYXZWQ2pJYzRONG84UGJUSEVCR0lhV1FRRUlwNnZ1QWJTNnFuN0hLMjM4WlVqNXVnUmxHMnVSYkM1dTNyUjNnNUlzY3dPcnRzU2FNRV9feG1kLXJCWkFMeWs0Ync?oc=5",
+   "termino": "trafico de migrantes",
+   "geo": "US",
+   "titulo": "Migrantes en Texas: encuentran a 21 en el interior de un camión",
    "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63
+   "velocidad": 3,
+   "puntaje": 0,
+   "reciente": 0.0,
+   "base": 0.0,
+   "ratio": null
   }
  },
  "audiencia": {
@@ -62,24 +62,24 @@
    "consultas": [
     {
      "consulta": "ceuta",
-     "valor": "1282700",
+     "valor": "1275400",
      "tipo": "rising",
      "variantes": 1
     },
     {
      "consulta": "migrantes de marruecos a españa",
-     "valor": "197150",
+     "valor": "201600",
      "tipo": "rising",
      "variantes": 0
     },
     {
-     "consulta": "los migrantes",
-     "valor": "100",
+     "consulta": "inmigrantes",
+     "valor": "46",
      "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-10-08T17:21:11+00:00"
+   "medido": "2026-10-09T16:56:42+00:00"
   },
   "VE": {
    "consultas": [
@@ -170,25 +170,25 @@
   "ES": {
    "consultas": [
     {
-     "consulta": "migrantes ceuta",
-     "valor": "100",
-     "tipo": "top",
-     "variantes": 2
-    },
-    {
-     "consulta": "migrantes o emigrantes",
-     "valor": "84550",
+     "consulta": "ceuta hoy",
+     "valor": "241200",
      "tipo": "rising",
-     "variantes": 0
+     "variantes": 3
     },
     {
      "consulta": "cuantos migrantes quedan en ceuta",
-     "valor": "76600",
+     "valor": "97350",
      "tipo": "rising",
+     "variantes": 0
+    },
+    {
+     "consulta": "migrantes españa",
+     "valor": "39",
+     "tipo": "top",
      "variantes": 0
     }
    ],
-   "medido": "2026-10-03T23:43:47+00:00"
+   "medido": "2026-10-09T16:56:51+00:00"
   },
   "MX": {
    "consultas": [
@@ -225,90 +225,56 @@
    "medido": "2026-10-03T00:22:29+00:00"
   }
  },
- "proximo_pais": 6,
+ "proximo_pais": 0,
  "paises_sin_datos": [],
  "servicio": {
   "DNI extranjero": {
    "geo": "AR",
-   "puntaje": 10,
-   "reciente": 25.1,
-   "base": 7.0,
-   "ratio": 3.61
+   "puntaje": 8,
+   "reciente": 21.4,
+   "base": 8.0,
+   "ratio": 2.68
   },
   "certificado de residencia": {
    "geo": "AR",
    "puntaje": 10,
-   "reciente": 28.7,
-   "base": 7.4,
-   "ratio": 3.89
+   "reciente": 28.3,
+   "base": 6.8,
+   "ratio": 4.18
   }
  },
  "alertas": [
   {
-   "id_hecho": "15e0835103ac",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOMWJwS1F6alMyUy1aSW1uUTJEbWRKbW4zcDY0Qm5TNldvNkFsTXotWGUzRHFoWnR0bE8tb041bWNMektwcml3amZSUDF4NUZKbXJCSHlkejJRUWx2cUp5cGIzWW4yNkpyMG15cklnREpkTjF6b3J3Q3RhR2FkQk5wTHNpR2RuVnE0SG9MM3VKTldobGt4YnVKczFkMG5uazdLNnlLYU44SmczQnlwNktwU2JmX182MkdRUjFMVGp0Zk1ZNVpHRFdoTXZsRXVsejhjcXlnUzJKajVLa2lNcWhTOVJRcmFQQnZ3Nks0b2RqcXVpUlVxSEJUVmRSVdIBjwJBVV95cUxOT2FieUx2VEd5QmxLTFhYSkNvUm16Ym8tTTNxX0FTXzI4bURUdnhQRVJJaFJ3c1Y2Q29acnJuMDVlUGNBTzZ2d0VXU2tTZnI1WmhoMWF2Y2l2TXlYd3NuSkpqRjdkc1hmd2JfZFRVSlJEcUh0eE5wSjNJcHBYb0x2VlM1YmVSRXpWVGtYRzV1MExrdXNiZDNSV2xHalQ3dXdYQzdsUnZCSkNpdWRQR2VwZXE0MG1BUkdyeW5RaG1rclJWcVkxekRrRkU4OF8xNi1zVnlnMkxwbnJhSDZyaWwwX0ZqcVV1OUZOZHBsZXRNS3FpeFc2NXhHLTQ5UGxLR01sVl9iVHVRNVI4bVhjSWE0?oc=5",
+   "id_hecho": "21df03317b0e",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNeFBjaEt4ZDNSaDFiYmpiT3ByU21FbHhmU3BqVk9ELWZOVmhsdkNOZGc2Y2ttbUVEVWF6cGo0U0hPVVpiVmVzV2t2ckZ6dlk3Yl9WTmRDYVo4ZjcxcHRQSkE5Y3VhOU5uekNSUy1TOV9LaGs5RkdIRU1sNGdUNV9fVkhkT2w4aEh5ZjVrTWtRQ2d5alZreHRHc1NPQmNDcTM2OVlQeFJkS2tzdmwtVVQ4MHZIUG9wTUc5YktNaVh4UnRyd2ptNkdIUG14bTdyY05PRVBycTAxeXJDanNSQ2ItdGl4Q1Z6ZXQ2UFJLZFNqbms2bmRxODRwS1JCMVdiUdIBgwJBVV95cUxOUmtMMGF5Q2FuRWhScjBLWXJaNWlVQjF2R3lLbkJiT1hvajZKbUpIOE51eW1zeWNpMFZfUDZfVjJQQ3Y2SGlSSnQ5OW8yanczZm95MGpJTE16WWRwT1VQbHlDcWo1SDB1cWl2UXExemNqWkxtZFRRQUJqZjN6TVlFTXRfNGg1VmZXXzFpbko5WmVQaFp1ZlJnZ2hRX2lfZmRfZTYtWllyYS13OG5LQ21kaVlWTHc3bFV2S0hsLUltenhiZFdrRzhMVVFFclkyQjFORk5TN19hdjNwY2t4d191b3Z6MGt3bXRrem42dkV2MUtRcVpWaHg2N19Ec0hMcUN0VG9V?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "Expulsión de migrantes de EEUU a África busca \"instrumentalizar el sufrimiento humano\" (HRW)",
+   "titulo": "Mullin justifica los disparos de ICE a un migrante en Nueva York por sus antecedentes",
    "importancia": 9,
-   "velocidad": 5,
+   "velocidad": 4,
    "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63,
-   "disparada": "2026-10-08T17:21:27+00:00",
-   "velocidad_inicial": 5,
+   "reciente": 19.9,
+   "base": 5.0,
+   "ratio": 3.95,
+   "disparada": "2026-10-09T16:56:59+00:00",
+   "velocidad_inicial": 4,
    "desenlace": "vigente",
    "horas": 0
   },
   {
-   "id_hecho": "42be22b2fa4c",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOakF6RVhZY0xkcmxvTVJ6UVN1QjVtTjMyN0IxenVQRndCVGdiWGZGMmQ5bHlfeDFjWTJYWlFZTEZWNFBmMlVnaW9XcFp0a3FNVG1faFRJR19jZWVjMEJTWGE4cUVYOVJVWmhaLVZ0V2JDZWVYeHd2WXZNMnZpeVdYbWZFblFpZmJMbWZNVw?oc=5",
+   "id_hecho": "26ccb5c67bf8",
+   "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPZlpwM0E5NzYwZkYzUmVEREczSWYxMWpmM2VHckRIVVY5SHRvZzNoTHNoWU1GYVVVemdsdEw3MzViQWZoWnJWVTZIc25na0lGblRGOVdZU3JrdXZTV1dlWHl5M3FHZnJMR2Njb1RlazRhSy1iWk9iemFmV3RsbHdkMDdITVVWUDRQOUZkcDVLTTJRMlV1czExZnh0NE41UVRqSlRTYXpnc3NiY1JHdS12WENkMUMtTDVQX3NkZnhhaUtkNEN6SVBndzdvRmlCTDVGaXB4MExLT0hQTTVDTDNYZXl1VUFaQWFwSFJFLTZEekh1SVJrZ0JiMF9MQkZVZEMzNTcyREhzWXg3a19BZWxXOEEyUWFkTG9rZW16SW02OGJRTzRLX2dVWTVzS0dlVWtzdWppb9IBugJBVV95cUxNaHJIaG9OanVvYWI1SFlHNEVvb1c3T0x2R3BNcEFrNWZrZFdod3FEdnRhRUVvb2xQb2xMb2twYmxwUlVzaE5HeWkxd2NYbXVDUGtnbExOQ1FlbDRTUmJFdXRJRjZpN3p2ekVFVHlmRkh3b1ZLd2VMc0NaNURDQWh3R0JyQWNkcHozZldvTTQxUTZyMzZRSUN5SkRRWW5Cd043MkhvenZ0cDFObkRXS2I1YU9NOVVNUmFEYnZSOHgxeWdLdUl6YUZLSEpxYWYyWUdYYURLRi1rejFsM0FpLV9VTWFEdUVGWGdxOHhEYkd1TXJBdTk4bHVORHh4ZXlhSTlIS251aXZONzRhU2ZoZHFjaUZ4THZvRGJEckphYnVvOFF0dzVHUkZleTVaYnRaSlpRbk9zOTZMWS1oUQ?oc=5",
    "termino": "deportaciones",
    "geo": "US",
-   "titulo": "ICE ordena sumar 1.000 detenciones diarias de migrantes en EE. UU.: CNN",
-   "importancia": 9,
-   "velocidad": 3,
-   "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63,
-   "disparada": "2026-10-08T17:21:27+00:00",
-   "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "7d179366b0e6",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaWloTzFZV2pmdS1GeFZWXzFNRUM3T0RUWThIeGZ6aURfSGRrN0hjQlZlcUIyNy1PelBRSEpNbVRYR3hJOVZuWlRCOGVlRWxrd0gxNEhSQ1pJcXNLZTRzYktRNzdOQllaTWJiWk0zYXhHcFc0YzZPM01OZ3BoYWZ2OFVmaV9YYlk3X0VsNVBkN3RyVW5mU2ViYksxN0xMOEpWVDN0MjR4S0ozcUpOd3BMWU5QN2E4TjMxWG8wcURZemUtS0o1SmZnZnFCNjlGRUhrVTdNUHAyakRlUdIB2gFBVV95cUxPaWloTzFZV2pmdS1GeFZWXzFNRUM3T0RUWThIeGZ6aURfSGRrN0hjQlZlcUIyNy1PelBRSEpNbVRYR3hJOVZuWlRCOGVlRWxrd0gxNEhSQ1pJcXNLZTRzYktRNzdOQllaTWJiWk0zYXhHcFc0YzZPM01OZ3BoYWZ2OFVmaV9YYlk3X0VsNVBkN3RyVW5mU2ViYksxN0xMOEpWVDN0MjR4S0ozcUpOd3BMWU5QN2E4TjMxWG8wcURZemUtS0o1SmZnZnFCNjlGRUhrVTdNUHAyakRlUQ?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "HRW: EEUU deportó a África a más de 500 migrantes de terceros países sin el debido proceso",
+   "titulo": "ICE triplica detenciones diarias a inmigrantes en los Estados Unidos",
    "importancia": 9,
    "velocidad": 3,
    "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63,
-   "disparada": "2026-10-08T17:21:27+00:00",
+   "reciente": 19.9,
+   "base": 5.0,
+   "ratio": 3.95,
+   "disparada": "2026-10-09T16:56:59+00:00",
    "velocidad_inicial": 3,
-   "desenlace": "vigente",
-   "horas": 0
-  },
-  {
-   "id_hecho": "4f7ec118a6f4",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMVd1aVpNLUh6TFNMOFVLMjM5QnB4SkZoX3hRTzJhNlNjSXpVM2JWbjNCTjRUQWFYNWxQYTlOU2NPRWh0Z0prN1FpaGxtTWNUbDhXWDU1ODRvVmhpQTBvV3piRnVXaDVXUUE1N3l0OF9QQzQ5emFLYWNtTi1feTI0MWY4Vm54SENyVlVJLVJwMmo5cjlfRXdkekhsd0Z4TjBMZFpJYm9WQWFYM2JfcjNQZTcwandLcHc3VUlRMjFaY1XSAcABQVVfeXFMUDFXdWlaTS1IekxTTDhVSzIzOUJweEpGaF94UU8yYTZTY0l6VTNiVm4zQk40VEFhWDVsUGE5TlNjT0VodGdKazdRaWhsbU1jVGw4V1g1NTg0b1ZoaUEwb1d6YkZ1V2g1V1FBNTd5dDhfUEM0OXphS2FjbU4tX3kyNDFmOFZueEhDclZVSS1ScDJqOXI5X0V3ZHpIbHdGeE4wTGRaSWJvVkFhWDNiX3IzUGU3MGp3S3B3N1VJUTIxWmNV?oc=5",
-   "termino": "deportaciones",
-   "geo": "US",
-   "titulo": "387 venezolanos fueron repatriados desde Estados Unidos",
-   "importancia": 8,
-   "velocidad": 6,
-   "puntaje": 10,
-   "reciente": 16.6,
-   "base": 4.6,
-   "ratio": 3.63,
-   "disparada": "2026-10-08T17:21:27+00:00",
-   "velocidad_inicial": 6,
    "desenlace": "vigente",
    "horas": 0
   }
