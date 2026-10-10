@@ -2,10 +2,10 @@
 29 vivas / 33 probadas
 
 Revisar en fuentes.yaml:
-  - mpi_reports: HTTP 520
-  - mpi_datos: HTTP 520
-  - mpi_politica: HTTP 520
-  - mpi_mexico: HTTP 520
+  - mpi_reports: HTTP 404
+  - mpi_datos: HTTP 404
+  - mpi_politica: HTTP 404
+  - mpi_mexico: HTTP 404
 
 Corregir la URL o dar de baja la fuente. No implementar módulos
 de ingesta para fuentes que no validan.
